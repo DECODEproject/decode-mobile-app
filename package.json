@@ -1,0 +1,38 @@
+{
+  "name": "wallet",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "jest-expo": "23.0.0",
+    "react-native-scripts": "1.8.1",
+    "react-test-renderer": "16.0.0"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "expo": "^23.0.4",
+    "jest-cli": "^22.0.0",
+    "react": "16.0.0",
+    "react-dom": "^16.2.0",
+    "react-native": "^0.50.3",
+    "react-native-elements": "^0.18.5",
+    "react-navigation": "^1.0.0-beta.21"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  }
+}
