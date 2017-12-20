@@ -1,5 +1,6 @@
 import React from 'react';
 import { Platform, StyleSheet, Image, Text, TextInput, View, Button } from 'react-native';
+import Router from '../Router';
 
 const decodeLogo = require('../assets/images/wallet_logo.png');
 
@@ -34,30 +35,40 @@ const styles = StyleSheet.create({
   },
 });
 
-function Home() {
-  return (
-    <View style={styles.container}>
-      <Image
-        style={styles.logo}
-        source={decodeLogo}
-      />
-      <Text style={styles.textHeading}>Welcome, Jane Doe</Text>
-      <View style={styles.textInput}>
-        <TextInput
-          style={styles.password}
-          placeholder="Password"
-          underlineColorAndroid="rgb(0,163,158)"
-        />
-      </View>
-      <View style={styles.loginButton}>
-        <Button
-          onPress={() => true}
-          title="Unlock"
-          color="rgb(0,163,158)"
-        />
-      </View>
-    </View>
-  );
-}
+export default class Home extends React.Component {
+  constructor(props){
+    super(props);
+    this.goToPlaceholder = this.goToPlaceholder.bind(this);
+  }
 
-export default Home;
+  goToPlaceholder() {
+    this.props.navigator.push(Router.getRoute('placeholder'));
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Image
+          style={styles.logo}
+          source={decodeLogo}
+        />
+        <Text style={styles.textHeading}>Welcome, Jane Doe</Text>
+        <View style={styles.textInput}>
+          <TextInput
+            style={styles.password}
+            placeholder="Password"
+            secureTextEntry
+            underlineColorAndroid="rgb(0,163,158)"
+          />
+        </View>
+        <View style={styles.loginButton}>
+          <Button
+            onPress={this.goToPlaceholder}
+            title="Unlock"
+            color="rgb(0,163,158)"
+          />
+        </View>
+      </View>
+    );
+  }
+}

@@ -1,11 +1,14 @@
 import React from 'react';
 import { Font } from 'expo';
-import Home from './screens/Home';
+import {
+  NavigationProvider,
+  StackNavigation,
+} from '@expo/ex-navigation';
+import Router from './Router';
 
 const montserratMedium = require('./assets/fonts/Montserrat-Medium.ttf');
 
 export default class App extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -25,7 +28,10 @@ export default class App extends React.Component {
 
   render() {
     if (this.state.ready) {
-      return <Home />;
+      return (
+        <NavigationProvider router={Router}>
+          <StackNavigation initialRoute={Router.getRoute('home')} />
+        </NavigationProvider>);
     }
     return null;
   }
