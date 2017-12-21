@@ -46,6 +46,7 @@ export default class Home extends React.Component {
     this.props.navigator.push(Router.getRoute('authorisation'));
   }
 
+
   render() {
     return (
       <View style={styles.container}>

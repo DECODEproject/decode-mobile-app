@@ -13,11 +13,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 30,
   },
-  logo: {
-    height: 60,
-    marginBottom: 20,
-    width: 80,
-  },
   textHeading: {
     fontSize: 24,
     marginBottom: 30,
@@ -48,14 +43,17 @@ export default class Authorisation extends React.Component {
   goToPetitionSummary() {
     this.props.navigator.push(Router.getRoute('petitionSummary'));
   }
+  
+  static route = {
+    navigationBar: {
+      tintColor: 'rgb(0,163,158)',
+      title: 'Authorise Connection',
+    }
+  }
 
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          style={styles.logo}
-          source={decodeLogo}
-        />
         <View style={styles.textContainer}>
           <Text style={styles.textHeading}>Secure Petitions is requesting
             to connect with your DECODE wallet</Text>
