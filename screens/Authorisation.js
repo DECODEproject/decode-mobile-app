@@ -1,10 +1,7 @@
 import React from 'react';
-import { StyleSheet, Image, Text, View, Button, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
-
-const decodeLogo = require('../assets/images/wallet_logo.png');
-
 
 const styles = StyleSheet.create({
   container: {
@@ -37,11 +34,11 @@ const styles = StyleSheet.create({
 export default class Authorisation extends React.Component {
   constructor(props) {
     super(props);
-    this.goToPetitionSummary = this.goToPetitionSummary.bind(this);
+    this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
   }
 
-  goToPetitionSummary() {
-    this.props.navigator.push(Router.getRoute('petitionSummary'));
+  goToPetitionSummaryGet() {
+    this.props.navigator.push(Router.getRoute('petitionSummaryGet'));
   }
   
   static route = {
@@ -69,7 +66,7 @@ export default class Authorisation extends React.Component {
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this.goToPetitionSummary}
+            onPress={this.goToPetitionSummaryGet}
             title="Authorise Connection"
             color="rgb(0,163,158)"
           />
