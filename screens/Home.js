@@ -1,5 +1,6 @@
 import React from 'react';
 import { Platform, StyleSheet, Image, Text, TextInput, View, Button } from 'react-native';
+import PropTypes from 'prop-types';
 import Router from '../Router';
 
 const decodeLogo = require('../assets/images/wallet_logo.png');
@@ -36,13 +37,13 @@ const styles = StyleSheet.create({
 });
 
 export default class Home extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.goToPlaceholder = this.goToPlaceholder.bind(this);
+    this.goToAuthorisation = this.goToAuthorisation.bind(this);
   }
 
-  goToPlaceholder() {
-    this.props.navigator.push(Router.getRoute('placeholder'));
+  goToAuthorisation() {
+    this.props.navigator.push(Router.getRoute('authorisation'));
   }
 
   render() {
@@ -63,7 +64,7 @@ export default class Home extends React.Component {
         </View>
         <View style={styles.loginButton}>
           <Button
-            onPress={this.goToPlaceholder}
+            onPress={this.goToAuthorisation}
             title="Unlock"
             color="rgb(0,163,158)"
           />
@@ -72,3 +73,7 @@ export default class Home extends React.Component {
     );
   }
 }
+
+Home.propTypes = {
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
+};

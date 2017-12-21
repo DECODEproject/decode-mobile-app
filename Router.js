@@ -2,11 +2,11 @@ import {
   createRouter,
 } from '@expo/ex-navigation';
 import Home from './screens/Home';
-import Placeholder from './screens/Placeholder';
+import Authorisation from './screens/Authorisation';
 
 const Router = createRouter(() => ({
   home: () => Home,
-  placeholder: () => Placeholder,
+  authorisation: () => Authorisation,
 }));
 
 export default Router;

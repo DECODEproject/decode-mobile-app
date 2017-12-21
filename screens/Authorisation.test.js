@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from './Home';
+import Authorisation from './Authorisation';
 
 it('renders Home component', () => {
-  const rendered = renderer.create(<Home navigator={{ push: () => {} }} />).toJSON();
+  const rendered = renderer.create(<Authorisation />).toJSON();
   expect(rendered).toMatchSnapshot();
 });
