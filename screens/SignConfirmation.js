@@ -1,14 +1,14 @@
 import React from 'react';
-import { StyleSheet, Image, Text, View, Button, FlatList } from 'react-native';
-
-const decodeLogo = require('../assets/images/wallet_logo.png');
+import { StyleSheet, Text, View, Button } from 'react-native';
+import PropTypes from 'prop-types';
+import Router from '../Router';
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     backgroundColor: '#FFF',
     flex: 1,
-    paddingTop: 30,
+    paddingTop: 10,
   },
   logo: {
     height: 60,
@@ -43,25 +43,46 @@ const styles = StyleSheet.create({
   },
 });
 
-function PetitionSummarySign() {
-  return (
-    <View style={styles.container}>
-      <Image
-        style={styles.logo}
-        source={decodeLogo}
-      />
-      <Text style={styles.textSubHeading}>Thank you for signing</Text>
-      <Text style={styles.textHeading}>Create communal space in Atlantis</Text>
-      <Text style={styles.textParagraph}>You can view the results of the petition by returning to Secure Petitions</Text>
-      <View style={styles.buttonContainer}>
-        <Button
-          onPress={() => true}
-          title="Return to Secure Petitions"
-          color="rgb(0,163,158)"
-        />
-      </View>
-    </View>
-  );
-}
+export default class SignConfirmation extends React.Component {
+  static route = {
+    navigationBar: {
+      tintColor: 'rgb(0,163,158)',
+      title: 'Confirmation',
+    },
+  }
 
-export default PetitionSummarySign;
+  constructor(props) {
+    super(props);
+    this.goToHome = this.goToHome.bind(this);
+  }
+
+  goToHome() {
+    this.props.navigator.push(Router.getRoute('home'));
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.textSubHeading}>Thank you for signing</Text>
+        <Text style={styles.textHeading}>Create communal space in Atlantis</Text>
+        <Text style={styles.textParagraph}>You can view the results of
+        the petition by returning to Secure Petitions</Text>
+        <View style={styles.buttonContainer}>
+          <Button
+            onPress={this.goToHome}
+            title="Return to Secure Petitions"
+            color="rgb(0,163,158)"
+          />
+        </View>
+      </View>
+    );
+  }
+}
+SignConfirmation.propTypes = {
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+};
+
+SignConfirmation.defaultProps = {
+  navigator: '',
+};
+

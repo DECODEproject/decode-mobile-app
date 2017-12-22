@@ -1,51 +1,52 @@
 import React from 'react';
-import { StyleSheet, Image, Text, View, Button, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
-const decodeLogo = require('../assets/images/wallet_logo.png');
-
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center',
+    alignItems: 'flex-start',
     backgroundColor: '#FFF',
     flex: 1,
-    paddingTop: 30,
-  },
-  logo: {
-    height: 60,
-    marginBottom: 30,
-    width: 80,
-  },
-  textHeading: {
-    fontSize: 24,
-    marginBottom: 30,
-    textAlign: 'center',
-  },
-  textContainer: {
-    marginBottom: 30,
-    width: 300,
-  },
-  flatList: {
-    marginTop: 15,
-    marginBottom: 30,
+    paddingTop: 10,
   },
   buttonContainer: {
     width: 300,
   },
   textParagraph: {
-    marginBottom: 15,
+    marginBottom: 10,
   },
-  PetitionSummary: {
-    backgroundColor: '#EEE',
-    width: 300,
+  textContainer: {
+    marginBottom: 10,
+    padding: 10,
   },
-  textSubHeading: {
+  petitionHeading: {
     fontSize: 16,
+    marginBottom: 10,
+
+  },
+  petitionLabel: {
+    color: '#9B9B9B',
+  },
+  petitionSummary: {
+    alignSelf: 'stretch',
+    borderBottomWidth: 3,
+    borderBottomColor: '#EFEFF2',
+    padding: 10,
+  },
+  attributeDetails: {
+    color: '#9B9B9B',
   },
 });
 
 export default class PetitionSummarySign extends React.Component {
+  static route = {
+    navigationBar: {
+      tintColor: 'rgb(0,163,158)',
+      title: 'Sign Petition',
+    },
+  }
+
   constructor(props) {
     super(props);
     this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
@@ -58,26 +59,24 @@ export default class PetitionSummarySign extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image
-          style={styles.logo}
-          source={decodeLogo}
-        />
-
-        <Text style={styles.textHeading}>Attribute Added</Text>
-        <Text style={styles.textHeading}>Sign Petition</Text>
-        <View style={styles.PetitionSummary}>
-          <Text style={styles.textSubHeading}>Petition Summary</Text>
+        <View style={styles.petitionSummary}>
+          <Text style={styles.petitionHeading}>Petition Summary</Text>
+          <Text style={styles.petitionLabel}>Title</Text>
+          <Text>Create communal space in Atlantis</Text>
+          <Text style={styles.petitionLabel}>Created by</Text>
+          <Text>John Bloggs, Atlantis Community College</Text>
+          <Text style={styles.petitionLabel}>Closing date</Text>
+          <Text>31 August 2020</Text>
+          <Text style={styles.petitionLabel}>Information</Text>
+          <Text>To sign this petition you must be a verified resident of Atlantis</Text>
         </View>
         <View style={styles.textContainer}>
-          <Text style={styles.textParagraph}>To sign this petition you must be a resident
-            of Atlantis. To demonstrate that you are a resident of Atlantis,
-            you are required to share the
-            following attribute with Secure Petitions when you sign the petition.</Text>
-          <FlatList
-            style={styles.flatList}
-            data={[{ key: 'Atlantis Residency - Issued by Atlantis Council' }]}
-            renderItem={({ item }) => <Text>{item.key}</Text>}
-          />
+          <Text style={styles.textParagraph}>Please select the information
+          that you would like to share with Secure Petitions</Text>
+          <Text style={styles.attributeLabel}>REQUIRED</Text>
+          <Text>- Verified Atlantis Resident</Text>
+          <Text style={styles.attributeDetails}>Issued by: Atlantis Council</Text>
+          <Text style={styles.attributeDetails}>Issued on: 22 December 2017</Text>
         </View>
         <View style={styles.buttonContainer}>
           <Button

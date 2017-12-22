@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     flex: 1,
-    paddingTop: 30,
+    paddingTop: 10,
   },
   textHeading: {
     fontSize: 24,
@@ -17,11 +17,7 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     marginBottom: 30,
-    width: 300,
-  },
-  flatList: {
-    marginTop: 15,
-    marginBottom: 30,
+    padding: 10,
   },
   buttonContainer: {
     width: 300,
@@ -57,11 +53,7 @@ export default class Authorisation extends React.Component {
             to connect with your DECODE wallet</Text>
           <Text style={styles.textParagraph}>Secure Petitions may request access to
             the following information stored in your wallet.</Text>
-          <FlatList
-            style={styles.flatList}
-            data={[{ key: '- Atlantis Residency' }]}
-            renderItem={({ item }) => <Text>{item.key}</Text>}
-          />
+          <Text style={styles.textParagraph}>- Verified Atlantis Resident</Text>
           <Text>Accepting this connection will not automatically share
             this information with Secure Petitions.</Text>
         </View>
