@@ -11,6 +11,8 @@ const Router = createRouter(() => ({
   home: () => Home,
   authorisation: () => Authorisation,
   petitionSummaryGet: () => PetitionSummaryGet,
+  petitionSummarySign: () => PetitionSummarySign,
+  signConfirmation: () => SignConfirmation,
 }));
 
 export default Router;

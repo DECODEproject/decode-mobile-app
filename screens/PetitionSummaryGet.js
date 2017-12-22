@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, FlatList, ScrollView, Linking } from 'react-native';
+import { Constants, WebBrowser } from 'expo';
+import { StyleSheet, Text, View, Button, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -45,25 +46,46 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class PetitionSummary extends React.Component {
-  constructor(props) {
-    super(props);
-    this.goToAtlantis = this.goToAtlantis.bind(this);
-  }
-
-  goToAtlantis() {
-    Linking.openURL('http://localhost:3000/').catch(err => console.error('An error occurred', err));
-  }
-
+export default class PetitionSummaryGet extends React.Component {
   static route = {
     navigationBar: {
       tintColor: 'rgb(0,163,158)',
       title: 'Sign Petition',
-    }
+    },
   }
 
-  render() {
+  constructor(props) {
+    super(props);
+    this.goToPetitionSummarySign = this.goToPetitionSummarySign.bind(this);
+  }
 
+  goToPetitionSummarySign() {
+    this.props.navigator.push(Router.getRoute('petitionSummarySign'));
+  }
+
+  removeLinkingListener = () => {
+    Linking.removeEventListener('url', this.handleRedirect);
+  };
+
+  addLinkingListener = () => {
+    Linking.addEventListener('url', this.handleRedirect);
+  };
+
+  handleRedirect = () => {
+    WebBrowser.dismissBrowser();
+    this.goToPetitionSummarySign();
+  };
+
+  openWebBrowserAsync = async () => {
+    this.addLinkingListener();
+    const result = await WebBrowser.openBrowserAsync(
+      `http://localhost:3000/?linkingUri=${Constants.linkingUri}`,
+    );
+    this.removeLinkingListener();
+    this.setState({ result });
+  };
+
+  render() {
     return (
       <View style={styles.container}>
         <Text style={styles.textSubHeading}>Petition Summary</Text>
@@ -91,7 +113,7 @@ export default class PetitionSummary extends React.Component {
         </View>
         <View style={styles.buttonContainer}>
           <Button
-            onPress={this.goToAtlantis}
+            onPress={this.openWebBrowserAsync}
             title="Get Attribute"
             color="rgb(0,163,158)"
           />
@@ -101,6 +123,10 @@ export default class PetitionSummary extends React.Component {
   }
 }
 
-PetitionSummary.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
+PetitionSummaryGet.propTypes = {
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+};
+
+PetitionSummaryGet.defaultProps = {
+  navigator: '',
 };

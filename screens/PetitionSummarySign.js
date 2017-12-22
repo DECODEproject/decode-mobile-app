@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Image, Text, View, Button, FlatList } from 'react-native';
+import PropTypes from 'prop-types';
+import Router from '../Router';
 
 const decodeLogo = require('../assets/images/wallet_logo.png');
 
@@ -43,39 +45,57 @@ const styles = StyleSheet.create({
   },
 });
 
-function PetitionSummarySign() {
-  return (
-    <View style={styles.container}>
-      <Image
-        style={styles.logo}
-        source={decodeLogo}
-      />
+export default class PetitionSummarySign extends React.Component {
+  constructor(props) {
+    super(props);
+    this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
+  }
 
-      <Text style={styles.textHeading}>Attribute Added</Text>
-      <Text style={styles.textHeading}>Sign Petition</Text>
-      <View style={styles.PetitionSummary}>
-        <Text style={styles.textSubHeading}>Petition Summary</Text>
-      </View>
-      <View style={styles.textContainer}>
-        <Text style={styles.textParagraph}>To sign this petition you must be a resident
-        of Atlantis. To demonstrate that you are a resident of Atlantis,
-        you are required to share the
-        following attribute with Secure Petitions when you sign the petition.</Text>
-        <FlatList
-          style={styles.flatList}
-          data={[{ key: 'Atlantis Residency - Issued by Atlantis Council' }]}
-          renderItem={({ item }) => <Text>{item.key}</Text>}
+  goToSignConfirmation() {
+    this.props.navigator.push(Router.getRoute('signConfirmation'));
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Image
+          style={styles.logo}
+          source={decodeLogo}
         />
+
+        <Text style={styles.textHeading}>Attribute Added</Text>
+        <Text style={styles.textHeading}>Sign Petition</Text>
+        <View style={styles.PetitionSummary}>
+          <Text style={styles.textSubHeading}>Petition Summary</Text>
+        </View>
+        <View style={styles.textContainer}>
+          <Text style={styles.textParagraph}>To sign this petition you must be a resident
+            of Atlantis. To demonstrate that you are a resident of Atlantis,
+            you are required to share the
+            following attribute with Secure Petitions when you sign the petition.</Text>
+          <FlatList
+            style={styles.flatList}
+            data={[{ key: 'Atlantis Residency - Issued by Atlantis Council' }]}
+            renderItem={({ item }) => <Text>{item.key}</Text>}
+          />
+        </View>
+        <View style={styles.buttonContainer}>
+          <Button
+            onPress={this.goToSignConfirmation}
+            title="Sign Petition"
+            color="rgb(0,163,158)"
+          />
+        </View>
       </View>
-      <View style={styles.buttonContainer}>
-        <Button
-          onPress={() => true}
-          title="Sign Petition"
-          color="rgb(0,163,158)"
-        />
-      </View>
-    </View>
-  );
+    );
+  }
 }
 
-export default PetitionSummarySign;
+PetitionSummarySign.propTypes = {
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+};
+
+PetitionSummarySign.defaultProps = {
+  navigator: '',
+};
+

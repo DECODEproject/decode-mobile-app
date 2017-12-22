@@ -31,7 +31,15 @@ const styles = StyleSheet.create({
   },
 });
 
+
 export default class Authorisation extends React.Component {
+  static route = {
+    navigationBar: {
+      tintColor: 'rgb(0,163,158)',
+      title: 'Authorise Connection',
+    },
+  }
+
   constructor(props) {
     super(props);
     this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
@@ -39,13 +47,6 @@ export default class Authorisation extends React.Component {
 
   goToPetitionSummaryGet() {
     this.props.navigator.push(Router.getRoute('petitionSummaryGet'));
-  }
-  
-  static route = {
-    navigationBar: {
-      tintColor: 'rgb(0,163,158)',
-      title: 'Authorise Connection',
-    }
   }
 
   render() {
@@ -77,5 +78,9 @@ export default class Authorisation extends React.Component {
 }
 
 Authorisation.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+};
+
+Authorisation.defaultProps = {
+  navigator: '',
 };
