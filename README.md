@@ -1,4 +1,4 @@
-# Secure Petitions
+# Wallet app
 
 ## Run
 
