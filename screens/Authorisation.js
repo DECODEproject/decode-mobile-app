@@ -74,5 +74,5 @@ Authorisation.propTypes = {
 };
 
 Authorisation.defaultProps = {
-  navigator: '',
+  navigator: { push: () => {} },
 };

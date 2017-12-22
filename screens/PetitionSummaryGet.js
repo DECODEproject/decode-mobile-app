@@ -119,5 +119,5 @@ PetitionSummaryGet.propTypes = {
 };
 
 PetitionSummaryGet.defaultProps = {
-  navigator: '',
+  navigator: { push: () => {} },
 };

@@ -95,6 +95,5 @@ PetitionSummarySign.propTypes = {
 };
 
 PetitionSummarySign.defaultProps = {
-  navigator: '',
+  navigator: { push: () => {} },
 };
-
