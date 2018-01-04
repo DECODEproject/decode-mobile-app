@@ -73,7 +73,7 @@ export default class PetitionSummaryGet extends React.Component {
   openWebBrowserAsync = async () => {
     this.addLinkingListener();
     const result = await WebBrowser.openBrowserAsync(
-      `http://localhost:3000/?linkingUri=${Constants.linkingUri}`,
+      `http://localhost:3010/?linkingUri=${Constants.linkingUri}`,
     );
     this.removeLinkingListener();
     this.setState({ result });

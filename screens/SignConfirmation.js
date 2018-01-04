@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -60,6 +61,10 @@ export default class SignConfirmation extends React.Component {
     this.props.navigator.push(Router.getRoute('home'));
   }
 
+  handlePress() {
+    Linking.openURL('http://localhost:8080/#/59f888c8ce33c76884e8cf16');
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -74,6 +79,9 @@ export default class SignConfirmation extends React.Component {
             color="rgb(0,163,158)"
           />
         </View>
+        <Text onPress={this.handlePress}>
+          CLICK HERE
+        </Text>
       </View>
     );
   }
