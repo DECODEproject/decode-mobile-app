@@ -40,10 +40,15 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.goToAuthorisation = this.goToAuthorisation.bind(this);
+    this.goToQRScanner = this.goToQRScanner.bind(this);
   }
 
   goToAuthorisation() {
     this.props.navigator.push(Router.getRoute('authorisation'));
+  }
+
+  goToQRScanner() {
+    this.props.navigator.push(Router.getRoute('QRScanner'));
   }
 
 
@@ -67,6 +72,13 @@ export default class Home extends React.Component {
           <Button
             onPress={this.goToAuthorisation}
             title="Unlock"
+            color="rgb(0,163,158)"
+          />
+        </View>
+        <View style={styles.loginButton}>
+          <Button
+            onPress={this.goToQRScanner}
+            title="QR Code Scanner"
             color="rgb(0,163,158)"
           />
         </View>
