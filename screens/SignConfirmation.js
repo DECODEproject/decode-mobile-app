@@ -1,52 +1,85 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Linking } from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity, Linking, Image} from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+
+const tick = require('../assets/images/decode_tick.jpg');
 
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: '#FFF',
+    backgroundColor: 'rgb(246, 246, 246)',
     flex: 1,
-    paddingTop: 10,
   },
-  logo: {
-    height: 60,
-    marginBottom: 30,
-    width: 80,
+  buttonBox: {
+    width: 250,
+    alignSelf: 'center',
+  },
+  confirmationBox: {
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    paddingBottom: 40,
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 40,
+    margin: 16,
+    marginTop: 30,
   },
   textHeading: {
-    fontSize: 24,
+    fontSize: 20,
+    fontWeight: '500',
     marginBottom: 30,
     textAlign: 'center',
   },
-  textContainer: {
-    marginBottom: 30,
-    width: 300,
-  },
-  flatList: {
-    marginTop: 15,
-    marginBottom: 30,
-  },
-  buttonContainer: {
-    width: 300,
-  },
   textParagraph: {
+    fontSize: 14,
     marginBottom: 15,
+    textAlign: 'center',
   },
   PetitionSummary: {
     backgroundColor: '#EEE',
     width: 300,
   },
   textSubHeading: {
-    fontSize: 16,
+    fontSize: 14,
+    textAlign: 'center',
+    marginBottom: 4,
+  },
+  button: {
+    alignSelf: 'center',
+    backgroundColor: 'rgb(0,163,158)',
+    borderRadius: 2,
+    elevation: 2,
+    paddingBottom: 8,
+    paddingLeft: 16,
+    paddingRight: 16,
+    paddingTop: 8,
+    marginBottom: 15,
+    shadowColor: 'rgba(0, 0, 0, 0.54)',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    width: 250,
+  },
+  buttonText: {
+    color: '#FFF',
+    fontSize: 14,
+    fontWeight: '500',
+    alignSelf: 'center',
+  },
+  tick: {
+    height: 75,
+    width: 75,
+    alignSelf: 'center',
+    marginBottom: 40,
   },
 });
 
 export default class SignConfirmation extends React.Component {
   static route = {
     navigationBar: {
+      backgroundColor: 'white',
       tintColor: 'rgb(0,163,158)',
       title: 'Confirmation',
     },
@@ -58,7 +91,7 @@ export default class SignConfirmation extends React.Component {
   }
 
   goToHome() {
-    this.props.navigator.push(Router.getRoute('home'));
+    this.props.navigator.push(Router.getRoute('authorisation'));
   }
 
   handlePress() {
@@ -68,26 +101,27 @@ export default class SignConfirmation extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.textSubHeading}>Thank you for signing</Text>
-        <Text style={styles.textHeading}>Create communal space in Atlantis</Text>
-        <Text style={styles.textParagraph}>You can view the results of
-        the petition by returning to Secure Petitions</Text>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this.goToHome}
-            title="Return to Secure Petitions"
-            color="rgb(0,163,158)"
+        <View style={styles.confirmationBox}>
+          <Image
+            style={styles.tick}
+            source={tick}
           />
+          <View style={styles.buttonBox}>
+            <Text style={styles.textSubHeading}>Thank you for signing</Text>
+            <Text style={styles.textHeading}>Create communal space in Atlantis</Text>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={this.handlePress}>
+              <Text style={styles.buttonText}>RETURN TO SECURE PETITIONS</Text>
+            </TouchableOpacity>
+          </View>
         </View>
-        <Text onPress={this.handlePress}>
-          CLICK HERE
-        </Text>
       </View>
     );
   }
 }
 SignConfirmation.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  navigator: PropTypes.shape({push: PropTypes.func.isRequired}),
 };
 
 SignConfirmation.defaultProps = {

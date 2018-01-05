@@ -1,47 +1,101 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import {Constants, WebBrowser} from 'expo';
+import {StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView} from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'flex-start',
-    backgroundColor: '#FFF',
+    backgroundColor: 'rgb(246, 246, 246)',
     flex: 1,
-    paddingTop: 10,
   },
-  buttonContainer: {
-    width: 300,
-  },
-  textParagraph: {
-    marginBottom: 10,
-  },
-  textContainer: {
-    marginBottom: 10,
-    padding: 10,
-  },
-  petitionHeading: {
-    fontSize: 16,
-    marginBottom: 10,
-
-  },
-  petitionLabel: {
-    color: '#9B9B9B',
-  },
-  petitionSummary: {
+  petitionSummaryContainer: {
     alignSelf: 'stretch',
-    borderBottomWidth: 3,
-    borderBottomColor: '#EFEFF2',
+    backgroundColor: '#FFF',
     padding: 10,
+    margin: 16,
+  },
+  petitionTitle: {
+    fontSize: 20,
+    marginBottom: 20,
+    fontWeight: '500',
+    color: 'rgba(0, 0, 0, 0.87)',
+  },
+  paragraph: {
+    color: 'rgba(0, 0, 0, 0.87)',
+    fontSize: 14,
+    lineHeight: 20,
+    marginBottom: 15,
+  },
+  caption: {
+    fontSize: 12,
+    color: 'rgba(0, 0, 0, 0.54)',
+  },
+  textTitle: {
+    fontSize: 20,
+    fontWeight: '500',
+    marginLeft: 16,
+    marginBottom: 10,
+  },
+  attributeContainer: {
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    paddingBottom: 16,
+  },
+  attributeName: {
+    color: 'rgba(0, 0, 0, 0.87)',
+    fontSize: 16,
+    fontWeight: '500',
+    marginLeft: 16,
+    marginTop: 16,
+    marginRight: 16,
   },
   attributeDetails: {
-    color: '#9B9B9B',
+    color: 'rgba(0, 0, 0, 0.54)',
+    marginBottom: 4,
+    marginLeft: 16,
+    marginTop: 4,
+
+  },
+  footerContainer: {
+    height: 64,
+    backgroundColor: '#FFF',
+    borderWidth: 1,
+    borderColor: 'rgba(0, 0, 0, 0.15)',
+  },
+  signButton: {
+    alignSelf: 'stretch',
+    backgroundColor: 'rgb(0,163,158)',
+    borderRadius: 2,
+    elevation: 2,
+    height: 36,
+    marginBottom: 18,
+    marginTop: 10,
+    marginRight: 16,
+    marginLeft: 16,
+    paddingBottom: 8,
+    paddingLeft: 16,
+    paddingRight: 16,
+    paddingTop: 8,
+    shadowColor: 'rgba(0, 0, 0, 0.54)',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+  },
+  buttonText: {
+    color: '#FFF',
+    fontSize: 14,
+    fontWeight: '500',
+    alignSelf: 'center',
   },
 });
 
-export default class PetitionSummarySign extends React.Component {
+export default class PetitionSummaryGet extends React.Component {
   static route = {
     navigationBar: {
+      backgroundColor: 'white',
+      fontSize: 20,
+      fontWeight: '500',
       tintColor: 'rgb(0,163,158)',
       title: 'Sign Petition',
     },
@@ -59,41 +113,40 @@ export default class PetitionSummarySign extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.petitionSummary}>
-          <Text style={styles.petitionHeading}>Petition Summary</Text>
-          <Text style={styles.petitionLabel}>Title</Text>
-          <Text>Create communal space in Atlantis</Text>
-          <Text style={styles.petitionLabel}>Created by</Text>
-          <Text>John Bloggs, Atlantis Community College</Text>
-          <Text style={styles.petitionLabel}>Closing date</Text>
-          <Text>31 August 2020</Text>
-          <Text style={styles.petitionLabel}>Information</Text>
-          <Text>To sign this petition you must be a verified resident of Atlantis</Text>
-        </View>
-        <View style={styles.textContainer}>
-          <Text style={styles.textParagraph}>Please select the information
-          that you would like to share with Secure Petitions</Text>
-          <Text style={styles.attributeLabel}>REQUIRED</Text>
-          <Text>- Verified Atlantis Resident</Text>
-          <Text style={styles.attributeDetails}>Issued by: Atlantis Council</Text>
-          <Text style={styles.attributeDetails}>Issued on: 22 December 2017</Text>
-        </View>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this.goToSignConfirmation}
-            title="Sign Petition"
-            color="rgb(0,163,158)"
-          />
+        <ScrollView>
+          <View style={styles.petitionSummaryContainer}>
+            <Text style={styles.petitionTitle}>Create communal Space in Atlantis</Text>
+            <Text style={styles.paragraph}>Availability fairbnb cryptographic modelling data
+              ontology pilots. Availability fairbnbcryptography
+              hello. Availability fairbnb. Availability fairbnb</Text>
+            <Text style={styles.caption}>Closing: 28 October 2018</Text>
+          </View>
+          <Text style={styles.textTitle}>Your Information</Text>
+          <View style={styles.attributeContainer}>
+            <Text style={styles.attributeName}>Verified resident of Atlantis</Text>
+            <Text style={styles.attributeDetails}>To get this attribute you will be directed
+              to the Atlantis Council website</Text>
+          </View>
+        </ScrollView>
+        <View style={styles.footerContainer}>
+           <TouchableOpacity
+             style={styles.signButton}
+             onPress={this.goToSignConfirmation}>
+             <Text style={styles.buttonText}>SIGN PETITION</Text>
+           </TouchableOpacity>
         </View>
       </View>
     );
   }
 }
 
-PetitionSummarySign.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+PetitionSummaryGet.propTypes = {
+  navigator: PropTypes.shape({push: PropTypes.func.isRequired}),
 };
 
-PetitionSummarySign.defaultProps = {
-  navigator: { push: () => {} },
+PetitionSummaryGet.defaultProps = {
+  navigator: {
+    push: () => {
+    }
+  },
 };

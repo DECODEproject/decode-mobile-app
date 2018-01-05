@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: 'rgb(246, 246, 246)',
     flex: 1,
     paddingTop: 10,
   },
@@ -19,11 +19,32 @@ const styles = StyleSheet.create({
     marginBottom: 30,
     padding: 10,
   },
-  buttonContainer: {
+  buttonBox: {
     width: 300,
   },
   textParagraph: {
     marginBottom: 15,
+  },
+  Button: {
+    alignSelf: 'center',
+    backgroundColor: 'rgb(0,163,158)',
+    borderRadius: 2,
+    elevation: 2,
+    paddingBottom: 8,
+    paddingLeft: 16,
+    paddingRight: 16,
+    paddingTop: 8,
+    shadowColor: 'rgba(0, 0, 0, 0.54)',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    width: 250,
+  },
+  buttonText: {
+    color: '#FFF',
+    fontSize: 14,
+    fontWeight: '500',
+    alignSelf: 'center',
   },
 });
 
@@ -31,6 +52,7 @@ const styles = StyleSheet.create({
 export default class Authorisation extends React.Component {
   static route = {
     navigationBar: {
+      backgroundColor: 'white',
       tintColor: 'rgb(0,163,158)',
       title: 'Authorise Connection',
     },
@@ -57,22 +79,23 @@ export default class Authorisation extends React.Component {
           <Text>Accepting this connection will not automatically share
             this information with Secure Petitions.</Text>
         </View>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this.goToPetitionSummaryGet}
-            title="Authorise Connection"
-            color="rgb(0,163,158)"
-          />
-        </View>
+        <TouchableOpacity
+          style={styles.Button}
+          onPress={this.goToPetitionSummaryGet}>
+          <Text style={styles.buttonText}>AUTHORISE</Text>
+        </TouchableOpacity>
       </View>
     );
   }
 }
 
 Authorisation.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  navigator: PropTypes.shape({push: PropTypes.func.isRequired}),
 };
 
 Authorisation.defaultProps = {
-  navigator: { push: () => {} },
+  navigator: {
+    push: () => {
+    }
+  },
 };
