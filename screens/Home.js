@@ -1,5 +1,5 @@
 import React from 'react';
-import {Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity} from 'react-native';
+import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity, Button } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     paddingRight: 16,
     paddingTop: 8,
     shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: {width: 0, height: 2},
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
     width: 250,
@@ -58,11 +58,17 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
+    this.goToQRScanner = this.goToQRScanner.bind(this);
   }
 
   goToPetitionSummaryGet() {
     this.props.navigator.push(Router.getRoute('petitionSummaryGet'));
   }
+
+  goToQRScanner() {
+    this.props.navigator.push(Router.getRoute('QRScanner'));
+  }
+
 
   render() {
     return (
@@ -82,14 +88,22 @@ export default class Home extends React.Component {
         </View>
         <TouchableOpacity
           style={styles.Button}
-          onPress={this.goToPetitionSummaryGet}>
+          onPress={this.goToPetitionSummaryGet}
+        >
           <Text style={styles.buttonText}>UNLOCK</Text>
         </TouchableOpacity>
+        <View style={styles.loginButton}>
+          <Button
+            onPress={this.goToQRScanner}
+            title="QR Code Scanner"
+            color="rgb(0,163,158)"
+          />
+        </View>
       </View>
     );
   }
 }
 
 Home.propTypes = {
-  navigator: PropTypes.shape({push: PropTypes.func.isRequired}).isRequired,
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
 };
