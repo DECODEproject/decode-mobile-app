@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   },
   QRButton: {
     marginTop: 80,
+
   },
 
   buttonText: {
@@ -97,14 +98,6 @@ export default class Home extends React.Component {
         >
           <Text style={styles.buttonText}>UNLOCK</Text>
         </TouchableOpacity>
-        <View style={styles.QRButton}>
-          <TouchableOpacity
-            style={styles.Button}
-            onPress={this.goToQRScanner}
-          >
-            <Text style={styles.buttonText}>QR SCANNER</Text>
-          </TouchableOpacity>
-        </View>
       </View>
     );
   }
