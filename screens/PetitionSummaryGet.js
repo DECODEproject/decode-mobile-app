@@ -1,6 +1,6 @@
 import React from 'react';
-import {Constants, WebBrowser} from 'expo';
-import {StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView} from 'react-native';
+import { Constants, WebBrowser } from 'expo';
+import { StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -73,13 +73,13 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     width: 100,
   },
-   buttonText: {
+  buttonText: {
     color: 'rgb(255, 255, 255)',
     fontSize: 14,
     fontWeight: '500',
     alignSelf: 'center',
   },
- footerContainer: {
+  footerContainer: {
     height: 64,
     backgroundColor: '#FFF',
     borderWidth: 1,
@@ -146,12 +146,15 @@ export default class PetitionSummaryGet extends React.Component {
   };
 
   openWebBrowserAsync = async () => {
+    const queryParam = encodeURIComponent(Constants.linkingUri);
+    const url = `http://localhost:3010/#/?linkingUri=${queryParam}`;
+
     this.addLinkingListener();
     const result = await WebBrowser.openBrowserAsync(
-      `http://localhost:3010/?linkingUri=${Constants.linkingUri}`,
+      url,
     );
     this.removeLinkingListener();
-    this.setState({result});
+    this.setState({ result });
   };
 
   render() {
@@ -170,18 +173,20 @@ export default class PetitionSummaryGet extends React.Component {
             <Text style={styles.attributeName}>Verified resident of Atlantis</Text>
             <Text style={styles.attributeDetails}>To get this attribute you will be directed
               to the Atlantis Council website</Text>
-              <TouchableOpacity
-                style={styles.Button}
-                onPress={this.openWebBrowserAsync}>
-                <Text style={styles.buttonText}>REQUEST</Text>
-              </TouchableOpacity>
+            <TouchableOpacity
+              style={styles.Button}
+              onPress={this.openWebBrowserAsync}
+            >
+              <Text style={styles.buttonText}>REQUEST</Text>
+            </TouchableOpacity>
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>
-           <View
-             style={styles.signButton}>
-             <Text style={styles.disabledButtonText}>SIGN PETITION</Text>
-           </View>
+          <View
+            style={styles.signButton}
+          >
+            <Text style={styles.disabledButtonText}>SIGN PETITION</Text>
+          </View>
         </View>
       </View>
     );
@@ -189,12 +194,12 @@ export default class PetitionSummaryGet extends React.Component {
 }
 
 PetitionSummaryGet.propTypes = {
-  navigator: PropTypes.shape({push: PropTypes.func.isRequired}),
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
 };
 
 PetitionSummaryGet.defaultProps = {
   navigator: {
     push: () => {
-    }
+    },
   },
 };
