@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity, Button } from 'react-native';
+import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -46,6 +46,10 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     width: 250,
   },
+  QRButton: {
+    marginTop: 80,
+  },
+
   buttonText: {
     color: '#FFF',
     fontSize: 14,
@@ -77,6 +81,7 @@ export default class Home extends React.Component {
           style={styles.logo}
           source={decodeLogo}
         />
+
         <Text style={styles.textHeading}>Welcome, Jane Doe</Text>
         <View style={styles.textInput}>
           <TextInput
@@ -92,12 +97,13 @@ export default class Home extends React.Component {
         >
           <Text style={styles.buttonText}>UNLOCK</Text>
         </TouchableOpacity>
-        <View style={styles.loginButton}>
-          <Button
+        <View style={styles.QRButton}>
+          <TouchableOpacity
+            style={styles.Button}
             onPress={this.goToQRScanner}
-            title="QR Code Scanner"
-            color="rgb(0,163,158)"
-          />
+          >
+            <Text style={styles.buttonText}>QR SCANNER</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
