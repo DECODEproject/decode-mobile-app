@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
 
   },
   Button: {
-    alignSelf: 'flex-end',
     backgroundColor: 'rgb(0,163,158)',
     borderRadius: 2,
     elevation: 2,
@@ -109,6 +108,16 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '500',
     alignSelf: 'center',
+  },
+  requiredText: {
+    color: 'red',
+  },
+  requestContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginLeft: 16,
   },
 });
 
@@ -173,12 +182,15 @@ export default class PetitionSummaryGet extends React.Component {
             <Text style={styles.attributeName}>Verified resident of Atlantis</Text>
             <Text style={styles.attributeDetails}>To get this attribute you will be directed
               to the Atlantis Council website</Text>
-            <TouchableOpacity
-              style={styles.Button}
-              onPress={this.openWebBrowserAsync}
-            >
-              <Text style={styles.buttonText}>REQUEST</Text>
-            </TouchableOpacity>
+            <View style={styles.requestContainer}>
+              <Text style={styles.requiredText}>REQUIRED</Text>
+              <TouchableOpacity
+                style={styles.Button}
+                onPress={this.openWebBrowserAsync}
+              >
+                <Text style={styles.buttonText}>REQUEST</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>

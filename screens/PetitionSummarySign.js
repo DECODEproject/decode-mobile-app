@@ -1,6 +1,5 @@
 import React from 'react';
-import {Constants, WebBrowser} from 'expo';
-import {StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -88,6 +87,11 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     alignSelf: 'center',
   },
+  requiredText: {
+    color: 'red',
+    marginLeft: 16,
+    marginTop: 8,
+  },
 });
 
 export default class PetitionSummaryGet extends React.Component {
@@ -126,14 +130,16 @@ export default class PetitionSummaryGet extends React.Component {
             <Text style={styles.attributeName}>Verified resident of Atlantis</Text>
             <Text style={styles.attributeDetails}>To get this attribute you will be directed
               to the Atlantis Council website</Text>
+            <Text style={styles.requiredText}>REQUIRED</Text>
           </View>
         </ScrollView>
         <View style={styles.footerContainer}>
-           <TouchableOpacity
-             style={styles.signButton}
-             onPress={this.goToSignConfirmation}>
-             <Text style={styles.buttonText}>SIGN PETITION</Text>
-           </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.signButton}
+            onPress={this.goToSignConfirmation}
+          >
+            <Text style={styles.buttonText}>SIGN PETITION</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -141,12 +147,12 @@ export default class PetitionSummaryGet extends React.Component {
 }
 
 PetitionSummaryGet.propTypes = {
-  navigator: PropTypes.shape({push: PropTypes.func.isRequired}),
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
 };
 
 PetitionSummaryGet.defaultProps = {
   navigator: {
     push: () => {
-    }
+    },
   },
 };
