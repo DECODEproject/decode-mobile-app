@@ -57,12 +57,12 @@ const styles = StyleSheet.create({
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
+    this.goToAuthorisation = this.goToAuthorisation.bind(this);
     this.goToQRScanner = this.goToQRScanner.bind(this);
   }
 
-  goToPetitionSummaryGet() {
-    this.props.navigator.push(Router.getRoute('petitionSummaryGet'));
+  goToAuthorisation() {
+    this.props.navigator.push(Router.getRoute('authorisation'));
   }
 
   goToQRScanner() {
@@ -88,7 +88,7 @@ export default class Home extends React.Component {
         </View>
         <TouchableOpacity
           style={styles.Button}
-          onPress={this.goToPetitionSummaryGet}
+          onPress={this.goToAuthorisation}
         >
           <Text style={styles.buttonText}>UNLOCK</Text>
         </TouchableOpacity>

@@ -1,7 +1,9 @@
 import React from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+
+const securePetitionsLogo = require('../assets/images/secure_petitions_logo.png');
 
 const styles = StyleSheet.create({
   container: {
@@ -10,20 +12,16 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 10,
   },
-  textHeading: {
-    fontSize: 24,
-    marginBottom: 30,
-    textAlign: 'center',
-  },
   textContainer: {
     marginBottom: 30,
-    padding: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   buttonBox: {
     width: 300,
   },
   textParagraph: {
-    marginBottom: 15,
+    textAlign: 'center',
   },
   Button: {
     alignSelf: 'center',
@@ -35,7 +33,7 @@ const styles = StyleSheet.create({
     paddingRight: 16,
     paddingTop: 8,
     shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: {width: 0, height: 2},
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
     width: 250,
@@ -45,6 +43,22 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '500',
     alignSelf: 'center',
+  },
+  logo: {
+    height: 35,
+    alignSelf: 'center',
+    marginBottom: 40,
+    width: 210,
+  },
+  authorisationBox: {
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    paddingBottom: 40,
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 40,
+    margin: 16,
+    marginTop: 40,
   },
 });
 
@@ -70,32 +84,34 @@ export default class Authorisation extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.textContainer}>
-          <Text style={styles.textHeading}>Secure Petitions is requesting
+        <View style={styles.authorisationBox}>
+          <Image
+            style={styles.logo}
+            source={securePetitionsLogo}
+          />
+          <View style={styles.textContainer}>
+            <Text style={styles.textParagraph}>would like
             to connect with your DECODE wallet</Text>
-          <Text style={styles.textParagraph}>Secure Petitions may request access to
-            the following information stored in your wallet.</Text>
-          <Text style={styles.textParagraph}>- Verified Atlantis Resident</Text>
-          <Text>Accepting this connection will not automatically share
-            this information with Secure Petitions.</Text>
+          </View>
+          <TouchableOpacity
+            style={styles.Button}
+            onPress={this.goToPetitionSummaryGet}
+          >
+            <Text style={styles.buttonText}>AUTHORISE</Text>
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity
-          style={styles.Button}
-          onPress={this.goToPetitionSummaryGet}>
-          <Text style={styles.buttonText}>AUTHORISE</Text>
-        </TouchableOpacity>
       </View>
     );
   }
 }
 
 Authorisation.propTypes = {
-  navigator: PropTypes.shape({push: PropTypes.func.isRequired}),
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
 };
 
 Authorisation.defaultProps = {
   navigator: {
     push: () => {
-    }
+    },
   },
 };
