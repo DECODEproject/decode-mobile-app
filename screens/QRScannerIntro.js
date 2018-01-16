@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
+import Router from '../Router';
 
 const scanner = require('../assets/images/scanner.jpg');
 
@@ -51,7 +53,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Home extends React.Component {
+export default class QRScannerIntro extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -60,6 +62,15 @@ export default class Home extends React.Component {
       tintColor: 'rgb(0,163,158)',
       title: 'Get Started',
     },
+  }
+
+  constructor(props) {
+    super(props);
+    this.goToQRScanner = this.goToQRScanner.bind(this);
+  }
+
+  goToQRScanner() {
+    this.props.navigator.push(Router.getRoute('QRScanner'));
   }
 
   render() {
@@ -73,7 +84,7 @@ export default class Home extends React.Component {
           <Text style={styles.instructions}>Scan a QR code to get started</Text>
           <TouchableOpacity
             style={styles.button}
-            onPress={this.handlePress}
+            onPress={this.goToQRScanner}
           >
             <Text style={styles.buttonText}>SCAN QR CODE</Text>
           </TouchableOpacity>
@@ -82,4 +93,15 @@ export default class Home extends React.Component {
     );
   }
 }
+
+QRScannerIntro.propTypes = {
+  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+};
+
+QRScannerIntro.defaultProps = {
+  navigator: {
+    push: () => {
+    },
+  },
+};
 
