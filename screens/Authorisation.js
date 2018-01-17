@@ -6,32 +6,21 @@ import Router from '../Router';
 const securePetitionsLogo = require('../assets/images/secure_petitions_logo.png');
 
 const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: 'rgb(246, 246, 246)',
-    flex: 1,
-    paddingTop: 10,
+  authorisationBox: {
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    margin: 16,
+    marginTop: 50,
+    paddingHorizontal: 20,
+    paddingVertical: 40,
   },
-  textContainer: {
-    marginBottom: 30,
-    paddingLeft: 10,
-    paddingRight: 10,
-  },
-  buttonBox: {
-    width: 300,
-  },
-  textParagraph: {
-    textAlign: 'center',
-  },
-  Button: {
+  button: {
     alignSelf: 'center',
     backgroundColor: 'rgb(0,163,158)',
     borderRadius: 2,
     elevation: 2,
-    paddingBottom: 8,
-    paddingLeft: 16,
-    paddingRight: 16,
-    paddingTop: 8,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
     shadowColor: 'rgba(0, 0, 0, 0.54)',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.8,
@@ -39,26 +28,25 @@ const styles = StyleSheet.create({
     width: 250,
   },
   buttonText: {
+    alignSelf: 'center',
     color: '#FFF',
     fontSize: 14,
     fontWeight: '500',
-    alignSelf: 'center',
+  },
+  container: {
+    backgroundColor: 'rgb(246, 246, 246)',
+    flex: 1,
   },
   logo: {
-    height: 35,
     alignSelf: 'center',
+    height: 35,
     marginBottom: 40,
     width: 210,
   },
-  authorisationBox: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFF',
-    paddingBottom: 40,
-    paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 40,
-    margin: 16,
-    marginTop: 40,
+  textParagraph: {
+    textAlign: 'center',
+    marginBottom: 30,
+    paddingHorizontal: 10,
   },
 });
 
@@ -89,12 +77,10 @@ export default class Authorisation extends React.Component {
             style={styles.logo}
             source={securePetitionsLogo}
           />
-          <View style={styles.textContainer}>
-            <Text style={styles.textParagraph}>would like
+          <Text style={styles.textParagraph}>would like
             to connect with your DECODE wallet</Text>
-          </View>
           <TouchableOpacity
-            style={styles.Button}
+            style={styles.button}
             onPress={this.goToPetitionSummaryGet}
           >
             <Text style={styles.buttonText}>AUTHORISE</Text>

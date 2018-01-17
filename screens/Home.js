@@ -6,56 +6,48 @@ import Router from '../Router';
 const decodeLogo = require('../assets/images/wallet_logo.png');
 
 const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    flex: 1,
-    paddingTop: 75,
-  },
-  logo: {
-    height: 150,
-    marginBottom: 50,
-    width: 200,
-  },
-  textHeading: {
-    fontSize: 16,
-    marginBottom: 30,
-    textAlign: 'center',
-  },
-  textInput: {
-    borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
-    borderColor: 'rgb(0,163,158)',
-    marginBottom: 20,
-  },
-  password: {
-    height: Platform.OS === 'ios' ? 30 : 40,
-    width: 250,
-  },
-  Button: {
+  button: {
     alignSelf: 'center',
     backgroundColor: 'rgb(0,163,158)',
     borderRadius: 2,
     elevation: 2,
-    paddingBottom: 8,
-    paddingLeft: 16,
-    paddingRight: 16,
-    paddingTop: 8,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
     shadowColor: 'rgba(0, 0, 0, 0.54)',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
     width: 250,
   },
-  QRButton: {
-    marginTop: 80,
-
-  },
-
   buttonText: {
     color: '#FFF',
     fontSize: 14,
     fontWeight: '500',
     alignSelf: 'center',
+  },
+  container: {
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    flex: 1,
+  },
+  logo: {
+    height: 150,
+    marginTop: 75,
+    marginBottom: 50,
+    width: 200,
+  },
+  password: {
+    height: Platform.OS === 'ios' ? 30 : 40,
+    width: 250,
+  },
+  textInput: {
+    borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
+    borderColor: 'rgb(0,163,158)',
+    marginBottom: 20,
+  },
+  welcomeMessage: {
+    fontSize: 16,
+    marginBottom: 30,
   },
 });
 
@@ -82,8 +74,7 @@ export default class Home extends React.Component {
           style={styles.logo}
           source={decodeLogo}
         />
-
-        <Text style={styles.textHeading}>Welcome, Jane Doe</Text>
+        <Text style={styles.welcomeMessage}>Welcome, Jane Doe</Text>
         <View style={styles.textInput}>
           <TextInput
             style={styles.password}
@@ -93,7 +84,7 @@ export default class Home extends React.Component {
           />
         </View>
         <TouchableOpacity
-          style={styles.Button}
+          style={styles.button}
           onPress={this.goToAuthorisation}
         >
           <Text style={styles.buttonText}>UNLOCK</Text>

@@ -11,10 +11,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgb(0,163,158)',
     borderRadius: 2,
     elevation: 2,
-    paddingBottom: 8,
-    paddingLeft: 16,
-    paddingRight: 16,
-    paddingTop: 8,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
     marginBottom: 15,
     marginTop: 30,
     shadowColor: 'rgba(0, 0, 0, 0.54)',
@@ -24,14 +22,14 @@ const styles = StyleSheet.create({
     width: 250,
   },
   buttonBox: {
-    width: 250,
     alignSelf: 'center',
+    width: 250,
   },
   buttonText: {
+    alignSelf: 'center',
     color: '#FFF',
     fontSize: 14,
     fontWeight: '500',
-    alignSelf: 'center',
   },
   container: {
     alignItems: 'center',
@@ -40,16 +38,16 @@ const styles = StyleSheet.create({
     paddingTop: 75,
   },
   instructions: {
-    fontSize: 12,
-    width: 150,
     alignSelf: 'center',
+    fontSize: 12,
     textAlign: 'center',
+    width: 150,
   },
   scanner: {
-    height: 100,
-    width: 50,
     alignSelf: 'center',
+    height: 100,
     marginBottom: 20,
+    width: 50,
   },
 });
 
@@ -104,4 +102,3 @@ QRScannerIntro.defaultProps = {
     },
   },
 };
-
