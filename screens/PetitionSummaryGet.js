@@ -144,12 +144,10 @@ export default class PetitionSummaryGet extends React.Component {
 
   openWebBrowserAsync = async () => {
     const queryParam = encodeURIComponent(Constants.linkingUri);
-    const url = `http://localhost:3010/#/?linkingUri=${queryParam}`;
+    const url = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
 
     this.addLinkingListener();
-    const result = await WebBrowser.openBrowserAsync(
-      url,
-    );
+    const result = await WebBrowser.openBrowserAsync(url);
     this.removeLinkingListener();
     this.setState({ result });
   };
