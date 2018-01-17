@@ -3,28 +3,9 @@ import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity } 
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
-const decodeLogo = require('../assets/images/wallet_logo.png');
+const decodeLogo = require('../assets/images/decode_logo.jpg');
 
 const styles = StyleSheet.create({
-  button: {
-    alignSelf: 'center',
-    backgroundColor: 'rgb(0,163,158)',
-    borderRadius: 2,
-    elevation: 2,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    width: 250,
-  },
-  buttonText: {
-    color: '#FFF',
-    fontSize: 14,
-    fontWeight: '500',
-    alignSelf: 'center',
-  },
   container: {
     alignItems: 'center',
     backgroundColor: '#fff',
@@ -34,21 +15,42 @@ const styles = StyleSheet.create({
     height: 150,
     marginTop: 75,
     marginBottom: 50,
-    width: 200,
+    width: 300,
   },
-  password: {
-    height: Platform.OS === 'ios' ? 30 : 40,
-    width: 250,
+  welcomeMessage: {
+    fontSize: 18,
+    marginBottom: 30,
   },
   textInput: {
     borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
     borderColor: 'rgb(0,163,158)',
     marginBottom: 20,
   },
-  welcomeMessage: {
-    fontSize: 16,
-    marginBottom: 30,
+  password: {
+    height: Platform.OS === 'ios' ? 30 : 40,
+    width: 300,
   },
+  button: {
+    alignSelf: 'center',
+    backgroundColor: 'rgb(0,163,158)',
+    borderRadius: 2,
+    elevation: 2,
+    height: 35,
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    shadowColor: 'rgba(0, 0, 0, 0.54)',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    width: 300,
+  },
+  buttonText: {
+    color: '#FFF',
+    fontSize: 14,
+    fontWeight: '500',
+    alignSelf: 'center',
+  },
+
 });
 
 export default class Home extends React.Component {
