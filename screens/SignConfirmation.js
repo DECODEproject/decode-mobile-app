@@ -81,7 +81,7 @@ export default class SignConfirmation extends React.Component {
   }
 
   handlePress() {
-    Linking.openURL('http://localhost:8080/#/59f888c8ce33c76884e8cf16');
+    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/59f888c8ce33c76884e8cf16');
   }
 
   render() {
