@@ -6,11 +6,34 @@ import Router from '../Router';
 const scanner = require('../assets/images/scanner.jpg');
 
 const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    flex: 1,
+    paddingTop: 75,
+  },
+  buttonBox: {
+    alignSelf: 'center',
+    width: 250,
+  },
+  scanner: {
+    alignSelf: 'center',
+    height: 100,
+    marginBottom: 20,
+    width: 50,
+  },
+  instructions: {
+    alignSelf: 'center',
+    fontSize: 12,
+    textAlign: 'center',
+    width: 150,
+  },
   button: {
     alignSelf: 'center',
     backgroundColor: 'rgb(0,163,158)',
     borderRadius: 2,
     elevation: 2,
+    height: 36,
     paddingHorizontal: 16,
     paddingVertical: 8,
     marginBottom: 15,
@@ -21,33 +44,11 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     width: 250,
   },
-  buttonBox: {
-    alignSelf: 'center',
-    width: 250,
-  },
   buttonText: {
     alignSelf: 'center',
     color: '#FFF',
     fontSize: 14,
     fontWeight: '500',
-  },
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    flex: 1,
-    paddingTop: 75,
-  },
-  instructions: {
-    alignSelf: 'center',
-    fontSize: 12,
-    textAlign: 'center',
-    width: 150,
-  },
-  scanner: {
-    alignSelf: 'center',
-    height: 100,
-    marginBottom: 20,
-    width: 50,
   },
 });
 
