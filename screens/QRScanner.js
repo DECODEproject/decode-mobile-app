@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Alert } from 'react-native';
-import { BarCodeScanner, Permissions } from 'expo';
+import { BarCodeScanner, Permissions, WebBrowser } from 'expo';
 
 
 function delay(time) {
@@ -35,7 +35,7 @@ export default class QRScanner extends React.Component {
     await delay(500);
     if (this.state.read === obj.data) return;
     this.setState({ read: obj.data });
-    Alert.alert(`Barcode with type ${obj.type} and data ${obj.data} has been scanned`);
+    WebBrowser.openBrowserAsync(obj.data);
   };
 
   render() {
