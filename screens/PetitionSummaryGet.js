@@ -51,21 +51,17 @@ const styles = StyleSheet.create({
     color: 'rgba(0, 0, 0, 0.54)',
     marginVertical: 4,
   },
-  requestContainer: {
-    alignItems: 'center',
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
   requiredText: {
-    color: 'red',
+    fontSize: 12,
+    marginLeft: 16,
+    marginTop: 10,
   },
   button: {
     backgroundColor: 'rgb(0,163,158)',
     borderRadius: 2,
     elevation: 2,
     height: 36,
-    marginRight: 16,
+    marginLeft: 240,
     paddingHorizontal: 16,
     paddingVertical: 8,
     shadowColor: 'rgba(0, 0, 0, 0.54)',
@@ -166,19 +162,17 @@ export default class PetitionSummaryGet extends React.Component {
           </View>
           <Text style={styles.textTitle}>Your Information</Text>
           <View style={styles.attributeContainer}>
-            <Text style={styles.attributeName}>Verified resident of Atlantis</Text>
+            <Text style={styles.attributeName}>Verified Atlantis Resident*</Text>
             <Text style={styles.attributeDetails}>To get this attribute you will be directed
               to the Atlantis Council website</Text>
-            <View style={styles.requestContainer}>
-              <Text style={styles.requiredText}>REQUIRED</Text>
-              <TouchableOpacity
-                style={styles.button}
-                onPress={this.openWebBrowserAsync}
-              >
-                <Text style={styles.buttonText}>REQUEST</Text>
-              </TouchableOpacity>
-            </View>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={this.openWebBrowserAsync}
+            >
+              <Text style={styles.buttonText}>REQUEST</Text>
+            </TouchableOpacity>
           </View>
+          <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
         <View style={styles.footerContainer}>
           <View style={styles.signButton}>

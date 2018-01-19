@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     width: 75,
   },
-  buttonBox: {
+  textBox: {
     alignSelf: 'center',
     width: 250,
   },
@@ -37,8 +37,12 @@ const styles = StyleSheet.create({
   petitionTitle: {
     fontSize: 20,
     fontWeight: '500',
-    marginBottom: 30,
+    marginVertical: 15,
     textAlign: 'center',
+  },
+  confirmationText: {
+    textAlign: 'center',
+    marginBottom: 20,
   },
   button: {
     alignSelf: 'center',
@@ -93,14 +97,15 @@ export default class SignConfirmation extends React.Component {
             style={styles.tick}
             source={tick}
           />
-          <View style={styles.buttonBox}>
+          <View style={styles.textBox}>
             <Text style={styles.textSubHeading}>Thank you for signing</Text>
             <Text style={styles.petitionTitle}>Create communal space in Atlantis</Text>
+            <Text style={styles.confirmationText}>You can view the results of the petition on the Secure Petitions website</Text>
             <TouchableOpacity
               style={styles.button}
               onPress={this.handlePress}
             >
-              <Text style={styles.buttonText}>RETURN TO SECURE PETITIONS</Text>
+              <Text style={styles.buttonText}>VIEW PETITIONS RESULTS</Text>
             </TouchableOpacity>
           </View>
         </View>

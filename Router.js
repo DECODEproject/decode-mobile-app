@@ -9,7 +9,7 @@ import SignConfirmation from './screens/SignConfirmation';
 import QRScanner from './screens/QRScanner';
 
 const Router = createRouter(() => ({
-  home: () => Home,
+  home: () => SignConfirmation,
   authorisation: () => Authorisation,
   petitionSummaryGet: () => PetitionSummaryGet,
   petitionSummarySign: () => PetitionSummarySign,

@@ -1,7 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+
+const tick = require('../assets/images/tick_small.jpg');
 
 const styles = StyleSheet.create({
   container: {
@@ -39,6 +41,9 @@ const styles = StyleSheet.create({
   attributeContainer: {
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
+    display: 'flex',
+    flexDirection: 'row',
+    marginVertical: 1,
     padding: 16,
   },
   attributeName: {
@@ -46,9 +51,25 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
   },
+  tick: {
+    height: 20,
+    marginTop: 3,
+    width: 20,
+  },
+  attribute: {
+    marginLeft: 15,
+  },
   attributeDetails: {
     color: 'rgba(0, 0, 0, 0.54)',
     marginVertical: 4,
+  },
+  attributeStatus: {
+    fontWeight: '500',
+  },
+  requiredText: {
+    fontSize: 12,
+    marginLeft: 16,
+    marginTop: 10,
   },
   footerContainer: {
     backgroundColor: '#FFF',
@@ -77,10 +98,6 @@ const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 14,
     fontWeight: '500',
-  },
-  requiredText: {
-    color: 'red',
-    marginTop: 8,
   },
 });
 
@@ -117,11 +134,16 @@ export default class PetitionSummaryGet extends React.Component {
           </View>
           <Text style={styles.textTitle}>Your Information</Text>
           <View style={styles.attributeContainer}>
-            <Text style={styles.attributeName}>Verified resident of Atlantis</Text>
-            <Text style={styles.attributeDetails}>To get this attribute you will be directed
-              to the Atlantis Council website</Text>
-            <Text style={styles.requiredText}>REQUIRED</Text>
+            <Image
+              style={styles.tick}
+              source={tick}
+            />
+            <View style={styles.attribute}>
+              <Text style={styles.attributeName}>Verified Atlantis Resident</Text>
+              <Text style={styles.attributeDetails}>Atlantis Resident Status:              <Text style={styles.attributeStatus}>Confirmed</Text></Text>
+            </View>
           </View>
+          <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
         <View style={styles.footerContainer}>
           <TouchableOpacity
