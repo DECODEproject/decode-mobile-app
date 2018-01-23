@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from 'react-native';
+import Spinner from 'react-native-loading-spinner-overlay';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -114,20 +115,43 @@ export default class PetitionSummaryGet extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      visible: false,
+    };
     this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
   }
 
+  // componentDidMount() {
+  //  setInterval(() => {
+  //    this.setState({
+  //      visible: !this.state.visible
+  //    });
+  //  }, 3000);
+  // }
+
   goToSignConfirmation() {
-    this.props.navigator.push(Router.getRoute('signConfirmation'));
+    this.setState({
+      visible: true,
+    });
+    setTimeout(() => {
+      this.props.navigator.push(Router.getRoute('signConfirmation'));
+      this.setState({
+        visible: false,
+      });
+    }, 3000);
   }
 
   render() {
     return (
       <View style={styles.container}>
         <ScrollView>
+          <View style={{ flex: 1 }}>
+            <Spinner visible={this.state.visible} textStyle={{ color: '#FFF' }} />
+          </View>
           <View style={styles.petitionSummaryBox}>
             <Text style={styles.petitionTitle}>Create communal Space in Atlantis</Text>
-            <Text style={styles.petitionDescription}>Availability fairbnb cryptographic modelling data
+            <Text style={styles.petitionDescription}>
+              Availability fairbnb cryptographic modelling data
               ontology pilots. Availability fairbnbcryptography
               hello. Availability fairbnb. Availability fairbnb</Text>
             <Text style={styles.closingDate}>Closing: 28 October 2018</Text>
@@ -140,7 +164,8 @@ export default class PetitionSummaryGet extends React.Component {
             />
             <View style={styles.attribute}>
               <Text style={styles.attributeName}>Verified Atlantis Resident</Text>
-              <Text style={styles.attributeDetails}>Atlantis Resident Status:              <Text style={styles.attributeStatus}>Confirmed</Text></Text>
+              <Text style={styles.attributeDetails}>Atlantis Resident Status:
+                <Text style={styles.attributeStatus}>Confirmed</Text></Text>
             </View>
           </View>
           <Text style={styles.requiredText}>*Required fields</Text>
