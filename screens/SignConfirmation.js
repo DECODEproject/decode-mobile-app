@@ -86,7 +86,7 @@ export default class SignConfirmation extends React.Component {
   }
 
   handlePress() {
-    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/59f888c8ce33c76884e8cf16');
+    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
   }
 
   render() {
@@ -100,7 +100,8 @@ export default class SignConfirmation extends React.Component {
           <View style={styles.textBox}>
             <Text style={styles.textSubHeading}>Thank you for signing</Text>
             <Text style={styles.petitionTitle}>Create communal space in Atlantis</Text>
-            <Text style={styles.confirmationText}>You can view the results of the petition on the Secure Petitions website</Text>
+            <Text style={styles.confirmationText}>You can view the results of the petition
+              on the Secure Petitions website</Text>
             <TouchableOpacity
               style={styles.button}
               onPress={this.handlePress}
