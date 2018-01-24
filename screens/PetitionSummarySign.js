@@ -155,7 +155,7 @@ export default class PetitionSummaryGet extends React.Component {
               source={tick}
             />
             <View style={styles.attribute}>
-              <Text style={styles.attributeName}>Verified Atlantis Resident</Text>
+              <Text style={styles.attributeName}>Verified Atlantis Resident*</Text>
               <Text style={styles.attributeDetails}>Atlantis Resident Status:
                 <Text style={styles.attributeStatus}> Confirmed</Text></Text>
             </View>
