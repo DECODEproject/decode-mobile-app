@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity, Button } from 'react-native';
+import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -90,15 +90,9 @@ export default class Home extends React.Component {
           style={styles.button}
           onPress={this.goToAuthorisation}
         >
-          <Text style={styles.buttonText}>UNLOCK</Text>
+          <Text style={styles.buttonText}>LOG IN</Text>
         </TouchableOpacity>
-        <View>
-          <Button
-            onPress={this.goToQRScanner}
-            title="QR Code Scanner"
-            color="rgb(0,163,158)"
-          />
-        </View>
+
       </View>
     );
   }

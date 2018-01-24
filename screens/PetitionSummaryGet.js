@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     elevation: 2,
     height: 36,
-    marginLeft: 240,
+    alignSelf: 'flex-end',
     paddingHorizontal: 16,
     paddingVertical: 8,
     shadowColor: 'rgba(0, 0, 0, 0.54)',
@@ -155,7 +155,8 @@ export default class PetitionSummaryGet extends React.Component {
         <ScrollView>
           <View style={styles.petitionSummaryBox}>
             <Text style={styles.petitionTitle}>Create communal Space in Atlantis</Text>
-            <Text style={styles.petitionDescription}>Availability fairbnb cryptographic modelling data
+            <Text style={styles.petitionDescription}>
+              Availability fairbnb cryptographic modelling data
               ontology pilots. Availability fairbnbcryptography
               hello. Availability fairbnb. Availability fairbnb</Text>
             <Text style={styles.closingDate}>Closing: 28 October 2018</Text>

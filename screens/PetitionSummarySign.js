@@ -121,14 +121,6 @@ export default class PetitionSummaryGet extends React.Component {
     this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
   }
 
-  // componentDidMount() {
-  //  setInterval(() => {
-  //    this.setState({
-  //      visible: !this.state.visible
-  //    });
-  //  }, 3000);
-  // }
-
   goToSignConfirmation() {
     this.setState({
       visible: true,
@@ -165,7 +157,7 @@ export default class PetitionSummaryGet extends React.Component {
             <View style={styles.attribute}>
               <Text style={styles.attributeName}>Verified Atlantis Resident</Text>
               <Text style={styles.attributeDetails}>Atlantis Resident Status:
-                <Text style={styles.attributeStatus}>Confirmed</Text></Text>
+                <Text style={styles.attributeStatus}> Confirmed</Text></Text>
             </View>
           </View>
           <Text style={styles.requiredText}>*Required fields</Text>
