@@ -1,9 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
-
-const securePetitionsLogo = require('../assets/images/secure_petitions_logo.png');
 
 const styles = StyleSheet.create({
   authorisationBox: {
@@ -40,9 +38,10 @@ const styles = StyleSheet.create({
   },
   logo: {
     alignSelf: 'center',
-    height: 35,
+    fontFamily: 'Lato-Bold',
+    fontSize: 25,
+    color: 'rgb(203,73,45)',
     marginBottom: 40,
-    width: 210,
   },
   textParagraph: {
     textAlign: 'center',
@@ -74,10 +73,7 @@ export default class Authorisation extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.authorisationBox}>
-          <Image
-            style={styles.logo}
-            source={securePetitionsLogo}
-          />
+          <Text style={styles.logo}>SECURE PETITIONS</Text>
           <Text style={styles.textParagraph}>would like
             to connect with your DECODE wallet</Text>
           <TouchableOpacity

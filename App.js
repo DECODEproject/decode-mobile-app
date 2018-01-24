@@ -7,6 +7,7 @@ import {
 import Router from './Router';
 
 const montserratMedium = require('./assets/fonts/Montserrat-Medium.ttf');
+const latoBold = require('./assets/fonts/Lato-Bold.ttf');
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,6 +20,7 @@ export default class App extends React.Component {
   async componentWillMount() {
     await Font.loadAsync({
       'Montserrat-Medium': montserratMedium,
+      'Lato-Bold': latoBold,
     });
 
     this.setState({
