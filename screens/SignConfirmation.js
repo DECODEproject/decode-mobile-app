@@ -44,26 +44,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 20,
   },
-  button: {
-    alignSelf: 'center',
-    backgroundColor: 'rgb(0,163,158)',
-    borderRadius: 2,
-    elevation: 2,
-    height: 36,
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    marginBottom: 15,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    width: 250,
-  },
   buttonText: {
     alignSelf: 'center',
-    color: '#FFF',
+    color: 'rgb(0,163,158)',
     fontSize: 14,
     fontWeight: '500',
+    textDecorationLine: 'underline',
   },
 });
 
@@ -102,12 +88,10 @@ export default class SignConfirmation extends React.Component {
             <Text style={styles.petitionTitle}>Create communal space in Atlantis</Text>
             <Text style={styles.confirmationText}>You can view the results of the petition
               on the Secure Petitions website</Text>
-            <TouchableOpacity
-              style={styles.button}
+            <Text
+              style={styles.buttonText}
               onPress={this.handlePress}
-            >
-              <Text style={styles.buttonText}>VIEW PETITIONS RESULTS</Text>
-            </TouchableOpacity>
+            >View Petitions Results</Text>
           </View>
         </View>
       </View>
