@@ -85,7 +85,7 @@ export default class QRScannerIntro extends React.Component {
             style={styles.button}
             onPress={this.goToQRScanner}
           >
-            <Text style={styles.buttonText}>SCAN QR CODE</Text>
+            <Text style={styles.buttonText}>CONTINUE</Text>
           </TouchableOpacity>
         </View>
       </View>

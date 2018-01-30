@@ -1,7 +1,9 @@
 import React from 'react';
-import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+
+const URL = require('url-parse');
 
 const decodeLogo = require('../assets/images/decode_logo.jpg');
 
@@ -57,18 +59,27 @@ const styles = StyleSheet.create({
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.goToAuthorisation = this.goToAuthorisation.bind(this);
-    this.goToQRScanner = this.goToQRScanner.bind(this);
+    this.goToNextPage = this.goToNextPage.bind(this);
+    this.state = {
+      mobile: null,
+    };
   }
 
-  goToAuthorisation() {
-    this.props.navigator.push(Router.getRoute('authorisation'));
+  componentWillMount() {
+    Linking.getInitialURL().then((url) => {
+      const myURL = new URL(url, true);
+      const mobile = myURL.query.mobile;
+      this.setState({ mobile });
+    });
   }
 
-  goToQRScanner() {
-    this.props.navigator.push(Router.getRoute('QRScanner'));
+  goToNextPage() {
+    if (this.state.mobile === 'true') {
+      this.props.navigator.push(Router.getRoute('authorisation'));
+    } else {
+      this.props.navigator.push(Router.getRoute('QRScannerIntro'));
+    }
   }
-
 
   render() {
     return (
@@ -88,7 +99,7 @@ export default class Home extends React.Component {
         </View>
         <TouchableOpacity
           style={styles.button}
-          onPress={this.goToAuthorisation}
+          onPress={this.goToNextPage}
         >
           <Text style={styles.buttonText}>LOG IN</Text>
         </TouchableOpacity>

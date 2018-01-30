@@ -141,11 +141,11 @@ export default class PetitionSummaryGet extends React.Component {
             <Spinner visible={this.state.visible} textStyle={{ color: '#FFF' }} />
           </View>
           <View style={styles.petitionSummaryBox}>
-            <Text style={styles.petitionTitle}>Create communal Space in Atlantis</Text>
+            <Text style={styles.petitionTitle}>Universal basic income</Text>
             <Text style={styles.petitionDescription}>
-              Availability fairbnb cryptographic modelling data
-              ontology pilots. Availability fairbnbcryptography
-              hello. Availability fairbnb. Availability fairbnb</Text>
+              White paper blockchain technology node research and develop.
+              Cryptographic modelling.
+              Availability fairbnb cryptographic modelling data ontology pilot</Text>
             <Text style={styles.closingDate}>Closing: 28 October 2018</Text>
           </View>
           <Text style={styles.textTitle}>Your Information</Text>
