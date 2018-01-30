@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Linking, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Linking, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
