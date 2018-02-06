@@ -53,7 +53,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     alignSelf: 'center',
   },
-
 });
 
 export default class Home extends React.Component {
