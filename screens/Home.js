@@ -68,13 +68,14 @@ export default class Home extends React.Component {
     Linking.getInitialURL().then((url) => {
       const myURL = new URL(url, true);
       const mobile = myURL.query.mobile;
-      this.setState({ mobile });
+      const petitionLink = myURL.query.petitionLink;
+      this.setState({ mobile, petitionLink });
     });
   }
 
   goToNextPage() {
     if (this.state.mobile === 'true') {
-      this.props.navigator.push(Router.getRoute('authorisation'));
+      this.props.navigator.push(Router.getRoute('authorisation', { petitionLink: this.state.petitionLink }));
     } else {
       this.props.navigator.push(Router.getRoute('QRScannerIntro'));
     }
