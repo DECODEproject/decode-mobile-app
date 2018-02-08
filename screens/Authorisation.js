@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
   },
 });
 
+let route;
 
 export default class Authorisation extends React.Component {
   static route = {
@@ -66,7 +67,7 @@ export default class Authorisation extends React.Component {
   }
 
   goToPetitionSummaryGet() {
-    this.props.navigator.push(Router.getRoute('petitionSummaryGet'));
+    this.props.navigator.push(Router.getRoute('petitionSummaryGet', { petitionLink: this.props.route.params.petitionLink }));
   }
 
   render() {
@@ -90,11 +91,16 @@ export default class Authorisation extends React.Component {
 
 Authorisation.propTypes = {
   navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  route: PropTypes.shape({ params: PropTypes.func.isRequired }),
 };
 
 Authorisation.defaultProps = {
   navigator: {
     push: () => {
+    },
+  },
+  route: {
+    params: {
     },
   },
 };

@@ -1,14 +1,20 @@
+/* eslint no-undef: 0 */
+
 import React from 'react';
 import { StyleSheet, Text, View, Alert } from 'react-native';
 import { BarCodeScanner, Permissions } from 'expo';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
+const URL = require('url-parse');
+
 function delay(time) {
   return new Promise((resolve) => {
     setTimeout(() => resolve(), time);
   });
 }
+
+let route;
 
 export default class QRScanner extends React.Component {
   static route = {
@@ -25,6 +31,7 @@ export default class QRScanner extends React.Component {
       hasCameraPermission: null,
       permissionAsked: false,
       read: null,
+      petitionLink: null,
     };
   }
 
@@ -33,11 +40,18 @@ export default class QRScanner extends React.Component {
     this.setState({ hasCameraPermission: status === 'granted' });
   }
 
-  handleBarCodeRead = async () => {
+  getURL(url) {
+    const myURL = new URL(url, true);
+    const petitionLink = myURL.query.petitionLink;
+    this.setState({ petitionLink });
+  }
+
+  handleBarCodeRead = async ({ data }) => {
     await delay(500);
     if (this.state.read === true) return;
+    this.getURL(data);
     this.setState({ read: true });
-    this.props.navigator.push(Router.getRoute('authorisation'));
+    this.props.navigator.push(Router.getRoute('authorisation', { petitionLink: this.state.petitionLink }));
   }
 
   render() {

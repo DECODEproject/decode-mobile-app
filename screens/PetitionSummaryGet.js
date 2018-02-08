@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */
+
 import React from 'react';
 import { Constants, WebBrowser } from 'expo';
 import { StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView } from 'react-native';
@@ -106,6 +108,13 @@ const styles = StyleSheet.create({
   },
 });
 
+const handleErrors = (response) => {
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+  return response;
+};
+
 export default class PetitionSummaryGet extends React.Component {
   static route = {
     navigationBar: {
@@ -120,6 +129,19 @@ export default class PetitionSummaryGet extends React.Component {
   constructor(props) {
     super(props);
     this.goToPetitionSummarySign = this.goToPetitionSummarySign.bind(this);
+    this.state = {
+      petition: {},
+      loading: true,
+      serverError: false,
+    };
+  }
+
+  componentDidMount() {
+    return fetch(this.props.route.params.petitionLink)
+      .then(handleErrors)
+      .then(response => response.json())
+      .then(petition => this.setState({ loading: false, petition }))
+      .catch(() => this.setState({ loading: false, serverError: true }));
   }
 
   goToPetitionSummarySign() {
@@ -154,12 +176,9 @@ export default class PetitionSummaryGet extends React.Component {
       <View style={styles.container}>
         <ScrollView>
           <View style={styles.petitionSummaryBox}>
-            <Text style={styles.petitionTitle}>Universal basic income</Text>
-            <Text style={styles.petitionDescription}>
-              White paper blockchain technology node research and develop.
-              Cryptographic modelling.
-              Availability fairbnb cryptographic modelling data ontology pilot</Text>
-            <Text style={styles.closingDate}>Closing: 28 October 2018</Text>
+            <Text style={styles.petitionTitle}>{this.state.petition.title}</Text>
+            <Text style={styles.petitionDescription}>{this.state.petition.description}</Text>
+            <Text style={styles.closingDate}>Closing date: {this.state.petition.closingDate}</Text>
           </View>
           <Text style={styles.textTitle}>Your Information</Text>
           <View style={styles.attributeContainer}>
@@ -187,11 +206,16 @@ export default class PetitionSummaryGet extends React.Component {
 
 PetitionSummaryGet.propTypes = {
   navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  route: PropTypes.shape({ params: PropTypes.func.isRequired }),
 };
 
 PetitionSummaryGet.defaultProps = {
   navigator: {
     push: () => {
+    },
+  },
+  route: {
+    params: {
     },
   },
 };
