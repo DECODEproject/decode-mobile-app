@@ -28,8 +28,6 @@ export default class App extends React.Component {
     this.state = {
       ready: false,
     };
-
-    this.initialiseWalletID = this.initialiseWalletID.bind(this);
   }
 
   async componentWillMount() {
