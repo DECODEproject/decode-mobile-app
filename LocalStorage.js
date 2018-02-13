@@ -12,7 +12,8 @@ export const getWalletID = async () => {
 };
 
 export const initialiseWalletID = async () => {
-  if (!getWalletID()) {
+  const id = await getWalletID();
+  if (!id) {
     try {
       await AsyncStorage.setItem('@MyStore:id', uuidv1());
     } catch (e) {
