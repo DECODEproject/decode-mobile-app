@@ -32,7 +32,8 @@
     "react-dom": "^16.2.0",
     "react-native": "^0.50.3",
     "react-native-loading-spinner-overlay": "^0.5.2",
-    "url-parse": "^1.2.0"
+    "url-parse": "^1.2.0",
+    "uuid": "^3.2.1"
   },
   "rnpm": {
     "assets": [

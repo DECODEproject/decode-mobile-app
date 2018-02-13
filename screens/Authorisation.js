@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, AsyncStorage } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'rgb(246, 246, 246)',
     flex: 1,
+    justifyContent: 'space-between',
   },
   logo: {
     alignSelf: 'center',
@@ -42,6 +43,12 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: 'rgb(203,73,45)',
     marginBottom: 40,
+  },
+  id: {
+    alignSelf: 'center',
+    marginBottom: 16,
+    color: 'grey',
+    fontSize: 10,
   },
   textParagraph: {
     textAlign: 'center',
@@ -64,6 +71,15 @@ export default class Authorisation extends React.Component {
   constructor(props) {
     super(props);
     this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
+    this.state = {
+      id: null,
+    };
+  }
+
+  componentWillMount() {
+    AsyncStorage.getItem('@MyStore:id', (err, result) => {
+      this.setState({ id: result });
+    });
   }
 
   goToPetitionSummaryGet() {
@@ -84,6 +100,7 @@ export default class Authorisation extends React.Component {
             <Text style={styles.buttonText}>AUTHORISE</Text>
           </TouchableOpacity>
         </View>
+        <Text style={styles.id}>Wallet ID: {this.state.id}</Text>
       </View>
     );
   }
@@ -91,7 +108,7 @@ export default class Authorisation extends React.Component {
 
 Authorisation.propTypes = {
   navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
-  route: PropTypes.shape({ params: PropTypes.func.isRequired }),
+  route: PropTypes.shape({ params: PropTypes.object }),
 };
 
 Authorisation.defaultProps = {
@@ -100,7 +117,6 @@ Authorisation.defaultProps = {
     },
   },
   route: {
-    params: {
-    },
+    params: {},
   },
 };
