@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, AsyncStorage } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+import { getWalletID } from '../LocalStorage';
 
 const styles = StyleSheet.create({
   authorisationBox: {
@@ -72,14 +73,13 @@ export default class Authorisation extends React.Component {
     super(props);
     this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
     this.state = {
-      id: null,
+      id: 'default id',
     };
   }
 
-  componentWillMount() {
-    AsyncStorage.getItem('@MyStore:id', (err, result) => {
-      this.setState({ id: result });
-    });
+  async componentWillMount() {
+    const id = await getWalletID();
+    this.setState({ id });
   }
 
   goToPetitionSummaryGet() {

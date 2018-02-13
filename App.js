@@ -1,25 +1,14 @@
 import React from 'react';
-import uuidv1 from 'uuid';
-import { AsyncStorage } from 'react-native';
 import { Font } from 'expo';
 import {
-  NavigationProvider,
-  StackNavigation,
+NavigationProvider,
+StackNavigation,
 } from '@expo/ex-navigation';
 import Router from './Router';
+import { initialiseWalletID } from './LocalStorage';
 
 const montserratMedium = require('./assets/fonts/Montserrat-Medium.ttf');
 const latoBold = require('./assets/fonts/Lato-Bold.ttf');
-
-async function initialiseWalletID() {
-  let id = await AsyncStorage.getItem('@MyStore:id');
-
-  if (!id) {
-    id = await AsyncStorage.setItem('@MyStore:id', uuidv1());
-  }
-
-  return id;
-}
 
 export default class App extends React.Component {
 
