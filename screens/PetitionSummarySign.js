@@ -102,6 +102,15 @@ const styles = StyleSheet.create({
   },
 });
 
+let route;
+
+const handleErrors = (response) => {
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+  return response;
+};
+
 export default class PetitionSummaryGet extends React.Component {
   static route = {
     navigationBar: {
@@ -117,8 +126,19 @@ export default class PetitionSummaryGet extends React.Component {
     super(props);
     this.state = {
       visible: false,
+      petition: {},
+      loading: true,
+      serverError: false,
     };
     this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
+  }
+
+  componentDidMount() {
+    return fetch(this.props.route.params.petitionLink)
+      .then(handleErrors)
+      .then(response => response.json())
+      .then(petition => this.setState({ loading: false, petition }))
+      .catch(() => this.setState({ loading: false, serverError: true }));
   }
 
   goToSignConfirmation() {
@@ -126,6 +146,13 @@ export default class PetitionSummaryGet extends React.Component {
       visible: true,
     });
     setTimeout(() => {
+      fetch(`http://localhost:5000/sign/petitions/${this.state.petition.id}`, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+      });
       this.props.navigator.push(Router.getRoute('signConfirmation'));
       this.setState({
         visible: false,
@@ -177,11 +204,15 @@ export default class PetitionSummaryGet extends React.Component {
 
 PetitionSummaryGet.propTypes = {
   navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  route: PropTypes.shape({ params: PropTypes.object }),
 };
 
 PetitionSummaryGet.defaultProps = {
   navigator: {
     push: () => {
     },
+  },
+  route: {
+    params: {},
   },
 };

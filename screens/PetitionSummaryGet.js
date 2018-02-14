@@ -145,7 +145,7 @@ export default class PetitionSummaryGet extends React.Component {
   }
 
   goToPetitionSummarySign() {
-    this.props.navigator.push(Router.getRoute('petitionSummarySign'));
+    this.props.navigator.push(Router.getRoute('petitionSummarySign', { petitionLink: this.props.route.params.petitionLink }));
   }
 
   removeLinkingListener = () => {
