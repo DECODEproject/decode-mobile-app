@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from 'rea
 import Spinner from 'react-native-loading-spinner-overlay';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+import { getWalletID } from '../LocalStorage';
 
 const tick = require('../assets/images/tick_small.jpg');
 
@@ -129,8 +130,14 @@ export default class PetitionSummaryGet extends React.Component {
       petition: {},
       loading: true,
       serverError: false,
+      id: null,
     };
     this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
+  }
+
+  async componentWillMount() {
+    const id = await getWalletID();
+    this.setState({ id });
   }
 
   componentDidMount() {
@@ -152,6 +159,9 @@ export default class PetitionSummaryGet extends React.Component {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
+        body: JSON.stringify({
+          signatory: this.state.id.substring(0, 5),
+        }),
       });
       this.props.navigator.push(Router.getRoute('signConfirmation'));
       this.setState({
@@ -168,7 +178,7 @@ export default class PetitionSummaryGet extends React.Component {
             <Spinner visible={this.state.visible} textStyle={{ color: '#FFF' }} />
           </View>
           <View style={styles.petitionSummaryBox}>
-            <Text style={styles.petitionTitle}>Universal basic income</Text>
+            <Text style={styles.petitionTitle}>Universal basic income{this.state.id}</Text>
             <Text style={styles.petitionDescription}>
               White paper blockchain technology node research and develop.
               Cryptographic modelling.
