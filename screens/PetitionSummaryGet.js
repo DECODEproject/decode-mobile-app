@@ -206,7 +206,7 @@ export default class PetitionSummaryGet extends React.Component {
 
 PetitionSummaryGet.propTypes = {
   navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
-  route: PropTypes.shape({ params: PropTypes.func.isRequired }),
+  route: PropTypes.shape({ params: PropTypes.object }),
 };
 
 PetitionSummaryGet.defaultProps = {

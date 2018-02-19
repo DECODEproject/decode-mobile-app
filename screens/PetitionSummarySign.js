@@ -178,7 +178,7 @@ export default class PetitionSummaryGet extends React.Component {
             <Spinner visible={this.state.visible} textStyle={{ color: '#FFF' }} />
           </View>
           <View style={styles.petitionSummaryBox}>
-            <Text style={styles.petitionTitle}>Universal basic income{this.state.id}</Text>
+            <Text style={styles.petitionTitle}>Universal basic income</Text>
             <Text style={styles.petitionDescription}>
               White paper blockchain technology node research and develop.
               Cryptographic modelling.
