@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 import Router from '../Router';
 import { getWalletID } from '../LocalStorage';
 
-const config = require('./config.json');
+const config = require('../config.json');
 
-const walletProxyLink = process.env['env'] ? config.development.walletProxy : config.production.walletProxy;
+const walletProxyLink = process.env.env ?
+  config.development.walletProxy : config.production.walletProxy;
 
 const tick = require('../assets/images/tick_small.jpg');
 
@@ -106,8 +107,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
 });
-
-let route;
 
 const handleErrors = (response) => {
   if (!response.ok) {
