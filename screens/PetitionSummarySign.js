@@ -153,7 +153,7 @@ export default class PetitionSummaryGet extends React.Component {
       visible: true,
     });
     setTimeout(() => {
-      fetch(`http://localhost:5000/sign/petitions/${this.state.petition.id}`, {
+      fetch(`http://ec2-54-194-123-109.eu-west-1.compute.amazonaws.com/sign/petitions/${this.state.petition.id}`, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
