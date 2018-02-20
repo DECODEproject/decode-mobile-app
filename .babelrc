@@ -4,5 +4,6 @@
     "development": {
       "plugins": ["transform-react-jsx-source"]
     }
-  }
+  },
+  "plugins": ["transform-inline-environment-variables"]
 }
