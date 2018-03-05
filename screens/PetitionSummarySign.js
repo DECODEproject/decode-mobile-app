@@ -164,6 +164,7 @@ export default class PetitionSummaryGet extends React.Component {
         },
         body: JSON.stringify({
           signatory: this.state.id.substring(0, 5),
+          isEthereum: this.state.petition.isEthereum,
         }),
       });
       this.props.navigator.push(Router.getRoute('signConfirmation'));
