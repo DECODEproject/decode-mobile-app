@@ -1,5 +1,12 @@
 # Wallet app
 
+## Pre-Requisites
+
+- [Expo](https://expo.io/)
+```
+npm install -g exp
+```
+
 ## Run
 
 In a terminal window run:
