@@ -1,6 +1,6 @@
 {
   "development": {
-    "walletProxy": "http://localhost:5000"
+    "walletProxy": "http://localhost:5010"
   },
   "production": {
     "walletProxy": "http://ec2-54-194-123-109.eu-west-1.compute.amazonaws.com"
