@@ -27,6 +27,7 @@
     "babel-preset-react-native-stage-0": "^1.0.1",
     "chai": "^4.1.2",
     "expo": "^23.0.4",
+    "milagro-crypto-js": "git+https://github.com/DECODEproject/milagro-crypto-js.git",
     "prop-types": "^15.6.0",
     "qs": "^6.5.1",
     "react": "16.0.0",
