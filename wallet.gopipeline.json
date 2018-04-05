@@ -1,0 +1,44 @@
+{
+  "name": "Wallet",
+  "environment_variables": [],
+  "group" : "Scale Model",
+  "materials": [
+    {
+      "url": "https://gogs.dyne.org/DECODE/decode-prototype.git",
+      "type": "git"
+    }
+  ],
+  "stages": [
+    {
+      "name": "test",
+      "fetch_materials": true,
+      "never_cleanup_artifacts": false,
+      "clean_working_directory": false,
+      "environment_variables": [],
+      "jobs": [
+        {
+          "name": "test",
+          "environment_variables": [],
+          "tabs": [],
+          "resources": ["node"],
+          "artifacts": [],
+          "properties": [],
+          "run_instance_count": null,
+          "timeout": 0,
+          "tasks": [
+            {
+              "type": "exec",
+              "run_if": "passed",
+              "on_cancel" : null,
+              "command": "npm",
+              "arguments": [
+                "test"
+              ],
+              "working_directory": "apps/wallet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
