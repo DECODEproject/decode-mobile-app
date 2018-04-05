@@ -1,7 +1,7 @@
 {
   "name": "Wallet",
   "environment_variables": [],
-  "group" : "Scale Model",
+  "group" : "ScaleModel",
   "materials": [
     {
       "url": "https://gogs.dyne.org/DECODE/decode-prototype.git",
