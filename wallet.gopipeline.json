@@ -13,7 +13,7 @@
       "name": "test",
       "fetch_materials": true,
       "never_cleanup_artifacts": false,
-      "clean_working_directory": false,
+      "clean_working_directory": true,
       "environment_variables": [],
       "jobs": [
         {
