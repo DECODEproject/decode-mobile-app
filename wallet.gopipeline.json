@@ -42,7 +42,9 @@
               "on_cancel" : null,
               "command": "npm",
               "arguments": [
-                "test -- -u"
+                "test",
+                "--",
+                "-u"
               ],
               "working_directory": "apps/wallet"
             }
