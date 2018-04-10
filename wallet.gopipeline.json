@@ -5,7 +5,12 @@
   "materials": [
     {
       "url": "https://gogs.dyne.org/DECODE/decode-prototype.git",
-      "type": "git"
+      "type": "git",
+      "filter": {
+        "whitelist": [
+          "apps/wallet/**/*"
+        ]
+      }
     }
   ],
   "stages": [
