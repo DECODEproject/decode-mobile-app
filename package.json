@@ -17,7 +17,8 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "env=development exp start -i",
-    "test": "node node_modules/jest/bin/jest.js"
+    "test": "node node_modules/jest/bin/jest.js",
+    "test-watch": "jest --watch"
   },
   "jest": {
     "preset": "jest-expo"
