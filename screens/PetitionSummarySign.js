@@ -151,27 +151,25 @@ export default class PetitionSummaryGet extends React.Component {
       .catch(() => this.setState({ loading: false, serverError: true }));
   }
 
-  goToSignConfirmation() {
+  async goToSignConfirmation() {
     this.setState({
       visible: true,
     });
-    setTimeout(() => {
-      fetch(`${walletProxyLink}/sign/petitions/${this.state.petition.id}`, {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          signatory: this.state.id.substring(0, 5),
-          isEthereum: this.state.petition.isEthereum,
-        }),
-      });
-      this.props.navigator.push(Router.getRoute('signConfirmation'));
-      this.setState({
-        visible: false,
-      });
-    }, 3000);
+    await fetch(`${walletProxyLink}/sign/petitions/${this.state.petition.id}`, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        signatory: this.state.id.substring(0, 5),
+        isEthereum: this.state.petition.isEthereum,
+      }),
+    });
+    this.props.navigator.push(Router.getRoute('signConfirmation'));
+    this.setState({
+      visible: false,
+    });
   }
 
   render() {
