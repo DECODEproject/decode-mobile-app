@@ -30,7 +30,7 @@ function generateWalletId() {
 
 export const initialiseWalletID = async () => {
   const id = await getWalletID();
-  if (id) {
+  if (!id) {
     try {
       await AsyncStorage.setItem('@MyStore:id', generateWalletId());
     } catch (e) {
