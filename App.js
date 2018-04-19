@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import {
   NavigationProvider,
   StackNavigation,
-  NavigationContext
+  NavigationContext,
 } from '@expo/ex-navigation';
 import Router from './Router';
 import Store from './application/redux/store';
@@ -15,11 +15,10 @@ const latoBold = require('./assets/fonts/Lato-Bold.ttf');
 
 const navigationContext = new NavigationContext({
   router: Router,
-  store: Store
+  store: Store,
 });
 
 export default class App extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -48,7 +47,7 @@ export default class App extends React.Component {
             <StackNavigation initialRoute={Router.getRoute('home')} />
           </NavigationProvider>
         </Provider>
-      )
+      );
     }
     return null;
   }

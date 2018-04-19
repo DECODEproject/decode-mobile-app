@@ -20,8 +20,8 @@ function generateWalletId() {
 
   const rng = new ctx2.RAND();
 
-    // S0 - private key
-    // W0 - public key
+  // S0 - private key
+  // W0 - public key
   ctx2.ECDH.KEY_PAIR_GENERATE(rng, S0, W0);
 
   //  return W0;

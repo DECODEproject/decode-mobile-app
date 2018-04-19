@@ -14,8 +14,6 @@ function delay(time) {
   });
 }
 
-let route;
-
 export default class QRScanner extends React.Component {
   static route = {
     navigationBar: {
@@ -42,7 +40,7 @@ export default class QRScanner extends React.Component {
 
   getURL(url) {
     const myURL = new URL(url, true);
-    const petitionLink = myURL.query.petitionLink;
+    const { query: { petitionLink } } = myURL;
     this.setState({ petitionLink });
   }
 

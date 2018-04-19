@@ -58,8 +58,6 @@ const styles = StyleSheet.create({
   },
 });
 
-let route;
-
 export default class Authorisation extends React.Component {
   static route = {
     navigationBar: {
@@ -92,7 +90,8 @@ export default class Authorisation extends React.Component {
         <View style={styles.authorisationBox}>
           <Text style={styles.logo}>SECURE PETITIONS</Text>
           <Text style={styles.textParagraph}>would like
-            to connect with your DECODE wallet</Text>
+            to connect with your DECODE wallet
+          </Text>
           <TouchableOpacity
             style={styles.button}
             onPress={this.goToPetitionSummaryGet}

@@ -1,11 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity, Linking } from 'react-native';
+import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-import {goQRScannerIntro, goToAuthorization} from '../application/redux/actions/navigation'
-import { onStartApp } from '../application/redux/actions/petitionLink'
-
-const URL = require('url-parse');
+import { goQRScannerIntro, goToAuthorization } from '../application/redux/actions/navigation';
+import { onStartApp } from '../application/redux/actions/petitionLink';
 
 const decodeLogo = require('../assets/images/decode_logo.jpg');
 
@@ -104,26 +102,25 @@ class Home extends React.Component {
 }
 
 Home.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
   goQRScannerIntro: PropTypes.func.isRequired,
   goToAuthorization: PropTypes.func.isRequired,
   petitionLinkStartup: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
 };
 
-const mapStateToProps = (state) => {
-  return {
-    petitionLink: state.petitionLink.petitionLink,
-  };
+Home.defaultProps = {
+  petitionLink: undefined,
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
-    goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
-    petitionLinkStartup: () => { dispatch(onStartApp()); }
-  };
-};
+const mapStateToProps = state => ({
+  petitionLink: state.petitionLink.petitionLink,
+});
+
+const mapDispatchToProps = dispatch => ({
+  goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
+  goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
+  petitionLinkStartup: () => { dispatch(onStartApp()); },
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Linking, Image } from 'react-native';
+import { StyleSheet, Text, View, Linking, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
 
@@ -62,6 +62,10 @@ export default class SignConfirmation extends React.Component {
     },
   }
 
+  static handlePress() {
+    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
+  }
+
   constructor(props) {
     super(props);
     this.goToHome = this.goToHome.bind(this);
@@ -69,10 +73,6 @@ export default class SignConfirmation extends React.Component {
 
   goToHome() {
     this.props.navigator.push(Router.getRoute('authorisation'));
-  }
-
-  handlePress() {
-    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
   }
 
   render() {
@@ -87,11 +87,13 @@ export default class SignConfirmation extends React.Component {
             <Text style={styles.textSubHeading}>Thank you for signing</Text>
             <Text style={styles.petitionTitle}>Create communal space in Atlantis</Text>
             <Text style={styles.confirmationText}>You can view the results of the petition
-              on the Secure Petitions website</Text>
+              on the Secure Petitions website
+            </Text>
             <Text
               style={styles.buttonText}
-              onPress={this.handlePress}
-            >View Petitions Results</Text>
+              onPress={SignConfirmation.handlePress}
+            >View Petitions Results
+            </Text>
           </View>
         </View>
       </View>

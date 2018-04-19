@@ -131,8 +131,6 @@ export default class PetitionSummaryGet extends React.Component {
     this.state = {
       visible: false,
       petition: {},
-      loading: true,
-      serverError: false,
       id: null,
     };
     this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
@@ -147,8 +145,7 @@ export default class PetitionSummaryGet extends React.Component {
     return fetch(this.props.route.params.petitionLink)
       .then(handleErrors)
       .then(response => response.json())
-      .then(petition => this.setState({ loading: false, petition }))
-      .catch(() => this.setState({ loading: false, serverError: true }));
+      .then(petition => this.setState({ petition }));
   }
 
   async goToSignConfirmation() {
@@ -184,7 +181,8 @@ export default class PetitionSummaryGet extends React.Component {
             <Text style={styles.petitionDescription}>
               White paper blockchain technology node research and develop.
               Cryptographic modelling.
-              Availability fairbnb cryptographic modelling data ontology pilot</Text>
+              Availability fairbnb cryptographic modelling data ontology pilot
+            </Text>
             <Text style={styles.closingDate}>Closing: 28 October 2018</Text>
           </View>
           <Text style={styles.textTitle}>Your Information</Text>
@@ -196,7 +194,8 @@ export default class PetitionSummaryGet extends React.Component {
             <View style={styles.attribute}>
               <Text style={styles.attributeName}>Verified Atlantis Resident*</Text>
               <Text style={styles.attributeDetails}>Atlantis Resident Status:
-                <Text style={styles.attributeStatus}> Confirmed</Text></Text>
+                <Text style={styles.attributeStatus}> Confirmed</Text>
+              </Text>
             </View>
           </View>
           <Text style={styles.requiredText}>*Required fields</Text>

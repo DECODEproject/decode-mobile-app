@@ -131,8 +131,6 @@ export default class PetitionSummaryGet extends React.Component {
     this.goToPetitionSummarySign = this.goToPetitionSummarySign.bind(this);
     this.state = {
       petition: {},
-      loading: true,
-      serverError: false,
     };
   }
 
@@ -140,8 +138,7 @@ export default class PetitionSummaryGet extends React.Component {
     return fetch(this.props.route.params.petitionLink)
       .then(handleErrors)
       .then(response => response.json())
-      .then(petition => this.setState({ loading: false, petition }))
-      .catch(() => this.setState({ loading: false, serverError: true }));
+      .then(petition => this.setState({ petition }));
   }
 
   goToPetitionSummarySign() {
@@ -166,9 +163,8 @@ export default class PetitionSummaryGet extends React.Component {
     const url = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
 
     this.addLinkingListener();
-    const result = await WebBrowser.openBrowserAsync(url);
+    await WebBrowser.openBrowserAsync(url);
     this.removeLinkingListener();
-    this.setState({ result });
   };
 
   render() {
@@ -184,7 +180,8 @@ export default class PetitionSummaryGet extends React.Component {
           <View style={styles.attributeContainer}>
             <Text style={styles.attributeName}>Verified Atlantis Resident*</Text>
             <Text style={styles.attributeDetails}>To get this attribute you will be directed
-              to the Atlantis Council website</Text>
+              to the Atlantis Council website
+            </Text>
             <TouchableOpacity
               style={styles.button}
               onPress={this.openWebBrowserAsync}

@@ -1,15 +1,17 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Home from './Home';
-import { shallow } from 'enzyme';
 import configureStore from 'redux-mock-store';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import thunk from 'redux-thunk';
+import Home from './Home';
 
-const mockStore = configureStore([]);
+Enzyme.configure({ adapter: new Adapter() });
 
+const mockStore = configureStore([thunk]);
 
 const initialState = {
   petitionLink: {
-    petitionLink: undefined
+    petitionLink: undefined,
   },
 };
 
@@ -20,7 +22,4 @@ it('renders Home component', () => {
     { context: { store: mockStore(initialState) } },
   );
   expect(wrapper.dive()).toMatchSnapshot();
-
-  //const rendered = renderer.create(<Home />).toJSON();
-  //expect(rendered).toMatchSnapshot();
 });

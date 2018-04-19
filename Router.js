@@ -1,6 +1,4 @@
-import {
-  createRouter,
-} from '@expo/ex-navigation';
+import { createRouter } from '@expo/ex-navigation';
 import Home from './screens/Home';
 import QRScannerIntro from './screens/QRScannerIntro';
 import QRScanner from './screens/QRScanner';
