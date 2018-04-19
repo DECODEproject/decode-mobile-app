@@ -1,8 +1,7 @@
 import { Platform } from 'react-native';
 import { createNavigationEnabledStore, NavigationReducer } from '@expo/ex-navigation';
 import { compose, combineReducers, createStore, applyMiddleware } from 'redux';
-
-//import {incrementReducer, ipReducer} from './reducers/reducers'
+import petitionLink from './reducers/petitionLink'
 import thunk from 'redux-thunk';
 import devTools from 'remote-redux-devtools';
 
@@ -25,9 +24,7 @@ const Store = createStoreWithNavigation(
   /* combineReducers and your normal create store things here! */
   combineReducers({
     navigation: NavigationReducer,
-    //increment: incrementReducer,
-    // ip: ipReducer
-    // other reducers
+    petitionLink,
   })
 );
 

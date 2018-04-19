@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity, Linking } from 'react-native';
 import PropTypes from 'prop-types';
-import Router from '../Router';
 import {goQRScannerIntro, goToAuthorization} from '../application/redux/actions/navigation'
+import { onStartApp } from '../application/redux/actions/petitionLink'
 
 const URL = require('url-parse');
 
@@ -61,23 +61,15 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.goToNextPage = this.goToNextPage.bind(this);
-    this.state = {
-      mobile: null,
-    };
   }
 
   componentWillMount() {
-    Linking.getInitialURL().then((url) => {
-      const myURL = new URL(url, true);
-      const mobile = myURL.query.mobile;
-      const petitionLink = myURL.query.petitionLink;
-      this.setState({ mobile, petitionLink });
-    });
+    this.props.petitionLinkStartup();
   }
 
   goToNextPage() {
-    if (this.state.mobile === 'true') {
-      this.props.goToAuthorization(this.state.petitionLink);
+    if (this.props.petitionLink) {
+      this.props.goToAuthorization(this.props.petitionLink);
     } else {
       this.props.goQRScannerIntro();
     }
@@ -115,17 +107,21 @@ Home.propTypes = {
   navigator: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
   goQRScannerIntro: PropTypes.func.isRequired,
   goToAuthorization: PropTypes.func.isRequired,
+  petitionLinkStartup: PropTypes.func.isRequired,
+  petitionLink: PropTypes.string,
 };
 
 const mapStateToProps = (state) => {
   return {
+    petitionLink: state.petitionLink.petitionLink,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
-    goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); }
+    goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
+    petitionLinkStartup: () => { dispatch(onStartApp()); }
   };
 };
 
