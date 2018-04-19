@@ -9,7 +9,8 @@
     "enzyme-adapter-react-16": "^1.1.0",
     "jest-expo": "23.0.0",
     "react-native-scripts": "1.8.1",
-    "react-test-renderer": "16.0.0"
+    "react-test-renderer": "16.0.0",
+    "remotedev-rn-debugger": "^0.8.3"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -18,7 +19,8 @@
     "android": "react-native-scripts android",
     "ios": "env=development exp start -i",
     "test": "node node_modules/jest/bin/jest.js",
-    "test-watch": "jest --watch"
+    "test-watch": "jest --watch",
+    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver"
   },
   "jest": {
     "preset": "jest-expo"
@@ -35,6 +37,10 @@
     "react-dom": "^16.2.0",
     "react-native": "^0.50.3",
     "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "remote-redux-devtools": "^0.5.12",
     "url-parse": "^1.2.0",
     "uuid": "^3.2.1"
   },

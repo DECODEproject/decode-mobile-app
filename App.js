@@ -1,14 +1,22 @@
 import React from 'react';
 import { Font } from 'expo';
+import { Provider } from 'react-redux';
 import {
-NavigationProvider,
-StackNavigation,
+  NavigationProvider,
+  StackNavigation,
+  NavigationContext
 } from '@expo/ex-navigation';
 import Router from './Router';
+import Store from './application/redux/store';
 import { initialiseWalletID } from './LocalStorage';
 
 const montserratMedium = require('./assets/fonts/Montserrat-Medium.ttf');
 const latoBold = require('./assets/fonts/Lato-Bold.ttf');
+
+const navigationContext = new NavigationContext({
+  router: Router,
+  store: Store
+});
 
 export default class App extends React.Component {
 
@@ -35,9 +43,12 @@ export default class App extends React.Component {
   render() {
     if (this.state.ready) {
       return (
-        <NavigationProvider router={Router}>
-          <StackNavigation initialRoute={Router.getRoute('home')} />
-        </NavigationProvider>);
+        <Provider store={Store}>
+          <NavigationProvider context={navigationContext}>
+            <StackNavigation initialRoute={Router.getRoute('home')} />
+          </NavigationProvider>
+        </Provider>
+      )
     }
     return null;
   }
