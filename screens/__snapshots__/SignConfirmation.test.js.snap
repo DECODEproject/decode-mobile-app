@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SignConfirmation component 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgb(246, 246, 246)",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignSelf": "stretch",
+        "backgroundColor": "#FFF",
+        "margin": 16,
+        "marginTop": 30,
+        "paddingHorizontal": 20,
+        "paddingVertical": 40,
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "alignSelf": "center",
+          "height": 75,
+          "marginBottom": 40,
+          "width": 75,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "width": 250,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 14,
+            "marginBottom": 4,
+            "textAlign": "center",
+          }
+        }
+      >
+        Thank you for signing
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 20,
+            "fontWeight": "500",
+            "marginVertical": 15,
+            "textAlign": "center",
+          }
+        }
+      >
+        Create communal space in Atlantis
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "marginBottom": 20,
+            "textAlign": "center",
+          }
+        }
+      >
+        You can view the results of the petition on the Secure Petitions website
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        onPress={[Function]}
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "rgb(0,163,158)",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        View Petitions Results
+      </Text>
+    </View>
+  </View>
+</View>
+`;

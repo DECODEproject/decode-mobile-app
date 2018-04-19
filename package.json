@@ -10,6 +10,7 @@
     "jest-expo": "23.0.0",
     "react-native-scripts": "1.8.1",
     "react-test-renderer": "16.0.0",
+    "redux-mock-store": "^1.5.1",
     "remotedev-rn-debugger": "^0.8.3"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",

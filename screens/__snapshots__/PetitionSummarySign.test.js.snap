@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders PetitionSummarySign component 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(246, 246, 246)",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignSelf": "stretch",
+            "backgroundColor": "#FFF",
+            "margin": 16,
+            "padding": 10,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 20,
+              "fontWeight": "500",
+              "marginBottom": 20,
+            }
+          }
+        >
+          Universal basic income
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 15,
+            }
+          }
+        >
+          White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.54)",
+              "fontSize": 12,
+            }
+          }
+        >
+          Closing: 28 October 2018
+        </Text>
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 20,
+            "fontWeight": "500",
+            "marginBottom": 10,
+            "marginLeft": 16,
+          }
+        }
+      >
+        Your Information
+      </Text>
+      <View
+        style={
+          Object {
+            "alignSelf": "stretch",
+            "backgroundColor": "#FFF",
+            "display": "flex",
+            "flexDirection": "row",
+            "marginVertical": 1,
+            "padding": 16,
+          }
+        }
+      >
+        <Image
+          source={1}
+          style={
+            Object {
+              "height": 20,
+              "marginTop": 3,
+              "width": 20,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "marginLeft": 15,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "rgba(0, 0, 0, 0.87)",
+                "fontSize": 16,
+                "fontWeight": "500",
+              }
+            }
+          >
+            Verified Atlantis Resident*
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "rgba(0, 0, 0, 0.54)",
+                "marginVertical": 4,
+              }
+            }
+          >
+            Atlantis Resident Status:
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontWeight": "500",
+                }
+              }
+            >
+               Confirmed
+            </Text>
+          </Text>
+        </View>
+      </View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "marginLeft": 16,
+            "marginTop": 10,
+          }
+        }
+      >
+        *Required fields
+      </Text>
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FFF",
+        "borderColor": "rgba(0, 0, 0, 0.15)",
+        "borderWidth": 1,
+        "height": 64,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "rgb(0,163,158)",
+          "borderRadius": 2,
+          "elevation": 2,
+          "height": 36,
+          "marginBottom": 18,
+          "marginHorizontal": 16,
+          "marginTop": 10,
+          "opacity": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 8,
+          "shadowColor": "rgba(0, 0, 0, 0.54)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.8,
+          "shadowRadius": 2,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignSelf": "center",
+            "color": "#FFF",
+            "fontSize": 14,
+            "fontWeight": "500",
+          }
+        }
+      >
+        SIGN PETITION
+      </Text>
+    </View>
+  </View>
+</View>
+`;
