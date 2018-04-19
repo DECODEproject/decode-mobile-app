@@ -1,7 +1,9 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import Router from '../Router';
+import {goQRScannerIntro, goToAuthorization} from '../application/redux/actions/navigation'
 
 const URL = require('url-parse');
 
@@ -55,7 +57,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Home extends React.Component {
+class Home extends React.Component {
   constructor(props) {
     super(props);
     this.goToNextPage = this.goToNextPage.bind(this);
@@ -75,9 +77,9 @@ export default class Home extends React.Component {
 
   goToNextPage() {
     if (this.state.mobile === 'true') {
-      this.props.navigator.push(Router.getRoute('authorisation', { petitionLink: this.state.petitionLink }));
+      this.props.goToAuthorization(this.state.petitionLink);
     } else {
-      this.props.navigator.push(Router.getRoute('QRScannerIntro'));
+      this.props.goQRScannerIntro();
     }
   }
 
@@ -111,4 +113,21 @@ export default class Home extends React.Component {
 
 Home.propTypes = {
   navigator: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
+  goQRScannerIntro: PropTypes.func.isRequired,
+  goToAuthorization: PropTypes.func.isRequired,
 };
+
+const mapStateToProps = (state) => {
+  return {
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
+    goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
+
