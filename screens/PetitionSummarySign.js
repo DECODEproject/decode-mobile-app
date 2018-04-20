@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from 'react-native';
 import Spinner from 'react-native-loading-spinner-overlay';
 import PropTypes from 'prop-types';
-import Router from '../Router';
-import { getWalletID } from '../LocalStorage';
+import { connect } from 'react-redux';
+import { goToSignConfirmation } from '../application/redux/actions/navigation';
 
 const config = require('../config.json');
 
@@ -108,14 +108,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const handleErrors = (response) => {
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-  return response;
-};
-
-export default class PetitionSummaryGet extends React.Component {
+class PetitionSummarySign extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -130,40 +123,26 @@ export default class PetitionSummaryGet extends React.Component {
     super(props);
     this.state = {
       visible: false,
-      petition: {},
-      id: null,
     };
     this.goToSignConfirmation = this.goToSignConfirmation.bind(this);
   }
 
-  async componentWillMount() {
-    const id = await getWalletID();
-    this.setState({ id });
-  }
-
-  componentDidMount() {
-    return fetch(this.props.route.params.petitionLink)
-      .then(handleErrors)
-      .then(response => response.json())
-      .then(petition => this.setState({ petition }));
-  }
-
-  async goToSignConfirmation() {
+  async goToSignConfirmation(petition, walletId) {
     this.setState({
       visible: true,
     });
-    await fetch(`${walletProxyLink}/sign/petitions/${this.state.petition.id}`, {
+    await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        signatory: this.state.id.substring(0, 5),
-        isEthereum: this.state.petition.isEthereum,
+        signatory: walletId.substring(0, 5),
+        isEthereum: petition.isEthereum,
       }),
     });
-    this.props.navigator.push(Router.getRoute('signConfirmation'));
+    this.props.goToSignConfirmation();
     this.setState({
       visible: false,
     });
@@ -203,7 +182,7 @@ export default class PetitionSummaryGet extends React.Component {
         <View style={styles.footerContainer}>
           <TouchableOpacity
             style={styles.signButton}
-            onPress={this.goToSignConfirmation}
+            onPress={() => { this.goToSignConfirmation(this.props.petition, this.props.walletId); }}
           >
             <Text style={styles.buttonText}>SIGN PETITION</Text>
           </TouchableOpacity>
@@ -213,17 +192,22 @@ export default class PetitionSummaryGet extends React.Component {
   }
 }
 
-PetitionSummaryGet.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
-  route: PropTypes.shape({ params: PropTypes.object }),
+PetitionSummarySign.propTypes = {
+  petition: PropTypes.shape({
+    id: PropTypes.string,
+    isEthereum: PropTypes.string,
+  }).isRequired,
+  walletId: PropTypes.string.isRequired,
+  goToSignConfirmation: PropTypes.func.isRequired,
 };
 
-PetitionSummaryGet.defaultProps = {
-  navigator: {
-    push: () => {
-    },
-  },
-  route: {
-    params: {},
-  },
-};
+const mapStateToProps = state => ({
+  petition: state.petition.petition,
+  walletId: state.wallet.id,
+});
+
+const mapDispatchToProps = dispatch => ({
+  goToSignConfirmation: () => { dispatch(goToSignConfirmation()); },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummarySign);
