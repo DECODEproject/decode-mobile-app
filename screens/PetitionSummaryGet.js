@@ -4,7 +4,9 @@ import React from 'react';
 import { Constants, WebBrowser } from 'expo';
 import { StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
-import Router from '../Router';
+import { connect } from 'react-redux';
+import { goToPetitionSummarySign } from '../application/redux/actions/navigation';
+import { getPetition } from '../application/redux/actions/petition';
 
 const styles = StyleSheet.create({
   container: {
@@ -108,14 +110,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const handleErrors = (response) => {
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-  return response;
-};
-
-export default class PetitionSummaryGet extends React.Component {
+class PetitionSummaryGet extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -129,20 +124,14 @@ export default class PetitionSummaryGet extends React.Component {
   constructor(props) {
     super(props);
     this.goToPetitionSummarySign = this.goToPetitionSummarySign.bind(this);
-    this.state = {
-      petition: {},
-    };
   }
 
   componentDidMount() {
-    return fetch(this.props.route.params.petitionLink)
-      .then(handleErrors)
-      .then(response => response.json())
-      .then(petition => this.setState({ petition }));
+    this.props.getPetition(this.props.petitionLink);
   }
 
   goToPetitionSummarySign() {
-    this.props.navigator.push(Router.getRoute('petitionSummarySign', { petitionLink: this.props.route.params.petitionLink }));
+    this.props.goToPetitionSummarySign(this.props.petitionLink);
   }
 
   removeLinkingListener = () => {
@@ -168,14 +157,18 @@ export default class PetitionSummaryGet extends React.Component {
   };
 
   render() {
+    const petitionView = (
+      <View style={styles.petitionSummaryBox}>
+        <Text style={styles.petitionTitle}>{this.props.petition.title}</Text>
+        <Text style={styles.petitionDescription}>{this.props.petition.description}</Text>
+        <Text style={styles.closingDate}>Closing date: {this.props.petition.closingDate}</Text>
+      </View>
+    );
     return (
       <View style={styles.container}>
         <ScrollView>
-          <View style={styles.petitionSummaryBox}>
-            <Text style={styles.petitionTitle}>{this.state.petition.title}</Text>
-            <Text style={styles.petitionDescription}>{this.state.petition.description}</Text>
-            <Text style={styles.closingDate}>Closing date: {this.state.petition.closingDate}</Text>
-          </View>
+          { this.props.petition && petitionView }
+
           <Text style={styles.textTitle}>Your Information</Text>
           <View style={styles.attributeContainer}>
             <Text style={styles.attributeName}>Verified Atlantis Resident*</Text>
@@ -202,17 +195,28 @@ export default class PetitionSummaryGet extends React.Component {
 }
 
 PetitionSummaryGet.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
-  route: PropTypes.shape({ params: PropTypes.object }),
+  petitionLink: PropTypes.string.isRequired,
+  petition: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+    closingDate: PropTypes.string,
+  }),
+  goToPetitionSummarySign: PropTypes.func.isRequired,
+  getPetition: PropTypes.func.isRequired,
 };
 
 PetitionSummaryGet.defaultProps = {
-  navigator: {
-    push: () => {
-    },
-  },
-  route: {
-    params: {
-    },
-  },
+  petition: undefined,
 };
+
+const mapStateToProps = state => ({
+  petitionLink: state.petitionLink.petitionLink,
+  petition: state.petition.petition,
+});
+
+const mapDispatchToProps = dispatch => ({
+  goToPetitionSummarySign: (petitionLink) => { dispatch(goToPetitionSummarySign(petitionLink)); },
+  getPetition: (petitionLink) => { dispatch(getPetition(petitionLink)); },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummaryGet);

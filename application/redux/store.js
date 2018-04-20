@@ -4,6 +4,7 @@ import { compose, combineReducers, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import devTools from 'remote-redux-devtools';
 import petitionLink from './reducers/petitionLink';
+import petition from './reducers/petition';
 
 const enhancer = compose(
   applyMiddleware(thunk),
@@ -23,6 +24,7 @@ const createStoreWithNavigation = createNavigationEnabledStore({
 const Store = createStoreWithNavigation(combineReducers({
   navigation: NavigationReducer,
   petitionLink,
+  petition,
 }));
 
 export default Store;
