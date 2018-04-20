@@ -13,6 +13,9 @@ const initialState = {
   petitionLink: {
     petitionLink: undefined,
   },
+  wallet: {
+    id: 'my-id',
+  },
 };
 
 it('renders Authorisation component', () => {

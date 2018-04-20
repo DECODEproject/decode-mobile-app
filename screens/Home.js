@@ -4,6 +4,7 @@ import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity } 
 import PropTypes from 'prop-types';
 import { goQRScannerIntro, goToAuthorization } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
+import { getWalletId } from '../application/redux/actions/wallet';
 
 const decodeLogo = require('../assets/images/decode_logo.jpg');
 
@@ -63,6 +64,7 @@ class Home extends React.Component {
 
   componentWillMount() {
     this.props.petitionLinkStartup();
+    this.props.loadWalletId();
   }
 
   goToNextPage() {
@@ -106,6 +108,7 @@ Home.propTypes = {
   goToAuthorization: PropTypes.func.isRequired,
   petitionLinkStartup: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
+  loadWalletId: PropTypes.func.isRequired,
 };
 
 Home.defaultProps = {
@@ -120,6 +123,7 @@ const mapDispatchToProps = dispatch => ({
   goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
   goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
   petitionLinkStartup: () => { dispatch(onStartApp()); },
+  loadWalletId: () => { dispatch(getWalletId()); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

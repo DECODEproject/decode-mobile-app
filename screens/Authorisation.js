@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getWalletID } from '../LocalStorage';
 import { goToPetitionSummaryGet } from '../application/redux/actions/navigation';
 
 
@@ -72,14 +71,6 @@ class Authorisation extends React.Component {
   constructor(props) {
     super(props);
     this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
-    this.state = {
-      id: 'default id',
-    };
-  }
-
-  async componentWillMount() {
-    const id = await getWalletID();
-    this.setState({ id });
   }
 
   goToPetitionSummaryGet() {
@@ -101,7 +92,7 @@ class Authorisation extends React.Component {
             <Text style={styles.buttonText}>AUTHORISE</Text>
           </TouchableOpacity>
         </View>
-        <Text style={styles.id}>Wallet ID: {this.state.id}</Text>
+        <Text style={styles.id}>Wallet ID: {this.props.walletId}</Text>
       </View>
     );
   }
@@ -110,14 +101,17 @@ class Authorisation extends React.Component {
 Authorisation.propTypes = {
   goToPetitionSummaryGet: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
+  walletId: PropTypes.string,
 };
 
 Authorisation.defaultProps = {
   petitionLink: undefined,
+  walletId: '',
 };
 
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
+  walletId: state.wallet.id,
 });
 
 const mapDispatchToProps = dispatch => ({
