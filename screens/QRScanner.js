@@ -4,9 +4,9 @@ import React from 'react';
 import { StyleSheet, Text, View, Alert } from 'react-native';
 import { BarCodeScanner, Permissions } from 'expo';
 import PropTypes from 'prop-types';
-import Router from '../Router';
-
-const URL = require('url-parse');
+import { connect } from 'react-redux';
+import { setPetitionLink } from '../application/redux/actions/petitionLink';
+import { goToAuthorization } from '../application/redux/actions/navigation';
 
 function delay(time) {
   return new Promise((resolve) => {
@@ -14,12 +14,19 @@ function delay(time) {
   });
 }
 
-export default class QRScanner extends React.Component {
+class QRScanner extends React.Component {
   static route = {
     navigationBar: {
       tintColor: 'rgb(0,163,158)',
       title: 'QR Scanner',
     },
+  }
+
+  static getURL(url) {
+    const myURL = new URL(url, true);
+    const { query: { petitionLink } } = myURL;
+
+    this.props.setPetitionLink(petitionLink);
   }
 
   constructor(props) {
@@ -29,7 +36,6 @@ export default class QRScanner extends React.Component {
       hasCameraPermission: null,
       permissionAsked: false,
       read: null,
-      petitionLink: null,
     };
   }
 
@@ -38,18 +44,12 @@ export default class QRScanner extends React.Component {
     this.setState({ hasCameraPermission: status === 'granted' });
   }
 
-  getURL(url) {
-    const myURL = new URL(url, true);
-    const { query: { petitionLink } } = myURL;
-    this.setState({ petitionLink });
-  }
-
   handleBarCodeRead = async ({ data }) => {
     await delay(500);
     if (this.state.read === true) return;
     this.getURL(data);
     this.setState({ read: true });
-    this.props.navigator.push(Router.getRoute('authorisation', { petitionLink: this.state.petitionLink }));
+    this.props.goToAuthorization(this.props.petitionLink);
   }
 
   render() {
@@ -76,12 +76,23 @@ export default class QRScanner extends React.Component {
 }
 
 QRScanner.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  goToAuthorization: PropTypes.func.isRequired,
+  setPetitionLink: PropTypes.func.isRequired,
+  petitionLink: PropTypes.string,
 };
 
 QRScanner.defaultProps = {
-  navigator: {
-    push: () => {
-    },
-  },
+  petitionLink: undefined,
 };
+
+const mapStateToProps = state => ({
+  petitionLink: state.petitionLink.petitionLink,
+});
+
+const mapDispatchToProps = dispatch => ({
+  goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
+  setPetitionLink: (petitionLink) => { dispatch(setPetitionLink(petitionLink)); },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(QRScanner);
+

@@ -70,7 +70,7 @@ class QRScannerIntro extends React.Component {
   }
 
   goToQRScanner() {
-    this.props.goQRScannerIntro();
+    this.props.goQRScanner();
   }
 
   render() {
