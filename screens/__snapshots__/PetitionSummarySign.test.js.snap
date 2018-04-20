@@ -1,245 +1,2002 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders PetitionSummarySign component 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "rgb(246, 246, 246)",
-      "flex": 1,
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PetitionSummarySign
+    goToSignConfirmation={[Function]}
+    petition={
+      Object {
+        "id": "1234",
+        "isEthereum": "false",
+      }
     }
-  }
->
-  <RCTScrollView>
-    <View>
-      <View
-        style={
-          Object {
-            "flex": 1,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "alignSelf": "stretch",
-            "backgroundColor": "#FFF",
-            "margin": 16,
-            "padding": 10,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "rgba(0, 0, 0, 0.87)",
-              "fontSize": 20,
-              "fontWeight": "500",
-              "marginBottom": 20,
-            }
-          }
-        >
-          Universal basic income
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "rgba(0, 0, 0, 0.87)",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 15,
-            }
-          }
-        >
-          White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
-        </Text>
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "color": "rgba(0, 0, 0, 0.54)",
-              "fontSize": 12,
-            }
-          }
-        >
-          Closing: 28 October 2018
-        </Text>
-      </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontSize": 20,
-            "fontWeight": "500",
-            "marginBottom": 10,
-            "marginLeft": 16,
-          }
-        }
-      >
-        Your Information
-      </Text>
-      <View
-        style={
-          Object {
-            "alignSelf": "stretch",
-            "backgroundColor": "#FFF",
-            "display": "flex",
-            "flexDirection": "row",
-            "marginVertical": 1,
-            "padding": 16,
-          }
-        }
-      >
-        <Image
-          source={1}
-          style={
-            Object {
-              "height": 20,
-              "marginTop": 3,
-              "width": 20,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "marginLeft": 15,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+    walletId="my-wallet-id-numbeeeeeeeeeeer"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <ScrollViewMock>
+          <View
             style={
               Object {
-                "color": "rgba(0, 0, 0, 0.87)",
-                "fontSize": 16,
-                "fontWeight": "500",
+                "flex": 1,
               }
             }
           >
-            Verified Atlantis Resident*
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+            <Spinner
+              animation="none"
+              cancelable={false}
+              color="white"
+              overlayColor="rgba(0, 0, 0, 0.25)"
+              size="large"
+              textContent=""
+              textStyle={
+                Object {
+                  "color": "#FFF",
+                }
+              }
+              visible={false}
+            />
+          </View>
+          <View
             style={
               Object {
-                "color": "rgba(0, 0, 0, 0.54)",
-                "marginVertical": 4,
+                "alignSelf": "stretch",
+                "backgroundColor": "#FFF",
+                "margin": 16,
+                "padding": 10,
               }
             }
           >
-            Atlantis Resident Status:
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
               style={
                 Object {
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "marginBottom": 20,
+                }
+              }
+            >
+              Universal basic income
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                  "marginBottom": 15,
+                }
+              }
+            >
+              White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "rgba(0, 0, 0, 0.54)",
+                  "fontSize": 12,
+                }
+              }
+            >
+              Closing: 28 October 2018
+            </Text>
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 20,
+                "fontWeight": "500",
+                "marginBottom": 10,
+                "marginLeft": 16,
+              }
+            }
+          >
+            Your Information
+          </Text>
+          <View
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "#FFF",
+                "display": "flex",
+                "flexDirection": "row",
+                "marginVertical": 1,
+                "padding": 16,
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Object {
+                  "height": 20,
+                  "marginTop": 3,
+                  "width": 20,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "marginLeft": 15,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                  }
+                }
+              >
+                Verified Atlantis Resident*
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.54)",
+                    "marginVertical": 4,
+                  }
+                }
+              >
+                Atlantis Resident Status:
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "fontWeight": "500",
+                    }
+                  }
+                >
+                   Confirmed
+                </Text>
+              </Text>
+            </View>
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontSize": 12,
+                "marginLeft": 16,
+                "marginTop": 10,
+              }
+            }
+          >
+            *Required fields
+          </Text>
+        </ScrollViewMock>,
+        <View
+          style={
+            Object {
+              "backgroundColor": "#FFF",
+              "borderColor": "rgba(0, 0, 0, 0.15)",
+              "borderWidth": 1,
+              "height": 64,
+            }
+          }
+        >
+          <TouchableOpacity
+            activeOpacity={0.2}
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "rgb(0,163,158)",
+                "borderRadius": 2,
+                "elevation": 2,
+                "height": 36,
+                "marginBottom": 18,
+                "marginHorizontal": 16,
+                "marginTop": 10,
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "shadowColor": "rgba(0, 0, 0, 0.54)",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.8,
+                "shadowRadius": 2,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "#FFF",
+                  "fontSize": 14,
                   "fontWeight": "500",
                 }
               }
             >
-               Confirmed
+              SIGN PETITION
             </Text>
-          </Text>
-        </View>
-      </View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontSize": 12,
-            "marginLeft": 16,
-            "marginTop": 10,
-          }
-        }
-      >
-        *Required fields
-      </Text>
-    </View>
-  </RCTScrollView>
-  <View
-    style={
+          </TouchableOpacity>
+        </View>,
+      ],
+      "style": Object {
+        "backgroundColor": "rgb(246, 246, 246)",
+        "flex": 1,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
       Object {
-        "backgroundColor": "#FFF",
-        "borderColor": "rgba(0, 0, 0, 0.15)",
-        "borderWidth": 1,
-        "height": 64,
-      }
-    }
-  >
-    <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
-      accessible={true}
-      collapsable={undefined}
-      hitSlop={undefined}
-      isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "alignSelf": "stretch",
-          "backgroundColor": "rgb(0,163,158)",
-          "borderRadius": 2,
-          "elevation": 2,
-          "height": 36,
-          "marginBottom": 18,
-          "marginHorizontal": 16,
-          "marginTop": 10,
-          "opacity": 1,
-          "paddingHorizontal": 16,
-          "paddingVertical": 8,
-          "shadowColor": "rgba(0, 0, 0, 0.54)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 0.8,
-          "shadowRadius": 2,
-        }
-      }
-      testID={undefined}
-      tvParallaxProperties={undefined}
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Spinner
+                animation="none"
+                cancelable={false}
+                color="white"
+                overlayColor="rgba(0, 0, 0, 0.25)"
+                size="large"
+                textContent=""
+                textStyle={
+                  Object {
+                    "color": "#FFF",
+                  }
+                }
+                visible={false}
+              />
+            </View>,
+            <View
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFF",
+                  "margin": 16,
+                  "padding": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "fontSize": 20,
+                    "fontWeight": "500",
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                Universal basic income
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                  }
+                }
+              >
+                White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.54)",
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Closing: 28 October 2018
+              </Text>
+            </View>,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "marginBottom": 10,
+                  "marginLeft": 16,
+                }
+              }
+            >
+              Your Information
+            </Text>,
+            <View
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFF",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginVertical": 1,
+                  "padding": 16,
+                }
+              }
+            >
+              <Image
+                source={1}
+                style={
+                  Object {
+                    "height": 20,
+                    "marginTop": 3,
+                    "width": 20,
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "marginLeft": 15,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 16,
+                      "fontWeight": "500",
+                    }
+                  }
+                >
+                  Verified Atlantis Resident*
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                      "marginVertical": 4,
+                    }
+                  }
+                >
+                  Atlantis Resident Status:
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontWeight": "500",
+                      }
+                    }
+                  >
+                     Confirmed
+                  </Text>
+                </Text>
+              </View>
+            </View>,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 12,
+                  "marginLeft": 16,
+                  "marginTop": 10,
+                }
+              }
+            >
+              *Required fields
+            </Text>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
           Object {
-            "alignSelf": "center",
-            "color": "#FFF",
-            "fontSize": 14,
-            "fontWeight": "500",
-          }
-        }
-      >
-        SIGN PETITION
-      </Text>
-    </View>
-  </View>
-</View>
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Spinner
+                animation="none"
+                cancelable={false}
+                color="white"
+                overlayColor="rgba(0, 0, 0, 0.25)"
+                size="large"
+                textContent=""
+                textStyle={
+                  Object {
+                    "color": "#FFF",
+                  }
+                }
+                visible={false}
+              />,
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "animation": "none",
+                "cancelable": false,
+                "color": "white",
+                "overlayColor": "rgba(0, 0, 0, 0.25)",
+                "size": "large",
+                "textContent": "",
+                "textStyle": Object {
+                  "color": "#FFF",
+                },
+                "visible": false,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 20,
+                      "fontWeight": "500",
+                      "marginBottom": 20,
+                    }
+                  }
+                >
+                  Universal basic income
+                </Text>,
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 15,
+                    }
+                  }
+                >
+                  White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
+                </Text>,
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  Closing: 28 October 2018
+                </Text>,
+              ],
+              "style": Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "#FFF",
+                "margin": 16,
+                "padding": 10,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "Universal basic income",
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "fontSize": 20,
+                    "fontWeight": "500",
+                    "marginBottom": 20,
+                  },
+                },
+                "ref": null,
+                "rendered": "Universal basic income",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot",
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                  },
+                },
+                "ref": null,
+                "rendered": "White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "Closing: 28 October 2018",
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "color": "rgba(0, 0, 0, 0.54)",
+                    "fontSize": 12,
+                  },
+                },
+                "ref": null,
+                "rendered": "Closing: 28 October 2018",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Your Information",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "fontSize": 20,
+                "fontWeight": "500",
+                "marginBottom": 10,
+                "marginLeft": 16,
+              },
+            },
+            "ref": null,
+            "rendered": "Your Information",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Image
+                  source={1}
+                  style={
+                    Object {
+                      "height": 20,
+                      "marginTop": 3,
+                      "width": 20,
+                    }
+                  }
+                />,
+                <View
+                  style={
+                    Object {
+                      "marginLeft": 15,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontSize": 16,
+                        "fontWeight": "500",
+                      }
+                    }
+                  >
+                    Verified Atlantis Resident*
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "marginVertical": 4,
+                      }
+                    }
+                  >
+                    Atlantis Resident Status:
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "fontWeight": "500",
+                        }
+                      }
+                    >
+                       Confirmed
+                    </Text>
+                  </Text>
+                </View>,
+              ],
+              "style": Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "#FFF",
+                "display": "flex",
+                "flexDirection": "row",
+                "marginVertical": 1,
+                "padding": 16,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "source": 1,
+                  "style": Object {
+                    "height": 20,
+                    "marginTop": 3,
+                    "width": 20,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "rgba(0, 0, 0, 0.87)",
+                          "fontSize": 16,
+                          "fontWeight": "500",
+                        }
+                      }
+                    >
+                      Verified Atlantis Resident*
+                    </Text>,
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "rgba(0, 0, 0, 0.54)",
+                          "marginVertical": 4,
+                        }
+                      }
+                    >
+                      Atlantis Resident Status:
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                         Confirmed
+                      </Text>
+                    </Text>,
+                  ],
+                  "style": Object {
+                    "marginLeft": 15,
+                  },
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "accessible": true,
+                      "allowFontScaling": true,
+                      "children": "Verified Atlantis Resident*",
+                      "ellipsizeMode": "tail",
+                      "style": Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontSize": 16,
+                        "fontWeight": "500",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": "Verified Atlantis Resident*",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "accessible": true,
+                      "allowFontScaling": true,
+                      "children": Array [
+                        "Atlantis Resident Status:",
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                           Confirmed
+                        </Text>,
+                      ],
+                      "ellipsizeMode": "tail",
+                      "style": Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "marginVertical": 4,
+                      },
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Atlantis Resident Status:",
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "class",
+                        "props": Object {
+                          "accessible": true,
+                          "allowFontScaling": true,
+                          "children": " Confirmed",
+                          "ellipsizeMode": "tail",
+                          "style": Object {
+                            "fontWeight": "500",
+                          },
+                        },
+                        "ref": null,
+                        "rendered": " Confirmed",
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "*Required fields",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "fontSize": 12,
+                "marginLeft": 16,
+                "marginTop": 10,
+              },
+            },
+            "ref": null,
+            "rendered": "*Required fields",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <TouchableOpacity
+            activeOpacity={0.2}
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "rgb(0,163,158)",
+                "borderRadius": 2,
+                "elevation": 2,
+                "height": 36,
+                "marginBottom": 18,
+                "marginHorizontal": 16,
+                "marginTop": 10,
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "shadowColor": "rgba(0, 0, 0, 0.54)",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.8,
+                "shadowRadius": 2,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "#FFF",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              SIGN PETITION
+            </Text>
+          </TouchableOpacity>,
+          "style": Object {
+            "backgroundColor": "#FFF",
+            "borderColor": "rgba(0, 0, 0, 0.15)",
+            "borderWidth": 1,
+            "height": 64,
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "activeOpacity": 0.2,
+            "children": <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "#FFF",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                }
+              }
+            >
+              SIGN PETITION
+            </Text>,
+            "onPress": [Function],
+            "style": Object {
+              "alignSelf": "stretch",
+              "backgroundColor": "rgb(0,163,158)",
+              "borderRadius": 2,
+              "elevation": 2,
+              "height": 36,
+              "marginBottom": 18,
+              "marginHorizontal": 16,
+              "marginTop": 10,
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+              "shadowColor": "rgba(0, 0, 0, 0.54)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "SIGN PETITION",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "alignSelf": "center",
+                "color": "#FFF",
+                "fontSize": 14,
+                "fontWeight": "500",
+              },
+            },
+            "ref": null,
+            "rendered": "SIGN PETITION",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <ScrollViewMock>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Spinner
+                animation="none"
+                cancelable={false}
+                color="white"
+                overlayColor="rgba(0, 0, 0, 0.25)"
+                size="large"
+                textContent=""
+                textStyle={
+                  Object {
+                    "color": "#FFF",
+                  }
+                }
+                visible={false}
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFF",
+                  "margin": 16,
+                  "padding": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "fontSize": 20,
+                    "fontWeight": "500",
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                Universal basic income
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "fontSize": 14,
+                    "lineHeight": 20,
+                    "marginBottom": 15,
+                  }
+                }
+              >
+                White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "rgba(0, 0, 0, 0.54)",
+                    "fontSize": 12,
+                  }
+                }
+              >
+                Closing: 28 October 2018
+              </Text>
+            </View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "marginBottom": 10,
+                  "marginLeft": 16,
+                }
+              }
+            >
+              Your Information
+            </Text>
+            <View
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFF",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginVertical": 1,
+                  "padding": 16,
+                }
+              }
+            >
+              <Image
+                source={1}
+                style={
+                  Object {
+                    "height": 20,
+                    "marginTop": 3,
+                    "width": 20,
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "marginLeft": 15,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 16,
+                      "fontWeight": "500",
+                    }
+                  }
+                >
+                  Verified Atlantis Resident*
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                      "marginVertical": 4,
+                    }
+                  }
+                >
+                  Atlantis Resident Status:
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "fontWeight": "500",
+                      }
+                    }
+                  >
+                     Confirmed
+                  </Text>
+                </Text>
+              </View>
+            </View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "fontSize": 12,
+                  "marginLeft": 16,
+                  "marginTop": 10,
+                }
+              }
+            >
+              *Required fields
+            </Text>
+          </ScrollViewMock>,
+          <View
+            style={
+              Object {
+                "backgroundColor": "#FFF",
+                "borderColor": "rgba(0, 0, 0, 0.15)",
+                "borderWidth": 1,
+                "height": 64,
+              }
+            }
+          >
+            <TouchableOpacity
+              activeOpacity={0.2}
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "rgb(0,163,158)",
+                  "borderRadius": 2,
+                  "elevation": 2,
+                  "height": 36,
+                  "marginBottom": 18,
+                  "marginHorizontal": 16,
+                  "marginTop": 10,
+                  "paddingHorizontal": 16,
+                  "paddingVertical": 8,
+                  "shadowColor": "rgba(0, 0, 0, 0.54)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.8,
+                  "shadowRadius": 2,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#FFF",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                  }
+                }
+              >
+                SIGN PETITION
+              </Text>
+            </TouchableOpacity>
+          </View>,
+        ],
+        "style": Object {
+          "backgroundColor": "rgb(246, 246, 246)",
+          "flex": 1,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <Spinner
+                  animation="none"
+                  cancelable={false}
+                  color="white"
+                  overlayColor="rgba(0, 0, 0, 0.25)"
+                  size="large"
+                  textContent=""
+                  textStyle={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }
+                  visible={false}
+                />
+              </View>,
+              <View
+                style={
+                  Object {
+                    "alignSelf": "stretch",
+                    "backgroundColor": "#FFF",
+                    "margin": 16,
+                    "padding": 10,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 20,
+                      "fontWeight": "500",
+                      "marginBottom": 20,
+                    }
+                  }
+                >
+                  Universal basic income
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 15,
+                    }
+                  }
+                >
+                  White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
+                </Text>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  Closing: 28 October 2018
+                </Text>
+              </View>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 20,
+                    "fontWeight": "500",
+                    "marginBottom": 10,
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                Your Information
+              </Text>,
+              <View
+                style={
+                  Object {
+                    "alignSelf": "stretch",
+                    "backgroundColor": "#FFF",
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "marginVertical": 1,
+                    "padding": 16,
+                  }
+                }
+              >
+                <Image
+                  source={1}
+                  style={
+                    Object {
+                      "height": 20,
+                      "marginTop": 3,
+                      "width": 20,
+                    }
+                  }
+                />
+                <View
+                  style={
+                    Object {
+                      "marginLeft": 15,
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontSize": 16,
+                        "fontWeight": "500",
+                      }
+                    }
+                  >
+                    Verified Atlantis Resident*
+                  </Text>
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "marginVertical": 4,
+                      }
+                    }
+                  >
+                    Atlantis Resident Status:
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "fontWeight": "500",
+                        }
+                      }
+                    >
+                       Confirmed
+                    </Text>
+                  </Text>
+                </View>
+              </View>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontSize": 12,
+                    "marginLeft": 16,
+                    "marginTop": 10,
+                  }
+                }
+              >
+                *Required fields
+              </Text>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Spinner
+                  animation="none"
+                  cancelable={false}
+                  color="white"
+                  overlayColor="rgba(0, 0, 0, 0.25)"
+                  size="large"
+                  textContent=""
+                  textStyle={
+                    Object {
+                      "color": "#FFF",
+                    }
+                  }
+                  visible={false}
+                />,
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "animation": "none",
+                  "cancelable": false,
+                  "color": "white",
+                  "overlayColor": "rgba(0, 0, 0, 0.25)",
+                  "size": "large",
+                  "textContent": "",
+                  "textStyle": Object {
+                    "color": "#FFF",
+                  },
+                  "visible": false,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontSize": 20,
+                        "fontWeight": "500",
+                        "marginBottom": 20,
+                      }
+                    }
+                  >
+                    Universal basic income
+                  </Text>,
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "rgba(0, 0, 0, 0.87)",
+                        "fontSize": 14,
+                        "lineHeight": 20,
+                        "marginBottom": 15,
+                      }
+                    }
+                  >
+                    White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot
+                  </Text>,
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "rgba(0, 0, 0, 0.54)",
+                        "fontSize": 12,
+                      }
+                    }
+                  >
+                    Closing: 28 October 2018
+                  </Text>,
+                ],
+                "style": Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFF",
+                  "margin": 16,
+                  "padding": 10,
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "accessible": true,
+                    "allowFontScaling": true,
+                    "children": "Universal basic income",
+                    "ellipsizeMode": "tail",
+                    "style": Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 20,
+                      "fontWeight": "500",
+                      "marginBottom": 20,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "Universal basic income",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "accessible": true,
+                    "allowFontScaling": true,
+                    "children": "White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot",
+                    "ellipsizeMode": "tail",
+                    "style": Object {
+                      "color": "rgba(0, 0, 0, 0.87)",
+                      "fontSize": 14,
+                      "lineHeight": 20,
+                      "marginBottom": 15,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "White paper blockchain technology node research and develop. Cryptographic modelling. Availability fairbnb cryptographic modelling data ontology pilot",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "accessible": true,
+                    "allowFontScaling": true,
+                    "children": "Closing: 28 October 2018",
+                    "ellipsizeMode": "tail",
+                    "style": Object {
+                      "color": "rgba(0, 0, 0, 0.54)",
+                      "fontSize": 12,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "Closing: 28 October 2018",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Your Information",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                  "marginBottom": 10,
+                  "marginLeft": 16,
+                },
+              },
+              "ref": null,
+              "rendered": "Your Information",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Image
+                    source={1}
+                    style={
+                      Object {
+                        "height": 20,
+                        "marginTop": 3,
+                        "width": 20,
+                      }
+                    }
+                  />,
+                  <View
+                    style={
+                      Object {
+                        "marginLeft": 15,
+                      }
+                    }
+                  >
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "rgba(0, 0, 0, 0.87)",
+                          "fontSize": 16,
+                          "fontWeight": "500",
+                        }
+                      }
+                    >
+                      Verified Atlantis Resident*
+                    </Text>
+                    <Text
+                      accessible={true}
+                      allowFontScaling={true}
+                      ellipsizeMode="tail"
+                      style={
+                        Object {
+                          "color": "rgba(0, 0, 0, 0.54)",
+                          "marginVertical": 4,
+                        }
+                      }
+                    >
+                      Atlantis Resident Status:
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                         Confirmed
+                      </Text>
+                    </Text>
+                  </View>,
+                ],
+                "style": Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFF",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginVertical": 1,
+                  "padding": 16,
+                },
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "source": 1,
+                    "style": Object {
+                      "height": 20,
+                      "marginTop": 3,
+                      "width": 20,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "rgba(0, 0, 0, 0.87)",
+                            "fontSize": 16,
+                            "fontWeight": "500",
+                          }
+                        }
+                      >
+                        Verified Atlantis Resident*
+                      </Text>,
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Object {
+                            "color": "rgba(0, 0, 0, 0.54)",
+                            "marginVertical": 4,
+                          }
+                        }
+                      >
+                        Atlantis Resident Status:
+                        <Text
+                          accessible={true}
+                          allowFontScaling={true}
+                          ellipsizeMode="tail"
+                          style={
+                            Object {
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                           Confirmed
+                        </Text>
+                      </Text>,
+                    ],
+                    "style": Object {
+                      "marginLeft": 15,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "accessible": true,
+                        "allowFontScaling": true,
+                        "children": "Verified Atlantis Resident*",
+                        "ellipsizeMode": "tail",
+                        "style": Object {
+                          "color": "rgba(0, 0, 0, 0.87)",
+                          "fontSize": 16,
+                          "fontWeight": "500",
+                        },
+                      },
+                      "ref": null,
+                      "rendered": "Verified Atlantis Resident*",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "accessible": true,
+                        "allowFontScaling": true,
+                        "children": Array [
+                          "Atlantis Resident Status:",
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Object {
+                                "fontWeight": "500",
+                              }
+                            }
+                          >
+                             Confirmed
+                          </Text>,
+                        ],
+                        "ellipsizeMode": "tail",
+                        "style": Object {
+                          "color": "rgba(0, 0, 0, 0.54)",
+                          "marginVertical": 4,
+                        },
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Atlantis Resident Status:",
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "class",
+                          "props": Object {
+                            "accessible": true,
+                            "allowFontScaling": true,
+                            "children": " Confirmed",
+                            "ellipsizeMode": "tail",
+                            "style": Object {
+                              "fontWeight": "500",
+                            },
+                          },
+                          "ref": null,
+                          "rendered": " Confirmed",
+                          "type": [Function],
+                        },
+                      ],
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "*Required fields",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "fontSize": 12,
+                  "marginLeft": 16,
+                  "marginTop": 10,
+                },
+              },
+              "ref": null,
+              "rendered": "*Required fields",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <TouchableOpacity
+              activeOpacity={0.2}
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "rgb(0,163,158)",
+                  "borderRadius": 2,
+                  "elevation": 2,
+                  "height": 36,
+                  "marginBottom": 18,
+                  "marginHorizontal": 16,
+                  "marginTop": 10,
+                  "paddingHorizontal": 16,
+                  "paddingVertical": 8,
+                  "shadowColor": "rgba(0, 0, 0, 0.54)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.8,
+                  "shadowRadius": 2,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#FFF",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                  }
+                }
+              >
+                SIGN PETITION
+              </Text>
+            </TouchableOpacity>,
+            "style": Object {
+              "backgroundColor": "#FFF",
+              "borderColor": "rgba(0, 0, 0, 0.15)",
+              "borderWidth": 1,
+              "height": 64,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "activeOpacity": 0.2,
+              "children": <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#FFF",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                  }
+                }
+              >
+                SIGN PETITION
+              </Text>,
+              "onPress": [Function],
+              "style": Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "rgb(0,163,158)",
+                "borderRadius": 2,
+                "elevation": 2,
+                "height": 36,
+                "marginBottom": 18,
+                "marginHorizontal": 16,
+                "marginTop": 10,
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+                "shadowColor": "rgba(0, 0, 0, 0.54)",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.8,
+                "shadowRadius": 2,
+              },
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "SIGN PETITION",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "alignSelf": "center",
+                  "color": "#FFF",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                },
+              },
+              "ref": null,
+              "rendered": "SIGN PETITION",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+  },
+}
 `;

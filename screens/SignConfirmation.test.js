@@ -1,8 +1,24 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import configureStore from 'redux-mock-store';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import thunk from 'redux-thunk';
 import SignConfirmation from './SignConfirmation';
 
-it('renders SignConfirmation component', () => {
-  const rendered = renderer.create(<SignConfirmation />).toJSON();
-  expect(rendered).toMatchSnapshot();
+Enzyme.configure({ adapter: new Adapter() });
+
+const mockStore = configureStore([thunk]);
+
+const initialState = {
+  petitionLink: {
+    petitionLink: 'http://something.com',
+  },
+};
+
+it('renders Authorisation component', () => {
+  const wrapper = shallow(
+    <SignConfirmation />,
+    { context: { store: mockStore(initialState) } },
+  );
+  expect(wrapper.dive()).toMatchSnapshot();
 });

@@ -22,7 +22,7 @@ const initialState = {
   },
 };
 
-it('renders Authorisation component', () => {
+it('renders PetitionSummaryGet component', () => {
   const wrapper = shallow(
     <PetitionSummaryGet />,
     { context: { store: mockStore(initialState) } },

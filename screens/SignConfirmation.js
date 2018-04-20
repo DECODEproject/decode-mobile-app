@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Linking, Image } from 'react-native';
 import PropTypes from 'prop-types';
-import Router from '../Router';
+import { connect } from 'react-redux';
+import { goToAuthorization } from '../application/redux/actions/navigation';
 
 const tick = require('../assets/images/decode_tick.jpg');
 
@@ -53,7 +54,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class SignConfirmation extends React.Component {
+class SignConfirmation extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -72,7 +73,7 @@ export default class SignConfirmation extends React.Component {
   }
 
   goToHome() {
-    this.props.navigator.push(Router.getRoute('authorisation'));
+    this.props.goToAuthorization(this.props.petitionLink);
   }
 
   render() {
@@ -102,10 +103,16 @@ export default class SignConfirmation extends React.Component {
 }
 
 SignConfirmation.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  petitionLink: PropTypes.string.isRequired,
+  goToAuthorization: PropTypes.func.isRequired,
 };
 
-SignConfirmation.defaultProps = {
-  navigator: '',
-};
+const mapStateToProps = state => ({
+  petitionLink: state.petitionLink.petitionLink,
+});
 
+const mapDispatchToProps = dispatch => ({
+  goToAuthorization: () => { dispatch(goToAuthorization()); },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignConfirmation);
