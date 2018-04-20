@@ -15,11 +15,11 @@ export function setPetitionError(error) {
 
 export function getPetition(petitionLink) {
   return (dispatch) => {
-    fetch(petitionLink).then((response) => {
+    fetch(petitionLink).then(async (response) => {
       if (!response.ok) {
         dispatch(setPetitionError(response.statusText));
       } else {
-        const json = response.json();
+        const json = await response.json();
         dispatch(setPetition(json));
       }
     });

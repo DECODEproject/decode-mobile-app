@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-import { goQRScanner } from '../application/redux/actions/navigation';
+import { goToQRScanner } from '../application/redux/actions/navigation';
 
 const scanner = require('../assets/images/scanner.jpg');
 
@@ -102,7 +102,7 @@ const mapStateToProps = () => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  goQRScanner: () => { dispatch(goQRScanner()); },
+  goQRScanner: () => { dispatch(goToQRScanner()); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(QRScannerIntro);
