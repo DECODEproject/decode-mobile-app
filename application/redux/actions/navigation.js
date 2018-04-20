@@ -17,3 +17,9 @@ export function goToQRScanner() {
   const navigatorUID = Store.getState().navigation.currentNavigatorUID;
   return NavigationActions.push(navigatorUID, Router.getRoute('QRScanner'));
 }
+
+export function goToPetitionSummaryGet(petitionLink) {
+  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
+  const route = Router.getRoute('petitionSummaryGet', { petitionLink });
+  return NavigationActions.push(navigatorUID, route);
+}

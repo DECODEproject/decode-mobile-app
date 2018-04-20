@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-import Router from '../Router';
+import { connect } from 'react-redux';
 import { getWalletID } from '../LocalStorage';
+import { goToPetitionSummaryGet } from '../application/redux/actions/navigation';
+
 
 const styles = StyleSheet.create({
   authorisationBox: {
@@ -58,7 +60,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Authorisation extends React.Component {
+class Authorisation extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -81,7 +83,7 @@ export default class Authorisation extends React.Component {
   }
 
   goToPetitionSummaryGet() {
-    this.props.navigator.push(Router.getRoute('petitionSummaryGet', { petitionLink: this.props.route.params.petitionLink }));
+    this.props.goToPetitionSummaryGet(this.props.petitionLink);
   }
 
   render() {
@@ -106,16 +108,20 @@ export default class Authorisation extends React.Component {
 }
 
 Authorisation.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
-  route: PropTypes.shape({ params: PropTypes.object }),
+  goToPetitionSummaryGet: PropTypes.func.isRequired,
+  petitionLink: PropTypes.string,
 };
 
 Authorisation.defaultProps = {
-  navigator: {
-    push: () => {
-    },
-  },
-  route: {
-    params: {},
-  },
+  petitionLink: undefined,
 };
+
+const mapStateToProps = state => ({
+  petitionLink: state.petitionLink.petitionLink,
+});
+
+const mapDispatchToProps = dispatch => ({
+  goToPetitionSummaryGet: (petitionLink) => { dispatch(goToPetitionSummaryGet(petitionLink)); },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Authorisation);
