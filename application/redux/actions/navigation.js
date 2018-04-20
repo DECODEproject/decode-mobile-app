@@ -12,3 +12,8 @@ export function goToAuthorization(petitionLink) {
   const route = Router.getRoute('authorisation', { petitionLink });
   return NavigationActions.push(navigatorUID, route);
 }
+
+export function goToQRScanner() {
+  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
+  return NavigationActions.push(navigatorUID, Router.getRoute('QRScanner'));
+}

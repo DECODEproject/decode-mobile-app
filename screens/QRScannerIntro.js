@@ -1,7 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-import Router from '../Router';
+import { goQRScanner } from '../application/redux/actions/navigation';
 
 const scanner = require('../assets/images/scanner.jpg');
 
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class QRScannerIntro extends React.Component {
+class QRScannerIntro extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -69,7 +70,7 @@ export default class QRScannerIntro extends React.Component {
   }
 
   goToQRScanner() {
-    this.props.navigator.push(Router.getRoute('QRScanner'));
+    this.props.goQRScannerIntro();
   }
 
   render() {
@@ -94,12 +95,15 @@ export default class QRScannerIntro extends React.Component {
 }
 
 QRScannerIntro.propTypes = {
-  navigator: PropTypes.shape({ push: PropTypes.func.isRequired }),
+  goQRScanner: PropTypes.func.isRequired,
 };
 
-QRScannerIntro.defaultProps = {
-  navigator: {
-    push: () => {
-    },
-  },
-};
+const mapStateToProps = () => ({
+});
+
+const mapDispatchToProps = dispatch => ({
+  goQRScanner: () => { dispatch(goQRScanner()); },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(QRScannerIntro);
+
