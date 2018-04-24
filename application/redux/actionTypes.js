@@ -1,0 +1,9 @@
+
+export const types = {
+  SET_PETITION: 'SET_PETITION',
+  SET_PETITION_ERROR: 'SET_PETITION_ERROR',
+  SET_PETITION_LINK: 'SET_PETITION_LINK',
+  SET_WALLET_ID: 'SET_WALLET_ID',
+};
+
+export { types as default };

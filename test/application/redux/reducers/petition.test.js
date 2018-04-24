@@ -1,4 +1,5 @@
-import reducer, { SET_PETITION, SET_PETITION_ERROR } from '../../../../application/redux/reducers/petition';
+import reducer from '../../../../application/redux/reducers/petition';
+import { types } from '../../../../application/redux/actionTypes';
 
 describe('petition reducer', () => {
   it('should return the initial state', () => {
@@ -18,7 +19,7 @@ describe('petition reducer', () => {
 
     const newPetition = { id: 'newPetition' };
     const action = {
-      type: SET_PETITION,
+      type: types.SET_PETITION,
       petition: newPetition,
     };
 
@@ -37,7 +38,7 @@ describe('petition reducer', () => {
     };
     const someError = 'someError';
     const action = {
-      type: SET_PETITION_ERROR,
+      type: types.SET_PETITION_ERROR,
       error: someError,
     };
 

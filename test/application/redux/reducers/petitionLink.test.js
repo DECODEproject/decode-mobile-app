@@ -1,4 +1,5 @@
-import reducer, { SET_PETITION_LINK } from '../../../../application/redux/reducers/petitionLink';
+import reducer from '../../../../application/redux/reducers/petitionLink';
+import { types } from '../../../../application/redux/actionTypes';
 
 describe('petitionLink reducer', () => {
   it('should return the initial state', () => {
@@ -9,7 +10,7 @@ describe('petitionLink reducer', () => {
 
   it('should handle SET_PETITION_LINK', () => {
     const somePetitionLink = 'someLink.com';
-    const initialPetition = { type: SET_PETITION_LINK, petitionLink: somePetitionLink };
+    const initialPetition = { type: types.SET_PETITION_LINK, petitionLink: somePetitionLink };
 
     expect(reducer(undefined, initialPetition)).toEqual({
       petitionLink: somePetitionLink,
