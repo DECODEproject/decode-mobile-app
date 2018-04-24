@@ -1,20 +1,21 @@
+import { types } from '../actionTypes';
 
 export function setPetition(petition) {
   return {
-    type: 'SET_PETITION',
+    type: types.SET_PETITION,
     petition,
   };
 }
 
 export function setPetitionError(error) {
   return {
-    type: 'SET_PETITION_ERROR',
+    type: types.SET_PETITION_ERROR,
     error,
   };
 }
 
 export function getPetition(petitionLink) {
-  return (dispatch) => {
+  return dispatch =>
     fetch(petitionLink).then(async (response) => {
       if (!response.ok) {
         dispatch(setPetitionError(response.statusText));
@@ -23,5 +24,4 @@ export function getPetition(petitionLink) {
         dispatch(setPetition(json));
       }
     });
-  };
 }
