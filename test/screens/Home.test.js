@@ -3,7 +3,7 @@ import configureStore from 'redux-mock-store';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import thunk from 'redux-thunk';
-import Authorisation from './Authorisation';
+import Home from '../../screens/Home';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -13,14 +13,12 @@ const initialState = {
   petitionLink: {
     petitionLink: undefined,
   },
-  wallet: {
-    id: 'my-id',
-  },
 };
 
-it('renders Authorisation component', () => {
+
+it('renders Home component', () => {
   const wrapper = shallow(
-    <Authorisation />,
+    <Home />,
     { context: { store: mockStore(initialState) } },
   );
   expect(wrapper.dive()).toMatchSnapshot();

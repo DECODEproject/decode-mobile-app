@@ -3,7 +3,7 @@ import configureStore from 'redux-mock-store';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import thunk from 'redux-thunk';
-import PetitionSummarySign from './PetitionSummarySign';
+import PetitionSummarySign from '../../screens/PetitionSummarySign';
 
 Enzyme.configure({ adapter: new Adapter() });
 

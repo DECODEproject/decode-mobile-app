@@ -3,7 +3,7 @@ import configureStore from 'redux-mock-store';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import thunk from 'redux-thunk';
-import SignConfirmation from './SignConfirmation';
+import PetitionSummaryGet from '../../screens/PetitionSummaryGet';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -13,11 +13,18 @@ const initialState = {
   petitionLink: {
     petitionLink: 'http://something.com',
   },
+  petition: {
+    petition: {
+      title: 'hello',
+      description: 'world',
+      closingDate: 'today',
+    },
+  },
 };
 
-it('renders Authorisation component', () => {
+it('renders PetitionSummaryGet component', () => {
   const wrapper = shallow(
-    <SignConfirmation />,
+    <PetitionSummaryGet />,
     { context: { store: mockStore(initialState) } },
   );
   expect(wrapper.dive()).toMatchSnapshot();
