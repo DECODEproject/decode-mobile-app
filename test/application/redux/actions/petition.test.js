@@ -11,17 +11,7 @@ describe('getPetition', () => {
   let store;
 
   beforeEach(() => {
-    store = mockStore({
-      petition: {
-        petition: {
-          id: '1234',
-          isEthereum: 'false',
-        },
-      },
-      wallet: {
-        id: 'my-wallet-id-numbeeeeeeeeeeer',
-      },
-    });
+    store = mockStore();
   });
 
   afterEach(() => {
