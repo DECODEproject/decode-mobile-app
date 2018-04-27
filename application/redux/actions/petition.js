@@ -1,4 +1,4 @@
-import { types } from '../actionTypes';
+import types from '../actionTypes';
 
 export function setPetition(petition) {
   return {

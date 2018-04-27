@@ -20,6 +20,9 @@ const initialState = {
       closingDate: 'today',
     },
   },
+  wallet: {
+    id: 'something',
+  },
 };
 
 it('renders PetitionSummaryGet component', () => {

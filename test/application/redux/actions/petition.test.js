@@ -2,7 +2,7 @@ import configureMockStore from 'redux-mock-store';
 import fetchMock from 'fetch-mock';
 import thunk from 'redux-thunk';
 import { getPetition } from '../../../../application/redux/actions/petition';
-import { types } from '../../../../application/redux/actionTypes';
+import types from '../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
 

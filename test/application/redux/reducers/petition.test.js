@@ -1,5 +1,5 @@
 import reducer from '../../../../application/redux/reducers/petition';
-import { types } from '../../../../application/redux/actionTypes';
+import types from '../../../../application/redux/actionTypes';
 
 describe('petition reducer', () => {
   it('should return the initial state', () => {

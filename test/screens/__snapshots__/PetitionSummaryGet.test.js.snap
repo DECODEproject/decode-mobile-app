@@ -15,6 +15,7 @@ ShallowWrapper {
       }
     }
     petitionLink="http://something.com"
+    walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

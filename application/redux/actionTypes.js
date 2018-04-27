@@ -1,9 +1,10 @@
 
-export const types = {
+const types = {
   SET_PETITION: 'SET_PETITION',
   SET_PETITION_ERROR: 'SET_PETITION_ERROR',
   SET_PETITION_LINK: 'SET_PETITION_LINK',
   SET_WALLET_ID: 'SET_WALLET_ID',
+  ADD_CREDENTIAL_FROM_URL: 'ADD_CREDENTIAL_FROM_URL',
 };
 
-export { types as default };
+export default types;

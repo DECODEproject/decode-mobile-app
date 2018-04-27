@@ -144,9 +144,11 @@ class PetitionSummaryGet extends React.Component {
 
   handleRedirect = (event) => {
     const { url } = event;
-    console.log(url);
-    // Action to get queryParam information (credential, credential_issuer)
-    // dispatchAction(save_credential())
+    // const petition = this.props.petition;
+    // const walletId = this.props.walletId;
+    // use action addCredentialFromUrl(petition, walletId, url);
+    console.log(url, this.props.walletId);
+
     WebBrowser.dismissBrowser();
 
     this.goToPetitionSummarySign();
@@ -207,6 +209,7 @@ PetitionSummaryGet.propTypes = {
   }),
   goToPetitionSummarySign: PropTypes.func.isRequired,
   getPetition: PropTypes.func.isRequired,
+  walletId: PropTypes.string.isRequired,
 };
 
 PetitionSummaryGet.defaultProps = {
@@ -216,6 +219,7 @@ PetitionSummaryGet.defaultProps = {
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   petition: state.petition.petition,
+  walletId: state.wallet.id,
 });
 
 const mapDispatchToProps = dispatch => ({
