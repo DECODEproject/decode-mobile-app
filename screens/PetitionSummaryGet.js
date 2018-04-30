@@ -142,15 +142,19 @@ class PetitionSummaryGet extends React.Component {
     Linking.addEventListener('url', this.handleRedirect);
   };
 
-  handleRedirect = () => {
+  handleRedirect = (event) => {
+    const { url } = event;
+    console.log(url);
+    // Action to get queryParam information (credential, credential_issuer)
+    // dispatchAction(save_credential())
     WebBrowser.dismissBrowser();
+
     this.goToPetitionSummarySign();
   };
 
   openWebBrowserAsync = async () => {
     const queryParam = encodeURIComponent(Constants.linkingUri);
-    const url = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
-
+    const url = `http://localhost:3010/#/?linkingUri=${queryParam}`;
     this.addLinkingListener();
     await WebBrowser.openBrowserAsync(url);
     this.removeLinkingListener();
