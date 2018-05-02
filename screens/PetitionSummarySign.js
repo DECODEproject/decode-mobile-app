@@ -1,16 +1,15 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import Spinner from 'react-native-loading-spinner-overlay';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { goToSignConfirmation } from '../application/redux/actions/navigation';
+import AttributeComponent from '../application/components/Attribute';
 
 const config = require('../config.json');
 
 const walletProxyLink = process.env.env ?
   config.development.walletProxy : config.production.walletProxy;
-
-const tick = require('../assets/images/tick_small.jpg');
 
 const styles = StyleSheet.create({
   container: {
@@ -44,34 +43,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     marginBottom: 10,
     marginLeft: 16,
-  },
-  attributeContainer: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFF',
-    display: 'flex',
-    flexDirection: 'row',
-    marginVertical: 1,
-    padding: 16,
-  },
-  attributeName: {
-    color: 'rgba(0, 0, 0, 0.87)',
-    fontSize: 16,
-    fontWeight: '500',
-  },
-  tick: {
-    height: 20,
-    marginTop: 3,
-    width: 20,
-  },
-  attribute: {
-    marginLeft: 15,
-  },
-  attributeDetails: {
-    color: 'rgba(0, 0, 0, 0.54)',
-    marginVertical: 4,
-  },
-  attributeStatus: {
-    fontWeight: '500',
   },
   requiredText: {
     fontSize: 12,
@@ -165,18 +136,7 @@ class PetitionSummarySign extends React.Component {
             <Text style={styles.closingDate}>Closing: 28 October 2018</Text>
           </View>
           <Text style={styles.textTitle}>Your Information</Text>
-          <View style={styles.attributeContainer}>
-            <Image
-              style={styles.tick}
-              source={tick}
-            />
-            <View style={styles.attribute}>
-              <Text style={styles.attributeName}>Verified Atlantis Resident*</Text>
-              <Text style={styles.attributeDetails}>Atlantis Resident Status:
-                <Text style={styles.attributeStatus}> Confirmed</Text>
-              </Text>
-            </View>
-          </View>
+          <AttributeComponent isVerified />
           <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
         <View style={styles.footerContainer}>

@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Attribute on non-verfied mode component 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "stretch",
+      "backgroundColor": "#FFF",
+      "padding": 16,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "rgba(0, 0, 0, 0.87)",
+        "fontSize": 16,
+        "fontWeight": "500",
+      }
+    }
+  >
+    Verified Atlantis Resident*
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "marginVertical": 4,
+      }
+    }
+  >
+    To get this attribute you will be directed to the Atlantis Council website
+  </Text>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "backgroundColor": "rgb(0,163,158)",
+        "borderRadius": 2,
+        "elevation": 2,
+        "height": 36,
+        "opacity": 1,
+        "paddingHorizontal": 16,
+        "paddingVertical": 8,
+        "shadowColor": "rgba(0, 0, 0, 0.54)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 2,
+        "width": 100,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "rgb(255, 255, 255)",
+          "fontSize": 14,
+          "fontWeight": "500",
+        }
+      }
+    >
+      REQUEST
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`renders Attribute on verfied mode component 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "stretch",
+      "backgroundColor": "#FFF",
+      "display": "flex",
+      "flexDirection": "row",
+      "marginVertical": 1,
+      "padding": 16,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Object {
+        "height": 20,
+        "marginTop": 3,
+        "width": 20,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "marginLeft": 15,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 16,
+          "fontWeight": "500",
+        }
+      }
+    >
+      Verified Atlantis Resident*
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "rgba(0, 0, 0, 0.54)",
+          "marginVertical": 4,
+        }
+      }
+    >
+      Atlantis Resident Status:
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontWeight": "500",
+          }
+        }
+      >
+         Confirmed
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
