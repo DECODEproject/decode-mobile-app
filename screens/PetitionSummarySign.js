@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Spinner from 'react-native-loading-spinner-overlay';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { goToSignConfirmation } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute';
+import SignButton from '../application/components/SignButton';
 
 const config = require('../config.json');
 
@@ -48,34 +49,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginLeft: 16,
     marginTop: 10,
-  },
-  footerContainer: {
-    backgroundColor: '#FFF',
-    borderColor: 'rgba(0, 0, 0, 0.15)',
-    borderWidth: 1,
-    height: 64,
-  },
-  signButton: {
-    alignSelf: 'stretch',
-    backgroundColor: 'rgb(0,163,158)',
-    borderRadius: 2,
-    elevation: 2,
-    height: 36,
-    marginBottom: 18,
-    marginHorizontal: 16,
-    marginTop: 10,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-  },
-  buttonText: {
-    alignSelf: 'center',
-    color: '#FFF',
-    fontSize: 14,
-    fontWeight: '500',
   },
 });
 
@@ -139,14 +112,10 @@ class PetitionSummarySign extends React.Component {
           <AttributeComponent isVerified />
           <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
-        <View style={styles.footerContainer}>
-          <TouchableOpacity
-            style={styles.signButton}
-            onPress={() => { this.goToSignConfirmation(this.props.petition, this.props.walletId); }}
-          >
-            <Text style={styles.buttonText}>SIGN PETITION</Text>
-          </TouchableOpacity>
-        </View>
+        <SignButton
+          enabled
+          onPress={() => { this.goToSignConfirmation(this.props.petition, this.props.walletId); }}
+        />
       </View>
     );
   }

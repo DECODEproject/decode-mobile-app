@@ -9,6 +9,7 @@ import { goToPetitionSummarySign } from '../application/redux/actions/navigation
 import { getPetition } from '../application/redux/actions/petition';
 import { addCredential } from '../application/redux/actions/attributes';
 import AttributeComponent from '../application/components/Attribute';
+import SignButton from '../application/components/SignButton';
 
 const styles = StyleSheet.create({
   container: {
@@ -47,34 +48,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginLeft: 16,
     marginTop: 10,
-  },
-  footerContainer: {
-    height: 64,
-    backgroundColor: '#FFF',
-    borderWidth: 1,
-    borderColor: 'rgba(0, 0, 0, 0.15)',
-  },
-  signButton: {
-    alignSelf: 'stretch',
-    backgroundColor: 'rgba(0,163,158,0.4)',
-    borderRadius: 2,
-    elevation: 2,
-    height: 36,
-    marginBottom: 18,
-    marginHorizontal: 16,
-    marginTop: 10,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-  },
-  disabledButtonText: {
-    alignSelf: 'center',
-    color: 'rgba(255, 255, 255, 0.6)',
-    fontSize: 14,
-    fontWeight: '500',
   },
 });
 
@@ -150,11 +123,7 @@ class PetitionSummaryGet extends React.Component {
           />
           <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
-        <View style={styles.footerContainer}>
-          <View style={styles.signButton}>
-            <Text style={styles.disabledButtonText}>SIGN PETITION</Text>
-          </View>
-        </View>
+        <SignButton enabled={false} />
       </View>
     );
   }
