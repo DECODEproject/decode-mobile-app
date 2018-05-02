@@ -1,12 +1,13 @@
 /* eslint no-undef: 0 */
 
 import React from 'react';
-import { Constants, WebBrowser } from 'expo';
+import { Constants, WebBrowser, SecureStore } from 'expo';
 import { StyleSheet, Text, View, Linking, TouchableOpacity, ScrollView } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { goToPetitionSummarySign } from '../application/redux/actions/navigation';
 import { getPetition } from '../application/redux/actions/petition';
+import { addCredential } from '../application/redux/actions/attributes';
 
 const styles = StyleSheet.create({
   container: {
@@ -119,7 +120,7 @@ class PetitionSummaryGet extends React.Component {
       tintColor: 'rgb(0,163,158)',
       title: 'Sign Petition',
     },
-  }
+  };
 
   constructor(props) {
     super(props);
@@ -144,9 +145,9 @@ class PetitionSummaryGet extends React.Component {
 
   handleRedirect = (event) => {
     const { url } = event;
-    // const petition = this.props.petition;
-    // const walletId = this.props.walletId;
-    // use action addCredentialFromUrl(petition, walletId, url);
+    const { petition, walletId } = this.props;
+
+    addCredential(petition.attributes, walletId, url, SecureStore.setItemAsync);
     console.log(url, this.props.walletId);
 
     WebBrowser.dismissBrowser();

@@ -6,7 +6,7 @@ import devTools from 'remote-redux-devtools';
 import petitionLink from './reducers/petitionLink';
 import petition from './reducers/petition';
 import wallet from './reducers/wallet';
-import attribute from './reducers/attribute';
+import attributes from './reducers/attributes';
 
 const enhancer = compose(
   applyMiddleware(thunk),
@@ -28,7 +28,7 @@ const Store = createStoreWithNavigation(combineReducers({
   petitionLink,
   petition,
   wallet,
-  attribute,
+  attributes,
 }));
 
 export default Store;

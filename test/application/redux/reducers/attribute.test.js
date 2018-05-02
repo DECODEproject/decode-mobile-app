@@ -1,4 +1,4 @@
-import reducer from '../../../../application/redux/reducers/attribute';
+import reducer from '../../../../application/redux/reducers/attributes';
 import types from '../../../../application/redux/actionTypes';
 
 describe('attribute reducer', () => {
