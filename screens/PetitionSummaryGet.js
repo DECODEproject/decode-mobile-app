@@ -87,7 +87,7 @@ class PetitionSummaryGet extends React.Component {
     const { url } = event;
     const { petition, walletId } = this.props;
 
-    addCredential(petition.attributes, walletId, url, SecureStore.setItemAsync);
+    this.props.addCredential(petition.attributes[0], walletId, url);
 
     WebBrowser.dismissBrowser();
 
@@ -137,6 +137,7 @@ PetitionSummaryGet.propTypes = {
     closingDate: PropTypes.string,
   }),
   goToPetitionSummarySign: PropTypes.func.isRequired,
+  addCredential: PropTypes.func.isRequired,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
 };
@@ -154,6 +155,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   goToPetitionSummarySign: (petitionLink) => { dispatch(goToPetitionSummarySign(petitionLink)); },
   getPetition: (petitionLink) => { dispatch(getPetition(petitionLink)); },
+  addCredential: (attribute, walletId, url) => {
+    dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
+  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummaryGet);

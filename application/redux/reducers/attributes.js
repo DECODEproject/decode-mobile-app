@@ -18,6 +18,8 @@ export default function reducer(state = initialState, action) {
 
       return [...state, newAttribute];
     }
+    case types.LOAD_ATTRIBUTES:
+      return action.attributes;
     default:
       return state;
   }

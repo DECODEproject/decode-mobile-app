@@ -7,9 +7,8 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Home
     goQRScannerIntro={[Function]}
     goToAuthorization={[Function]}
-    loadWalletId={[Function]}
+    initializeState={[Function]}
     petitionLink={undefined}
-    petitionLinkStartup={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

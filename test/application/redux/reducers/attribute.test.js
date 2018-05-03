@@ -69,4 +69,17 @@ describe('attribute reducer', () => {
       barcelonaResidencyAttribute,
     ]);
   });
+
+  it('should handle LOAD_CREDENTIALS sets the state with the credentials of the action', () => {
+    const initialState = [amsterdamResidencyAttribute];
+    const action = {
+      type: types.LOAD_ATTRIBUTES,
+      attributes: [amsterdamResidencyAttribute, barcelonaResidencyAttribute],
+    };
+
+    expect(reducer(initialState, action)).toEqual([
+      amsterdamResidencyAttribute,
+      barcelonaResidencyAttribute,
+    ]);
+  });
 });

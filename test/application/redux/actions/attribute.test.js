@@ -1,12 +1,22 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { addCredentialFromUrl, storeCredentials, addCredential } from '../../../../application/redux/actions/attributes';
+import { addCredentialFromUrl, storeCredentials, addCredential, loadCredentials } from '../../../../application/redux/actions/attributes';
 import types from '../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
 
 describe('attribute action', () => {
   let store;
+  const barcelonaResidencyAttribute = {
+    predicate: 'schema:addressLocality',
+    object: 'Barcelona',
+    scope: 'can-access',
+    provenance: {
+      source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+      credentials: '0123456789',
+    },
+    subject: '(Alpaca)',
+  };
 
   beforeEach(() => {
     store = mockStore({
@@ -47,7 +57,7 @@ describe('attribute action', () => {
     await store.dispatch(storeCredentials(setItemAsync));
 
     expect(setItemAsync).toBeCalled();
-    expect(setItemAsync).toBeCalledWith('attributes', []);
+    expect(setItemAsync).toBeCalledWith('attributes', '[]');
 
     expect(store.getActions()).toEqual([{
       type: types.STORE_ATTRIBUTES,
@@ -56,16 +66,6 @@ describe('attribute action', () => {
   });
 
   it('SAVE current credentials action when only one credential', async () => {
-    const barcelonaResidencyAttribute = {
-      predicate: 'schema:addressLocality',
-      object: 'Barcelona',
-      scope: 'can-access',
-      provenance: {
-        source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-        credentials: '0123456789',
-      },
-      subject: '(Alpaca)',
-    };
     store = mockStore({
       attributes: [barcelonaResidencyAttribute],
     });
@@ -74,7 +74,7 @@ describe('attribute action', () => {
     await store.dispatch(storeCredentials(setItemAsync));
 
     expect(setItemAsync).toBeCalled();
-    expect(setItemAsync).toBeCalledWith('attributes', [barcelonaResidencyAttribute]);
+    expect(setItemAsync).toBeCalledWith('attributes', JSON.stringify([barcelonaResidencyAttribute]));
 
     expect(store.getActions()).toEqual([{
       type: types.STORE_ATTRIBUTES,
@@ -101,7 +101,7 @@ describe('attribute action', () => {
     await store.dispatch(addCredential(attribute, walletId, url, setItemAsync));
 
     expect(setItemAsync).toBeCalled();
-    expect(setItemAsync).toBeCalledWith('attributes', []);
+    expect(setItemAsync).toBeCalledWith('attributes', '[]');
     expect(store.getActions()).toEqual([
       {
         type: types.ADD_CREDENTIAL_FROM_URL,
@@ -112,5 +112,33 @@ describe('attribute action', () => {
         type: types.STORE_ATTRIBUTES,
         attributes: [],
       }]);
+  });
+
+  it('load credentials when nothing is stored', async () => {
+    const credentials = [];
+    const getItemAsync = jest.fn().mockReturnValue(Promise.resolve(JSON.stringify(credentials)));
+
+    await store.dispatch(loadCredentials(getItemAsync));
+
+    expect(getItemAsync).toBeCalled();
+    expect(getItemAsync).toBeCalledWith('attributes');
+    expect(store.getActions()).toEqual([{
+      type: types.LOAD_ATTRIBUTES,
+      attributes: [],
+    }]);
+  });
+
+  it('load credentials when one attribute is stored', async () => {
+    const credentials = [barcelonaResidencyAttribute];
+    const getItemAsync = jest.fn().mockReturnValue(Promise.resolve(JSON.stringify(credentials)));
+
+    await store.dispatch(loadCredentials(getItemAsync));
+
+    expect(getItemAsync).toBeCalled();
+    expect(getItemAsync).toBeCalledWith('attributes');
+    expect(store.getActions()).toEqual([{
+      type: types.LOAD_ATTRIBUTES,
+      attributes: [barcelonaResidencyAttribute],
+    }]);
   });
 });
