@@ -70,6 +70,26 @@ describe('attribute reducer', () => {
     ]);
   });
 
+  it('should handle ADD_CREDENTIAL_FROM_URL from a attribute that already is in the state', () => {
+    const initialState = [barcelonaResidencyAttribute];
+
+    const action = {
+      type: types.ADD_CREDENTIAL_FROM_URL,
+      attribute: {
+        predicate: barcelonaResidencyAttribute.predicate,
+        object: barcelonaResidencyAttribute.object,
+        scope: barcelonaResidencyAttribute.scope,
+        credentialIssuer: {
+          url: barcelonaResidencyAttribute.provenance.source,
+        },
+      },
+      walletId: barcelonaResidencyAttribute.subject,
+      credential: barcelonaResidencyAttribute.provenance.credentials,
+    };
+
+    expect(reducer(initialState, action)).toEqual([barcelonaResidencyAttribute]);
+  });
+
   it('should handle LOAD_CREDENTIALS sets the state with the credentials of the action', () => {
     const initialState = [amsterdamResidencyAttribute];
     const action = {

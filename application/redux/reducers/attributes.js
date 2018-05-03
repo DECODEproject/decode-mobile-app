@@ -16,6 +16,12 @@ export default function reducer(state = initialState, action) {
         subject: action.walletId,
       };
 
+      const alreadyExists = state.filter(attr =>
+        attr.predicate === newAttribute.predicate && attr.object === newAttribute.object);
+
+      if (alreadyExists.length > 0) {
+        return state;
+      }
       return [...state, newAttribute];
     }
     case types.LOAD_ATTRIBUTES:
