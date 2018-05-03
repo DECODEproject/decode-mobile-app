@@ -3,8 +3,7 @@ import Home from './screens/Home';
 import QRScannerIntro from './screens/QRScannerIntro';
 import QRScanner from './screens/QRScanner';
 import Authorisation from './screens/Authorisation';
-import PetitionSummaryGet from './screens/PetitionSummaryGet';
-import PetitionSummarySign from './screens/PetitionSummarySign';
+import PetitionSummary from './screens/PetitionSummary';
 import SignConfirmation from './screens/SignConfirmation';
 
 const Router = createRouter(() => ({
@@ -12,8 +11,7 @@ const Router = createRouter(() => ({
   QRScannerIntro: () => QRScannerIntro,
   QRScanner: () => QRScanner,
   authorisation: () => Authorisation,
-  petitionSummaryGet: () => PetitionSummaryGet,
-  petitionSummarySign: () => PetitionSummarySign,
+  petitionSummary: () => PetitionSummary,
   signConfirmation: () => SignConfirmation,
 }));
 

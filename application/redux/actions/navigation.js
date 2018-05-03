@@ -18,15 +18,9 @@ export function goToQRScanner() {
   return NavigationActions.push(navigatorUID, Router.getRoute('QRScanner'));
 }
 
-export function goToPetitionSummaryGet(petitionLink) {
+export function goToPetitionSummary(petitionLink) {
   const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  const route = Router.getRoute('petitionSummaryGet', { petitionLink });
-  return NavigationActions.push(navigatorUID, route);
-}
-
-export function goToPetitionSummarySign(petitionLink) {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  const route = Router.getRoute('petitionSummarySign', { petitionLink });
+  const route = Router.getRoute('petitionSummary', { petitionLink });
   return NavigationActions.push(navigatorUID, route);
 }
 

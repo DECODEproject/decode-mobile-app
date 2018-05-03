@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { goToPetitionSummaryGet } from '../application/redux/actions/navigation';
+import { goToPetitionSummary } from '../application/redux/actions/navigation';
 
 
 const styles = StyleSheet.create({
@@ -66,15 +66,15 @@ class Authorisation extends React.Component {
       tintColor: 'rgb(0,163,158)',
       title: 'Authorise Connection',
     },
-  }
+  };
 
   constructor(props) {
     super(props);
-    this.goToPetitionSummaryGet = this.goToPetitionSummaryGet.bind(this);
+    this.goToPetitionSummary = this.goToPetitionSummary.bind(this);
   }
 
-  goToPetitionSummaryGet() {
-    this.props.goToPetitionSummaryGet(this.props.petitionLink);
+  goToPetitionSummary() {
+    this.props.goToPetitionSummary(this.props.petitionLink);
   }
 
   render() {
@@ -87,7 +87,7 @@ class Authorisation extends React.Component {
           </Text>
           <TouchableOpacity
             style={styles.button}
-            onPress={this.goToPetitionSummaryGet}
+            onPress={this.goToPetitionSummary}
           >
             <Text style={styles.buttonText}>AUTHORISE</Text>
           </TouchableOpacity>
@@ -99,7 +99,7 @@ class Authorisation extends React.Component {
 }
 
 Authorisation.propTypes = {
-  goToPetitionSummaryGet: PropTypes.func.isRequired,
+  goToPetitionSummary: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
   walletId: PropTypes.string,
 };
@@ -115,7 +115,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  goToPetitionSummaryGet: (petitionLink) => { dispatch(goToPetitionSummaryGet(petitionLink)); },
+  goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Authorisation);

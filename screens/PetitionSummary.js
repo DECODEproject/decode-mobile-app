@@ -1,15 +1,19 @@
-/* eslint no-undef: 0 */
-
 import React from 'react';
-import { Constants, WebBrowser, SecureStore } from 'expo';
+import { Constants, SecureStore, WebBrowser } from 'expo';
+import Spinner from 'react-native-loading-spinner-overlay';
 import { StyleSheet, Text, View, Linking, ScrollView } from 'react-native';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { goToPetitionSummarySign } from '../application/redux/actions/navigation';
+import PropTypes from 'prop-types';
 import { getPetition } from '../application/redux/actions/petition';
 import { addCredential } from '../application/redux/actions/attributes';
-import AttributeComponent from '../application/components/Attribute';
 import SignButton from '../application/components/SignButton';
+import { goToSignConfirmation } from '../application/redux/actions/navigation';
+import AttributeComponent from '../application/components/Attribute';
+
+const config = require('../config.json');
+
+const walletProxyLink = config.development.walletProxy;
+
 
 const styles = StyleSheet.create({
   container: {
@@ -51,7 +55,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class PetitionSummaryGet extends React.Component {
+class PetitionSummary extends React.Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -64,24 +68,14 @@ class PetitionSummaryGet extends React.Component {
 
   constructor(props) {
     super(props);
-    this.goToPetitionSummarySign = this.goToPetitionSummarySign.bind(this);
+    this.state = {
+      loading: false,
+    };
   }
 
   componentDidMount() {
     this.props.getPetition(this.props.petitionLink);
   }
-
-  goToPetitionSummarySign() {
-    this.props.goToPetitionSummarySign(this.props.petitionLink);
-  }
-
-  removeLinkingListener = () => {
-    Linking.removeEventListener('url', this.handleRedirect);
-  };
-
-  addLinkingListener = () => {
-    Linking.addEventListener('url', this.handleRedirect);
-  };
 
   handleRedirect = (event) => {
     const { url } = event;
@@ -90,20 +84,42 @@ class PetitionSummaryGet extends React.Component {
     this.props.addCredential(petition.attributes[0], walletId, url);
 
     WebBrowser.dismissBrowser();
-
-    this.goToPetitionSummarySign();
   };
 
   openWebBrowserAsync = async () => {
     const queryParam = encodeURIComponent(Constants.linkingUri);
     const url = `http://localhost:3010/#/?linkingUri=${queryParam}`;
 
-    this.addLinkingListener();
+    Linking.addEventListener('url', this.handleRedirect);
     await WebBrowser.openBrowserAsync(url);
-    this.removeLinkingListener();
+    Linking.removeEventListener('url', this.handleRedirect);
   };
 
+  async sign(petition, walletId) {
+    this.setState({
+      loading: true,
+    });
+    const response = await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        signatory: walletId.substring(0, 5),
+        isEthereum: petition.isEthereum,
+      }),
+    });
+    console.log(response);
+    this.props.goToSignConfirmation();
+    this.setState({
+      loading: false,
+    });
+  }
+
   render() {
+    const isAttributeVerified = this.props.attributes.length > 0;
+
     const petitionView = (
       <View style={styles.petitionSummaryBox}>
         <Text style={styles.petitionTitle}>{this.props.petition.title}</Text>
@@ -114,35 +130,41 @@ class PetitionSummaryGet extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView>
+          <View style={{ flex: 1 }}>
+            <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
+          </View>
           { this.props.petition && petitionView }
 
           <Text style={styles.textTitle}>Your Information</Text>
           <AttributeComponent
             buttonCallback={this.openWebBrowserAsync}
-            isVerified={false}
+            isVerified={isAttributeVerified}
           />
           <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
-        <SignButton enabled={false} />
-      </View>
-    );
+        <SignButton
+          enabled={isAttributeVerified}
+          onPress={() => { this.sign(this.props.petition, this.props.walletId); }}
+        />
+      </View>);
   }
 }
 
-PetitionSummaryGet.propTypes = {
+PetitionSummary.propTypes = {
+  goToSignConfirmation: PropTypes.func.isRequired,
   petitionLink: PropTypes.string.isRequired,
   petition: PropTypes.shape({
     title: PropTypes.string,
     description: PropTypes.string,
     closingDate: PropTypes.string,
   }),
-  goToPetitionSummarySign: PropTypes.func.isRequired,
   addCredential: PropTypes.func.isRequired,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
+  attributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
-PetitionSummaryGet.defaultProps = {
+PetitionSummary.defaultProps = {
   petition: undefined,
 };
 
@@ -150,14 +172,15 @@ const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   petition: state.petition.petition,
   walletId: state.wallet.id,
+  attributes: state.attributes,
 });
 
 const mapDispatchToProps = dispatch => ({
-  goToPetitionSummarySign: (petitionLink) => { dispatch(goToPetitionSummarySign(petitionLink)); },
   getPetition: (petitionLink) => { dispatch(getPetition(petitionLink)); },
   addCredential: (attribute, walletId, url) => {
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
   },
+  goToSignConfirmation: () => { dispatch(goToSignConfirmation()); },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummaryGet);
+export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummary);
