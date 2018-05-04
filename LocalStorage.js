@@ -2,15 +2,7 @@ import { AsyncStorage } from 'react-native';
 
 import CTX from 'milagro-crypto-js';
 
-export const getWalletID = async () => {
-  let result;
-  try {
-    result = await AsyncStorage.getItem('@MyStore:id');
-  } catch (e) {
-    console.error(e);
-  }
-  return result;
-};
+export const getWalletID = () => AsyncStorage.getItem('@MyStore:id');
 
 function generateWalletId() {
   const S0 = [];
