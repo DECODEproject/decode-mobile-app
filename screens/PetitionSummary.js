@@ -145,12 +145,12 @@ class PetitionSummary extends React.Component {
         <VoteButton
           enabled={isAttributeVerified}
           onPress={() => { this.sign(this.props.petition, this.props.walletId); }}
-          name={'Yes'}
+          name="Yes"
         />
         <VoteButton
           enabled={isAttributeVerified}
           onPress={() => { this.sign(this.props.petition, this.props.walletId); }}
-          name={'No'}
+          name="No"
         />
       </View>);
   }
