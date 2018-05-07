@@ -88,7 +88,7 @@ class PetitionSummary extends React.Component {
 
   openWebBrowserAsync = async () => {
     const queryParam = encodeURIComponent(Constants.linkingUri);
-    const url = `http://localhost:3010/#/?linkingUri=${queryParam}`;
+    const url = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
 
     Linking.addEventListener('url', this.handleRedirect);
     await WebBrowser.openBrowserAsync(url);
