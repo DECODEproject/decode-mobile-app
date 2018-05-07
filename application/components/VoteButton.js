@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
 });
 
 
-function SignButton(props) {
+function VoteButton(props) {
   const styleButton = props.enabled ? styles.buttonText : styles.disabledButtonText;
   return (
     <View style={styles.footerContainer}>
@@ -57,20 +57,21 @@ function SignButton(props) {
         style={props.enabled ? styles.signButton : styles.signButtonDisabled}
         onPress={props.onPress}
       >
-        <Text style={styleButton}>SIGN PETITION</Text>
+        <Text style={styleButton}>{props.name}</Text>
       </TouchableOpacity>
     </View>);
 }
 
-SignButton.propTypes = {
+VoteButton.propTypes = {
   enabled: PropTypes.bool.isRequired,
   onPress: PropTypes.func,
+  name: PropTypes.string.isRequired,
 };
 
-SignButton.defaultProps = {
+VoteButton.defaultProps = {
   onPress: () => {
   },
 };
 
-export default SignButton;
+export default VoteButton;
 

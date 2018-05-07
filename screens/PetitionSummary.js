@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition } from '../application/redux/actions/petition';
 import { addCredential } from '../application/redux/actions/attributes';
-import SignButton from '../application/components/SignButton';
+import VoteButton from '../application/components/VoteButton';
 import { goToSignConfirmation } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute';
 
@@ -142,9 +142,15 @@ class PetitionSummary extends React.Component {
           />
           <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
-        <SignButton
+        <VoteButton
           enabled={isAttributeVerified}
           onPress={() => { this.sign(this.props.petition, this.props.walletId); }}
+          name={'Yes'}
+        />
+        <VoteButton
+          enabled={isAttributeVerified}
+          onPress={() => { this.sign(this.props.petition, this.props.walletId); }}
+          name={'No'}
         />
       </View>);
   }

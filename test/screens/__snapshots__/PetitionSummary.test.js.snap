@@ -159,8 +159,14 @@ ShallowWrapper {
             *Required fields
           </Text>
         </ScrollViewMock>,
-        <SignButton
+        <VoteButton
           enabled={true}
+          name="Yes"
+          onPress={[Function]}
+        />,
+        <VoteButton
+          enabled={true}
+          name="No"
           onPress={[Function]}
         />,
       ],
@@ -524,6 +530,20 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "enabled": true,
+          "name": "Yes",
+          "onPress": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "enabled": true,
+          "name": "No",
           "onPress": [Function],
         },
         "ref": null,
@@ -652,8 +672,14 @@ ShallowWrapper {
               *Required fields
             </Text>
           </ScrollViewMock>,
-          <SignButton
+          <VoteButton
             enabled={true}
+            name="Yes"
+            onPress={[Function]}
+          />,
+          <VoteButton
+            enabled={true}
+            name="No"
             onPress={[Function]}
           />,
         ],
@@ -1017,6 +1043,20 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "enabled": true,
+            "name": "Yes",
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "enabled": true,
+            "name": "No",
             "onPress": [Function],
           },
           "ref": null,
@@ -1193,8 +1233,14 @@ ShallowWrapper {
             *Required fields
           </Text>
         </ScrollViewMock>,
-        <SignButton
+        <VoteButton
           enabled={false}
+          name="Yes"
+          onPress={[Function]}
+        />,
+        <VoteButton
+          enabled={false}
+          name="No"
           onPress={[Function]}
         />,
       ],
@@ -1558,6 +1604,20 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "enabled": false,
+          "name": "Yes",
+          "onPress": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "enabled": false,
+          "name": "No",
           "onPress": [Function],
         },
         "ref": null,
@@ -1686,8 +1746,14 @@ ShallowWrapper {
               *Required fields
             </Text>
           </ScrollViewMock>,
-          <SignButton
+          <VoteButton
             enabled={false}
+            name="Yes"
+            onPress={[Function]}
+          />,
+          <VoteButton
+            enabled={false}
+            name="No"
             onPress={[Function]}
           />,
         ],
@@ -2051,6 +2117,20 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "enabled": false,
+            "name": "Yes",
+            "onPress": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "enabled": false,
+            "name": "No",
             "onPress": [Function],
           },
           "ref": null,
