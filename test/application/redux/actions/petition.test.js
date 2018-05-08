@@ -79,9 +79,12 @@ describe('signPetition', () => {
   });
 
   it('should make post with correct request', () => {
+    const vote = 'yes';
+
     const expectedRequestBody = JSON.stringify({
       signatory: walletId.substring(0, 5),
       isEthereum: petition.isEthereum,
+      vote,
     });
 
     let actualRequestBody;
@@ -91,7 +94,7 @@ describe('signPetition', () => {
       return url === signPetitionLink;
     }, response);
 
-    return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
+    return store.dispatch(signPetition(petition, walletId, walletProxyLink, vote)).then(() => {
       expect(actualRequestBody).toEqual(expectedRequestBody);
     });
   });
