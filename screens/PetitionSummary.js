@@ -96,11 +96,11 @@ class PetitionSummary extends React.Component {
     Linking.removeEventListener('url', this.handleRedirect);
   };
 
-  async sign(petition, walletId, vote) {
+  async sign(petition, walletId) {
     this.setState({
       loading: true,
     });
-    this.props.signPetition(petition, walletId, walletProxyLink, vote);
+    this.props.signPetition(petition, walletId, walletProxyLink);
     this.props.goToSignConfirmation();
     this.setState({
       loading: false,
@@ -134,12 +134,12 @@ class PetitionSummary extends React.Component {
         </ScrollView>
         <VoteButton
           enabled={isAttributeVerified}
-          onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
+          onPress={() => { this.sign(this.props.petition, this.props.walletId); }}
           name="Yes"
         />
         <VoteButton
           enabled={isAttributeVerified}
-          onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
+          onPress={() => { this.sign(this.props.petition, this.props.walletId); }}
           name="No"
         />
       </View>);
