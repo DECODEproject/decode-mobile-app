@@ -32,6 +32,7 @@ ShallowWrapper {
       }
     }
     petitionLink="http://something.com"
+    signPetition={[Function]}
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -1106,6 +1107,7 @@ ShallowWrapper {
       }
     }
     petitionLink="http://something.com"
+    signPetition={[Function]}
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
