@@ -14,6 +14,19 @@ export function setPetitionError(error) {
   };
 }
 
+export function signPetitionAction() {
+  return {
+    type: types.SIGN_PETITION,
+  };
+}
+
+export function signPetitionError(error) {
+  return {
+    type: types.SIGN_PETITION_ERROR,
+    error,
+  };
+}
+
 export function getPetition(petitionLink) {
   return dispatch =>
     fetch(petitionLink).then(async (response) => {
@@ -25,3 +38,28 @@ export function getPetition(petitionLink) {
       }
     });
 }
+
+export function signPetition(petition, walletId, walletProxyLink) {
+  const request = {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      signatory: walletId.substring(0, 5),
+      isEthereum: petition.isEthereum,
+    }),
+  };
+
+  return dispatch =>
+    fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, request)
+      .then(async (response) => {
+        if (!response.ok) {
+          dispatch(signPetitionError(response.statusText));
+        } else {
+          dispatch(signPetitionAction());
+        }
+      });
+}
+

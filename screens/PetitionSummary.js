@@ -4,11 +4,12 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import { StyleSheet, Text, View, Linking, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getPetition } from '../application/redux/actions/petition';
+import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { addCredential } from '../application/redux/actions/attributes';
 import VoteButton from '../application/components/VoteButton';
 import { goToSignConfirmation } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute';
+
 
 const config = require('../config.json');
 
@@ -99,18 +100,7 @@ class PetitionSummary extends React.Component {
     this.setState({
       loading: true,
     });
-    const response = await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        signatory: walletId.substring(0, 5),
-        isEthereum: petition.isEthereum,
-      }),
-    });
-    console.log(response);
+    this.props.signPetition(petition, walletId, walletProxyLink);
     this.props.goToSignConfirmation();
     this.setState({
       loading: false,
@@ -168,6 +158,7 @@ PetitionSummary.propTypes = {
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   attributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  signPetition: PropTypes.func.isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -187,6 +178,9 @@ const mapDispatchToProps = dispatch => ({
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
   },
   goToSignConfirmation: () => { dispatch(goToSignConfirmation()); },
+  signPetition: (petition, walletId) => {
+    dispatch(signPetition(petition, walletId, walletProxyLink));
+  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummary);
