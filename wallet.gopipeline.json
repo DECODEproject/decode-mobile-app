@@ -89,6 +89,16 @@
               "on_cancel" : null,
               "command": "npm",
               "arguments": [
+                "install"
+              ],
+              "working_directory": "apps/wallet"
+            },
+            {
+              "type": "exec",
+              "run_if": "passed",
+              "on_cancel" : null,
+              "command": "npm",
+              "arguments": [
                 "run",
                 "publish"
               ],
