@@ -100,7 +100,7 @@ class PetitionSummary extends React.Component {
     this.setState({
       loading: true,
     });
-    this.props.signPetition(petition, walletId, walletProxyLink, vote);
+    this.props.signPetition(petition, walletId, vote);
     this.props.goToSignConfirmation();
     this.setState({
       loading: false,
@@ -178,8 +178,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
   },
   goToSignConfirmation: () => { dispatch(goToSignConfirmation()); },
-  signPetition: (petition, walletId) => {
-    dispatch(signPetition(petition, walletId, walletProxyLink));
+  signPetition: (petition, walletId, vote) => {
+    dispatch(signPetition(petition, walletId, walletProxyLink, vote));
   },
 });
 
