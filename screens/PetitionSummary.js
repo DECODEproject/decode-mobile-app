@@ -6,9 +6,9 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { addCredential } from '../application/redux/actions/attributes';
-import VoteButton from '../application/components/VoteButton';
+import VoteButton from '../application/components/VoteButton/VoteButton';
 import { goToSignConfirmation } from '../application/redux/actions/navigation';
-import AttributeComponent from '../application/components/Attribute';
+import AttributeComponent from '../application/components/Attribute/Attribute';
 
 
 const config = require('../config.json');
