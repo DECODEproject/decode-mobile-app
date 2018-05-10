@@ -87,8 +87,8 @@ class PetitionSummary extends React.Component {
     );
     return (
       <View style={styles.petitionSummaryContainer}>
-        { this.props.petitionError && petitionError }
         <ScrollView>
+          { this.props.petitionError && petitionError }
           <View style={{ flex: 1 }}>
             <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
           </View>
