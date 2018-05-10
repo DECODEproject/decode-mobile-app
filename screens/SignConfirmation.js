@@ -1,58 +1,12 @@
+/* eslint-disable max-len */
 import React from 'react';
-import { StyleSheet, Text, View, Linking, Image } from 'react-native';
+import { Text, View, Linking, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { goToAuthorization } from '../application/redux/actions/navigation';
+import styles from './styles';
 
 const tick = require('../assets/images/decode_tick.jpg');
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: 'rgb(246, 246, 246)',
-    flex: 1,
-  },
-  confirmationBox: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFF',
-    paddingHorizontal: 20,
-    paddingVertical: 40,
-    margin: 16,
-    marginTop: 30,
-  },
-  tick: {
-    alignSelf: 'center',
-    height: 75,
-    marginBottom: 40,
-    width: 75,
-  },
-  textBox: {
-    alignSelf: 'center',
-    width: 250,
-  },
-  textSubHeading: {
-    fontSize: 14,
-    textAlign: 'center',
-    marginBottom: 4,
-  },
-  petitionTitle: {
-    fontSize: 20,
-    fontWeight: '500',
-    marginVertical: 15,
-    textAlign: 'center',
-  },
-  confirmationText: {
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  buttonText: {
-    alignSelf: 'center',
-    color: 'rgb(0,163,158)',
-    fontSize: 14,
-    fontWeight: '500',
-    textDecorationLine: 'underline',
-  },
-});
 
 class SignConfirmation extends React.Component {
   static route = {
@@ -78,20 +32,20 @@ class SignConfirmation extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.confirmationBox}>
+      <View style={styles.signConfirmationContainer}>
+        <View style={styles.signConfirmationBox}>
           <Image
-            style={styles.tick}
+            style={styles.signConfirmationTick}
             source={tick}
           />
-          <View style={styles.textBox}>
-            <Text style={styles.textSubHeading}>Thank you for signing</Text>
-            <Text style={styles.petitionTitle}>Create communal space in Atlantis</Text>
-            <Text style={styles.confirmationText}>You can view the results of the petition
+          <View style={styles.signConfirmationTextBox}>
+            <Text style={styles.signConfirmationTextSubHeading}>Thank you for signing</Text>
+            <Text style={styles.signConfirmationPetitionTitle}>Create communal space in Atlantis</Text>
+            <Text style={styles.signConfirmationText}>You can view the results of the petition
               on the Secure Petitions website
             </Text>
             <Text
-              style={styles.buttonText}
+              style={styles.signConfirmationButtonText}
               onPress={SignConfirmation.handlePress}
             >View Petitions Results
             </Text>

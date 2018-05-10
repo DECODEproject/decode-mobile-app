@@ -1,62 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Platform, StyleSheet, Image, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import { Image, Text, TextInput, View, TouchableOpacity } from 'react-native';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
 import { goQRScannerIntro, goToAuthorization } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
+import styles from './styles';
 
 const decodeLogo = require('../assets/images/decode_logo.jpg');
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    flex: 1,
-  },
-  logo: {
-    height: 150,
-    marginTop: 75,
-    marginBottom: 50,
-    width: 300,
-  },
-  welcomeMessage: {
-    fontSize: 18,
-    marginBottom: 30,
-  },
-  textInput: {
-    borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
-    borderColor: 'rgb(0,163,158)',
-    marginBottom: 20,
-  },
-  password: {
-    height: Platform.OS === 'ios' ? 30 : 40,
-    width: 300,
-  },
-  button: {
-    alignSelf: 'center',
-    backgroundColor: 'rgb(0,163,158)',
-    borderRadius: 2,
-    elevation: 2,
-    height: 36,
-    marginBottom: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    width: 300,
-  },
-  buttonText: {
-    color: '#FFF',
-    fontSize: 14,
-    fontWeight: '500',
-    alignSelf: 'center',
-  },
-});
 
 class Home extends React.Component {
   constructor(props) {
@@ -78,22 +31,22 @@ class Home extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.homeContainer}>
         <Image
-          style={styles.logo}
+          style={styles.homeLogo}
           source={decodeLogo}
         />
-        <Text style={styles.welcomeMessage}>Welcome, Jane Doe</Text>
-        <View style={styles.textInput}>
+        <Text style={styles.homeWelcomeMessage}>Welcome, Jane Doe</Text>
+        <View style={styles.homeTextInput}>
           <TextInput
-            style={styles.password}
+            style={styles.homePassword}
             placeholder="Password"
             secureTextEntry
             underlineColorAndroid="rgb(0,163,158)"
           />
         </View>
         <TouchableOpacity
-          style={styles.button}
+          style={styles.homeButton}
           onPress={this.goToNextPage}
         >
           <Text style={styles.buttonText}>LOG IN</Text>

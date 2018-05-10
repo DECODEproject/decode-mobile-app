@@ -1,7 +1,7 @@
 import React from 'react';
 import { Constants, SecureStore, WebBrowser } from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
-import { StyleSheet, Text, View, Linking, ScrollView } from 'react-native';
+import { Text, View, Linking, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
@@ -9,70 +9,12 @@ import { addCredential } from '../application/redux/actions/attributes';
 import VoteButton from '../application/components/VoteButton/VoteButton';
 import { goToSignConfirmation } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
+import styles from './styles';
 
 
 const config = require('../config.json');
 
 const walletProxyLink = config.development.walletProxy;
-
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'rgb(246, 246, 246)',
-    flex: 1,
-  },
-  petitionSummaryBox: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFF',
-    padding: 10,
-    margin: 16,
-  },
-  petitionSummaryErrorBox: {
-    alignSelf: 'stretch',
-    backgroundColor: '#cc0000',
-    padding: 10,
-    margin: 16,
-  },
-  petitionErrorTitle: {
-    color: '#FFF',
-    fontSize: 20,
-    marginBottom: 20,
-    fontWeight: '500',
-  },
-  petitionErrorDescription: {
-    color: '#FFF',
-    fontSize: 14,
-    lineHeight: 20,
-    marginBottom: 15,
-  },
-  petitionTitle: {
-    fontSize: 20,
-    marginBottom: 20,
-    fontWeight: '500',
-    color: 'rgba(0, 0, 0, 0.87)',
-  },
-  petitionDescription: {
-    color: 'rgba(0, 0, 0, 0.87)',
-    fontSize: 14,
-    lineHeight: 20,
-    marginBottom: 15,
-  },
-  closingDate: {
-    fontSize: 12,
-    color: 'rgba(0, 0, 0, 0.54)',
-  },
-  textTitle: {
-    fontSize: 20,
-    fontWeight: '500',
-    marginLeft: 16,
-    marginBottom: 10,
-  },
-  requiredText: {
-    fontSize: 12,
-    marginLeft: 16,
-    marginTop: 10,
-  },
-});
 
 class PetitionSummary extends React.Component {
   static route = {
@@ -132,7 +74,7 @@ class PetitionSummary extends React.Component {
 
     const petitionView = (
       <View style={styles.petitionSummaryBox}>
-        <Text style={styles.petitionTitle}>{this.props.petition.title}</Text>
+        <Text style={styles.petitionSummaryPetitionTitle}>{this.props.petition.title}</Text>
         <Text style={styles.petitionDescription}>{this.props.petition.description}</Text>
         <Text style={styles.closingDate}>Closing date: {this.props.petition.closingDate}</Text>
       </View>
@@ -144,7 +86,7 @@ class PetitionSummary extends React.Component {
       </View>
     );
     return (
-      <View style={styles.container}>
+      <View style={styles.petitionSummaryContainer}>
         { this.props.petitionError && petitionError }
         <ScrollView>
           <View style={{ flex: 1 }}>
