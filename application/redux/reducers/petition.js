@@ -27,6 +27,7 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         signed: true,
+        error: undefined,
       };
     case types.SIGN_PETITION_ERROR:
       return {

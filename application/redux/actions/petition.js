@@ -28,15 +28,21 @@ export function signPetitionError(error) {
 }
 
 export function getPetition(petitionLink) {
-  return dispatch =>
-    fetch(petitionLink).then(async (response) => {
-      if (!response.ok) {
-        dispatch(setPetitionError(response.statusText));
-      } else {
-        const json = await response.json();
-        dispatch(setPetition(json));
-      }
-    });
+  return async (dispatch) => {
+    let response;
+    try {
+      response = await fetch(petitionLink);
+    } catch (error) {
+      return dispatch(setPetitionError(`${error}`));
+    }
+
+    if (!response.ok) {
+      const text = await response.text();
+      return dispatch(setPetitionError(text));
+    }
+    const json = await response.json();
+    return dispatch(setPetition(json));
+  };
 }
 
 export function signPetition(petition, walletId, walletProxyLink, vote) {

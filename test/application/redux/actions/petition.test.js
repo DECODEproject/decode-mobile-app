@@ -47,9 +47,11 @@ describe('getPetition', () => {
       error: errorMessage,
     }];
 
-    const response = { status: 500 };
-
-    fetchMock.getOnce(petitionLink, response);
+    fetchMock.getOnce(petitionLink, {
+      status: 500,
+      sendAsJson: false,
+      body: errorMessage,
+    });
 
     return store.dispatch(getPetition(petitionLink)).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
