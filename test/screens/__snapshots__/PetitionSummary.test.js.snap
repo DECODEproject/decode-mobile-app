@@ -49,7 +49,6 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        undefined,
         <ScrollViewMock>
           <View
             style={
@@ -180,13 +179,13 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            undefined,
             <View
               style={
                 Object {
@@ -301,6 +300,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          undefined,
           Object {
             "instance": null,
             "key": undefined,
@@ -564,7 +564,6 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          undefined,
           <ScrollViewMock>
             <View
               style={
@@ -695,13 +694,13 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              undefined,
               <View
                 style={
                   Object {
@@ -816,6 +815,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            undefined,
             Object {
               "instance": null,
               "key": undefined,
@@ -1129,7 +1129,6 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        undefined,
         <ScrollViewMock>
           <View
             style={
@@ -1260,13 +1259,13 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
-      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
         "props": Object {
           "children": Array [
+            undefined,
             <View
               style={
                 Object {
@@ -1381,6 +1380,7 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          undefined,
           Object {
             "instance": null,
             "key": undefined,
@@ -1644,7 +1644,6 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          undefined,
           <ScrollViewMock>
             <View
               style={
@@ -1775,13 +1774,13 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
-        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
           "props": Object {
             "children": Array [
+              undefined,
               <View
                 style={
                   Object {
@@ -1896,6 +1895,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            undefined,
             Object {
               "instance": null,
               "key": undefined,
