@@ -119,7 +119,13 @@ describe('signPetition', () => {
       error: errorMessage,
     }];
 
-    fetchMock.postOnce(signPetitionLink, { status: 500 });
+    fetchMock.postOnce(signPetitionLink, {
+      status: 500,
+      sendAsJson: true,
+      body: {
+        error: errorMessage,
+      },
+    });
 
     return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
       expect(store.getActions()).toEqual(expectedActions);

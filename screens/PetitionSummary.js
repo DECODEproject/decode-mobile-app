@@ -27,6 +27,24 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 16,
   },
+  petitionSummaryErrorBox: {
+    alignSelf: 'stretch',
+    backgroundColor: '#cc0000',
+    padding: 10,
+    margin: 16,
+  },
+  petitionErrorTitle: {
+    color: '#FFF',
+    fontSize: 20,
+    marginBottom: 20,
+    fontWeight: '500',
+  },
+  petitionErrorDescription: {
+    color: '#FFF',
+    fontSize: 14,
+    lineHeight: 20,
+    marginBottom: 15,
+  },
   petitionTitle: {
     fontSize: 20,
     marginBottom: 20,
@@ -100,8 +118,10 @@ class PetitionSummary extends React.Component {
     this.setState({
       loading: true,
     });
-    this.props.signPetition(petition, walletId, vote);
-    this.props.goToSignConfirmation();
+    const signAction = await this.props.signPetition(petition, walletId, vote);
+    if (signAction.error === undefined) {
+      this.props.goToSignConfirmation();
+    }
     this.setState({
       loading: false,
     });
@@ -117,8 +137,15 @@ class PetitionSummary extends React.Component {
         <Text style={styles.closingDate}>Closing date: {this.props.petition.closingDate}</Text>
       </View>
     );
+    const petitionError = (
+      <View style={styles.petitionSummaryErrorBox}>
+        <Text style={styles.petitionErrorTitle}>Error</Text>
+        <Text style={styles.petitionErrorDescription}>{this.props.petitionError}</Text>
+      </View>
+    );
     return (
       <View style={styles.container}>
+        { this.props.petitionError && petitionError }
         <ScrollView>
           <View style={{ flex: 1 }}>
             <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
@@ -154,6 +181,7 @@ PetitionSummary.propTypes = {
     description: PropTypes.string,
     closingDate: PropTypes.string,
   }),
+  petitionError: PropTypes.string,
   addCredential: PropTypes.func.isRequired,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
@@ -163,11 +191,13 @@ PetitionSummary.propTypes = {
 
 PetitionSummary.defaultProps = {
   petition: undefined,
+  petitionError: undefined,
 };
 
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   petition: state.petition.petition,
+  petitionError: state.petition.error,
   walletId: state.wallet.id,
   attributes: state.attributes,
 });
@@ -178,9 +208,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
   },
   goToSignConfirmation: () => { dispatch(goToSignConfirmation()); },
-  signPetition: (petition, walletId, vote) => {
-    dispatch(signPetition(petition, walletId, walletProxyLink, vote));
-  },
+  signPetition: (petition, walletId, vote) =>
+    dispatch(signPetition(petition, walletId, walletProxyLink, vote)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummary);

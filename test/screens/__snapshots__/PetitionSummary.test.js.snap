@@ -31,6 +31,7 @@ ShallowWrapper {
         "title": "hello",
       }
     }
+    petitionError={undefined}
     petitionLink="http://something.com"
     signPetition={[Function]}
     walletId="something"
@@ -48,6 +49,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
+        undefined,
         <ScrollViewMock>
           <View
             style={
@@ -178,6 +180,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -561,6 +564,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          undefined,
           <ScrollViewMock>
             <View
               style={
@@ -691,6 +695,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
@@ -1106,6 +1111,7 @@ ShallowWrapper {
         "title": "hello",
       }
     }
+    petitionError={undefined}
     petitionLink="http://something.com"
     signPetition={[Function]}
     walletId="something"
@@ -1123,6 +1129,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
+        undefined,
         <ScrollViewMock>
           <View
             style={
@@ -1253,6 +1260,7 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -1636,6 +1644,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          undefined,
           <ScrollViewMock>
             <View
               style={
@@ -1766,6 +1775,7 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        undefined,
         Object {
           "instance": null,
           "key": undefined,

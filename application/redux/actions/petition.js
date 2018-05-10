@@ -53,14 +53,12 @@ export function signPetition(petition, walletId, walletProxyLink, vote) {
     }),
   };
 
-  return dispatch =>
-    fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, request)
-      .then(async (response) => {
-        if (!response.ok) {
-          dispatch(signPetitionError(response.statusText));
-        } else {
-          dispatch(signPetitionAction());
-        }
-      });
+  return async (dispatch) => {
+    const response = await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, request);
+    const responseJson = await response.json();
+    if (!response.ok) {
+      return dispatch(signPetitionError(responseJson.error));
+    }
+    return dispatch(signPetitionAction());
+  };
 }
-
