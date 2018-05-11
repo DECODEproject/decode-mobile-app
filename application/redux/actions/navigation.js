@@ -24,7 +24,7 @@ export function goToPetitionSummary(petitionLink) {
   return NavigationActions.push(navigatorUID, route);
 }
 
-export function goToSignConfirmation() {
+export function goToSignOutcome() {
   const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  return NavigationActions.push(navigatorUID, Router.getRoute('signConfirmation'));
+  return NavigationActions.push(navigatorUID, Router.getRoute('signOutcome'));
 }

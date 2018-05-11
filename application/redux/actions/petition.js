@@ -33,7 +33,7 @@ export function getPetition(petitionLink) {
     try {
       response = await fetch(petitionLink);
     } catch (error) {
-      return dispatch(setPetitionError(`${error}`));
+      return dispatch(setPetitionError('Could not retrieve petition details.'));
     }
 
     if (!response.ok) {

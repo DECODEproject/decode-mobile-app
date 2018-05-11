@@ -4,7 +4,7 @@ import QRScannerIntro from './screens/QRScannerIntro';
 import QRScanner from './screens/QRScanner';
 import Authorisation from './screens/Authorisation';
 import PetitionSummary from './screens/PetitionSummary';
-import SignConfirmation from './screens/SignConfirmation';
+import SignOutcome from './screens/SignOutcome';
 
 const Router = createRouter(() => ({
   home: () => Home,
@@ -12,7 +12,7 @@ const Router = createRouter(() => ({
   QRScanner: () => QRScanner,
   authorisation: () => Authorisation,
   petitionSummary: () => PetitionSummary,
-  signConfirmation: () => SignConfirmation,
+  signOutcome: () => SignOutcome,
 }));
 
 export default Router;

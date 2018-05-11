@@ -5,9 +5,10 @@ import { Text, View, Linking, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
+import { setSignOutcome } from '../application/redux/actions/signOutcome';
 import { addCredential } from '../application/redux/actions/attributes';
 import VoteButton from '../application/components/VoteButton/VoteButton';
-import { goToSignConfirmation } from '../application/redux/actions/navigation';
+import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import styles from './styles';
 
@@ -60,10 +61,16 @@ class PetitionSummary extends React.Component {
     this.setState({
       loading: true,
     });
-    const signAction = await this.props.signPetition(petition, walletId, vote);
-    if (signAction.error === undefined) {
-      this.props.goToSignConfirmation();
+
+    let signSuccess;
+    try {
+      const signAction = await this.props.signPetition(petition, walletId, vote);
+      signSuccess = (signAction.error === undefined);
+    } catch (e) {
+      signSuccess = false;
     }
+    this.props.setSignOutcome(signSuccess);
+    this.props.goToSignOutcome();
     this.setState({
       loading: false,
     });
@@ -116,7 +123,8 @@ class PetitionSummary extends React.Component {
 }
 
 PetitionSummary.propTypes = {
-  goToSignConfirmation: PropTypes.func.isRequired,
+  goToSignOutcome: PropTypes.func.isRequired,
+  setSignOutcome: PropTypes.func.isRequired,
   petitionLink: PropTypes.string.isRequired,
   petition: PropTypes.shape({
     title: PropTypes.string,
@@ -142,6 +150,7 @@ const mapStateToProps = state => ({
   petitionError: state.petition.error,
   walletId: state.wallet.id,
   attributes: state.attributes,
+  signSuccess: state.signSuccess,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -149,7 +158,8 @@ const mapDispatchToProps = dispatch => ({
   addCredential: (attribute, walletId, url) => {
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
   },
-  goToSignConfirmation: () => { dispatch(goToSignConfirmation()); },
+  setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
+  goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote) =>
     dispatch(signPetition(petition, walletId, walletProxyLink, vote)),
 });

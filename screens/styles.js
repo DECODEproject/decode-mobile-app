@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
     marginLeft: 16,
     marginTop: 10,
   },
-  signConfirmationBox: {
+  signOutcomeBox: {
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
     margin: 16,
@@ -181,42 +181,42 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 40,
   },
-  signConfirmationButtonText: {
+  signOutcomeButtonText: {
     alignSelf: 'center',
     color: 'rgb(0,163,158)',
     fontSize: 14,
     fontWeight: '500',
     textDecorationLine: 'underline',
   },
-  signConfirmationContainer: {
+  signOutcomeContainer: {
     alignItems: 'center',
     backgroundColor: 'rgb(246, 246, 246)',
     flex: 1,
   },
-  signConfirmationPetitionTitle: {
+  signOutcomeIcon: {
+    alignSelf: 'center',
+    height: 75,
+    marginBottom: 40,
+    width: 75,
+  },
+  signOutcomePetitionTitle: {
     fontSize: 20,
     fontWeight: '500',
     marginVertical: 15,
     textAlign: 'center',
   },
-  signConfirmationText: {
+  signOutcomeText: {
     textAlign: 'center',
     marginBottom: 20,
   },
-  signConfirmationTextBox: {
+  signOutcomeTextBox: {
     alignSelf: 'center',
     width: 250,
   },
-  signConfirmationTextSubHeading: {
+  signOutcomeTextSubHeading: {
     fontSize: 14,
     marginBottom: 4,
     textAlign: 'center',
-  },
-  signConfirmationTick: {
-    alignSelf: 'center',
-    height: 75,
-    marginBottom: 40,
-    width: 75,
   },
   textTitle: {
     fontSize: 20,
@@ -227,4 +227,3 @@ const styles = StyleSheet.create({
 });
 
 export default styles;
-

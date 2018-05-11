@@ -21,7 +21,7 @@ ShallowWrapper {
       ]
     }
     getPetition={[Function]}
-    goToSignConfirmation={[Function]}
+    goToSignOutcome={[Function]}
     petition={
       Object {
         "closingDate": "today",
@@ -33,7 +33,9 @@ ShallowWrapper {
     }
     petitionError={undefined}
     petitionLink="http://something.com"
+    setSignOutcome={[Function]}
     signPetition={[Function]}
+    signSuccess={undefined}
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -1101,7 +1103,7 @@ ShallowWrapper {
     addCredential={[Function]}
     attributes={Array []}
     getPetition={[Function]}
-    goToSignConfirmation={[Function]}
+    goToSignOutcome={[Function]}
     petition={
       Object {
         "closingDate": "today",
@@ -1113,7 +1115,9 @@ ShallowWrapper {
     }
     petitionError={undefined}
     petitionLink="http://something.com"
+    setSignOutcome={[Function]}
     signPetition={[Function]}
+    signSuccess={undefined}
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
