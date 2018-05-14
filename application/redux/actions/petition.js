@@ -37,7 +37,8 @@ export function getPetition(petitionLink) {
     }
 
     if (!response.ok) {
-      const text = await response.text();
+      let text = await response.text();
+      if (!text) text = 'Unknown error';
       return dispatch(setPetitionError(text));
     }
     const json = await response.json();
