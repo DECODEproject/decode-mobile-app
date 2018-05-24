@@ -48,6 +48,11 @@ class PetitionSummary extends React.Component {
     WebBrowser.dismissBrowser();
   };
 
+  openPetitionInBrowser = () => {
+    const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${this.props.petition.id}`;
+    Linking.openURL(petitionUrl);
+  };
+
   openWebBrowserAsync = async () => {
     const queryParam = encodeURIComponent(Constants.linkingUri);
     const url = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
@@ -118,6 +123,11 @@ class PetitionSummary extends React.Component {
           onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
           name="No"
         />
+        <Text
+          style={styles.cancelSigningPetition}
+          onPress={this.openPetitionInBrowser}
+        >Or, cancel signing this petition
+        </Text>
       </View>);
   }
 }
@@ -127,6 +137,7 @@ PetitionSummary.propTypes = {
   setSignOutcome: PropTypes.func.isRequired,
   petitionLink: PropTypes.string.isRequired,
   petition: PropTypes.shape({
+    id: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
     closingDate: PropTypes.string,

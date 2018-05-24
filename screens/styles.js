@@ -59,6 +59,14 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '500',
   },
+  cancelSigningPetition: {
+    alignSelf: 'center',
+    color: '#00F',
+    fontSize: 14,
+    fontWeight: '500',
+    textDecorationLine: 'underline',
+    marginVertical: 20,
+  },
   closingDate: {
     color: 'rgba(0, 0, 0, 0.54)',
     fontSize: 12,

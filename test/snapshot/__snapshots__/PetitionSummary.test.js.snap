@@ -173,6 +173,24 @@ ShallowWrapper {
           name="No"
           onPress={[Function]}
         />,
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          onPress={[Function]}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#00F",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "marginVertical": 20,
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          Or, cancel signing this petition
+        </Text>,
       ],
       "style": Object {
         "backgroundColor": "rgb(246, 246, 246)",
@@ -556,6 +574,29 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": "Or, cancel signing this petition",
+          "ellipsizeMode": "tail",
+          "onPress": [Function],
+          "style": Object {
+            "alignSelf": "center",
+            "color": "#00F",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "marginVertical": 20,
+            "textDecorationLine": "underline",
+          },
+        },
+        "ref": null,
+        "rendered": "Or, cancel signing this petition",
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -688,6 +729,24 @@ ShallowWrapper {
             name="No"
             onPress={[Function]}
           />,
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#00F",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "marginVertical": 20,
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            Or, cancel signing this petition
+          </Text>,
         ],
         "style": Object {
           "backgroundColor": "rgb(246, 246, 246)",
@@ -1071,6 +1130,29 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": "Or, cancel signing this petition",
+            "ellipsizeMode": "tail",
+            "onPress": [Function],
+            "style": Object {
+              "alignSelf": "center",
+              "color": "#00F",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "marginVertical": 20,
+              "textDecorationLine": "underline",
+            },
+          },
+          "ref": null,
+          "rendered": "Or, cancel signing this petition",
+          "type": [Function],
+        },
       ],
       "type": [Function],
     },
@@ -1255,6 +1337,24 @@ ShallowWrapper {
           name="No"
           onPress={[Function]}
         />,
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          onPress={[Function]}
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#00F",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "marginVertical": 20,
+              "textDecorationLine": "underline",
+            }
+          }
+        >
+          Or, cancel signing this petition
+        </Text>,
       ],
       "style": Object {
         "backgroundColor": "rgb(246, 246, 246)",
@@ -1638,6 +1738,29 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": "Or, cancel signing this petition",
+          "ellipsizeMode": "tail",
+          "onPress": [Function],
+          "style": Object {
+            "alignSelf": "center",
+            "color": "#00F",
+            "fontSize": 14,
+            "fontWeight": "500",
+            "marginVertical": 20,
+            "textDecorationLine": "underline",
+          },
+        },
+        "ref": null,
+        "rendered": "Or, cancel signing this petition",
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -1770,6 +1893,24 @@ ShallowWrapper {
             name="No"
             onPress={[Function]}
           />,
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#00F",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "marginVertical": 20,
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            Or, cancel signing this petition
+          </Text>,
         ],
         "style": Object {
           "backgroundColor": "rgb(246, 246, 246)",
@@ -2151,6 +2292,29 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": "Or, cancel signing this petition",
+            "ellipsizeMode": "tail",
+            "onPress": [Function],
+            "style": Object {
+              "alignSelf": "center",
+              "color": "#00F",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "marginVertical": 20,
+              "textDecorationLine": "underline",
+            },
+          },
+          "ref": null,
+          "rendered": "Or, cancel signing this petition",
           "type": [Function],
         },
       ],
