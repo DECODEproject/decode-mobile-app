@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { addCredentialFromUrl, storeCredentials, addCredential, loadCredentials } from '../../../../application/redux/actions/attributes';
-import types from '../../../../application/redux/actionTypes';
+import { addCredentialFromUrl, storeCredentials, addCredential, loadCredentials } from '../../../../../application/redux/actions/attributes';
+import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
 

@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import types from '../../../../application/redux/actionTypes';
-import { setSignOutcome } from '../../../../application/redux/actions/signOutcome';
+import types from '../../../../../application/redux/actionTypes';
+import { setSignOutcome } from '../../../../../application/redux/actions/signOutcome';
 
 const mockStore = configureMockStore([thunk]);
 

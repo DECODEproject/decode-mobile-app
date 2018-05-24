@@ -1,5 +1,5 @@
-import reducer from '../../../../application/redux/reducers/wallet';
-import types from '../../../../application/redux/actionTypes';
+import reducer from '../../../../../application/redux/reducers/wallet';
+import types from '../../../../../application/redux/actionTypes';
 
 describe('wallet reducer', () => {
   it('should return the initial state', () => {

@@ -1,5 +1,5 @@
-import reducer from '../../../../application/redux/reducers/petitionLink';
-import types from '../../../../application/redux/actionTypes';
+import reducer from '../../../../../application/redux/reducers/petitionLink';
+import types from '../../../../../application/redux/actionTypes';
 
 describe('petitionLink reducer', () => {
   it('should return the initial state', () => {

@@ -1,5 +1,5 @@
-import reducer from '../../../../application/redux/reducers/attributes';
-import types from '../../../../application/redux/actionTypes';
+import reducer from '../../../../../application/redux/reducers/attributes';
+import types from '../../../../../application/redux/actionTypes';
 
 describe('attribute reducer', () => {
   const barcelonaResidencyAttribute = {

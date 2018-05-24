@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import VoteButton from '../../../application/components/VoteButton/VoteButton';
+import VoteButton from '../../../../application/components/VoteButton/VoteButton';
 
 it('renders VoteButton enabled', () => {
   const rendered = renderer.create(<VoteButton enabled name="" />).toJSON();
