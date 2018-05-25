@@ -116,12 +116,12 @@ class PetitionSummary extends React.Component {
           <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
         <VoteButton
-          enabled={isAttributeVerified}
+          enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
           onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
           name="Yes"
         />
         <VoteButton
-          enabled={isAttributeVerified}
+          enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
           onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
           name="No"
         />
