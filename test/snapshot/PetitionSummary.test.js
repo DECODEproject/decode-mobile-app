@@ -25,7 +25,10 @@ const initialState = {
   wallet: {
     id: 'something',
   },
-  attributes: [],
+  attributes: {
+    isRequiredAttributeEnabled: true,
+    list: [],
+  },
 };
 
 it('renders PetitionSummary component when no attributes exist', () => {
@@ -39,16 +42,18 @@ it('renders PetitionSummary component when no attributes exist', () => {
 it('renders PetitionSummary component when all attributes are verified', () => {
   const state = {
     ...initialState,
-    attributes: [{
-      predicate: 'schema:addressLocality',
-      object: 'Barcelona',
-      scope: 'can-access',
-      provenance: {
-        source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-        credentials: '0123456789',
-      },
-      subject: '(Alpaca)',
-    }],
+    attributes: {
+      list: [{
+        predicate: 'schema:addressLocality',
+        object: 'Barcelona',
+        scope: 'can-access',
+        provenance: {
+          source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+          credentials: '0123456789',
+        },
+        subject: '(Alpaca)',
+      }],
+    },
   };
 
   const wrapper = shallow(

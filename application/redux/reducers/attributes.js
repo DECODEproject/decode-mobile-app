@@ -1,6 +1,9 @@
 import types from '../actionTypes';
 
-const initialState = [];
+const initialState = {
+  isRequiredAttributeEnabled: true,
+  list: [],
+};
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
@@ -16,16 +19,27 @@ export default function reducer(state = initialState, action) {
         subject: action.walletId,
       };
 
-      const alreadyExists = state.filter(attr =>
+      const alreadyExists = state.list.filter(attr =>
         attr.predicate === newAttribute.predicate && attr.object === newAttribute.object);
 
       if (alreadyExists.length > 0) {
         return state;
       }
-      return [...state, newAttribute];
+      return {
+        ...state,
+        list: [...state.list, newAttribute],
+      };
     }
     case types.LOAD_ATTRIBUTES:
-      return action.attributes;
+      return {
+        ...state,
+        list: action.attributes,
+      };
+    case types.TOGGLE_ATTRIBUTE:
+      return {
+        ...state,
+        isRequiredAttributeEnabled: action.toggleValue,
+      };
     default:
       return state;
   }

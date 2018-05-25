@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
-import { addCredential } from '../application/redux/actions/attributes';
+import { addCredential, bubbleUpRequiredAttributeToggle } from '../application/redux/actions/attributes';
 import VoteButton from '../application/components/VoteButton/VoteButton';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
@@ -82,7 +82,7 @@ class PetitionSummary extends React.Component {
   }
 
   render() {
-    const isAttributeVerified = this.props.attributes.length > 0;
+    const isAttributeVerified = this.props.attributes.list.length > 0;
 
     const petitionView = (
       <View style={styles.petitionSummaryBox}>
@@ -110,6 +110,8 @@ class PetitionSummary extends React.Component {
           <AttributeComponent
             buttonCallback={this.openWebBrowserAsync}
             isVerified={isAttributeVerified}
+            toggleCallback={this.props.bubbleUpRequiredAttributeToggle}
+            isEnabled={this.props.attributes.isRequiredAttributeEnabled}
           />
           <Text style={styles.requiredText}>*Required fields</Text>
         </ScrollView>
@@ -146,8 +148,12 @@ PetitionSummary.propTypes = {
   addCredential: PropTypes.func.isRequired,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
-  attributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  attributes: PropTypes.shape({
+    isRequiredAttributeEnabled: PropTypes.bool,
+    list: PropTypes.arrayOf(PropTypes.shape({})),
+  }).isRequired,
   signPetition: PropTypes.func.isRequired,
+  bubbleUpRequiredAttributeToggle: PropTypes.func.isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -173,6 +179,8 @@ const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote) =>
     dispatch(signPetition(petition, walletId, walletProxyLink, vote)),
+  bubbleUpRequiredAttributeToggle: toggleValue =>
+    dispatch(bubbleUpRequiredAttributeToggle(toggleValue)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummary);

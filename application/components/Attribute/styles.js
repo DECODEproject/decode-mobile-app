@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     marginVertical: 1,
     padding: 16,
   },
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     color: 'rgba(0, 0, 0, 0.87)',
     fontSize: 16,
     fontWeight: '500',
+    flex: 1,
   },
   attributeDetails: {
     color: 'rgba(0, 0, 0, 0.54)',
@@ -25,6 +26,8 @@ const styles = StyleSheet.create({
   },
   attribute: {
     marginLeft: 15,
+    flex: 1,
+    flexDirection: 'row',
   },
   button: {
     backgroundColor: 'rgb(0,163,158)',
@@ -46,13 +49,8 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '500',
   },
-  tick: {
-    height: 20,
-    marginTop: 3,
-    width: 20,
-  },
-  attributeStatus: {
-    fontWeight: '500',
+  disabledAttributeText: {
+    color: '#F00',
   },
 });
 

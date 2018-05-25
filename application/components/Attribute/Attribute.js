@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableOpacity, Image } from 'react-native';
+import { Text, View, TouchableOpacity, Switch } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
-const tick = require('../../../assets/images/tick_small.jpg');
-
 export default class Attribute extends Component {
-  static verifiedMode() {
+  verifiedMode() {
+    const disabledAttributeText = (
+      <Text style={styles.disabledAttributeText}>
+        You must consent to sharing your status as a Barcelona resident or
+        you cannot sign this petition. This information is anonymous.
+      </Text>
+    );
     return (
       <View style={styles.attributeContainerVerified}>
-        <Image
-          style={styles.tick}
-          source={tick}
-        />
         <View style={styles.attribute}>
-          <Text style={styles.attributeName}>Verified Atlantis Resident*</Text>
-          <Text style={styles.attributeDetails}>Atlantis Resident Status:
-            <Text style={styles.attributeStatus}> Confirmed</Text>
-          </Text>
+          <Text style={styles.attributeName}>Your residency status (required)</Text>
+          <Switch onValueChange={this.props.toggleCallback} value={this.props.isEnabled} />
         </View>
+        { !this.props.isEnabled && disabledAttributeText }
       </View>);
   }
 
@@ -41,7 +40,7 @@ export default class Attribute extends Component {
 
   render() {
     if (this.props.isVerified) {
-      return Attribute.verifiedMode();
+      return this.verifiedMode();
     }
     return this.nonVerifiedMode();
   }
@@ -50,8 +49,12 @@ export default class Attribute extends Component {
 Attribute.propTypes = {
   buttonCallback: PropTypes.func,
   isVerified: PropTypes.bool.isRequired,
+  toggleCallback: PropTypes.func,
+  isEnabled: PropTypes.bool,
 };
 
 Attribute.defaultProps = {
   buttonCallback: () => {},
+  toggleCallback: () => {},
+  isEnabled: true,
 };

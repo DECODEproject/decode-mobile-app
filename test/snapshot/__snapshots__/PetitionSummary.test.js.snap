@@ -7,19 +7,22 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <PetitionSummary
     addCredential={[Function]}
     attributes={
-      Array [
-        Object {
-          "object": "Barcelona",
-          "predicate": "schema:addressLocality",
-          "provenance": Object {
-            "credentials": "0123456789",
-            "source": "http://atlantis-decode.s3-website-eu-west-1.amazonaws.com",
+      Object {
+        "list": Array [
+          Object {
+            "object": "Barcelona",
+            "predicate": "schema:addressLocality",
+            "provenance": Object {
+              "credentials": "0123456789",
+              "source": "http://atlantis-decode.s3-website-eu-west-1.amazonaws.com",
+            },
+            "scope": "can-access",
+            "subject": "(Alpaca)",
           },
-          "scope": "can-access",
-          "subject": "(Alpaca)",
-        },
-      ]
+        ],
+      }
     }
+    bubbleUpRequiredAttributeToggle={[Function]}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     petition={
@@ -146,7 +149,9 @@ ShallowWrapper {
           </Text>
           <Attribute
             buttonCallback={[Function]}
+            isEnabled={true}
             isVerified={true}
+            toggleCallback={[Function]}
           />
           <Text
             accessible={true}
@@ -300,7 +305,9 @@ ShallowWrapper {
             </Text>,
             <Attribute
               buttonCallback={[Function]}
+              isEnabled={true}
               isVerified={true}
+              toggleCallback={[Function]}
             />,
             <Text
               accessible={true}
@@ -520,7 +527,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "buttonCallback": [Function],
+              "isEnabled": true,
               "isVerified": true,
+              "toggleCallback": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -702,7 +711,9 @@ ShallowWrapper {
             </Text>
             <Attribute
               buttonCallback={[Function]}
+              isEnabled={true}
               isVerified={true}
+              toggleCallback={[Function]}
             />
             <Text
               accessible={true}
@@ -856,7 +867,9 @@ ShallowWrapper {
               </Text>,
               <Attribute
                 buttonCallback={[Function]}
+                isEnabled={true}
                 isVerified={true}
+                toggleCallback={[Function]}
               />,
               <Text
                 accessible={true}
@@ -1076,7 +1089,9 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "buttonCallback": [Function],
+                "isEnabled": true,
                 "isVerified": true,
+                "toggleCallback": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -1183,7 +1198,13 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PetitionSummary
     addCredential={[Function]}
-    attributes={Array []}
+    attributes={
+      Object {
+        "isRequiredAttributeEnabled": true,
+        "list": Array [],
+      }
+    }
+    bubbleUpRequiredAttributeToggle={[Function]}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     petition={
@@ -1310,7 +1331,9 @@ ShallowWrapper {
           </Text>
           <Attribute
             buttonCallback={[Function]}
+            isEnabled={true}
             isVerified={false}
+            toggleCallback={[Function]}
           />
           <Text
             accessible={true}
@@ -1464,7 +1487,9 @@ ShallowWrapper {
             </Text>,
             <Attribute
               buttonCallback={[Function]}
+              isEnabled={true}
               isVerified={false}
+              toggleCallback={[Function]}
             />,
             <Text
               accessible={true}
@@ -1684,7 +1709,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "buttonCallback": [Function],
+              "isEnabled": true,
               "isVerified": false,
+              "toggleCallback": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -1866,7 +1893,9 @@ ShallowWrapper {
             </Text>
             <Attribute
               buttonCallback={[Function]}
+              isEnabled={true}
               isVerified={false}
+              toggleCallback={[Function]}
             />
             <Text
               accessible={true}
@@ -2020,7 +2049,9 @@ ShallowWrapper {
               </Text>,
               <Attribute
                 buttonCallback={[Function]}
+                isEnabled={true}
                 isVerified={false}
+                toggleCallback={[Function]}
               />,
               <Text
                 accessible={true}
@@ -2240,7 +2271,9 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "buttonCallback": [Function],
+                "isEnabled": true,
                 "isVerified": false,
+                "toggleCallback": [Function],
               },
               "ref": null,
               "rendered": null,

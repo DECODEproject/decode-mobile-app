@@ -17,9 +17,9 @@ export function storeCredentials(setItemAsync) {
   return (dispatch, getState) => {
     const state = getState();
 
-    return setItemAsync('attributes', JSON.stringify(state.attributes)).then(() => (dispatch({
+    return setItemAsync('attributes', JSON.stringify(state.attributes.list)).then(() => (dispatch({
       type: types.STORE_ATTRIBUTES,
-      attributes: state.attributes,
+      attributes: state.attributes.list,
     })));
   };
 }
@@ -40,4 +40,11 @@ export function loadCredentials(getItemAsync) {
       });
     });
   };
+}
+
+export function bubbleUpRequiredAttributeToggle(toggleValue) {
+  return dispatch => dispatch({
+    type: types.TOGGLE_ATTRIBUTE,
+    toggleValue,
+  });
 }

@@ -17,6 +17,7 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
     style={
       Object {
         "color": "rgba(0, 0, 0, 0.87)",
+        "flex": 1,
         "fontSize": 16,
         "fontWeight": "500",
       }
@@ -102,25 +103,17 @@ exports[`renders Attribute on verfied mode component 1`] = `
       "alignSelf": "stretch",
       "backgroundColor": "#FFF",
       "display": "flex",
-      "flexDirection": "row",
+      "flexDirection": "column",
       "marginVertical": 1,
       "padding": 16,
     }
   }
 >
-  <Image
-    source={1}
-    style={
-      Object {
-        "height": 20,
-        "marginTop": 3,
-        "width": 20,
-      }
-    }
-  />
   <View
     style={
       Object {
+        "flex": 1,
+        "flexDirection": "row",
         "marginLeft": 15,
       }
     }
@@ -132,38 +125,18 @@ exports[`renders Attribute on verfied mode component 1`] = `
       style={
         Object {
           "color": "rgba(0, 0, 0, 0.87)",
+          "flex": 1,
           "fontSize": 16,
           "fontWeight": "500",
         }
       }
     >
-      Verified Atlantis Resident*
+      Your residency status (required)
     </Text>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "rgba(0, 0, 0, 0.54)",
-          "marginVertical": 4,
-        }
-      }
-    >
-      Atlantis Resident Status:
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "fontWeight": "500",
-          }
-        }
-      >
-         Confirmed
-      </Text>
-    </Text>
+    <Switch
+      onValueChange={[Function]}
+      value={true}
+    />
   </View>
 </View>
 `;

@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { addCredentialFromUrl, storeCredentials, addCredential, loadCredentials } from '../../../../../application/redux/actions/attributes';
+import { addCredentialFromUrl, storeCredentials, addCredential, loadCredentials, bubbleUpRequiredAttributeToggle } from '../../../../../application/redux/actions/attributes';
 import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
@@ -20,7 +20,9 @@ describe('attribute action', () => {
 
   beforeEach(() => {
     store = mockStore({
-      attributes: [],
+      attributes: {
+        list: [],
+      },
     });
   });
 
@@ -50,7 +52,9 @@ describe('attribute action', () => {
 
   it('SAVE current credentials action when no credentials in the state', async () => {
     store = mockStore({
-      attributes: [],
+      attributes: {
+        list: [],
+      },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
 
@@ -67,7 +71,9 @@ describe('attribute action', () => {
 
   it('SAVE current credentials action when only one credential', async () => {
     store = mockStore({
-      attributes: [barcelonaResidencyAttribute],
+      attributes: {
+        list: [barcelonaResidencyAttribute],
+      },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
 
@@ -84,7 +90,9 @@ describe('attribute action', () => {
 
   it('addCredential when there is no credentials yet', async () => {
     store = mockStore({
-      attributes: [],
+      attributes: {
+        list: [],
+      },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
     const attribute = {
@@ -140,5 +148,17 @@ describe('attribute action', () => {
       type: types.LOAD_ATTRIBUTES,
       attributes: [barcelonaResidencyAttribute],
     }]);
+  });
+
+  it('toggle required attribute action', async () => {
+    const toggleValue = false;
+
+    const expectedActions = [{
+      type: types.TOGGLE_ATTRIBUTE,
+      toggleValue,
+    }];
+
+    store.dispatch(bubbleUpRequiredAttributeToggle(toggleValue));
+    expect(store.getActions()).toEqual(expectedActions);
   });
 });

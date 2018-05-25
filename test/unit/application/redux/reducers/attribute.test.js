@@ -25,11 +25,17 @@ describe('attribute reducer', () => {
   };
 
   it('should return the initial state', () => {
-    expect(reducer(undefined, {})).toEqual([]);
+    expect(reducer(undefined, {})).toEqual({
+      isRequiredAttributeEnabled: true,
+      list: [],
+    });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL', () => {
-    const initialState = [];
+    const initialState = {
+      isRequiredAttributeEnabled: true,
+      list: [],
+    };
 
     const action = {
       type: types.ADD_CREDENTIAL_FROM_URL,
@@ -45,11 +51,17 @@ describe('attribute reducer', () => {
       credential: barcelonaResidencyAttribute.provenance.credentials,
     };
 
-    expect(reducer(initialState, action)).toEqual([barcelonaResidencyAttribute]);
+    expect(reducer(initialState, action)).toEqual({
+      isRequiredAttributeEnabled: true,
+      list: [barcelonaResidencyAttribute],
+    });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL when wallet already has another attribute', () => {
-    const initialState = [amsterdamResidencyAttribute];
+    const initialState = {
+      isRequiredAttributeEnabled: true,
+      list: [amsterdamResidencyAttribute],
+    };
 
     const action = {
       type: types.ADD_CREDENTIAL_FROM_URL,
@@ -64,14 +76,20 @@ describe('attribute reducer', () => {
       walletId: barcelonaResidencyAttribute.subject,
       credential: barcelonaResidencyAttribute.provenance.credentials,
     };
-    expect(reducer(initialState, action)).toEqual([
-      amsterdamResidencyAttribute,
-      barcelonaResidencyAttribute,
-    ]);
+    expect(reducer(initialState, action)).toEqual({
+      isRequiredAttributeEnabled: true,
+      list: [
+        amsterdamResidencyAttribute,
+        barcelonaResidencyAttribute,
+      ],
+    });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL from a attribute that already is in the state', () => {
-    const initialState = [barcelonaResidencyAttribute];
+    const initialState = {
+      isRequiredAttributeEnabled: true,
+      list: [barcelonaResidencyAttribute],
+    };
 
     const action = {
       type: types.ADD_CREDENTIAL_FROM_URL,
@@ -87,19 +105,44 @@ describe('attribute reducer', () => {
       credential: barcelonaResidencyAttribute.provenance.credentials,
     };
 
-    expect(reducer(initialState, action)).toEqual([barcelonaResidencyAttribute]);
+    expect(reducer(initialState, action)).toEqual({
+      isRequiredAttributeEnabled: true,
+      list: [barcelonaResidencyAttribute],
+    });
   });
 
-  it('should handle LOAD_CREDENTIALS sets the state with the credentials of the action', () => {
-    const initialState = [amsterdamResidencyAttribute];
+  it('should handle LOAD_ATTRIBUTES sets the state with the credentials of the action', () => {
+    const initialState = {
+      isRequiredAttributeEnabled: true,
+      list: [amsterdamResidencyAttribute],
+    };
     const action = {
       type: types.LOAD_ATTRIBUTES,
       attributes: [amsterdamResidencyAttribute, barcelonaResidencyAttribute],
     };
 
-    expect(reducer(initialState, action)).toEqual([
-      amsterdamResidencyAttribute,
-      barcelonaResidencyAttribute,
-    ]);
+    expect(reducer(initialState, action)).toEqual({
+      isRequiredAttributeEnabled: true,
+      list: [
+        amsterdamResidencyAttribute,
+        barcelonaResidencyAttribute,
+      ],
+    });
+  });
+
+  it('should handle TOGGLE_ATTRIBUTE sets the state with the updated isRequiredAttributeEnabled value', () => {
+    const initialState = {
+      isRequiredAttributeEnabled: true,
+      list: [],
+    };
+    const action = {
+      type: types.TOGGLE_ATTRIBUTE,
+      toggleValue: false,
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      isRequiredAttributeEnabled: false,
+      list: [],
+    });
   });
 });
