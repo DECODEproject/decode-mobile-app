@@ -43,6 +43,7 @@ it('renders PetitionSummary component when all attributes are verified', () => {
   const state = {
     ...initialState,
     attributes: {
+      ...initialState.attributes,
       list: [{
         predicate: 'schema:addressLocality',
         object: 'Barcelona',

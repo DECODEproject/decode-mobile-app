@@ -84,11 +84,21 @@ class PetitionSummary extends React.Component {
   render() {
     const isAttributeVerified = this.props.attributes.list.length > 0;
 
-    const petitionView = (
+    const petitionAttributes = (
       <View style={styles.petitionSummaryBox}>
         <Text style={styles.petitionSummaryPetitionTitle}>{this.props.petition.title}</Text>
-        <Text style={styles.petitionDescription}>{this.props.petition.description}</Text>
-        <Text style={styles.closingDate}>Closing date: {this.props.petition.closingDate}</Text>
+        <Text style={styles.petitionDescription}>
+          To sign this petition you must consent to sharing the following with Decidim.
+        </Text>
+        <Text>
+          This information is anonymised - Decidim will not receive any personally identifying data.
+        </Text>
+        <AttributeComponent
+          buttonCallback={this.openWebBrowserAsync}
+          isVerified={isAttributeVerified}
+          toggleCallback={this.props.bubbleUpRequiredAttributeToggle}
+          isEnabled={this.props.attributes.isRequiredAttributeEnabled}
+        />
       </View>
     );
     const petitionError = (
@@ -104,16 +114,7 @@ class PetitionSummary extends React.Component {
           <View style={{ flex: 1 }}>
             <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
           </View>
-          { this.props.petition && petitionView }
-
-          <Text style={styles.textTitle}>Your Information</Text>
-          <AttributeComponent
-            buttonCallback={this.openWebBrowserAsync}
-            isVerified={isAttributeVerified}
-            toggleCallback={this.props.bubbleUpRequiredAttributeToggle}
-            isEnabled={this.props.attributes.isRequiredAttributeEnabled}
-          />
-          <Text style={styles.requiredText}>*Required fields</Text>
+          { this.props.petition && petitionAttributes }
         </ScrollView>
         <VoteButton
           enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}

@@ -67,10 +67,6 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
     marginVertical: 20,
   },
-  closingDate: {
-    color: 'rgba(0, 0, 0, 0.54)',
-    fontSize: 12,
-  },
   homeButton: {
     alignSelf: 'center',
     backgroundColor: 'rgb(0,163,158)',
@@ -188,11 +184,6 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     width: 50,
   },
-  requiredText: {
-    fontSize: 12,
-    marginLeft: 16,
-    marginTop: 10,
-  },
   signOutcomeBox: {
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
@@ -237,12 +228,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginBottom: 4,
     textAlign: 'center',
-  },
-  textTitle: {
-    fontSize: 20,
-    fontWeight: '500',
-    marginBottom: 10,
-    marginLeft: 16,
   },
 });
 

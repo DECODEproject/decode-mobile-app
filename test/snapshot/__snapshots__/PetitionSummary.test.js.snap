@@ -8,6 +8,7 @@ ShallowWrapper {
     addCredential={[Function]}
     attributes={
       Object {
+        "isRequiredAttributeEnabled": true,
         "list": Array [
           Object {
             "object": "Barcelona",
@@ -115,66 +116,30 @@ ShallowWrapper {
                 }
               }
             >
-              world
+              To sign this petition you must consent to sharing the following with Decidim.
             </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, 0.54)",
-                  "fontSize": 12,
-                }
-              }
             >
-              Closing date: 
-              today
+              This information is anonymised - Decidim will not receive any personally identifying data.
             </Text>
+            <Attribute
+              buttonCallback={[Function]}
+              isEnabled={true}
+              isVerified={true}
+              toggleCallback={[Function]}
+            />
           </View>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontSize": 20,
-                "fontWeight": "500",
-                "marginBottom": 10,
-                "marginLeft": 16,
-              }
-            }
-          >
-            Your Information
-          </Text>
-          <Attribute
-            buttonCallback={[Function]}
-            isEnabled={true}
-            isVerified={true}
-            toggleCallback={[Function]}
-          />
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontSize": 12,
-                "marginLeft": 16,
-                "marginTop": 10,
-              }
-            }
-          >
-            *Required fields
-          </Text>
         </ScrollViewMock>,
         <VoteButton
-          enabled={undefined}
+          enabled={true}
           name="Yes"
           onPress={[Function]}
         />,
         <VoteButton
-          enabled={undefined}
+          enabled={true}
           name="No"
           onPress={[Function]}
         />,
@@ -271,58 +236,22 @@ ShallowWrapper {
                   }
                 }
               >
-                world
+                To sign this petition you must consent to sharing the following with Decidim.
               </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.54)",
-                    "fontSize": 12,
-                  }
-                }
               >
-                Closing date: 
-                today
+                This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={true}
+                isVerified={true}
+                toggleCallback={[Function]}
+              />
             </View>,
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 10,
-                  "marginLeft": 16,
-                }
-              }
-            >
-              Your Information
-            </Text>,
-            <Attribute
-              buttonCallback={[Function]}
-              isEnabled={true}
-              isVerified={true}
-              toggleCallback={[Function]}
-            />,
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 12,
-                  "marginLeft": 16,
-                  "marginTop": 10,
-                }
-              }
-            >
-              *Required fields
-            </Text>,
           ],
         },
         "ref": null,
@@ -408,22 +337,21 @@ ShallowWrapper {
                     }
                   }
                 >
-                  world
+                  To sign this petition you must consent to sharing the following with Decidim.
                 </Text>,
                 <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.54)",
-                      "fontSize": 12,
-                    }
-                  }
                 >
-                  Closing date: 
-                  today
+                  This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>,
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={true}
+                  isVerified={true}
+                  toggleCallback={[Function]}
+                />,
               ],
               "style": Object {
                 "alignSelf": "stretch",
@@ -461,7 +389,7 @@ ShallowWrapper {
                 "props": Object {
                   "accessible": true,
                   "allowFontScaling": true,
-                  "children": "world",
+                  "children": "To sign this petition you must consent to sharing the following with Decidim.",
                   "ellipsizeMode": "tail",
                   "style": Object {
                     "color": "rgba(0, 0, 0, 0.87)",
@@ -471,7 +399,7 @@ ShallowWrapper {
                   },
                 },
                 "ref": null,
-                "rendered": "world",
+                "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
                 "type": [Function],
               },
               Object {
@@ -481,77 +409,28 @@ ShallowWrapper {
                 "props": Object {
                   "accessible": true,
                   "allowFontScaling": true,
-                  "children": Array [
-                    "Closing date: ",
-                    "today",
-                  ],
+                  "children": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "ellipsizeMode": "tail",
-                  "style": Object {
-                    "color": "rgba(0, 0, 0, 0.54)",
-                    "fontSize": 12,
-                  },
                 },
                 "ref": null,
-                "rendered": Array [
-                  "Closing date: ",
-                  "today",
-                ],
+                "rendered": "This information is anonymised - Decidim will not receive any personally identifying data.",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonCallback": [Function],
+                  "isEnabled": true,
+                  "isVerified": true,
+                  "toggleCallback": [Function],
+                },
+                "ref": null,
+                "rendered": null,
                 "type": [Function],
               },
             ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "Your Information",
-              "ellipsizeMode": "tail",
-              "style": Object {
-                "fontSize": 20,
-                "fontWeight": "500",
-                "marginBottom": 10,
-                "marginLeft": 16,
-              },
-            },
-            "ref": null,
-            "rendered": "Your Information",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "buttonCallback": [Function],
-              "isEnabled": true,
-              "isVerified": true,
-              "toggleCallback": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "*Required fields",
-              "ellipsizeMode": "tail",
-              "style": Object {
-                "fontSize": 12,
-                "marginLeft": 16,
-                "marginTop": 10,
-              },
-            },
-            "ref": null,
-            "rendered": "*Required fields",
             "type": [Function],
           },
         ],
@@ -562,7 +441,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "enabled": undefined,
+          "enabled": true,
           "name": "Yes",
           "onPress": [Function],
         },
@@ -575,7 +454,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "enabled": undefined,
+          "enabled": true,
           "name": "No",
           "onPress": [Function],
         },
@@ -677,66 +556,30 @@ ShallowWrapper {
                   }
                 }
               >
-                world
+                To sign this petition you must consent to sharing the following with Decidim.
               </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.54)",
-                    "fontSize": 12,
-                  }
-                }
               >
-                Closing date: 
-                today
+                This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={true}
+                isVerified={true}
+                toggleCallback={[Function]}
+              />
             </View>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 10,
-                  "marginLeft": 16,
-                }
-              }
-            >
-              Your Information
-            </Text>
-            <Attribute
-              buttonCallback={[Function]}
-              isEnabled={true}
-              isVerified={true}
-              toggleCallback={[Function]}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 12,
-                  "marginLeft": 16,
-                  "marginTop": 10,
-                }
-              }
-            >
-              *Required fields
-            </Text>
           </ScrollViewMock>,
           <VoteButton
-            enabled={undefined}
+            enabled={true}
             name="Yes"
             onPress={[Function]}
           />,
           <VoteButton
-            enabled={undefined}
+            enabled={true}
             name="No"
             onPress={[Function]}
           />,
@@ -833,58 +676,22 @@ ShallowWrapper {
                     }
                   }
                 >
-                  world
+                  To sign this petition you must consent to sharing the following with Decidim.
                 </Text>
                 <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.54)",
-                      "fontSize": 12,
-                    }
-                  }
                 >
-                  Closing date: 
-                  today
+                  This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={true}
+                  isVerified={true}
+                  toggleCallback={[Function]}
+                />
               </View>,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 10,
-                    "marginLeft": 16,
-                  }
-                }
-              >
-                Your Information
-              </Text>,
-              <Attribute
-                buttonCallback={[Function]}
-                isEnabled={true}
-                isVerified={true}
-                toggleCallback={[Function]}
-              />,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontSize": 12,
-                    "marginLeft": 16,
-                    "marginTop": 10,
-                  }
-                }
-              >
-                *Required fields
-              </Text>,
             ],
           },
           "ref": null,
@@ -970,22 +777,21 @@ ShallowWrapper {
                       }
                     }
                   >
-                    world
+                    To sign this petition you must consent to sharing the following with Decidim.
                   </Text>,
                   <Text
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "rgba(0, 0, 0, 0.54)",
-                        "fontSize": 12,
-                      }
-                    }
                   >
-                    Closing date: 
-                    today
+                    This information is anonymised - Decidim will not receive any personally identifying data.
                   </Text>,
+                  <Attribute
+                    buttonCallback={[Function]}
+                    isEnabled={true}
+                    isVerified={true}
+                    toggleCallback={[Function]}
+                  />,
                 ],
                 "style": Object {
                   "alignSelf": "stretch",
@@ -1023,7 +829,7 @@ ShallowWrapper {
                   "props": Object {
                     "accessible": true,
                     "allowFontScaling": true,
-                    "children": "world",
+                    "children": "To sign this petition you must consent to sharing the following with Decidim.",
                     "ellipsizeMode": "tail",
                     "style": Object {
                       "color": "rgba(0, 0, 0, 0.87)",
@@ -1033,7 +839,7 @@ ShallowWrapper {
                     },
                   },
                   "ref": null,
-                  "rendered": "world",
+                  "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
                   "type": [Function],
                 },
                 Object {
@@ -1043,77 +849,28 @@ ShallowWrapper {
                   "props": Object {
                     "accessible": true,
                     "allowFontScaling": true,
-                    "children": Array [
-                      "Closing date: ",
-                      "today",
-                    ],
+                    "children": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "ellipsizeMode": "tail",
-                    "style": Object {
-                      "color": "rgba(0, 0, 0, 0.54)",
-                      "fontSize": 12,
-                    },
                   },
                   "ref": null,
-                  "rendered": Array [
-                    "Closing date: ",
-                    "today",
-                  ],
+                  "rendered": "This information is anonymised - Decidim will not receive any personally identifying data.",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonCallback": [Function],
+                    "isEnabled": true,
+                    "isVerified": true,
+                    "toggleCallback": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
                   "type": [Function],
                 },
               ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "Your Information",
-                "ellipsizeMode": "tail",
-                "style": Object {
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 10,
-                  "marginLeft": 16,
-                },
-              },
-              "ref": null,
-              "rendered": "Your Information",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "buttonCallback": [Function],
-                "isEnabled": true,
-                "isVerified": true,
-                "toggleCallback": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "*Required fields",
-                "ellipsizeMode": "tail",
-                "style": Object {
-                  "fontSize": 12,
-                  "marginLeft": 16,
-                  "marginTop": 10,
-                },
-              },
-              "ref": null,
-              "rendered": "*Required fields",
               "type": [Function],
             },
           ],
@@ -1124,7 +881,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "enabled": undefined,
+            "enabled": true,
             "name": "Yes",
             "onPress": [Function],
           },
@@ -1137,7 +894,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "enabled": undefined,
+            "enabled": true,
             "name": "No",
             "onPress": [Function],
           },
@@ -1297,58 +1054,22 @@ ShallowWrapper {
                 }
               }
             >
-              world
+              To sign this petition you must consent to sharing the following with Decidim.
             </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, 0.54)",
-                  "fontSize": 12,
-                }
-              }
             >
-              Closing date: 
-              today
+              This information is anonymised - Decidim will not receive any personally identifying data.
             </Text>
+            <Attribute
+              buttonCallback={[Function]}
+              isEnabled={true}
+              isVerified={false}
+              toggleCallback={[Function]}
+            />
           </View>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontSize": 20,
-                "fontWeight": "500",
-                "marginBottom": 10,
-                "marginLeft": 16,
-              }
-            }
-          >
-            Your Information
-          </Text>
-          <Attribute
-            buttonCallback={[Function]}
-            isEnabled={true}
-            isVerified={false}
-            toggleCallback={[Function]}
-          />
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontSize": 12,
-                "marginLeft": 16,
-                "marginTop": 10,
-              }
-            }
-          >
-            *Required fields
-          </Text>
         </ScrollViewMock>,
         <VoteButton
           enabled={false}
@@ -1453,58 +1174,22 @@ ShallowWrapper {
                   }
                 }
               >
-                world
+                To sign this petition you must consent to sharing the following with Decidim.
               </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.54)",
-                    "fontSize": 12,
-                  }
-                }
               >
-                Closing date: 
-                today
+                This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={true}
+                isVerified={false}
+                toggleCallback={[Function]}
+              />
             </View>,
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 10,
-                  "marginLeft": 16,
-                }
-              }
-            >
-              Your Information
-            </Text>,
-            <Attribute
-              buttonCallback={[Function]}
-              isEnabled={true}
-              isVerified={false}
-              toggleCallback={[Function]}
-            />,
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 12,
-                  "marginLeft": 16,
-                  "marginTop": 10,
-                }
-              }
-            >
-              *Required fields
-            </Text>,
           ],
         },
         "ref": null,
@@ -1590,22 +1275,21 @@ ShallowWrapper {
                     }
                   }
                 >
-                  world
+                  To sign this petition you must consent to sharing the following with Decidim.
                 </Text>,
                 <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.54)",
-                      "fontSize": 12,
-                    }
-                  }
                 >
-                  Closing date: 
-                  today
+                  This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>,
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={true}
+                  isVerified={false}
+                  toggleCallback={[Function]}
+                />,
               ],
               "style": Object {
                 "alignSelf": "stretch",
@@ -1643,7 +1327,7 @@ ShallowWrapper {
                 "props": Object {
                   "accessible": true,
                   "allowFontScaling": true,
-                  "children": "world",
+                  "children": "To sign this petition you must consent to sharing the following with Decidim.",
                   "ellipsizeMode": "tail",
                   "style": Object {
                     "color": "rgba(0, 0, 0, 0.87)",
@@ -1653,7 +1337,7 @@ ShallowWrapper {
                   },
                 },
                 "ref": null,
-                "rendered": "world",
+                "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
                 "type": [Function],
               },
               Object {
@@ -1663,77 +1347,28 @@ ShallowWrapper {
                 "props": Object {
                   "accessible": true,
                   "allowFontScaling": true,
-                  "children": Array [
-                    "Closing date: ",
-                    "today",
-                  ],
+                  "children": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "ellipsizeMode": "tail",
-                  "style": Object {
-                    "color": "rgba(0, 0, 0, 0.54)",
-                    "fontSize": 12,
-                  },
                 },
                 "ref": null,
-                "rendered": Array [
-                  "Closing date: ",
-                  "today",
-                ],
+                "rendered": "This information is anonymised - Decidim will not receive any personally identifying data.",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonCallback": [Function],
+                  "isEnabled": true,
+                  "isVerified": false,
+                  "toggleCallback": [Function],
+                },
+                "ref": null,
+                "rendered": null,
                 "type": [Function],
               },
             ],
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "Your Information",
-              "ellipsizeMode": "tail",
-              "style": Object {
-                "fontSize": 20,
-                "fontWeight": "500",
-                "marginBottom": 10,
-                "marginLeft": 16,
-              },
-            },
-            "ref": null,
-            "rendered": "Your Information",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "buttonCallback": [Function],
-              "isEnabled": true,
-              "isVerified": false,
-              "toggleCallback": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "*Required fields",
-              "ellipsizeMode": "tail",
-              "style": Object {
-                "fontSize": 12,
-                "marginLeft": 16,
-                "marginTop": 10,
-              },
-            },
-            "ref": null,
-            "rendered": "*Required fields",
             "type": [Function],
           },
         ],
@@ -1859,58 +1494,22 @@ ShallowWrapper {
                   }
                 }
               >
-                world
+                To sign this petition you must consent to sharing the following with Decidim.
               </Text>
               <Text
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.54)",
-                    "fontSize": 12,
-                  }
-                }
               >
-                Closing date: 
-                today
+                This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={true}
+                isVerified={false}
+                toggleCallback={[Function]}
+              />
             </View>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 10,
-                  "marginLeft": 16,
-                }
-              }
-            >
-              Your Information
-            </Text>
-            <Attribute
-              buttonCallback={[Function]}
-              isEnabled={true}
-              isVerified={false}
-              toggleCallback={[Function]}
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "fontSize": 12,
-                  "marginLeft": 16,
-                  "marginTop": 10,
-                }
-              }
-            >
-              *Required fields
-            </Text>
           </ScrollViewMock>,
           <VoteButton
             enabled={false}
@@ -2015,58 +1614,22 @@ ShallowWrapper {
                     }
                   }
                 >
-                  world
+                  To sign this petition you must consent to sharing the following with Decidim.
                 </Text>
                 <Text
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.54)",
-                      "fontSize": 12,
-                    }
-                  }
                 >
-                  Closing date: 
-                  today
+                  This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={true}
+                  isVerified={false}
+                  toggleCallback={[Function]}
+                />
               </View>,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 10,
-                    "marginLeft": 16,
-                  }
-                }
-              >
-                Your Information
-              </Text>,
-              <Attribute
-                buttonCallback={[Function]}
-                isEnabled={true}
-                isVerified={false}
-                toggleCallback={[Function]}
-              />,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "fontSize": 12,
-                    "marginLeft": 16,
-                    "marginTop": 10,
-                  }
-                }
-              >
-                *Required fields
-              </Text>,
             ],
           },
           "ref": null,
@@ -2152,22 +1715,21 @@ ShallowWrapper {
                       }
                     }
                   >
-                    world
+                    To sign this petition you must consent to sharing the following with Decidim.
                   </Text>,
                   <Text
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "rgba(0, 0, 0, 0.54)",
-                        "fontSize": 12,
-                      }
-                    }
                   >
-                    Closing date: 
-                    today
+                    This information is anonymised - Decidim will not receive any personally identifying data.
                   </Text>,
+                  <Attribute
+                    buttonCallback={[Function]}
+                    isEnabled={true}
+                    isVerified={false}
+                    toggleCallback={[Function]}
+                  />,
                 ],
                 "style": Object {
                   "alignSelf": "stretch",
@@ -2205,7 +1767,7 @@ ShallowWrapper {
                   "props": Object {
                     "accessible": true,
                     "allowFontScaling": true,
-                    "children": "world",
+                    "children": "To sign this petition you must consent to sharing the following with Decidim.",
                     "ellipsizeMode": "tail",
                     "style": Object {
                       "color": "rgba(0, 0, 0, 0.87)",
@@ -2215,7 +1777,7 @@ ShallowWrapper {
                     },
                   },
                   "ref": null,
-                  "rendered": "world",
+                  "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
                   "type": [Function],
                 },
                 Object {
@@ -2225,77 +1787,28 @@ ShallowWrapper {
                   "props": Object {
                     "accessible": true,
                     "allowFontScaling": true,
-                    "children": Array [
-                      "Closing date: ",
-                      "today",
-                    ],
+                    "children": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "ellipsizeMode": "tail",
-                    "style": Object {
-                      "color": "rgba(0, 0, 0, 0.54)",
-                      "fontSize": 12,
-                    },
                   },
                   "ref": null,
-                  "rendered": Array [
-                    "Closing date: ",
-                    "today",
-                  ],
+                  "rendered": "This information is anonymised - Decidim will not receive any personally identifying data.",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonCallback": [Function],
+                    "isEnabled": true,
+                    "isVerified": false,
+                    "toggleCallback": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
                   "type": [Function],
                 },
               ],
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "Your Information",
-                "ellipsizeMode": "tail",
-                "style": Object {
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 10,
-                  "marginLeft": 16,
-                },
-              },
-              "ref": null,
-              "rendered": "Your Information",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "buttonCallback": [Function],
-                "isEnabled": true,
-                "isVerified": false,
-                "toggleCallback": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "*Required fields",
-                "ellipsizeMode": "tail",
-                "style": Object {
-                  "fontSize": 12,
-                  "marginLeft": 16,
-                  "marginTop": 10,
-                },
-              },
-              "ref": null,
-              "rendered": "*Required fields",
               "type": [Function],
             },
           ],
