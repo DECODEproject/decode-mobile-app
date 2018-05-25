@@ -57,6 +57,7 @@ export function signPetition(petition, walletId, walletProxyLink, vote) {
       signatory: walletId.substring(0, 5),
       isEthereum: petition.isEthereum,
       vote,
+      gender: 'female',
     }),
   };
 
