@@ -169,12 +169,12 @@ ShallowWrapper {
           </Text>
         </ScrollViewMock>,
         <VoteButton
-          enabled={true}
+          enabled={undefined}
           name="Yes"
           onPress={[Function]}
         />,
         <VoteButton
-          enabled={true}
+          enabled={undefined}
           name="No"
           onPress={[Function]}
         />,
@@ -562,7 +562,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "enabled": true,
+          "enabled": undefined,
           "name": "Yes",
           "onPress": [Function],
         },
@@ -575,7 +575,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "enabled": true,
+          "enabled": undefined,
           "name": "No",
           "onPress": [Function],
         },
@@ -731,12 +731,12 @@ ShallowWrapper {
             </Text>
           </ScrollViewMock>,
           <VoteButton
-            enabled={true}
+            enabled={undefined}
             name="Yes"
             onPress={[Function]}
           />,
           <VoteButton
-            enabled={true}
+            enabled={undefined}
             name="No"
             onPress={[Function]}
           />,
@@ -1124,7 +1124,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "enabled": true,
+            "enabled": undefined,
             "name": "Yes",
             "onPress": [Function],
           },
@@ -1137,7 +1137,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "enabled": true,
+            "enabled": undefined,
             "name": "No",
             "onPress": [Function],
           },
