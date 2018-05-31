@@ -56,7 +56,7 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "alignSelf": "stretch",
+        "alignSelf": "flex-end",
         "backgroundColor": "rgb(0,163,158)",
         "borderRadius": 2,
         "elevation": 2,

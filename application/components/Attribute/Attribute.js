@@ -29,10 +29,12 @@ export default class Attribute extends Component {
         <Text style={styles.attributeDetails}>To get this attribute you will be directed
           to the Atlantis Council website
         </Text>
+
         <Button
           name="REQUEST"
           onPress={this.props.buttonCallback}
           style={{
+            alignSelf: 'flex-end',
             width: 100,
           }}
         />
