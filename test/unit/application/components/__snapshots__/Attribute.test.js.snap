@@ -132,7 +132,7 @@ exports[`renders Attribute on verfied mode component 1`] = `
         }
       }
     >
-      Your residency status (required)
+      test
     </Text>
     <Switch
       onValueChange={[Function]}

@@ -21,8 +21,14 @@ ShallowWrapper {
             "subject": "(Alpaca)",
           },
         ],
+        "optionalAttributesToggleStatus": Object {
+          "age": false,
+          "gender": false,
+        },
       }
     }
+    bubbleUpAgeAttributeToggle={[Function]}
+    bubbleUpGenderAttributeToggle={[Function]}
     bubbleUpRequiredAttributeToggle={[Function]}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
@@ -128,7 +134,32 @@ ShallowWrapper {
             <Attribute
               buttonCallback={[Function]}
               isEnabled={true}
+              isMandatory={true}
               isVerified={true}
+              name="Your residency status (required)"
+              toggleCallback={[Function]}
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            >
+              Optional data to share:
+            </Text>
+            <Attribute
+              buttonCallback={[Function]}
+              isEnabled={false}
+              isMandatory={false}
+              isVerified={true}
+              name="Age (20-29)"
+              toggleCallback={[Function]}
+            />
+            <Attribute
+              buttonCallback={[Function]}
+              isEnabled={false}
+              isMandatory={false}
+              isVerified={true}
+              name="Gender (Female)"
               toggleCallback={[Function]}
             />
           </View>
@@ -250,7 +281,32 @@ ShallowWrapper {
               <Attribute
                 buttonCallback={[Function]}
                 isEnabled={true}
+                isMandatory={true}
                 isVerified={true}
+                name="Your residency status (required)"
+                toggleCallback={[Function]}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                Optional data to share:
+              </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Age (20-29)"
+                toggleCallback={[Function]}
+              />
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Gender (Female)"
                 toggleCallback={[Function]}
               />
             </View>,
@@ -351,7 +407,32 @@ ShallowWrapper {
                 <Attribute
                   buttonCallback={[Function]}
                   isEnabled={true}
+                  isMandatory={true}
                   isVerified={true}
+                  name="Your residency status (required)"
+                  toggleCallback={[Function]}
+                />,
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Optional data to share:
+                </Text>,
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Age (20-29)"
+                  toggleCallback={[Function]}
+                />,
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Gender (Female)"
                   toggleCallback={[Function]}
                 />,
               ],
@@ -425,7 +506,55 @@ ShallowWrapper {
                 "props": Object {
                   "buttonCallback": [Function],
                   "isEnabled": true,
+                  "isMandatory": true,
                   "isVerified": true,
+                  "name": "Your residency status (required)",
+                  "toggleCallback": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "Optional data to share:",
+                  "ellipsizeMode": "tail",
+                },
+                "ref": null,
+                "rendered": "Optional data to share:",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonCallback": [Function],
+                  "isEnabled": false,
+                  "isMandatory": false,
+                  "isVerified": true,
+                  "name": "Age (20-29)",
+                  "toggleCallback": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonCallback": [Function],
+                  "isEnabled": false,
+                  "isMandatory": false,
+                  "isVerified": true,
+                  "name": "Gender (Female)",
                   "toggleCallback": [Function],
                 },
                 "ref": null,
@@ -572,7 +701,32 @@ ShallowWrapper {
               <Attribute
                 buttonCallback={[Function]}
                 isEnabled={true}
+                isMandatory={true}
                 isVerified={true}
+                name="Your residency status (required)"
+                toggleCallback={[Function]}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                Optional data to share:
+              </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Age (20-29)"
+                toggleCallback={[Function]}
+              />
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Gender (Female)"
                 toggleCallback={[Function]}
               />
             </View>
@@ -694,7 +848,32 @@ ShallowWrapper {
                 <Attribute
                   buttonCallback={[Function]}
                   isEnabled={true}
+                  isMandatory={true}
                   isVerified={true}
+                  name="Your residency status (required)"
+                  toggleCallback={[Function]}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Optional data to share:
+                </Text>
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Age (20-29)"
+                  toggleCallback={[Function]}
+                />
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Gender (Female)"
                   toggleCallback={[Function]}
                 />
               </View>,
@@ -795,7 +974,32 @@ ShallowWrapper {
                   <Attribute
                     buttonCallback={[Function]}
                     isEnabled={true}
+                    isMandatory={true}
                     isVerified={true}
+                    name="Your residency status (required)"
+                    toggleCallback={[Function]}
+                  />,
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    Optional data to share:
+                  </Text>,
+                  <Attribute
+                    buttonCallback={[Function]}
+                    isEnabled={false}
+                    isMandatory={false}
+                    isVerified={true}
+                    name="Age (20-29)"
+                    toggleCallback={[Function]}
+                  />,
+                  <Attribute
+                    buttonCallback={[Function]}
+                    isEnabled={false}
+                    isMandatory={false}
+                    isVerified={true}
+                    name="Gender (Female)"
                     toggleCallback={[Function]}
                   />,
                 ],
@@ -869,7 +1073,55 @@ ShallowWrapper {
                   "props": Object {
                     "buttonCallback": [Function],
                     "isEnabled": true,
+                    "isMandatory": true,
                     "isVerified": true,
+                    "name": "Your residency status (required)",
+                    "toggleCallback": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "accessible": true,
+                    "allowFontScaling": true,
+                    "children": "Optional data to share:",
+                    "ellipsizeMode": "tail",
+                  },
+                  "ref": null,
+                  "rendered": "Optional data to share:",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonCallback": [Function],
+                    "isEnabled": false,
+                    "isMandatory": false,
+                    "isVerified": true,
+                    "name": "Age (20-29)",
+                    "toggleCallback": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonCallback": [Function],
+                    "isEnabled": false,
+                    "isMandatory": false,
+                    "isVerified": true,
+                    "name": "Gender (Female)",
                     "toggleCallback": [Function],
                   },
                   "ref": null,
@@ -967,8 +1219,14 @@ ShallowWrapper {
       Object {
         "isRequiredAttributeEnabled": true,
         "list": Array [],
+        "optionalAttributesToggleStatus": Object {
+          "age": false,
+          "gender": false,
+        },
       }
     }
+    bubbleUpAgeAttributeToggle={[Function]}
+    bubbleUpGenderAttributeToggle={[Function]}
     bubbleUpRequiredAttributeToggle={[Function]}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
@@ -1074,7 +1332,32 @@ ShallowWrapper {
             <Attribute
               buttonCallback={[Function]}
               isEnabled={true}
+              isMandatory={true}
               isVerified={false}
+              name="Your residency status (required)"
+              toggleCallback={[Function]}
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            >
+              Optional data to share:
+            </Text>
+            <Attribute
+              buttonCallback={[Function]}
+              isEnabled={false}
+              isMandatory={false}
+              isVerified={true}
+              name="Age (20-29)"
+              toggleCallback={[Function]}
+            />
+            <Attribute
+              buttonCallback={[Function]}
+              isEnabled={false}
+              isMandatory={false}
+              isVerified={true}
+              name="Gender (Female)"
               toggleCallback={[Function]}
             />
           </View>
@@ -1196,7 +1479,32 @@ ShallowWrapper {
               <Attribute
                 buttonCallback={[Function]}
                 isEnabled={true}
+                isMandatory={true}
                 isVerified={false}
+                name="Your residency status (required)"
+                toggleCallback={[Function]}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                Optional data to share:
+              </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Age (20-29)"
+                toggleCallback={[Function]}
+              />
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Gender (Female)"
                 toggleCallback={[Function]}
               />
             </View>,
@@ -1297,7 +1605,32 @@ ShallowWrapper {
                 <Attribute
                   buttonCallback={[Function]}
                   isEnabled={true}
+                  isMandatory={true}
                   isVerified={false}
+                  name="Your residency status (required)"
+                  toggleCallback={[Function]}
+                />,
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Optional data to share:
+                </Text>,
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Age (20-29)"
+                  toggleCallback={[Function]}
+                />,
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Gender (Female)"
                   toggleCallback={[Function]}
                 />,
               ],
@@ -1371,7 +1704,55 @@ ShallowWrapper {
                 "props": Object {
                   "buttonCallback": [Function],
                   "isEnabled": true,
+                  "isMandatory": true,
                   "isVerified": false,
+                  "name": "Your residency status (required)",
+                  "toggleCallback": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "Optional data to share:",
+                  "ellipsizeMode": "tail",
+                },
+                "ref": null,
+                "rendered": "Optional data to share:",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonCallback": [Function],
+                  "isEnabled": false,
+                  "isMandatory": false,
+                  "isVerified": true,
+                  "name": "Age (20-29)",
+                  "toggleCallback": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "buttonCallback": [Function],
+                  "isEnabled": false,
+                  "isMandatory": false,
+                  "isVerified": true,
+                  "name": "Gender (Female)",
                   "toggleCallback": [Function],
                 },
                 "ref": null,
@@ -1518,7 +1899,32 @@ ShallowWrapper {
               <Attribute
                 buttonCallback={[Function]}
                 isEnabled={true}
+                isMandatory={true}
                 isVerified={false}
+                name="Your residency status (required)"
+                toggleCallback={[Function]}
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+              >
+                Optional data to share:
+              </Text>
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Age (20-29)"
+                toggleCallback={[Function]}
+              />
+              <Attribute
+                buttonCallback={[Function]}
+                isEnabled={false}
+                isMandatory={false}
+                isVerified={true}
+                name="Gender (Female)"
                 toggleCallback={[Function]}
               />
             </View>
@@ -1640,7 +2046,32 @@ ShallowWrapper {
                 <Attribute
                   buttonCallback={[Function]}
                   isEnabled={true}
+                  isMandatory={true}
                   isVerified={false}
+                  name="Your residency status (required)"
+                  toggleCallback={[Function]}
+                />
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                >
+                  Optional data to share:
+                </Text>
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Age (20-29)"
+                  toggleCallback={[Function]}
+                />
+                <Attribute
+                  buttonCallback={[Function]}
+                  isEnabled={false}
+                  isMandatory={false}
+                  isVerified={true}
+                  name="Gender (Female)"
                   toggleCallback={[Function]}
                 />
               </View>,
@@ -1741,7 +2172,32 @@ ShallowWrapper {
                   <Attribute
                     buttonCallback={[Function]}
                     isEnabled={true}
+                    isMandatory={true}
                     isVerified={false}
+                    name="Your residency status (required)"
+                    toggleCallback={[Function]}
+                  />,
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                  >
+                    Optional data to share:
+                  </Text>,
+                  <Attribute
+                    buttonCallback={[Function]}
+                    isEnabled={false}
+                    isMandatory={false}
+                    isVerified={true}
+                    name="Age (20-29)"
+                    toggleCallback={[Function]}
+                  />,
+                  <Attribute
+                    buttonCallback={[Function]}
+                    isEnabled={false}
+                    isMandatory={false}
+                    isVerified={true}
+                    name="Gender (Female)"
                     toggleCallback={[Function]}
                   />,
                 ],
@@ -1815,7 +2271,55 @@ ShallowWrapper {
                   "props": Object {
                     "buttonCallback": [Function],
                     "isEnabled": true,
+                    "isMandatory": true,
                     "isVerified": false,
+                    "name": "Your residency status (required)",
+                    "toggleCallback": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "accessible": true,
+                    "allowFontScaling": true,
+                    "children": "Optional data to share:",
+                    "ellipsizeMode": "tail",
+                  },
+                  "ref": null,
+                  "rendered": "Optional data to share:",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonCallback": [Function],
+                    "isEnabled": false,
+                    "isMandatory": false,
+                    "isVerified": true,
+                    "name": "Age (20-29)",
+                    "toggleCallback": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "buttonCallback": [Function],
+                    "isEnabled": false,
+                    "isMandatory": false,
+                    "isVerified": true,
+                    "name": "Gender (Female)",
                     "toggleCallback": [Function],
                   },
                   "ref": null,

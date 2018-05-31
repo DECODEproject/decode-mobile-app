@@ -15,10 +15,10 @@ export default class Attribute extends Component {
     return (
       <View style={styles.attributeContainerVerified}>
         <View style={styles.attribute}>
-          <Text style={styles.attributeName}>Your residency status (required)</Text>
+          <Text style={styles.attributeName}>{this.props.name}</Text>
           <Switch onValueChange={this.props.toggleCallback} value={this.props.isEnabled} />
         </View>
-        { !this.props.isEnabled && disabledAttributeText }
+        { !this.props.isEnabled && this.props.isMandatory && disabledAttributeText }
       </View>);
   }
 
@@ -53,12 +53,15 @@ export default class Attribute extends Component {
 Attribute.propTypes = {
   buttonCallback: PropTypes.func,
   isVerified: PropTypes.bool.isRequired,
+  isMandatory: PropTypes.bool,
   toggleCallback: PropTypes.func,
   isEnabled: PropTypes.bool,
+  name: PropTypes.string.isRequired,
 };
 
 Attribute.defaultProps = {
   buttonCallback: () => {},
   toggleCallback: () => {},
+  isMandatory: false,
   isEnabled: true,
 };

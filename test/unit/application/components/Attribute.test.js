@@ -7,11 +7,11 @@ import AttributeComponent from '../../../../application/components/Attribute/Att
 jest.mock('Switch', () => 'Switch');
 
 it('renders Attribute on verfied mode component', () => {
-  const rendered = renderer.create(<AttributeComponent isVerified />).toJSON();
+  const rendered = renderer.create(<AttributeComponent isVerified name="test" />).toJSON();
   expect(rendered).toMatchSnapshot();
 });
 
 it('renders Attribute on non-verfied mode component', () => {
-  const rendered = renderer.create(<AttributeComponent isVerified={false} />).toJSON();
+  const rendered = renderer.create(<AttributeComponent isVerified={false} name="test" />).toJSON();
   expect(rendered).toMatchSnapshot();
 });

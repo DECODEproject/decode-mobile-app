@@ -27,6 +27,10 @@ const initialState = {
   },
   attributes: {
     isRequiredAttributeEnabled: true,
+    optionalAttributesToggleStatus: {
+      age: false,
+      gender: false,
+    },
     list: [],
   },
 };

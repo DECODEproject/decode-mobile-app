@@ -27,6 +27,10 @@ describe('attribute reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({
       isRequiredAttributeEnabled: true,
+      optionalAttributesToggleStatus: {
+        age: false,
+        gender: false,
+      },
       list: [],
     });
   });
@@ -130,19 +134,40 @@ describe('attribute reducer', () => {
     });
   });
 
-  it('should handle TOGGLE_ATTRIBUTE sets the state with the updated isRequiredAttributeEnabled value', () => {
+  it('should handle TOGGLE_REQUIRED_ATTRIBUTE sets the state with the updated isRequiredAttributeEnabled value', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
       list: [],
     };
     const action = {
-      type: types.TOGGLE_ATTRIBUTE,
+      type: types.TOGGLE_REQUIRED_ATTRIBUTE,
       toggleValue: false,
     };
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: false,
       list: [],
+    });
+  });
+
+  it('should handle TOGGLE_OPTIONAL_ATTRIBUTE sets the state with the updated optionalAttributesToggleStatus values', () => {
+    const initialState = {
+      optionalAttributesToggleStatus: {
+        age: false,
+        gender: false,
+      },
+    };
+    const action = {
+      type: types.TOGGLE_OPTIONAL_ATTRIBUTE,
+      attributeName: 'age',
+      toggleValue: true,
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      optionalAttributesToggleStatus: {
+        age: true,
+        gender: false,
+      },
     });
   });
 });

@@ -44,7 +44,15 @@ export function loadCredentials(getItemAsync) {
 
 export function bubbleUpRequiredAttributeToggle(toggleValue) {
   return dispatch => dispatch({
-    type: types.TOGGLE_ATTRIBUTE,
+    type: types.TOGGLE_REQUIRED_ATTRIBUTE,
+    toggleValue,
+  });
+}
+
+export function bubbleUpOptionalAttributeToggle(attributeName, toggleValue) {
+  return dispatch => dispatch({
+    type: types.TOGGLE_OPTIONAL_ATTRIBUTE,
+    attributeName,
     toggleValue,
   });
 }

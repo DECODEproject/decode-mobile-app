@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
-import { addCredential, bubbleUpRequiredAttributeToggle } from '../application/redux/actions/attributes';
+import { addCredential, bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../application/redux/actions/attributes';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
@@ -96,8 +96,27 @@ class PetitionSummary extends React.Component {
         <AttributeComponent
           buttonCallback={this.openWebBrowserAsync}
           isVerified={isAttributeVerified}
+          isMandatory
           toggleCallback={this.props.bubbleUpRequiredAttributeToggle}
           isEnabled={this.props.attributes.isRequiredAttributeEnabled}
+          name="Your residency status (required)"
+        />
+        <Text>
+          Optional data to share:
+        </Text>
+        <AttributeComponent
+          isVerified
+          isMandatory={false}
+          toggleCallback={this.props.bubbleUpAgeAttributeToggle}
+          isEnabled={this.props.attributes.optionalAttributesToggleStatus.age}
+          name="Age (20-29)"
+        />
+        <AttributeComponent
+          isVerified
+          isMandatory={false}
+          toggleCallback={this.props.bubbleUpGenderAttributeToggle}
+          isEnabled={this.props.attributes.optionalAttributesToggleStatus.gender}
+          name="Gender (Female)"
         />
       </View>
     );
@@ -151,10 +170,16 @@ PetitionSummary.propTypes = {
   walletId: PropTypes.string.isRequired,
   attributes: PropTypes.shape({
     isRequiredAttributeEnabled: PropTypes.bool,
+    optionalAttributesToggleStatus: PropTypes.shape({
+      age: PropTypes.bool,
+      gender: PropTypes.bool,
+    }),
     list: PropTypes.arrayOf(PropTypes.shape({})),
   }).isRequired,
   signPetition: PropTypes.func.isRequired,
   bubbleUpRequiredAttributeToggle: PropTypes.func.isRequired,
+  bubbleUpAgeAttributeToggle: PropTypes.func.isRequired,
+  bubbleUpGenderAttributeToggle: PropTypes.func.isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -182,6 +207,10 @@ const mapDispatchToProps = dispatch => ({
     dispatch(signPetition(petition, walletId, walletProxyLink, vote)),
   bubbleUpRequiredAttributeToggle: toggleValue =>
     dispatch(bubbleUpRequiredAttributeToggle(toggleValue)),
+  bubbleUpAgeAttributeToggle: toggleValue =>
+    dispatch(bubbleUpOptionalAttributeToggle('age', toggleValue)),
+  bubbleUpGenderAttributeToggle: toggleValue =>
+    dispatch(bubbleUpOptionalAttributeToggle('gender', toggleValue)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummary);
