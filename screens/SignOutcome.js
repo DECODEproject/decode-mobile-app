@@ -7,8 +7,8 @@ import { goToAuthorization } from '../application/redux/actions/navigation';
 import styles from './styles';
 import Button from '../application/components/Button/Button';
 
-const tickIcon = require('../assets/images/decode_tick.jpg');
 const warningIcon = require('../assets/images/warning.png');
+const successImage = require('../assets/images/city.png');
 
 
 class SignOutcome extends React.Component {
@@ -33,22 +33,29 @@ class SignOutcome extends React.Component {
     this.props.goToAuthorization(this.props.petitionLink);
   }
 
-  render() {
-    let textSubHeading = 'Thank you for signing';
-    let signOutcomeText = 'You can view the results of the petition on the Secure Petitions website';
-    let icon = tickIcon;
-    if (!this.props.signSuccess) {
-      textSubHeading = 'Sign failed for';
-      signOutcomeText = `Reason: ${this.props.petitionError} \n\nYou can return to view other petitions on the Secure Petitions website`;
-      icon = warningIcon;
-    }
+  successful() {
+    console.log(this);
+    return (
+      <View style={styles.signOutcomeContainer}>
+        <Image
+          style={styles.signOutcomeIcon}
+          source={successImage}
+        />
+        <Button name="Back to home2" onPress={SignOutcome.handlePress} />
+      </View>
+    );
+  }
+
+  error() {
+    const textSubHeading = 'Sign failed for';
+    const signOutcomeText = `Reason: ${this.props.petitionError} \n\nYou can return to view other petitions on the Secure Petitions website`;
 
     return (
       <View style={styles.signOutcomeContainer}>
         <View style={styles.signOutcomeBox}>
           <Image
             style={styles.signOutcomeIcon}
-            source={icon}
+            source={warningIcon}
           />
           <View style={styles.signOutcomeTextBox}>
             <Text style={styles.signOutcomeTextSubHeading}>{textSubHeading}</Text>
@@ -59,6 +66,13 @@ class SignOutcome extends React.Component {
         </View>
       </View>
     );
+  }
+
+  render() {
+    if (!this.props.signSuccess) {
+      return this.error();
+    }
+    return this.successful();
   }
 }
 
