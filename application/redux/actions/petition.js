@@ -46,7 +46,7 @@ export function getPetition(petitionLink) {
   };
 }
 
-export function signPetition(petition, walletId, walletProxyLink, vote) {
+export function signPetition(petition, walletId, walletProxyLink, vote, age, gender) {
   const request = {
     method: 'POST',
     headers: {
@@ -57,7 +57,8 @@ export function signPetition(petition, walletId, walletProxyLink, vote) {
       signatory: walletId.substring(0, 5),
       isEthereum: petition.isEthereum,
       vote,
-      gender: 'female',
+      age,
+      gender,
     }),
   };
 

@@ -67,9 +67,12 @@ class PetitionSummary extends React.Component {
       loading: true,
     });
 
+    const age = (this.props.attributes.optionalAttributesToggleStatus.age) ? '20-29' : 'any';
+    const gender = (this.props.attributes.optionalAttributesToggleStatus.gender) ? 'female' : 'any';
+
     let signSuccess;
     try {
-      const signAction = await this.props.signPetition(petition, walletId, vote);
+      const signAction = await this.props.signPetition(petition, walletId, vote, age, gender);
       signSuccess = (signAction.error === undefined);
     } catch (e) {
       signSuccess = false;
@@ -203,8 +206,8 @@ const mapDispatchToProps = dispatch => ({
   },
   setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
-  signPetition: (petition, walletId, vote) =>
-    dispatch(signPetition(petition, walletId, walletProxyLink, vote)),
+  signPetition: (petition, walletId, vote, age, gender) =>
+    dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender)),
   bubbleUpRequiredAttributeToggle: toggleValue =>
     dispatch(bubbleUpRequiredAttributeToggle(toggleValue)),
   bubbleUpAgeAttributeToggle: toggleValue =>
