@@ -3,6 +3,7 @@ import React from 'react';
 import { Text, View, Linking, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import ImageOverlay from 'react-native-image-overlay';
 import { goToAuthorization } from '../application/redux/actions/navigation';
 import styles from './styles';
 import Button from '../application/components/Button/Button';
@@ -34,9 +35,32 @@ class SignOutcome extends React.Component {
   }
 
   successful() {
-    console.log(this);
+    console.log(this.props.signSuccess);
+
+
     return (
       <View style={styles.signOutcomeContainer}>
+        <ImageOverlay
+          source={successImage}
+          overlayAlpha={0}
+          contentPosition="bottom"
+        >
+          <Text
+            style={{
+              fontSize: 34,
+              color: 'white',
+              marginBottom: 30,
+              marginLeft: 20,
+              marginRight: 20,
+              textAlign: 'center',
+              backgroundColor: 'transparent',
+            }}
+          >
+            Your vote has been recorded anonymously
+          </Text>
+        </ImageOverlay>
+
+
         <Image
           style={styles.signOutcomeIcon}
           source={successImage}
