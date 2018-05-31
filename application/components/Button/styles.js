@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const signButton = {
+const button = {
   alignSelf: 'stretch',
   borderRadius: 2,
   elevation: 2,
@@ -16,32 +16,29 @@ const signButton = {
   shadowRadius: 2,
 };
 
+const buttonText = {
+  alignSelf: 'center',
+  fontSize: 14,
+
+  fontWeight: '500',
+};
+
 const styles = StyleSheet.create({
-  footerContainer: {
-    backgroundColor: '#FFF',
-    borderColor: 'rgba(0, 0, 0, 0.15)',
-    borderWidth: 1,
-    height: 64,
-  },
   signButton: {
-    ...signButton,
+    ...button,
     backgroundColor: 'rgb(0,163,158)',
   },
   signButtonDisabled: {
-    ...signButton,
+    ...button,
     backgroundColor: 'rgba(0,163,158,0.4)',
   },
   buttonText: {
-    alignSelf: 'center',
+    ...buttonText,
     color: '#FFF',
-    fontSize: 14,
-    fontWeight: '500',
   },
   disabledButtonText: {
-    alignSelf: 'center',
+    ...buttonText,
     color: 'rgba(255, 255, 255, 0.6)',
-    fontSize: 14,
-    fontWeight: '500',
   },
 });
 

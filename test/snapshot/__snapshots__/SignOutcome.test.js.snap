@@ -94,23 +94,12 @@ ShallowWrapper {
           >
             You can view the results of the petition on the Secure Petitions website
           </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <Button
+            enabled={true}
+            name="Back to home"
             onPress={[Function]}
-            style={
-              Object {
-                "alignSelf": "center",
-                "color": "rgb(0,163,158)",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textDecorationLine": "underline",
-              }
-            }
-          >
-            View Petitions Results
-          </Text>
+            style={Object {}}
+          />
         </View>
       </View>,
       "style": Object {
@@ -185,23 +174,12 @@ ShallowWrapper {
             >
               You can view the results of the petition on the Secure Petitions website
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <Button
+              enabled={true}
+              name="Back to home"
               onPress={[Function]}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "rgb(0,163,158)",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                }
-              }
-            >
-              View Petitions Results
-            </Text>
+              style={Object {}}
+            />
           </View>,
         ],
         "style": Object {
@@ -278,23 +256,12 @@ ShallowWrapper {
               >
                 You can view the results of the petition on the Secure Petitions website
               </Text>,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <Button
+                enabled={true}
+                name="Back to home"
                 onPress={[Function]}
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "color": "rgb(0,163,158)",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                    "textDecorationLine": "underline",
-                  }
-                }
-              >
-                View Petitions Results
-              </Text>,
+                style={Object {}}
+              />,
             ],
             "style": Object {
               "alignSelf": "center",
@@ -363,23 +330,15 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "View Petitions Results",
-                "ellipsizeMode": "tail",
+                "enabled": true,
+                "name": "Back to home",
                 "onPress": [Function],
-                "style": Object {
-                  "alignSelf": "center",
-                  "color": "rgb(0,163,158)",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                },
+                "style": Object {},
               },
               "ref": null,
-              "rendered": "View Petitions Results",
+              "rendered": null,
               "type": [Function],
             },
           ],
@@ -467,23 +426,12 @@ ShallowWrapper {
             >
               You can view the results of the petition on the Secure Petitions website
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <Button
+              enabled={true}
+              name="Back to home"
               onPress={[Function]}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "rgb(0,163,158)",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                }
-              }
-            >
-              View Petitions Results
-            </Text>
+              style={Object {}}
+            />
           </View>
         </View>,
         "style": Object {
@@ -558,23 +506,12 @@ ShallowWrapper {
               >
                 You can view the results of the petition on the Secure Petitions website
               </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <Button
+                enabled={true}
+                name="Back to home"
                 onPress={[Function]}
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "color": "rgb(0,163,158)",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                    "textDecorationLine": "underline",
-                  }
-                }
-              >
-                View Petitions Results
-              </Text>
+                style={Object {}}
+              />
             </View>,
           ],
           "style": Object {
@@ -651,23 +588,12 @@ ShallowWrapper {
                 >
                   You can view the results of the petition on the Secure Petitions website
                 </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                <Button
+                  enabled={true}
+                  name="Back to home"
                   onPress={[Function]}
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "color": "rgb(0,163,158)",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "textDecorationLine": "underline",
-                    }
-                  }
-                >
-                  View Petitions Results
-                </Text>,
+                  style={Object {}}
+                />,
               ],
               "style": Object {
                 "alignSelf": "center",
@@ -736,23 +662,15 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "View Petitions Results",
-                  "ellipsizeMode": "tail",
+                  "enabled": true,
+                  "name": "Back to home",
                   "onPress": [Function],
-                  "style": Object {
-                    "alignSelf": "center",
-                    "color": "rgb(0,163,158)",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                    "textDecorationLine": "underline",
-                  },
+                  "style": Object {},
                 },
                 "ref": null,
-                "rendered": "View Petitions Results",
+                "rendered": null,
                 "type": [Function],
               },
             ],
@@ -880,23 +798,12 @@ ShallowWrapper {
 
 You can return to view other petitions on the Secure Petitions website
           </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
+          <Button
+            enabled={true}
+            name="Back to home"
             onPress={[Function]}
-            style={
-              Object {
-                "alignSelf": "center",
-                "color": "rgb(0,163,158)",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textDecorationLine": "underline",
-              }
-            }
-          >
-            View Other Petitions
-          </Text>
+            style={Object {}}
+          />
         </View>
       </View>,
       "style": Object {
@@ -973,23 +880,12 @@ You can return to view other petitions on the Secure Petitions website
 
 You can return to view other petitions on the Secure Petitions website
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <Button
+              enabled={true}
+              name="Back to home"
               onPress={[Function]}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "rgb(0,163,158)",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                }
-              }
-            >
-              View Other Petitions
-            </Text>
+              style={Object {}}
+            />
           </View>,
         ],
         "style": Object {
@@ -1068,23 +964,12 @@ You can return to view other petitions on the Secure Petitions website
 
 You can return to view other petitions on the Secure Petitions website
               </Text>,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <Button
+                enabled={true}
+                name="Back to home"
                 onPress={[Function]}
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "color": "rgb(0,163,158)",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                    "textDecorationLine": "underline",
-                  }
-                }
-              >
-                View Other Petitions
-              </Text>,
+                style={Object {}}
+              />,
             ],
             "style": Object {
               "alignSelf": "center",
@@ -1157,23 +1042,15 @@ You can return to view other petitions on the Secure Petitions website",
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "View Other Petitions",
-                "ellipsizeMode": "tail",
+                "enabled": true,
+                "name": "Back to home",
                 "onPress": [Function],
-                "style": Object {
-                  "alignSelf": "center",
-                  "color": "rgb(0,163,158)",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                },
+                "style": Object {},
               },
               "ref": null,
-              "rendered": "View Other Petitions",
+              "rendered": null,
               "type": [Function],
             },
           ],
@@ -1263,23 +1140,12 @@ You can return to view other petitions on the Secure Petitions website",
 
 You can return to view other petitions on the Secure Petitions website
             </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
+            <Button
+              enabled={true}
+              name="Back to home"
               onPress={[Function]}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "rgb(0,163,158)",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                }
-              }
-            >
-              View Other Petitions
-            </Text>
+              style={Object {}}
+            />
           </View>
         </View>,
         "style": Object {
@@ -1356,23 +1222,12 @@ You can return to view other petitions on the Secure Petitions website
 
 You can return to view other petitions on the Secure Petitions website
               </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
+              <Button
+                enabled={true}
+                name="Back to home"
                 onPress={[Function]}
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "color": "rgb(0,163,158)",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                    "textDecorationLine": "underline",
-                  }
-                }
-              >
-                View Other Petitions
-              </Text>
+                style={Object {}}
+              />
             </View>,
           ],
           "style": Object {
@@ -1451,23 +1306,12 @@ You can return to view other petitions on the Secure Petitions website
 
 You can return to view other petitions on the Secure Petitions website
                 </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
+                <Button
+                  enabled={true}
+                  name="Back to home"
                   onPress={[Function]}
-                  style={
-                    Object {
-                      "alignSelf": "center",
-                      "color": "rgb(0,163,158)",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "textDecorationLine": "underline",
-                    }
-                  }
-                >
-                  View Other Petitions
-                </Text>,
+                  style={Object {}}
+                />,
               ],
               "style": Object {
                 "alignSelf": "center",
@@ -1540,23 +1384,15 @@ You can return to view other petitions on the Secure Petitions website",
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "View Other Petitions",
-                  "ellipsizeMode": "tail",
+                  "enabled": true,
+                  "name": "Back to home",
                   "onPress": [Function],
-                  "style": Object {
-                    "alignSelf": "center",
-                    "color": "rgb(0,163,158)",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                    "textDecorationLine": "underline",
-                  },
+                  "style": Object {},
                 },
                 "ref": null,
-                "rendered": "View Other Petitions",
+                "rendered": null,
                 "type": [Function],
               },
             ],

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Text, View, TouchableOpacity, Switch } from 'react-native';
+import { Text, View, Switch } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
+import Button from '../Button/Button';
 
 export default class Attribute extends Component {
   verifiedMode() {
@@ -28,12 +29,13 @@ export default class Attribute extends Component {
         <Text style={styles.attributeDetails}>To get this attribute you will be directed
           to the Atlantis Council website
         </Text>
-        <TouchableOpacity
-          style={styles.button}
+        <Button
+          name="REQUEST"
           onPress={this.props.buttonCallback}
-        >
-          <Text style={styles.buttonText}>REQUEST</Text>
-        </TouchableOpacity>
+          style={{
+            width: 100,
+          }}
+        />
       </View>
     );
   }

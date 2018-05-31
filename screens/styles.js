@@ -1,5 +1,7 @@
 import { Platform, StyleSheet } from 'react-native';
 
+
+export const TURQUOISE = 'rgb(0,163,158)';
 const styles = StyleSheet.create({
 
   authorisationBox: {
@@ -9,20 +11,6 @@ const styles = StyleSheet.create({
     marginTop: 50,
     paddingHorizontal: 20,
     paddingVertical: 40,
-  },
-  authorisationBoxButton: {
-    alignSelf: 'center',
-    backgroundColor: 'rgb(0,163,158)',
-    borderRadius: 2,
-    elevation: 2,
-    height: 36,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    width: 250,
   },
   authorisationBoxContainer: {
     alignItems: 'center',
@@ -53,12 +41,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-between',
   },
-  buttonText: {
-    alignSelf: 'center',
-    color: '#FFF',
-    fontSize: 14,
-    fontWeight: '500',
-  },
   cancelSigningPetition: {
     alignSelf: 'center',
     color: '#00F',
@@ -66,21 +48,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     textDecorationLine: 'underline',
     marginVertical: 20,
-  },
-  homeButton: {
-    alignSelf: 'center',
-    backgroundColor: 'rgb(0,163,158)',
-    borderRadius: 2,
-    elevation: 2,
-    height: 36,
-    marginBottom: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    width: 300,
   },
   homeContainer: {
     alignItems: 'center',
@@ -99,7 +66,7 @@ const styles = StyleSheet.create({
   },
   homeTextInput: {
     borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
-    borderColor: 'rgb(0,163,158)',
+    borderColor: TURQUOISE,
     marginBottom: 20,
   },
   homeWelcomeMessage: {
@@ -146,22 +113,6 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     marginBottom: 20,
   },
-  QRScannerIntroButton: {
-    alignSelf: 'center',
-    backgroundColor: 'rgb(0,163,158)',
-    borderRadius: 2,
-    elevation: 2,
-    height: 36,
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    marginBottom: 15,
-    marginTop: 30,
-    shadowColor: 'rgba(0, 0, 0, 0.54)',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    width: 250,
-  },
   QRScannerIntroButtonBox: {
     alignSelf: 'center',
     width: 250,
@@ -191,13 +142,6 @@ const styles = StyleSheet.create({
     marginTop: 30,
     paddingHorizontal: 20,
     paddingVertical: 40,
-  },
-  signOutcomeButtonText: {
-    alignSelf: 'center',
-    color: 'rgb(0,163,158)',
-    fontSize: 14,
-    fontWeight: '500',
-    textDecorationLine: 'underline',
   },
   signOutcomeContainer: {
     alignItems: 'center',

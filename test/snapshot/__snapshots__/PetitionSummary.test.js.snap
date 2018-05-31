@@ -133,15 +133,17 @@ ShallowWrapper {
             />
           </View>
         </ScrollViewMock>,
-        <VoteButton
+        <Button
           enabled={true}
           name="Yes"
           onPress={[Function]}
+          style={Object {}}
         />,
-        <VoteButton
+        <Button
           enabled={true}
           name="No"
           onPress={[Function]}
+          style={Object {}}
         />,
         <Text
           accessible={true}
@@ -444,6 +446,7 @@ ShallowWrapper {
           "enabled": true,
           "name": "Yes",
           "onPress": [Function],
+          "style": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -457,6 +460,7 @@ ShallowWrapper {
           "enabled": true,
           "name": "No",
           "onPress": [Function],
+          "style": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -573,15 +577,17 @@ ShallowWrapper {
               />
             </View>
           </ScrollViewMock>,
-          <VoteButton
+          <Button
             enabled={true}
             name="Yes"
             onPress={[Function]}
+            style={Object {}}
           />,
-          <VoteButton
+          <Button
             enabled={true}
             name="No"
             onPress={[Function]}
+            style={Object {}}
           />,
           <Text
             accessible={true}
@@ -884,6 +890,7 @@ ShallowWrapper {
             "enabled": true,
             "name": "Yes",
             "onPress": [Function],
+            "style": Object {},
           },
           "ref": null,
           "rendered": null,
@@ -897,6 +904,7 @@ ShallowWrapper {
             "enabled": true,
             "name": "No",
             "onPress": [Function],
+            "style": Object {},
           },
           "ref": null,
           "rendered": null,
@@ -1071,15 +1079,17 @@ ShallowWrapper {
             />
           </View>
         </ScrollViewMock>,
-        <VoteButton
+        <Button
           enabled={false}
           name="Yes"
           onPress={[Function]}
+          style={Object {}}
         />,
-        <VoteButton
+        <Button
           enabled={false}
           name="No"
           onPress={[Function]}
+          style={Object {}}
         />,
         <Text
           accessible={true}
@@ -1382,6 +1392,7 @@ ShallowWrapper {
           "enabled": false,
           "name": "Yes",
           "onPress": [Function],
+          "style": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -1395,6 +1406,7 @@ ShallowWrapper {
           "enabled": false,
           "name": "No",
           "onPress": [Function],
+          "style": Object {},
         },
         "ref": null,
         "rendered": null,
@@ -1511,15 +1523,17 @@ ShallowWrapper {
               />
             </View>
           </ScrollViewMock>,
-          <VoteButton
+          <Button
             enabled={false}
             name="Yes"
             onPress={[Function]}
+            style={Object {}}
           />,
-          <VoteButton
+          <Button
             enabled={false}
             name="No"
             onPress={[Function]}
+            style={Object {}}
           />,
           <Text
             accessible={true}
@@ -1822,6 +1836,7 @@ ShallowWrapper {
             "enabled": false,
             "name": "Yes",
             "onPress": [Function],
+            "style": Object {},
           },
           "ref": null,
           "rendered": null,
@@ -1835,6 +1850,7 @@ ShallowWrapper {
             "enabled": false,
             "name": "No",
             "onPress": [Function],
+            "style": Object {},
           },
           "ref": null,
           "rendered": null,

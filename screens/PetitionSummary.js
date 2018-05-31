@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
 import { addCredential, bubbleUpRequiredAttributeToggle } from '../application/redux/actions/attributes';
-import VoteButton from '../application/components/VoteButton/VoteButton';
+import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import styles from './styles';
@@ -116,12 +116,12 @@ class PetitionSummary extends React.Component {
           </View>
           { this.props.petition && petitionAttributes }
         </ScrollView>
-        <VoteButton
+        <Button
           enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
           onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
           name="Yes"
         />
-        <VoteButton
+        <Button
           enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
           onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
           name="No"

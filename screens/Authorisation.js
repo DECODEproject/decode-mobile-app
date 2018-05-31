@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
+import Button from '../application/components/Button/Button';
 import styles from './styles';
 
 class Authorisation extends React.Component {
@@ -31,12 +32,7 @@ class Authorisation extends React.Component {
           <Text style={styles.authorisationBoxTextParagraph}>would like
             to connect with your DECODE wallet
           </Text>
-          <TouchableOpacity
-            style={styles.authorisationBoxButton}
-            onPress={this.goToPetitionSummary}
-          >
-            <Text style={styles.buttonText}>AUTHORISE</Text>
-          </TouchableOpacity>
+          <Button name="AUTHORISE" onPress={this.goToPetitionSummary} />
         </View>
         <Text style={styles.authorisationBoxId}>Wallet ID: {this.props.walletId}</Text>
       </View>

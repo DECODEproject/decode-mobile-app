@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { goToAuthorization } from '../application/redux/actions/navigation';
 import styles from './styles';
+import Button from '../application/components/Button/Button';
 
 const tickIcon = require('../assets/images/decode_tick.jpg');
 const warningIcon = require('../assets/images/warning.png');
@@ -35,12 +36,10 @@ class SignOutcome extends React.Component {
   render() {
     let textSubHeading = 'Thank you for signing';
     let signOutcomeText = 'You can view the results of the petition on the Secure Petitions website';
-    let signOutcomeButtonText = 'View Petitions Results';
     let icon = tickIcon;
     if (!this.props.signSuccess) {
       textSubHeading = 'Sign failed for';
       signOutcomeText = `Reason: ${this.props.petitionError} \n\nYou can return to view other petitions on the Secure Petitions website`;
-      signOutcomeButtonText = 'View Other Petitions';
       icon = warningIcon;
     }
 
@@ -55,11 +54,7 @@ class SignOutcome extends React.Component {
             <Text style={styles.signOutcomeTextSubHeading}>{textSubHeading}</Text>
             <Text style={styles.signOutcomePetitionTitle}>{this.props.petition.title}</Text>
             <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
-            <Text
-              style={styles.signOutcomeButtonText}
-              onPress={SignOutcome.handlePress}
-            >{signOutcomeButtonText}
-            </Text>
+            <Button name="Back to home" onPress={SignOutcome.handlePress} />
           </View>
         </View>
       </View>

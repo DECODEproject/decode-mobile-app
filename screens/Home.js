@@ -1,12 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Image, Text, TextInput, View, TouchableOpacity } from 'react-native';
+import { Image, Text, TextInput, View } from 'react-native';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
 import { goQRScannerIntro, goToAuthorization } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
+import Button from '../application/components/Button/Button';
+
 import styles from './styles';
 
 const decodeLogo = require('../assets/images/decode_logo.jpg');
@@ -45,13 +47,7 @@ class Home extends React.Component {
             underlineColorAndroid="rgb(0,163,158)"
           />
         </View>
-        <TouchableOpacity
-          style={styles.homeButton}
-          onPress={this.goToNextPage}
-        >
-          <Text style={styles.buttonText}>LOG IN</Text>
-        </TouchableOpacity>
-
+        <Button name="LOG IN" onPress={this.goToNextPage} />
       </View>
     );
   }

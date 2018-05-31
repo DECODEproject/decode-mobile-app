@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { goToQRScanner } from '../application/redux/actions/navigation';
+import Button from '../application/components/Button/Button';
 import styles from './styles';
 
 const scanner = require('../assets/images/scanner.jpg');
@@ -36,12 +37,7 @@ class QRScannerIntro extends React.Component {
             source={scanner}
           />
           <Text style={styles.QRScannerIntroInstructions}>Scan a QR code to get started</Text>
-          <TouchableOpacity
-            style={styles.QRScannerIntroButton}
-            onPress={this.goToQRScanner}
-          >
-            <Text style={styles.buttonText}>CONTINUE</Text>
-          </TouchableOpacity>
+          <Button name="CONTINUE" onPress={this.goToQRScanner} />
         </View>
       </View>
     );

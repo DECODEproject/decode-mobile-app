@@ -56,11 +56,14 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
     onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "alignSelf": "flex-end",
+        "alignSelf": "stretch",
         "backgroundColor": "rgb(0,163,158)",
         "borderRadius": 2,
         "elevation": 2,
         "height": 36,
+        "marginBottom": 18,
+        "marginHorizontal": 16,
+        "marginTop": 10,
         "opacity": 1,
         "paddingHorizontal": 16,
         "paddingVertical": 8,
@@ -84,7 +87,7 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
       style={
         Object {
           "alignSelf": "center",
-          "color": "rgb(255, 255, 255)",
+          "color": "#FFF",
           "fontSize": 14,
           "fontWeight": "500",
         }
