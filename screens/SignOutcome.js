@@ -37,7 +37,6 @@ class SignOutcome extends React.Component {
   successful() {
     console.log(this.props.signSuccess);
 
-
     return (
       <View style={styles.signOutcomeContainer}>
         <ImageOverlay
@@ -59,13 +58,19 @@ class SignOutcome extends React.Component {
             Your vote has been recorded anonymously
           </Text>
         </ImageOverlay>
-
-
-        <Image
-          style={styles.signOutcomeIcon}
-          source={successImage}
+        <View style={{
+          flex: 1,
+        }}
         />
-        <Button name="Back to home2" onPress={SignOutcome.handlePress} />
+        <Button
+          name="Back to home"
+          onPress={SignOutcome.handlePress}
+          style={{
+            flex: 0,
+            width: 200,
+            alignSelf: 'center',
+          }}
+        />
       </View>
     );
   }

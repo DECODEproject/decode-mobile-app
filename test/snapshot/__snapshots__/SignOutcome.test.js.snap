@@ -50,22 +50,24 @@ ShallowWrapper {
             Your vote has been recorded anonymously
           </Text>
         </ImageOverlay>,
-        <Image
-          source={1}
+        <View
           style={
             Object {
-              "alignSelf": "center",
-              "height": 75,
-              "marginBottom": 40,
-              "width": 75,
+              "flex": 1,
             }
           }
         />,
         <Button
           enabled={true}
-          name="Back to home2"
+          name="Back to home"
           onPress={[Function]}
-          style={Object {}}
+          style={
+            Object {
+              "alignSelf": "center",
+              "flex": 0,
+              "width": 200,
+            }
+          }
         />,
       ],
       "style": Object {
@@ -136,12 +138,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "source": 1,
           "style": Object {
-            "alignSelf": "center",
-            "height": 75,
-            "marginBottom": 40,
-            "width": 75,
+            "flex": 1,
           },
         },
         "ref": null,
@@ -154,9 +152,13 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "enabled": true,
-          "name": "Back to home2",
+          "name": "Back to home",
           "onPress": [Function],
-          "style": Object {},
+          "style": Object {
+            "alignSelf": "center",
+            "flex": 0,
+            "width": 200,
+          },
         },
         "ref": null,
         "rendered": null,
@@ -198,22 +200,24 @@ ShallowWrapper {
               Your vote has been recorded anonymously
             </Text>
           </ImageOverlay>,
-          <Image
-            source={1}
+          <View
             style={
               Object {
-                "alignSelf": "center",
-                "height": 75,
-                "marginBottom": 40,
-                "width": 75,
+                "flex": 1,
               }
             }
           />,
           <Button
             enabled={true}
-            name="Back to home2"
+            name="Back to home"
             onPress={[Function]}
-            style={Object {}}
+            style={
+              Object {
+                "alignSelf": "center",
+                "flex": 0,
+                "width": 200,
+              }
+            }
           />,
         ],
         "style": Object {
@@ -284,12 +288,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "source": 1,
             "style": Object {
-              "alignSelf": "center",
-              "height": 75,
-              "marginBottom": 40,
-              "width": 75,
+              "flex": 1,
             },
           },
           "ref": null,
@@ -302,9 +302,13 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "enabled": true,
-            "name": "Back to home2",
+            "name": "Back to home",
             "onPress": [Function],
-            "style": Object {},
+            "style": Object {
+              "alignSelf": "center",
+              "flex": 0,
+              "width": 200,
+            },
           },
           "ref": null,
           "rendered": null,

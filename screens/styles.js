@@ -1,7 +1,9 @@
 import { Platform, StyleSheet } from 'react-native';
 
 
-export const TURQUOISE = 'rgb(0,163,158)';
+export const TURQUOISE = 'rgb(73,162,153)';
+export const PPP = '001dcb';
+
 const styles = StyleSheet.create({
 
   authorisationBox: {
