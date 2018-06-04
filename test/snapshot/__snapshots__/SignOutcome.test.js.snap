@@ -6,6 +6,14 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SignOutcome
     goToAuthorization={[Function]}
+    links={
+      Array [
+        "Make Poblenou a car-free zone",
+        "Ban diesel engines from the city",
+        "More street lighting for the old town",
+        "Reduce noise pollution",
+      ]
+    }
     petition={Object {}}
     petitionError=""
     petitionLink="http://something.com"
@@ -54,9 +62,95 @@ ShallowWrapper {
           style={
             Object {
               "flex": 1,
+              "marginTop": 30,
             }
           }
-        />,
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "marginBottom": 20,
+              }
+            }
+          >
+            You may interested in these other petitions
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            Make Poblenou a car-free zone
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            Ban diesel engines from the city
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            More street lighting for the old town
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            Reduce noise pollution
+          </Text>
+        </View>,
         <Button
           enabled={true}
           name="Back to home"
@@ -138,12 +232,211 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "children": Array [
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "marginBottom": 20,
+                }
+              }
+            >
+              You may interested in these other petitions
+            </Text>,
+            Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#00F",
+                    "fontSize": 12,
+                    "fontWeight": "bold",
+                    "marginVertical": 10,
+                    "textAlign": "left",
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Make Poblenou a car-free zone
+              </Text>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#00F",
+                    "fontSize": 12,
+                    "fontWeight": "bold",
+                    "marginVertical": 10,
+                    "textAlign": "left",
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Ban diesel engines from the city
+              </Text>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#00F",
+                    "fontSize": 12,
+                    "fontWeight": "bold",
+                    "marginVertical": 10,
+                    "textAlign": "left",
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                More street lighting for the old town
+              </Text>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "color": "#00F",
+                    "fontSize": 12,
+                    "fontWeight": "bold",
+                    "marginVertical": 10,
+                    "textAlign": "left",
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Reduce noise pollution
+              </Text>,
+            ],
+          ],
           "style": Object {
             "flex": 1,
+            "marginTop": 30,
           },
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "You may interested in these other petitions",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "marginBottom": 20,
+              },
+            },
+            "ref": null,
+            "rendered": "You may interested in these other petitions",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Make Poblenou a car-free zone",
+              "ellipsizeMode": "tail",
+              "onPress": [Function],
+              "style": Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              },
+            },
+            "ref": null,
+            "rendered": "Make Poblenou a car-free zone",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Ban diesel engines from the city",
+              "ellipsizeMode": "tail",
+              "onPress": [Function],
+              "style": Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              },
+            },
+            "ref": null,
+            "rendered": "Ban diesel engines from the city",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "More street lighting for the old town",
+              "ellipsizeMode": "tail",
+              "onPress": [Function],
+              "style": Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              },
+            },
+            "ref": null,
+            "rendered": "More street lighting for the old town",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Reduce noise pollution",
+              "ellipsizeMode": "tail",
+              "onPress": [Function],
+              "style": Object {
+                "color": "#00F",
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "marginVertical": 10,
+                "textAlign": "left",
+                "textDecorationLine": "underline",
+              },
+            },
+            "ref": null,
+            "rendered": "Reduce noise pollution",
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -204,9 +497,95 @@ ShallowWrapper {
             style={
               Object {
                 "flex": 1,
+                "marginTop": 30,
               }
             }
-          />,
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "marginBottom": 20,
+                }
+              }
+            >
+              You may interested in these other petitions
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                }
+              }
+            >
+              Make Poblenou a car-free zone
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                }
+              }
+            >
+              Ban diesel engines from the city
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                }
+              }
+            >
+              More street lighting for the old town
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                }
+              }
+            >
+              Reduce noise pollution
+            </Text>
+          </View>,
           <Button
             enabled={true}
             name="Back to home"
@@ -288,12 +667,211 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "children": Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                You may interested in these other petitions
+              </Text>,
+              Array [
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#00F",
+                      "fontSize": 12,
+                      "fontWeight": "bold",
+                      "marginVertical": 10,
+                      "textAlign": "left",
+                      "textDecorationLine": "underline",
+                    }
+                  }
+                >
+                  Make Poblenou a car-free zone
+                </Text>,
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#00F",
+                      "fontSize": 12,
+                      "fontWeight": "bold",
+                      "marginVertical": 10,
+                      "textAlign": "left",
+                      "textDecorationLine": "underline",
+                    }
+                  }
+                >
+                  Ban diesel engines from the city
+                </Text>,
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#00F",
+                      "fontSize": 12,
+                      "fontWeight": "bold",
+                      "marginVertical": 10,
+                      "textAlign": "left",
+                      "textDecorationLine": "underline",
+                    }
+                  }
+                >
+                  More street lighting for the old town
+                </Text>,
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  onPress={[Function]}
+                  style={
+                    Object {
+                      "color": "#00F",
+                      "fontSize": 12,
+                      "fontWeight": "bold",
+                      "marginVertical": 10,
+                      "textAlign": "left",
+                      "textDecorationLine": "underline",
+                    }
+                  }
+                >
+                  Reduce noise pollution
+                </Text>,
+              ],
+            ],
             "style": Object {
               "flex": 1,
+              "marginTop": 30,
             },
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "You may interested in these other petitions",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "marginBottom": 20,
+                },
+              },
+              "ref": null,
+              "rendered": "You may interested in these other petitions",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Make Poblenou a car-free zone",
+                "ellipsizeMode": "tail",
+                "onPress": [Function],
+                "style": Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                },
+              },
+              "ref": null,
+              "rendered": "Make Poblenou a car-free zone",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Ban diesel engines from the city",
+                "ellipsizeMode": "tail",
+                "onPress": [Function],
+                "style": Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                },
+              },
+              "ref": null,
+              "rendered": "Ban diesel engines from the city",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "More street lighting for the old town",
+                "ellipsizeMode": "tail",
+                "onPress": [Function],
+                "style": Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                },
+              },
+              "ref": null,
+              "rendered": "More street lighting for the old town",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Reduce noise pollution",
+                "ellipsizeMode": "tail",
+                "onPress": [Function],
+                "style": Object {
+                  "color": "#00F",
+                  "fontSize": 12,
+                  "fontWeight": "bold",
+                  "marginVertical": 10,
+                  "textAlign": "left",
+                  "textDecorationLine": "underline",
+                },
+              },
+              "ref": null,
+              "rendered": "Reduce noise pollution",
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -344,6 +922,14 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SignOutcome
     goToAuthorization={[Function]}
+    links={
+      Array [
+        "Make Poblenou a car-free zone",
+        "Ban diesel engines from the city",
+        "More street lighting for the old town",
+        "Reduce noise pollution",
+      ]
+    }
     petition={Object {}}
     petitionError=""
     petitionLink="http://something.com"

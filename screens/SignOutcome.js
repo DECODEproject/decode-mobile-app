@@ -11,6 +11,14 @@ import Button from '../application/components/Button/Button';
 const warningIcon = require('../assets/images/warning.png');
 const successImage = require('../assets/images/city.png');
 
+const linksStyle = {
+  textAlign: 'left',
+  color: '#00F',
+  fontSize: 12,
+  fontWeight: 'bold',
+  textDecorationLine: 'underline',
+  marginVertical: 10,
+};
 
 class SignOutcome extends React.Component {
   static route = {
@@ -25,6 +33,17 @@ class SignOutcome extends React.Component {
     Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
   }
 
+  static createLink(linkText, index) {
+    return (
+      <Text
+        key={index}
+        style={linksStyle}
+        onPress={() => { alert('End MVP'); }} // eslint-disable-line
+      >
+        {linkText}
+      </Text>);
+  }
+
   constructor(props) {
     super(props);
     this.goToHome = this.goToHome.bind(this);
@@ -35,7 +54,7 @@ class SignOutcome extends React.Component {
   }
 
   successful() {
-    console.log(this.props.signSuccess);
+    const links = this.props.links.map(SignOutcome.createLink);
 
     return (
       <View style={styles.signOutcomeContainer}>
@@ -59,9 +78,19 @@ class SignOutcome extends React.Component {
           </Text>
         </ImageOverlay>
         <View style={{
+          marginTop: 30,
           flex: 1,
         }}
-        />
+        >
+          <Text style={{
+            marginBottom: 20,
+          }}
+          >
+            You may interested in these other petitions
+          </Text>
+
+          {links}
+        </View>
         <Button
           name="Back to home"
           onPress={SignOutcome.handlePress}
@@ -115,11 +144,17 @@ SignOutcome.propTypes = {
     closingDate: PropTypes.string,
   }),
   petitionError: PropTypes.string,
+  links: PropTypes.arrayOf(PropTypes.string),
 };
 
 SignOutcome.defaultProps = {
   petition: undefined,
   petitionError: undefined,
+  links: [
+    'Make Poblenou a car-free zone',
+    'Ban diesel engines from the city',
+    'More street lighting for the old town',
+    'Reduce noise pollution'],
 };
 
 const mapStateToProps = state => ({
