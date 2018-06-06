@@ -38,3 +38,10 @@ export const initialiseWalletID = async () => {
     }
   }
 };
+
+
+export const storePinOnAppInitalization = async (setItem) => {
+  setItem('pincode', '1234');
+};
+
+export const retrievePin = async getItem => getItem('pincode');
