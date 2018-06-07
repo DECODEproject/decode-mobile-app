@@ -23,3 +23,22 @@ it('renders Home component', () => {
   );
   expect(wrapper.dive()).toMatchSnapshot();
 });
+
+describe('goToNextPage', () => {
+  it('should call goQRScannerIntro if there is no petitionLink', () => {
+    const goQRScannerIntroMock = jest.fn();
+    const wrapper = shallow(
+      <Home />,
+      { context: { store: mockStore(initialState) } },
+    );
+    const homeComponent = wrapper.dive().instance();
+    homeComponent.props = {
+      ...homeComponent.props,
+      goQRScannerIntro: goQRScannerIntroMock,
+    };
+
+    homeComponent.goToNextPage();
+
+    expect(goQRScannerIntroMock).toBeCalled();
+  });
+});
