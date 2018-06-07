@@ -5,7 +5,7 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import thunk from 'redux-thunk';
 import PetitionSummary from '../../screens/PetitionSummary';
-// import Button from '../../application/components/Button/Button';
+import Button from '../../application/components/Button/Button';
 // import { jsdom } from 'jsdom'
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -36,12 +36,8 @@ describe('signing a petition', () => {
         id: 'something',
       },
       attributes: {
-        isRequiredAttributeEnabled: true,
-        list: [],
       },
     };
-
-    store = mockStore(initialState);
   });
 
 
@@ -50,28 +46,42 @@ describe('signing a petition', () => {
     fetchMock.restore();
   });
 
-  it('should not allow me to sign if required attributes are there', () => {
-    // GIVEN a petition with X attributes
-    const newPetition = {
+  it('should not allow me to sign if required attributes are not there', () => {
+    const state = {
+      ...initialState,
+      // GIVEN a petition with X attributes
       petition: {
-        id: '2',
-        isEthereum: 'true',
+        petition: {
+          title: 'hello',
+          description: 'world',
+          closingDate: 'today',
+          id: '1234',
+          isEthereum: 'false',
+        },
+      },
+      attributes: {
+        isRequiredAttributeEnabled: false,
+        optionalAttributesToggleStatus: {
+          age: false,
+          gender: false,
+        },
+        // AND I do not have a required attribute
+        list: [],
       },
     };
 
-    fetchMock.getOnce(initialState.petitionLink.petitionLink, newPetition);
+    // fetchMock.getOnce(initialState.petitionLink.petitionLink, newPetition);
 
-    // WHEN
+    store = mockStore(state);
+
+    // WHEN I review the petition
     const wrapper = shallow(
       <PetitionSummary />,
       { context: { store } },
     );
-    console.log(wrapper);
 
-
-    // THEN
-
-    // expect(wrapper.find(Button).length).toEqual(0);
+    // THEN I am not able to sign
+    expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(false);
   });
 });
 
