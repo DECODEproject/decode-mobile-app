@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import AttributeComponent from '../../../../application/components/Attribute/Attribute';
+import AttributeComponent from '../../application/components/Attribute/Attribute';
 
 // Avoid warning related to Switch component
 // https://github.com/facebook/react-native/issues/16247

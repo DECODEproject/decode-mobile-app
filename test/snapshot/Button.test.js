@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Button from '../../../../application/components/Button/Button';
+import Button from '../../application/components/Button/Button';
 
 it('renders Button enabled', () => {
   const rendered = renderer.create(<Button enabled name="" />).toJSON();
