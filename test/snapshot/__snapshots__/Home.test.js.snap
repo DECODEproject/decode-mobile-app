@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home
+    doAuthorize={[Function]}
     goQRScannerIntro={[Function]}
     goToAuthorization={[Function]}
     initializeState={[Function]}

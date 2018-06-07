@@ -1,10 +1,12 @@
 import types from '../actionTypes';
+import { retrievePin } from '../../../LocalStorage';
 
-export default async (pin, retrievePinFn) => {
-  const storedPin = await retrievePinFn();
 
-  return {
-    type: types.AUTHORIZATION_ACTION,
-    pinCorrect: pin === storedPin,
-  };
-};
+export default (pin, secureStoreGetItem) =>
+  dispatch =>
+    retrievePin(secureStoreGetItem).then(storedPin =>
+      dispatch({
+        type: types.AUTHORIZATION_ACTION,
+        pinCorrect: pin === storedPin,
+      }));
+

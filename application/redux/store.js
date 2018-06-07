@@ -8,6 +8,7 @@ import petition from './reducers/petition';
 import signOutcome from './reducers/signOutcome';
 import wallet from './reducers/wallet';
 import attributes from './reducers/attributes';
+import authorization from './reducers/authorization';
 
 const enhancer = compose(
   applyMiddleware(thunk),
@@ -31,6 +32,7 @@ const Store = createStoreWithNavigation(combineReducers({
   signOutcome,
   wallet,
   attributes,
+  authorization,
 }));
 
 export default Store;

@@ -7,8 +7,10 @@ import { goQRScannerIntro, goToAuthorization } from '../application/redux/action
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
-import Button from '../application/components/Button/Button';
+import authorizationAction from '../application/redux/actions/authorization';
 import { storePinOnAppInitalization } from '../LocalStorage';
+import Button from '../application/components/Button/Button';
+
 
 import styles from './styles';
 
@@ -25,6 +27,7 @@ class Home extends React.Component {
   }
 
   goToNextPage() {
+    this.props.doAuthorize();
     if (this.props.petitionLink) {
       this.props.goToAuthorization(this.props.petitionLink);
     } else {
@@ -58,6 +61,7 @@ Home.propTypes = {
   goQRScannerIntro: PropTypes.func.isRequired,
   goToAuthorization: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
+  doAuthorize: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
 };
 
@@ -72,6 +76,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
   goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
+  doAuthorize: (pin) => { dispatch(authorizationAction(pin, SecureStore.getItemAsync)); },
   initializeState: async () => {
     await dispatch(onStartApp());
     await dispatch(getWalletId());
