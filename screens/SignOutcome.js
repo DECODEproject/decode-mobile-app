@@ -14,7 +14,7 @@ const successImage = require('../assets/images/city.png');
 const linksStyle = {
   textAlign: 'left',
   color: '#00F',
-  fontSize: 12,
+  fontSize: 16,
   fontWeight: 'bold',
   textDecorationLine: 'underline',
   marginVertical: 10,
@@ -84,6 +84,7 @@ class SignOutcome extends React.Component {
         >
           <Text style={{
             marginBottom: 20,
+            fontSize: 16,
           }}
           >
             You may interested in these other petitions
@@ -92,12 +93,13 @@ class SignOutcome extends React.Component {
           {links}
         </View>
         <Button
-          name="Back to home"
+          name="Back to Decidim"
           onPress={SignOutcome.handlePress}
           style={{
             flex: 0,
             width: 200,
             alignSelf: 'center',
+            marginBottom: 80,
           }}
         />
       </View>
@@ -106,7 +108,7 @@ class SignOutcome extends React.Component {
 
   error() {
     const textSubHeading = 'Sign failed for';
-    const signOutcomeText = `Reason: ${this.props.petitionError} \n\nYou can return to view other petitions on the Secure Petitions website`;
+    const signOutcomeText = `${this.props.petitionError} \n\nYou can return to the Decidim site to view other active petitions.`;
 
     return (
       <View style={styles.signOutcomeContainer}>

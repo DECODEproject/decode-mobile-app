@@ -18,7 +18,7 @@ const button = {
 
 const buttonText = {
   alignSelf: 'center',
-  fontSize: 14,
+  fontSize: 16,
 
   fontWeight: '500',
 };
