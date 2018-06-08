@@ -88,7 +88,7 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
         Object {
           "alignSelf": "center",
           "color": "#FFF",
-          "fontSize": 14,
+          "fontSize": 16,
           "fontWeight": "500",
         }
       }

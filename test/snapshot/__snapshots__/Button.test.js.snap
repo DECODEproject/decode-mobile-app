@@ -50,7 +50,7 @@ exports[`renders Button disabled 1`] = `
       Object {
         "alignSelf": "center",
         "color": "rgba(255, 255, 255, 0.6)",
-        "fontSize": 14,
+        "fontSize": 16,
         "fontWeight": "500",
       }
     }
@@ -110,7 +110,7 @@ exports[`renders Button enabled 1`] = `
       Object {
         "alignSelf": "center",
         "color": "#FFF",
-        "fontSize": 14,
+        "fontSize": 16,
         "fontWeight": "500",
       }
     }
@@ -170,7 +170,7 @@ exports[`renders Button with correct name 1`] = `
       Object {
         "alignSelf": "center",
         "color": "#FFF",
-        "fontSize": 14,
+        "fontSize": 16,
         "fontWeight": "500",
       }
     }
