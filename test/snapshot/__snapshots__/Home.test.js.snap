@@ -10,6 +10,7 @@ ShallowWrapper {
     goToAuthorization={[Function]}
     initializeState={[Function]}
     petitionLink={undefined}
+    updatePin={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -59,6 +60,7 @@ ShallowWrapper {
         >
           <TextInput
             allowFontScaling={true}
+            onChangeText={[Function]}
             placeholder="Password"
             secureTextEntry={true}
             style={
@@ -127,6 +129,7 @@ ShallowWrapper {
         "props": Object {
           "children": <TextInput
             allowFontScaling={true}
+            onChangeText={[Function]}
             placeholder="Password"
             secureTextEntry={true}
             style={
@@ -150,6 +153,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "allowFontScaling": true,
+            "onChangeText": [Function],
             "placeholder": "Password",
             "secureTextEntry": true,
             "style": Object {
@@ -223,6 +227,7 @@ ShallowWrapper {
           >
             <TextInput
               allowFontScaling={true}
+              onChangeText={[Function]}
               placeholder="Password"
               secureTextEntry={true}
               style={
@@ -291,6 +296,7 @@ ShallowWrapper {
           "props": Object {
             "children": <TextInput
               allowFontScaling={true}
+              onChangeText={[Function]}
               placeholder="Password"
               secureTextEntry={true}
               style={
@@ -314,6 +320,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "allowFontScaling": true,
+              "onChangeText": [Function],
               "placeholder": "Password",
               "secureTextEntry": true,
               "style": Object {

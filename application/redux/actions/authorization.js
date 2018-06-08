@@ -10,3 +10,9 @@ export default (pin, secureStoreGetItem) =>
         pinCorrect: pin === storedPin,
       }));
 
+export function updatePin(pin) {
+  return dispatch => dispatch({
+    type: types.UPDATE_PIN_ACTION,
+    pin,
+  });
+}

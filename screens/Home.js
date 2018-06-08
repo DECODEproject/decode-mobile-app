@@ -7,7 +7,7 @@ import { goQRScannerIntro, goToAuthorization } from '../application/redux/action
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
-import authorizationAction from '../application/redux/actions/authorization';
+import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
 import { storePinOnAppInitalization } from '../LocalStorage';
 import Button from '../application/components/Button/Button';
 
@@ -49,6 +49,7 @@ class Home extends React.Component {
             placeholder="Password"
             secureTextEntry
             underlineColorAndroid="rgb(0,163,158)"
+            onChangeText={pin => this.props.updatePin({ pin })}
           />
         </View>
         <Button name="LOG IN" onPress={this.goToNextPage} />
@@ -62,6 +63,7 @@ Home.propTypes = {
   goToAuthorization: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
   doAuthorize: PropTypes.func.isRequired,
+  updatePin: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
 };
 
@@ -77,6 +79,7 @@ const mapDispatchToProps = dispatch => ({
   goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
   goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
   doAuthorize: (pin) => { dispatch(authorizationAction(pin, SecureStore.getItemAsync)); },
+  updatePin: (pin) => { dispatch(updatePin(pin)); },
   initializeState: async () => {
     await dispatch(onStartApp());
     await dispatch(getWalletId());
