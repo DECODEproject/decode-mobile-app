@@ -13,6 +13,7 @@ const initialState = {
   petitionLink: {
     petitionLink: undefined,
   },
+  authorization: {},
 };
 
 

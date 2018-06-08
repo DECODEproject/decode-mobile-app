@@ -2,7 +2,7 @@ import types from '../actionTypes';
 
 const initialState = {
   authorized: false,
-  pin: undefined,
+  pin: '',
 };
 
 export default (state = initialState, action) => {

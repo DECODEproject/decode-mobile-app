@@ -10,6 +10,7 @@ ShallowWrapper {
     goToAuthorization={[Function]}
     initializeState={[Function]}
     petitionLink={undefined}
+    pinCode=""
     updatePin={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -70,6 +71,7 @@ ShallowWrapper {
               }
             }
             underlineColorAndroid="rgb(0,163,158)"
+            value=""
           />
         </View>,
         <Button
@@ -139,6 +141,7 @@ ShallowWrapper {
               }
             }
             underlineColorAndroid="rgb(0,163,158)"
+            value=""
           />,
           "style": Object {
             "borderBottomWidth": 1,
@@ -161,6 +164,7 @@ ShallowWrapper {
               "width": 300,
             },
             "underlineColorAndroid": "rgb(0,163,158)",
+            "value": "",
           },
           "ref": null,
           "rendered": null,
@@ -237,6 +241,7 @@ ShallowWrapper {
                 }
               }
               underlineColorAndroid="rgb(0,163,158)"
+              value=""
             />
           </View>,
           <Button
@@ -306,6 +311,7 @@ ShallowWrapper {
                 }
               }
               underlineColorAndroid="rgb(0,163,158)"
+              value=""
             />,
             "style": Object {
               "borderBottomWidth": 1,
@@ -328,6 +334,7 @@ ShallowWrapper {
                 "width": 300,
               },
               "underlineColorAndroid": "rgb(0,163,158)",
+              "value": "",
             },
             "ref": null,
             "rendered": null,

@@ -50,6 +50,7 @@ class Home extends React.Component {
             secureTextEntry
             underlineColorAndroid="rgb(0,163,158)"
             onChangeText={pin => this.props.updatePin({ pin })}
+            value={this.props.pinCode}
           />
         </View>
         <Button name="LOG IN" onPress={this.goToNextPage} />
@@ -65,14 +66,17 @@ Home.propTypes = {
   doAuthorize: PropTypes.func.isRequired,
   updatePin: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
+  pinCode: PropTypes.string,
 };
 
 Home.defaultProps = {
   petitionLink: undefined,
+  pinCode: '',
 };
 
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
+  pinCode: state.authorization.pin,
 });
 
 const mapDispatchToProps = dispatch => ({

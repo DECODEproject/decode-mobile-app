@@ -15,6 +15,7 @@ describe('goToNextPage', () => {
       petitionLink: {
         petitionLink: undefined,
       },
+      authorization: {},
     };
 
     const goQRScannerIntroMock = jest.fn();
@@ -40,6 +41,7 @@ describe('goToNextPage', () => {
       petitionLink: {
         petitionLink: somePetitionLink,
       },
+      authorization: {},
     };
 
     const wrapper = shallow(

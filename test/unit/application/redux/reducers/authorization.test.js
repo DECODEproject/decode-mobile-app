@@ -3,7 +3,7 @@ import types from '../../../../../application/redux/actionTypes';
 
 describe('authorize', () => {
   it('should set authorized state to false and pin undefined by default', () => {
-    const expectedState = { authorized: false, pin: undefined };
+    const expectedState = { authorized: false, pin: '' };
 
     const actualState = authorize(undefined, {});
 
