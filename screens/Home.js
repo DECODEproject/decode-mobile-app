@@ -27,12 +27,17 @@ class Home extends React.Component {
   }
 
   goToNextPage() {
-    this.props.doAuthorize();
-    if (this.props.petitionLink) {
-      this.props.goToAuthorization(this.props.petitionLink);
-    } else {
-      this.props.goQRScannerIntro();
-    }
+    return this.props.doAuthorize(this.props.pinCode).then((action) => {
+      if (action.pinCorrect) {
+        if (this.props.petitionLink) {
+          this.props.goToAuthorization(this.props.petitionLink);
+        } else {
+          this.props.goQRScannerIntro();
+        }
+      } else {
+        alert('Incorrect pin code'); // eslint-disable-line
+      }
+    });
   }
 
   render() {
@@ -49,7 +54,7 @@ class Home extends React.Component {
             placeholder="Password"
             secureTextEntry
             underlineColorAndroid="rgb(0,163,158)"
-            onChangeText={pin => this.props.updatePin({ pin })}
+            onChangeText={pin => this.props.updatePin(pin)}
             value={this.props.pinCode}
           />
         </View>
@@ -82,7 +87,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
   goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
-  doAuthorize: (pin) => { dispatch(authorizationAction(pin, SecureStore.getItemAsync)); },
+  doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: (pin) => { dispatch(updatePin(pin)); },
   initializeState: async () => {
     await dispatch(onStartApp());
