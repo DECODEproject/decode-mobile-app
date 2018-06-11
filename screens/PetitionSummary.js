@@ -10,12 +10,11 @@ import { addCredential, bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttribu
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
+import getWalletProxyUrl from '../config';
 import styles from './styles';
 
 
-const config = require('../config.json');
-
-const walletProxyLink = config.development.walletProxy;
+const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 
 class PetitionSummary extends React.Component {
   static route = {

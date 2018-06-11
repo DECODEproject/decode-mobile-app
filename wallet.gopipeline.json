@@ -97,10 +97,11 @@
               "type": "exec",
               "run_if": "passed",
               "on_cancel" : null,
-              "command": "npm",
+              "command": "exp",
               "arguments": [
-                "run",
-                "publish"
+                "publish",
+                "--release-channel",
+                "production"
               ],
               "working_directory": "apps/wallet"
             }
