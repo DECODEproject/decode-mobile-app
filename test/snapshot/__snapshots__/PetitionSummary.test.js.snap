@@ -164,18 +164,34 @@ ShallowWrapper {
             />
           </View>
         </ScrollViewMock>,
-        <Button
-          enabled={true}
-          name="Yes"
-          onPress={[Function]}
-          style={Object {}}
-        />,
-        <Button
-          enabled={true}
-          name="No"
-          onPress={[Function]}
-          style={Object {}}
-        />,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Button
+            enabled={true}
+            name="Yes"
+            onPress={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <Button
+            enabled={true}
+            name="No"
+            onPress={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+        </View>,
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -570,29 +586,69 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
-          "enabled": true,
-          "name": "Yes",
-          "onPress": [Function],
-          "style": Object {},
+          "children": Array [
+            <Button
+              enabled={true}
+              name="Yes"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />,
+            <Button
+              enabled={true}
+              name="No"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />,
+          ],
+          "style": Object {
+            "flexDirection": "row",
+          },
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "enabled": true,
-          "name": "No",
-          "onPress": [Function],
-          "style": Object {},
-        },
-        "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "enabled": true,
+              "name": "Yes",
+              "onPress": [Function],
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "enabled": true,
+              "name": "No",
+              "onPress": [Function],
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -731,18 +787,34 @@ ShallowWrapper {
               />
             </View>
           </ScrollViewMock>,
-          <Button
-            enabled={true}
-            name="Yes"
-            onPress={[Function]}
-            style={Object {}}
-          />,
-          <Button
-            enabled={true}
-            name="No"
-            onPress={[Function]}
-            style={Object {}}
-          />,
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Button
+              enabled={true}
+              name="Yes"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+            <Button
+              enabled={true}
+              name="No"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+          </View>,
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -1137,29 +1209,69 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
-            "enabled": true,
-            "name": "Yes",
-            "onPress": [Function],
-            "style": Object {},
+            "children": Array [
+              <Button
+                enabled={true}
+                name="Yes"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />,
+              <Button
+                enabled={true}
+                name="No"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />,
+            ],
+            "style": Object {
+              "flexDirection": "row",
+            },
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "enabled": true,
-            "name": "No",
-            "onPress": [Function],
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "enabled": true,
+                "name": "Yes",
+                "onPress": [Function],
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "enabled": true,
+                "name": "No",
+                "onPress": [Function],
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
@@ -1362,18 +1474,34 @@ ShallowWrapper {
             />
           </View>
         </ScrollViewMock>,
-        <Button
-          enabled={false}
-          name="Yes"
-          onPress={[Function]}
-          style={Object {}}
-        />,
-        <Button
-          enabled={false}
-          name="No"
-          onPress={[Function]}
-          style={Object {}}
-        />,
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Button
+            enabled={false}
+            name="Yes"
+            onPress={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+          <Button
+            enabled={false}
+            name="No"
+            onPress={[Function]}
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+        </View>,
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -1768,29 +1896,69 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
-          "enabled": false,
-          "name": "Yes",
-          "onPress": [Function],
-          "style": Object {},
+          "children": Array [
+            <Button
+              enabled={false}
+              name="Yes"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />,
+            <Button
+              enabled={false}
+              name="No"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />,
+          ],
+          "style": Object {
+            "flexDirection": "row",
+          },
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "enabled": false,
-          "name": "No",
-          "onPress": [Function],
-          "style": Object {},
-        },
-        "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "enabled": false,
+              "name": "Yes",
+              "onPress": [Function],
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "enabled": false,
+              "name": "No",
+              "onPress": [Function],
+              "style": Object {
+                "flex": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       Object {
@@ -1929,18 +2097,34 @@ ShallowWrapper {
               />
             </View>
           </ScrollViewMock>,
-          <Button
-            enabled={false}
-            name="Yes"
-            onPress={[Function]}
-            style={Object {}}
-          />,
-          <Button
-            enabled={false}
-            name="No"
-            onPress={[Function]}
-            style={Object {}}
-          />,
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Button
+              enabled={false}
+              name="Yes"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+            <Button
+              enabled={false}
+              name="No"
+              onPress={[Function]}
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            />
+          </View>,
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -2335,29 +2519,69 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
-            "enabled": false,
-            "name": "Yes",
-            "onPress": [Function],
-            "style": Object {},
+            "children": Array [
+              <Button
+                enabled={false}
+                name="Yes"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />,
+              <Button
+                enabled={false}
+                name="No"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              />,
+            ],
+            "style": Object {
+              "flexDirection": "row",
+            },
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "enabled": false,
-            "name": "No",
-            "onPress": [Function],
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "enabled": false,
+                "name": "Yes",
+                "onPress": [Function],
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "enabled": false,
+                "name": "No",
+                "onPress": [Function],
+                "style": Object {
+                  "flex": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {

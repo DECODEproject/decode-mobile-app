@@ -137,16 +137,24 @@ class PetitionSummary extends React.Component {
           </View>
           { this.props.petition && petitionAttributes }
         </ScrollView>
-        <Button
-          enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
-          onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
-          name="Yes"
-        />
-        <Button
-          enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
-          onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
-          name="No"
-        />
+        <View style={{ flexDirection: 'row' }}>
+          <Button
+            enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
+            onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
+            name="Yes"
+            style={{
+              flex: 1,
+            }}
+          />
+          <Button
+            enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
+            onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
+            name="No"
+            style={{
+              flex: 1,
+            }}
+          />
+        </View>
         <Text
           style={styles.cancelSigningPetition}
           onPress={this.openPetitionInBrowser}
