@@ -7,7 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Home
     doAuthorize={[Function]}
     goQRScannerIntro={[Function]}
-    goToAuthorization={[Function]}
+    goToPetitionSummary={[Function]}
     initializeState={[Function]}
     petitionLink={undefined}
     pinCode=""

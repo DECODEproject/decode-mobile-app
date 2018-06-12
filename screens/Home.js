@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Image, Text, TextInput, View } from 'react-native';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
-import { goQRScannerIntro, goToAuthorization } from '../application/redux/actions/navigation';
+import { goQRScannerIntro, goToPetitionSummary } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
@@ -30,7 +30,7 @@ class Home extends React.Component {
     return this.props.doAuthorize(this.props.pinCode).then((action) => {
       if (action.pinCorrect) {
         if (this.props.petitionLink) {
-          this.props.goToAuthorization(this.props.petitionLink);
+          this.props.goToPetitionSummary(this.props.petitionLink);
         } else {
           this.props.goQRScannerIntro();
         }
@@ -66,7 +66,7 @@ class Home extends React.Component {
 
 Home.propTypes = {
   goQRScannerIntro: PropTypes.func.isRequired,
-  goToAuthorization: PropTypes.func.isRequired,
+  goToPetitionSummary: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
   doAuthorize: PropTypes.func.isRequired,
   updatePin: PropTypes.func.isRequired,
@@ -86,7 +86,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
-  goToAuthorization: (petitionLink) => { dispatch(goToAuthorization(petitionLink)); },
+  goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: (pin) => { dispatch(updatePin(pin)); },
   initializeState: async () => {
