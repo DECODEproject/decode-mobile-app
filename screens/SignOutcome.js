@@ -87,7 +87,7 @@ class SignOutcome extends React.Component {
             fontSize: 16,
           }}
           >
-            You may interested in these other petitions
+            You may be interested in these other petitions
           </Text>
 
           {links}
@@ -96,10 +96,8 @@ class SignOutcome extends React.Component {
           name="Back to Decidim"
           onPress={SignOutcome.handlePress}
           style={{
-            flex: 0,
             width: 200,
             alignSelf: 'center',
-            marginBottom: 80,
           }}
         />
       </View>
@@ -154,8 +152,6 @@ SignOutcome.defaultProps = {
   petitionError: undefined,
   links: [
     'Make Poblenou a car-free zone',
-    'Ban diesel engines from the city',
-    'More street lighting for the old town',
     'Reduce noise pollution'],
 };
 
