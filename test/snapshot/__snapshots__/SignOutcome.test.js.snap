@@ -9,8 +9,6 @@ ShallowWrapper {
     links={
       Array [
         "Make Poblenou a car-free zone",
-        "Ban diesel engines from the city",
-        "More street lighting for the old town",
         "Reduce noise pollution",
       ]
     }
@@ -77,7 +75,7 @@ ShallowWrapper {
               }
             }
           >
-            You may interested in these other petitions
+            You may be interested in these other petitions
           </Text>
           <Text
             accessible={true}
@@ -113,42 +111,6 @@ ShallowWrapper {
               }
             }
           >
-            Ban diesel engines from the city
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            onPress={[Function]}
-            style={
-              Object {
-                "color": "#00F",
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "marginVertical": 10,
-                "textAlign": "left",
-                "textDecorationLine": "underline",
-              }
-            }
-          >
-            More street lighting for the old town
-          </Text>
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            onPress={[Function]}
-            style={
-              Object {
-                "color": "#00F",
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "marginVertical": 10,
-                "textAlign": "left",
-                "textDecorationLine": "underline",
-              }
-            }
-          >
             Reduce noise pollution
           </Text>
         </View>,
@@ -159,8 +121,6 @@ ShallowWrapper {
           style={
             Object {
               "alignSelf": "center",
-              "flex": 0,
-              "marginBottom": 80,
               "width": 200,
             }
           }
@@ -246,7 +206,7 @@ ShallowWrapper {
                 }
               }
             >
-              You may interested in these other petitions
+              You may be interested in these other petitions
             </Text>,
             Array [
               <Text
@@ -283,42 +243,6 @@ ShallowWrapper {
                   }
                 }
               >
-                Ban diesel engines from the city
-              </Text>,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                onPress={[Function]}
-                style={
-                  Object {
-                    "color": "#00F",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                    "marginVertical": 10,
-                    "textAlign": "left",
-                    "textDecorationLine": "underline",
-                  }
-                }
-              >
-                More street lighting for the old town
-              </Text>,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                onPress={[Function]}
-                style={
-                  Object {
-                    "color": "#00F",
-                    "fontSize": 16,
-                    "fontWeight": "bold",
-                    "marginVertical": 10,
-                    "textAlign": "left",
-                    "textDecorationLine": "underline",
-                  }
-                }
-              >
                 Reduce noise pollution
               </Text>,
             ],
@@ -337,7 +261,7 @@ ShallowWrapper {
             "props": Object {
               "accessible": true,
               "allowFontScaling": true,
-              "children": "You may interested in these other petitions",
+              "children": "You may be interested in these other petitions",
               "ellipsizeMode": "tail",
               "style": Object {
                 "fontSize": 16,
@@ -345,7 +269,7 @@ ShallowWrapper {
               },
             },
             "ref": null,
-            "rendered": "You may interested in these other petitions",
+            "rendered": "You may be interested in these other petitions",
             "type": [Function],
           },
           Object {
@@ -374,52 +298,6 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": "1",
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "Ban diesel engines from the city",
-              "ellipsizeMode": "tail",
-              "onPress": [Function],
-              "style": Object {
-                "color": "#00F",
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "marginVertical": 10,
-                "textAlign": "left",
-                "textDecorationLine": "underline",
-              },
-            },
-            "ref": null,
-            "rendered": "Ban diesel engines from the city",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "2",
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "More street lighting for the old town",
-              "ellipsizeMode": "tail",
-              "onPress": [Function],
-              "style": Object {
-                "color": "#00F",
-                "fontSize": 16,
-                "fontWeight": "bold",
-                "marginVertical": 10,
-                "textAlign": "left",
-                "textDecorationLine": "underline",
-              },
-            },
-            "ref": null,
-            "rendered": "More street lighting for the old town",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "3",
             "nodeType": "class",
             "props": Object {
               "accessible": true,
@@ -453,8 +331,6 @@ ShallowWrapper {
           "onPress": [Function],
           "style": Object {
             "alignSelf": "center",
-            "flex": 0,
-            "marginBottom": 80,
             "width": 200,
           },
         },
@@ -517,7 +393,7 @@ ShallowWrapper {
                 }
               }
             >
-              You may interested in these other petitions
+              You may be interested in these other petitions
             </Text>
             <Text
               accessible={true}
@@ -553,42 +429,6 @@ ShallowWrapper {
                 }
               }
             >
-              Ban diesel engines from the city
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              onPress={[Function]}
-              style={
-                Object {
-                  "color": "#00F",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "marginVertical": 10,
-                  "textAlign": "left",
-                  "textDecorationLine": "underline",
-                }
-              }
-            >
-              More street lighting for the old town
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              onPress={[Function]}
-              style={
-                Object {
-                  "color": "#00F",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "marginVertical": 10,
-                  "textAlign": "left",
-                  "textDecorationLine": "underline",
-                }
-              }
-            >
               Reduce noise pollution
             </Text>
           </View>,
@@ -599,8 +439,6 @@ ShallowWrapper {
             style={
               Object {
                 "alignSelf": "center",
-                "flex": 0,
-                "marginBottom": 80,
                 "width": 200,
               }
             }
@@ -686,7 +524,7 @@ ShallowWrapper {
                   }
                 }
               >
-                You may interested in these other petitions
+                You may be interested in these other petitions
               </Text>,
               Array [
                 <Text
@@ -723,42 +561,6 @@ ShallowWrapper {
                     }
                   }
                 >
-                  Ban diesel engines from the city
-                </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#00F",
-                      "fontSize": 16,
-                      "fontWeight": "bold",
-                      "marginVertical": 10,
-                      "textAlign": "left",
-                      "textDecorationLine": "underline",
-                    }
-                  }
-                >
-                  More street lighting for the old town
-                </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  onPress={[Function]}
-                  style={
-                    Object {
-                      "color": "#00F",
-                      "fontSize": 16,
-                      "fontWeight": "bold",
-                      "marginVertical": 10,
-                      "textAlign": "left",
-                      "textDecorationLine": "underline",
-                    }
-                  }
-                >
                   Reduce noise pollution
                 </Text>,
               ],
@@ -777,7 +579,7 @@ ShallowWrapper {
               "props": Object {
                 "accessible": true,
                 "allowFontScaling": true,
-                "children": "You may interested in these other petitions",
+                "children": "You may be interested in these other petitions",
                 "ellipsizeMode": "tail",
                 "style": Object {
                   "fontSize": 16,
@@ -785,7 +587,7 @@ ShallowWrapper {
                 },
               },
               "ref": null,
-              "rendered": "You may interested in these other petitions",
+              "rendered": "You may be interested in these other petitions",
               "type": [Function],
             },
             Object {
@@ -814,52 +616,6 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": "1",
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "Ban diesel engines from the city",
-                "ellipsizeMode": "tail",
-                "onPress": [Function],
-                "style": Object {
-                  "color": "#00F",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "marginVertical": 10,
-                  "textAlign": "left",
-                  "textDecorationLine": "underline",
-                },
-              },
-              "ref": null,
-              "rendered": "Ban diesel engines from the city",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "2",
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "More street lighting for the old town",
-                "ellipsizeMode": "tail",
-                "onPress": [Function],
-                "style": Object {
-                  "color": "#00F",
-                  "fontSize": 16,
-                  "fontWeight": "bold",
-                  "marginVertical": 10,
-                  "textAlign": "left",
-                  "textDecorationLine": "underline",
-                },
-              },
-              "ref": null,
-              "rendered": "More street lighting for the old town",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "3",
               "nodeType": "class",
               "props": Object {
                 "accessible": true,
@@ -893,8 +649,6 @@ ShallowWrapper {
             "onPress": [Function],
             "style": Object {
               "alignSelf": "center",
-              "flex": 0,
-              "marginBottom": 80,
               "width": 200,
             },
           },
@@ -935,8 +689,6 @@ ShallowWrapper {
     links={
       Array [
         "Make Poblenou a car-free zone",
-        "Ban diesel engines from the city",
-        "More street lighting for the old town",
         "Reduce noise pollution",
       ]
     }
