@@ -129,14 +129,6 @@ ShallowWrapper {
               allowFontScaling={true}
               ellipsizeMode="tail"
             >
-              wallet proxy link : 
-              http://localhost:5010
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
               This information is anonymised - Decidim will not receive any personally identifying data.
             </Text>
             <Attribute
@@ -284,14 +276,6 @@ ShallowWrapper {
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                wallet proxy link : 
-                http://localhost:5010
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
@@ -418,14 +402,6 @@ ShallowWrapper {
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  wallet proxy link : 
-                  http://localhost:5010
-                </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>,
                 <Attribute
@@ -507,26 +483,6 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": Array [
-                    "wallet proxy link : ",
-                    "http://localhost:5010",
-                  ],
-                  "ellipsizeMode": "tail",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "wallet proxy link : ",
-                  "http://localhost:5010",
-                ],
                 "type": [Function],
               },
               Object {
@@ -740,14 +696,6 @@ ShallowWrapper {
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                wallet proxy link : 
-                http://localhost:5010
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
@@ -895,14 +843,6 @@ ShallowWrapper {
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  wallet proxy link : 
-                  http://localhost:5010
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>
                 <Attribute
@@ -1029,14 +969,6 @@ ShallowWrapper {
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    wallet proxy link : 
-                    http://localhost:5010
-                  </Text>,
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
                     This information is anonymised - Decidim will not receive any personally identifying data.
                   </Text>,
                   <Attribute
@@ -1118,26 +1050,6 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": Array [
-                      "wallet proxy link : ",
-                      "http://localhost:5010",
-                    ],
-                    "ellipsizeMode": "tail",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "wallet proxy link : ",
-                    "http://localhost:5010",
-                  ],
                   "type": [Function],
                 },
                 Object {
@@ -1415,14 +1327,6 @@ ShallowWrapper {
               allowFontScaling={true}
               ellipsizeMode="tail"
             >
-              wallet proxy link : 
-              http://localhost:5010
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
               This information is anonymised - Decidim will not receive any personally identifying data.
             </Text>
             <Attribute
@@ -1570,14 +1474,6 @@ ShallowWrapper {
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                wallet proxy link : 
-                http://localhost:5010
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
@@ -1704,14 +1600,6 @@ ShallowWrapper {
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  wallet proxy link : 
-                  http://localhost:5010
-                </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>,
                 <Attribute
@@ -1793,26 +1681,6 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": Array [
-                    "wallet proxy link : ",
-                    "http://localhost:5010",
-                  ],
-                  "ellipsizeMode": "tail",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "wallet proxy link : ",
-                  "http://localhost:5010",
-                ],
                 "type": [Function],
               },
               Object {
@@ -2026,14 +1894,6 @@ ShallowWrapper {
                 allowFontScaling={true}
                 ellipsizeMode="tail"
               >
-                wallet proxy link : 
-                http://localhost:5010
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
@@ -2181,14 +2041,6 @@ ShallowWrapper {
                   allowFontScaling={true}
                   ellipsizeMode="tail"
                 >
-                  wallet proxy link : 
-                  http://localhost:5010
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>
                 <Attribute
@@ -2315,14 +2167,6 @@ ShallowWrapper {
                     allowFontScaling={true}
                     ellipsizeMode="tail"
                   >
-                    wallet proxy link : 
-                    http://localhost:5010
-                  </Text>,
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
                     This information is anonymised - Decidim will not receive any personally identifying data.
                   </Text>,
                   <Attribute
@@ -2404,26 +2248,6 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "To sign this petition you must consent to sharing the following with Decidim.",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": Array [
-                      "wallet proxy link : ",
-                      "http://localhost:5010",
-                    ],
-                    "ellipsizeMode": "tail",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "wallet proxy link : ",
-                    "http://localhost:5010",
-                  ],
                   "type": [Function],
                 },
                 Object {

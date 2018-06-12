@@ -92,7 +92,6 @@ class PetitionSummary extends React.Component {
         <Text style={styles.petitionDescription}>
           To sign this petition you must consent to sharing the following with Decidim.
         </Text>
-        <Text>wallet proxy link : {walletProxyLink}</Text>
         <Text>
           This information is anonymised - Decidim will not receive any personally identifying data.
         </Text>
