@@ -71,10 +71,6 @@ const styles = StyleSheet.create({
     borderColor: TURQUOISE,
     marginBottom: 20,
   },
-  homeWelcomeMessage: {
-    fontSize: 18,
-    marginBottom: 30,
-  },
   petitionDescription: {
     color: 'rgba(0, 0, 0, 0.87)',
     fontSize: 14,

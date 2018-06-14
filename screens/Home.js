@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Image, Text, TextInput, View } from 'react-native';
+import { Image, TextInput, View } from 'react-native';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
 import { goQRScannerIntro, goToPetitionSummary } from '../application/redux/actions/navigation';
@@ -47,7 +47,6 @@ class Home extends React.Component {
           style={styles.homeLogo}
           source={decodeLogo}
         />
-        <Text style={styles.homeWelcomeMessage}>Welcome, Jane Doe</Text>
         <View style={styles.homeTextInput}>
           <TextInput
             style={styles.homePassword}
