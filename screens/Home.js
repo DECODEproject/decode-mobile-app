@@ -14,7 +14,7 @@ import Button from '../application/components/Button/Button';
 
 import styles from './styles';
 
-const decodeLogo = require('../assets/images/decode_logo.jpg');
+const decodeLogo = require('../assets/images/decode-hexagon.png');
 
 class Home extends React.Component {
   constructor(props) {
@@ -46,11 +46,11 @@ class Home extends React.Component {
         <Image
           style={styles.homeLogo}
           source={decodeLogo}
+          resizeMode="center"
         />
         <View style={styles.homeTextInput}>
           <TextInput
             style={styles.homePassword}
-            placeholder="Password"
             secureTextEntry
             underlineColorAndroid="rgb(0,163,158)"
             onChangeText={pin => this.props.updatePin(pin)}

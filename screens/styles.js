@@ -57,10 +57,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   homeLogo: {
-    height: 150,
-    marginTop: 75,
-    marginBottom: 50,
-    width: 300,
+    marginTop: 30,
+    flex: 2,
   },
   homePassword: {
     height: Platform.OS === 'ios' ? 30 : 40,
@@ -70,6 +68,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
     borderColor: TURQUOISE,
     marginBottom: 20,
+    flex: 1,
   },
   petitionDescription: {
     color: 'rgba(0, 0, 0, 0.87)',

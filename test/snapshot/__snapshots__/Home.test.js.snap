@@ -27,34 +27,21 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Image
+          resizeMode="center"
           source={1}
           style={
             Object {
-              "height": 150,
-              "marginBottom": 50,
-              "marginTop": 75,
-              "width": 300,
+              "flex": 2,
+              "marginTop": 30,
             }
           }
         />,
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "fontSize": 18,
-              "marginBottom": 30,
-            }
-          }
-        >
-          Welcome, Jane Doe
-        </Text>,
         <View
           style={
             Object {
               "borderBottomWidth": 1,
               "borderColor": "rgb(73,162,153)",
+              "flex": 1,
               "marginBottom": 20,
             }
           }
@@ -62,7 +49,6 @@ ShallowWrapper {
           <TextInput
             allowFontScaling={true}
             onChangeText={[Function]}
-            placeholder="Password"
             secureTextEntry={true}
             style={
               Object {
@@ -94,12 +80,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "resizeMode": "center",
           "source": 1,
           "style": Object {
-            "height": 150,
-            "marginBottom": 50,
-            "marginTop": 75,
-            "width": 300,
+            "flex": 2,
+            "marginTop": 30,
           },
         },
         "ref": null,
@@ -111,28 +96,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
-          "children": "Welcome, Jane Doe",
-          "ellipsizeMode": "tail",
-          "style": Object {
-            "fontSize": 18,
-            "marginBottom": 30,
-          },
-        },
-        "ref": null,
-        "rendered": "Welcome, Jane Doe",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
           "children": <TextInput
             allowFontScaling={true}
             onChangeText={[Function]}
-            placeholder="Password"
             secureTextEntry={true}
             style={
               Object {
@@ -146,6 +112,7 @@ ShallowWrapper {
           "style": Object {
             "borderBottomWidth": 1,
             "borderColor": "rgb(73,162,153)",
+            "flex": 1,
             "marginBottom": 20,
           },
         },
@@ -157,7 +124,6 @@ ShallowWrapper {
           "props": Object {
             "allowFontScaling": true,
             "onChangeText": [Function],
-            "placeholder": "Password",
             "secureTextEntry": true,
             "style": Object {
               "height": 30,
@@ -197,34 +163,21 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Image
+            resizeMode="center"
             source={1}
             style={
               Object {
-                "height": 150,
-                "marginBottom": 50,
-                "marginTop": 75,
-                "width": 300,
+                "flex": 2,
+                "marginTop": 30,
               }
             }
           />,
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "fontSize": 18,
-                "marginBottom": 30,
-              }
-            }
-          >
-            Welcome, Jane Doe
-          </Text>,
           <View
             style={
               Object {
                 "borderBottomWidth": 1,
                 "borderColor": "rgb(73,162,153)",
+                "flex": 1,
                 "marginBottom": 20,
               }
             }
@@ -232,7 +185,6 @@ ShallowWrapper {
             <TextInput
               allowFontScaling={true}
               onChangeText={[Function]}
-              placeholder="Password"
               secureTextEntry={true}
               style={
                 Object {
@@ -264,12 +216,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "resizeMode": "center",
             "source": 1,
             "style": Object {
-              "height": 150,
-              "marginBottom": 50,
-              "marginTop": 75,
-              "width": 300,
+              "flex": 2,
+              "marginTop": 30,
             },
           },
           "ref": null,
@@ -281,28 +232,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
-            "children": "Welcome, Jane Doe",
-            "ellipsizeMode": "tail",
-            "style": Object {
-              "fontSize": 18,
-              "marginBottom": 30,
-            },
-          },
-          "ref": null,
-          "rendered": "Welcome, Jane Doe",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
             "children": <TextInput
               allowFontScaling={true}
               onChangeText={[Function]}
-              placeholder="Password"
               secureTextEntry={true}
               style={
                 Object {
@@ -316,6 +248,7 @@ ShallowWrapper {
             "style": Object {
               "borderBottomWidth": 1,
               "borderColor": "rgb(73,162,153)",
+              "flex": 1,
               "marginBottom": 20,
             },
           },
@@ -327,7 +260,6 @@ ShallowWrapper {
             "props": Object {
               "allowFontScaling": true,
               "onChangeText": [Function],
-              "placeholder": "Password",
               "secureTextEntry": true,
               "style": Object {
                 "height": 30,
