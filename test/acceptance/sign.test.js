@@ -83,6 +83,50 @@ describe('signing a petition', () => {
     // THEN I am not able to sign
     expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(false);
   });
+
+
+  it('should allow me to sign if I have required attributes', () => {
+    const state = {
+      ...initialState,
+      // GIVEN a petition with X attributes
+      petition: {
+        petition: {
+          title: 'hello',
+          description: 'world',
+          closingDate: 'today',
+          id: '1234',
+          isEthereum: 'false',
+        },
+      },
+      attributes: {
+        isRequiredAttributeEnabled: true,
+        optionalAttributesToggleStatus: {
+          age: false,
+          gender: false,
+        },
+        // AND I do not have a required attribute
+        list: [
+          {
+            scope: '',
+            provenance: '',
+            subject: '',
+            object: '',
+          },
+        ],
+      },
+    };
+
+    store = mockStore(state);
+
+    // WHEN I review the petition
+    const wrapper = shallow(
+      <PetitionSummary />,
+      { context: { store } },
+    );
+
+    // THEN I am able to sign
+    expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(true);
+  });
 });
 
 // NEXT ITERATIONS OF THE TEST:
