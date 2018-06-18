@@ -5,6 +5,7 @@ import QRScanner from './screens/QRScanner';
 import Authorisation from './screens/Authorisation';
 import PetitionSummary from './screens/PetitionSummary';
 import SignOutcome from './screens/SignOutcome';
+import AttributesSummary from './screens/AttributesSummary';
 
 const Router = createRouter(() => ({
   home: () => Home,
@@ -12,6 +13,7 @@ const Router = createRouter(() => ({
   QRScanner: () => QRScanner,
   authorisation: () => Authorisation,
   petitionSummary: () => PetitionSummary,
+  attributesSummary: () => AttributesSummary,
   signOutcome: () => SignOutcome,
 }));
 

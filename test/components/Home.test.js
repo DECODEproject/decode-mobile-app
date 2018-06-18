@@ -12,7 +12,7 @@ const mockStore = configureStore([thunk]);
 describe('goToNextPage', () => {
   const somePetitionLink = 'http://city-counsil.com';
   const alertMock = jest.fn();
-  const goToPetitionSummaryMock = jest.fn();
+  const goToAttributesSummaryMock = jest.fn();
   const goQRScannerIntroMock = jest.fn();
 
   beforeEach(() => {
@@ -39,7 +39,7 @@ describe('goToNextPage', () => {
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
-        goToPetitionSummary: goToPetitionSummaryMock,
+        goToPetitionSummary: goToAttributesSummaryMock,
         goQRScannerIntro: goQRScannerIntroMock,
         doAuthorize: doAuthorizeMock,
       };
@@ -47,7 +47,7 @@ describe('goToNextPage', () => {
       await homeComponent.goToNextPage();
 
       expect(alertMock).toBeCalled();
-      expect(goToPetitionSummaryMock).not.toBeCalled();
+      expect(goToAttributesSummaryMock).not.toBeCalled();
       expect(goQRScannerIntroMock).not.toBeCalled();
     });
   });
@@ -78,7 +78,7 @@ describe('goToNextPage', () => {
       expect(goQRScannerIntroMock).toBeCalled();
     });
 
-    it('should call goToPetitionSummary if there is a petitionLink and ', async () => {
+    it('should call goToAttributesSummary if there is a petitionLink and ', async () => {
       const initialState = {
         petitionLink: {
           petitionLink: somePetitionLink,
@@ -92,13 +92,13 @@ describe('goToNextPage', () => {
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
-        goToPetitionSummary: goToPetitionSummaryMock,
+        goToAttributesSummary: goToAttributesSummaryMock,
         doAuthorize: doAuthorizeMock,
       };
 
       await homeComponent.goToNextPage();
 
-      expect(goToPetitionSummaryMock).toBeCalledWith(somePetitionLink);
+      expect(goToAttributesSummaryMock).toBeCalledWith(somePetitionLink);
     });
   });
 });
