@@ -1,9 +1,5 @@
 import { Platform, StyleSheet } from 'react-native';
 
-
-export const TURQUOISE = 'rgb(73,162,153)';
-export const PPP = '001dcb';
-
 const styles = StyleSheet.create({
 
   authorisationBox: {
@@ -54,21 +50,28 @@ const styles = StyleSheet.create({
   homeContainer: {
     alignItems: 'center',
     backgroundColor: '#fff',
-    flex: 1,
   },
   homeLogo: {
-    marginTop: 30,
-    flex: 2,
+    height: 275,
+    marginTop: 75,
+    marginBottom: 50,
+    width: 320,
   },
   homePassword: {
-    height: Platform.OS === 'ios' ? 30 : 40,
-    width: 300,
+    height: Platform.OS === 'ios' ? 35 : 40,
+    width: 150,
+    borderWidth: 1,
+    alignItems: 'center',
+    paddingHorizontal: 10,
   },
   homeTextInput: {
-    borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
-    borderColor: TURQUOISE,
     marginBottom: 20,
-    flex: 1,
+    marginRight: 32,
+    flexDirection: 'row',
+  },
+  homeWelcomeMessage: {
+    fontSize: 18,
+    marginBottom: 30,
   },
   petitionDescription: {
     color: 'rgba(0, 0, 0, 0.87)',

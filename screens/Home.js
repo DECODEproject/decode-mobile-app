@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Image, TextInput, View } from 'react-native';
+import { Image, Text, TextInput, View, KeyboardAvoidingView } from 'react-native';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
 import { goQRScannerIntro, goToPetitionSummary } from '../application/redux/actions/navigation';
@@ -42,23 +42,38 @@ class Home extends React.Component {
 
   render() {
     return (
-      <View style={styles.homeContainer}>
-        <Image
-          style={styles.homeLogo}
-          source={decodeLogo}
-          resizeMode="center"
-        />
-        <View style={styles.homeTextInput}>
-          <TextInput
-            style={styles.homePassword}
-            secureTextEntry
-            underlineColorAndroid="rgb(0,163,158)"
-            onChangeText={pin => this.props.updatePin(pin)}
-            value={this.props.pinCode}
+      <KeyboardAvoidingView
+        behavior="position"
+        keyboardVerticalOffset={50}
+      >
+        <View style={styles.homeContainer}>
+          <Image
+            style={styles.homeLogo}
+            source={decodeLogo}
           />
+          <View style={styles.homeTextInput}>
+            <Text style={{ marginVertical: 10 }}>PIN:&nbsp;&nbsp;</Text>
+            <TextInput
+              style={styles.homePassword}
+              placeholder=" Pin"
+              secureTextEntry
+              underlineColorAndroid="transparent"
+              onChangeText={pin => this.props.updatePin(pin)}
+              value={this.props.pinCode}
+            />
+          </View>
+          <View style={{ flexDirection: 'row' }}>
+            <Button
+              name="Sign In"
+              onPress={this.goToNextPage}
+              style={{
+                width: 150,
+                alignItems: 'center',
+              }}
+            />
+          </View>
         </View>
-        <Button name="LOG IN" onPress={this.goToNextPage} />
-      </View>
+      </KeyboardAvoidingView>
     );
   }
 }
