@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Constants, SecureStore, WebBrowser } from 'expo';
-import { Linking, View } from 'react-native';
+import { Linking, View, Text } from 'react-native';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
 import { addCredential } from '../application/redux/actions/attributes';
@@ -46,6 +46,7 @@ class AttributesSummary extends React.Component {
   render() {
     return (
       <View>
+        <Text>{this.props.petition.title}</Text>
         <Button
           name="Verify with Barcelona Council"
           onPress={this.openWebBrowserAsync}
@@ -85,7 +86,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getPetition: (petitionLink) => { dispatch(getPetition(petitionLink)); },
+  getPetition: petitionLink => dispatch(getPetition(petitionLink)),
   goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
   addCredential: (attribute, walletId, url) => {
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));

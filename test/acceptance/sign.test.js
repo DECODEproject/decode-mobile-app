@@ -6,7 +6,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import thunk from 'redux-thunk';
 import PetitionSummary from '../../screens/PetitionSummary';
 import Button from '../../application/components/Button/Button';
-// import { jsdom } from 'jsdom'
+
 Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureMockStore([thunk]);
