@@ -1,0 +1,942 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The AttributesSummary page when rendered should match this snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AttributesSummary
+    addCredential={[Function]}
+    attributes={
+      Object {
+        "isRequiredAttributeEnabled": false,
+        "list": Array [],
+        "optionalAttributesToggleStatus": Object {
+          "age": false,
+          "gender": false,
+        },
+      }
+    }
+    getPetition={[Function]}
+    goToPetitionSummary={[Function]}
+    petition={Object {}}
+    petitionLink="http://something.com"
+    walletId="something"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <View
+          style={
+            Object {
+              "backgroundColor": "#13A398",
+              "flex": 1.2,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Object {
+                "alignSelf": "center",
+                "height": 100,
+                "marginVertical": 20,
+                "resizeMode": "contain",
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "700",
+              }
+            }
+          >
+            Isabella Dominguez
+          </Text>
+        </View>,
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#13A398",
+                "fontSize": 20,
+                "margin": 16,
+                "marginTop": 30,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#3E393C",
+                "fontSize": 13,
+                "fontWeight": "900",
+                "marginLeft": 16,
+              }
+            }
+          >
+            DECIDIM needs to verify your Barcelona residency.
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#3E393C",
+                "fontSize": 13,
+                "fontWeight": "100",
+                "marginLeft": 16,
+                "marginTop": 8,
+              }
+            }
+          >
+            You can do this with the Barcelona City Council
+          </Text>
+        </View>,
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Button
+            enabled={true}
+            name="Verify with Barcelona Council"
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "marginTop": 40,
+                "width": 250,
+              }
+            }
+          />
+        </View>,
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#00F",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "marginVertical": 20,
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            Or, cancel signing this petition
+          </Text>
+        </View>,
+      ],
+      "style": Object {
+        "flex": 1,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Image
+              source={1}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "height": 100,
+                  "marginVertical": 20,
+                  "resizeMode": "contain",
+                }
+              }
+            />,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "white",
+                  "fontSize": 16,
+                  "fontWeight": "700",
+                }
+              }
+            >
+              Isabella Dominguez
+            </Text>,
+          ],
+          "style": Object {
+            "backgroundColor": "#13A398",
+            "flex": 1.2,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "source": 1,
+              "style": Object {
+                "alignSelf": "center",
+                "height": 100,
+                "marginVertical": 20,
+                "resizeMode": "contain",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Isabella Dominguez",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "alignSelf": "center",
+                "color": "white",
+                "fontSize": 16,
+                "fontWeight": "700",
+              },
+            },
+            "ref": null,
+            "rendered": "Isabella Dominguez",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#13A398",
+                  "fontSize": 20,
+                  "margin": 16,
+                  "marginTop": 30,
+                }
+              }
+            />,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#3E393C",
+                  "fontSize": 13,
+                  "fontWeight": "900",
+                  "marginLeft": 16,
+                }
+              }
+            >
+              DECIDIM needs to verify your Barcelona residency.
+            </Text>,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#3E393C",
+                  "fontSize": 13,
+                  "fontWeight": "100",
+                  "marginLeft": 16,
+                  "marginTop": 8,
+                }
+              }
+            >
+              You can do this with the Barcelona City Council
+            </Text>,
+          ],
+          "style": Object {
+            "flex": 1,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": undefined,
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#13A398",
+                "fontSize": 20,
+                "margin": 16,
+                "marginTop": 30,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "DECIDIM needs to verify your Barcelona residency.",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#3E393C",
+                "fontSize": 13,
+                "fontWeight": "900",
+                "marginLeft": 16,
+              },
+            },
+            "ref": null,
+            "rendered": "DECIDIM needs to verify your Barcelona residency.",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "You can do this with the Barcelona City Council",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#3E393C",
+                "fontSize": 13,
+                "fontWeight": "100",
+                "marginLeft": 16,
+                "marginTop": 8,
+              },
+            },
+            "ref": null,
+            "rendered": "You can do this with the Barcelona City Council",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Button
+            enabled={true}
+            name="Verify with Barcelona Council"
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "marginTop": 40,
+                "width": 250,
+              }
+            }
+          />,
+          "style": Object {
+            "flex": 1,
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "enabled": true,
+            "name": "Verify with Barcelona Council",
+            "onPress": [Function],
+            "style": Object {
+              "alignSelf": "center",
+              "marginTop": 40,
+              "width": 250,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#00F",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "marginVertical": 20,
+                "textDecorationLine": "underline",
+              }
+            }
+          >
+            Or, cancel signing this petition
+          </Text>,
+          "style": Object {
+            "flex": 1,
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": "Or, cancel signing this petition",
+            "ellipsizeMode": "tail",
+            "onPress": [Function],
+            "style": Object {
+              "alignSelf": "center",
+              "color": "#00F",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "marginVertical": 20,
+              "textDecorationLine": "underline",
+            },
+          },
+          "ref": null,
+          "rendered": "Or, cancel signing this petition",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <View
+            style={
+              Object {
+                "backgroundColor": "#13A398",
+                "flex": 1.2,
+              }
+            }
+          >
+            <Image
+              source={1}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "height": 100,
+                  "marginVertical": 20,
+                  "resizeMode": "contain",
+                }
+              }
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "white",
+                  "fontSize": 16,
+                  "fontWeight": "700",
+                }
+              }
+            >
+              Isabella Dominguez
+            </Text>
+          </View>,
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#13A398",
+                  "fontSize": 20,
+                  "margin": 16,
+                  "marginTop": 30,
+                }
+              }
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#3E393C",
+                  "fontSize": 13,
+                  "fontWeight": "900",
+                  "marginLeft": 16,
+                }
+              }
+            >
+              DECIDIM needs to verify your Barcelona residency.
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#3E393C",
+                  "fontSize": 13,
+                  "fontWeight": "100",
+                  "marginLeft": 16,
+                  "marginTop": 8,
+                }
+              }
+            >
+              You can do this with the Barcelona City Council
+            </Text>
+          </View>,
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <Button
+              enabled={true}
+              name="Verify with Barcelona Council"
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "marginTop": 40,
+                  "width": 250,
+                }
+              }
+            />
+          </View>,
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "#00F",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "marginVertical": 20,
+                  "textDecorationLine": "underline",
+                }
+              }
+            >
+              Or, cancel signing this petition
+            </Text>
+          </View>,
+        ],
+        "style": Object {
+          "flex": 1,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Image
+                source={1}
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "height": 100,
+                    "marginVertical": 20,
+                    "resizeMode": "contain",
+                  }
+                }
+              />,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "white",
+                    "fontSize": 16,
+                    "fontWeight": "700",
+                  }
+                }
+              >
+                Isabella Dominguez
+              </Text>,
+            ],
+            "style": Object {
+              "backgroundColor": "#13A398",
+              "flex": 1.2,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "source": 1,
+                "style": Object {
+                  "alignSelf": "center",
+                  "height": 100,
+                  "marginVertical": 20,
+                  "resizeMode": "contain",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "Isabella Dominguez",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "alignSelf": "center",
+                  "color": "white",
+                  "fontSize": 16,
+                  "fontWeight": "700",
+                },
+              },
+              "ref": null,
+              "rendered": "Isabella Dominguez",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#13A398",
+                    "fontSize": 20,
+                    "margin": 16,
+                    "marginTop": 30,
+                  }
+                }
+              />,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#3E393C",
+                    "fontSize": 13,
+                    "fontWeight": "900",
+                    "marginLeft": 16,
+                  }
+                }
+              >
+                DECIDIM needs to verify your Barcelona residency.
+              </Text>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#3E393C",
+                    "fontSize": 13,
+                    "fontWeight": "100",
+                    "marginLeft": 16,
+                    "marginTop": 8,
+                  }
+                }
+              >
+                You can do this with the Barcelona City Council
+              </Text>,
+            ],
+            "style": Object {
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": undefined,
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#13A398",
+                  "fontSize": 20,
+                  "margin": 16,
+                  "marginTop": 30,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "DECIDIM needs to verify your Barcelona residency.",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#3E393C",
+                  "fontSize": 13,
+                  "fontWeight": "900",
+                  "marginLeft": 16,
+                },
+              },
+              "ref": null,
+              "rendered": "DECIDIM needs to verify your Barcelona residency.",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "You can do this with the Barcelona City Council",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#3E393C",
+                  "fontSize": 13,
+                  "fontWeight": "100",
+                  "marginLeft": 16,
+                  "marginTop": 8,
+                },
+              },
+              "ref": null,
+              "rendered": "You can do this with the Barcelona City Council",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Button
+              enabled={true}
+              name="Verify with Barcelona Council"
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "marginTop": 40,
+                  "width": 250,
+                }
+              }
+            />,
+            "style": Object {
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "enabled": true,
+              "name": "Verify with Barcelona Council",
+              "onPress": [Function],
+              "style": Object {
+                "alignSelf": "center",
+                "marginTop": 40,
+                "width": 250,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "#00F",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "marginVertical": 20,
+                  "textDecorationLine": "underline",
+                }
+              }
+            >
+              Or, cancel signing this petition
+            </Text>,
+            "style": Object {
+              "flex": 1,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "Or, cancel signing this petition",
+              "ellipsizeMode": "tail",
+              "onPress": [Function],
+              "style": Object {
+                "alignSelf": "center",
+                "color": "#00F",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "marginVertical": 20,
+                "textDecorationLine": "underline",
+              },
+            },
+            "ref": null,
+            "rendered": "Or, cancel signing this petition",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "context": Object {
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+    },
+  },
+}
+`;

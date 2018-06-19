@@ -59,8 +59,6 @@ describe('The AttributesSummary page', () => {
     // Only one button
     expect(buttonWrapper).toHaveLength(1);
     expect(buttonWrapper.prop('name')).toEqual('Verify with Barcelona Council');
-
-    // I see the title
     expect(buttonWrapper.first().prop('enabled')).toEqual(true);
   });
 
@@ -123,6 +121,16 @@ describe('The AttributesSummary page', () => {
       wrapper.dive().find(Button).first().simulate('click');
 
       expect(goToPetitionSummaryMock).toBeCalledWith(somePetitionLink);
+    });
+  });
+
+  describe('when rendered', () => {
+    it('should match this snapshot', () => {
+      const wrapper = shallow(
+        <AttributesSummary />,
+        { context: { store: mockStore(initialState) } },
+      );
+      expect(wrapper.dive()).toMatchSnapshot();
     });
   });
 });
