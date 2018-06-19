@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Image, Text, TextInput, View, KeyboardAvoidingView } from 'react-native';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
-import { goQRScannerIntro, goToAttributesSummary } from '../application/redux/actions/navigation';
+import { goQRScannerIntro, goToAttributesSummary, goToPetitionSummary } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
@@ -29,8 +29,11 @@ class Home extends React.Component {
   goToNextPage() {
     return this.props.doAuthorize(this.props.pinCode).then((action) => {
       if (action.pinCorrect) {
-        if (this.props.petitionLink) {
+        const isAttributeVerified = this.props.attributes.list.length > 0;
+        if (this.props.petitionLink && !isAttributeVerified) {
           this.props.goToAttributesSummary(this.props.petitionLink);
+        } else if (this.props.petitionLink) {
+          this.props.goToPetitionSummary(this.props.petitionLink);
         } else {
           this.props.goQRScannerIntro();
         }
@@ -81,11 +84,15 @@ class Home extends React.Component {
 Home.propTypes = {
   goQRScannerIntro: PropTypes.func.isRequired,
   goToAttributesSummary: PropTypes.func.isRequired,
+  goToPetitionSummary: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
   doAuthorize: PropTypes.func.isRequired,
   updatePin: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
   pinCode: PropTypes.string,
+  attributes: PropTypes.shape({
+    list: PropTypes.arrayOf(PropTypes.shape({})),
+  }).isRequired,
 };
 
 Home.defaultProps = {
@@ -96,11 +103,13 @@ Home.defaultProps = {
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   pinCode: state.authorization.pin,
+  attributes: state.attributes,
 });
 
 const mapDispatchToProps = dispatch => ({
   goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
   goToAttributesSummary: (petitionLink) => { dispatch(goToAttributesSummary(petitionLink)); },
+  goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: (pin) => { dispatch(updatePin(pin)); },
   initializeState: async () => {

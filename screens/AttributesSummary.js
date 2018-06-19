@@ -32,8 +32,8 @@ class AttributesSummary extends React.Component {
 
     this.props.addCredential(petition.attributes[0], walletId, url);
 
-    WebBrowser.dismissBrowser();
     this.props.goToPetitionSummary(this.props.petitionLink);
+    WebBrowser.dismissBrowser();
   };
 
   openPetitionInBrowser = () => {
