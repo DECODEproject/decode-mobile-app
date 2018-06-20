@@ -5,7 +5,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PetitionSummary
-    addCredential={[Function]}
     attributes={
       Object {
         "isRequiredAttributeEnabled": true,
@@ -132,10 +131,8 @@ ShallowWrapper {
               This information is anonymised - Decidim will not receive any personally identifying data.
             </Text>
             <Attribute
-              buttonCallback={[Function]}
               isEnabled={true}
               isMandatory={true}
-              isVerified={true}
               name="Your residency status (required)"
               toggleCallback={[Function]}
             />
@@ -147,18 +144,14 @@ ShallowWrapper {
               Optional data to share:
             </Text>
             <Attribute
-              buttonCallback={[Function]}
               isEnabled={false}
               isMandatory={false}
-              isVerified={true}
               name="Age (20-29)"
               toggleCallback={[Function]}
             />
             <Attribute
-              buttonCallback={[Function]}
               isEnabled={false}
               isMandatory={false}
-              isVerified={true}
               name="Gender (Female)"
               toggleCallback={[Function]}
             />
@@ -295,10 +288,8 @@ ShallowWrapper {
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={true}
                 isMandatory={true}
-                isVerified={true}
                 name="Your residency status (required)"
                 toggleCallback={[Function]}
               />
@@ -310,18 +301,14 @@ ShallowWrapper {
                 Optional data to share:
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Age (20-29)"
                 toggleCallback={[Function]}
               />
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
@@ -421,10 +408,8 @@ ShallowWrapper {
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>,
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={true}
                   isMandatory={true}
-                  isVerified={true}
                   name="Your residency status (required)"
                   toggleCallback={[Function]}
                 />,
@@ -436,18 +421,14 @@ ShallowWrapper {
                   Optional data to share:
                 </Text>,
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Age (20-29)"
                   toggleCallback={[Function]}
                 />,
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Gender (Female)"
                   toggleCallback={[Function]}
                 />,
@@ -518,12 +499,10 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "buttonCallback": [Function],
                   "isEnabled": true,
                   "isMandatory": true,
-                  "isVerified": true,
                   "name": "Your residency status (required)",
                   "toggleCallback": [Function],
                 },
@@ -548,12 +527,10 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "buttonCallback": [Function],
                   "isEnabled": false,
                   "isMandatory": false,
-                  "isVerified": true,
                   "name": "Age (20-29)",
                   "toggleCallback": [Function],
                 },
@@ -564,12 +541,10 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "buttonCallback": [Function],
                   "isEnabled": false,
                   "isMandatory": false,
-                  "isVerified": true,
                   "name": "Gender (Female)",
                   "toggleCallback": [Function],
                 },
@@ -755,10 +730,8 @@ ShallowWrapper {
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={true}
                 isMandatory={true}
-                isVerified={true}
                 name="Your residency status (required)"
                 toggleCallback={[Function]}
               />
@@ -770,18 +743,14 @@ ShallowWrapper {
                 Optional data to share:
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Age (20-29)"
                 toggleCallback={[Function]}
               />
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
@@ -918,10 +887,8 @@ ShallowWrapper {
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={true}
                   isMandatory={true}
-                  isVerified={true}
                   name="Your residency status (required)"
                   toggleCallback={[Function]}
                 />
@@ -933,18 +900,14 @@ ShallowWrapper {
                   Optional data to share:
                 </Text>
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Age (20-29)"
                   toggleCallback={[Function]}
                 />
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Gender (Female)"
                   toggleCallback={[Function]}
                 />
@@ -1044,10 +1007,8 @@ ShallowWrapper {
                     This information is anonymised - Decidim will not receive any personally identifying data.
                   </Text>,
                   <Attribute
-                    buttonCallback={[Function]}
                     isEnabled={true}
                     isMandatory={true}
-                    isVerified={true}
                     name="Your residency status (required)"
                     toggleCallback={[Function]}
                   />,
@@ -1059,18 +1020,14 @@ ShallowWrapper {
                     Optional data to share:
                   </Text>,
                   <Attribute
-                    buttonCallback={[Function]}
                     isEnabled={false}
                     isMandatory={false}
-                    isVerified={true}
                     name="Age (20-29)"
                     toggleCallback={[Function]}
                   />,
                   <Attribute
-                    buttonCallback={[Function]}
                     isEnabled={false}
                     isMandatory={false}
-                    isVerified={true}
                     name="Gender (Female)"
                     toggleCallback={[Function]}
                   />,
@@ -1141,12 +1098,10 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
-                    "buttonCallback": [Function],
                     "isEnabled": true,
                     "isMandatory": true,
-                    "isVerified": true,
                     "name": "Your residency status (required)",
                     "toggleCallback": [Function],
                   },
@@ -1171,12 +1126,10 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
-                    "buttonCallback": [Function],
                     "isEnabled": false,
                     "isMandatory": false,
-                    "isVerified": true,
                     "name": "Age (20-29)",
                     "toggleCallback": [Function],
                   },
@@ -1187,12 +1140,10 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
-                    "buttonCallback": [Function],
                     "isEnabled": false,
                     "isMandatory": false,
-                    "isVerified": true,
                     "name": "Gender (Female)",
                     "toggleCallback": [Function],
                   },
@@ -1326,7 +1277,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PetitionSummary
-    addCredential={[Function]}
     attributes={
       Object {
         "isRequiredAttributeEnabled": true,
@@ -1442,10 +1392,8 @@ ShallowWrapper {
               This information is anonymised - Decidim will not receive any personally identifying data.
             </Text>
             <Attribute
-              buttonCallback={[Function]}
               isEnabled={true}
               isMandatory={true}
-              isVerified={false}
               name="Your residency status (required)"
               toggleCallback={[Function]}
             />
@@ -1457,18 +1405,14 @@ ShallowWrapper {
               Optional data to share:
             </Text>
             <Attribute
-              buttonCallback={[Function]}
               isEnabled={false}
               isMandatory={false}
-              isVerified={true}
               name="Age (20-29)"
               toggleCallback={[Function]}
             />
             <Attribute
-              buttonCallback={[Function]}
               isEnabled={false}
               isMandatory={false}
-              isVerified={true}
               name="Gender (Female)"
               toggleCallback={[Function]}
             />
@@ -1482,7 +1426,7 @@ ShallowWrapper {
           }
         >
           <Button
-            enabled={false}
+            enabled={true}
             name="Yes"
             onPress={[Function]}
             style={
@@ -1492,7 +1436,7 @@ ShallowWrapper {
             }
           />
           <Button
-            enabled={false}
+            enabled={true}
             name="No"
             onPress={[Function]}
             style={
@@ -1605,10 +1549,8 @@ ShallowWrapper {
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={true}
                 isMandatory={true}
-                isVerified={false}
                 name="Your residency status (required)"
                 toggleCallback={[Function]}
               />
@@ -1620,18 +1562,14 @@ ShallowWrapper {
                 Optional data to share:
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Age (20-29)"
                 toggleCallback={[Function]}
               />
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
@@ -1731,10 +1669,8 @@ ShallowWrapper {
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>,
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={true}
                   isMandatory={true}
-                  isVerified={false}
                   name="Your residency status (required)"
                   toggleCallback={[Function]}
                 />,
@@ -1746,18 +1682,14 @@ ShallowWrapper {
                   Optional data to share:
                 </Text>,
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Age (20-29)"
                   toggleCallback={[Function]}
                 />,
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Gender (Female)"
                   toggleCallback={[Function]}
                 />,
@@ -1828,12 +1760,10 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "buttonCallback": [Function],
                   "isEnabled": true,
                   "isMandatory": true,
-                  "isVerified": false,
                   "name": "Your residency status (required)",
                   "toggleCallback": [Function],
                 },
@@ -1858,12 +1788,10 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "buttonCallback": [Function],
                   "isEnabled": false,
                   "isMandatory": false,
-                  "isVerified": true,
                   "name": "Age (20-29)",
                   "toggleCallback": [Function],
                 },
@@ -1874,12 +1802,10 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
-                  "buttonCallback": [Function],
                   "isEnabled": false,
                   "isMandatory": false,
-                  "isVerified": true,
                   "name": "Gender (Female)",
                   "toggleCallback": [Function],
                 },
@@ -1900,7 +1826,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <Button
-              enabled={false}
+              enabled={true}
               name="Yes"
               onPress={[Function]}
               style={
@@ -1910,7 +1836,7 @@ ShallowWrapper {
               }
             />,
             <Button
-              enabled={false}
+              enabled={true}
               name="No"
               onPress={[Function]}
               style={
@@ -1931,7 +1857,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "enabled": false,
+              "enabled": true,
               "name": "Yes",
               "onPress": [Function],
               "style": Object {
@@ -1947,7 +1873,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "enabled": false,
+              "enabled": true,
               "name": "No",
               "onPress": [Function],
               "style": Object {
@@ -2065,10 +1991,8 @@ ShallowWrapper {
                 This information is anonymised - Decidim will not receive any personally identifying data.
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={true}
                 isMandatory={true}
-                isVerified={false}
                 name="Your residency status (required)"
                 toggleCallback={[Function]}
               />
@@ -2080,18 +2004,14 @@ ShallowWrapper {
                 Optional data to share:
               </Text>
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Age (20-29)"
                 toggleCallback={[Function]}
               />
               <Attribute
-                buttonCallback={[Function]}
                 isEnabled={false}
                 isMandatory={false}
-                isVerified={true}
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
@@ -2105,7 +2025,7 @@ ShallowWrapper {
             }
           >
             <Button
-              enabled={false}
+              enabled={true}
               name="Yes"
               onPress={[Function]}
               style={
@@ -2115,7 +2035,7 @@ ShallowWrapper {
               }
             />
             <Button
-              enabled={false}
+              enabled={true}
               name="No"
               onPress={[Function]}
               style={
@@ -2228,10 +2148,8 @@ ShallowWrapper {
                   This information is anonymised - Decidim will not receive any personally identifying data.
                 </Text>
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={true}
                   isMandatory={true}
-                  isVerified={false}
                   name="Your residency status (required)"
                   toggleCallback={[Function]}
                 />
@@ -2243,18 +2161,14 @@ ShallowWrapper {
                   Optional data to share:
                 </Text>
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Age (20-29)"
                   toggleCallback={[Function]}
                 />
                 <Attribute
-                  buttonCallback={[Function]}
                   isEnabled={false}
                   isMandatory={false}
-                  isVerified={true}
                   name="Gender (Female)"
                   toggleCallback={[Function]}
                 />
@@ -2354,10 +2268,8 @@ ShallowWrapper {
                     This information is anonymised - Decidim will not receive any personally identifying data.
                   </Text>,
                   <Attribute
-                    buttonCallback={[Function]}
                     isEnabled={true}
                     isMandatory={true}
-                    isVerified={false}
                     name="Your residency status (required)"
                     toggleCallback={[Function]}
                   />,
@@ -2369,18 +2281,14 @@ ShallowWrapper {
                     Optional data to share:
                   </Text>,
                   <Attribute
-                    buttonCallback={[Function]}
                     isEnabled={false}
                     isMandatory={false}
-                    isVerified={true}
                     name="Age (20-29)"
                     toggleCallback={[Function]}
                   />,
                   <Attribute
-                    buttonCallback={[Function]}
                     isEnabled={false}
                     isMandatory={false}
-                    isVerified={true}
                     name="Gender (Female)"
                     toggleCallback={[Function]}
                   />,
@@ -2451,12 +2359,10 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
-                    "buttonCallback": [Function],
                     "isEnabled": true,
                     "isMandatory": true,
-                    "isVerified": false,
                     "name": "Your residency status (required)",
                     "toggleCallback": [Function],
                   },
@@ -2481,12 +2387,10 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
-                    "buttonCallback": [Function],
                     "isEnabled": false,
                     "isMandatory": false,
-                    "isVerified": true,
                     "name": "Age (20-29)",
                     "toggleCallback": [Function],
                   },
@@ -2497,12 +2401,10 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "class",
+                  "nodeType": "function",
                   "props": Object {
-                    "buttonCallback": [Function],
                     "isEnabled": false,
                     "isMandatory": false,
-                    "isVerified": true,
                     "name": "Gender (Female)",
                     "toggleCallback": [Function],
                   },
@@ -2523,7 +2425,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <Button
-                enabled={false}
+                enabled={true}
                 name="Yes"
                 onPress={[Function]}
                 style={
@@ -2533,7 +2435,7 @@ ShallowWrapper {
                 }
               />,
               <Button
-                enabled={false}
+                enabled={true}
                 name="No"
                 onPress={[Function]}
                 style={
@@ -2554,7 +2456,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "enabled": false,
+                "enabled": true,
                 "name": "Yes",
                 "onPress": [Function],
                 "style": Object {
@@ -2570,7 +2472,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "enabled": false,
+                "enabled": true,
                 "name": "No",
                 "onPress": [Function],
                 "style": Object {

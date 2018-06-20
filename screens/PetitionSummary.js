@@ -1,12 +1,12 @@
 import React from 'react';
-import { Constants, SecureStore, WebBrowser } from 'expo';
+import { Constants } from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
 import { Text, View, Linking, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
-import { addCredential, bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../application/redux/actions/attributes';
+import { bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../application/redux/actions/attributes';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
@@ -38,27 +38,9 @@ class PetitionSummary extends React.Component {
     this.props.getPetition(this.props.petitionLink);
   }
 
-  handleRedirect = (event) => {
-    const { url } = event;
-    const { petition, walletId } = this.props;
-
-    this.props.addCredential(petition.attributes[0], walletId, url);
-
-    WebBrowser.dismissBrowser();
-  };
-
   openPetitionInBrowser = () => {
     const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${this.props.petition.id}`;
     Linking.openURL(petitionUrl);
-  };
-
-  openWebBrowserAsync = async () => {
-    const queryParam = encodeURIComponent(Constants.linkingUri);
-    const url = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
-
-    Linking.addEventListener('url', this.handleRedirect);
-    await WebBrowser.openBrowserAsync(url);
-    Linking.removeEventListener('url', this.handleRedirect);
   };
 
   async sign(petition, walletId, vote) {
@@ -84,8 +66,6 @@ class PetitionSummary extends React.Component {
   }
 
   render() {
-    const isAttributeVerified = this.props.attributes.list.length > 0;
-
     const petitionAttributes = (
       <View style={styles.petitionSummaryBox}>
         <Text style={styles.petitionSummaryPetitionTitle}>{this.props.petition.title}</Text>
@@ -96,8 +76,6 @@ class PetitionSummary extends React.Component {
           This information is anonymised - Decidim will not receive any personally identifying data.
         </Text>
         <AttributeComponent
-          buttonCallback={this.openWebBrowserAsync}
-          isVerified={isAttributeVerified}
           isMandatory
           toggleCallback={this.props.bubbleUpRequiredAttributeToggle}
           isEnabled={this.props.attributes.isRequiredAttributeEnabled}
@@ -107,14 +85,12 @@ class PetitionSummary extends React.Component {
           Optional data to share:
         </Text>
         <AttributeComponent
-          isVerified
           isMandatory={false}
           toggleCallback={this.props.bubbleUpAgeAttributeToggle}
           isEnabled={this.props.attributes.optionalAttributesToggleStatus.age}
           name="Age (20-29)"
         />
         <AttributeComponent
-          isVerified
           isMandatory={false}
           toggleCallback={this.props.bubbleUpGenderAttributeToggle}
           isEnabled={this.props.attributes.optionalAttributesToggleStatus.gender}
@@ -139,7 +115,7 @@ class PetitionSummary extends React.Component {
         </ScrollView>
         <View style={{ flexDirection: 'row' }}>
           <Button
-            enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
+            enabled={this.props.attributes.isRequiredAttributeEnabled}
             onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
             name="Yes"
             style={{
@@ -147,7 +123,7 @@ class PetitionSummary extends React.Component {
             }}
           />
           <Button
-            enabled={isAttributeVerified && this.props.attributes.isRequiredAttributeEnabled}
+            enabled={this.props.attributes.isRequiredAttributeEnabled}
             onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
             name="No"
             style={{
@@ -175,7 +151,6 @@ PetitionSummary.propTypes = {
     closingDate: PropTypes.string,
   }),
   petitionError: PropTypes.string,
-  addCredential: PropTypes.func.isRequired,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   attributes: PropTypes.shape({
@@ -208,9 +183,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   getPetition: (petitionLink) => { dispatch(getPetition(petitionLink)); },
-  addCredential: (attribute, walletId, url) => {
-    dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
-  },
   setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>

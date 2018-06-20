@@ -6,79 +6,19 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
     Object {
       "alignSelf": "stretch",
       "backgroundColor": "#FFF",
-      "padding": 16,
+      "display": "flex",
+      "flexDirection": "column",
+      "marginVertical": 20,
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "rgba(0, 0, 0, 0.87)",
-        "flex": 1,
-        "fontSize": 16,
-        "fontWeight": "500",
-      }
-    }
-  >
-    Verified Atlantis Resident*
-  </Text>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "rgba(0, 0, 0, 0.54)",
-        "marginVertical": 4,
-      }
-    }
-  >
-    To get this attribute you will be directed to the Atlantis Council website
-  </Text>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
-    accessible={true}
-    collapsable={undefined}
-    hitSlop={undefined}
-    isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderRelease={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
     style={
       Object {
-        "alignSelf": "flex-end",
-        "backgroundColor": "rgb(0,163,158)",
-        "borderRadius": 2,
-        "elevation": 2,
-        "height": 36,
-        "marginBottom": 18,
-        "marginHorizontal": 16,
-        "marginTop": 10,
-        "opacity": 1,
-        "paddingHorizontal": 16,
-        "paddingVertical": 8,
-        "shadowColor": "rgba(0, 0, 0, 0.54)",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 0.8,
-        "shadowRadius": 2,
-        "width": 100,
+        "flex": 1,
+        "flexDirection": "row",
       }
     }
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <Text
       accessible={true}
@@ -86,15 +26,19 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "alignSelf": "center",
-          "color": "#FFF",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "flex": 1,
           "fontSize": 16,
           "fontWeight": "500",
         }
       }
     >
-      REQUEST
+      test
     </Text>
+    <Switch
+      onValueChange={[Function]}
+      value={true}
+    />
   </View>
 </View>
 `;
