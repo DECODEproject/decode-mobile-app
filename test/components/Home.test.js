@@ -30,6 +30,9 @@ describe('goToNextPage', () => {
           petitionLink: somePetitionLink,
         },
         authorization: {},
+        attributes: {
+          list: [],
+        },
       };
       const doAuthorizeMock = jest.fn().mockReturnValue(Promise.resolve({ pinCorrect: false }));
       const wrapper = shallow(
@@ -61,6 +64,9 @@ describe('goToNextPage', () => {
           petitionLink: undefined,
         },
         authorization: {},
+        attributes: {
+          list: [],
+        },
       };
       const wrapper = shallow(
         <Home />,
@@ -84,6 +90,9 @@ describe('goToNextPage', () => {
           petitionLink: somePetitionLink,
         },
         authorization: {},
+        attributes: {
+          list: [],
+        },
       };
       const wrapper = shallow(
         <Home />,

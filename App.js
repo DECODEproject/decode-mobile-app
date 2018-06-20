@@ -1,5 +1,5 @@
 import React from 'react';
-import { Font } from 'expo';
+import { Font, ScreenOrientation } from 'expo';
 import { Provider } from 'react-redux';
 import {
   NavigationProvider,
@@ -33,6 +33,8 @@ export default class App extends React.Component {
     });
 
     await initialiseWalletID();
+
+    ScreenOrientation.allow(ScreenOrientation.Orientation.PORTRAIT);
 
     this.setState({
       ready: true,

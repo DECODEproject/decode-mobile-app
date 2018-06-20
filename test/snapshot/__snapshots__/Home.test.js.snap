@@ -5,9 +5,15 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Home
+    attributes={
+      Object {
+        "list": Array [],
+      }
+    }
     doAuthorize={[Function]}
     goQRScannerIntro={[Function]}
     goToAttributesSummary={[Function]}
+    goToPetitionSummary={[Function]}
     initializeState={[Function]}
     petitionLink={undefined}
     pinCode=""

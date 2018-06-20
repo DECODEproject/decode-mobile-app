@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Image, Text, TextInput, View, KeyboardAvoidingView } from 'react-native';
-import { SecureStore } from 'expo';
+import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { goQRScannerIntro, goToAttributesSummary, goToPetitionSummary } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
@@ -23,6 +23,7 @@ class Home extends React.Component {
   }
 
   componentWillMount() {
+    ScreenOrientation.allow(ScreenOrientation.Orientation.PORTRAIT_UP);
     this.props.initializeState().then(() => {});
   }
 

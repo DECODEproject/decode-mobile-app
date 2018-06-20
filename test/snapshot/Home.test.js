@@ -14,6 +14,9 @@ const initialState = {
     petitionLink: undefined,
   },
   authorization: {},
+  attributes: {
+    list: [],
+  },
 };
 
 
