@@ -9,10 +9,11 @@ Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureStore([thunk]);
 
-describe('goToNextPage', () => {
+describe('validatePinCode', () => {
   const somePetitionLink = 'http://city-counsil.com';
   const alertMock = jest.fn();
   const goToAttributesSummaryMock = jest.fn();
+  const goToPetitionSummaryMock = jest.fn();
   const goQRScannerIntroMock = jest.fn();
 
   beforeEach(() => {
@@ -47,7 +48,7 @@ describe('goToNextPage', () => {
         doAuthorize: doAuthorizeMock,
       };
 
-      await homeComponent.goToNextPage();
+      await homeComponent.validatePinCode();
 
       expect(alertMock).toBeCalled();
       expect(goToAttributesSummaryMock).not.toBeCalled();
@@ -79,12 +80,12 @@ describe('goToNextPage', () => {
         doAuthorize: doAuthorizeMock,
       };
 
-      await homeComponent.goToNextPage();
+      await homeComponent.validatePinCode();
 
       expect(goQRScannerIntroMock).toBeCalled();
     });
 
-    it('should call goToAttributesSummary if there is a petitionLink and ', async () => {
+    it('should call goToAttributesSummary if there is a petitionLink and the required attribute is not verified', async () => {
       const initialState = {
         petitionLink: {
           petitionLink: somePetitionLink,
@@ -105,9 +106,36 @@ describe('goToNextPage', () => {
         doAuthorize: doAuthorizeMock,
       };
 
-      await homeComponent.goToNextPage();
+      await homeComponent.validatePinCode();
 
       expect(goToAttributesSummaryMock).toBeCalledWith(somePetitionLink);
+    });
+
+    it('should call goToPetitionSummary if there is a petitionLink and the required attribute is verified', async () => {
+      const initialState = {
+        petitionLink: {
+          petitionLink: somePetitionLink,
+        },
+        authorization: {},
+        attributes: {
+          list: [{}],
+        },
+      };
+      const wrapper = shallow(
+        <Home />,
+        { context: { store: mockStore(initialState) } },
+      );
+      const homeComponent = wrapper.dive().instance();
+      homeComponent.props = {
+        ...homeComponent.props,
+        goToAttributesSummary: goToAttributesSummaryMock,
+        goToPetitionSummary: goToPetitionSummaryMock,
+        doAuthorize: doAuthorizeMock,
+      };
+
+      await homeComponent.validatePinCode();
+
+      expect(goToPetitionSummaryMock).toBeCalledWith(somePetitionLink);
     });
   });
 });

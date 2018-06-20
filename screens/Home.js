@@ -19,7 +19,7 @@ const decodeLogo = require('../assets/images/decode-hexagon.png');
 class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.goToNextPage = this.goToNextPage.bind(this);
+    this.validatePinCode = this.validatePinCode.bind(this);
   }
 
   componentWillMount() {
@@ -27,17 +27,27 @@ class Home extends React.Component {
     this.props.initializeState().then(() => {});
   }
 
+  goToPetition() {
+    const isAttributeVerified = this.props.attributes.list.length > 0;
+    if (isAttributeVerified) {
+      this.props.goToPetitionSummary(this.props.petitionLink);
+    } else {
+      this.props.goToAttributesSummary(this.props.petitionLink);
+    }
+  }
+
   goToNextPage() {
+    if (this.props.petitionLink) {
+      this.goToPetition();
+    } else {
+      this.props.goQRScannerIntro();
+    }
+  }
+
+  validatePinCode() {
     return this.props.doAuthorize(this.props.pinCode).then((action) => {
       if (action.pinCorrect) {
-        const isAttributeVerified = this.props.attributes.list.length > 0;
-        if (this.props.petitionLink && !isAttributeVerified) {
-          this.props.goToAttributesSummary(this.props.petitionLink);
-        } else if (this.props.petitionLink) {
-          this.props.goToPetitionSummary(this.props.petitionLink);
-        } else {
-          this.props.goQRScannerIntro();
-        }
+        this.goToNextPage();
       } else {
         alert('Incorrect pin code'); // eslint-disable-line
       }
@@ -69,7 +79,7 @@ class Home extends React.Component {
           <View style={{ flexDirection: 'row' }}>
             <Button
               name="Sign In"
-              onPress={this.goToNextPage}
+              onPress={this.validatePinCode}
               style={{
                 width: 150,
                 alignItems: 'center',
