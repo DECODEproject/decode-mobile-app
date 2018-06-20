@@ -53,7 +53,7 @@ class AttributesSummary extends React.Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <View style={{ backgroundColor: '#13A398', flex: 1.2 }}>
+        <View style={{ backgroundColor: '#13A398', flex: 1.5 }}>
           <Image
             style={{
               height: 100,
