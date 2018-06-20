@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from 'react-native';
 import fetchMock from 'fetch-mock';
 import configureMockStore from 'redux-mock-store';
 import Enzyme, { shallow } from 'enzyme';
@@ -70,7 +71,6 @@ describe('signing a petition', () => {
       },
     };
 
-    // fetchMock.getOnce(initialState.petitionLink.petitionLink, newPetition);
 
     store = mockStore(state);
 
@@ -127,25 +127,56 @@ describe('signing a petition', () => {
     // THEN I am able to sign
     expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(true);
   });
+
+  it('should render the petition title', (done) => {
+    const petitionTitle = 'My petition';
+    const newPetition = {
+      title: petitionTitle,
+      description: 'world',
+      closingDate: 'today',
+      id: '1234',
+      isEthereum: 'false',
+    };
+    const state = {
+      ...initialState,
+      // GIVEN a petition with X attributes
+      petition: {
+        petition: {
+        },
+      },
+      attributes: {
+        isRequiredAttributeEnabled: true,
+        optionalAttributesToggleStatus: {
+          age: false,
+          gender: false,
+        },
+        // AND I do not have a required attribute
+        list: [],
+      },
+    };
+
+    fetchMock.getOnce(state.petitionLink.petitionLink, newPetition);
+
+    store = mockStore(state);
+
+    // WHEN I review the petition
+    const wrapper = shallow(
+      <PetitionSummary />,
+      { context: { store } },
+    );
+
+    setTimeout(() => {
+      wrapper.update();
+      console.log('waited one second');
+      // THEN I am able to see the petition title
+      console.log(store.getActions());
+      // console.log(wrapper.update().dive().debug());
+
+      const wrapper2 = wrapper.dive().find(Text).findWhere(n => n.text() === petitionTitle);
+      console.log(wrapper2);
+
+      // expect(wrapper2.exists()).toEqual(true);
+      done();
+    }, 1000);
+  });
 });
-
-// NEXT ITERATIONS OF THE TEST:
-// Use library cucumber style
-
-
-// clearState
-
-// before()
-
-// GIVEN a petition with X attributes
-//     state.config.petitionurl = ''
-//     mock fetch getpetition
-
-// AND I am missing some of the required attributes
-//     []
-
-// WHEN I review the petition
-//     petitionSummary.shallowMount()
-
-// THEN I am not able to sign
-//     petitionSummary.find(submitbutton.disabled == true)
