@@ -7,6 +7,7 @@ import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
 import { addCredential } from '../application/redux/actions/attributes';
 import { getPetition } from '../application/redux/actions/petition';
+import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 
 const decodeUser = require('../assets/images/decode-user.png');
@@ -34,11 +35,6 @@ class AttributesSummary extends React.Component {
 
     this.props.goToPetitionSummary(this.props.petitionLink);
     WebBrowser.dismissBrowser();
-  };
-
-  openPetitionInBrowser = () => {
-    const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${this.props.petition.id}`;
-    Linking.openURL(petitionUrl);
   };
 
   openWebBrowserAsync = async () => {
@@ -120,7 +116,7 @@ class AttributesSummary extends React.Component {
         <View style={{ flex: 1 }}>
           <Text
             style={styles.cancelSigningPetition}
-            onPress={this.openPetitionInBrowser}
+            onPress={() => openPetitionInBrowser(this.props.petition.id)}
           >Or, cancel signing this petition
           </Text>
         </View>

@@ -1,10 +1,10 @@
-/* eslint-disable max-len */
 import React from 'react';
-import { Text, View, Linking, Image } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ImageOverlay from 'react-native-image-overlay';
 import { goToAuthorization } from '../application/redux/actions/navigation';
+import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import Button from '../application/components/Button/Button';
 
@@ -27,11 +27,7 @@ class SignOutcome extends React.Component {
       tintColor: 'rgb(0,163,158)',
       title: 'Outcome',
     },
-  }
-
-  static handlePress() {
-    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
-  }
+  };
 
   static createLink(linkText, index) {
     return (
@@ -94,7 +90,7 @@ class SignOutcome extends React.Component {
         </View>
         <Button
           name="Back to Decidim"
-          onPress={SignOutcome.handlePress}
+          onPress={() => openPetitionInBrowser(this.props.petition.id)}
           style={{
             width: 200,
             alignSelf: 'center',
@@ -142,6 +138,7 @@ SignOutcome.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     closingDate: PropTypes.string,
+    id: PropTypes.string,
   }),
   petitionError: PropTypes.string,
   links: PropTypes.arrayOf(PropTypes.string),

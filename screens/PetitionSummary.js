@@ -1,7 +1,7 @@
 import React from 'react';
 import { Constants } from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
-import { Text, View, Linking, ScrollView } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
@@ -11,6 +11,7 @@ import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import getWalletProxyUrl from '../config';
+import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 
 
@@ -37,11 +38,6 @@ class PetitionSummary extends React.Component {
   componentDidMount() {
     this.props.getPetition(this.props.petitionLink);
   }
-
-  openPetitionInBrowser = () => {
-    const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${this.props.petition.id}`;
-    Linking.openURL(petitionUrl);
-  };
 
   async sign(petition, walletId, vote) {
     this.setState({
@@ -133,7 +129,7 @@ class PetitionSummary extends React.Component {
         </View>
         <Text
           style={styles.cancelSigningPetition}
-          onPress={this.openPetitionInBrowser}
+          onPress={() => openPetitionInBrowser(this.props.petition.id)}
         >Or, cancel signing this petition
         </Text>
       </View>);
