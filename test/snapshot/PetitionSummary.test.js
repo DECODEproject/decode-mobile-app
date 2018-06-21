@@ -19,7 +19,6 @@ const initialState = {
       description: 'world',
       closingDate: 'today',
       id: '1234',
-      isEthereum: 'false',
     },
   },
   wallet: {

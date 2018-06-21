@@ -55,7 +55,6 @@ export function signPetition(petition, walletId, walletProxyLink, vote, age, gen
     },
     body: JSON.stringify({
       signatory: walletId.substring(0, 5),
-      isEthereum: petition.isEthereum,
       vote,
       age,
       gender,

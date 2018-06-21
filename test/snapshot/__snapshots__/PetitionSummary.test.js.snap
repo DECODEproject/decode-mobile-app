@@ -36,7 +36,6 @@ ShallowWrapper {
         "closingDate": "today",
         "description": "world",
         "id": "1234",
-        "isEthereum": "false",
         "title": "hello",
       }
     }
@@ -1297,7 +1296,6 @@ ShallowWrapper {
         "closingDate": "today",
         "description": "world",
         "id": "1234",
-        "isEthereum": "false",
         "title": "hello",
       }
     }

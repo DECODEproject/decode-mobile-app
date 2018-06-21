@@ -57,7 +57,6 @@ describe('signing a petition', () => {
           description: 'world',
           closingDate: 'today',
           id: '1234',
-          isEthereum: 'false',
         },
       },
       attributes: {
@@ -95,7 +94,6 @@ describe('signing a petition', () => {
           description: 'world',
           closingDate: 'today',
           id: '1234',
-          isEthereum: 'false',
         },
       },
       attributes: {
@@ -135,7 +133,6 @@ describe('signing a petition', () => {
       description: 'world',
       closingDate: 'today',
       id: '1234',
-      isEthereum: 'false',
     };
     const state = {
       ...initialState,

@@ -23,7 +23,6 @@ describe('getPetition', () => {
     const newPetition = {
       petition: {
         id: '2',
-        isEthereum: 'true',
       },
     };
     const response = newPetition;
@@ -64,7 +63,6 @@ describe('signPetition', () => {
 
   const petition = {
     id: 1,
-    isEthereum: false,
   };
   const walletId = '1234567890';
   const walletProxyLink = 'wallet-proxy-link.com';
@@ -87,7 +85,6 @@ describe('signPetition', () => {
 
     const expectedRequestBody = JSON.stringify({
       signatory: walletId.substring(0, 5),
-      isEthereum: petition.isEthereum,
       vote,
       age: '0-19',
       gender: 'undisclosed',
