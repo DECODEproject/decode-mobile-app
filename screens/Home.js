@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Image, Text, TextInput, View, KeyboardAvoidingView } from 'react-native';
+import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard } from 'react-native';
 import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { goQRScannerIntro, goToAttributesSummary, goToPetitionSummary } from '../application/redux/actions/navigation';
@@ -47,6 +47,7 @@ class Home extends React.Component {
   validatePinCode() {
     return this.props.doAuthorize(this.props.pinCode).then((action) => {
       if (action.pinCorrect) {
+        Keyboard.dismiss();
         this.goToNextPage();
       } else {
         alert('Incorrect pin code'); // eslint-disable-line
@@ -70,6 +71,7 @@ class Home extends React.Component {
             <TextInput
               style={styles.homePassword}
               placeholder=" Pin"
+              keyboardType="numeric"
               secureTextEntry
               underlineColorAndroid="transparent"
               onChangeText={pin => this.props.updatePin(pin)}
