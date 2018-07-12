@@ -14,7 +14,7 @@ describe('validatePinCode', () => {
   const alertMock = jest.fn();
   const goToAttributesSummaryMock = jest.fn();
   const goToPetitionSummaryMock = jest.fn();
-  const goQRScannerIntroMock = jest.fn();
+  const goToAttributesLandingMock = jest.fn();
 
   beforeEach(() => {
     global.alert = alertMock;
@@ -44,7 +44,7 @@ describe('validatePinCode', () => {
       homeComponent.props = {
         ...homeComponent.props,
         goToPetitionSummary: goToAttributesSummaryMock,
-        goQRScannerIntro: goQRScannerIntroMock,
+        goToAttributesLanding: goToAttributesLandingMock,
         doAuthorize: doAuthorizeMock,
       };
 
@@ -52,14 +52,14 @@ describe('validatePinCode', () => {
 
       expect(alertMock).toBeCalled();
       expect(goToAttributesSummaryMock).not.toBeCalled();
-      expect(goQRScannerIntroMock).not.toBeCalled();
+      expect(goToAttributesLandingMock).not.toBeCalled();
     });
   });
 
   describe('if the user put the correct pin', () => {
     const doAuthorizeMock = jest.fn().mockReturnValue(Promise.resolve({ pinCorrect: true }));
 
-    it('should call goQRScannerIntro if there is no petitionLink', async () => {
+    it('should call goToAttributesLanding if there is no petitionLink', async () => {
       const initialState = {
         petitionLink: {
           petitionLink: undefined,
@@ -76,13 +76,13 @@ describe('validatePinCode', () => {
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
-        goQRScannerIntro: goQRScannerIntroMock,
+        goToAttributesLanding: goToAttributesLandingMock,
         doAuthorize: doAuthorizeMock,
       };
 
       await homeComponent.validatePinCode();
 
-      expect(goQRScannerIntroMock).toBeCalled();
+      expect(goToAttributesLandingMock).toBeCalled();
     });
 
     it('should call goToAttributesSummary if there is a petitionLink and the required attribute is not verified', async () => {

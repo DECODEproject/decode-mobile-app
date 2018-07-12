@@ -11,7 +11,7 @@ ShallowWrapper {
       }
     }
     doAuthorize={[Function]}
-    goQRScannerIntro={[Function]}
+    goToAttributesLanding={[Function]}
     goToAttributesSummary={[Function]}
     goToPetitionSummary={[Function]}
     initializeState={[Function]}

@@ -2,11 +2,6 @@ import { NavigationActions } from '@expo/ex-navigation';
 import Store from '../store';
 import Router from '../../../Router';
 
-export function goQRScannerIntro() {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  return NavigationActions.push(navigatorUID, Router.getRoute('QRScannerIntro'));
-}
-
 export function goToAuthorization(petitionLink) {
   const navigatorUID = Store.getState().navigation.currentNavigatorUID;
   const route = Router.getRoute('authorisation', { petitionLink });
@@ -28,6 +23,11 @@ export function goToAttributesSummary(petitionLink) {
   const navigatorUID = Store.getState().navigation.currentNavigatorUID;
   const route = Router.getRoute('attributesSummary', { petitionLink });
   return NavigationActions.push(navigatorUID, route);
+}
+
+export function goToAttributesLanding() {
+  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
+  return NavigationActions.push(navigatorUID, Router.getRoute('attributesLanding'));
 }
 
 export function goToSignOutcome() {

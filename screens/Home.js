@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard } from 'react-native';
 import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
-import { goQRScannerIntro, goToAttributesSummary, goToPetitionSummary } from '../application/redux/actions/navigation';
+import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
@@ -40,7 +40,7 @@ class Home extends React.Component {
     if (this.props.petitionLink) {
       this.goToPetition();
     } else {
-      this.props.goQRScannerIntro();
+      this.props.goToAttributesLanding();
     }
   }
 
@@ -95,7 +95,7 @@ class Home extends React.Component {
 }
 
 Home.propTypes = {
-  goQRScannerIntro: PropTypes.func.isRequired,
+  goToAttributesLanding: PropTypes.func.isRequired,
   goToAttributesSummary: PropTypes.func.isRequired,
   goToPetitionSummary: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
@@ -120,7 +120,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  goQRScannerIntro: () => { dispatch(goQRScannerIntro()); },
+  goToAttributesLanding: () => { dispatch(goToAttributesLanding()); },
   goToAttributesSummary: (petitionLink) => { dispatch(goToAttributesSummary(petitionLink)); },
   goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
