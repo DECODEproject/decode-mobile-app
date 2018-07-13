@@ -6,7 +6,7 @@ const initialState = {
     age: false,
     gender: false,
   },
-  list: [],
+  nonVerified: [],
 };
 
 export default function reducer(state = initialState, action) {
@@ -23,7 +23,7 @@ export default function reducer(state = initialState, action) {
         subject: action.walletId,
       };
 
-      const alreadyExists = state.list.filter(attr =>
+      const alreadyExists = state.nonVerified.filter(attr =>
         attr.predicate === newAttribute.predicate && attr.object === newAttribute.object);
 
       if (alreadyExists.length > 0) {
@@ -31,13 +31,13 @@ export default function reducer(state = initialState, action) {
       }
       return {
         ...state,
-        list: [...state.list, newAttribute],
+        nonVerified: [...state.nonVerified, newAttribute],
       };
     }
     case types.LOAD_ATTRIBUTES:
       return {
         ...state,
-        list: action.attributes,
+        nonVerified: action.attributes,
       };
     case types.TOGGLE_REQUIRED_ATTRIBUTE:
       return {

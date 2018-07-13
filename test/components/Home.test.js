@@ -32,7 +32,7 @@ describe('validatePinCode', () => {
         },
         authorization: {},
         attributes: {
-          list: [],
+          nonVerified: [],
         },
       };
       const doAuthorizeMock = jest.fn().mockReturnValue(Promise.resolve({ pinCorrect: false }));
@@ -92,7 +92,7 @@ describe('validatePinCode', () => {
         },
         authorization: {},
         attributes: {
-          list: [],
+          nonVerified: [],
         },
       };
       const wrapper = shallow(
@@ -118,7 +118,7 @@ describe('validatePinCode', () => {
         },
         authorization: {},
         attributes: {
-          list: [{}],
+          nonVerified: [{}],
         },
       };
       const wrapper = shallow(

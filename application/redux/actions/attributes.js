@@ -17,9 +17,9 @@ export function storeCredentials(setItemAsync) {
   return (dispatch, getState) => {
     const state = getState();
 
-    return setItemAsync('attributes', JSON.stringify(state.attributes.list)).then(() => (dispatch({
+    return setItemAsync('attributes', JSON.stringify(state.attributes.nonVerified)).then(() => (dispatch({
       type: types.STORE_ATTRIBUTES,
-      attributes: state.attributes.list,
+      attributes: state.attributes.nonVerified,
     })));
   };
 }

@@ -28,7 +28,7 @@ class Home extends React.Component {
   }
 
   goToPetition() {
-    const isAttributeVerified = this.props.attributes.list.length > 0;
+    const isAttributeVerified = this.props.attributes.nonVerified.length > 0;
     if (isAttributeVerified) {
       this.props.goToPetitionSummary(this.props.petitionLink);
     } else {
@@ -104,7 +104,7 @@ Home.propTypes = {
   petitionLink: PropTypes.string,
   pinCode: PropTypes.string,
   attributes: PropTypes.shape({
-    list: PropTypes.arrayOf(PropTypes.shape({})),
+    nonVerified: PropTypes.arrayOf(PropTypes.shape({})),
   }).isRequired,
 };
 

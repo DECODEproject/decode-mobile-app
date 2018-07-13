@@ -86,7 +86,6 @@ describe('The AttributesSummary page', () => {
 
     const TextWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === title);
     expect(TextWrappers).toHaveLength(1);
-    console.log(TextWrappers.debug());
   });
 
   describe('when the verify button is pressed', () => {
