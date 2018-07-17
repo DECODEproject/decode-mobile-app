@@ -2,6 +2,14 @@ import { Platform, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
 
+  attributesLandingContainer: {
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    margin: 16,
+    marginTop: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 40,
+  },
   authorisationBox: {
     alignSelf: 'stretch',
     backgroundColor: '#FFF',

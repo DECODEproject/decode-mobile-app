@@ -9,7 +9,7 @@ import styles from './styles';
 class AttributesLanding extends React.Component {
   static renderEmpty() {
     return (
-      <View style={styles.authorisationContainer}>
+      <View style={styles.attributesLandingContainer}>
         <Text>You have no data :(</Text>
       </View>
     );
@@ -21,7 +21,7 @@ class AttributesLanding extends React.Component {
 
   renderListAttributes() {
     return (
-      <View style={styles.signOutcomeBox}>
+      <View style={styles.attributesLandingContainer}>
         <FlatList
           data={this.props.attributes}
           renderItem={attribute => <AttributeListItem attribute={attribute} />}
@@ -32,19 +32,12 @@ class AttributesLanding extends React.Component {
   }
 
   render() {
-    if (!this.attributeExists()) {
-      return AttributesLanding.renderEmpty();
-    }
-    return this.renderListAttributes();
+    return this.attributeExists() ? this.renderListAttributes() : AttributesLanding.renderEmpty();
   }
 }
 
-
 AttributesLanding.propTypes = {
-  attributes: PropTypes.arrayOf(PropTypes.shape({
-    predicate: PropTypes.string.isRequired,
-    object: PropTypes.string.isRequired,
-  })).isRequired,
+  attributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 const mapStateToProps = state => ({
