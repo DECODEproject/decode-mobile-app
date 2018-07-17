@@ -21,7 +21,7 @@ describe('attribute action', () => {
   beforeEach(() => {
     store = mockStore({
       attributes: {
-        nonVerified: [],
+        list: [],
       },
     });
   });
@@ -53,7 +53,7 @@ describe('attribute action', () => {
   it('SAVE current credentials action when no credentials in the state', async () => {
     store = mockStore({
       attributes: {
-        nonVerified: [],
+        list: [],
       },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
@@ -72,7 +72,7 @@ describe('attribute action', () => {
   it('SAVE current credentials action when only one credential', async () => {
     store = mockStore({
       attributes: {
-        nonVerified: [barcelonaResidencyAttribute],
+        list: [barcelonaResidencyAttribute],
       },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
@@ -91,7 +91,7 @@ describe('attribute action', () => {
   it('addCredential when there is no credentials yet', async () => {
     store = mockStore({
       attributes: {
-        nonVerified: [],
+        list: [],
       },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));

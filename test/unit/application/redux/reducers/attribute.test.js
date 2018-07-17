@@ -31,14 +31,14 @@ describe('attribute reducer', () => {
         age: false,
         gender: false,
       },
-      nonVerified: [],
+      list: [],
     });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      nonVerified: [],
+      list: [],
     };
 
     const action = {
@@ -57,14 +57,14 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      nonVerified: [barcelonaResidencyAttribute],
+      list: [barcelonaResidencyAttribute],
     });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL when wallet already has another attribute', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      nonVerified: [amsterdamResidencyAttribute],
+      list: [amsterdamResidencyAttribute],
     };
 
     const action = {
@@ -82,7 +82,7 @@ describe('attribute reducer', () => {
     };
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      nonVerified: [
+      list: [
         amsterdamResidencyAttribute,
         barcelonaResidencyAttribute,
       ],
@@ -92,7 +92,7 @@ describe('attribute reducer', () => {
   it('should handle ADD_CREDENTIAL_FROM_URL from a attribute that already is in the state', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      nonVerified: [barcelonaResidencyAttribute],
+      list: [barcelonaResidencyAttribute],
     };
 
     const action = {
@@ -111,14 +111,14 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      nonVerified: [barcelonaResidencyAttribute],
+      list: [barcelonaResidencyAttribute],
     });
   });
 
   it('should handle LOAD_ATTRIBUTES sets the state with the credentials of the action', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      nonVerified: [amsterdamResidencyAttribute],
+      list: [amsterdamResidencyAttribute],
     };
     const action = {
       type: types.LOAD_ATTRIBUTES,
@@ -127,7 +127,7 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      nonVerified: [
+      list: [
         amsterdamResidencyAttribute,
         barcelonaResidencyAttribute,
       ],
@@ -137,7 +137,7 @@ describe('attribute reducer', () => {
   it('should handle TOGGLE_REQUIRED_ATTRIBUTE sets the state with the updated isRequiredAttributeEnabled value', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      nonVerified: [],
+      list: [],
     };
     const action = {
       type: types.TOGGLE_REQUIRED_ATTRIBUTE,
@@ -146,7 +146,7 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: false,
-      nonVerified: [],
+      list: [],
     });
   });
 
