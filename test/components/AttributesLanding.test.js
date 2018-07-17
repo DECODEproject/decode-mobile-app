@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme';
 import thunk from 'redux-thunk';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import configureStore from 'redux-mock-store';
-import { Text } from 'react-native';
+import { Text, FlatList } from 'react-native';
 import AttributesLanding from '../../screens/AttributesLanding';
 
 
@@ -26,71 +26,40 @@ describe('AttributesLanding', () => {
         { context: { store } },
       );
 
-      const TextWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'You have no data :(');
+      const TextWrappers = wrapper.dive().dive().find(Text).findWhere(n => n.text() === 'You have no data :(');
       expect(TextWrappers).toHaveLength(1);
     });
   });
 
-//   describe('if there is one non-verified attribute', () => {
-//     it('should show the name of that attribute', () => {
-//       const initialState = {
-//         attributes: {
-//           isRequiredAttributeEnabled: false,
-//           optionalAttributesToggleStatus: {
-//             age: false,
-//             gender: false,
-//           },
-//           nonVerified: [
-//             {
-//               name: 'Date of Birth',
-//               value: '01/01/2000',
-//             },
-//           ],
-//         },
-//       };
-//       const store = mockStore(initialState);
-//
-//       const wrapper = shallow(
-//         <AttributesLanding />,
-//         { context: { store } },
-//       );
-//
-//       const TextWrappers = wrapper.dive().find(Text)
-// .findWhere(n => n.text() === 'Date of Birth');
-//       expect(TextWrappers).toHaveLength(1);
-//     });
-//   });
-//
-//   describe('if there are multiple non-verified attributes', () => {
-//     it('should show the name of all attributes', () => {
-//       const initialState = {
-//         attributes: {
-//           isRequiredAttributeEnabled: false,
-//           optionalAttributesToggleStatus: {
-//             age: false,
-//             gender: false,
-//           },
-//           nonVerified: [
-//             {
-//               name: 'Date of Birth',
-//               value: '01/01/2000',
-//             },
-//             {
-//               name: 'Gender',
-//               value: 'Female',
-//             },
-//           ],
-//         },
-//       };
-//       const store = mockStore(initialState);
-//
-//       const wrapper = shallow(
-//         <AttributesLanding />,
-//         { context: { store } },
-//       );
-//
-//       const TextWrappers = wrapper.dive().find(Text);
-//       expect(TextWrappers).toHaveLength(2);
-//     });
-// });
+  describe('if there is an attribute', () => {
+    it('should show a list containing that attribute', () => {
+      const initialState = {
+        attributes: {
+          list: [
+            {
+              predicate: 'schema:birthDate',
+              object: '04/09/1985',
+              scope: 'can-access',
+              provenance: {
+                source: '',
+                credentials: '',
+                verified: false,
+              },
+              subject: 'Jordi',
+            },
+          ],
+        },
+      };
+      const store = mockStore(initialState);
+
+      const wrapper = shallow(
+        <AttributesLanding />,
+        { context: { store } },
+      );
+
+      const FlatListWrapper = wrapper.dive().dive().find(FlatList);
+      expect(FlatListWrapper).toHaveLength(1);
+      expect(FlatListWrapper.props().data).toEqual(initialState.attributes.list);
+    });
+  });
 });
