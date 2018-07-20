@@ -7,9 +7,11 @@ import SignOutcome from './screens/SignOutcome';
 import AttributesSummary from './screens/AttributesSummary';
 import AttributesLanding from './screens/AttributesLanding';
 import PinSetup from './screens/PinSetup';
+import Walkthrough from './screens/Walkthrough';
 
 const Router = createRouter(() => ({
   home: () => Home,
+  walkthrough: () => Walkthrough,
   QRScanner: () => QRScanner,
   authorisation: () => Authorisation,
   petitionSummary: () => PetitionSummary,

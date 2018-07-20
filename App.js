@@ -41,6 +41,10 @@ export default class App extends React.Component {
     });
   }
 
+  goToInitialScreen() { // eslint-disable-line
+    Router.getRoute('walkthrough');
+  }
+
   render() {
     if (this.state.ready) {
       return (
