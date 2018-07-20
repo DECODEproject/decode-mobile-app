@@ -9,6 +9,7 @@ import signOutcome from './reducers/signOutcome';
 import wallet from './reducers/wallet';
 import attributes from './reducers/attributes';
 import authorization from './reducers/authorization';
+import pinSetup from './reducers/pinSetup';
 
 const enhancer = compose(
   applyMiddleware(thunk),
@@ -33,6 +34,7 @@ const Store = createStoreWithNavigation(combineReducers({
   wallet,
   attributes,
   authorization,
+  pinSetup,
 }));
 
 export default Store;
