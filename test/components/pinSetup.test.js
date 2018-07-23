@@ -4,7 +4,6 @@ import configureStore from 'redux-mock-store';
 import Enzyme, { shallow } from 'enzyme';
 import thunk from 'redux-thunk';
 import Adapter from 'enzyme-adapter-react-16/build/index';
-
 import PinSetup from '../../screens/PinSetup';
 import Button from '../../application/components/Button/Button';
 
@@ -42,6 +41,7 @@ describe('PinSetup screen', () => {
       expect(wrapper.dive().find(Button)).toHaveLength(1);
     });
   });
+
   describe('Redux state tests', () => {
     it('should have empty value on initialized', () => {
       const store = mockStore(initialState);

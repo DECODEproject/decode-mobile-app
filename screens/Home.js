@@ -124,7 +124,7 @@ const mapDispatchToProps = dispatch => ({
   goToAttributesSummary: (petitionLink) => { dispatch(goToAttributesSummary(petitionLink)); },
   goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
-  updatePin: (pin) => { dispatch(updatePin(pin)); },
+  updatePin: pin => dispatch(updatePin(pin)),
   initializeState: async () => {
     await dispatch(onStartApp());
     await dispatch(getWalletId());
@@ -134,4 +134,3 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
-
