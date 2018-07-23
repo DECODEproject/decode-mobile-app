@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 describe('App', () => {
   describe('go to initial screen', () => {
-    xit('should go to walkthrough if no pin has been saved', async () => {
+    it('should go to walkthrough if no pin has been saved', async () => {
       const getItemAsync = jest.fn().mockReturnValue(Promise.resolve(undefined));
       const routerSpy = jest.spyOn(Router, 'getRoute');
 
@@ -22,7 +22,7 @@ describe('App', () => {
       expect(routerSpy).toBeCalledWith('walkthrough');
     });
 
-    xit('should go to home screen login if pin has been saved', async () => {
+    it('should go to home screen login if pin has been saved', async () => {
       const routerSpy = jest.spyOn(Router, 'getRoute');
       const wrapper = shallow(<App />);
       const appComponent = wrapper.instance();
