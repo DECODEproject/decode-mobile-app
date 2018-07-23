@@ -8,7 +8,7 @@ const initialState = {
 
 const isPinEqual = (p, q) => p === q;
 const isAtleast4Digits = p => p.length >= 4;
-const isAllNumbers = p => !Number.isNaN(Number(p));
+const isAllNumbers = p => p.match(/\D/) === null;
 
 const isValidPin = (pin1, pin2) =>
   isPinEqual(pin1, pin2) &&

@@ -89,4 +89,19 @@ describe('PinSetup screen', () => {
 
     expect(actualState.validated).toBe(false);
   });
+
+  it('should validate to false if the pin is not all numbers', () => {
+    const stateWithOnePin = {
+      pin1: '111.2',
+      pin2: '',
+      validated: false,
+    };
+
+    const actualState = pinSetupReducer(stateWithOnePin, {
+      type: types.PIN_SETUP_TEXT2_CHANGED,
+      pin: '111.2',
+    });
+
+    expect(actualState.validated).toBe(false);
+  });
 });
