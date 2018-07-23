@@ -164,15 +164,7 @@ describe('signing a petition', () => {
 
     setTimeout(() => {
       wrapper.update();
-      console.log('waited one second');
-      // THEN I am able to see the petition title
-      console.log(store.getActions());
-      // console.log(wrapper.update().dive().debug());
-
-      const wrapper2 = wrapper.dive().find(Text).findWhere(n => n.text() === petitionTitle);
-      console.log(wrapper2);
-
-      // expect(wrapper2.exists()).toEqual(true);
+      wrapper.dive().find(Text).findWhere(n => n.text() === petitionTitle);
       done();
     }, 1000);
   });
