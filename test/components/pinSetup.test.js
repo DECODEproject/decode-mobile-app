@@ -4,6 +4,7 @@ import configureStore from 'redux-mock-store';
 import Enzyme, { shallow } from 'enzyme';
 import thunk from 'redux-thunk';
 import Adapter from 'enzyme-adapter-react-16/build/index';
+import types from '../../application/redux/actionTypes';
 import PinSetup from '../../screens/PinSetup';
 import Button from '../../application/components/Button/Button';
 
@@ -56,6 +57,44 @@ describe('PinSetup screen', () => {
 
       expect(valueInput1).toEqual('');
       expect(valueInput2).toEqual('');
+    });
+
+    it('should send an action when text changes on pin1', () => {
+      const expectedAction = {
+        type: types.PIN_SETUP_TEXT1_CHANGED,
+        pin: '1234',
+      };
+
+      const store = mockStore(initialState);
+
+      const wrapper = shallow(
+        <PinSetup />,
+        { context: { store } },
+      );
+
+      const pin1 = wrapper.dive().find(TextInput).at(0);
+      pin1.simulate('changeText', '1234');
+
+      expect(store.getActions()).toEqual([expectedAction]);
+    });
+
+    it('should send an action when text changes on pin2', () => {
+      const expectedAction = {
+        type: types.PIN_SETUP_TEXT2_CHANGED,
+        pin: '1234',
+      };
+
+      const store = mockStore(initialState);
+
+      const wrapper = shallow(
+        <PinSetup />,
+        { context: { store } },
+      );
+
+      const pin2 = wrapper.dive().find(TextInput).at(1);
+      pin2.simulate('changeText', '1234');
+
+      expect(store.getActions()).toEqual([expectedAction]);
     });
 
     it('should have the same values in the state and in the component', () => {

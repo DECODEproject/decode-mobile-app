@@ -6,7 +6,14 @@ const initialState = {
   validated: false,
 };
 
-const isValidPin = (pin1, pin2) => false; // eslint-disable-line
+const isPinEqual = (p, q) => p === q;
+const isAtleast4Digits = p => p.length >= 4;
+const isAllNumbers = p => !Number.isNaN(Number(p));
+
+const isValidPin = (pin1, pin2) =>
+  isPinEqual(pin1, pin2) &&
+  isAtleast4Digits(pin1) &&
+  isAllNumbers(pin1);
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
@@ -20,7 +27,7 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         pin2: action.pin,
-        validated: isValidPin(state.pin2, action.pin),
+        validated: isValidPin(state.pin1, action.pin),
       };
     default:
       return state;
