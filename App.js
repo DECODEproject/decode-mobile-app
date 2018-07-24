@@ -23,7 +23,7 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       ready: false,
-      initialRoute: Router.getRoute('walkthrough'),
+      initialRoute: '',
     };
   }
 
@@ -34,7 +34,10 @@ export default class App extends React.Component {
     });
 
     await initialiseWalletID();
-    await this.goToInitialScreen(SecureStore.getItemAsync);
+    await this.goToInitialScreen(
+      () => retrievePin(SecureStore.getItemAsync),
+      routeName => Router.getRoute(routeName),
+    );
 
     ScreenOrientation.allow(ScreenOrientation.Orientation.PORTRAIT);
 
@@ -44,17 +47,24 @@ export default class App extends React.Component {
   }
 
 
-  async goToInitialScreen(getFromStoreFn) { // eslint-disable-line
+  async goToInitialScreen(retrievePinFunc, routerFunc) { // eslint-disable-line
+
     try {
-      return retrievePin(getFromStoreFn).then((pin) => {
+      return retrievePinFunc().then((pin) => {
         if (pin !== undefined) {
           this.setState({
-            initialRoute: Router.getRoute('home'),
+            initialRoute: routerFunc('home'),
+          });
+        } else {
+          this.setState({
+            initialRoute: routerFunc('walkthrough'),
           });
         }
       });
     } catch (e) {
-      console.error(e);
+      this.setState({
+        initialRoute: routerFunc('walkthrough'),
+      });
     }
   }
 
