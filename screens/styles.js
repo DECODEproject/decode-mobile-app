@@ -181,6 +181,28 @@ const styles = StyleSheet.create({
     marginBottom: 4,
     textAlign: 'center',
   },
+  pinContainer: {
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  pinLogo: {
+    height: 275,
+    marginTop: 75,
+    marginBottom: 50,
+    width: 320,
+  },
+  pinPassword: {
+    height: Platform.OS === 'ios' ? 35 : 40,
+    width: 150,
+    borderWidth: 1,
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    marginBottom: 30,
+  },
+  pinButton: {
+    width: 150,
+    alignItems: 'center',
+  },
 });
 
 export default styles;

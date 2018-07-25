@@ -1,21 +1,43 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { TextInput, View } from 'react-native';
+import { Image, TextInput, View } from 'react-native';
 import Button from '../application/components/Button/Button';
 import { changeText1, changeText2 } from '../application/redux/actions/pinSetup';
+import styles from './styles';
+
+const decodeLogo = require('../assets/images/decode-hexagon.png');
 
 const PinSetup = props => (
-  <View>
+  <View style={styles.pinContainer}>
+    <Image
+      style={styles.pinLogo}
+      source={decodeLogo}
+    />
     <TextInput
+      style={styles.pinPassword}
+      placeholder=" Pin"
+      keyboardType="numeric"
+      secureTextEntry
+      underlineColorAndroid="transparent"
       value={props.pin1}
       onChangeText={pin => props.changeText1(pin)}
     />
     <TextInput
+      style={styles.pinPassword}
+      placeholder=" Confirm pin"
+      keyboardType="numeric"
+      secureTextEntry
+      underlineColorAndroid="transparent"
       value={props.pin2}
       onChangeText={pin => props.changeText2(pin)}
     />
-    <Button name="Save" />
+    <View style={{ flexDirection: 'row' }}>
+      <Button
+        name="Save"
+        style={styles.pinButton}
+      />
+    </View>
   </View>
 );
 
