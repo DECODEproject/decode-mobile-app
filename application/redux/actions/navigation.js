@@ -35,7 +35,7 @@ export function goToSignOutcome() {
   return NavigationActions.push(navigatorUID, Router.getRoute('signOutcome'));
 }
 
-export function goToSetupPin() {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
+export function goToPinSetup(navigation) {
+  const navigatorUID = navigation.currentNavigatorUID;
   return NavigationActions.push(navigatorUID, Router.getRoute('setupPin'));
 }
