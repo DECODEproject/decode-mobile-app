@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Button from '../application/components/Button/Button';
 import { goToPinSetup } from '../application/redux/actions/navigation';
+import styles from './styles';
 
 
 const Walkthrough = props => (
-  <View>
+  <View style={styles.walkthroughContainer}>
     <View>
       <Text>Walkthrough</Text>
     </View>

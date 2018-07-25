@@ -203,6 +203,14 @@ const styles = StyleSheet.create({
     width: 150,
     alignItems: 'center',
   },
+  walkthroughContainer: {
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    margin: 16,
+    marginTop: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 40,
+  },
 });
 
 export default styles;
