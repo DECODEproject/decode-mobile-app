@@ -13,3 +13,10 @@ export function changeText2(pin) {
     pin,
   };
 }
+
+export function storePin(pin) {
+  return {
+    type: types.PIN_SETUP_STORE,
+    pin,
+  };
+}

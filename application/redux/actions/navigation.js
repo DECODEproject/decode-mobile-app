@@ -34,3 +34,8 @@ export function goToSignOutcome() {
   const navigatorUID = Store.getState().navigation.currentNavigatorUID;
   return NavigationActions.push(navigatorUID, Router.getRoute('signOutcome'));
 }
+
+export function goToSetupPin() {
+  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
+  return NavigationActions.push(navigatorUID, Router.getRoute('setupPin'));
+}

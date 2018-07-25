@@ -21,6 +21,14 @@ describe('PinSetup screen', () => {
     },
   };
 
+  const initialStateWithPins = {
+    pinSetup: {
+      pin1: '1234',
+      pin2: '1234',
+      validated: true,
+    },
+  };
+
   describe('UI tests', () => {
     it('should have a two of text inputs', () => {
       const store = mockStore(initialState);
@@ -40,6 +48,18 @@ describe('PinSetup screen', () => {
       );
 
       expect(wrapper.dive().find(Button)).toHaveLength(1);
+    });
+
+    it('should disable the save button if the state is not valid', () => {
+      const store = mockStore(initialState);
+      const wrapper = shallow(
+        <PinSetup />,
+        { context: { store } },
+      );
+
+      const save = wrapper.dive().find(Button);
+
+      expect(save.prop('enabled')).toBe(false);
     });
   });
 
@@ -98,15 +118,7 @@ describe('PinSetup screen', () => {
     });
 
     it('should have the same values in the state and in the component', () => {
-      const altInitialState = {
-        pinSetup: {
-          pin1: '1234',
-          pin2: '1234',
-          validated: false,
-        },
-      };
-
-      const store = mockStore(altInitialState);
+      const store = mockStore(initialStateWithPins);
 
       const wrapper = shallow(
         <PinSetup />,
@@ -118,6 +130,26 @@ describe('PinSetup screen', () => {
 
       expect(valueInput1).toEqual('1234');
       expect(valueInput2).toEqual('1234');
+    });
+
+
+    it('should be an action after pressing save', () => {
+      const expectedAction = {
+        type: types.PIN_SETUP_STORE,
+        pin: '1234',
+      };
+
+      const store = mockStore(initialStateWithPins);
+
+      const wrapper = shallow(
+        <PinSetup />,
+        { context: { store } },
+      );
+
+      const button = wrapper.dive().find(Button);
+      button.simulate('press');
+
+      expect(store.getActions()).toEqual([expectedAction]);
     });
   });
 });

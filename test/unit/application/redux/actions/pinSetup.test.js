@@ -1,7 +1,7 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import types from '../../../../../application/redux/actionTypes';
-import { changeText1, changeText2 } from '../../../../../application/redux/actions/pinSetup';
+import { changeText1, changeText2, storePin } from '../../../../../application/redux/actions/pinSetup';
 
 const mockStore = configureStore([thunk]);
 
@@ -31,6 +31,17 @@ describe('PinSetup actions', () => {
 
     expect(store.getActions()).toEqual([{
       type: types.PIN_SETUP_TEXT2_CHANGED,
+      pin: '1234',
+    }]);
+  });
+
+  it('should execute an action when button is clicked', () => {
+    const store = mockStore(initialState);
+
+    store.dispatch(storePin('1234'));
+
+    expect(store.getActions()).toEqual([{
+      type: types.PIN_SETUP_STORE,
       pin: '1234',
     }]);
   });
