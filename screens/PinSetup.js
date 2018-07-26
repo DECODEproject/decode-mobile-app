@@ -27,40 +27,43 @@ const PinSetup = props => (
         Let&#39;s setup a pin, so no one else can access your data
       </Text>
 
-      <Text style={styles.pinInputLabel}>
-        Enter PIN:
-      </Text>
-      <TextInput
-        style={styles.pinPassword}
-        placeholder=" At least 4 digits"
-        keyboardType="numeric"
-        secureTextEntry
-        underlineColorAndroid="transparent"
-        value={props.pin1}
-        onChangeText={pin => props.changeText1(pin)}
-      />
+      <View style={{ height: 100 }}>
+        <Text style={styles.pinInputLabel}>
+          Enter PIN:
+        </Text>
+        <TextInput
+          style={styles.pinPassword}
+          placeholder=" At least 4 digits"
+          keyboardType="numeric"
+          secureTextEntry
+          underlineColorAndroid="transparent"
+          value={props.pin1}
+          onChangeText={pin => props.changeText1(pin)}
+        />
 
-      {!props.validPinFormat &&
-      <Text style={styles.pinError}>
-          Pin must be at least 4 digits long
-      </Text>}
-
-      <Text style={styles.pinInputLabel}>
-        Confirm Pin:
-      </Text>
-      <TextInput
-        style={styles.pinPassword}
-        placeholder=" Confirm pin"
-        keyboardType="numeric"
-        secureTextEntry
-        underlineColorAndroid="transparent"
-        value={props.pin2}
-        onChangeText={pin => props.changeText2(pin)}
-      />
-      {!props.validPinEqual &&
-      <Text style={styles.pinError}>
-        Pin must be same as above
-      </Text>}
+        {!props.validPinFormat &&
+        <Text style={styles.pinError}>
+            Pin must be at least 4 digits long
+        </Text>}
+      </View>
+      <View style={{ height: 100 }}>
+        <Text style={styles.pinInputLabel}>
+          Confirm Pin:
+        </Text>
+        <TextInput
+          style={styles.pinPassword}
+          placeholder=" Confirm pin"
+          keyboardType="numeric"
+          secureTextEntry
+          underlineColorAndroid="transparent"
+          value={props.pin2}
+          onChangeText={pin => props.changeText2(pin)}
+        />
+        {!props.validPinEqual &&
+        <Text style={styles.pinError}>
+          Pin must be same as above
+        </Text>}
+      </View>
       <View style={{ flexDirection: 'row' }}>
         <Button
           name="Save"
