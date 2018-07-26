@@ -1,4 +1,5 @@
 import types from '../actionTypes';
+import { storePinOnAppInitalization } from '../../../LocalStorage';
 
 export function changeText1(pin) {
   return {
@@ -14,9 +15,16 @@ export function changeText2(pin) {
   };
 }
 
-export function storePin(pin) {
+export function pinStored(pin) {
   return {
     type: types.PIN_SETUP_STORE,
     pin,
+  };
+}
+
+export function storePin(setItem, pin) {
+  return async (dispatch) => {
+    await storePinOnAppInitalization(setItem, pin);
+    dispatch(pinStored(pin));
   };
 }

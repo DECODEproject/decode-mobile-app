@@ -35,14 +35,17 @@ describe('PinSetup actions', () => {
     }]);
   });
 
-  it('should execute an action when button is clicked', () => {
+  it('should save the pin into the storage', async () => {
+    const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
     const store = mockStore(initialState);
 
-    store.dispatch(storePin('1234'));
+    await store.dispatch(storePin(setItemAsync, '6666'));
 
+    expect(setItemAsync).toBeCalled();
+    expect(setItemAsync).toBeCalledWith('pincode', '6666');
     expect(store.getActions()).toEqual([{
       type: types.PIN_SETUP_STORE,
-      pin: '1234',
+      pin: '6666',
     }]);
   });
 });

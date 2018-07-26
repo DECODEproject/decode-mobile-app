@@ -8,7 +8,6 @@ import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { getWalletId } from '../application/redux/actions/wallet';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
-import { storePinOnAppInitalization } from '../LocalStorage';
 import Button from '../application/components/Button/Button';
 
 
@@ -128,7 +127,6 @@ const mapDispatchToProps = dispatch => ({
   initializeState: async () => {
     await dispatch(onStartApp());
     await dispatch(getWalletId());
-    await storePinOnAppInitalization(SecureStore.setItemAsync);
     await dispatch(loadCredentials(SecureStore.getItemAsync));
   },
 });

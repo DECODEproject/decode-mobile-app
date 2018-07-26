@@ -133,7 +133,7 @@ describe('PinSetup screen', () => {
     });
 
 
-    it('should be an action after pressing save', () => {
+    it('should be an action after pressing save', (done) => {
       const expectedAction = {
         type: types.PIN_SETUP_STORE,
         pin: '1234',
@@ -149,7 +149,10 @@ describe('PinSetup screen', () => {
       const button = wrapper.dive().find(Button);
       button.simulate('press');
 
-      expect(store.getActions()).toEqual([expectedAction]);
+      setImmediate(() => {
+        expect(store.getActions()).toEqual([expectedAction]);
+        done();
+      });
     });
   });
 });

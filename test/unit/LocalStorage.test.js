@@ -4,7 +4,7 @@ describe('LocalStorage', () => {
   it('storePinOnAppInitalization always stores in the SecureStore the same pin code hardcoded - 1234', async () => {
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
 
-    await storePinOnAppInitalization(setItemAsync);
+    await storePinOnAppInitalization(setItemAsync, '1234');
 
     expect(setItemAsync).toBeCalled();
     expect(setItemAsync).toBeCalledWith('pincode', '1234');

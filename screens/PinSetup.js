@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
 import { Image, TextInput, View } from 'react-native';
+import { goToAttributesLanding } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
 import { changeText1, changeText2, storePin } from '../application/redux/actions/pinSetup';
 import styles from './styles';
@@ -61,7 +63,10 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   changeText1: pin => dispatch(changeText1(pin)),
   changeText2: pin => dispatch(changeText2(pin)),
-  storePin: pin => dispatch(storePin(pin)),
+  storePin: async (pin) => {
+    await dispatch(storePin(SecureStore.setItemAsync, pin));
+    dispatch(goToAttributesLanding());
+  },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PinSetup);
