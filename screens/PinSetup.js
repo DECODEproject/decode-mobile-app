@@ -8,7 +8,7 @@ import Button from '../application/components/Button/Button';
 import { changeText1, changeText2, storePin } from '../application/redux/actions/pinSetup';
 import styles from './styles';
 
-const decodeLogo = require('../assets/images/decode-hexagon.png');
+const decodeLogo = require('../assets/images/decode-logo-pin.png');
 
 const PinSetup = props => (
   <KeyboardAvoidingView

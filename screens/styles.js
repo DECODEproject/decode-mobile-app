@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   pinLogo: {
-    height: 70,
+    height: 80,
     marginTop: 50,
     marginBottom: 30,
     width: 200,
