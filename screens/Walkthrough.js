@@ -38,6 +38,7 @@ const titleStyle = {
 const Walkthrough = props => (
   <Onboarding
     onDone={() => props.goToPinSetup()}
+    onSkip={() => props.goToPinSetup()}
     pages={[
       {
         imageContainerStyles: { flex: 7 },

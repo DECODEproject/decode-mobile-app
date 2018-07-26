@@ -28,7 +28,7 @@ ShallowWrapper {
       "controlStatusBar": true,
       "nextLabel": "Next",
       "onDone": [Function],
-      "onSkip": null,
+      "onSkip": [Function],
       "pages": Array [
         Object {
           "backgroundColor": "#0575e5",
@@ -139,7 +139,7 @@ ShallowWrapper {
         "controlStatusBar": true,
         "nextLabel": "Next",
         "onDone": [Function],
-        "onSkip": null,
+        "onSkip": [Function],
         "pages": Array [
           Object {
             "backgroundColor": "#0575e5",
