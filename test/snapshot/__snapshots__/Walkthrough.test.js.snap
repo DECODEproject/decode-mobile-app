@@ -49,10 +49,10 @@ ShallowWrapper {
             style={
               Object {
                 "color": "white",
-                "flex": 7,
-                "fontSize": 36,
-                "paddingLeft": 50,
-                "paddingRight": 50,
+                "flex": 6,
+                "fontSize": 32,
+                "paddingLeft": 35,
+                "paddingRight": 35,
                 "textAlign": "center",
               }
             }
@@ -70,49 +70,103 @@ ShallowWrapper {
           />,
         },
         Object {
-          "backgroundColor": "#fe6e58",
+          "backgroundColor": "#fd56ac",
           "image": <Image
             resizeMode="contain"
             source={1}
             style={
               Object {
                 "height": 400,
-                "width": "100%",
+                "width": "95%",
               }
             }
           />,
-          "subtitle": "This is the subtitle that sumplements the title.",
-          "title": "The Title",
+          "imageContainerStyles": Object {
+            "flex": 7,
+          },
+          "subtitle": <TitleElement
+            style={
+              Object {
+                "color": "white",
+                "flex": 6,
+                "fontSize": 32,
+                "paddingLeft": 35,
+                "paddingRight": 35,
+                "textAlign": "center",
+              }
+            }
+            title="Big companies store and sell your data"
+          />,
+          "title": "",
         },
         Object {
-          "backgroundColor": "#999",
+          "backgroundColor": "#37bdc2",
           "image": <Image
             resizeMode="contain"
             source={1}
             style={
               Object {
                 "height": 400,
-                "width": "100%",
+                "width": "95%",
               }
             }
           />,
-          "subtitle": "Beautiful, isn't it?",
-          "title": "Triangle",
+          "imageContainerStyles": Object {
+            "flex": 7,
+          },
+          "subtitle": <TitleElement
+            style={
+              Object {
+                "color": "white",
+                "flex": 6,
+                "fontSize": 32,
+                "paddingLeft": 35,
+                "paddingRight": 35,
+                "textAlign": "center",
+              }
+            }
+            title="Gives you back control of your data. It is kept in your wallet"
+          />,
+          "title": <TitleElement
+            style={
+              Object {
+                "color": "white",
+                "flex": 1,
+                "fontSize": 48,
+              }
+            }
+            title="DECODE"
+          />,
         },
         Object {
-          "backgroundColor": "#999",
+          "backgroundColor": "#0475e5",
           "image": <Image
             resizeMode="contain"
             source={1}
             style={
               Object {
                 "height": 400,
-                "width": "100%",
+                "width": "95%",
               }
             }
           />,
-          "subtitle": "Beautiful, isn't it?",
-          "title": "Triangle",
+          "imageContainerStyles": Object {
+            "flex": 7,
+          },
+          "subtitle": <TitleElement
+            style={
+              Object {
+                "color": "white",
+                "flex": 6,
+                "fontSize": 32,
+                "paddingLeft": 35,
+                "paddingRight": 35,
+                "textAlign": "center",
+              }
+            }
+            title="Your data is protected"
+          />,
+          "title": "",
         },
       ],
       "showDone": true,
@@ -160,10 +214,10 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "white",
-                  "flex": 7,
-                  "fontSize": 36,
-                  "paddingLeft": 50,
-                  "paddingRight": 50,
+                  "flex": 6,
+                  "fontSize": 32,
+                  "paddingLeft": 35,
+                  "paddingRight": 35,
                   "textAlign": "center",
                 }
               }
@@ -181,49 +235,103 @@ ShallowWrapper {
             />,
           },
           Object {
-            "backgroundColor": "#fe6e58",
+            "backgroundColor": "#fd56ac",
             "image": <Image
               resizeMode="contain"
               source={1}
               style={
                 Object {
                   "height": 400,
-                  "width": "100%",
+                  "width": "95%",
                 }
               }
             />,
-            "subtitle": "This is the subtitle that sumplements the title.",
-            "title": "The Title",
+            "imageContainerStyles": Object {
+              "flex": 7,
+            },
+            "subtitle": <TitleElement
+              style={
+                Object {
+                  "color": "white",
+                  "flex": 6,
+                  "fontSize": 32,
+                  "paddingLeft": 35,
+                  "paddingRight": 35,
+                  "textAlign": "center",
+                }
+              }
+              title="Big companies store and sell your data"
+            />,
+            "title": "",
           },
           Object {
-            "backgroundColor": "#999",
+            "backgroundColor": "#37bdc2",
             "image": <Image
               resizeMode="contain"
               source={1}
               style={
                 Object {
                   "height": 400,
-                  "width": "100%",
+                  "width": "95%",
                 }
               }
             />,
-            "subtitle": "Beautiful, isn't it?",
-            "title": "Triangle",
+            "imageContainerStyles": Object {
+              "flex": 7,
+            },
+            "subtitle": <TitleElement
+              style={
+                Object {
+                  "color": "white",
+                  "flex": 6,
+                  "fontSize": 32,
+                  "paddingLeft": 35,
+                  "paddingRight": 35,
+                  "textAlign": "center",
+                }
+              }
+              title="Gives you back control of your data. It is kept in your wallet"
+            />,
+            "title": <TitleElement
+              style={
+                Object {
+                  "color": "white",
+                  "flex": 1,
+                  "fontSize": 48,
+                }
+              }
+              title="DECODE"
+            />,
           },
           Object {
-            "backgroundColor": "#999",
+            "backgroundColor": "#0475e5",
             "image": <Image
               resizeMode="contain"
               source={1}
               style={
                 Object {
                   "height": 400,
-                  "width": "100%",
+                  "width": "95%",
                 }
               }
             />,
-            "subtitle": "Beautiful, isn't it?",
-            "title": "Triangle",
+            "imageContainerStyles": Object {
+              "flex": 7,
+            },
+            "subtitle": <TitleElement
+              style={
+                Object {
+                  "color": "white",
+                  "flex": 6,
+                  "fontSize": 32,
+                  "paddingLeft": 35,
+                  "paddingRight": 35,
+                  "textAlign": "center",
+                }
+              }
+              title="Your data is protected"
+            />,
+            "title": "",
           },
         ],
         "showDone": true,

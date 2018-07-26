@@ -8,6 +8,7 @@ import { goToPinSetup } from '../application/redux/actions/navigation';
 const firstPageImage = require('../assets/images/onboarding01.png');
 const secondPageImage = require('../assets/images/onboarding02.png');
 const thirdPageImage = require('../assets/images/onboarding03.png');
+const fourthPageImage = require('../assets/images/onboarding04.png');
 
 const TitleElement = ({ title, style }) => (
   <Text style={style}>
@@ -21,12 +22,12 @@ TitleElement.propTypes = {
 };
 
 const subtitleStyle = {
-  flex: 7,
-  fontSize: 36,
+  flex: 6,
+  fontSize: 32,
   textAlign: 'center',
   color: 'white',
-  paddingLeft: 50,
-  paddingRight: 50,
+  paddingLeft: 35,
+  paddingRight: 35,
 };
 
 const titleStyle = {
@@ -48,22 +49,25 @@ const Walkthrough = props => (
         subtitle: <TitleElement title="Gives you ownership of your personal data" style={subtitleStyle} />,
       },
       {
-        backgroundColor: '#fe6e58',
-        image: <Image style={{ width: '100%', height: 400 }} resizeMode="contain" source={secondPageImage} />,
-        title: 'The Title',
-        subtitle: 'This is the subtitle that sumplements the title.',
+        imageContainerStyles: { flex: 7 },
+        backgroundColor: '#fd56ac',
+        image: <Image style={{ width: '95%', height: 400 }} resizeMode="contain" source={secondPageImage} />,
+        title: '',
+        subtitle: <TitleElement title="Big companies store and sell your data" style={subtitleStyle} />,
       },
       {
-        backgroundColor: '#999',
-        image: <Image style={{ width: '100%', height: 400 }} resizeMode="contain" source={thirdPageImage} />,
-        title: 'Triangle',
-        subtitle: "Beautiful, isn't it?",
+        imageContainerStyles: { flex: 7 },
+        backgroundColor: '#37bdc2',
+        image: <Image style={{ width: '95%', height: 400 }} resizeMode="contain" source={thirdPageImage} />,
+        title: <TitleElement title={'Decode'.toUpperCase()} style={titleStyle} />,
+        subtitle: <TitleElement title="Gives you back control of your data. It is kept in your wallet" style={subtitleStyle} />,
       },
       {
-        backgroundColor: '#999',
-        image: <Image style={{ width: '100%', height: 400 }} resizeMode="contain" source={thirdPageImage} />,
-        title: 'Triangle',
-        subtitle: "Beautiful, isn't it?",
+        imageContainerStyles: { flex: 7 },
+        backgroundColor: '#0475e5',
+        image: <Image style={{ width: '95%', height: 400 }} resizeMode="contain" source={fourthPageImage} />,
+        title: '',
+        subtitle: <TitleElement title="Your data is protected" style={subtitleStyle} />,
       },
     ]}
   />
