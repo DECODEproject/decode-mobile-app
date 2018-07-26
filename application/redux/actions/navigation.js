@@ -59,3 +59,23 @@ export function goToPinSetup() {
     dispatch(action);
   };
 }
+
+export function goToHome() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('home'));
+    dispatch(action);
+  };
+}
+
+export function goToPilotScreen() {
+  return (dispatch, getState) => {
+    console.log(getState());
+    const link = getState().petitionLink.petitionLink;
+    if (link) {
+      dispatch(goToAttributesSummary(link));
+    } else {
+      dispatch(goToAttributesLanding());
+    }
+  };
+}

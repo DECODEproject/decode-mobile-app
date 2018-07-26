@@ -1,6 +1,6 @@
 import types from '../actionTypes';
 import { storePinOnAppInitalization } from '../../../LocalStorage';
-import { goToAttributesLanding } from './navigation';
+import { goToHome } from './navigation';
 
 export function changeText1(pin) {
   return {
@@ -37,7 +37,7 @@ export function storePin(setItem, pin) {
     if (valid) {
       await storePinOnAppInitalization(setItem, pin);
       await dispatch(pinStored());
-      dispatch(goToAttributesLanding());
+      dispatch(goToHome());
     }
   };
 }
