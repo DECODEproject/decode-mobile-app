@@ -15,16 +15,15 @@ export function changeText2(pin) {
   };
 }
 
-export function pinStored(pin) {
+export function pinStored() {
   return {
     type: types.PIN_SETUP_STORE,
-    pin,
   };
 }
 
 export function storePin(setItem, pin) {
   return async (dispatch) => {
     await storePinOnAppInitalization(setItem, pin);
-    dispatch(pinStored(pin));
+    dispatch(pinStored());
   };
 }

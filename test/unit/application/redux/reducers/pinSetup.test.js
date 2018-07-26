@@ -1,11 +1,12 @@
 import pinSetupReducer from '../../../../../application/redux/reducers/pinSetup';
 import types from '../../../../../application/redux/actionTypes';
 
-describe('PinSetup screen', () => {
+describe('PinSetup reducer', () => {
   const initialState = {
     pin1: '',
     pin2: '',
-    validated: false,
+    validFormat: true,
+    validEqual: true,
   };
 
   it('should have initial state', () => {
@@ -33,31 +34,27 @@ describe('PinSetup screen', () => {
   it('should validate to true if pin1 and pin2 has same value', () => {
     const stateWithOnePin = {
       pin1: '1234',
-      pin2: '',
-      validated: false,
+      pin2: '1234',
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_TEXT2_CHANGED,
-      pin: '1234',
+      type: types.PIN_SETUP_STORE,
     });
 
-    expect(actualState.validated).toBe(true);
+    expect(actualState.validEqual).toBe(true);
   });
 
   it('should validate to false if pin1 is different than pin2', () => {
     const stateWithOnePin = {
       pin1: '1234',
-      pin2: '',
-      validated: false,
+      pin2: '2468',
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_TEXT2_CHANGED,
-      pin: '2468',
+      type: types.PIN_SETUP_STORE,
     });
 
-    expect(actualState.validated).toBe(false);
+    expect(actualState.validEqual).toBe(false);
   });
 
   it('should validate that the pin is at least 4 digits long', () => {
@@ -78,30 +75,26 @@ describe('PinSetup screen', () => {
   it('should validate to false if the pin is not all numbers', () => {
     const stateWithOnePin = {
       pin1: '123a',
-      pin2: '',
-      validated: false,
+      pin2: '123a',
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_TEXT2_CHANGED,
-      pin: '123a',
+      type: types.PIN_SETUP_STORE,
     });
 
-    expect(actualState.validated).toBe(false);
+    expect(actualState.validFormat).toBe(false);
   });
 
-  it('should validate to false if the pin is not all numbers', () => {
+  it('should validate to false if the there is a point', () => {
     const stateWithOnePin = {
       pin1: '111.2',
-      pin2: '',
-      validated: false,
+      pin2: '111.2',
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_TEXT2_CHANGED,
-      pin: '111.2',
+      type: types.PIN_SETUP_STORE,
     });
 
-    expect(actualState.validated).toBe(false);
+    expect(actualState.validFormat).toBe(false);
   });
 });

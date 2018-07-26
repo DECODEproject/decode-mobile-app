@@ -17,7 +17,6 @@ describe('PinSetup screen', () => {
     pinSetup: {
       pin1: '',
       pin2: '',
-      validated: false,
     },
   };
 
@@ -25,7 +24,6 @@ describe('PinSetup screen', () => {
     pinSetup: {
       pin1: '1234',
       pin2: '1234',
-      validated: true,
     },
   };
 
@@ -48,18 +46,6 @@ describe('PinSetup screen', () => {
       );
 
       expect(wrapper.dive().find(Button)).toHaveLength(1);
-    });
-
-    it('should disable the save button if the state is not valid', () => {
-      const store = mockStore(initialState);
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
-
-      const save = wrapper.dive().find(Button);
-
-      expect(save.prop('enabled')).toBe(false);
     });
   });
 
@@ -136,7 +122,6 @@ describe('PinSetup screen', () => {
     it('should be an action after pressing save', (done) => {
       const expectedAction = {
         type: types.PIN_SETUP_STORE,
-        pin: '1234',
       };
 
       const store = mockStore(initialStateWithPins);

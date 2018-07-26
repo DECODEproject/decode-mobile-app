@@ -45,7 +45,6 @@ describe('PinSetup actions', () => {
     expect(setItemAsync).toBeCalledWith('pincode', '6666');
     expect(store.getActions()).toEqual([{
       type: types.PIN_SETUP_STORE,
-      pin: '6666',
     }]);
   });
 });

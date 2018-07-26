@@ -40,7 +40,12 @@ const PinSetup = props => (
         value={props.pin1}
         onChangeText={pin => props.changeText1(pin)}
       />
-      <Text style={styles.pinError}>Pin must be at least 4 digits long</Text>
+
+      {!props.validPinFormat &&
+      <Text style={styles.pinError}>
+          Pin must be at least 4 digits long
+      </Text>}
+
       <Text style={styles.pinInputLabel}>
         Confirm Pin:
       </Text>
@@ -53,13 +58,15 @@ const PinSetup = props => (
         value={props.pin2}
         onChangeText={pin => props.changeText2(pin)}
       />
-      <Text style={styles.pinError}>Pin must be same as above</Text>
+      {!props.validPinEqual &&
+      <Text style={styles.pinError}>
+        Pin must be same as above
+      </Text>}
       <View style={{ flexDirection: 'row' }}>
         <Button
           name="Save"
           onPress={() => props.storePin(props.pin1)}
           style={styles.pinButton}
-          enabled={props.valid}
         />
       </View>
     </View>
@@ -69,7 +76,8 @@ const PinSetup = props => (
 PinSetup.propTypes = {
   pin1: PropTypes.string.isRequired,
   pin2: PropTypes.string.isRequired,
-  valid: PropTypes.bool.isRequired,
+  validPinFormat: PropTypes.bool.isRequired,
+  validPinEqual: PropTypes.bool.isRequired,
   changeText1: PropTypes.func.isRequired,
   changeText2: PropTypes.func.isRequired,
   storePin: PropTypes.func.isRequired,
@@ -78,7 +86,8 @@ PinSetup.propTypes = {
 const mapStateToProps = state => ({
   pin1: state.pinSetup.pin1,
   pin2: state.pinSetup.pin2,
-  valid: state.pinSetup.validated,
+  validPinFormat: state.pinSetup.validFormat,
+  validPinEqual: state.pinSetup.validEqual,
 });
 
 const mapDispatchToProps = dispatch => ({
