@@ -35,8 +35,9 @@ const titleStyle = {
   color: 'white',
 };
 
-const Walkthrough = () => (
+const Walkthrough = props => (
   <Onboarding
+    onDone={() => props.goToPinSetup()}
     pages={[
       {
         imageContainerStyles: { flex: 7 },
@@ -57,9 +58,19 @@ const Walkthrough = () => (
         title: 'Triangle',
         subtitle: "Beautiful, isn't it?",
       },
+      {
+        backgroundColor: '#999',
+        image: <Image style={{ width: '100%', height: 400 }} resizeMode="contain" source={thirdPageImage} />,
+        title: 'Triangle',
+        subtitle: "Beautiful, isn't it?",
+      },
     ]}
   />
 );
+
+Walkthrough.propTypes = {
+  goToPinSetup: PropTypes.func.isRequired,
+};
 
 const mapStateToProps = () => ({});
 

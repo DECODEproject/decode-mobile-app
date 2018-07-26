@@ -27,7 +27,7 @@ ShallowWrapper {
       "bottomBarHighlight": true,
       "controlStatusBar": true,
       "nextLabel": "Next",
-      "onDone": null,
+      "onDone": [Function],
       "onSkip": null,
       "pages": Array [
         Object {
@@ -99,6 +99,21 @@ ShallowWrapper {
           "subtitle": "Beautiful, isn't it?",
           "title": "Triangle",
         },
+        Object {
+          "backgroundColor": "#999",
+          "image": <Image
+            resizeMode="contain"
+            source={1}
+            style={
+              Object {
+                "height": 400,
+                "width": "100%",
+              }
+            }
+          />,
+          "subtitle": "Beautiful, isn't it?",
+          "title": "Triangle",
+        },
       ],
       "showDone": true,
       "showNext": true,
@@ -123,7 +138,7 @@ ShallowWrapper {
         "bottomBarHighlight": true,
         "controlStatusBar": true,
         "nextLabel": "Next",
-        "onDone": null,
+        "onDone": [Function],
         "onSkip": null,
         "pages": Array [
           Object {
@@ -179,6 +194,21 @@ ShallowWrapper {
             />,
             "subtitle": "This is the subtitle that sumplements the title.",
             "title": "The Title",
+          },
+          Object {
+            "backgroundColor": "#999",
+            "image": <Image
+              resizeMode="contain"
+              source={1}
+              style={
+                Object {
+                  "height": 400,
+                  "width": "100%",
+                }
+              }
+            />,
+            "subtitle": "Beautiful, isn't it?",
+            "title": "Triangle",
           },
           Object {
             "backgroundColor": "#999",
