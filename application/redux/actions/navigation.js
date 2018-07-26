@@ -1,41 +1,61 @@
 import { NavigationActions } from '@expo/ex-navigation';
-import Store from '../store';
 import Router from '../../../Router';
 
 export function goToAuthorization(petitionLink) {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  const route = Router.getRoute('authorisation', { petitionLink });
-  return NavigationActions.push(navigatorUID, route);
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const route = Router.getRoute('authorisation', { petitionLink });
+    const action = NavigationActions.push(navigatorUID, route);
+    dispatch(action);
+  };
 }
 
 export function goToQRScanner() {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  return NavigationActions.push(navigatorUID, Router.getRoute('QRScanner'));
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('QRScanner'));
+    dispatch(action);
+  };
 }
 
 export function goToPetitionSummary(petitionLink) {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  const route = Router.getRoute('petitionSummary', { petitionLink });
-  return NavigationActions.push(navigatorUID, route);
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const route = Router.getRoute('petitionSummary', { petitionLink });
+    const action = NavigationActions.push(navigatorUID, route);
+    dispatch(action);
+  };
 }
 
 export function goToAttributesSummary(petitionLink) {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  const route = Router.getRoute('attributesSummary', { petitionLink });
-  return NavigationActions.push(navigatorUID, route);
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const route = Router.getRoute('attributesSummary', { petitionLink });
+    const action = NavigationActions.push(navigatorUID, route);
+    dispatch(action);
+  };
 }
 
 export function goToAttributesLanding() {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  return NavigationActions.push(navigatorUID, Router.getRoute('attributesLanding'));
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('attributesLanding'));
+    dispatch(action);
+  };
 }
 
 export function goToSignOutcome() {
-  const navigatorUID = Store.getState().navigation.currentNavigatorUID;
-  return NavigationActions.push(navigatorUID, Router.getRoute('signOutcome'));
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('signOutcome'));
+    dispatch(action);
+  };
 }
 
-export function goToPinSetup(navigation) {
-  const navigatorUID = navigation.currentNavigatorUID;
-  return NavigationActions.push(navigatorUID, Router.getRoute('pinSetup'));
+export function goToPinSetup() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('pinSetup'));
+    dispatch(action);
+  };
 }

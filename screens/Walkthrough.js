@@ -15,7 +15,7 @@ const Walkthrough = props => (
     <View style={{ flexDirection: 'row' }}>
       <Button
         name="Continue"
-        onPress={() => props.goToPinSetup(props.navigation)}
+        onPress={() => props.goToPinSetup()}
         style={{
           width: 150,
           alignItems: 'center',
@@ -28,17 +28,12 @@ const Walkthrough = props => (
 
 Walkthrough.propTypes = {
   goToPinSetup: PropTypes.func.isRequired,
-  navigation: PropTypes.shape({}).isRequired,
 };
 
-const mapStateToProps = ({ navigation }) => ({
-  navigation,
-});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = dispatch => ({
-  goToPinSetup: (navigation) => {
-    dispatch(goToPinSetup(navigation));
-  },
+  goToPinSetup: () => dispatch(goToPinSetup()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Walkthrough);
