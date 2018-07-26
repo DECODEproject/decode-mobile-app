@@ -40,6 +40,9 @@ const Walkthrough = props => (
   <Onboarding
     onDone={() => props.goToPinSetup()}
     onSkip={() => props.goToPinSetup()}
+    bottomBarHighlight={false}
+    skipLabel="Skip"
+    nextLabel="Next"
     pages={[
       {
         imageContainerStyles: { flex: 7 },
