@@ -70,7 +70,6 @@ export function goToHome() {
 
 export function goToPilotScreen() {
   return (dispatch, getState) => {
-    console.log(getState());
     const link = getState().petitionLink.petitionLink;
     if (link) {
       dispatch(goToAttributesSummary(link));

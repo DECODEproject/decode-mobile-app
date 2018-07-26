@@ -6,7 +6,7 @@ import { changeText1, changeText2, storePin, validate } from '../../../../../app
 const mockStore = configureStore([thunk]);
 
 jest.mock('../../../../../application/redux/actions/navigation', () => ({
-  goToAttributesLanding: jest.fn().mockReturnValue({
+  goToHome: jest.fn().mockReturnValue({
     type: 'GONE',
   }),
 }));
