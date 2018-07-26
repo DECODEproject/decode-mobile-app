@@ -7,6 +7,7 @@ describe('PinSetup reducer', () => {
     pin2: '',
     validFormat: true,
     validEqual: true,
+    valid: true,
   };
 
   it('should have initial state', () => {
@@ -38,7 +39,7 @@ describe('PinSetup reducer', () => {
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_STORE,
+      type: types.PIN_SETUP_VALIDATE,
     });
 
     expect(actualState.validEqual).toBe(true);
@@ -51,7 +52,7 @@ describe('PinSetup reducer', () => {
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_STORE,
+      type: types.PIN_SETUP_VALIDATE,
     });
 
     expect(actualState.validEqual).toBe(false);
@@ -60,16 +61,15 @@ describe('PinSetup reducer', () => {
   it('should validate that the pin is at least 4 digits long', () => {
     const stateWithOnePin = {
       pin1: '12',
-      pin2: '',
+      pin2: '12',
       validated: false,
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_TEXT2_CHANGED,
-      pin: '12',
+      type: types.PIN_SETUP_VALIDATE,
     });
 
-    expect(actualState.validated).toBe(false);
+    expect(actualState.validFormat).toBe(false);
   });
 
   it('should validate to false if the pin is not all numbers', () => {
@@ -79,7 +79,7 @@ describe('PinSetup reducer', () => {
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_STORE,
+      type: types.PIN_SETUP_VALIDATE,
     });
 
     expect(actualState.validFormat).toBe(false);
@@ -92,7 +92,7 @@ describe('PinSetup reducer', () => {
     };
 
     const actualState = pinSetupReducer(stateWithOnePin, {
-      type: types.PIN_SETUP_STORE,
+      type: types.PIN_SETUP_VALIDATE,
     });
 
     expect(actualState.validFormat).toBe(false);

@@ -5,6 +5,7 @@ const initialState = {
   pin2: '',
   validEqual: true,
   validFormat: true,
+  valid: true,
 };
 
 const isPinEqual = (p, q) => p === q;
@@ -27,11 +28,12 @@ export default function reducer(state = initialState, action) {
         ...state,
         pin2: action.pin,
       };
-    case types.PIN_SETUP_STORE:
+    case types.PIN_SETUP_VALIDATE:
       return {
         ...state,
         validFormat: isValidPin(state.pin1),
         validEqual: isPinEqual(state.pin1, state.pin2),
+        valid: isValidPin(state.pin1) && isPinEqual(state.pin1, state.pin2),
       };
     default:
       return state;

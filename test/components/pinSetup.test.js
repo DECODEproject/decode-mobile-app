@@ -17,6 +17,8 @@ describe('PinSetup screen', () => {
     pinSetup: {
       pin1: '',
       pin2: '',
+      validFormat: true,
+      validEqual: true,
     },
   };
 
@@ -24,6 +26,8 @@ describe('PinSetup screen', () => {
     pinSetup: {
       pin1: '1234',
       pin2: '1234',
+      validFormat: true,
+      validEqual: true,
     },
   };
 
@@ -121,7 +125,7 @@ describe('PinSetup screen', () => {
 
     it('should be an action after pressing save', (done) => {
       const expectedAction = {
-        type: types.PIN_SETUP_STORE,
+        type: types.PIN_SETUP_VALIDATE,
       };
 
       const store = mockStore(initialStateWithPins);
