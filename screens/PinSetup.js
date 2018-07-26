@@ -40,6 +40,7 @@ const PinSetup = props => (
         value={props.pin1}
         onChangeText={pin => props.changeText1(pin)}
       />
+      <Text style={styles.pinError}>Pin must be at least 4 digits long</Text>
       <Text style={styles.pinInputLabel}>
         Confirm Pin:
       </Text>
@@ -52,6 +53,7 @@ const PinSetup = props => (
         value={props.pin2}
         onChangeText={pin => props.changeText2(pin)}
       />
+      <Text style={styles.pinError}>Pin must be same as above</Text>
       <View style={{ flexDirection: 'row' }}>
         <Button
           name="Save"

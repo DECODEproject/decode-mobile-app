@@ -193,15 +193,14 @@ const styles = StyleSheet.create({
   },
   pinPassword: {
     height: Platform.OS === 'ios' ? 35 : 40,
-    width: 170,
+    width: 190,
     borderWidth: 1,
     alignItems: 'center',
     paddingHorizontal: 10,
-    marginBottom: 30,
   },
   pinButton: {
     marginTop: 30,
-    width: 170,
+    width: 190,
     alignItems: 'center',
   },
   pinTitle: {
@@ -219,10 +218,18 @@ const styles = StyleSheet.create({
     marginBottom: 60,
   },
   pinInputLabel: {
-    width: 170,
+    width: 190,
     fontSize: 14,
     fontWeight: '500',
     textAlign: 'left',
+  },
+  pinError: {
+    width: 190,
+    fontSize: 12,
+    fontWeight: '500',
+    textAlign: 'left',
+    color: '#ff0000',
+    marginBottom: 30,
   },
   walkthroughContainer: {
     alignSelf: 'stretch',
