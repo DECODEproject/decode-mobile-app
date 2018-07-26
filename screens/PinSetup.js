@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
-import { Image, TextInput, View } from 'react-native';
+import { Image, TextInput, View, Text } from 'react-native';
 import { goToAttributesLanding } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
 import { changeText1, changeText2, storePin } from '../application/redux/actions/pinSetup';
@@ -16,15 +16,29 @@ const PinSetup = props => (
       style={styles.pinLogo}
       source={decodeLogo}
     />
+
+    <Text style={styles.pinTitle}>
+      Protect Your wallet
+    </Text>
+    <Text style={styles.pinSubtitle}>
+      Let&#39;s setup a pin, so no one else can access your data
+    </Text>
+
+    <Text style={styles.pinInputLabel}>
+      Enter PIN:
+    </Text>
     <TextInput
       style={styles.pinPassword}
-      placeholder=" Pin"
+      placeholder=" At least 4 digits"
       keyboardType="numeric"
       secureTextEntry
       underlineColorAndroid="transparent"
       value={props.pin1}
       onChangeText={pin => props.changeText1(pin)}
     />
+    <Text style={styles.pinInputLabel}>
+      Confirm Pin:
+    </Text>
     <TextInput
       style={styles.pinPassword}
       placeholder=" Confirm pin"
