@@ -13,7 +13,6 @@ const initialState = {
   navigation: {},
 };
 
-
 it('renders Walkthrough component', () => {
   const wrapper = shallow(
     <Walkthrough />,

@@ -16,7 +16,7 @@ describe('Walkthrough', () => {
     const initialState = {
       navigation: {},
     };
-    it('should navigate to pinSetup page', () => {
+    xit('should navigate to pinSetup page', () => {
       const store = mockStore(initialState);
 
       const wrapper = shallow(
