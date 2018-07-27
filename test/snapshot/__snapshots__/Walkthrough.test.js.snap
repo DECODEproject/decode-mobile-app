@@ -49,7 +49,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "white",
-                "flex": 6,
+                "flex": 4,
                 "fontSize": 32,
                 "paddingLeft": 35,
                 "paddingRight": 35,
@@ -88,7 +88,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "white",
-                "flex": 6,
+                "flex": 4,
                 "fontSize": 32,
                 "paddingLeft": 35,
                 "paddingRight": 35,
@@ -118,7 +118,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "white",
-                "flex": 6,
+                "flex": 4,
                 "fontSize": 32,
                 "paddingLeft": 35,
                 "paddingRight": 35,
@@ -157,7 +157,7 @@ ShallowWrapper {
             style={
               Object {
                 "color": "white",
-                "flex": 6,
+                "flex": 4,
                 "fontSize": 32,
                 "paddingLeft": 35,
                 "paddingRight": 35,
@@ -214,7 +214,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "white",
-                  "flex": 6,
+                  "flex": 4,
                   "fontSize": 32,
                   "paddingLeft": 35,
                   "paddingRight": 35,
@@ -253,7 +253,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "white",
-                  "flex": 6,
+                  "flex": 4,
                   "fontSize": 32,
                   "paddingLeft": 35,
                   "paddingRight": 35,
@@ -283,7 +283,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "white",
-                  "flex": 6,
+                  "flex": 4,
                   "fontSize": 32,
                   "paddingLeft": 35,
                   "paddingRight": 35,
@@ -322,7 +322,7 @@ ShallowWrapper {
               style={
                 Object {
                   "color": "white",
-                  "flex": 6,
+                  "flex": 4,
                   "fontSize": 32,
                   "paddingLeft": 35,
                   "paddingRight": 35,
