@@ -24,7 +24,7 @@ const subtitleStyle = {
 
 const titleStyle = {
   flex: 1,
-  fontSize: 48,
+  fontSize: 40,
   color: 'white',
 };
 
