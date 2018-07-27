@@ -28,11 +28,25 @@ const titleStyle = {
   color: 'white',
 };
 
+const doneButtonStyles = {
+  buttonStyle: {
+    flex: 0,
+    paddingHorizontal: 10,
+    marginRight: 10,
+  },
+  textStyle: {
+    color: '#fff',
+    fontSize: 16,
+  },
+};
+
 const Walkthrough = props => (
   <Onboarding
     // onDone={() => props.goToPinSetup()}
     onSkip={() => props.goToPinSetup()}
-    DoneButtonComponent={() => <DoneButton onPress={() => props.goToPinSetup()} />}
+    DoneButtonComponent={() => (
+      <DoneButton onPress={() => props.goToPinSetup()} style={doneButtonStyles} />
+    )}
     bottomBarHighlight={false}
     skipLabel="Skip"
     nextLabel="Next"
