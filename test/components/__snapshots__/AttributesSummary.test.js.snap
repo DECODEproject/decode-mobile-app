@@ -35,7 +35,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <View
+        <Component
           style={
             Object {
               "backgroundColor": "#13A398",
@@ -69,8 +69,8 @@ ShallowWrapper {
           >
             Isabella Dominguez
           </Text>
-        </View>,
-        <View
+        </Component>,
+        <Component
           style={
             Object {
               "flex": 1,
@@ -121,8 +121,8 @@ ShallowWrapper {
           >
             You can do this with the Barcelona City Council
           </Text>
-        </View>,
-        <View
+        </Component>,
+        <Component
           style={
             Object {
               "flex": 1,
@@ -141,8 +141,8 @@ ShallowWrapper {
               }
             }
           />
-        </View>,
-        <View
+        </Component>,
+        <Component
           style={
             Object {
               "flex": 1,
@@ -167,7 +167,7 @@ ShallowWrapper {
           >
             Or, cancel signing this petition
           </Text>
-        </View>,
+        </Component>,
       ],
       "style": Object {
         "flex": 1,
@@ -481,7 +481,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <View
+          <Component
             style={
               Object {
                 "backgroundColor": "#13A398",
@@ -515,8 +515,8 @@ ShallowWrapper {
             >
               Isabella Dominguez
             </Text>
-          </View>,
-          <View
+          </Component>,
+          <Component
             style={
               Object {
                 "flex": 1,
@@ -567,8 +567,8 @@ ShallowWrapper {
             >
               You can do this with the Barcelona City Council
             </Text>
-          </View>,
-          <View
+          </Component>,
+          <Component
             style={
               Object {
                 "flex": 1,
@@ -587,8 +587,8 @@ ShallowWrapper {
                 }
               }
             />
-          </View>,
-          <View
+          </Component>,
+          <Component
             style={
               Object {
                 "flex": 1,
@@ -613,7 +613,7 @@ ShallowWrapper {
             >
               Or, cancel signing this petition
             </Text>
-          </View>,
+          </Component>,
         ],
         "style": Object {
           "flex": 1,

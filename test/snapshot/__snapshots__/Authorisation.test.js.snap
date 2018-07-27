@@ -22,7 +22,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <View
+        <Component
           style={
             Object {
               "alignSelf": "stretch",
@@ -70,7 +70,7 @@ ShallowWrapper {
             onPress={[Function]}
             style={Object {}}
           />
-        </View>,
+        </Component>,
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -243,7 +243,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <View
+          <Component
             style={
               Object {
                 "alignSelf": "stretch",
@@ -291,7 +291,7 @@ ShallowWrapper {
               onPress={[Function]}
               style={Object {}}
             />
-          </View>,
+          </Component>,
           <Text
             accessible={true}
             allowFontScaling={true}

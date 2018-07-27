@@ -56,7 +56,7 @@ ShallowWrapper {
             Your vote has been recorded anonymously
           </Text>
         </ImageOverlay>,
-        <View
+        <Component
           style={
             Object {
               "flex": 1,
@@ -113,7 +113,7 @@ ShallowWrapper {
           >
             Reduce noise pollution
           </Text>
-        </View>,
+        </Component>,
         <Button
           enabled={true}
           name="Back to Decidim"
@@ -374,7 +374,7 @@ ShallowWrapper {
               Your vote has been recorded anonymously
             </Text>
           </ImageOverlay>,
-          <View
+          <Component
             style={
               Object {
                 "flex": 1,
@@ -431,7 +431,7 @@ ShallowWrapper {
             >
               Reduce noise pollution
             </Text>
-          </View>,
+          </Component>,
           <Button
             enabled={true}
             name="Back to Decidim"
@@ -709,7 +709,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <View
+      "children": <Component
         style={
           Object {
             "alignSelf": "stretch",
@@ -732,7 +732,7 @@ ShallowWrapper {
             }
           }
         />
-        <View
+        <Component
           style={
             Object {
               "alignSelf": "center",
@@ -788,8 +788,8 @@ You can return to the Decidim site to view other active petitions.
             onPress={[Function]}
             style={Object {}}
           />
-        </View>
-      </View>,
+        </Component>
+      </Component>,
       "style": Object {
         "alignItems": "center",
         "backgroundColor": "rgb(246, 246, 246)",
@@ -814,7 +814,7 @@ You can return to the Decidim site to view other active petitions.
               }
             }
           />,
-          <View
+          <Component
             style={
               Object {
                 "alignSelf": "center",
@@ -870,7 +870,7 @@ You can return to the Decidim site to view other active petitions.
               onPress={[Function]}
               style={Object {}}
             />
-          </View>,
+          </Component>,
         ],
         "style": Object {
           "alignSelf": "stretch",
@@ -1051,7 +1051,7 @@ You can return to the Decidim site to view other active petitions.",
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <View
+        "children": <Component
           style={
             Object {
               "alignSelf": "stretch",
@@ -1074,7 +1074,7 @@ You can return to the Decidim site to view other active petitions.",
               }
             }
           />
-          <View
+          <Component
             style={
               Object {
                 "alignSelf": "center",
@@ -1130,8 +1130,8 @@ You can return to the Decidim site to view other active petitions.
               onPress={[Function]}
               style={Object {}}
             />
-          </View>
-        </View>,
+          </Component>
+        </Component>,
         "style": Object {
           "alignItems": "center",
           "backgroundColor": "rgb(246, 246, 246)",
@@ -1156,7 +1156,7 @@ You can return to the Decidim site to view other active petitions.
                 }
               }
             />,
-            <View
+            <Component
               style={
                 Object {
                   "alignSelf": "center",
@@ -1212,7 +1212,7 @@ You can return to the Decidim site to view other active petitions.
                 onPress={[Function]}
                 style={Object {}}
               />
-            </View>,
+            </Component>,
           ],
           "style": Object {
             "alignSelf": "stretch",

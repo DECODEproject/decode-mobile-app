@@ -32,7 +32,7 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "behavior": "position",
-      "children": <View
+      "children": <Component
         style={
           Object {
             "alignItems": "center",
@@ -51,7 +51,7 @@ ShallowWrapper {
             }
           }
         />
-        <View
+        <Component
           style={
             Object {
               "flexDirection": "row",
@@ -90,8 +90,8 @@ ShallowWrapper {
             underlineColorAndroid="transparent"
             value=""
           />
-        </View>
-        <View
+        </Component>
+        <Component
           style={
             Object {
               "flexDirection": "row",
@@ -109,8 +109,9 @@ ShallowWrapper {
               }
             }
           />
-        </View>
-      </View>,
+        </Component>
+      </Component>,
+      "enabled": true,
       "keyboardVerticalOffset": 50,
     },
     "ref": null,
@@ -131,7 +132,7 @@ ShallowWrapper {
               }
             }
           />,
-          <View
+          <Component
             style={
               Object {
                 "flexDirection": "row",
@@ -170,8 +171,8 @@ ShallowWrapper {
               underlineColorAndroid="transparent"
               value=""
             />
-          </View>,
-          <View
+          </Component>,
+          <Component
             style={
               Object {
                 "flexDirection": "row",
@@ -189,7 +190,7 @@ ShallowWrapper {
                 }
               }
             />
-          </View>,
+          </Component>,
         ],
         "style": Object {
           "alignItems": "center",
@@ -356,7 +357,7 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "behavior": "position",
-        "children": <View
+        "children": <Component
           style={
             Object {
               "alignItems": "center",
@@ -375,7 +376,7 @@ ShallowWrapper {
               }
             }
           />
-          <View
+          <Component
             style={
               Object {
                 "flexDirection": "row",
@@ -414,8 +415,8 @@ ShallowWrapper {
               underlineColorAndroid="transparent"
               value=""
             />
-          </View>
-          <View
+          </Component>
+          <Component
             style={
               Object {
                 "flexDirection": "row",
@@ -433,8 +434,9 @@ ShallowWrapper {
                 }
               }
             />
-          </View>
-        </View>,
+          </Component>
+        </Component>,
+        "enabled": true,
         "keyboardVerticalOffset": 50,
       },
       "ref": null,
@@ -455,7 +457,7 @@ ShallowWrapper {
                 }
               }
             />,
-            <View
+            <Component
               style={
                 Object {
                   "flexDirection": "row",
@@ -494,8 +496,8 @@ ShallowWrapper {
                 underlineColorAndroid="transparent"
                 value=""
               />
-            </View>,
-            <View
+            </Component>,
+            <Component
               style={
                 Object {
                   "flexDirection": "row",
@@ -513,7 +515,7 @@ ShallowWrapper {
                   }
                 }
               />
-            </View>,
+            </Component>,
           ],
           "style": Object {
             "alignItems": "center",

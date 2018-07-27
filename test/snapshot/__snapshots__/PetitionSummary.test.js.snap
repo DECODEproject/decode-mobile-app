@@ -59,8 +59,8 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <ScrollViewMock>
-          <View
+        <ScrollView>
+          <Component
             style={
               Object {
                 "flex": 1,
@@ -81,8 +81,8 @@ ShallowWrapper {
               }
               visible={false}
             />
-          </View>
-          <View
+          </Component>
+          <Component
             style={
               Object {
                 "alignSelf": "stretch",
@@ -154,9 +154,9 @@ ShallowWrapper {
               name="Gender (Female)"
               toggleCallback={[Function]}
             />
-          </View>
-        </ScrollViewMock>,
-        <View
+          </Component>
+        </ScrollView>,
+        <Component
           style={
             Object {
               "flexDirection": "row",
@@ -183,7 +183,7 @@ ShallowWrapper {
               }
             }
           />
-        </View>,
+        </Component>,
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -217,7 +217,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             undefined,
-            <View
+            <Component
               style={
                 Object {
                   "flex": 1,
@@ -238,8 +238,8 @@ ShallowWrapper {
                 }
                 visible={false}
               />
-            </View>,
-            <View
+            </Component>,
+            <Component
               style={
                 Object {
                   "alignSelf": "stretch",
@@ -311,7 +311,7 @@ ShallowWrapper {
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
-            </View>,
+            </Component>,
           ],
         },
         "ref": null,
@@ -555,7 +555,7 @@ ShallowWrapper {
             "type": [Function],
           },
         ],
-        "type": [Function],
+        "type": [MockFunction],
       },
       Object {
         "instance": null,
@@ -658,8 +658,8 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <ScrollViewMock>
-            <View
+          <ScrollView>
+            <Component
               style={
                 Object {
                   "flex": 1,
@@ -680,8 +680,8 @@ ShallowWrapper {
                 }
                 visible={false}
               />
-            </View>
-            <View
+            </Component>
+            <Component
               style={
                 Object {
                   "alignSelf": "stretch",
@@ -753,9 +753,9 @@ ShallowWrapper {
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
-            </View>
-          </ScrollViewMock>,
-          <View
+            </Component>
+          </ScrollView>,
+          <Component
             style={
               Object {
                 "flexDirection": "row",
@@ -782,7 +782,7 @@ ShallowWrapper {
                 }
               }
             />
-          </View>,
+          </Component>,
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -816,7 +816,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               undefined,
-              <View
+              <Component
                 style={
                   Object {
                     "flex": 1,
@@ -837,8 +837,8 @@ ShallowWrapper {
                   }
                   visible={false}
                 />
-              </View>,
-              <View
+              </Component>,
+              <Component
                 style={
                   Object {
                     "alignSelf": "stretch",
@@ -910,7 +910,7 @@ ShallowWrapper {
                   name="Gender (Female)"
                   toggleCallback={[Function]}
                 />
-              </View>,
+              </Component>,
             ],
           },
           "ref": null,
@@ -1154,7 +1154,7 @@ ShallowWrapper {
               "type": [Function],
             },
           ],
-          "type": [Function],
+          "type": [MockFunction],
         },
         Object {
           "instance": null,
@@ -1319,8 +1319,8 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <ScrollViewMock>
-          <View
+        <ScrollView>
+          <Component
             style={
               Object {
                 "flex": 1,
@@ -1341,8 +1341,8 @@ ShallowWrapper {
               }
               visible={false}
             />
-          </View>
-          <View
+          </Component>
+          <Component
             style={
               Object {
                 "alignSelf": "stretch",
@@ -1414,9 +1414,9 @@ ShallowWrapper {
               name="Gender (Female)"
               toggleCallback={[Function]}
             />
-          </View>
-        </ScrollViewMock>,
-        <View
+          </Component>
+        </ScrollView>,
+        <Component
           style={
             Object {
               "flexDirection": "row",
@@ -1443,7 +1443,7 @@ ShallowWrapper {
               }
             }
           />
-        </View>,
+        </Component>,
         <Text
           accessible={true}
           allowFontScaling={true}
@@ -1477,7 +1477,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             undefined,
-            <View
+            <Component
               style={
                 Object {
                   "flex": 1,
@@ -1498,8 +1498,8 @@ ShallowWrapper {
                 }
                 visible={false}
               />
-            </View>,
-            <View
+            </Component>,
+            <Component
               style={
                 Object {
                   "alignSelf": "stretch",
@@ -1571,7 +1571,7 @@ ShallowWrapper {
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
-            </View>,
+            </Component>,
           ],
         },
         "ref": null,
@@ -1815,7 +1815,7 @@ ShallowWrapper {
             "type": [Function],
           },
         ],
-        "type": [Function],
+        "type": [MockFunction],
       },
       Object {
         "instance": null,
@@ -1918,8 +1918,8 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <ScrollViewMock>
-            <View
+          <ScrollView>
+            <Component
               style={
                 Object {
                   "flex": 1,
@@ -1940,8 +1940,8 @@ ShallowWrapper {
                 }
                 visible={false}
               />
-            </View>
-            <View
+            </Component>
+            <Component
               style={
                 Object {
                   "alignSelf": "stretch",
@@ -2013,9 +2013,9 @@ ShallowWrapper {
                 name="Gender (Female)"
                 toggleCallback={[Function]}
               />
-            </View>
-          </ScrollViewMock>,
-          <View
+            </Component>
+          </ScrollView>,
+          <Component
             style={
               Object {
                 "flexDirection": "row",
@@ -2042,7 +2042,7 @@ ShallowWrapper {
                 }
               }
             />
-          </View>,
+          </Component>,
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -2076,7 +2076,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               undefined,
-              <View
+              <Component
                 style={
                   Object {
                     "flex": 1,
@@ -2097,8 +2097,8 @@ ShallowWrapper {
                   }
                   visible={false}
                 />
-              </View>,
-              <View
+              </Component>,
+              <Component
                 style={
                   Object {
                     "alignSelf": "stretch",
@@ -2170,7 +2170,7 @@ ShallowWrapper {
                   name="Gender (Female)"
                   toggleCallback={[Function]}
                 />
-              </View>,
+              </Component>,
             ],
           },
           "ref": null,
@@ -2414,7 +2414,7 @@ ShallowWrapper {
               "type": [Function],
             },
           ],
-          "type": [Function],
+          "type": [MockFunction],
         },
         Object {
           "instance": null,
