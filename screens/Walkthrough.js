@@ -1,25 +1,16 @@
 import React from 'react';
-import { Image, Text } from 'react-native';
+import { Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Onboarding from 'react-native-onboarding-swiper';
 import { goToPinSetup } from '../application/redux/actions/navigation';
+import TitleElement from '../application/components/TitleElement/TitleElement';
 
 const firstPageImage = require('../assets/images/onboarding01.png');
 const secondPageImage = require('../assets/images/onboarding02.png');
 const thirdPageImage = require('../assets/images/onboarding03.png');
 const fourthPageImage = require('../assets/images/onboarding04.png');
 
-const TitleElement = ({ title, style }) => (
-  <Text style={style}>
-    {title}
-  </Text>
-);
-
-TitleElement.propTypes = {
-  title: PropTypes.string.isRequired,
-  style: PropTypes.shape({}).isRequired,
-};
 
 const subtitleStyle = {
   flex: 4,
