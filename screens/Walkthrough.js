@@ -22,7 +22,7 @@ TitleElement.propTypes = {
 };
 
 const subtitleStyle = {
-  flex: 6,
+  flex: 4,
   fontSize: 32,
   textAlign: 'center',
   color: 'white',
