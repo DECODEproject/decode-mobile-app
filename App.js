@@ -50,7 +50,7 @@ export default class App extends React.Component {
   async goToInitialScreen(retrievePinFunc, routerFunc) { // eslint-disable-line
     try {
       return retrievePinFunc().then((pin) => {
-        if (pin !== undefined) {
+        if (pin !== undefined && pin !== null) {
           this.setState({
             initialRoute: routerFunc('home'),
           });
