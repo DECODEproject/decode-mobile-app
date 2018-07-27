@@ -63,7 +63,7 @@ ShallowWrapper {
               Object {
                 "color": "white",
                 "flex": 1,
-                "fontSize": 48,
+                "fontSize": 40,
               }
             }
             title="DECODE"
@@ -132,7 +132,7 @@ ShallowWrapper {
               Object {
                 "color": "white",
                 "flex": 1,
-                "fontSize": 48,
+                "fontSize": 40,
               }
             }
             title="DECODE"
@@ -228,7 +228,7 @@ ShallowWrapper {
                 Object {
                   "color": "white",
                   "flex": 1,
-                  "fontSize": 48,
+                  "fontSize": 40,
                 }
               }
               title="DECODE"
@@ -297,7 +297,7 @@ ShallowWrapper {
                 Object {
                   "color": "white",
                   "flex": 1,
-                  "fontSize": 48,
+                  "fontSize": 40,
                 }
               }
               title="DECODE"
