@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import Onboarding from 'react-native-onboarding-swiper';
 import { goToPinSetup } from '../application/redux/actions/navigation';
 import TitleElement from '../application/components/TitleElement/TitleElement';
+import DoneButton from '../application/components/DoneButton/DoneButton';
 
 const firstPageImage = require('../assets/images/onboarding01.png');
 const secondPageImage = require('../assets/images/onboarding02.png');
@@ -29,8 +30,9 @@ const titleStyle = {
 
 const Walkthrough = props => (
   <Onboarding
-    onDone={() => props.goToPinSetup()}
+    // onDone={() => props.goToPinSetup()}
     onSkip={() => props.goToPinSetup()}
+    DoneButtonComponent={() => <DoneButton onPress={() => props.goToPinSetup()} />}
     bottomBarHighlight={false}
     skipLabel="Skip"
     nextLabel="Next"
