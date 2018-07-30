@@ -33,7 +33,7 @@ I18n.fallbacks = true;
 
 I18n.translations = {
   es: {
-    skip: 'Skip',
+    skip: 'Saltar',
   },
   en: {
     skip: 'Skip',
