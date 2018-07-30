@@ -21,13 +21,13 @@ const PinSetup = props => (
       />
 
       <Text style={styles.pinTitle}>
-        Protect Your wallet
+        Protect Your Wallet
       </Text>
       <Text style={styles.pinSubtitle}>
         Let&#39;s setup a pin, so no one else can access your data
       </Text>
 
-      <View style={{ height: 100 }}>
+      <View style={{ height: 90 }}>
         <Text style={styles.pinInputLabel}>
           Enter PIN:
         </Text>
@@ -46,7 +46,7 @@ const PinSetup = props => (
             Pin must be at least 4 digits long
         </Text>}
       </View>
-      <View style={{ height: 100 }}>
+      <View style={{ height: 90 }}>
         <Text style={styles.pinInputLabel}>
           Confirm Pin:
         </Text>

@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
   },
   pinTitle: {
     width: 250,
-    fontSize: 30,
+    fontSize: 25,
     fontWeight: '500',
     textAlign: 'center',
     marginBottom: 10,
@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
     textAlign: 'left',
-    marginBottom: 60,
+    marginBottom: 50,
   },
   pinInputLabel: {
     width: 190,
