@@ -8,6 +8,9 @@ import Adapter from 'enzyme-adapter-react-16/build/index';
 import Button from '../../application/components/Button/Button';
 import AttributesSummary from '../../screens/AttributesSummary';
 
+jest.mock('../../node_modules/ex-react-native-i18n', () => ({
+  locales: { get: () => ({}) },
+}));
 
 Enzyme.configure({ adapter: new Adapter() });
 

@@ -13,7 +13,6 @@ const secondPageImage = require('../assets/images/onboarding02.png');
 const thirdPageImage = require('../assets/images/onboarding03.png');
 const fourthPageImage = require('../assets/images/onboarding04.png');
 
-
 const subtitleStyle = {
   flex: 4,
   fontSize: 32,
