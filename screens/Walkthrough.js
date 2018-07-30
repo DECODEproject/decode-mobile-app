@@ -2,6 +2,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import I18n from 'ex-react-native-i18n';
 import Onboarding from 'react-native-onboarding-swiper';
 import { goToPinSetup } from '../application/redux/actions/navigation';
 import TitleElement from '../application/components/TitleElement/TitleElement';
@@ -28,6 +29,22 @@ const titleStyle = {
   color: 'white',
 };
 
+I18n.fallbacks = true;
+
+I18n.translations = {
+  es: {
+    skip: 'Skip',
+  },
+  en: {
+    skip: 'Skip',
+  },
+  fr: {
+    skip: 'LE Skip!',
+  },
+};
+
+console.log(I18n.locales.get());
+
 const Walkthrough = props => (
   <Onboarding
     onSkip={() => props.goToPinSetup()}
@@ -35,7 +52,7 @@ const Walkthrough = props => (
       <DoneButton onPress={() => props.goToPinSetup()} />
     )}
     bottomBarHighlight={false}
-    skipLabel="Skip"
+    skipLabel={I18n.t('skip')}
     nextLabel="Next"
     pages={[
       {
