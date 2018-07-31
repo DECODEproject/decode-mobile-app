@@ -1,11 +1,11 @@
 {
-  "name": "Wallet",
+  "name": "Wallet-GITHUB",
   "environment_variables": [],
   "group" : "ScaleModel",
   "materials": [
     {
       "url": "https://github.com/DECODEproject/wallet.git",
-      "type": "git",
+      "type": "git"
     }
   ],
   "stages": [
