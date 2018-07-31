@@ -4,13 +4,8 @@
   "group" : "ScaleModel",
   "materials": [
     {
-      "url": "https://gogs.dyne.org/DECODE/decode-prototype.git",
+      "url": "https://github.com/DECODEproject/wallet.git",
       "type": "git",
-      "filter": {
-        "whitelist": [
-          "apps/wallet/**/*"
-        ]
-      }
     }
   ],
   "stages": [
@@ -38,8 +33,7 @@
               "command": "npm",
               "arguments": [
                 "install"
-              ],
-              "working_directory": "apps/wallet"
+              ]
             },
             {
               "type": "exec",
@@ -49,8 +43,7 @@
               "arguments": [
                 "run",
                 "lint"
-              ],
-              "working_directory": "apps/wallet"
+              ]
             },
             {
               "type": "exec",
@@ -59,8 +52,7 @@
               "command": "npm",
               "arguments": [
                 "test"
-              ],
-              "working_directory": "apps/wallet"
+              ]
             }
           ]
         }
@@ -90,8 +82,7 @@
               "command": "npm",
               "arguments": [
                 "install"
-              ],
-              "working_directory": "apps/wallet"
+              ]
             },
             {
               "type": "exec",
@@ -102,8 +93,7 @@
                 "publish",
                 "--release-channel",
                 "production"
-              ],
-              "working_directory": "apps/wallet"
+              ]
             }
           ]
         }
