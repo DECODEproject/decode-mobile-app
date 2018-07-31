@@ -3,15 +3,14 @@ import { Text, FlatList, View } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import AttributeListItem from '../application/components/AttributeListItem/AttributeListItem';
+import Button from '../application/components/Button/Button';
 import styles from './styles';
 
 
 class AttributesLanding extends React.Component {
   static renderEmpty() {
     return (
-      <View style={styles.attributesLandingContainer}>
-        <Text>You have no data :(</Text>
-      </View>
+      <Text>You have no data :(</Text>
     );
   }
 
@@ -21,18 +20,22 @@ class AttributesLanding extends React.Component {
 
   renderListAttributes() {
     return (
-      <View style={styles.attributesLandingContainer}>
-        <FlatList
-          data={this.props.attributes}
-          renderItem={attribute => <AttributeListItem attribute={attribute} />}
-          keyExtractor={(item, index) => index}
-        />
-      </View>
+      <FlatList
+        data={this.props.attributes}
+        renderItem={attribute => <AttributeListItem attribute={attribute} />}
+        keyExtractor={(item, index) => index}
+      />
     );
   }
 
   render() {
-    return this.attributeExists() ? this.renderListAttributes() : AttributesLanding.renderEmpty();
+    const listComponent = this.attributeExists() ? this.renderListAttributes() : AttributesLanding.renderEmpty();
+    return (
+      <View style={styles.attributesLandingContainer}>
+        {listComponent}
+        <Button name="Add attribute" />
+      </View>
+    )
   }
 }
 

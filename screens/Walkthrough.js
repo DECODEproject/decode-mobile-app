@@ -42,8 +42,6 @@ I18n.translations = {
   },
 };
 
-console.log(I18n.locales.get());
-
 const Walkthrough = props => (
   <Onboarding
     onSkip={() => props.goToPinSetup()}

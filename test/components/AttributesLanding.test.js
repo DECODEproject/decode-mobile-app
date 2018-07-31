@@ -5,6 +5,7 @@ import Adapter from 'enzyme-adapter-react-16/build/index';
 import configureStore from 'redux-mock-store';
 import { Text, FlatList } from 'react-native';
 import AttributesLanding from '../../screens/AttributesLanding';
+import Button from '../../application/components/Button/Button';
 
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -12,6 +13,24 @@ Enzyme.configure({ adapter: new Adapter() });
 const mockStore = configureStore([thunk]);
 
 describe('AttributesLanding', () => {
+  it('should have an "Add attribute" button', () => {
+    const initialState = {
+      attributes: {
+        list: [],
+      },
+    };
+    const store = mockStore(initialState);
+    const wrapper = shallow(
+      <AttributesLanding />,
+      { context: { store } },
+    );
+
+    const expectedButton = wrapper.dive().find(Button);
+
+    expect(expectedButton).toHaveLength(1);
+    expect(expectedButton.props().name).toEqual('Add attribute');
+  });
+
   describe('if there are no attributes saved', () => {
     it('it should show a [PLACEHOLDER]', () => {
       const initialState = {
