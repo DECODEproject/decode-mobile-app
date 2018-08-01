@@ -2,11 +2,13 @@ import React from 'react';
 import { Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import I18n from 'ex-react-native-i18n';
+import { translate } from 'react-i18next';
 import Onboarding from 'react-native-onboarding-swiper';
 import { goToPinSetup } from '../application/redux/actions/navigation';
 import TitleElement from '../application/components/TitleElement/TitleElement';
 import DoneButton from '../application/components/DoneButton/DoneButton';
+import i18n from '../i18n';
+
 
 const firstPageImage = require('../assets/images/onboarding01.png');
 const secondPageImage = require('../assets/images/onboarding02.png');
@@ -28,28 +30,15 @@ const titleStyle = {
   color: 'white',
 };
 
-I18n.fallbacks = true;
-
-I18n.translations = {
-  es: {
-    skip: 'Saltar',
-  },
-  en: {
-    skip: 'Skip',
-  },
-  fr: {
-    skip: 'LE Skip!',
-  },
-};
 
 const Walkthrough = props => (
   <Onboarding
     onSkip={() => props.goToPinSetup()}
     DoneButtonComponent={() => (
       <DoneButton onPress={() => props.goToPinSetup()} />
-    )}
+        )}
     bottomBarHighlight={false}
-    skipLabel={I18n.t('skip')}
+    skipLabel={props.t('skip')}
     nextLabel="Next"
     pages={[
       {
@@ -86,6 +75,7 @@ const Walkthrough = props => (
 
 Walkthrough.propTypes = {
   goToPinSetup: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = () => ({});
@@ -94,4 +84,5 @@ const mapDispatchToProps = dispatch => ({
   goToPinSetup: () => dispatch(goToPinSetup()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Walkthrough);
+export default translate('common', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Walkthrough));
+
