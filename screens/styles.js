@@ -81,6 +81,25 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 30,
   },
+  newAttributesContainer: {
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    margin: 16,
+    marginTop: 30,
+    paddingHorizontal: 20,
+    paddingVertical: 40,
+  },
+  newAttributesAttribute: {
+    flexDirection: 'row',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  newAttributesAttributeName: {
+    color: 'rgba(0, 0, 0, 0.87)',
+    fontWeight: '500',
+    fontSize: 16,
+    flex: 1,
+  },
   petitionDescription: {
     color: 'rgba(0, 0, 0, 0.87)',
     fontSize: 14,
