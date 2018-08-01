@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { goToPilotScreen } from '../../../../../application/redux/actions/navigation';
+import { goToPilotScreen, goToNewAttributes } from '../../../../../application/redux/actions/navigation';
 
 jest.mock('../../../../../node_modules/ex-react-native-i18n', () => ({
   locales: { get: () => ({}) },
@@ -34,6 +34,16 @@ describe('navigation actions', () => {
 
       const action = store.getActions()[0];
       expect(action.child.routeName).toEqual('attributesLanding');
+    });
+
+    it('should go to "New attributes" page when goToNewAttributes action', () => {
+      const store = mockStore({
+        navigation: {},
+      });
+      store.dispatch(goToNewAttributes());
+
+      const action = store.getActions()[0];
+      expect(action.child.routeName).toEqual('newAttributes');
     });
   });
 });

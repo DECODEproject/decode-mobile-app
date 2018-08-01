@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import AttributeListItem from '../application/components/AttributeListItem/AttributeListItem';
 import Button from '../application/components/Button/Button';
+import { goToNewAttributes } from '../application/redux/actions/navigation';
 import styles from './styles';
 
 
@@ -29,22 +30,33 @@ class AttributesLanding extends React.Component {
   }
 
   render() {
-    const listComponent = this.attributeExists() ? this.renderListAttributes() : AttributesLanding.renderEmpty();
+    const listComponent = this.attributeExists()
+      ? this.renderListAttributes()
+      : AttributesLanding.renderEmpty();
+
     return (
       <View style={styles.attributesLandingContainer}>
         {listComponent}
-        <Button name="Add attribute" />
+        <Button
+          name="Add attribute"
+          onPress={() => this.props.goToNewAttributes()}
+        />
       </View>
-    )
+    );
   }
 }
 
 AttributesLanding.propTypes = {
   attributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  goToNewAttributes: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
   attributes: state.attributes.list,
 });
 
-export default connect(mapStateToProps)(AttributesLanding);
+const mapDispatchToProps = dispatch => ({
+  goToNewAttributes: () => dispatch(goToNewAttributes()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(AttributesLanding);
