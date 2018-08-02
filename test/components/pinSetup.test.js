@@ -37,20 +37,20 @@ describe('PinSetup screen', () => {
   describe('UI tests', () => {
     it('should have a two of text inputs', () => {
       const store = mockStore(initialState);
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<PinSetup />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       expect(wrapper.dive().find(TextInput)).toHaveLength(2);
     });
 
     it('should have a button', () => {
       const store = mockStore(initialState);
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<PinSetup />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       expect(wrapper.dive().find(Button)).toHaveLength(1);
     });
@@ -60,10 +60,10 @@ describe('PinSetup screen', () => {
     it('should have empty value on initialized', () => {
       const store = mockStore(initialState);
 
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<PinSetup />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       const valueInput1 = wrapper.dive().find(TextInput).at(0).prop('value');
       const valueInput2 = wrapper.dive().find(TextInput).at(1).prop('value');
@@ -80,10 +80,10 @@ describe('PinSetup screen', () => {
 
       const store = mockStore(initialState);
 
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<PinSetup />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       const pin1 = wrapper.dive().find(TextInput).at(0);
       pin1.simulate('changeText', '1234');
@@ -99,10 +99,10 @@ describe('PinSetup screen', () => {
 
       const store = mockStore(initialState);
 
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<PinSetup />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       const pin2 = wrapper.dive().find(TextInput).at(1);
       pin2.simulate('changeText', '1234');
@@ -113,10 +113,10 @@ describe('PinSetup screen', () => {
     it('should have the same values in the state and in the component', () => {
       const store = mockStore(initialStateWithPins);
 
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<PinSetup />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       const valueInput1 = wrapper.dive().find(TextInput).at(0).prop('value');
       const valueInput2 = wrapper.dive().find(TextInput).at(1).prop('value');
@@ -133,10 +133,10 @@ describe('PinSetup screen', () => {
 
       const store = mockStore(initialStateWithPins);
 
-      const wrapper = shallow(
-        <PinSetup />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<PinSetup />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       const button = wrapper.dive().find(Button);
       button.simulate('press');

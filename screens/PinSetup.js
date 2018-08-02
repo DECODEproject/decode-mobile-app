@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { translate } from 'react-i18next';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
 import { Image, TextInput, View, Text, KeyboardAvoidingView } from 'react-native';
 import Button from '../application/components/Button/Button';
 import { changeText1, changeText2, storePin } from '../application/redux/actions/pinSetup';
 import styles from './styles';
+import i18n from '../i18n';
 
 const decodeLogo = require('../assets/images/decode-logo-pin.png');
 
@@ -21,19 +23,19 @@ const PinSetup = props => (
       />
 
       <Text style={styles.pinTitle}>
-        Protect Your Wallet
+        {props.t('title')}
       </Text>
       <Text style={styles.pinSubtitle}>
-        Let&#39;s setup a pin, so no one else can access your data
+        {props.t('subtitle')}
       </Text>
 
       <View style={{ height: 90 }}>
         <Text style={styles.pinInputLabel}>
-          Enter PIN:
+          {props.t('labelPin1')}
         </Text>
         <TextInput
           style={styles.pinPassword}
-          placeholder=" At least 4 digits"
+          placeholder={props.t('placeholderPin1')}
           keyboardType="numeric"
           secureTextEntry
           underlineColorAndroid="transparent"
@@ -43,16 +45,16 @@ const PinSetup = props => (
 
         {!props.validPinFormat &&
         <Text style={styles.pinError}>
-            Pin must be at least 4 digits long
+          { props.t('errorPin1') }
         </Text>}
       </View>
       <View style={{ height: 90 }}>
         <Text style={styles.pinInputLabel}>
-          Confirm Pin:
+          {props.t('labelPin2')}
         </Text>
         <TextInput
           style={styles.pinPassword}
-          placeholder=" Confirm pin"
+          placeholder={props.t('placeholderPin2')}
           keyboardType="numeric"
           secureTextEntry
           underlineColorAndroid="transparent"
@@ -61,12 +63,12 @@ const PinSetup = props => (
         />
         {!props.validPinEqual &&
         <Text style={styles.pinError}>
-          Pin must be same as above
+          {props.t('errorPin2')}
         </Text>}
       </View>
       <View style={{ flexDirection: 'row' }}>
         <Button
-          name="Save"
+          name={props.t('button')}
           onPress={() => props.storePin(props.pin1)}
           style={styles.pinButton}
         />
@@ -83,6 +85,7 @@ PinSetup.propTypes = {
   changeText1: PropTypes.func.isRequired,
   changeText2: PropTypes.func.isRequired,
   storePin: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -98,4 +101,4 @@ const mapDispatchToProps = dispatch => ({
   storePin: pin => dispatch(storePin(SecureStore.setItemAsync, pin)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PinSetup);
+export default translate('pinSetup', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PinSetup));

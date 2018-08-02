@@ -2,6 +2,7 @@ import i18n from 'i18next';
 import Expo from 'expo';
 import home from './translations/home';
 import walkthrough from './translations/walkthrough';
+import pinSetup from './translations/pinSetup';
 
 // creating a language detection plugin using expo
 // http://i18next.com/docs/ownplugin/#languagedetector
@@ -23,14 +24,17 @@ i18n
       es: {
         home: home.es,
         walkthrough: walkthrough.es,
+        pinSetup: pinSetup.es,
       },
       ca: {
         home: home.ca,
         walkthrough: walkthrough.ca,
+        pinSetup: pinSetup.ca,
       },
       en: {
         home: home.en,
         walkthrough: walkthrough.en,
+        pinSetup: pinSetup.en,
       },
     },
   });
