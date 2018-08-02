@@ -17,8 +17,11 @@ Enzyme.configure({ adapter: new Adapter() });
 const mockStore = configureStore([thunk]);
 
 describe('AttributesLanding', () => {
-  it('should have an "Add attribute" button', () => {
+  it('should go to New attributes screen', () => {
     const initialState = {
+      navigation: {
+        currentNavigatorUID: 2,
+      },
       attributes: {
         list: [],
       },
@@ -29,10 +32,10 @@ describe('AttributesLanding', () => {
       { context: { store } },
     );
 
-    const expectedButton = wrapper.dive().find(Button);
+    const addAttributeButton = wrapper.dive().find(Button);
 
-    expect(expectedButton).toHaveLength(1);
-    expect(expectedButton.props().name).toEqual('Add attribute');
+    addAttributeButton.props().onPress();
+    expect(store.getActions()[0].child.routeName).toEqual('newAttributes');
   });
 
   describe('if there are no attributes saved', () => {
