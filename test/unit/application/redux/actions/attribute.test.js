@@ -181,17 +181,44 @@ describe('attribute action', () => {
     expect(store.getActions()).toEqual(expectedActions);
   });
 
-  it('SAVE_DATE_OF_BIRTH action', () => {
+  describe('save date of birth', () => {
+    const walletId = 42;
     const someDateOfBirth = '01/01/2000';
-    const expectedAction = {
-      type: types.SAVE_DATE_OF_BIRTH,
-      dateOfBirth: someDateOfBirth,
-    };
 
-    store.dispatch(saveDateOfBirth(someDateOfBirth));
+    it('should dispatch an action to save the optional attribute in the state', async () => {
+      const expectedAddAttributeAction = {
+        type: types.ADD_OPTIONAL_ATTRIBUTE,
+        attribute: {
+          predicate: 'schema:dateOfBirth',
+          object: someDateOfBirth,
+          scope: 'can-access',
+          provenance: {
+            source: 'wallet',
+          },
+          subject: walletId,
+        },
+      };
 
-    const actions = store.getActions();
-    expect(actions[0].child.routeName).toEqual('attributesLanding');
-    expect(actions[1]).toEqual(expectedAction);
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId));
+
+      expect(store.getActions()[0]).toEqual(expectedAddAttributeAction);
+    });
+
+    it('should navigate to the attribute landing page', async () => {
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId));
+
+      expect(store.getActions()[1].child.routeName).toEqual('attributesLanding');
+    });
+
+    it('should return a SAVE_DATE_OF_BIRTH action', async () => {
+      const expectedSaveDateOfBirthAction = {
+        type: types.SAVE_DATE_OF_BIRTH,
+        dateOfBirth: someDateOfBirth,
+      };
+
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId));
+
+      expect(store.getActions()[2]).toEqual(expectedSaveDateOfBirthAction);
+    });
   });
 });

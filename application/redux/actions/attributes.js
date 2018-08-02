@@ -58,12 +58,28 @@ export function bubbleUpOptionalAttributeToggle(attributeName, toggleValue) {
   });
 }
 
-export function saveDateOfBirth(dateOfBirth) {
-  return (dispatch) => {
+export function saveDateOfBirth(dateOfBirth, walletId) {
+  const addOptionalAttributeAction = {
+    type: types.ADD_OPTIONAL_ATTRIBUTE,
+    attribute: {
+      predicate: 'schema:dateOfBirth',
+      object: dateOfBirth,
+      scope: 'can-access',
+      provenance: {
+        source: 'wallet',
+      },
+      subject: walletId,
+    },
+  };
+
+  const saveDateOfBirthAction = {
+    type: types.SAVE_DATE_OF_BIRTH,
+    dateOfBirth,
+  };
+
+  return async (dispatch) => {
+    dispatch(addOptionalAttributeAction);
     dispatch(goToAttributesLanding());
-    dispatch({
-      type: types.SAVE_DATE_OF_BIRTH,
-      dateOfBirth,
-    });
+    dispatch(saveDateOfBirthAction);
   };
 }
