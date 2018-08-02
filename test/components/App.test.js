@@ -3,10 +3,6 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import App from '../../App';
 
-jest.mock('../../node_modules/ex-react-native-i18n', () => ({
-  locales: { get: () => ({}) },
-}));
-
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('App', () => {

@@ -8,10 +8,6 @@ import types from '../../application/redux/actionTypes';
 import PinSetup from '../../screens/PinSetup';
 import Button from '../../application/components/Button/Button';
 
-jest.mock('../../node_modules/ex-react-native-i18n', () => ({
-  locales: { get: () => ({}) },
-}));
-
 Enzyme.configure({ adapter: new Adapter() });
 const mockStore = configureStore([thunk]);
 

@@ -6,11 +6,6 @@ import thunk from 'redux-thunk';
 import Walkthrough from '../../screens/Walkthrough';
 
 
-// jest.mock('../../node_modules/ex-react-native-i18n', () => ({
-//   locales: { get: () => ({}) },
-//   t: () => 'Skip',
-// }));
-
 Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureStore([thunk]);

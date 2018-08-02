@@ -7,10 +7,6 @@ import Button from '../../application/components/Button/Button';
 import NewDateOfBirthAttribute from '../../screens/NewDateOfBirthAttribute';
 import types from '../../application/redux/actionTypes';
 
-jest.mock('../../node_modules/ex-react-native-i18n', () => ({
-  locales: { get: () => ({}) },
-}));
-
 Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureStore([thunk]);

@@ -2,10 +2,6 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import { goToPilotScreen, goToNewAttributes } from '../../../../../application/redux/actions/navigation';
 
-jest.mock('../../../../../node_modules/ex-react-native-i18n', () => ({
-  locales: { get: () => ({}) },
-}));
-
 const mockStore = configureMockStore([thunk]);
 
 describe('navigation actions', () => {

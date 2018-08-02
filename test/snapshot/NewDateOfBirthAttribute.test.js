@@ -5,11 +5,6 @@ import Adapter from 'enzyme-adapter-react-16';
 import thunk from 'redux-thunk';
 import NewDateOfBirthAttribute from '../../screens/NewDateOfBirthAttribute';
 
-jest.mock('../../node_modules/ex-react-native-i18n', () => ({
-  locales: { get: () => ({}) },
-  t: () => 'Skip',
-}));
-
 Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureStore([thunk]);

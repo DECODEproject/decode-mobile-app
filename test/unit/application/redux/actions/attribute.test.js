@@ -5,10 +5,6 @@ import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
 
-jest.mock('../../../../../node_modules/ex-react-native-i18n', () => ({
-  locales: { get: () => ({}) },
-}));
-
 describe('attribute action', () => {
   let store;
   const barcelonaResidencyAttribute = {
