@@ -33,7 +33,7 @@ ShallowWrapper {
               "translation",
             ],
             "fallbackLng": Array [
-              "en",
+              "es",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -56,7 +56,7 @@ ShallowWrapper {
             "nonExplicitWhitelist": false,
             "ns": Array [
               "translation",
-              "common",
+              "walkthrough",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -65,14 +65,70 @@ ShallowWrapper {
             "postProcess": false,
             "preload": false,
             "resources": Object {
+              "ca": Object {
+                "walkthrough": Object {
+                  "next": "Següent",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Les tevas dades estan protegides",
+                    },
+                    "one": Object {
+                      "subtitle": "Et torna el control de les teves dades personals",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grans corporacions venen les teves dades",
+                    },
+                  },
+                  "skip": "Salta",
+                },
+              },
               "en": Object {
-                "common": Object {
+                "walkthrough": Object {
+                  "next": "Next",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Your data is protected",
+                    },
+                    "one": Object {
+                      "subtitle": "Gives you ownership of your personal data",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Big companies store and sell your data",
+                    },
+                  },
                   "skip": "Skip",
                 },
               },
               "es": Object {
-                "common": Object {
-                  "skip": "Eskipear",
+                "walkthrough": Object {
+                  "next": "Siguiente",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Tus datos estan protegidos",
+                    },
+                    "one": Object {
+                      "subtitle": "Devuelve el control de tus datos personales",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grandes corporaciones venden tus datos",
+                    },
+                  },
+                  "skip": "Saltar",
                 },
               },
             },
@@ -119,7 +175,7 @@ ShallowWrapper {
             "translation",
           ],
           "fallbackLng": Array [
-            "en",
+            "es",
           ],
           "fallbackNS": false,
           "initImmediate": true,
@@ -142,7 +198,7 @@ ShallowWrapper {
           "nonExplicitWhitelist": false,
           "ns": Array [
             "translation",
-            "common",
+            "walkthrough",
           ],
           "nsSeparator": ":",
           "overloadTranslationOptionHandler": [Function],
@@ -151,14 +207,70 @@ ShallowWrapper {
           "postProcess": false,
           "preload": false,
           "resources": Object {
+            "ca": Object {
+              "walkthrough": Object {
+                "next": "Següent",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Les tevas dades estan protegides",
+                  },
+                  "one": Object {
+                    "subtitle": "Et torna el control de les teves dades personals",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Las grans corporacions venen les teves dades",
+                  },
+                },
+                "skip": "Salta",
+              },
+            },
             "en": Object {
-              "common": Object {
+              "walkthrough": Object {
+                "next": "Next",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Your data is protected",
+                  },
+                  "one": Object {
+                    "subtitle": "Gives you ownership of your personal data",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Big companies store and sell your data",
+                  },
+                },
                 "skip": "Skip",
               },
             },
             "es": Object {
-              "common": Object {
-                "skip": "Eskipear",
+              "walkthrough": Object {
+                "next": "Siguiente",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Tus datos estan protegidos",
+                  },
+                  "one": Object {
+                    "subtitle": "Devuelve el control de tus datos personales",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Las grandes corporaciones venden tus datos",
+                  },
+                },
+                "skip": "Saltar",
               },
             },
           },
@@ -196,7 +308,7 @@ ShallowWrapper {
                     "translation",
                   ],
                   "fallbackLng": Array [
-                    "en",
+                    "es",
                   ],
                   "fallbackNS": false,
                   "initImmediate": true,
@@ -219,7 +331,7 @@ ShallowWrapper {
                   "nonExplicitWhitelist": false,
                   "ns": Array [
                     "translation",
-                    "common",
+                    "walkthrough",
                   ],
                   "nsSeparator": ":",
                   "overloadTranslationOptionHandler": [Function],
@@ -229,14 +341,70 @@ ShallowWrapper {
                   "prefix": "i18next::languageUtils:",
                   "preload": false,
                   "resources": Object {
+                    "ca": Object {
+                      "walkthrough": Object {
+                        "next": "Següent",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Les tevas dades estan protegides",
+                          },
+                          "one": Object {
+                            "subtitle": "Et torna el control de les teves dades personals",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grans corporacions venen les teves dades",
+                          },
+                        },
+                        "skip": "Salta",
+                      },
+                    },
                     "en": Object {
-                      "common": Object {
+                      "walkthrough": Object {
+                        "next": "Next",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Your data is protected",
+                          },
+                          "one": Object {
+                            "subtitle": "Gives you ownership of your personal data",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Big companies store and sell your data",
+                          },
+                        },
                         "skip": "Skip",
                       },
                     },
                     "es": Object {
-                      "common": Object {
-                        "skip": "Eskipear",
+                      "walkthrough": Object {
+                        "next": "Siguiente",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Tus datos estan protegidos",
+                          },
+                          "one": Object {
+                            "subtitle": "Devuelve el control de tus datos personales",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grandes corporaciones venden tus datos",
+                          },
+                        },
+                        "skip": "Saltar",
                       },
                     },
                   },
@@ -262,7 +430,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -285,7 +453,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -294,14 +462,70 @@ ShallowWrapper {
                 "postProcess": false,
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -336,7 +560,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -359,7 +583,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -369,14 +593,70 @@ ShallowWrapper {
                 "prefix": "i18next::backendConnector:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -407,7 +687,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -430,7 +710,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -439,14 +719,70 @@ ShallowWrapper {
               "postProcess": false,
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -464,14 +800,70 @@ ShallowWrapper {
             "queue": Array [],
             "state": Object {},
             "store": Object {
+              "ca": Object {
+                "walkthrough": Object {
+                  "next": "Següent",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Les tevas dades estan protegides",
+                    },
+                    "one": Object {
+                      "subtitle": "Et torna el control de les teves dades personals",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grans corporacions venen les teves dades",
+                    },
+                  },
+                  "skip": "Salta",
+                },
+              },
               "en": Object {
-                "common": Object {
+                "walkthrough": Object {
+                  "next": "Next",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Your data is protected",
+                    },
+                    "one": Object {
+                      "subtitle": "Gives you ownership of your personal data",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Big companies store and sell your data",
+                    },
+                  },
                   "skip": "Skip",
                 },
               },
               "es": Object {
-                "common": Object {
-                  "skip": "Eskipear",
+                "walkthrough": Object {
+                  "next": "Siguiente",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Tus datos estan protegidos",
+                    },
+                    "one": Object {
+                      "subtitle": "Devuelve el control de tus datos personales",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grandes corporaciones venden tus datos",
+                    },
+                  },
+                  "skip": "Saltar",
                 },
               },
             },
@@ -499,7 +891,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -522,7 +914,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -532,14 +924,70 @@ ShallowWrapper {
                 "prefix": "i18next::interpolator:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -569,7 +1017,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -592,7 +1040,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -601,14 +1049,70 @@ ShallowWrapper {
               "postProcess": false,
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -657,7 +1161,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -680,7 +1184,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -690,14 +1194,70 @@ ShallowWrapper {
                 "prefix": "i18next::languageUtils:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -723,7 +1283,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -746,7 +1306,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -755,14 +1315,70 @@ ShallowWrapper {
               "postProcess": false,
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -797,7 +1413,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -820,7 +1436,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -829,14 +1445,70 @@ ShallowWrapper {
               "postProcess": false,
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -873,7 +1545,7 @@ ShallowWrapper {
                     "translation",
                   ],
                   "fallbackLng": Array [
-                    "en",
+                    "es",
                   ],
                   "fallbackNS": false,
                   "initImmediate": true,
@@ -896,7 +1568,7 @@ ShallowWrapper {
                   "nonExplicitWhitelist": false,
                   "ns": Array [
                     "translation",
-                    "common",
+                    "walkthrough",
                   ],
                   "nsSeparator": ":",
                   "overloadTranslationOptionHandler": [Function],
@@ -906,14 +1578,70 @@ ShallowWrapper {
                   "prefix": "i18next::languageUtils:",
                   "preload": false,
                   "resources": Object {
+                    "ca": Object {
+                      "walkthrough": Object {
+                        "next": "Següent",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Les tevas dades estan protegides",
+                          },
+                          "one": Object {
+                            "subtitle": "Et torna el control de les teves dades personals",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grans corporacions venen les teves dades",
+                          },
+                        },
+                        "skip": "Salta",
+                      },
+                    },
                     "en": Object {
-                      "common": Object {
+                      "walkthrough": Object {
+                        "next": "Next",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Your data is protected",
+                          },
+                          "one": Object {
+                            "subtitle": "Gives you ownership of your personal data",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Big companies store and sell your data",
+                          },
+                        },
                         "skip": "Skip",
                       },
                     },
                     "es": Object {
-                      "common": Object {
-                        "skip": "Eskipear",
+                      "walkthrough": Object {
+                        "next": "Siguiente",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Tus datos estan protegidos",
+                          },
+                          "one": Object {
+                            "subtitle": "Devuelve el control de tus datos personales",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grandes corporaciones venden tus datos",
+                          },
+                        },
+                        "skip": "Saltar",
                       },
                     },
                   },
@@ -939,7 +1667,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -962,7 +1690,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -971,14 +1699,70 @@ ShallowWrapper {
                 "postProcess": false,
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -1013,7 +1797,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -1036,7 +1820,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -1046,14 +1830,70 @@ ShallowWrapper {
                 "prefix": "i18next::pluralResolver:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -2006,27 +2846,139 @@ ShallowWrapper {
             },
           },
           "resourceStore": Object {
+            "ca": Object {
+              "walkthrough": Object {
+                "next": "Següent",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Les tevas dades estan protegides",
+                  },
+                  "one": Object {
+                    "subtitle": "Et torna el control de les teves dades personals",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Las grans corporacions venen les teves dades",
+                  },
+                },
+                "skip": "Salta",
+              },
+            },
             "en": Object {
-              "common": Object {
+              "walkthrough": Object {
+                "next": "Next",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Your data is protected",
+                  },
+                  "one": Object {
+                    "subtitle": "Gives you ownership of your personal data",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Big companies store and sell your data",
+                  },
+                },
                 "skip": "Skip",
               },
             },
             "es": Object {
-              "common": Object {
-                "skip": "Eskipear",
+              "walkthrough": Object {
+                "next": "Siguiente",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Tus datos estan protegidos",
+                  },
+                  "one": Object {
+                    "subtitle": "Devuelve el control de tus datos personales",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Las grandes corporaciones venden tus datos",
+                  },
+                },
+                "skip": "Saltar",
               },
             },
           },
         },
         "store": Object {
+          "ca": Object {
+            "walkthrough": Object {
+              "next": "Següent",
+              "pages": Object {
+                "four": Object {
+                  "subtitle": "Les tevas dades estan protegides",
+                },
+                "one": Object {
+                  "subtitle": "Et torna el control de les teves dades personals",
+                  "title": "DECODE",
+                },
+                "three": Object {
+                  "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                  "title": "DECODE",
+                },
+                "two": Object {
+                  "subtitle": "Las grans corporacions venen les teves dades",
+                },
+              },
+              "skip": "Salta",
+            },
+          },
           "en": Object {
-            "common": Object {
+            "walkthrough": Object {
+              "next": "Next",
+              "pages": Object {
+                "four": Object {
+                  "subtitle": "Your data is protected",
+                },
+                "one": Object {
+                  "subtitle": "Gives you ownership of your personal data",
+                  "title": "DECODE",
+                },
+                "three": Object {
+                  "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                  "title": "DECODE",
+                },
+                "two": Object {
+                  "subtitle": "Big companies store and sell your data",
+                },
+              },
               "skip": "Skip",
             },
           },
           "es": Object {
-            "common": Object {
-              "skip": "Eskipear",
+            "walkthrough": Object {
+              "next": "Siguiente",
+              "pages": Object {
+                "four": Object {
+                  "subtitle": "Tus datos estan protegidos",
+                },
+                "one": Object {
+                  "subtitle": "Devuelve el control de tus datos personales",
+                  "title": "DECODE",
+                },
+                "three": Object {
+                  "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                  "title": "DECODE",
+                },
+                "two": Object {
+                  "subtitle": "Las grandes corporaciones venden tus datos",
+                },
+              },
+              "skip": "Saltar",
             },
           },
         },
@@ -2052,7 +3004,7 @@ ShallowWrapper {
                     "translation",
                   ],
                   "fallbackLng": Array [
-                    "en",
+                    "es",
                   ],
                   "fallbackNS": false,
                   "initImmediate": true,
@@ -2075,7 +3027,7 @@ ShallowWrapper {
                   "nonExplicitWhitelist": false,
                   "ns": Array [
                     "translation",
-                    "common",
+                    "walkthrough",
                   ],
                   "nsSeparator": ":",
                   "overloadTranslationOptionHandler": [Function],
@@ -2085,14 +3037,70 @@ ShallowWrapper {
                   "prefix": "i18next::languageUtils:",
                   "preload": false,
                   "resources": Object {
+                    "ca": Object {
+                      "walkthrough": Object {
+                        "next": "Següent",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Les tevas dades estan protegides",
+                          },
+                          "one": Object {
+                            "subtitle": "Et torna el control de les teves dades personals",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grans corporacions venen les teves dades",
+                          },
+                        },
+                        "skip": "Salta",
+                      },
+                    },
                     "en": Object {
-                      "common": Object {
+                      "walkthrough": Object {
+                        "next": "Next",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Your data is protected",
+                          },
+                          "one": Object {
+                            "subtitle": "Gives you ownership of your personal data",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Big companies store and sell your data",
+                          },
+                        },
                         "skip": "Skip",
                       },
                     },
                     "es": Object {
-                      "common": Object {
-                        "skip": "Eskipear",
+                      "walkthrough": Object {
+                        "next": "Siguiente",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Tus datos estan protegidos",
+                          },
+                          "one": Object {
+                            "subtitle": "Devuelve el control de tus datos personales",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grandes corporaciones venden tus datos",
+                          },
+                        },
+                        "skip": "Saltar",
                       },
                     },
                   },
@@ -2118,7 +3126,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -2141,7 +3149,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2150,14 +3158,70 @@ ShallowWrapper {
                 "postProcess": false,
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -2192,7 +3256,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -2215,7 +3279,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2225,14 +3289,70 @@ ShallowWrapper {
                 "prefix": "i18next::backendConnector:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -2263,7 +3383,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -2286,7 +3406,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2295,14 +3415,70 @@ ShallowWrapper {
               "postProcess": false,
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -2320,14 +3496,70 @@ ShallowWrapper {
             "queue": Array [],
             "state": Object {},
             "store": Object {
+              "ca": Object {
+                "walkthrough": Object {
+                  "next": "Següent",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Les tevas dades estan protegides",
+                    },
+                    "one": Object {
+                      "subtitle": "Et torna el control de les teves dades personals",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grans corporacions venen les teves dades",
+                    },
+                  },
+                  "skip": "Salta",
+                },
+              },
               "en": Object {
-                "common": Object {
+                "walkthrough": Object {
+                  "next": "Next",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Your data is protected",
+                    },
+                    "one": Object {
+                      "subtitle": "Gives you ownership of your personal data",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Big companies store and sell your data",
+                    },
+                  },
                   "skip": "Skip",
                 },
               },
               "es": Object {
-                "common": Object {
-                  "skip": "Eskipear",
+                "walkthrough": Object {
+                  "next": "Siguiente",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Tus datos estan protegidos",
+                    },
+                    "one": Object {
+                      "subtitle": "Devuelve el control de tus datos personales",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grandes corporaciones venden tus datos",
+                    },
+                  },
+                  "skip": "Saltar",
                 },
               },
             },
@@ -2355,7 +3587,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -2378,7 +3610,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2388,14 +3620,70 @@ ShallowWrapper {
                 "prefix": "i18next::interpolator:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -2425,7 +3713,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -2448,7 +3736,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2457,14 +3745,70 @@ ShallowWrapper {
               "postProcess": false,
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -2506,7 +3850,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -2529,7 +3873,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2539,14 +3883,70 @@ ShallowWrapper {
                 "prefix": "i18next::languageUtils:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -2572,7 +3972,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -2595,7 +3995,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2604,14 +4004,70 @@ ShallowWrapper {
               "postProcess": false,
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -2646,7 +4102,7 @@ ShallowWrapper {
                 "translation",
               ],
               "fallbackLng": Array [
-                "en",
+                "es",
               ],
               "fallbackNS": false,
               "initImmediate": true,
@@ -2669,7 +4125,7 @@ ShallowWrapper {
               "nonExplicitWhitelist": false,
               "ns": Array [
                 "translation",
-                "common",
+                "walkthrough",
               ],
               "nsSeparator": ":",
               "overloadTranslationOptionHandler": [Function],
@@ -2679,14 +4135,70 @@ ShallowWrapper {
               "prefix": "i18next::translator:",
               "preload": false,
               "resources": Object {
+                "ca": Object {
+                  "walkthrough": Object {
+                    "next": "Següent",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Les tevas dades estan protegides",
+                      },
+                      "one": Object {
+                        "subtitle": "Et torna el control de les teves dades personals",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grans corporacions venen les teves dades",
+                      },
+                    },
+                    "skip": "Salta",
+                  },
+                },
                 "en": Object {
-                  "common": Object {
+                  "walkthrough": Object {
+                    "next": "Next",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Your data is protected",
+                      },
+                      "one": Object {
+                        "subtitle": "Gives you ownership of your personal data",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Big companies store and sell your data",
+                      },
+                    },
                     "skip": "Skip",
                   },
                 },
                 "es": Object {
-                  "common": Object {
-                    "skip": "Eskipear",
+                  "walkthrough": Object {
+                    "next": "Siguiente",
+                    "pages": Object {
+                      "four": Object {
+                        "subtitle": "Tus datos estan protegidos",
+                      },
+                      "one": Object {
+                        "subtitle": "Devuelve el control de tus datos personales",
+                        "title": "DECODE",
+                      },
+                      "three": Object {
+                        "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                        "title": "DECODE",
+                      },
+                      "two": Object {
+                        "subtitle": "Las grandes corporaciones venden tus datos",
+                      },
+                    },
+                    "skip": "Saltar",
                   },
                 },
               },
@@ -2717,7 +4229,7 @@ ShallowWrapper {
               "translation",
             ],
             "fallbackLng": Array [
-              "en",
+              "es",
             ],
             "fallbackNS": false,
             "initImmediate": true,
@@ -2740,7 +4252,7 @@ ShallowWrapper {
             "nonExplicitWhitelist": false,
             "ns": Array [
               "translation",
-              "common",
+              "walkthrough",
             ],
             "nsSeparator": ":",
             "overloadTranslationOptionHandler": [Function],
@@ -2749,14 +4261,70 @@ ShallowWrapper {
             "postProcess": false,
             "preload": false,
             "resources": Object {
+              "ca": Object {
+                "walkthrough": Object {
+                  "next": "Següent",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Les tevas dades estan protegides",
+                    },
+                    "one": Object {
+                      "subtitle": "Et torna el control de les teves dades personals",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grans corporacions venen les teves dades",
+                    },
+                  },
+                  "skip": "Salta",
+                },
+              },
               "en": Object {
-                "common": Object {
+                "walkthrough": Object {
+                  "next": "Next",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Your data is protected",
+                    },
+                    "one": Object {
+                      "subtitle": "Gives you ownership of your personal data",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Big companies store and sell your data",
+                    },
+                  },
                   "skip": "Skip",
                 },
               },
               "es": Object {
-                "common": Object {
-                  "skip": "Eskipear",
+                "walkthrough": Object {
+                  "next": "Siguiente",
+                  "pages": Object {
+                    "four": Object {
+                      "subtitle": "Tus datos estan protegidos",
+                    },
+                    "one": Object {
+                      "subtitle": "Devuelve el control de tus datos personales",
+                      "title": "DECODE",
+                    },
+                    "three": Object {
+                      "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                      "title": "DECODE",
+                    },
+                    "two": Object {
+                      "subtitle": "Las grandes corporaciones venden tus datos",
+                    },
+                  },
+                  "skip": "Saltar",
                 },
               },
             },
@@ -2791,7 +4359,7 @@ ShallowWrapper {
                     "translation",
                   ],
                   "fallbackLng": Array [
-                    "en",
+                    "es",
                   ],
                   "fallbackNS": false,
                   "initImmediate": true,
@@ -2814,7 +4382,7 @@ ShallowWrapper {
                   "nonExplicitWhitelist": false,
                   "ns": Array [
                     "translation",
-                    "common",
+                    "walkthrough",
                   ],
                   "nsSeparator": ":",
                   "overloadTranslationOptionHandler": [Function],
@@ -2824,14 +4392,70 @@ ShallowWrapper {
                   "prefix": "i18next::languageUtils:",
                   "preload": false,
                   "resources": Object {
+                    "ca": Object {
+                      "walkthrough": Object {
+                        "next": "Següent",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Les tevas dades estan protegides",
+                          },
+                          "one": Object {
+                            "subtitle": "Et torna el control de les teves dades personals",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grans corporacions venen les teves dades",
+                          },
+                        },
+                        "skip": "Salta",
+                      },
+                    },
                     "en": Object {
-                      "common": Object {
+                      "walkthrough": Object {
+                        "next": "Next",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Your data is protected",
+                          },
+                          "one": Object {
+                            "subtitle": "Gives you ownership of your personal data",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Big companies store and sell your data",
+                          },
+                        },
                         "skip": "Skip",
                       },
                     },
                     "es": Object {
-                      "common": Object {
-                        "skip": "Eskipear",
+                      "walkthrough": Object {
+                        "next": "Siguiente",
+                        "pages": Object {
+                          "four": Object {
+                            "subtitle": "Tus datos estan protegidos",
+                          },
+                          "one": Object {
+                            "subtitle": "Devuelve el control de tus datos personales",
+                            "title": "DECODE",
+                          },
+                          "three": Object {
+                            "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                            "title": "DECODE",
+                          },
+                          "two": Object {
+                            "subtitle": "Las grandes corporaciones venden tus datos",
+                          },
+                        },
+                        "skip": "Saltar",
                       },
                     },
                   },
@@ -2857,7 +4481,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -2880,7 +4504,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2889,14 +4513,70 @@ ShallowWrapper {
                 "postProcess": false,
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -2931,7 +4611,7 @@ ShallowWrapper {
                   "translation",
                 ],
                 "fallbackLng": Array [
-                  "en",
+                  "es",
                 ],
                 "fallbackNS": false,
                 "initImmediate": true,
@@ -2954,7 +4634,7 @@ ShallowWrapper {
                 "nonExplicitWhitelist": false,
                 "ns": Array [
                   "translation",
-                  "common",
+                  "walkthrough",
                 ],
                 "nsSeparator": ":",
                 "overloadTranslationOptionHandler": [Function],
@@ -2964,14 +4644,70 @@ ShallowWrapper {
                 "prefix": "i18next::pluralResolver:",
                 "preload": false,
                 "resources": Object {
+                  "ca": Object {
+                    "walkthrough": Object {
+                      "next": "Següent",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Les tevas dades estan protegides",
+                        },
+                        "one": Object {
+                          "subtitle": "Et torna el control de les teves dades personals",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grans corporacions venen les teves dades",
+                        },
+                      },
+                      "skip": "Salta",
+                    },
+                  },
                   "en": Object {
-                    "common": Object {
+                    "walkthrough": Object {
+                      "next": "Next",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Your data is protected",
+                        },
+                        "one": Object {
+                          "subtitle": "Gives you ownership of your personal data",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Big companies store and sell your data",
+                        },
+                      },
                       "skip": "Skip",
                     },
                   },
                   "es": Object {
-                    "common": Object {
-                      "skip": "Eskipear",
+                    "walkthrough": Object {
+                      "next": "Siguiente",
+                      "pages": Object {
+                        "four": Object {
+                          "subtitle": "Tus datos estan protegidos",
+                        },
+                        "one": Object {
+                          "subtitle": "Devuelve el control de tus datos personales",
+                          "title": "DECODE",
+                        },
+                        "three": Object {
+                          "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                          "title": "DECODE",
+                        },
+                        "two": Object {
+                          "subtitle": "Las grandes corporaciones venden tus datos",
+                        },
+                      },
+                      "skip": "Saltar",
                     },
                   },
                 },
@@ -3924,14 +5660,70 @@ ShallowWrapper {
             },
           },
           "resourceStore": Object {
+            "ca": Object {
+              "walkthrough": Object {
+                "next": "Següent",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Les tevas dades estan protegides",
+                  },
+                  "one": Object {
+                    "subtitle": "Et torna el control de les teves dades personals",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Et retorna el control de les teves dades, estan enmagatzamades a la wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Las grans corporacions venen les teves dades",
+                  },
+                },
+                "skip": "Salta",
+              },
+            },
             "en": Object {
-              "common": Object {
+              "walkthrough": Object {
+                "next": "Next",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Your data is protected",
+                  },
+                  "one": Object {
+                    "subtitle": "Gives you ownership of your personal data",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Gives you back control of your data. It is kept in your wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Big companies store and sell your data",
+                  },
+                },
                 "skip": "Skip",
               },
             },
             "es": Object {
-              "common": Object {
-                "skip": "Eskipear",
+              "walkthrough": Object {
+                "next": "Siguiente",
+                "pages": Object {
+                  "four": Object {
+                    "subtitle": "Tus datos estan protegidos",
+                  },
+                  "one": Object {
+                    "subtitle": "Devuelve el control de tus datos personales",
+                    "title": "DECODE",
+                  },
+                  "three": Object {
+                    "subtitle": "Te devuelve el control de tus datos, se almazenan en la wallet",
+                    "title": "DECODE",
+                  },
+                  "two": Object {
+                    "subtitle": "Las grandes corporaciones venden tus datos",
+                  },
+                },
+                "skip": "Saltar",
               },
             },
           },
@@ -3960,7 +5752,7 @@ ShallowWrapper {
       "bottomBarHeight": 60,
       "bottomBarHighlight": false,
       "controlStatusBar": true,
-      "nextLabel": "Next",
+      "nextLabel": "Siguiente",
       "onDone": null,
       "onSkip": [Function],
       "pages": Array [
@@ -3990,7 +5782,7 @@ ShallowWrapper {
                 "textAlign": "center",
               }
             }
-            title="Gives you ownership of your personal data"
+            title="Devuelve el control de tus datos personales"
           />,
           "title": <TitleElement
             style={
@@ -4029,7 +5821,7 @@ ShallowWrapper {
                 "textAlign": "center",
               }
             }
-            title="Big companies store and sell your data"
+            title="Las grandes corporaciones venden tus datos"
           />,
           "title": "",
         },
@@ -4059,7 +5851,7 @@ ShallowWrapper {
                 "textAlign": "center",
               }
             }
-            title="Gives you back control of your data. It is kept in your wallet"
+            title="Te devuelve el control de tus datos, se almazenan en la wallet"
           />,
           "title": <TitleElement
             style={
@@ -4098,7 +5890,7 @@ ShallowWrapper {
                 "textAlign": "center",
               }
             }
-            title="Your data is protected"
+            title="Tus datos estan protegidos"
           />,
           "title": "",
         },
@@ -4106,7 +5898,7 @@ ShallowWrapper {
       "showDone": true,
       "showNext": true,
       "showSkip": true,
-      "skipLabel": "Skip",
+      "skipLabel": "Saltar",
     },
     "ref": null,
     "rendered": null,
@@ -4125,7 +5917,7 @@ ShallowWrapper {
         "bottomBarHeight": 60,
         "bottomBarHighlight": false,
         "controlStatusBar": true,
-        "nextLabel": "Next",
+        "nextLabel": "Siguiente",
         "onDone": null,
         "onSkip": [Function],
         "pages": Array [
@@ -4155,7 +5947,7 @@ ShallowWrapper {
                   "textAlign": "center",
                 }
               }
-              title="Gives you ownership of your personal data"
+              title="Devuelve el control de tus datos personales"
             />,
             "title": <TitleElement
               style={
@@ -4194,7 +5986,7 @@ ShallowWrapper {
                   "textAlign": "center",
                 }
               }
-              title="Big companies store and sell your data"
+              title="Las grandes corporaciones venden tus datos"
             />,
             "title": "",
           },
@@ -4224,7 +6016,7 @@ ShallowWrapper {
                   "textAlign": "center",
                 }
               }
-              title="Gives you back control of your data. It is kept in your wallet"
+              title="Te devuelve el control de tus datos, se almazenan en la wallet"
             />,
             "title": <TitleElement
               style={
@@ -4263,7 +6055,7 @@ ShallowWrapper {
                   "textAlign": "center",
                 }
               }
-              title="Your data is protected"
+              title="Tus datos estan protegidos"
             />,
             "title": "",
           },
@@ -4271,7 +6063,7 @@ ShallowWrapper {
         "showDone": true,
         "showNext": true,
         "showSkip": true,
-        "skipLabel": "Skip",
+        "skipLabel": "Saltar",
       },
       "ref": null,
       "rendered": null,
