@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Constants, SecureStore, WebBrowser } from 'expo';
 import { Linking, View, Text, Image } from 'react-native';
+import { translate } from 'react-i18next';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
 import { addCredential } from '../application/redux/actions/attributes';
 import { getPetition } from '../application/redux/actions/petition';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
+import i18n from '../i18n';
 
 const decodeUser = require('../assets/images/decode-user.png');
 
@@ -19,7 +21,7 @@ class AttributesSummary extends React.Component {
       fontSize: 20,
       fontWeight: '500',
       tintColor: 'rgb(0,163,158)',
-      title: 'Verify Your Information',
+      title: ' ',
     },
   };
 
@@ -88,7 +90,7 @@ class AttributesSummary extends React.Component {
             marginLeft: 16,
           }}
           >
-            DECIDIM needs to verify your Barcelona residency.
+            {this.props.t('title')}
           </Text>
           <Text style={{
             color: '#3E393C',
@@ -98,13 +100,13 @@ class AttributesSummary extends React.Component {
             marginTop: 8,
           }}
           >
-            You can do this with the Barcelona City Council
+            {this.props.t('subtitle')}
           </Text>
         </View>
 
         <View style={{ flex: 1 }}>
           <Button
-            name="Verify with Barcelona Council"
+            name={this.props.t('button')}
             onPress={this.openWebBrowserAsync}
             style={{
               marginTop: 40,
@@ -117,7 +119,7 @@ class AttributesSummary extends React.Component {
           <Text
             style={styles.cancelSigningPetition}
             onPress={() => openPetitionInBrowser(this.props.petition.id)}
-          >Or, cancel signing this petition
+          >{this.props.t('cancel')}
           </Text>
         </View>
       </View>
@@ -137,6 +139,7 @@ AttributesSummary.propTypes = {
   goToPetitionSummary: PropTypes.func.isRequired,
   addCredential: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 AttributesSummary.defaultProps = {
@@ -158,4 +161,4 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(AttributesSummary);
+export default translate('attributesSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(AttributesSummary));

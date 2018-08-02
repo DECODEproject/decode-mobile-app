@@ -44,20 +44,20 @@ describe('The AttributesSummary page', () => {
     fetchMock.restore();
   });
 
-  it('should show the verify with barcelona button', () => {
+  it('should show the verify button', () => {
     const store = mockStore(initialState);
 
     // WHEN I VISUALIZE THE Attribute Summary
-    const wrapper = shallow(
-      <AttributesSummary />,
-      { context: { store } },
-    );
+    const wrapper = shallow(<AttributesSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
 
     const buttonWrapper = wrapper.dive().find(Button);
 
     // Only one button
     expect(buttonWrapper).toHaveLength(1);
-    expect(buttonWrapper.prop('name')).toEqual('Verify with Barcelona Council');
+    expect(buttonWrapper.prop('name')).toEqual('Verificar');
     expect(buttonWrapper.first().prop('enabled')).toEqual(true);
   });
 
@@ -77,10 +77,10 @@ describe('The AttributesSummary page', () => {
     const store = mockStore(state);
 
     // WHEN I VISUALIZE THE Attribute Summary
-    const wrapper = shallow(
-      <AttributesSummary />,
-      { context: { store } },
-    );
+    const wrapper = shallow(<AttributesSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
 
     const TextWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === title);
     expect(TextWrappers).toHaveLength(1);
@@ -88,10 +88,10 @@ describe('The AttributesSummary page', () => {
 
   describe('when the verify button is pressed', () => {
     xit('should go to credential issuer', () => {
-      const wrapper = shallow(
-        <AttributesSummary />,
-        { context: { store: mockStore(initialState) } },
-      );
+      const wrapper = shallow(<AttributesSummary />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store: mockStore(initialState) } });
 
       // wrapper.dive().find(Button).first().simulate('click');
 
@@ -104,10 +104,10 @@ describe('The AttributesSummary page', () => {
 
   describe('on redirect from credential issuer', () => {
     xit('should go to petitionSummary page', () => {
-      const wrapper = shallow(
-        <AttributesSummary />,
-        { context: { store: mockStore(initialState) } },
-      );
+      const wrapper = shallow(<AttributesSummary />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store: mockStore(initialState) } });
 
       const attributesSummaryComponent = wrapper.dive().instance();
       attributesSummaryComponent.props = {
@@ -123,10 +123,10 @@ describe('The AttributesSummary page', () => {
 
   describe('when rendered', () => {
     it('should match this snapshot', () => {
-      const wrapper = shallow(
-        <AttributesSummary />,
-        { context: { store: mockStore(initialState) } },
-      );
+      const wrapper = shallow(<AttributesSummary />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store: mockStore(initialState) } });
       expect(wrapper.dive()).toMatchSnapshot();
     });
   });
