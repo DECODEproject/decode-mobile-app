@@ -11,6 +11,9 @@ const mockStore = configureStore([thunk]);
 
 const initialState = {
   navigation: {},
+  wallet: {
+    id: '123',
+  },
 };
 
 it('renders NewDateOfBirthAttribute component', () => {

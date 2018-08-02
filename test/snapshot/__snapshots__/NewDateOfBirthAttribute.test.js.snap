@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NewDateOfBirthAttribute
     saveDateOfBirth={[Function]}
+    walletId="123"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

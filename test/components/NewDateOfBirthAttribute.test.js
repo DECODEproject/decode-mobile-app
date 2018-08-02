@@ -23,6 +23,9 @@ describe('NewDateOfBirthAttribute', () => {
         navigation: {
           currentNavigatorUID: 2,
         },
+        wallet: {
+          id: '123',
+        },
       };
       const store = mockStore(initialState);
       const wrapper = shallow(
