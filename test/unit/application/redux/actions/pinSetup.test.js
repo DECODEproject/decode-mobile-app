@@ -1,7 +1,7 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import types from '../../../../../application/redux/actionTypes';
-import { changeText1, changeText2, storePin, validate } from '../../../../../application/redux/actions/pinSetup';
+import { changeText1, changeText2, validate } from '../../../../../application/redux/actions/pinSetup';
 
 const mockStore = configureStore([thunk]);
 
@@ -49,26 +49,5 @@ describe('PinSetup actions', () => {
     expect(store.getActions()).toEqual([{
       type: types.PIN_SETUP_VALIDATE,
     }]);
-  });
-
-  it('should save the pin into the storage', async () => {
-    const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
-    const store = mockStore({
-      pinSetup: {
-        pin1: '6666',
-        pin2: '6666',
-        valid: true,
-      },
-    });
-
-    const expectedAction = {
-      type: types.PIN_SETUP_STORE,
-    };
-
-    await store.dispatch(storePin(setItemAsync, '6666'));
-
-    expect(setItemAsync).toBeCalled();
-    expect(setItemAsync).toBeCalledWith('pincode', '6666');
-    expect(store.getActions()).toEqual(expect.arrayContaining([expectedAction]));
   });
 });
