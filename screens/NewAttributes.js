@@ -8,7 +8,7 @@ import styles from './styles';
 
 
 const NewAttributes = props => (
-  <View style={styles.newAttributesContainer}>
+  <View style={styles.attributesManagementContainer}>
     <Text>Select an attribute to add to your wallet from the list below.</Text>
     <View style={styles.newAttributesAttribute}>
       <Text style={styles.newAttributesAttributeName}>Date of birth</Text>

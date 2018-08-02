@@ -2,7 +2,7 @@ import { Platform, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
 
-  attributesLandingContainer: {
+  attributesManagementContainer: {
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
     margin: 16,
@@ -80,14 +80,6 @@ const styles = StyleSheet.create({
   homeWelcomeMessage: {
     fontSize: 18,
     marginBottom: 30,
-  },
-  newAttributesContainer: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFF',
-    margin: 16,
-    marginTop: 30,
-    paddingHorizontal: 20,
-    paddingVertical: 40,
   },
   newAttributesAttribute: {
     flexDirection: 'row',

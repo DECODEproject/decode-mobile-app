@@ -1,5 +1,6 @@
 import urlParse from 'url-parse';
 import types from '../actionTypes';
+import { goToAttributesLanding } from './navigation';
 
 
 export function addCredentialFromUrl(attribute, walletId, url) {
@@ -55,4 +56,14 @@ export function bubbleUpOptionalAttributeToggle(attributeName, toggleValue) {
     attributeName,
     toggleValue,
   });
+}
+
+export function saveDateOfBirth(dateOfBirth) {
+  return (dispatch) => {
+    dispatch(goToAttributesLanding());
+    dispatch({
+      type: types.SAVE_DATE_OF_BIRTH,
+      dateOfBirth,
+    });
+  };
 }

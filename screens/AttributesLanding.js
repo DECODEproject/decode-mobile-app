@@ -35,7 +35,7 @@ class AttributesLanding extends React.Component {
       : AttributesLanding.renderEmpty();
 
     return (
-      <View style={styles.attributesLandingContainer}>
+      <View style={styles.attributesManagementContainer}>
         {listComponent}
         <Button
           name="Add attribute"

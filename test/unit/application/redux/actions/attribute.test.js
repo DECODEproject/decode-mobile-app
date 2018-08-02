@@ -1,9 +1,13 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { addCredentialFromUrl, storeCredentials, addCredential, loadCredentials, bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../../../../../application/redux/actions/attributes';
+import { saveDateOfBirth, addCredentialFromUrl, storeCredentials, addCredential, loadCredentials, bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../../../../../application/redux/actions/attributes';
 import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
+
+jest.mock('../../../../../node_modules/ex-react-native-i18n', () => ({
+  locales: { get: () => ({}) },
+}));
 
 describe('attribute action', () => {
   let store;
@@ -20,6 +24,9 @@ describe('attribute action', () => {
 
   beforeEach(() => {
     store = mockStore({
+      navigation: {
+        currentNavigatorUID: 2,
+      },
       attributes: {
         list: [],
       },
@@ -176,5 +183,19 @@ describe('attribute action', () => {
     store.dispatch(bubbleUpOptionalAttributeToggle('age', true));
     store.dispatch(bubbleUpOptionalAttributeToggle('gender', false));
     expect(store.getActions()).toEqual(expectedActions);
+  });
+
+  it('SAVE_DATE_OF_BIRTH action', () => {
+    const someDateOfBirth = '01/01/2000';
+    const expectedAction = {
+      type: types.SAVE_DATE_OF_BIRTH,
+      dateOfBirth: someDateOfBirth,
+    };
+
+    store.dispatch(saveDateOfBirth(someDateOfBirth));
+
+    const actions = store.getActions();
+    expect(actions[0].child.routeName).toEqual('attributesLanding');
+    expect(actions[1]).toEqual(expectedAction);
   });
 });
