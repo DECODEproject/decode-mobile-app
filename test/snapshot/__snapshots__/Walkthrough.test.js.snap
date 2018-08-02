@@ -66,6 +66,10 @@ ShallowWrapper {
             "preload": false,
             "resources": Object {
               "ca": Object {
+                "home": Object {
+                  "badPin": "Codic pin incorrecte",
+                  "button": "Accedi",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -88,6 +92,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "home": Object {
+                  "badPin": "Incorrect pin code",
+                  "button": "Sign In",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -110,6 +118,10 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "home": Object {
+                  "badPin": "Codigo pin incorrecto",
+                  "button": "Acceder",
+                },
                 "walkthrough": Object {
                   "next": "Siguiente",
                   "pages": Object {
@@ -208,6 +220,10 @@ ShallowWrapper {
           "preload": false,
           "resources": Object {
             "ca": Object {
+              "home": Object {
+                "badPin": "Codic pin incorrecte",
+                "button": "Accedi",
+              },
               "walkthrough": Object {
                 "next": "Següent",
                 "pages": Object {
@@ -230,6 +246,10 @@ ShallowWrapper {
               },
             },
             "en": Object {
+              "home": Object {
+                "badPin": "Incorrect pin code",
+                "button": "Sign In",
+              },
               "walkthrough": Object {
                 "next": "Next",
                 "pages": Object {
@@ -252,6 +272,10 @@ ShallowWrapper {
               },
             },
             "es": Object {
+              "home": Object {
+                "badPin": "Codigo pin incorrecto",
+                "button": "Acceder",
+              },
               "walkthrough": Object {
                 "next": "Siguiente",
                 "pages": Object {
@@ -342,6 +366,10 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "home": Object {
+                        "badPin": "Codic pin incorrecte",
+                        "button": "Accedi",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -364,6 +392,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "home": Object {
+                        "badPin": "Incorrect pin code",
+                        "button": "Sign In",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -386,6 +418,10 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "home": Object {
+                        "badPin": "Codigo pin incorrecto",
+                        "button": "Acceder",
+                      },
                       "walkthrough": Object {
                         "next": "Siguiente",
                         "pages": Object {
@@ -463,6 +499,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -485,6 +525,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -507,6 +551,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -594,6 +642,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -616,6 +668,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -638,6 +694,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -720,6 +780,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -742,6 +806,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -764,6 +832,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -801,6 +873,10 @@ ShallowWrapper {
             "state": Object {},
             "store": Object {
               "ca": Object {
+                "home": Object {
+                  "badPin": "Codic pin incorrecte",
+                  "button": "Accedi",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -823,6 +899,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "home": Object {
+                  "badPin": "Incorrect pin code",
+                  "button": "Sign In",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -845,6 +925,10 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "home": Object {
+                  "badPin": "Codigo pin incorrecto",
+                  "button": "Acceder",
+                },
                 "walkthrough": Object {
                   "next": "Siguiente",
                   "pages": Object {
@@ -925,6 +1009,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -947,6 +1035,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -969,6 +1061,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -1050,6 +1146,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -1072,6 +1172,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -1094,6 +1198,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -1195,6 +1303,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -1217,6 +1329,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -1239,6 +1355,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -1316,6 +1436,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -1338,6 +1462,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -1360,6 +1488,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -1446,6 +1578,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -1468,6 +1604,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -1490,6 +1630,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -1579,6 +1723,10 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "home": Object {
+                        "badPin": "Codic pin incorrecte",
+                        "button": "Accedi",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -1601,6 +1749,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "home": Object {
+                        "badPin": "Incorrect pin code",
+                        "button": "Sign In",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -1623,6 +1775,10 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "home": Object {
+                        "badPin": "Codigo pin incorrecto",
+                        "button": "Acceder",
+                      },
                       "walkthrough": Object {
                         "next": "Siguiente",
                         "pages": Object {
@@ -1700,6 +1856,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -1722,6 +1882,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -1744,6 +1908,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -1831,6 +1999,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -1853,6 +2025,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -1875,6 +2051,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -2847,6 +3027,10 @@ ShallowWrapper {
           },
           "resourceStore": Object {
             "ca": Object {
+              "home": Object {
+                "badPin": "Codic pin incorrecte",
+                "button": "Accedi",
+              },
               "walkthrough": Object {
                 "next": "Següent",
                 "pages": Object {
@@ -2869,6 +3053,10 @@ ShallowWrapper {
               },
             },
             "en": Object {
+              "home": Object {
+                "badPin": "Incorrect pin code",
+                "button": "Sign In",
+              },
               "walkthrough": Object {
                 "next": "Next",
                 "pages": Object {
@@ -2891,6 +3079,10 @@ ShallowWrapper {
               },
             },
             "es": Object {
+              "home": Object {
+                "badPin": "Codigo pin incorrecto",
+                "button": "Acceder",
+              },
               "walkthrough": Object {
                 "next": "Siguiente",
                 "pages": Object {
@@ -2916,6 +3108,10 @@ ShallowWrapper {
         },
         "store": Object {
           "ca": Object {
+            "home": Object {
+              "badPin": "Codic pin incorrecte",
+              "button": "Accedi",
+            },
             "walkthrough": Object {
               "next": "Següent",
               "pages": Object {
@@ -2938,6 +3134,10 @@ ShallowWrapper {
             },
           },
           "en": Object {
+            "home": Object {
+              "badPin": "Incorrect pin code",
+              "button": "Sign In",
+            },
             "walkthrough": Object {
               "next": "Next",
               "pages": Object {
@@ -2960,6 +3160,10 @@ ShallowWrapper {
             },
           },
           "es": Object {
+            "home": Object {
+              "badPin": "Codigo pin incorrecto",
+              "button": "Acceder",
+            },
             "walkthrough": Object {
               "next": "Siguiente",
               "pages": Object {
@@ -3038,6 +3242,10 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "home": Object {
+                        "badPin": "Codic pin incorrecte",
+                        "button": "Accedi",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -3060,6 +3268,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "home": Object {
+                        "badPin": "Incorrect pin code",
+                        "button": "Sign In",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -3082,6 +3294,10 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "home": Object {
+                        "badPin": "Codigo pin incorrecto",
+                        "button": "Acceder",
+                      },
                       "walkthrough": Object {
                         "next": "Siguiente",
                         "pages": Object {
@@ -3159,6 +3375,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -3181,6 +3401,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -3203,6 +3427,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -3290,6 +3518,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -3312,6 +3544,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -3334,6 +3570,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -3416,6 +3656,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -3438,6 +3682,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -3460,6 +3708,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -3497,6 +3749,10 @@ ShallowWrapper {
             "state": Object {},
             "store": Object {
               "ca": Object {
+                "home": Object {
+                  "badPin": "Codic pin incorrecte",
+                  "button": "Accedi",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -3519,6 +3775,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "home": Object {
+                  "badPin": "Incorrect pin code",
+                  "button": "Sign In",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -3541,6 +3801,10 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "home": Object {
+                  "badPin": "Codigo pin incorrecto",
+                  "button": "Acceder",
+                },
                 "walkthrough": Object {
                   "next": "Siguiente",
                   "pages": Object {
@@ -3621,6 +3885,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -3643,6 +3911,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -3665,6 +3937,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -3746,6 +4022,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -3768,6 +4048,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -3790,6 +4074,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -3884,6 +4172,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -3906,6 +4198,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -3928,6 +4224,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -4005,6 +4305,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -4027,6 +4331,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -4049,6 +4357,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -4136,6 +4448,10 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "home": Object {
+                    "badPin": "Codic pin incorrecte",
+                    "button": "Accedi",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -4158,6 +4474,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "home": Object {
+                    "badPin": "Incorrect pin code",
+                    "button": "Sign In",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -4180,6 +4500,10 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "home": Object {
+                    "badPin": "Codigo pin incorrecto",
+                    "button": "Acceder",
+                  },
                   "walkthrough": Object {
                     "next": "Siguiente",
                     "pages": Object {
@@ -4262,6 +4586,10 @@ ShallowWrapper {
             "preload": false,
             "resources": Object {
               "ca": Object {
+                "home": Object {
+                  "badPin": "Codic pin incorrecte",
+                  "button": "Accedi",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -4284,6 +4612,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "home": Object {
+                  "badPin": "Incorrect pin code",
+                  "button": "Sign In",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -4306,6 +4638,10 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "home": Object {
+                  "badPin": "Codigo pin incorrecto",
+                  "button": "Acceder",
+                },
                 "walkthrough": Object {
                   "next": "Siguiente",
                   "pages": Object {
@@ -4393,6 +4729,10 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "home": Object {
+                        "badPin": "Codic pin incorrecte",
+                        "button": "Accedi",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -4415,6 +4755,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "home": Object {
+                        "badPin": "Incorrect pin code",
+                        "button": "Sign In",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -4437,6 +4781,10 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "home": Object {
+                        "badPin": "Codigo pin incorrecto",
+                        "button": "Acceder",
+                      },
                       "walkthrough": Object {
                         "next": "Siguiente",
                         "pages": Object {
@@ -4514,6 +4862,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -4536,6 +4888,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -4558,6 +4914,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -4645,6 +5005,10 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "home": Object {
+                      "badPin": "Codic pin incorrecte",
+                      "button": "Accedi",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -4667,6 +5031,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "home": Object {
+                      "badPin": "Incorrect pin code",
+                      "button": "Sign In",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -4689,6 +5057,10 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "home": Object {
+                      "badPin": "Codigo pin incorrecto",
+                      "button": "Acceder",
+                    },
                     "walkthrough": Object {
                       "next": "Siguiente",
                       "pages": Object {
@@ -5661,6 +6033,10 @@ ShallowWrapper {
           },
           "resourceStore": Object {
             "ca": Object {
+              "home": Object {
+                "badPin": "Codic pin incorrecte",
+                "button": "Accedi",
+              },
               "walkthrough": Object {
                 "next": "Següent",
                 "pages": Object {
@@ -5683,6 +6059,10 @@ ShallowWrapper {
               },
             },
             "en": Object {
+              "home": Object {
+                "badPin": "Incorrect pin code",
+                "button": "Sign In",
+              },
               "walkthrough": Object {
                 "next": "Next",
                 "pages": Object {
@@ -5705,6 +6085,10 @@ ShallowWrapper {
               },
             },
             "es": Object {
+              "home": Object {
+                "badPin": "Codigo pin incorrecto",
+                "button": "Acceder",
+              },
               "walkthrough": Object {
                 "next": "Siguiente",
                 "pages": Object {

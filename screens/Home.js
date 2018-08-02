@@ -3,11 +3,13 @@ import { connect } from 'react-redux';
 import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard } from 'react-native';
 import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary } from '../application/redux/actions/navigation';
 import { onStartApp } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
+import i18n from '../i18n';
 
 
 import styles from './styles';
@@ -48,7 +50,7 @@ class Home extends React.Component {
         Keyboard.dismiss();
         this.goToNextPage();
       } else {
-        alert('Incorrect pin code'); // eslint-disable-line
+        alert(this.props.t('badPin')); // eslint-disable-line
       }
     });
   }
@@ -78,7 +80,7 @@ class Home extends React.Component {
           </View>
           <View style={{ flexDirection: 'row' }}>
             <Button
-              name="Sign In"
+              name={this.props.t('button')}
               onPress={this.validatePinCode}
               style={{
                 width: 150,
@@ -104,6 +106,7 @@ Home.propTypes = {
   attributes: PropTypes.shape({
     list: PropTypes.arrayOf(PropTypes.shape({})),
   }).isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 Home.defaultProps = {
@@ -129,4 +132,4 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default translate('home', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Home));

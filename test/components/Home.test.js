@@ -40,10 +40,11 @@ describe('validatePinCode', () => {
         },
       };
       const doAuthorizeMock = jest.fn().mockReturnValue(Promise.resolve({ pinCorrect: false }));
-      const wrapper = shallow(
-        <Home />,
-        { context: { store: mockStore(initialState) } },
-      );
+      const wrapper = shallow(<Home />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store: mockStore(initialState) } });
+
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
@@ -73,10 +74,11 @@ describe('validatePinCode', () => {
           list: [],
         },
       };
-      const wrapper = shallow(
-        <Home />,
-        { context: { store: mockStore(initialState) } },
-      );
+      const wrapper = shallow(<Home />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store: mockStore(initialState) } });
+
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
@@ -99,10 +101,12 @@ describe('validatePinCode', () => {
           list: [],
         },
       };
-      const wrapper = shallow(
-        <Home />,
-        { context: { store: mockStore(initialState) } },
-      );
+
+      const wrapper = shallow(<Home />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store: mockStore(initialState) } });
+
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
@@ -125,10 +129,12 @@ describe('validatePinCode', () => {
           list: [{}],
         },
       };
-      const wrapper = shallow(
-        <Home />,
-        { context: { store: mockStore(initialState) } },
-      );
+
+      const wrapper = shallow(<Home />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store: mockStore(initialState) } });
+
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,

@@ -7,7 +7,7 @@ import Onboarding from 'react-native-onboarding-swiper';
 import { goToPinSetup } from '../application/redux/actions/navigation';
 import TitleElement from '../application/components/TitleElement/TitleElement';
 import DoneButton from '../application/components/DoneButton/DoneButton';
-import i18n from '../translations/i18nWalkthrough';
+import i18n from '../i18n';
 
 
 const firstPageImage = require('../assets/images/onboarding01.png');

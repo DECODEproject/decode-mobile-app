@@ -1,5 +1,7 @@
 import i18n from 'i18next';
 import Expo from 'expo';
+import home from './translations/home';
+import walkthrough from './translations/walkthrough';
 
 // creating a language detection plugin using expo
 // http://i18next.com/docs/ownplugin/#languagedetector
@@ -11,21 +13,24 @@ const languageDetector = {
   cacheUserLanguage: () => {},
 };
 
+
 i18n
   .use(languageDetector)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'es',
 
     resources: {
       es: {
-        common: {
-          skip: 'Eskipear',
-        },
+        home: home.es,
+        walkthrough: walkthrough.es,
+      },
+      ca: {
+        home: home.ca,
+        walkthrough: walkthrough.ca,
       },
       en: {
-        common: {
-          skip: 'Skip',
-        },
+        home: home.en,
+        walkthrough: walkthrough.en,
       },
     },
   });
