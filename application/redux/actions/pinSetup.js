@@ -22,12 +22,6 @@ export function validate() {
   };
 }
 
-export function pinStored() {
-  return {
-    type: types.PIN_SETUP_STORE,
-  };
-}
-
 export function storePin(setItem, pin) {
   return async (dispatch, getState) => {
     await dispatch(validate());
@@ -36,7 +30,6 @@ export function storePin(setItem, pin) {
 
     if (valid) {
       await storePinOnAppInitalization(setItem, pin);
-      await dispatch(pinStored());
       dispatch(goToHome());
     }
   };
