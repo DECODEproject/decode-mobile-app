@@ -74,10 +74,10 @@ describe('signing a petition', () => {
     store = mockStore(state);
 
     // WHEN I review the petition
-    const wrapper = shallow(
-      <PetitionSummary />,
-      { context: { store } },
-    );
+    const wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
 
     // THEN I am not able to sign
     expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(false);
@@ -117,10 +117,10 @@ describe('signing a petition', () => {
     store = mockStore(state);
 
     // WHEN I review the petition
-    const wrapper = shallow(
-      <PetitionSummary />,
-      { context: { store } },
-    );
+    const wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
 
     // THEN I am able to sign
     expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(true);
@@ -157,10 +157,10 @@ describe('signing a petition', () => {
     store = mockStore(state);
 
     // WHEN I review the petition
-    const wrapper = shallow(
-      <PetitionSummary />,
-      { context: { store } },
-    );
+    const wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
 
     setTimeout(() => {
       wrapper.update();

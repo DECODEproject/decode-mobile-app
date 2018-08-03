@@ -4,6 +4,7 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import { Text, View, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
 import { bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../application/redux/actions/attributes';
@@ -13,6 +14,7 @@ import AttributeComponent from '../application/components/Attribute/Attribute';
 import getWalletProxyUrl from '../config';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
+import i18n from '../i18n';
 
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
@@ -66,31 +68,31 @@ class PetitionSummary extends React.Component {
       <View style={styles.petitionSummaryBox}>
         <Text style={styles.petitionSummaryPetitionTitle}>{this.props.petition.title}</Text>
         <Text style={styles.petitionDescription}>
-          To sign this petition you must consent to sharing the following with Decidim.
+          {this.props.t('title')}
         </Text>
         <Text>
-          This information is anonymised - Decidim will not receive any personally identifying data.
+          {this.props.t('description')}
         </Text>
         <AttributeComponent
           isMandatory
           toggleCallback={this.props.bubbleUpRequiredAttributeToggle}
           isEnabled={this.props.attributes.isRequiredAttributeEnabled}
-          name="Your residency status (required)"
+          name={this.props.t('residencyAttribute')}
         />
         <Text>
-          Optional data to share:
+          {this.props.t('optional')}
         </Text>
         <AttributeComponent
           isMandatory={false}
           toggleCallback={this.props.bubbleUpAgeAttributeToggle}
           isEnabled={this.props.attributes.optionalAttributesToggleStatus.age}
-          name="Age (20-29)"
+          name={this.props.t('ageAttribute')}
         />
         <AttributeComponent
           isMandatory={false}
           toggleCallback={this.props.bubbleUpGenderAttributeToggle}
           isEnabled={this.props.attributes.optionalAttributesToggleStatus.gender}
-          name="Gender (Female)"
+          name={this.props.t('genderAttribute')}
         />
       </View>
     );
@@ -113,7 +115,7 @@ class PetitionSummary extends React.Component {
           <Button
             enabled={this.props.attributes.isRequiredAttributeEnabled}
             onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
-            name="Yes"
+            name={this.props.t('yes')}
             style={{
               flex: 1,
             }}
@@ -121,7 +123,7 @@ class PetitionSummary extends React.Component {
           <Button
             enabled={this.props.attributes.isRequiredAttributeEnabled}
             onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
-            name="No"
+            name={this.props.t('no')}
             style={{
               flex: 1,
             }}
@@ -130,7 +132,7 @@ class PetitionSummary extends React.Component {
         <Text
           style={styles.cancelSigningPetition}
           onPress={() => openPetitionInBrowser(this.props.petition.id)}
-        >Or, cancel signing this petition
+        >{this.props.t('cancel')}
         </Text>
       </View>);
   }
@@ -161,6 +163,7 @@ PetitionSummary.propTypes = {
   bubbleUpRequiredAttributeToggle: PropTypes.func.isRequired,
   bubbleUpAgeAttributeToggle: PropTypes.func.isRequired,
   bubbleUpGenderAttributeToggle: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -191,4 +194,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch(bubbleUpOptionalAttributeToggle('gender', toggleValue)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(PetitionSummary);
+export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));
