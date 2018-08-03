@@ -5,7 +5,7 @@ export default {
   },
   ca: {
     badPin: 'Codic pin incorrecte',
-    button: 'Accedi',
+    button: 'Accedir',
   },
   en: {
     badPin: 'Incorrect pin code',

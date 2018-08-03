@@ -27,6 +27,7 @@ class SignOutcome extends React.Component {
     navigationBar: {
       backgroundColor: 'white',
       tintColor: 'rgb(0,163,158)',
+      title: 'Outcome',
     },
   };
 
