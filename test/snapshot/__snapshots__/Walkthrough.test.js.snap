@@ -102,6 +102,14 @@ ShallowWrapper {
                   "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                   "title": "Protegeix la Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Tornar a Decidim",
+                  "backHome": "Tornar al inici",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                  "errorTitle": "El registre del vot ha fallat: ",
+                  "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                  "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -160,6 +168,14 @@ ShallowWrapper {
                   "subtitle": "Let's setup a pin, so no one else can access your data",
                   "title": "Protect Your Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Back to Decidim",
+                  "backHome": "Back to Home",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Sign failed for",
+                  "maybeInterested": "You may be interested in these other petitions",
+                  "voteRecorded": "Your vote has been recorded anonymously",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -217,6 +233,14 @@ ShallowWrapper {
                   "placeholderPin2": "Confirma el pin",
                   "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                   "title": "Protege su Wallet",
+                },
+                "signOutcome": Object {
+                  "backDecidim": "Volver a Decidim",
+                  "backHome": "Volver al inicio",
+                  "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                  "errorTitle": "El voto fallo por: ",
+                  "maybeInterested": "Quizas estas interesado en más petitciones",
+                  "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
                   "next": "Siguiente",
@@ -352,6 +376,14 @@ ShallowWrapper {
                 "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                 "title": "Protegeix la Wallet",
               },
+              "signOutcome": Object {
+                "backDecidim": "Tornar a Decidim",
+                "backHome": "Tornar al inici",
+                "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                "errorTitle": "El registre del vot ha fallat: ",
+                "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                "voteRecorded": "El teu vot ha sigut registrat anonimament",
+              },
               "walkthrough": Object {
                 "next": "Següent",
                 "pages": Object {
@@ -410,6 +442,14 @@ ShallowWrapper {
                 "subtitle": "Let's setup a pin, so no one else can access your data",
                 "title": "Protect Your Wallet",
               },
+              "signOutcome": Object {
+                "backDecidim": "Back to Decidim",
+                "backHome": "Back to Home",
+                "errorText": "You can return to the Decidim site to view other active petitions.",
+                "errorTitle": "Sign failed for",
+                "maybeInterested": "You may be interested in these other petitions",
+                "voteRecorded": "Your vote has been recorded anonymously",
+              },
               "walkthrough": Object {
                 "next": "Next",
                 "pages": Object {
@@ -467,6 +507,14 @@ ShallowWrapper {
                 "placeholderPin2": "Confirma el pin",
                 "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                 "title": "Protege su Wallet",
+              },
+              "signOutcome": Object {
+                "backDecidim": "Volver a Decidim",
+                "backHome": "Volver al inicio",
+                "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                "errorTitle": "El voto fallo por: ",
+                "maybeInterested": "Quizas estas interesado en más petitciones",
+                "voteRecorded": "Tu voto ha sido registrado anonimamente",
               },
               "walkthrough": Object {
                 "next": "Siguiente",
@@ -594,6 +642,14 @@ ShallowWrapper {
                         "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                         "title": "Protegeix la Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Tornar a Decidim",
+                        "backHome": "Tornar al inici",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                        "errorTitle": "El registre del vot ha fallat: ",
+                        "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                        "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -652,6 +708,14 @@ ShallowWrapper {
                         "subtitle": "Let's setup a pin, so no one else can access your data",
                         "title": "Protect Your Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Back to Decidim",
+                        "backHome": "Back to Home",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Sign failed for",
+                        "maybeInterested": "You may be interested in these other petitions",
+                        "voteRecorded": "Your vote has been recorded anonymously",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -709,6 +773,14 @@ ShallowWrapper {
                         "placeholderPin2": "Confirma el pin",
                         "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                         "title": "Protege su Wallet",
+                      },
+                      "signOutcome": Object {
+                        "backDecidim": "Volver a Decidim",
+                        "backHome": "Volver al inicio",
+                        "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                        "errorTitle": "El voto fallo por: ",
+                        "maybeInterested": "Quizas estas interesado en más petitciones",
+                        "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
                         "next": "Siguiente",
@@ -823,6 +895,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -881,6 +961,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -938,6 +1026,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -1062,6 +1158,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -1120,6 +1224,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -1177,6 +1289,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -1296,6 +1416,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -1354,6 +1482,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -1411,6 +1547,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -1485,6 +1629,14 @@ ShallowWrapper {
                   "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                   "title": "Protegeix la Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Tornar a Decidim",
+                  "backHome": "Tornar al inici",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                  "errorTitle": "El registre del vot ha fallat: ",
+                  "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                  "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -1543,6 +1695,14 @@ ShallowWrapper {
                   "subtitle": "Let's setup a pin, so no one else can access your data",
                   "title": "Protect Your Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Back to Decidim",
+                  "backHome": "Back to Home",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Sign failed for",
+                  "maybeInterested": "You may be interested in these other petitions",
+                  "voteRecorded": "Your vote has been recorded anonymously",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -1600,6 +1760,14 @@ ShallowWrapper {
                   "placeholderPin2": "Confirma el pin",
                   "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                   "title": "Protege su Wallet",
+                },
+                "signOutcome": Object {
+                  "backDecidim": "Volver a Decidim",
+                  "backHome": "Volver al inicio",
+                  "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                  "errorTitle": "El voto fallo por: ",
+                  "maybeInterested": "Quizas estas interesado en más petitciones",
+                  "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
                   "next": "Siguiente",
@@ -1717,6 +1885,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -1775,6 +1951,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -1832,6 +2016,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -1950,6 +2142,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -2008,6 +2208,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -2065,6 +2273,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -2203,6 +2419,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -2261,6 +2485,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -2318,6 +2550,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -2432,6 +2672,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -2490,6 +2738,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -2547,6 +2803,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -2670,6 +2934,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -2728,6 +3000,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -2785,6 +3065,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -2911,6 +3199,14 @@ ShallowWrapper {
                         "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                         "title": "Protegeix la Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Tornar a Decidim",
+                        "backHome": "Tornar al inici",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                        "errorTitle": "El registre del vot ha fallat: ",
+                        "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                        "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -2969,6 +3265,14 @@ ShallowWrapper {
                         "subtitle": "Let's setup a pin, so no one else can access your data",
                         "title": "Protect Your Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Back to Decidim",
+                        "backHome": "Back to Home",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Sign failed for",
+                        "maybeInterested": "You may be interested in these other petitions",
+                        "voteRecorded": "Your vote has been recorded anonymously",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -3026,6 +3330,14 @@ ShallowWrapper {
                         "placeholderPin2": "Confirma el pin",
                         "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                         "title": "Protege su Wallet",
+                      },
+                      "signOutcome": Object {
+                        "backDecidim": "Volver a Decidim",
+                        "backHome": "Volver al inicio",
+                        "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                        "errorTitle": "El voto fallo por: ",
+                        "maybeInterested": "Quizas estas interesado en más petitciones",
+                        "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
                         "next": "Siguiente",
@@ -3140,6 +3452,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -3198,6 +3518,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -3255,6 +3583,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -3379,6 +3715,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -3437,6 +3781,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -3494,6 +3846,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -4503,6 +4863,14 @@ ShallowWrapper {
                 "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                 "title": "Protegeix la Wallet",
               },
+              "signOutcome": Object {
+                "backDecidim": "Tornar a Decidim",
+                "backHome": "Tornar al inici",
+                "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                "errorTitle": "El registre del vot ha fallat: ",
+                "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                "voteRecorded": "El teu vot ha sigut registrat anonimament",
+              },
               "walkthrough": Object {
                 "next": "Següent",
                 "pages": Object {
@@ -4561,6 +4929,14 @@ ShallowWrapper {
                 "subtitle": "Let's setup a pin, so no one else can access your data",
                 "title": "Protect Your Wallet",
               },
+              "signOutcome": Object {
+                "backDecidim": "Back to Decidim",
+                "backHome": "Back to Home",
+                "errorText": "You can return to the Decidim site to view other active petitions.",
+                "errorTitle": "Sign failed for",
+                "maybeInterested": "You may be interested in these other petitions",
+                "voteRecorded": "Your vote has been recorded anonymously",
+              },
               "walkthrough": Object {
                 "next": "Next",
                 "pages": Object {
@@ -4618,6 +4994,14 @@ ShallowWrapper {
                 "placeholderPin2": "Confirma el pin",
                 "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                 "title": "Protege su Wallet",
+              },
+              "signOutcome": Object {
+                "backDecidim": "Volver a Decidim",
+                "backHome": "Volver al inicio",
+                "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                "errorTitle": "El voto fallo por: ",
+                "maybeInterested": "Quizas estas interesado en más petitciones",
+                "voteRecorded": "Tu voto ha sido registrado anonimamente",
               },
               "walkthrough": Object {
                 "next": "Siguiente",
@@ -4680,6 +5064,14 @@ ShallowWrapper {
               "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
               "title": "Protegeix la Wallet",
             },
+            "signOutcome": Object {
+              "backDecidim": "Tornar a Decidim",
+              "backHome": "Tornar al inici",
+              "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+              "errorTitle": "El registre del vot ha fallat: ",
+              "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+              "voteRecorded": "El teu vot ha sigut registrat anonimament",
+            },
             "walkthrough": Object {
               "next": "Següent",
               "pages": Object {
@@ -4738,6 +5130,14 @@ ShallowWrapper {
               "subtitle": "Let's setup a pin, so no one else can access your data",
               "title": "Protect Your Wallet",
             },
+            "signOutcome": Object {
+              "backDecidim": "Back to Decidim",
+              "backHome": "Back to Home",
+              "errorText": "You can return to the Decidim site to view other active petitions.",
+              "errorTitle": "Sign failed for",
+              "maybeInterested": "You may be interested in these other petitions",
+              "voteRecorded": "Your vote has been recorded anonymously",
+            },
             "walkthrough": Object {
               "next": "Next",
               "pages": Object {
@@ -4795,6 +5195,14 @@ ShallowWrapper {
               "placeholderPin2": "Confirma el pin",
               "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
               "title": "Protege su Wallet",
+            },
+            "signOutcome": Object {
+              "backDecidim": "Volver a Decidim",
+              "backHome": "Volver al inicio",
+              "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+              "errorTitle": "El voto fallo por: ",
+              "maybeInterested": "Quizas estas interesado en más petitciones",
+              "voteRecorded": "Tu voto ha sido registrado anonimamente",
             },
             "walkthrough": Object {
               "next": "Siguiente",
@@ -4910,6 +5318,14 @@ ShallowWrapper {
                         "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                         "title": "Protegeix la Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Tornar a Decidim",
+                        "backHome": "Tornar al inici",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                        "errorTitle": "El registre del vot ha fallat: ",
+                        "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                        "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -4968,6 +5384,14 @@ ShallowWrapper {
                         "subtitle": "Let's setup a pin, so no one else can access your data",
                         "title": "Protect Your Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Back to Decidim",
+                        "backHome": "Back to Home",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Sign failed for",
+                        "maybeInterested": "You may be interested in these other petitions",
+                        "voteRecorded": "Your vote has been recorded anonymously",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -5025,6 +5449,14 @@ ShallowWrapper {
                         "placeholderPin2": "Confirma el pin",
                         "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                         "title": "Protege su Wallet",
+                      },
+                      "signOutcome": Object {
+                        "backDecidim": "Volver a Decidim",
+                        "backHome": "Volver al inicio",
+                        "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                        "errorTitle": "El voto fallo por: ",
+                        "maybeInterested": "Quizas estas interesado en más petitciones",
+                        "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
                         "next": "Siguiente",
@@ -5139,6 +5571,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -5197,6 +5637,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -5254,6 +5702,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -5378,6 +5834,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -5436,6 +5900,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -5493,6 +5965,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -5612,6 +6092,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -5670,6 +6158,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -5727,6 +6223,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -5801,6 +6305,14 @@ ShallowWrapper {
                   "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                   "title": "Protegeix la Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Tornar a Decidim",
+                  "backHome": "Tornar al inici",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                  "errorTitle": "El registre del vot ha fallat: ",
+                  "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                  "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -5859,6 +6371,14 @@ ShallowWrapper {
                   "subtitle": "Let's setup a pin, so no one else can access your data",
                   "title": "Protect Your Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Back to Decidim",
+                  "backHome": "Back to Home",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Sign failed for",
+                  "maybeInterested": "You may be interested in these other petitions",
+                  "voteRecorded": "Your vote has been recorded anonymously",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -5916,6 +6436,14 @@ ShallowWrapper {
                   "placeholderPin2": "Confirma el pin",
                   "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                   "title": "Protege su Wallet",
+                },
+                "signOutcome": Object {
+                  "backDecidim": "Volver a Decidim",
+                  "backHome": "Volver al inicio",
+                  "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                  "errorTitle": "El voto fallo por: ",
+                  "maybeInterested": "Quizas estas interesado en más petitciones",
+                  "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
                   "next": "Siguiente",
@@ -6033,6 +6561,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -6091,6 +6627,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -6148,6 +6692,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -6266,6 +6818,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -6324,6 +6884,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -6381,6 +6949,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -6512,6 +7088,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -6570,6 +7154,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -6627,6 +7219,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -6741,6 +7341,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -6799,6 +7407,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -6856,6 +7472,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -6980,6 +7604,14 @@ ShallowWrapper {
                     "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                     "title": "Protegeix la Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Tornar a Decidim",
+                    "backHome": "Tornar al inici",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                    "errorTitle": "El registre del vot ha fallat: ",
+                    "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                    "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                  },
                   "walkthrough": Object {
                     "next": "Següent",
                     "pages": Object {
@@ -7038,6 +7670,14 @@ ShallowWrapper {
                     "subtitle": "Let's setup a pin, so no one else can access your data",
                     "title": "Protect Your Wallet",
                   },
+                  "signOutcome": Object {
+                    "backDecidim": "Back to Decidim",
+                    "backHome": "Back to Home",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Sign failed for",
+                    "maybeInterested": "You may be interested in these other petitions",
+                    "voteRecorded": "Your vote has been recorded anonymously",
+                  },
                   "walkthrough": Object {
                     "next": "Next",
                     "pages": Object {
@@ -7095,6 +7735,14 @@ ShallowWrapper {
                     "placeholderPin2": "Confirma el pin",
                     "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                     "title": "Protege su Wallet",
+                  },
+                  "signOutcome": Object {
+                    "backDecidim": "Volver a Decidim",
+                    "backHome": "Volver al inicio",
+                    "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                    "errorTitle": "El voto fallo por: ",
+                    "maybeInterested": "Quizas estas interesado en más petitciones",
+                    "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
                     "next": "Siguiente",
@@ -7214,6 +7862,14 @@ ShallowWrapper {
                   "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                   "title": "Protegeix la Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Tornar a Decidim",
+                  "backHome": "Tornar al inici",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                  "errorTitle": "El registre del vot ha fallat: ",
+                  "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                  "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                },
                 "walkthrough": Object {
                   "next": "Següent",
                   "pages": Object {
@@ -7272,6 +7928,14 @@ ShallowWrapper {
                   "subtitle": "Let's setup a pin, so no one else can access your data",
                   "title": "Protect Your Wallet",
                 },
+                "signOutcome": Object {
+                  "backDecidim": "Back to Decidim",
+                  "backHome": "Back to Home",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Sign failed for",
+                  "maybeInterested": "You may be interested in these other petitions",
+                  "voteRecorded": "Your vote has been recorded anonymously",
+                },
                 "walkthrough": Object {
                   "next": "Next",
                   "pages": Object {
@@ -7329,6 +7993,14 @@ ShallowWrapper {
                   "placeholderPin2": "Confirma el pin",
                   "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                   "title": "Protege su Wallet",
+                },
+                "signOutcome": Object {
+                  "backDecidim": "Volver a Decidim",
+                  "backHome": "Volver al inicio",
+                  "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                  "errorTitle": "El voto fallo por: ",
+                  "maybeInterested": "Quizas estas interesado en más petitciones",
+                  "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
                   "next": "Siguiente",
@@ -7453,6 +8125,14 @@ ShallowWrapper {
                         "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                         "title": "Protegeix la Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Tornar a Decidim",
+                        "backHome": "Tornar al inici",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                        "errorTitle": "El registre del vot ha fallat: ",
+                        "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                        "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                      },
                       "walkthrough": Object {
                         "next": "Següent",
                         "pages": Object {
@@ -7511,6 +8191,14 @@ ShallowWrapper {
                         "subtitle": "Let's setup a pin, so no one else can access your data",
                         "title": "Protect Your Wallet",
                       },
+                      "signOutcome": Object {
+                        "backDecidim": "Back to Decidim",
+                        "backHome": "Back to Home",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Sign failed for",
+                        "maybeInterested": "You may be interested in these other petitions",
+                        "voteRecorded": "Your vote has been recorded anonymously",
+                      },
                       "walkthrough": Object {
                         "next": "Next",
                         "pages": Object {
@@ -7568,6 +8256,14 @@ ShallowWrapper {
                         "placeholderPin2": "Confirma el pin",
                         "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                         "title": "Protege su Wallet",
+                      },
+                      "signOutcome": Object {
+                        "backDecidim": "Volver a Decidim",
+                        "backHome": "Volver al inicio",
+                        "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                        "errorTitle": "El voto fallo por: ",
+                        "maybeInterested": "Quizas estas interesado en más petitciones",
+                        "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
                         "next": "Siguiente",
@@ -7682,6 +8378,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -7740,6 +8444,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -7797,6 +8509,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -7921,6 +8641,14 @@ ShallowWrapper {
                       "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                       "title": "Protegeix la Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Tornar a Decidim",
+                      "backHome": "Tornar al inici",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                      "errorTitle": "El registre del vot ha fallat: ",
+                      "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                      "voteRecorded": "El teu vot ha sigut registrat anonimament",
+                    },
                     "walkthrough": Object {
                       "next": "Següent",
                       "pages": Object {
@@ -7979,6 +8707,14 @@ ShallowWrapper {
                       "subtitle": "Let's setup a pin, so no one else can access your data",
                       "title": "Protect Your Wallet",
                     },
+                    "signOutcome": Object {
+                      "backDecidim": "Back to Decidim",
+                      "backHome": "Back to Home",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Sign failed for",
+                      "maybeInterested": "You may be interested in these other petitions",
+                      "voteRecorded": "Your vote has been recorded anonymously",
+                    },
                     "walkthrough": Object {
                       "next": "Next",
                       "pages": Object {
@@ -8036,6 +8772,14 @@ ShallowWrapper {
                       "placeholderPin2": "Confirma el pin",
                       "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                       "title": "Protege su Wallet",
+                    },
+                    "signOutcome": Object {
+                      "backDecidim": "Volver a Decidim",
+                      "backHome": "Volver al inicio",
+                      "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                      "errorTitle": "El voto fallo por: ",
+                      "maybeInterested": "Quizas estas interesado en más petitciones",
+                      "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
                       "next": "Siguiente",
@@ -9045,6 +9789,14 @@ ShallowWrapper {
                 "subtitle": "Posa un pin, així ningú podrà accedir a les teves dades",
                 "title": "Protegeix la Wallet",
               },
+              "signOutcome": Object {
+                "backDecidim": "Tornar a Decidim",
+                "backHome": "Tornar al inici",
+                "errorText": "Pots tornar a la pàgina de Decidim per veure més peticions.",
+                "errorTitle": "El registre del vot ha fallat: ",
+                "maybeInterested": "Potser estas interesat en firmar alguna altra petició",
+                "voteRecorded": "El teu vot ha sigut registrat anonimament",
+              },
               "walkthrough": Object {
                 "next": "Següent",
                 "pages": Object {
@@ -9103,6 +9855,14 @@ ShallowWrapper {
                 "subtitle": "Let's setup a pin, so no one else can access your data",
                 "title": "Protect Your Wallet",
               },
+              "signOutcome": Object {
+                "backDecidim": "Back to Decidim",
+                "backHome": "Back to Home",
+                "errorText": "You can return to the Decidim site to view other active petitions.",
+                "errorTitle": "Sign failed for",
+                "maybeInterested": "You may be interested in these other petitions",
+                "voteRecorded": "Your vote has been recorded anonymously",
+              },
               "walkthrough": Object {
                 "next": "Next",
                 "pages": Object {
@@ -9160,6 +9920,14 @@ ShallowWrapper {
                 "placeholderPin2": "Confirma el pin",
                 "subtitle": "Ponga un pin, para que nadie mas pueda acceder a sus datos",
                 "title": "Protege su Wallet",
+              },
+              "signOutcome": Object {
+                "backDecidim": "Volver a Decidim",
+                "backHome": "Volver al inicio",
+                "errorText": "Puedes volver a la página de Decidim para ver más peticiones.",
+                "errorTitle": "El voto fallo por: ",
+                "maybeInterested": "Quizas estas interesado en más petitciones",
+                "voteRecorded": "Tu voto ha sido registrado anonimamente",
               },
               "walkthrough": Object {
                 "next": "Siguiente",

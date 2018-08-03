@@ -3,10 +3,12 @@ import { Text, View, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ImageOverlay from 'react-native-image-overlay';
+import { translate } from 'react-i18next';
 import { goToAuthorization } from '../application/redux/actions/navigation';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import Button from '../application/components/Button/Button';
+import i18n from '../i18n';
 
 const warningIcon = require('../assets/images/warning.png');
 const successImage = require('../assets/images/city.png');
@@ -25,7 +27,6 @@ class SignOutcome extends React.Component {
     navigationBar: {
       backgroundColor: 'white',
       tintColor: 'rgb(0,163,158)',
-      title: 'Outcome',
     },
   };
 
@@ -70,7 +71,7 @@ class SignOutcome extends React.Component {
               backgroundColor: 'transparent',
             }}
           >
-            Your vote has been recorded anonymously
+            { this.props.t('voteRecorded')}
           </Text>
         </ImageOverlay>
         <View style={{
@@ -83,13 +84,13 @@ class SignOutcome extends React.Component {
             fontSize: 16,
           }}
           >
-            You may be interested in these other petitions
+            {this.props.t('maybeInterested')}
           </Text>
 
           {links}
         </View>
         <Button
-          name="Back to Decidim"
+          name={this.props.t('backDecidim')}
           onPress={() => openPetitionInBrowser(this.props.petition.id)}
           style={{
             width: 200,
@@ -101,8 +102,8 @@ class SignOutcome extends React.Component {
   }
 
   error() {
-    const textSubHeading = 'Sign failed for';
-    const signOutcomeText = `${this.props.petitionError} \n\nYou can return to the Decidim site to view other active petitions.`;
+    const textSubHeading = this.props.t('errorTitle');
+    const signOutcomeText = `${this.props.petitionError} \n\n ${this.props.t('errorText')}`;
 
     return (
       <View style={styles.signOutcomeContainer}>
@@ -115,7 +116,7 @@ class SignOutcome extends React.Component {
             <Text style={styles.signOutcomeTextSubHeading}>{textSubHeading}</Text>
             <Text style={styles.signOutcomePetitionTitle}>{this.props.petition.title}</Text>
             <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
-            <Button name="Back to home" onPress={SignOutcome.handlePress} />
+            <Button name={this.props.t('backHome')} onPress={SignOutcome.handlePress} />
           </View>
         </View>
       </View>
@@ -142,6 +143,7 @@ SignOutcome.propTypes = {
   }),
   petitionError: PropTypes.string,
   links: PropTypes.arrayOf(PropTypes.string),
+  t: PropTypes.func.isRequired,
 };
 
 SignOutcome.defaultProps = {
@@ -163,4 +165,4 @@ const mapDispatchToProps = dispatch => ({
   goToAuthorization: () => { dispatch(goToAuthorization()); },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignOutcome);
+export default translate('signOutcome', { i18n })(connect(mapStateToProps, mapDispatchToProps)(SignOutcome));

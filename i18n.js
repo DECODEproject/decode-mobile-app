@@ -6,6 +6,7 @@ import pinSetup from './translations/pinSetup';
 import attributesSummary from './translations/attributesSummary';
 import attributesLanding from './translations/attributesLanding';
 import petitionSummary from './translations/petitionSummary';
+import signOutcome from './translations/signOutcome';
 
 // creating a language detection plugin using expo
 // http://i18next.com/docs/ownplugin/#languagedetector
@@ -31,6 +32,7 @@ i18n
         attributesSummary: attributesSummary.es,
         attributesLanding: attributesLanding.es,
         petitionSummary: petitionSummary.es,
+        signOutcome: signOutcome.es,
       },
       ca: {
         home: home.ca,
@@ -39,6 +41,7 @@ i18n
         attributesSummary: attributesSummary.ca,
         attributesLanding: attributesLanding.ca,
         petitionSummary: petitionSummary.ca,
+        signOutcome: signOutcome.ca,
       },
       en: {
         home: home.en,
@@ -47,6 +50,7 @@ i18n
         attributesSummary: attributesSummary.en,
         attributesLanding: attributesLanding.en,
         petitionSummary: petitionSummary.en,
+        signOutcome: signOutcome.en,
       },
     },
   });
