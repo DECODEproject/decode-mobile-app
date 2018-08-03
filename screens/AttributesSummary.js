@@ -21,7 +21,7 @@ class AttributesSummary extends React.Component {
       fontSize: 20,
       fontWeight: '500',
       tintColor: 'rgb(0,163,158)',
-      title: ' ',
+      title: 'Verify your Information',
     },
   };
 

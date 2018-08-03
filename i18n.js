@@ -4,6 +4,7 @@ import home from './translations/home';
 import walkthrough from './translations/walkthrough';
 import pinSetup from './translations/pinSetup';
 import attributesSummary from './translations/attributesSummary';
+import petitionSummary from './translations/petitionSummary';
 
 // creating a language detection plugin using expo
 // http://i18next.com/docs/ownplugin/#languagedetector
@@ -27,18 +28,21 @@ i18n
         walkthrough: walkthrough.es,
         pinSetup: pinSetup.es,
         attributesSummary: attributesSummary.es,
+        petitionSummary: petitionSummary.es,
       },
       ca: {
         home: home.ca,
         walkthrough: walkthrough.ca,
         pinSetup: pinSetup.ca,
         attributesSummary: attributesSummary.ca,
+        petitionSummary: petitionSummary.ca,
       },
       en: {
         home: home.en,
         walkthrough: walkthrough.en,
         pinSetup: pinSetup.en,
         attributesSummary: attributesSummary.en,
+        petitionSummary: petitionSummary.en,
       },
     },
   });

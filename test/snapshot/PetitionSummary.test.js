@@ -35,10 +35,11 @@ const initialState = {
 };
 
 it('renders PetitionSummary component when no attributes exist', () => {
-  const wrapper = shallow(
-    <PetitionSummary />,
-    { context: { store: mockStore(initialState) } },
-  );
+  const wrapper = shallow(<PetitionSummary />)
+    .first().shallow()
+    .first()
+    .shallow({ context: { store: mockStore(initialState) } });
+
   expect(wrapper.dive()).toMatchSnapshot();
 });
 
@@ -59,10 +60,10 @@ it('renders PetitionSummary component when all attributes are verified', () => {
       }],
     },
   };
+  const wrapper = shallow(<PetitionSummary />)
+    .first().shallow()
+    .first()
+    .shallow({ context: { store: mockStore(state) } });
 
-  const wrapper = shallow(
-    <PetitionSummary />,
-    { context: { store: mockStore(state) } },
-  );
   expect(wrapper.dive()).toMatchSnapshot();
 });
