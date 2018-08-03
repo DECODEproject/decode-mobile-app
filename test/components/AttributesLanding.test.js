@@ -23,10 +23,11 @@ describe('AttributesLanding', () => {
       },
     };
     const store = mockStore(initialState);
-    const wrapper = shallow(
-      <AttributesLanding />,
-      { context: { store } },
-    );
+    const wrapper = shallow(<AttributesLanding />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
+
 
     const addAttributeButton = wrapper.dive().find(Button);
 
@@ -43,12 +44,12 @@ describe('AttributesLanding', () => {
       };
       const store = mockStore(initialState);
 
-      const wrapper = shallow(
-        <AttributesLanding />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<AttributesLanding />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
-      const TextWrappers = wrapper.dive().dive().find(Text).findWhere(n => n.text() === 'You have no data :(');
+      const TextWrappers = wrapper.dive().dive().find(Text).findWhere(n => n.text() === 'No tienes ningún dato :(');
       expect(TextWrappers).toHaveLength(1);
     });
   });
@@ -74,10 +75,10 @@ describe('AttributesLanding', () => {
       };
       const store = mockStore(initialState);
 
-      const wrapper = shallow(
-        <AttributesLanding />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<AttributesLanding />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       const FlatListWrapper = wrapper.dive().dive().find(FlatList);
       expect(FlatListWrapper).toHaveLength(1);

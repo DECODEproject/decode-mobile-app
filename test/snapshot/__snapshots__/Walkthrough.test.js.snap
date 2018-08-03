@@ -66,11 +66,15 @@ ShallowWrapper {
             "preload": false,
             "resources": Object {
               "ca": Object {
+                "attributesLanding": Object {
+                  "add": "Afegir atribut",
+                  "nodata": "No tens ninguna dada :(",
+                },
                 "attributesSummary": Object {
-                  "button": "",
-                  "cancel": "",
-                  "subtitle": "",
-                  "title": "",
+                  "button": "Verificar",
+                  "cancel": "O, cancelar la teva participació en aquesta petició",
+                  "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                  "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                 },
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
@@ -109,6 +113,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "attributesLanding": Object {
+                  "add": "Add attribute",
+                  "nodata": "You have no data :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
                   "cancel": "Or, cancel signing this petition",
@@ -152,11 +160,15 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "attributesLanding": Object {
+                  "add": "Añadir attributo",
+                  "nodata": "No tienes ningún dato :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verificar",
                   "cancel": "O, cancelar participación en esta petición",
                   "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                  "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                  "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                 },
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
@@ -271,11 +283,15 @@ ShallowWrapper {
           "preload": false,
           "resources": Object {
             "ca": Object {
+              "attributesLanding": Object {
+                "add": "Afegir atribut",
+                "nodata": "No tens ninguna dada :(",
+              },
               "attributesSummary": Object {
-                "button": "",
-                "cancel": "",
-                "subtitle": "",
-                "title": "",
+                "button": "Verificar",
+                "cancel": "O, cancelar la teva participació en aquesta petició",
+                "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
               },
               "home": Object {
                 "badPin": "Codic pin incorrecte",
@@ -314,6 +330,10 @@ ShallowWrapper {
               },
             },
             "en": Object {
+              "attributesLanding": Object {
+                "add": "Add attribute",
+                "nodata": "You have no data :(",
+              },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
                 "cancel": "Or, cancel signing this petition",
@@ -357,11 +377,15 @@ ShallowWrapper {
               },
             },
             "es": Object {
+              "attributesLanding": Object {
+                "add": "Añadir attributo",
+                "nodata": "No tienes ningún dato :(",
+              },
               "attributesSummary": Object {
                 "button": "Verificar",
                 "cancel": "O, cancelar participación en esta petición",
                 "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                "title": "DECIDIM requiere verificar su residencia en Barcelona.",
               },
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
@@ -468,11 +492,15 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "attributesLanding": Object {
+                        "add": "Afegir atribut",
+                        "nodata": "No tens ninguna dada :(",
+                      },
                       "attributesSummary": Object {
-                        "button": "",
-                        "cancel": "",
-                        "subtitle": "",
-                        "title": "",
+                        "button": "Verificar",
+                        "cancel": "O, cancelar la teva participació en aquesta petició",
+                        "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                        "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                       },
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
@@ -511,6 +539,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "attributesLanding": Object {
+                        "add": "Add attribute",
+                        "nodata": "You have no data :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
                         "cancel": "Or, cancel signing this petition",
@@ -554,11 +586,15 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "attributesLanding": Object {
+                        "add": "Añadir attributo",
+                        "nodata": "No tienes ningún dato :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verificar",
                         "cancel": "O, cancelar participación en esta petición",
                         "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                        "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                        "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                       },
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
@@ -652,11 +688,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -695,6 +735,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -738,11 +782,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -846,11 +894,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -889,6 +941,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -932,11 +988,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -1035,11 +1095,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -1078,6 +1142,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -1121,11 +1189,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -1179,11 +1251,15 @@ ShallowWrapper {
             "state": Object {},
             "store": Object {
               "ca": Object {
+                "attributesLanding": Object {
+                  "add": "Afegir atribut",
+                  "nodata": "No tens ninguna dada :(",
+                },
                 "attributesSummary": Object {
-                  "button": "",
-                  "cancel": "",
-                  "subtitle": "",
-                  "title": "",
+                  "button": "Verificar",
+                  "cancel": "O, cancelar la teva participació en aquesta petició",
+                  "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                  "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                 },
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
@@ -1222,6 +1298,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "attributesLanding": Object {
+                  "add": "Add attribute",
+                  "nodata": "You have no data :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
                   "cancel": "Or, cancel signing this petition",
@@ -1265,11 +1345,15 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "attributesLanding": Object {
+                  "add": "Añadir attributo",
+                  "nodata": "No tienes ningún dato :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verificar",
                   "cancel": "O, cancelar participación en esta petición",
                   "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                  "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                  "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                 },
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
@@ -1366,11 +1450,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -1409,6 +1497,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -1452,11 +1544,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -1554,11 +1650,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -1597,6 +1697,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -1640,11 +1744,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -1762,11 +1870,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -1805,6 +1917,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -1848,11 +1964,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -1946,11 +2066,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -1989,6 +2113,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -2032,11 +2160,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -2139,11 +2271,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -2182,6 +2318,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -2225,11 +2365,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -2335,11 +2479,15 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "attributesLanding": Object {
+                        "add": "Afegir atribut",
+                        "nodata": "No tens ninguna dada :(",
+                      },
                       "attributesSummary": Object {
-                        "button": "",
-                        "cancel": "",
-                        "subtitle": "",
-                        "title": "",
+                        "button": "Verificar",
+                        "cancel": "O, cancelar la teva participació en aquesta petició",
+                        "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                        "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                       },
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
@@ -2378,6 +2526,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "attributesLanding": Object {
+                        "add": "Add attribute",
+                        "nodata": "You have no data :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
                         "cancel": "Or, cancel signing this petition",
@@ -2421,11 +2573,15 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "attributesLanding": Object {
+                        "add": "Añadir attributo",
+                        "nodata": "No tienes ningún dato :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verificar",
                         "cancel": "O, cancelar participación en esta petición",
                         "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                        "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                        "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                       },
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
@@ -2519,11 +2675,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -2562,6 +2722,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -2605,11 +2769,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -2713,11 +2881,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -2756,6 +2928,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -2799,11 +2975,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -3792,11 +3972,15 @@ ShallowWrapper {
           },
           "resourceStore": Object {
             "ca": Object {
+              "attributesLanding": Object {
+                "add": "Afegir atribut",
+                "nodata": "No tens ninguna dada :(",
+              },
               "attributesSummary": Object {
-                "button": "",
-                "cancel": "",
-                "subtitle": "",
-                "title": "",
+                "button": "Verificar",
+                "cancel": "O, cancelar la teva participació en aquesta petició",
+                "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
               },
               "home": Object {
                 "badPin": "Codic pin incorrecte",
@@ -3835,6 +4019,10 @@ ShallowWrapper {
               },
             },
             "en": Object {
+              "attributesLanding": Object {
+                "add": "Add attribute",
+                "nodata": "You have no data :(",
+              },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
                 "cancel": "Or, cancel signing this petition",
@@ -3878,11 +4066,15 @@ ShallowWrapper {
               },
             },
             "es": Object {
+              "attributesLanding": Object {
+                "add": "Añadir attributo",
+                "nodata": "No tienes ningún dato :(",
+              },
               "attributesSummary": Object {
                 "button": "Verificar",
                 "cancel": "O, cancelar participación en esta petición",
                 "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                "title": "DECIDIM requiere verificar su residencia en Barcelona.",
               },
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
@@ -3924,11 +4116,15 @@ ShallowWrapper {
         },
         "store": Object {
           "ca": Object {
+            "attributesLanding": Object {
+              "add": "Afegir atribut",
+              "nodata": "No tens ninguna dada :(",
+            },
             "attributesSummary": Object {
-              "button": "",
-              "cancel": "",
-              "subtitle": "",
-              "title": "",
+              "button": "Verificar",
+              "cancel": "O, cancelar la teva participació en aquesta petició",
+              "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+              "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
             },
             "home": Object {
               "badPin": "Codic pin incorrecte",
@@ -3967,6 +4163,10 @@ ShallowWrapper {
             },
           },
           "en": Object {
+            "attributesLanding": Object {
+              "add": "Add attribute",
+              "nodata": "You have no data :(",
+            },
             "attributesSummary": Object {
               "button": "Verify with Barcelona Council",
               "cancel": "Or, cancel signing this petition",
@@ -4010,11 +4210,15 @@ ShallowWrapper {
             },
           },
           "es": Object {
+            "attributesLanding": Object {
+              "add": "Añadir attributo",
+              "nodata": "No tienes ningún dato :(",
+            },
             "attributesSummary": Object {
               "button": "Verificar",
               "cancel": "O, cancelar participación en esta petición",
               "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-              "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+              "title": "DECIDIM requiere verificar su residencia en Barcelona.",
             },
             "home": Object {
               "badPin": "Codigo pin incorrecto",
@@ -4109,11 +4313,15 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "attributesLanding": Object {
+                        "add": "Afegir atribut",
+                        "nodata": "No tens ninguna dada :(",
+                      },
                       "attributesSummary": Object {
-                        "button": "",
-                        "cancel": "",
-                        "subtitle": "",
-                        "title": "",
+                        "button": "Verificar",
+                        "cancel": "O, cancelar la teva participació en aquesta petició",
+                        "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                        "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                       },
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
@@ -4152,6 +4360,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "attributesLanding": Object {
+                        "add": "Add attribute",
+                        "nodata": "You have no data :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
                         "cancel": "Or, cancel signing this petition",
@@ -4195,11 +4407,15 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "attributesLanding": Object {
+                        "add": "Añadir attributo",
+                        "nodata": "No tienes ningún dato :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verificar",
                         "cancel": "O, cancelar participación en esta petición",
                         "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                        "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                        "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                       },
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
@@ -4293,11 +4509,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -4336,6 +4556,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -4379,11 +4603,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -4487,11 +4715,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -4530,6 +4762,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -4573,11 +4809,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -4676,11 +4916,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -4719,6 +4963,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -4762,11 +5010,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -4820,11 +5072,15 @@ ShallowWrapper {
             "state": Object {},
             "store": Object {
               "ca": Object {
+                "attributesLanding": Object {
+                  "add": "Afegir atribut",
+                  "nodata": "No tens ninguna dada :(",
+                },
                 "attributesSummary": Object {
-                  "button": "",
-                  "cancel": "",
-                  "subtitle": "",
-                  "title": "",
+                  "button": "Verificar",
+                  "cancel": "O, cancelar la teva participació en aquesta petició",
+                  "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                  "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                 },
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
@@ -4863,6 +5119,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "attributesLanding": Object {
+                  "add": "Add attribute",
+                  "nodata": "You have no data :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
                   "cancel": "Or, cancel signing this petition",
@@ -4906,11 +5166,15 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "attributesLanding": Object {
+                  "add": "Añadir attributo",
+                  "nodata": "No tienes ningún dato :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verificar",
                   "cancel": "O, cancelar participación en esta petición",
                   "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                  "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                  "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                 },
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
@@ -5007,11 +5271,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -5050,6 +5318,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -5093,11 +5365,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -5195,11 +5471,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -5238,6 +5518,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -5281,11 +5565,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -5396,11 +5684,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -5439,6 +5731,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -5482,11 +5778,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -5580,11 +5880,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -5623,6 +5927,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -5666,11 +5974,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -5774,11 +6086,15 @@ ShallowWrapper {
               "preload": false,
               "resources": Object {
                 "ca": Object {
+                  "attributesLanding": Object {
+                    "add": "Afegir atribut",
+                    "nodata": "No tens ninguna dada :(",
+                  },
                   "attributesSummary": Object {
-                    "button": "",
-                    "cancel": "",
-                    "subtitle": "",
-                    "title": "",
+                    "button": "Verificar",
+                    "cancel": "O, cancelar la teva participació en aquesta petició",
+                    "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                    "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                   },
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
@@ -5817,6 +6133,10 @@ ShallowWrapper {
                   },
                 },
                 "en": Object {
+                  "attributesLanding": Object {
+                    "add": "Add attribute",
+                    "nodata": "You have no data :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
                     "cancel": "Or, cancel signing this petition",
@@ -5860,11 +6180,15 @@ ShallowWrapper {
                   },
                 },
                 "es": Object {
+                  "attributesLanding": Object {
+                    "add": "Añadir attributo",
+                    "nodata": "No tienes ningún dato :(",
+                  },
                   "attributesSummary": Object {
                     "button": "Verificar",
                     "cancel": "O, cancelar participación en esta petición",
                     "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                    "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                    "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                   },
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
@@ -5963,11 +6287,15 @@ ShallowWrapper {
             "preload": false,
             "resources": Object {
               "ca": Object {
+                "attributesLanding": Object {
+                  "add": "Afegir atribut",
+                  "nodata": "No tens ninguna dada :(",
+                },
                 "attributesSummary": Object {
-                  "button": "",
-                  "cancel": "",
-                  "subtitle": "",
-                  "title": "",
+                  "button": "Verificar",
+                  "cancel": "O, cancelar la teva participació en aquesta petició",
+                  "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                  "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                 },
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
@@ -6006,6 +6334,10 @@ ShallowWrapper {
                 },
               },
               "en": Object {
+                "attributesLanding": Object {
+                  "add": "Add attribute",
+                  "nodata": "You have no data :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
                   "cancel": "Or, cancel signing this petition",
@@ -6049,11 +6381,15 @@ ShallowWrapper {
                 },
               },
               "es": Object {
+                "attributesLanding": Object {
+                  "add": "Añadir attributo",
+                  "nodata": "No tienes ningún dato :(",
+                },
                 "attributesSummary": Object {
                   "button": "Verificar",
                   "cancel": "O, cancelar participación en esta petición",
                   "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                  "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                  "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                 },
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
@@ -6157,11 +6493,15 @@ ShallowWrapper {
                   "preload": false,
                   "resources": Object {
                     "ca": Object {
+                      "attributesLanding": Object {
+                        "add": "Afegir atribut",
+                        "nodata": "No tens ninguna dada :(",
+                      },
                       "attributesSummary": Object {
-                        "button": "",
-                        "cancel": "",
-                        "subtitle": "",
-                        "title": "",
+                        "button": "Verificar",
+                        "cancel": "O, cancelar la teva participació en aquesta petició",
+                        "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                        "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                       },
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
@@ -6200,6 +6540,10 @@ ShallowWrapper {
                       },
                     },
                     "en": Object {
+                      "attributesLanding": Object {
+                        "add": "Add attribute",
+                        "nodata": "You have no data :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
                         "cancel": "Or, cancel signing this petition",
@@ -6243,11 +6587,15 @@ ShallowWrapper {
                       },
                     },
                     "es": Object {
+                      "attributesLanding": Object {
+                        "add": "Añadir attributo",
+                        "nodata": "No tienes ningún dato :(",
+                      },
                       "attributesSummary": Object {
                         "button": "Verificar",
                         "cancel": "O, cancelar participación en esta petición",
                         "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                        "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                        "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                       },
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
@@ -6341,11 +6689,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -6384,6 +6736,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -6427,11 +6783,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -6535,11 +6895,15 @@ ShallowWrapper {
                 "preload": false,
                 "resources": Object {
                   "ca": Object {
+                    "attributesLanding": Object {
+                      "add": "Afegir atribut",
+                      "nodata": "No tens ninguna dada :(",
+                    },
                     "attributesSummary": Object {
-                      "button": "",
-                      "cancel": "",
-                      "subtitle": "",
-                      "title": "",
+                      "button": "Verificar",
+                      "cancel": "O, cancelar la teva participació en aquesta petició",
+                      "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                      "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
                     },
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
@@ -6578,6 +6942,10 @@ ShallowWrapper {
                     },
                   },
                   "en": Object {
+                    "attributesLanding": Object {
+                      "add": "Add attribute",
+                      "nodata": "You have no data :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
                       "cancel": "Or, cancel signing this petition",
@@ -6621,11 +6989,15 @@ ShallowWrapper {
                     },
                   },
                   "es": Object {
+                    "attributesLanding": Object {
+                      "add": "Añadir attributo",
+                      "nodata": "No tienes ningún dato :(",
+                    },
                     "attributesSummary": Object {
                       "button": "Verificar",
                       "cancel": "O, cancelar participación en esta petición",
                       "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                      "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                      "title": "DECIDIM requiere verificar su residencia en Barcelona.",
                     },
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
@@ -7614,11 +7986,15 @@ ShallowWrapper {
           },
           "resourceStore": Object {
             "ca": Object {
+              "attributesLanding": Object {
+                "add": "Afegir atribut",
+                "nodata": "No tens ninguna dada :(",
+              },
               "attributesSummary": Object {
-                "button": "",
-                "cancel": "",
-                "subtitle": "",
-                "title": "",
+                "button": "Verificar",
+                "cancel": "O, cancelar la teva participació en aquesta petició",
+                "subtitle": "Ho pots verificar amb l'ajuntament de Barcelona",
+                "title": "DECIDIM requereix verificar la teva residencia a Barcelona ",
               },
               "home": Object {
                 "badPin": "Codic pin incorrecte",
@@ -7657,6 +8033,10 @@ ShallowWrapper {
               },
             },
             "en": Object {
+              "attributesLanding": Object {
+                "add": "Add attribute",
+                "nodata": "You have no data :(",
+              },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
                 "cancel": "Or, cancel signing this petition",
@@ -7700,11 +8080,15 @@ ShallowWrapper {
               },
             },
             "es": Object {
+              "attributesLanding": Object {
+                "add": "Añadir attributo",
+                "nodata": "No tienes ningún dato :(",
+              },
               "attributesSummary": Object {
                 "button": "Verificar",
                 "cancel": "O, cancelar participación en esta petición",
                 "subtitle": "Lo puedes verificar con el ayuntamiento de Barcelona",
-                "title": "DECIDIM requiere verificación de su residencia en Barcelona.",
+                "title": "DECIDIM requiere verificar su residencia en Barcelona.",
               },
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
