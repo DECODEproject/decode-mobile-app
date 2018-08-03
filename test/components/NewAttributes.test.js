@@ -19,10 +19,10 @@ describe('NewAttributes', () => {
         },
       };
       const store = mockStore(initialState);
-      const wrapper = shallow(
-        <NewAttributes />,
-        { context: { store } },
-      );
+      const wrapper = shallow(<NewAttributes />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
 
       const addDateOfBirth = wrapper.dive().find(Button);
 

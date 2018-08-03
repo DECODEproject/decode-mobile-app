@@ -80,6 +80,11 @@ ShallowWrapper {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
                 },
+                "newAttributes": Object {
+                  "add": "Afegir",
+                  "ageAttribute": "Data de naixement",
+                  "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -146,6 +151,11 @@ ShallowWrapper {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
                 },
+                "newAttributes": Object {
+                  "add": "Add",
+                  "ageAttribute": "Date of birth",
+                  "description": "Select an attribute to add to your wallet from the list below.",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -211,6 +221,11 @@ ShallowWrapper {
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                },
+                "newAttributes": Object {
+                  "add": "Agregar",
+                  "ageAttribute": "Fecha de nacimiento",
+                  "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -354,6 +369,11 @@ ShallowWrapper {
                 "badPin": "Codic pin incorrecte",
                 "button": "Accedir",
               },
+              "newAttributes": Object {
+                "add": "Afegir",
+                "ageAttribute": "Data de naixement",
+                "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -420,6 +440,11 @@ ShallowWrapper {
                 "badPin": "Incorrect pin code",
                 "button": "Sign In",
               },
+              "newAttributes": Object {
+                "add": "Add",
+                "ageAttribute": "Date of birth",
+                "description": "Select an attribute to add to your wallet from the list below.",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
@@ -485,6 +510,11 @@ ShallowWrapper {
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
                 "button": "Acceder",
+              },
+              "newAttributes": Object {
+                "add": "Agregar",
+                "ageAttribute": "Fecha de nacimiento",
+                "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
               },
               "petitionSummary": Object {
                 "ageAttribute": "Edad (20-29)",
@@ -620,6 +650,11 @@ ShallowWrapper {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
                       },
+                      "newAttributes": Object {
+                        "add": "Afegir",
+                        "ageAttribute": "Data de naixement",
+                        "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -686,6 +721,11 @@ ShallowWrapper {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
                       },
+                      "newAttributes": Object {
+                        "add": "Add",
+                        "ageAttribute": "Date of birth",
+                        "description": "Select an attribute to add to your wallet from the list below.",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -751,6 +791,11 @@ ShallowWrapper {
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                      },
+                      "newAttributes": Object {
+                        "add": "Agregar",
+                        "ageAttribute": "Fecha de nacimiento",
+                        "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -873,6 +918,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -939,6 +989,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -1004,6 +1059,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -1136,6 +1196,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1202,6 +1267,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -1267,6 +1337,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -1394,6 +1469,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1460,6 +1540,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -1525,6 +1610,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -1607,6 +1697,11 @@ ShallowWrapper {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
                 },
+                "newAttributes": Object {
+                  "add": "Afegir",
+                  "ageAttribute": "Data de naixement",
+                  "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1673,6 +1768,11 @@ ShallowWrapper {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
                 },
+                "newAttributes": Object {
+                  "add": "Add",
+                  "ageAttribute": "Date of birth",
+                  "description": "Select an attribute to add to your wallet from the list below.",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -1738,6 +1838,11 @@ ShallowWrapper {
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                },
+                "newAttributes": Object {
+                  "add": "Agregar",
+                  "ageAttribute": "Fecha de nacimiento",
+                  "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -1863,6 +1968,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1929,6 +2039,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -1994,6 +2109,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -2120,6 +2240,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -2186,6 +2311,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -2251,6 +2381,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -2397,6 +2532,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -2463,6 +2603,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -2528,6 +2673,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -2650,6 +2800,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -2716,6 +2871,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -2781,6 +2941,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -2912,6 +3077,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -2978,6 +3148,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -3043,6 +3218,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -3177,6 +3357,11 @@ ShallowWrapper {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
                       },
+                      "newAttributes": Object {
+                        "add": "Afegir",
+                        "ageAttribute": "Data de naixement",
+                        "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -3243,6 +3428,11 @@ ShallowWrapper {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
                       },
+                      "newAttributes": Object {
+                        "add": "Add",
+                        "ageAttribute": "Date of birth",
+                        "description": "Select an attribute to add to your wallet from the list below.",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -3308,6 +3498,11 @@ ShallowWrapper {
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                      },
+                      "newAttributes": Object {
+                        "add": "Agregar",
+                        "ageAttribute": "Fecha de nacimiento",
+                        "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -3430,6 +3625,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -3496,6 +3696,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -3561,6 +3766,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -3693,6 +3903,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -3759,6 +3974,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -3824,6 +4044,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -4841,6 +5066,11 @@ ShallowWrapper {
                 "badPin": "Codic pin incorrecte",
                 "button": "Accedir",
               },
+              "newAttributes": Object {
+                "add": "Afegir",
+                "ageAttribute": "Data de naixement",
+                "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -4907,6 +5137,11 @@ ShallowWrapper {
                 "badPin": "Incorrect pin code",
                 "button": "Sign In",
               },
+              "newAttributes": Object {
+                "add": "Add",
+                "ageAttribute": "Date of birth",
+                "description": "Select an attribute to add to your wallet from the list below.",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
@@ -4972,6 +5207,11 @@ ShallowWrapper {
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
                 "button": "Acceder",
+              },
+              "newAttributes": Object {
+                "add": "Agregar",
+                "ageAttribute": "Fecha de nacimiento",
+                "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
               },
               "petitionSummary": Object {
                 "ageAttribute": "Edad (20-29)",
@@ -5042,6 +5282,11 @@ ShallowWrapper {
               "badPin": "Codic pin incorrecte",
               "button": "Accedir",
             },
+            "newAttributes": Object {
+              "add": "Afegir",
+              "ageAttribute": "Data de naixement",
+              "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+            },
             "petitionSummary": Object {
               "ageAttribute": "Edat (20-29)",
               "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -5108,6 +5353,11 @@ ShallowWrapper {
               "badPin": "Incorrect pin code",
               "button": "Sign In",
             },
+            "newAttributes": Object {
+              "add": "Add",
+              "ageAttribute": "Date of birth",
+              "description": "Select an attribute to add to your wallet from the list below.",
+            },
             "petitionSummary": Object {
               "ageAttribute": "Age (20-29)",
               "cancel": "Or, cancel signing this petition",
@@ -5173,6 +5423,11 @@ ShallowWrapper {
             "home": Object {
               "badPin": "Codigo pin incorrecto",
               "button": "Acceder",
+            },
+            "newAttributes": Object {
+              "add": "Agregar",
+              "ageAttribute": "Fecha de nacimiento",
+              "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
             },
             "petitionSummary": Object {
               "ageAttribute": "Edad (20-29)",
@@ -5296,6 +5551,11 @@ ShallowWrapper {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
                       },
+                      "newAttributes": Object {
+                        "add": "Afegir",
+                        "ageAttribute": "Data de naixement",
+                        "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -5362,6 +5622,11 @@ ShallowWrapper {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
                       },
+                      "newAttributes": Object {
+                        "add": "Add",
+                        "ageAttribute": "Date of birth",
+                        "description": "Select an attribute to add to your wallet from the list below.",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -5427,6 +5692,11 @@ ShallowWrapper {
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                      },
+                      "newAttributes": Object {
+                        "add": "Agregar",
+                        "ageAttribute": "Fecha de nacimiento",
+                        "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -5549,6 +5819,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -5615,6 +5890,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -5680,6 +5960,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -5812,6 +6097,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -5878,6 +6168,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -5943,6 +6238,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -6070,6 +6370,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6136,6 +6441,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -6201,6 +6511,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -6283,6 +6598,11 @@ ShallowWrapper {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
                 },
+                "newAttributes": Object {
+                  "add": "Afegir",
+                  "ageAttribute": "Data de naixement",
+                  "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6349,6 +6669,11 @@ ShallowWrapper {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
                 },
+                "newAttributes": Object {
+                  "add": "Add",
+                  "ageAttribute": "Date of birth",
+                  "description": "Select an attribute to add to your wallet from the list below.",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -6414,6 +6739,11 @@ ShallowWrapper {
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                },
+                "newAttributes": Object {
+                  "add": "Agregar",
+                  "ageAttribute": "Fecha de nacimiento",
+                  "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -6539,6 +6869,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6605,6 +6940,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -6670,6 +7010,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -6796,6 +7141,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6862,6 +7212,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -6927,6 +7282,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -7066,6 +7426,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -7132,6 +7497,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -7197,6 +7567,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -7319,6 +7694,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -7385,6 +7765,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -7450,6 +7835,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -7582,6 +7972,11 @@ ShallowWrapper {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
                   },
+                  "newAttributes": Object {
+                    "add": "Afegir",
+                    "ageAttribute": "Data de naixement",
+                    "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -7648,6 +8043,11 @@ ShallowWrapper {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
                   },
+                  "newAttributes": Object {
+                    "add": "Add",
+                    "ageAttribute": "Date of birth",
+                    "description": "Select an attribute to add to your wallet from the list below.",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -7713,6 +8113,11 @@ ShallowWrapper {
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                  },
+                  "newAttributes": Object {
+                    "add": "Agregar",
+                    "ageAttribute": "Fecha de nacimiento",
+                    "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -7840,6 +8245,11 @@ ShallowWrapper {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
                 },
+                "newAttributes": Object {
+                  "add": "Afegir",
+                  "ageAttribute": "Data de naixement",
+                  "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -7906,6 +8316,11 @@ ShallowWrapper {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
                 },
+                "newAttributes": Object {
+                  "add": "Add",
+                  "ageAttribute": "Date of birth",
+                  "description": "Select an attribute to add to your wallet from the list below.",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -7971,6 +8386,11 @@ ShallowWrapper {
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                },
+                "newAttributes": Object {
+                  "add": "Agregar",
+                  "ageAttribute": "Fecha de nacimiento",
+                  "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -8103,6 +8523,11 @@ ShallowWrapper {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
                       },
+                      "newAttributes": Object {
+                        "add": "Afegir",
+                        "ageAttribute": "Data de naixement",
+                        "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -8169,6 +8594,11 @@ ShallowWrapper {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
                       },
+                      "newAttributes": Object {
+                        "add": "Add",
+                        "ageAttribute": "Date of birth",
+                        "description": "Select an attribute to add to your wallet from the list below.",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -8234,6 +8664,11 @@ ShallowWrapper {
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                      },
+                      "newAttributes": Object {
+                        "add": "Agregar",
+                        "ageAttribute": "Fecha de nacimiento",
+                        "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -8356,6 +8791,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -8422,6 +8862,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -8487,6 +8932,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -8619,6 +9069,11 @@ ShallowWrapper {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
                     },
+                    "newAttributes": Object {
+                      "add": "Afegir",
+                      "ageAttribute": "Data de naixement",
+                      "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -8685,6 +9140,11 @@ ShallowWrapper {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
                     },
+                    "newAttributes": Object {
+                      "add": "Add",
+                      "ageAttribute": "Date of birth",
+                      "description": "Select an attribute to add to your wallet from the list below.",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -8750,6 +9210,11 @@ ShallowWrapper {
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                    },
+                    "newAttributes": Object {
+                      "add": "Agregar",
+                      "ageAttribute": "Fecha de nacimiento",
+                      "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -9767,6 +10232,11 @@ ShallowWrapper {
                 "badPin": "Codic pin incorrecte",
                 "button": "Accedir",
               },
+              "newAttributes": Object {
+                "add": "Afegir",
+                "ageAttribute": "Data de naixement",
+                "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -9833,6 +10303,11 @@ ShallowWrapper {
                 "badPin": "Incorrect pin code",
                 "button": "Sign In",
               },
+              "newAttributes": Object {
+                "add": "Add",
+                "ageAttribute": "Date of birth",
+                "description": "Select an attribute to add to your wallet from the list below.",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
@@ -9898,6 +10373,11 @@ ShallowWrapper {
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
                 "button": "Acceder",
+              },
+              "newAttributes": Object {
+                "add": "Agregar",
+                "ageAttribute": "Fecha de nacimiento",
+                "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
               },
               "petitionSummary": Object {
                 "ageAttribute": "Edad (20-29)",
