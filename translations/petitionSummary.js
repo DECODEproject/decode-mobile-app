@@ -26,7 +26,7 @@ export default {
     description: 'Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.',
     residencyAttribute: 'Residencia',
     ageAttribute: 'Edat (20-29)',
-    genderAttribute: 'Sexe (Mujer',
+    genderAttribute: 'Sexe (Mujer)',
     yes: 'Si',
     no: 'No',
     cancel: 'O, cancelar la participació en aquesta peticiió',
