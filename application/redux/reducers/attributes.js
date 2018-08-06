@@ -49,6 +49,11 @@ export default function reducer(state = initialState, action) {
       newState.optionalAttributesToggleStatus[action.attributeName] = action.toggleValue;
       return newState;
     }
+    case types.ADD_OPTIONAL_ATTRIBUTE:
+      return {
+        ...state,
+        list: [...state.list, action.attribute],
+      };
     default:
       return state;
   }

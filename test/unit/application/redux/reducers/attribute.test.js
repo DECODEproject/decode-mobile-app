@@ -170,4 +170,35 @@ describe('attribute reducer', () => {
       },
     });
   });
+
+  it('should handle ADD_OPTIONAL_ATTRIBUTE adds the new attribute to the state', () => {
+    const initialState = {
+      list: [],
+    };
+
+    const action = {
+      type: types.ADD_OPTIONAL_ATTRIBUTE,
+      attribute: {
+        predicate: 'schema:dateOfBirth',
+        object: '01/01/2000',
+        scope: 'can-access',
+        provenance: {
+          source: 'wallet',
+        },
+        subject: 42,
+      },
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      list: [{
+        predicate: 'schema:dateOfBirth',
+        object: '01/01/2000',
+        scope: 'can-access',
+        provenance: {
+          source: 'wallet',
+        },
+        subject: 42,
+      }],
+    });
+  });
 });
