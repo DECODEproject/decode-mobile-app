@@ -20,7 +20,7 @@ class AttributesLanding extends React.Component {
       <FlatList
         data={this.props.attributes}
         renderItem={attribute => <AttributeListItem attribute={attribute} />}
-        keyExtractor={(item, index) => index}
+        keyExtractor={item => item.predicate}
       />
     );
   }
