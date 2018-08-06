@@ -1,13 +1,8 @@
 import i18n from 'i18next';
 import Expo from 'expo';
-import home from './translations/home';
-import walkthrough from './translations/walkthrough';
-import pinSetup from './translations/pinSetup';
-import attributesSummary from './translations/attributesSummary';
-import attributesLanding from './translations/attributesLanding';
-import petitionSummary from './translations/petitionSummary';
-import signOutcome from './translations/signOutcome';
-import newAttributes from './translations/newAttributes';
+import es from './translations/es';
+import ca from './translations/ca';
+import en from './translations/en';
 
 // creating a language detection plugin using expo
 // http://i18next.com/docs/ownplugin/#languagedetector
@@ -19,43 +14,15 @@ const languageDetector = {
   cacheUserLanguage: () => {},
 };
 
-
 i18n
   .use(languageDetector)
   .init({
     fallbackLng: 'es',
 
     resources: {
-      es: {
-        home: home.es,
-        walkthrough: walkthrough.es,
-        pinSetup: pinSetup.es,
-        attributesSummary: attributesSummary.es,
-        attributesLanding: attributesLanding.es,
-        petitionSummary: petitionSummary.es,
-        signOutcome: signOutcome.es,
-        newAttributes: newAttributes.es,
-      },
-      ca: {
-        home: home.ca,
-        walkthrough: walkthrough.ca,
-        pinSetup: pinSetup.ca,
-        attributesSummary: attributesSummary.ca,
-        attributesLanding: attributesLanding.ca,
-        petitionSummary: petitionSummary.ca,
-        signOutcome: signOutcome.ca,
-        newAttributes: newAttributes.ca,
-      },
-      en: {
-        home: home.en,
-        walkthrough: walkthrough.en,
-        pinSetup: pinSetup.en,
-        attributesSummary: attributesSummary.en,
-        attributesLanding: attributesLanding.en,
-        petitionSummary: petitionSummary.en,
-        signOutcome: signOutcome.en,
-        newAttributes: newAttributes.en,
-      },
+      es,
+      ca,
+      en,
     },
   });
 
