@@ -5,17 +5,27 @@ const initialState = {
   petition: {},
   error: undefined,
   signed: false,
+  petitionAttributes: [],
+};
+
+const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
+  if (!petitionAttrs) return [];
+  return petitionAttrs.filter(petitionAttr =>
+    walletAttrs.find(walletAttr => walletAttr.predicate === petitionAttr.predicate));
 };
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case types.SET_PETITION:
+    case types.SET_PETITION: {
+      const { walletAttributes, petition } = action;
       return {
         ...state,
         loaded: true,
-        petition: action.petition,
+        petition,
         error: undefined,
+        petitionAttributes: matchPetitionAttrWithWallet(petition.attributes, walletAttributes),
       };
+    }
     case types.SET_PETITION_ERROR:
       return {
         ...state,

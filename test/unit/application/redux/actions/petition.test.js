@@ -25,13 +25,14 @@ describe('getPetition', () => {
         id: '2',
       },
     };
-    const response = newPetition;
+
     const expectedActions = [{
       type: types.SET_PETITION,
       petition: newPetition,
+      walletAttributes: [],
     }];
 
-    fetchMock.getOnce(petitionLink, response);
+    fetchMock.getOnce(petitionLink, newPetition);
 
     return store.dispatch(getPetition(petitionLink)).then(() => {
       expect(store.getActions()).toEqual(expectedActions);

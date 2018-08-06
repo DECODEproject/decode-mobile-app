@@ -1,9 +1,10 @@
 import types from '../actionTypes';
 
-export function setPetition(petition) {
+export function setPetition(petition, walletAttributes) {
   return {
     type: types.SET_PETITION,
     petition,
+    walletAttributes,
   };
 }
 
@@ -28,7 +29,7 @@ export function signPetitionError(error) {
 }
 
 export function getPetition(petitionLink) {
-  return async (dispatch) => {
+  return async (dispatch, getState) => {
     let response;
     try {
       response = await fetch(petitionLink);
@@ -42,7 +43,9 @@ export function getPetition(petitionLink) {
       return dispatch(setPetitionError(text));
     }
     const json = await response.json();
-    return dispatch(setPetition(json));
+    const { attributes } = getState();
+    const currentAttributes = attributes ? attributes.list : [];
+    return dispatch(setPetition(json, currentAttributes));
   };
 }
 
