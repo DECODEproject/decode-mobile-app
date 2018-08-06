@@ -13,7 +13,7 @@ const mockStore = configureStore([thunk]);
 
 describe('NewDateOfBirthAttribute', () => {
   describe('save date of birth', () => {
-    it('should dispatch saveDateOfBirth action', () => {
+    it('should dispatch saveDateOfBirth action', async () => {
       const expectedAction = {
         type: types.SAVE_DATE_OF_BIRTH,
         dateOfBirth: '01/01/1990',
@@ -26,6 +26,9 @@ describe('NewDateOfBirthAttribute', () => {
         wallet: {
           id: '123',
         },
+        attributes: {
+          list: [],
+        },
       };
       const store = mockStore(initialState);
       const wrapper = shallow(
@@ -35,7 +38,7 @@ describe('NewDateOfBirthAttribute', () => {
 
       const saveDateOfBirth = wrapper.dive().find(Button);
 
-      saveDateOfBirth.props().onPress();
+      await saveDateOfBirth.props().onPress();
 
       const lastAction = store.getActions()[store.getActions().length - 1];
       expect(lastAction).toEqual(expectedAction);

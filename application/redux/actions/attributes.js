@@ -18,10 +18,12 @@ export function storeCredentials(setItemAsync) {
   return (dispatch, getState) => {
     const state = getState();
 
-    return setItemAsync('attributes', JSON.stringify(state.attributes.list)).then(() => (dispatch({
-      type: types.STORE_ATTRIBUTES,
-      attributes: state.attributes.list,
-    })));
+    return setItemAsync('attributes', JSON.stringify(state.attributes.list)).then(() => (
+      dispatch({
+        type: types.STORE_ATTRIBUTES,
+        attributes: state.attributes.list,
+      })
+    ));
   };
 }
 
@@ -58,7 +60,7 @@ export function bubbleUpOptionalAttributeToggle(attributeName, toggleValue) {
   });
 }
 
-export function saveDateOfBirth(dateOfBirth, walletId) {
+export function saveDateOfBirth(dateOfBirth, walletId, setItemAsync) {
   const addOptionalAttributeAction = {
     type: types.ADD_OPTIONAL_ATTRIBUTE,
     attribute: {
@@ -79,6 +81,7 @@ export function saveDateOfBirth(dateOfBirth, walletId) {
 
   return async (dispatch) => {
     dispatch(addOptionalAttributeAction);
+    await dispatch(storeCredentials(setItemAsync));
     dispatch(goToAttributesLanding());
     dispatch(saveDateOfBirthAction);
   };

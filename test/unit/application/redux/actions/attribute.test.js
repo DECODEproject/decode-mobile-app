@@ -186,6 +186,7 @@ describe('attribute action', () => {
     const someDateOfBirth = '01/01/2000';
 
     it('should dispatch an action to save the optional attribute in the state', async () => {
+      const setItemAsync = async () => {};
       const expectedAddAttributeAction = {
         type: types.ADD_OPTIONAL_ATTRIBUTE,
         attribute: {
@@ -199,26 +200,60 @@ describe('attribute action', () => {
         },
       };
 
-      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId));
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
 
       expect(store.getActions()[0]).toEqual(expectedAddAttributeAction);
     });
 
-    it('should navigate to the attribute landing page', async () => {
-      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId));
+    it('should call save date of birth attribute to local storage action', async () => {
+      const attributesList = [{
+        predicate: 'schema:dateOfBirth',
+        object: someDateOfBirth,
+        scope: 'can-access',
+        provenance: {
+          source: 'wallet',
+        },
+        subject: walletId,
+      }];
+      store = mockStore({
+        attributes: {
+          list: attributesList,
+        },
+        navigation: {
+          currentNavigatorUID: 2,
+        },
+      });
+      const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
+      const expectedStoreAttributesAction = {
+        type: types.STORE_ATTRIBUTES,
+        attributes: attributesList,
+      };
 
-      expect(store.getActions()[1].child.routeName).toEqual('attributesLanding');
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
+
+      expect(setItemAsync).toBeCalled();
+      expect(setItemAsync).toBeCalledWith('attributes', JSON.stringify(attributesList));
+
+      expect(store.getActions()[1]).toEqual(expectedStoreAttributesAction);
+    });
+
+    it('should navigate to the attribute landing page', async () => {
+      const setItemAsync = async () => {};
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
+
+      expect(store.getActions()[2].child.routeName).toEqual('attributesLanding');
     });
 
     it('should return a SAVE_DATE_OF_BIRTH action', async () => {
+      const setItemAsync = async () => {};
       const expectedSaveDateOfBirthAction = {
         type: types.SAVE_DATE_OF_BIRTH,
         dateOfBirth: someDateOfBirth,
       };
 
-      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId));
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
 
-      expect(store.getActions()[2]).toEqual(expectedSaveDateOfBirthAction);
+      expect(store.getActions()[3]).toEqual(expectedSaveDateOfBirthAction);
     });
   });
 });

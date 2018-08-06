@@ -1,4 +1,5 @@
 import React from 'react';
+import { SecureStore } from 'expo';
 import { connect } from 'react-redux';
 import { View } from 'react-native';
 import PropTypes from 'prop-types';
@@ -22,7 +23,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  saveDateOfBirth: walletId => dispatch(saveDateOfBirth('01/01/1990', walletId)),
+  saveDateOfBirth: walletId => dispatch(saveDateOfBirth('01/01/1990', walletId, SecureStore.setItemAsync)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewDateOfBirthAttribute);
