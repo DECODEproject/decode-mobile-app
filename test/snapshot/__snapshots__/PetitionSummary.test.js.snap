@@ -10470,6 +10470,7 @@ ShallowWrapper {
         "title": "hello",
       }
     }
+    petitionAttributes={Array []}
     petitionError={undefined}
     petitionLink="http://something.com"
     setSignOutcome={[Function]}
@@ -22160,6 +22161,7 @@ ShallowWrapper {
         "title": "hello",
       }
     }
+    petitionAttributes={Array []}
     petitionError={undefined}
     petitionLink="http://something.com"
     setSignOutcome={[Function]}

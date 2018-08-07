@@ -9,16 +9,6 @@ const initialState = {
   list: [],
 };
 
-// {
-//   predicate: 'schema:dateOfBirth',
-//   object: '2018/08/6',
-//   scope: 'can-access',
-//   provenance: {
-//     source: 'wallet',
-//   },
-//   subject: '(Alpaca)',
-// }
-
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case types.ADD_CREDENTIAL_FROM_URL: {

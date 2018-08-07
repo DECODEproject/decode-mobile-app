@@ -151,6 +151,7 @@ PetitionSummary.propTypes = {
   petitionError: PropTypes.string,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
+  petitionAttributes: PropTypes.arrayOf(PropTypes.shape({})),
   attributes: PropTypes.shape({
     isRequiredAttributeEnabled: PropTypes.bool,
     optionalAttributesToggleStatus: PropTypes.shape({
@@ -169,12 +170,14 @@ PetitionSummary.propTypes = {
 PetitionSummary.defaultProps = {
   petition: undefined,
   petitionError: undefined,
+  petitionAttributes: [],
 };
 
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   petition: state.petition.petition,
   petitionError: state.petition.error,
+  petitionAttributes: state.petition.petitionAttributes,
   walletId: state.wallet.id,
   attributes: state.attributes,
   signSuccess: state.signSuccess,
