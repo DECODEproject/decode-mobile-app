@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import fetchMock from 'fetch-mock';
 import thunk from 'redux-thunk';
-import { getPetition, signPetition } from '../../../../../application/redux/actions/petition';
+import { getPetition, signPetition, toggleEnableAttribute } from '../../../../../application/redux/actions/petition';
 import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
@@ -133,6 +133,20 @@ describe('signPetition', () => {
     });
 
     return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
+      expect(store.getActions()).toEqual(expectedActions);
+    });
+  });
+
+  describe('Toggle enable attributes', () => {
+    it('toggle attribute action', async () => {
+      const attributeValue = 'schema:addressLocality';
+
+      const expectedActions = [{
+        type: types.TOGGLE_ENABLE_ATTRIBUTE,
+        attributeValue,
+      }];
+
+      store.dispatch(toggleEnableAttribute(attributeValue));
       expect(store.getActions()).toEqual(expectedActions);
     });
   });

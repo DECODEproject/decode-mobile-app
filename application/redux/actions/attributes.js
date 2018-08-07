@@ -45,21 +45,6 @@ export function loadCredentials(getItemAsync) {
   };
 }
 
-export function bubbleUpRequiredAttributeToggle(toggleValue) {
-  return dispatch => dispatch({
-    type: types.TOGGLE_REQUIRED_ATTRIBUTE,
-    toggleValue,
-  });
-}
-
-export function bubbleUpOptionalAttributeToggle(attributeName, toggleValue) {
-  return dispatch => dispatch({
-    type: types.TOGGLE_OPTIONAL_ATTRIBUTE,
-    attributeName,
-    toggleValue,
-  });
-}
-
 export function saveDateOfBirth(dateOfBirth, walletId, setItemAsync) {
   const addOptionalAttributeAction = {
     type: types.ADD_OPTIONAL_ATTRIBUTE,

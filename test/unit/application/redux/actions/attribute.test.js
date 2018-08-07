@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { saveDateOfBirth, addCredentialFromUrl, storeCredentials, addCredential, loadCredentials, bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../../../../../application/redux/actions/attributes';
+import { saveDateOfBirth, addCredentialFromUrl, storeCredentials, addCredential, loadCredentials } from '../../../../../application/redux/actions/attributes';
 import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
@@ -151,34 +151,6 @@ describe('attribute action', () => {
       type: types.LOAD_ATTRIBUTES,
       attributes: [barcelonaResidencyAttribute],
     }]);
-  });
-
-  it('toggle required attribute action', async () => {
-    const toggleValue = false;
-
-    const expectedActions = [{
-      type: types.TOGGLE_REQUIRED_ATTRIBUTE,
-      toggleValue,
-    }];
-
-    store.dispatch(bubbleUpRequiredAttributeToggle(toggleValue));
-    expect(store.getActions()).toEqual(expectedActions);
-  });
-
-  it('toggle optional attribute action', async () => {
-    const expectedActions = [{
-      type: types.TOGGLE_OPTIONAL_ATTRIBUTE,
-      attributeName: 'age',
-      toggleValue: true,
-    }, {
-      type: types.TOGGLE_OPTIONAL_ATTRIBUTE,
-      attributeName: 'gender',
-      toggleValue: false,
-    }];
-
-    store.dispatch(bubbleUpOptionalAttributeToggle('age', true));
-    store.dispatch(bubbleUpOptionalAttributeToggle('gender', false));
-    expect(store.getActions()).toEqual(expectedActions);
   });
 
   describe('save date of birth', () => {

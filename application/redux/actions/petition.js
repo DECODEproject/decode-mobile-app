@@ -28,6 +28,13 @@ export function signPetitionError(error) {
   };
 }
 
+export function toggleEnableAttribute(attributeValue) {
+  return dispatch => dispatch({
+    type: types.TOGGLE_ENABLE_ATTRIBUTE,
+    attributeValue,
+  });
+}
+
 export function getPetition(petitionLink) {
   return async (dispatch, getState) => {
     let response;
