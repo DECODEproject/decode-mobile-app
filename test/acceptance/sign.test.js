@@ -58,6 +58,8 @@ describe('signing a petition', () => {
           closingDate: 'today',
           id: '1234',
         },
+        enabledAttributes: [],
+        petitionAttributes: [],
       },
       attributes: {
         isRequiredAttributeEnabled: false,
@@ -95,6 +97,8 @@ describe('signing a petition', () => {
           closingDate: 'today',
           id: '1234',
         },
+        enabledAttributes: [],
+        petitionAttributes: [],
       },
       attributes: {
         isRequiredAttributeEnabled: true,
@@ -140,6 +144,8 @@ describe('signing a petition', () => {
       petition: {
         petition: {
         },
+        enabledAttributes: [],
+        petitionAttributes: [],
       },
       attributes: {
         isRequiredAttributeEnabled: true,

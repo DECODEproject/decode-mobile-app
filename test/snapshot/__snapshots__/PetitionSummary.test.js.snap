@@ -26,9 +26,6 @@ ShallowWrapper {
         },
       }
     }
-    bubbleUpAgeAttributeToggle={[Function]}
-    bubbleUpGenderAttributeToggle={[Function]}
-    bubbleUpRequiredAttributeToggle={[Function]}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
@@ -10470,7 +10467,7 @@ ShallowWrapper {
         "title": "hello",
       }
     }
-    petitionAttributes={undefined}
+    petitionAttributes={Array []}
     petitionError={undefined}
     petitionLink="http://something.com"
     setSignOutcome={[Function]}
@@ -10478,6 +10475,7 @@ ShallowWrapper {
     signSuccess={undefined}
     t={[Function]}
     tReady={false}
+    toggleEnableAttribute={[Function]}
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -10563,12 +10561,6 @@ ShallowWrapper {
             >
               Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
             </Text>
-            <Attribute
-              isEnabled={true}
-              isMandatory={true}
-              name="Estado de Residencia (mandatorio)"
-              toggleCallback={[Function]}
-            />
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -10576,18 +10568,6 @@ ShallowWrapper {
             >
               Datos opcionales para compartir: 
             </Text>
-            <Attribute
-              isEnabled={false}
-              isMandatory={false}
-              name="Edad (20-29)"
-              toggleCallback={[Function]}
-            />
-            <Attribute
-              isEnabled={false}
-              isMandatory={false}
-              name="Sexo (Mujer)"
-              toggleCallback={[Function]}
-            />
           </Component>
         </ScrollView>,
         <Component
@@ -10720,12 +10700,6 @@ ShallowWrapper {
               >
                 Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
               </Text>
-              <Attribute
-                isEnabled={true}
-                isMandatory={true}
-                name="Estado de Residencia (mandatorio)"
-                toggleCallback={[Function]}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -10733,18 +10707,6 @@ ShallowWrapper {
               >
                 Datos opcionales para compartir: 
               </Text>
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Edad (20-29)"
-                toggleCallback={[Function]}
-              />
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Sexo (Mujer)"
-                toggleCallback={[Function]}
-              />
             </Component>,
           ],
         },
@@ -10840,12 +10802,7 @@ ShallowWrapper {
                 >
                   Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
                 </Text>,
-                <Attribute
-                  isEnabled={true}
-                  isMandatory={true}
-                  name="Estado de Residencia (mandatorio)"
-                  toggleCallback={[Function]}
-                />,
+                Array [],
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -10853,18 +10810,6 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>,
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Edad (20-29)"
-                  toggleCallback={[Function]}
-                />,
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Sexo (Mujer)"
-                  toggleCallback={[Function]}
-                />,
               ],
               "style": Object {
                 "alignSelf": "stretch",
@@ -10932,20 +10877,6 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "isEnabled": true,
-                  "isMandatory": true,
-                  "name": "Estado de Residencia (mandatorio)",
-                  "toggleCallback": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
                 "nodeType": "class",
                 "props": Object {
                   "accessible": true,
@@ -10955,34 +10886,6 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Datos opcionales para compartir: ",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "isEnabled": false,
-                  "isMandatory": false,
-                  "name": "Edad (20-29)",
-                  "toggleCallback": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "isEnabled": false,
-                  "isMandatory": false,
-                  "name": "Sexo (Mujer)",
-                  "toggleCallback": [Function],
-                },
-                "ref": null,
-                "rendered": null,
                 "type": [Function],
               },
             ],
@@ -11162,12 +11065,6 @@ ShallowWrapper {
               >
                 Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
               </Text>
-              <Attribute
-                isEnabled={true}
-                isMandatory={true}
-                name="Estado de Residencia (mandatorio)"
-                toggleCallback={[Function]}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -11175,18 +11072,6 @@ ShallowWrapper {
               >
                 Datos opcionales para compartir: 
               </Text>
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Edad (20-29)"
-                toggleCallback={[Function]}
-              />
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Sexo (Mujer)"
-                toggleCallback={[Function]}
-              />
             </Component>
           </ScrollView>,
           <Component
@@ -11319,12 +11204,6 @@ ShallowWrapper {
                 >
                   Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
                 </Text>
-                <Attribute
-                  isEnabled={true}
-                  isMandatory={true}
-                  name="Estado de Residencia (mandatorio)"
-                  toggleCallback={[Function]}
-                />
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -11332,18 +11211,6 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Edad (20-29)"
-                  toggleCallback={[Function]}
-                />
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Sexo (Mujer)"
-                  toggleCallback={[Function]}
-                />
               </Component>,
             ],
           },
@@ -11439,12 +11306,7 @@ ShallowWrapper {
                   >
                     Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
                   </Text>,
-                  <Attribute
-                    isEnabled={true}
-                    isMandatory={true}
-                    name="Estado de Residencia (mandatorio)"
-                    toggleCallback={[Function]}
-                  />,
+                  Array [],
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -11452,18 +11314,6 @@ ShallowWrapper {
                   >
                     Datos opcionales para compartir: 
                   </Text>,
-                  <Attribute
-                    isEnabled={false}
-                    isMandatory={false}
-                    name="Edad (20-29)"
-                    toggleCallback={[Function]}
-                  />,
-                  <Attribute
-                    isEnabled={false}
-                    isMandatory={false}
-                    name="Sexo (Mujer)"
-                    toggleCallback={[Function]}
-                  />,
                 ],
                 "style": Object {
                   "alignSelf": "stretch",
@@ -11531,20 +11381,6 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "isEnabled": true,
-                    "isMandatory": true,
-                    "name": "Estado de Residencia (mandatorio)",
-                    "toggleCallback": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
                   "nodeType": "class",
                   "props": Object {
                     "accessible": true,
@@ -11554,34 +11390,6 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Datos opcionales para compartir: ",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "isEnabled": false,
-                    "isMandatory": false,
-                    "name": "Edad (20-29)",
-                    "toggleCallback": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "isEnabled": false,
-                    "isMandatory": false,
-                    "name": "Sexo (Mujer)",
-                    "toggleCallback": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
                   "type": [Function],
                 },
               ],
@@ -11720,9 +11528,6 @@ ShallowWrapper {
         },
       }
     }
-    bubbleUpAgeAttributeToggle={[Function]}
-    bubbleUpGenderAttributeToggle={[Function]}
-    bubbleUpRequiredAttributeToggle={[Function]}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
@@ -22161,7 +21966,7 @@ ShallowWrapper {
         "title": "hello",
       }
     }
-    petitionAttributes={undefined}
+    petitionAttributes={Array []}
     petitionError={undefined}
     petitionLink="http://something.com"
     setSignOutcome={[Function]}
@@ -22169,6 +21974,7 @@ ShallowWrapper {
     signSuccess={undefined}
     t={[Function]}
     tReady={false}
+    toggleEnableAttribute={[Function]}
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -22254,12 +22060,6 @@ ShallowWrapper {
             >
               Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
             </Text>
-            <Attribute
-              isEnabled={true}
-              isMandatory={true}
-              name="Estado de Residencia (mandatorio)"
-              toggleCallback={[Function]}
-            />
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -22267,18 +22067,6 @@ ShallowWrapper {
             >
               Datos opcionales para compartir: 
             </Text>
-            <Attribute
-              isEnabled={false}
-              isMandatory={false}
-              name="Edad (20-29)"
-              toggleCallback={[Function]}
-            />
-            <Attribute
-              isEnabled={false}
-              isMandatory={false}
-              name="Sexo (Mujer)"
-              toggleCallback={[Function]}
-            />
           </Component>
         </ScrollView>,
         <Component
@@ -22411,12 +22199,6 @@ ShallowWrapper {
               >
                 Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
               </Text>
-              <Attribute
-                isEnabled={true}
-                isMandatory={true}
-                name="Estado de Residencia (mandatorio)"
-                toggleCallback={[Function]}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -22424,18 +22206,6 @@ ShallowWrapper {
               >
                 Datos opcionales para compartir: 
               </Text>
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Edad (20-29)"
-                toggleCallback={[Function]}
-              />
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Sexo (Mujer)"
-                toggleCallback={[Function]}
-              />
             </Component>,
           ],
         },
@@ -22531,12 +22301,7 @@ ShallowWrapper {
                 >
                   Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
                 </Text>,
-                <Attribute
-                  isEnabled={true}
-                  isMandatory={true}
-                  name="Estado de Residencia (mandatorio)"
-                  toggleCallback={[Function]}
-                />,
+                Array [],
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -22544,18 +22309,6 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>,
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Edad (20-29)"
-                  toggleCallback={[Function]}
-                />,
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Sexo (Mujer)"
-                  toggleCallback={[Function]}
-                />,
               ],
               "style": Object {
                 "alignSelf": "stretch",
@@ -22623,20 +22376,6 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "isEnabled": true,
-                  "isMandatory": true,
-                  "name": "Estado de Residencia (mandatorio)",
-                  "toggleCallback": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
                 "nodeType": "class",
                 "props": Object {
                   "accessible": true,
@@ -22646,34 +22385,6 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": "Datos opcionales para compartir: ",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "isEnabled": false,
-                  "isMandatory": false,
-                  "name": "Edad (20-29)",
-                  "toggleCallback": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "isEnabled": false,
-                  "isMandatory": false,
-                  "name": "Sexo (Mujer)",
-                  "toggleCallback": [Function],
-                },
-                "ref": null,
-                "rendered": null,
                 "type": [Function],
               },
             ],
@@ -22853,12 +22564,6 @@ ShallowWrapper {
               >
                 Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
               </Text>
-              <Attribute
-                isEnabled={true}
-                isMandatory={true}
-                name="Estado de Residencia (mandatorio)"
-                toggleCallback={[Function]}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -22866,18 +22571,6 @@ ShallowWrapper {
               >
                 Datos opcionales para compartir: 
               </Text>
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Edad (20-29)"
-                toggleCallback={[Function]}
-              />
-              <Attribute
-                isEnabled={false}
-                isMandatory={false}
-                name="Sexo (Mujer)"
-                toggleCallback={[Function]}
-              />
             </Component>
           </ScrollView>,
           <Component
@@ -23010,12 +22703,6 @@ ShallowWrapper {
                 >
                   Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
                 </Text>
-                <Attribute
-                  isEnabled={true}
-                  isMandatory={true}
-                  name="Estado de Residencia (mandatorio)"
-                  toggleCallback={[Function]}
-                />
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -23023,18 +22710,6 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Edad (20-29)"
-                  toggleCallback={[Function]}
-                />
-                <Attribute
-                  isEnabled={false}
-                  isMandatory={false}
-                  name="Sexo (Mujer)"
-                  toggleCallback={[Function]}
-                />
               </Component>,
             ],
           },
@@ -23130,12 +22805,7 @@ ShallowWrapper {
                   >
                     Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.
                   </Text>,
-                  <Attribute
-                    isEnabled={true}
-                    isMandatory={true}
-                    name="Estado de Residencia (mandatorio)"
-                    toggleCallback={[Function]}
-                  />,
+                  Array [],
                   <Text
                     accessible={true}
                     allowFontScaling={true}
@@ -23143,18 +22813,6 @@ ShallowWrapper {
                   >
                     Datos opcionales para compartir: 
                   </Text>,
-                  <Attribute
-                    isEnabled={false}
-                    isMandatory={false}
-                    name="Edad (20-29)"
-                    toggleCallback={[Function]}
-                  />,
-                  <Attribute
-                    isEnabled={false}
-                    isMandatory={false}
-                    name="Sexo (Mujer)"
-                    toggleCallback={[Function]}
-                  />,
                 ],
                 "style": Object {
                   "alignSelf": "stretch",
@@ -23222,20 +22880,6 @@ ShallowWrapper {
                 Object {
                   "instance": null,
                   "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "isEnabled": true,
-                    "isMandatory": true,
-                    "name": "Estado de Residencia (mandatorio)",
-                    "toggleCallback": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
                   "nodeType": "class",
                   "props": Object {
                     "accessible": true,
@@ -23245,34 +22889,6 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": "Datos opcionales para compartir: ",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "isEnabled": false,
-                    "isMandatory": false,
-                    "name": "Edad (20-29)",
-                    "toggleCallback": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "isEnabled": false,
-                    "isMandatory": false,
-                    "name": "Sexo (Mujer)",
-                    "toggleCallback": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
                   "type": [Function],
                 },
               ],

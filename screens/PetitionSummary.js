@@ -5,9 +5,8 @@ import { Text, View, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
-import { getPetition, signPetition } from '../application/redux/actions/petition';
+import { getPetition, signPetition, toggleEnableAttribute } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
-import { bubbleUpRequiredAttributeToggle, bubbleUpOptionalAttributeToggle } from '../application/redux/actions/attributes';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
@@ -46,8 +45,11 @@ class PetitionSummary extends React.Component {
       loading: true,
     });
 
-    const age = (this.props.attributes.optionalAttributesToggleStatus.age) ? '20-29' : 'any';
+    /* const age = (this.props.attributes.optionalAttributesToggleStatus.age) ? '20-29' : 'any';
     const gender = (this.props.attributes.optionalAttributesToggleStatus.gender) ? 'female' : 'any';
+*/
+    const age = '20-29';
+    const gender = 'female';
 
     let signSuccess;
     try {
@@ -63,6 +65,15 @@ class PetitionSummary extends React.Component {
     });
   }
 
+  renderAttribute = attr => (<AttributeComponent
+    key={attr.predicate}
+    isMandatory
+    toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
+    isEnabled
+    name={this.props.t(attr.predicate)}
+  />);
+
+
   render() {
     const petitionAttributes = (
       <View style={styles.petitionSummaryBox}>
@@ -73,27 +84,10 @@ class PetitionSummary extends React.Component {
         <Text>
           {this.props.t('description')}
         </Text>
-        <AttributeComponent
-          isMandatory
-          toggleCallback={this.props.bubbleUpRequiredAttributeToggle}
-          isEnabled={this.props.attributes.isRequiredAttributeEnabled}
-          name={this.props.t('residencyAttribute')}
-        />
+        { this.props.petitionAttributes && this.props.petitionAttributes.map(this.renderAttribute) }
         <Text>
           {this.props.t('optional')}
         </Text>
-        <AttributeComponent
-          isMandatory={false}
-          toggleCallback={this.props.bubbleUpAgeAttributeToggle}
-          isEnabled={this.props.attributes.optionalAttributesToggleStatus.age}
-          name={this.props.t('ageAttribute')}
-        />
-        <AttributeComponent
-          isMandatory={false}
-          toggleCallback={this.props.bubbleUpGenderAttributeToggle}
-          isEnabled={this.props.attributes.optionalAttributesToggleStatus.gender}
-          name={this.props.t('genderAttribute')}
-        />
       </View>
     );
     const petitionError = (
@@ -148,22 +142,20 @@ PetitionSummary.propTypes = {
     description: PropTypes.string,
     closingDate: PropTypes.string,
   }),
+  // enabledAttributes: PropTypes.arrayOf(PropTypes.string).isRequired,
   petitionError: PropTypes.string,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   attributes: PropTypes.shape({
-    isRequiredAttributeEnabled: PropTypes.bool,
-    optionalAttributesToggleStatus: PropTypes.shape({
-      age: PropTypes.bool,
-      gender: PropTypes.bool,
-    }),
     list: PropTypes.arrayOf(PropTypes.shape({})),
+    isRequiredAttributeEnabled: PropTypes.bool,
   }).isRequired,
   signPetition: PropTypes.func.isRequired,
-  bubbleUpRequiredAttributeToggle: PropTypes.func.isRequired,
-  bubbleUpAgeAttributeToggle: PropTypes.func.isRequired,
-  bubbleUpGenderAttributeToggle: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
+  toggleEnableAttribute: PropTypes.func.isRequired,
+  petitionAttributes: PropTypes.arrayOf(PropTypes.shape({
+    predicate: PropTypes.string.isRequired,
+  })).isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -176,6 +168,7 @@ const mapStateToProps = state => ({
   petition: state.petition.petition,
   petitionError: state.petition.error,
   petitionAttributes: state.petition.petitionAttributes,
+  // enabledAttributes: state.petition.enabledAttributes,
   walletId: state.wallet.id,
   attributes: state.attributes,
   signSuccess: state.signSuccess,
@@ -187,12 +180,7 @@ const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
     dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender)),
-  bubbleUpRequiredAttributeToggle: toggleValue =>
-    dispatch(bubbleUpRequiredAttributeToggle(toggleValue)),
-  bubbleUpAgeAttributeToggle: toggleValue =>
-    dispatch(bubbleUpOptionalAttributeToggle('age', toggleValue)),
-  bubbleUpGenderAttributeToggle: toggleValue =>
-    dispatch(bubbleUpOptionalAttributeToggle('gender', toggleValue)),
+  toggleEnableAttribute: (attrPredicate) => { dispatch(toggleEnableAttribute(attrPredicate)); },
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));

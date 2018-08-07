@@ -20,6 +20,8 @@ const initialState = {
       closingDate: 'today',
       id: '1234',
     },
+    enabledAttributes: [],
+    petitionAttributes: [],
   },
   wallet: {
     id: 'something',

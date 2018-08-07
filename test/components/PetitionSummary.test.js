@@ -5,6 +5,7 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import Button from '../../application/components/Button/Button';
 import PetitionSummary from '../../screens/PetitionSummary';
+import AttributeComponent from '../../application/components/Attribute/Attribute';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -18,13 +19,10 @@ describe('The PetitionSummary page', () => {
       error: undefined,
       signed: false,
       petitionAttributes: [],
+      enabledAttributes: [],
     },
     petitionLink: { petitionLink: 'aLink.com' },
     attributes: {
-      optionalAttributesToggleStatus: {
-        age: true,
-        gender: true,
-      },
       list: [],
     },
     wallet: { id: '' },
@@ -32,7 +30,6 @@ describe('The PetitionSummary page', () => {
 
   it('should show the voting buttons', () => {
     const store = mockStore(initialState);
-
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
@@ -41,9 +38,48 @@ describe('The PetitionSummary page', () => {
     const buttonWrapper = wrapper.dive().find(Button);
 
     expect(buttonWrapper).toHaveLength(2);
-    // expect(buttonWrapper[0].prop('yes')).toEqual('Si');
-    // expect(buttonWrapper[1].prop('no')).toEqual('No');
-    // expect(buttonWrapper[0].prop('enabled')).toEqual(true);
-    // expect(buttonWrapper[1].prop('enabled')).toEqual(true);
+  });
+
+  it('should show no attributes, if the petition has no attributes loaded', () => {
+    const store = mockStore(initialState);
+    const wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
+
+    expect(wrapper.dive().find(AttributeComponent)).toHaveLength(0);
+  });
+
+  it('should show one required attribute, if the petition has one required attribute loaded', () => {
+    const initialStateWithAttribute = {
+      petition: {
+        loaded: false,
+        petition: {},
+        error: undefined,
+        signed: false,
+        petitionAttributes: [{
+          predicate: 'schema:addressLocality',
+          provenance: {
+            source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+          },
+        }],
+        enabledAttributes: [],
+      },
+      petitionLink: { petitionLink: 'aLink.com' },
+      attributes: {
+        list: [],
+      },
+      wallet: { id: '' },
+    };
+    const store = mockStore(initialStateWithAttribute);
+    const wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
+
+    const attributeWrapper = wrapper.dive().find(AttributeComponent);
+
+    expect(attributeWrapper).toHaveLength(1);
+    expect(attributeWrapper.first().prop('isMandatory')).toEqual(true);
   });
 });
