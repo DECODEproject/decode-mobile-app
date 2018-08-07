@@ -5,8 +5,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NewDateOfBirthAttribute
-    maxDate={2018-12-31T23:00:00.000Z}
-    minDate={1949-12-31T23:00:00.000Z}
+    maxDate={2019-02-01T00:00:00.000Z}
+    minDate={1950-02-01T00:00:00.000Z}
     saveDateOfBirth={[Function]}
     walletId="123"
   />,
@@ -43,8 +43,8 @@ ShallowWrapper {
           height={259}
           hideText={false}
           iconSource={1}
-          maxDate={2018-12-31T23:00:00.000Z}
-          minDate={1949-12-31T23:00:00.000Z}
+          maxDate={2019-02-01T00:00:00.000Z}
+          minDate={1950-02-01T00:00:00.000Z}
           modalOnResponderTerminationRequest={[Function]}
           mode="date"
           onDateChange={[Function]}
@@ -96,8 +96,8 @@ ShallowWrapper {
           "height": 259,
           "hideText": false,
           "iconSource": 1,
-          "maxDate": 2018-12-31T23:00:00.000Z,
-          "minDate": 1949-12-31T23:00:00.000Z,
+          "maxDate": 2019-02-01T00:00:00.000Z,
+          "minDate": 1950-02-01T00:00:00.000Z,
           "modalOnResponderTerminationRequest": [Function],
           "mode": "date",
           "onDateChange": [Function],
@@ -155,8 +155,8 @@ ShallowWrapper {
             height={259}
             hideText={false}
             iconSource={1}
-            maxDate={2018-12-31T23:00:00.000Z}
-            minDate={1949-12-31T23:00:00.000Z}
+            maxDate={2019-02-01T00:00:00.000Z}
+            minDate={1950-02-01T00:00:00.000Z}
             modalOnResponderTerminationRequest={[Function]}
             mode="date"
             onDateChange={[Function]}
@@ -208,8 +208,8 @@ ShallowWrapper {
             "height": 259,
             "hideText": false,
             "iconSource": 1,
-            "maxDate": 2018-12-31T23:00:00.000Z,
-            "minDate": 1949-12-31T23:00:00.000Z,
+            "maxDate": 2019-02-01T00:00:00.000Z,
+            "minDate": 1950-02-01T00:00:00.000Z,
             "modalOnResponderTerminationRequest": [Function],
             "mode": "date",
             "onDateChange": [Function],
