@@ -18,7 +18,10 @@ const initialState = {
 
 it('renders NewDateOfBirthAttribute component', () => {
   const wrapper = shallow(
-    <NewDateOfBirthAttribute />,
+    <NewDateOfBirthAttribute
+      minDate={new Date('1950-01-01T00:00:00')}
+      maxDate={new Date('2019-01-01T00:00:00')}
+    />,
     { context: { store: mockStore(initialState) } },
   );
   expect(wrapper.dive()).toMatchSnapshot();

@@ -5,6 +5,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NewDateOfBirthAttribute
+    maxDate={2018-12-31T23:00:00.000Z}
+    minDate={1949-12-31T23:00:00.000Z}
     saveDateOfBirth={[Function]}
     walletId="123"
   />,
@@ -20,12 +22,47 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Button
-        enabled={true}
-        name="addDateOfBirth"
-        onPress={[Function]}
-        style={Object {}}
-      />,
+      "children": Array [
+        <DatePicker
+          TouchableComponent={[Function]}
+          allowFontScaling={true}
+          androidMode="default"
+          cancelBtnText="Cancel"
+          confirmBtnText="Confirm"
+          customStyles={
+            Object {
+              "dateInput": Object {
+                "marginLeft": 36,
+              },
+            }
+          }
+          date=""
+          disabled={false}
+          duration={300}
+          format="DD/MM/YYYY"
+          height={259}
+          hideText={false}
+          iconSource={1}
+          maxDate={2018-12-31T23:00:00.000Z}
+          minDate={1949-12-31T23:00:00.000Z}
+          modalOnResponderTerminationRequest={[Function]}
+          mode="date"
+          onDateChange={[Function]}
+          placeholder="select date"
+          showIcon={true}
+          style={
+            Object {
+              "width": 200,
+            }
+          }
+        />,
+        <Button
+          enabled={true}
+          name="addDateOfBirth"
+          onPress={[Function]}
+          style={Object {}}
+        />,
+      ],
       "style": Object {
         "alignSelf": "stretch",
         "backgroundColor": "#FFF",
@@ -36,45 +73,45 @@ ShallowWrapper {
       },
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "enabled": true,
-        "name": "addDateOfBirth",
-        "onPress": [Function],
-        "style": Object {},
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <Button
-          enabled={true}
-          name="addDateOfBirth"
-          onPress={[Function]}
-          style={Object {}}
-        />,
-        "style": Object {
-          "alignSelf": "stretch",
-          "backgroundColor": "#FFF",
-          "margin": 16,
-          "marginTop": 30,
-          "paddingHorizontal": 20,
-          "paddingVertical": 40,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "TouchableComponent": [Function],
+          "allowFontScaling": true,
+          "androidMode": "default",
+          "cancelBtnText": "Cancel",
+          "confirmBtnText": "Confirm",
+          "customStyles": Object {
+            "dateInput": Object {
+              "marginLeft": 36,
+            },
+          },
+          "date": "",
+          "disabled": false,
+          "duration": 300,
+          "format": "DD/MM/YYYY",
+          "height": 259,
+          "hideText": false,
+          "iconSource": 1,
+          "maxDate": 2018-12-31T23:00:00.000Z,
+          "minDate": 1949-12-31T23:00:00.000Z,
+          "modalOnResponderTerminationRequest": [Function],
+          "mode": "date",
+          "onDateChange": [Function],
+          "placeholder": "select date",
+          "showIcon": true,
+          "style": Object {
+            "width": 200,
+          },
         },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
@@ -88,6 +125,119 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <DatePicker
+            TouchableComponent={[Function]}
+            allowFontScaling={true}
+            androidMode="default"
+            cancelBtnText="Cancel"
+            confirmBtnText="Confirm"
+            customStyles={
+              Object {
+                "dateInput": Object {
+                  "marginLeft": 36,
+                },
+              }
+            }
+            date=""
+            disabled={false}
+            duration={300}
+            format="DD/MM/YYYY"
+            height={259}
+            hideText={false}
+            iconSource={1}
+            maxDate={2018-12-31T23:00:00.000Z}
+            minDate={1949-12-31T23:00:00.000Z}
+            modalOnResponderTerminationRequest={[Function]}
+            mode="date"
+            onDateChange={[Function]}
+            placeholder="select date"
+            showIcon={true}
+            style={
+              Object {
+                "width": 200,
+              }
+            }
+          />,
+          <Button
+            enabled={true}
+            name="addDateOfBirth"
+            onPress={[Function]}
+            style={Object {}}
+          />,
+        ],
+        "style": Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#FFF",
+          "margin": 16,
+          "marginTop": 30,
+          "paddingHorizontal": 20,
+          "paddingVertical": 40,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "TouchableComponent": [Function],
+            "allowFontScaling": true,
+            "androidMode": "default",
+            "cancelBtnText": "Cancel",
+            "confirmBtnText": "Confirm",
+            "customStyles": Object {
+              "dateInput": Object {
+                "marginLeft": 36,
+              },
+            },
+            "date": "",
+            "disabled": false,
+            "duration": 300,
+            "format": "DD/MM/YYYY",
+            "height": 259,
+            "hideText": false,
+            "iconSource": 1,
+            "maxDate": 2018-12-31T23:00:00.000Z,
+            "minDate": 1949-12-31T23:00:00.000Z,
+            "modalOnResponderTerminationRequest": [Function],
+            "mode": "date",
+            "onDateChange": [Function],
+            "placeholder": "select date",
+            "showIcon": true,
+            "style": Object {
+              "width": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "enabled": true,
+            "name": "addDateOfBirth",
+            "onPress": [Function],
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],
