@@ -275,5 +275,22 @@ describe('petition reducer', () => {
 
       expect(reducer(state, action)).toEqual(expectedState);
     });
+
+    it('should add a second enabledAttribute if does not exist', () => {
+      const state = {
+        ...initialState,
+        enabledAttributes: ['schema:addressLocality'],
+      };
+
+      const action = {
+        type: types.TOGGLE_ENABLE_ATTRIBUTE,
+        attributeValue: 'schema:dateOfBirth',
+      };
+
+      const actualEnabledAttributes = reducer(state, action).enabledAttributes;
+      const expectedEnabledAttributes = ['schema:dateOfBirth', 'schema:addressLocality'];
+
+      expect(actualEnabledAttributes).toEqual(expect.arrayContaining(expectedEnabledAttributes));
+    });
   });
 });
