@@ -26,6 +26,7 @@ ShallowWrapper {
         },
       }
     }
+    enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
@@ -11530,6 +11531,7 @@ ShallowWrapper {
         },
       }
     }
+    enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={

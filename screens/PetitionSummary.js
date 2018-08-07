@@ -20,6 +20,7 @@ const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 
 const isOptionalAttribute = attr => !attr.provenance;
 const isMandatoryAttribute = attr => !isOptionalAttribute(attr);
+const isAttributeEnable = (attr, enabledAttr) => enabledAttr.indexOf(attr.predicate) >= 0;
 
 class PetitionSummary extends React.Component {
   static route = {
@@ -72,7 +73,7 @@ class PetitionSummary extends React.Component {
     key={attr.predicate}
     isMandatory={isMandatoryAttribute(attr)}
     toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
-    isEnabled
+    isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
     name={this.props.t(attr.predicate)}
   />);
 
@@ -145,7 +146,7 @@ PetitionSummary.propTypes = {
     description: PropTypes.string,
     closingDate: PropTypes.string,
   }),
-  // enabledAttributes: PropTypes.arrayOf(PropTypes.string).isRequired,
+  enabledAttributes: PropTypes.arrayOf(PropTypes.string).isRequired,
   petitionError: PropTypes.string,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
@@ -172,7 +173,7 @@ const mapStateToProps = state => ({
   petition: state.petition.petition,
   petitionError: state.petition.error,
   petitionAttributes: state.petition.petitionAttributes,
-  // enabledAttributes: state.petition.enabledAttributes,
+  enabledAttributes: state.petition.enabledAttributes,
   walletId: state.wallet.id,
   attributes: state.attributes,
   signSuccess: state.signSuccess,
