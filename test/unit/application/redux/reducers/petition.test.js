@@ -142,7 +142,7 @@ describe('petition reducer', () => {
       expect(reducer(initialState, action)).toEqual(expectedState);
     });
 
-    it('should not return addressLocality attribute when petition dont ask for it', () => {
+    it('should not return addressLocality attribute when petition dont ask for it, even if we have it in the wallet', () => {
       const petitionWithoutAddress = createPetitionWithAttr([]);
 
       const initialStateWithAddress = {
@@ -163,6 +163,57 @@ describe('petition reducer', () => {
       const expectedState = {
         loaded: true,
         petition: petitionWithoutAddress,
+        error: undefined,
+        signed: false,
+        petitionAttributes: [],
+      };
+
+      expect(reducer(initialStateWithAddress, action)).toEqual(expectedState);
+    });
+
+    it('should have DateOfBirth if asked, and in the wallet', () => {
+      const petitionWithDateOfBirth = createPetitionWithAttr([attrAge]);
+      const initialStateWithAddress = {
+        loaded: false,
+        petition: petitionWithDateOfBirth,
+        error: undefined,
+        signed: false,
+      };
+
+      const action = {
+        type: types.SET_PETITION,
+        petition: petitionWithDateOfBirth,
+        walletAttributes: [attrAge, attrResidency],
+      };
+
+      const expectedState = {
+        loaded: true,
+        petition: petitionWithDateOfBirth,
+        error: undefined,
+        signed: false,
+        petitionAttributes: [attrAge],
+      };
+
+      expect(reducer(initialStateWithAddress, action)).toEqual(expectedState);
+    });
+
+    it('should return empty if asking for attributes that not exist in the wallet', () => {
+      const initialStateWithAddress = {
+        loaded: false,
+        petition,
+        error: undefined,
+        signed: false,
+      };
+
+      const action = {
+        type: types.SET_PETITION,
+        petition,
+        walletAttributes: [],
+      };
+
+      const expectedState = {
+        loaded: true,
+        petition,
         error: undefined,
         signed: false,
         petitionAttributes: [],
