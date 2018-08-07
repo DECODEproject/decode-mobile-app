@@ -69,13 +69,18 @@ class PetitionSummary extends React.Component {
     });
   }
 
-  renderAttribute = attr => (<AttributeComponent
-    key={attr.predicate}
-    isMandatory={isMandatoryAttribute(attr)}
-    toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
-    isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
-    name={this.props.t(attr.predicate)}
-  />);
+  renderAttribute = (attr) => {
+    const isMandatory = isMandatoryAttribute(attr);
+    const mandatoryText = isMandatory ? this.props.t('mandatory') : '';
+
+    return (<AttributeComponent
+      key={attr.predicate}
+      isMandatory={isMandatory}
+      toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
+      isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
+      name={`${this.props.t(attr.predicate)} ${mandatoryText}`}
+    />);
+  };
 
   render() {
     const petitionAttributes = (

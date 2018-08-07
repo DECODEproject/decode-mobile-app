@@ -21,13 +21,13 @@ export default {
   petitionSummary: {
     title: 'Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.',
     description: 'Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.',
-    residencyAttribute: 'Estado de Residencia (mandatorio)',
     ageAttribute: 'Edad (20-29)',
     genderAttribute: 'Sexo (Mujer)',
     yes: 'Sí',
     no: 'No',
     cancel: 'O, cancelar participación en esta petición',
     optional: 'Datos opcionales para compartir: ',
+    mandatory: '(requerido)',
   },
   pinSetup: {
     placeholderPin1: 'Por lo menos 4 digitos',
@@ -67,5 +67,9 @@ export default {
         subtitle: 'Tus datos estan protegidos',
       },
     },
+  },
+  schema: {
+    addressLocality: 'Estado de Residencia',
+    dateOfBirth: 'Edad',
   },
 };
