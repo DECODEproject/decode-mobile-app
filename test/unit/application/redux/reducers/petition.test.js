@@ -8,6 +8,7 @@ describe('petition reducer', () => {
     error: undefined,
     signed: false,
     petitionAttributes: [],
+    enabledAttributes: [],
   };
 
   const initialStateWithPetition = {
@@ -15,6 +16,7 @@ describe('petition reducer', () => {
     petition: { id: 'someInitialPetition' },
     error: undefined,
     signed: false,
+    enabledAttributes: [],
   };
 
   it('should return the initial state', () => {
@@ -34,6 +36,7 @@ describe('petition reducer', () => {
       error: undefined,
       signed: false,
       petitionAttributes: [],
+      enabledAttributes: [],
     });
   });
 
@@ -49,6 +52,7 @@ describe('petition reducer', () => {
       petition: {},
       error: someError,
       signed: false,
+      enabledAttributes: [],
     });
   });
 
@@ -62,6 +66,7 @@ describe('petition reducer', () => {
       petition: { id: 'someInitialPetition' },
       error: undefined,
       signed: true,
+      enabledAttributes: [],
     });
   });
 
@@ -77,6 +82,7 @@ describe('petition reducer', () => {
       petition: { id: 'someInitialPetition' },
       error: someError,
       signed: false,
+      enabledAttributes: [],
     });
   });
 
@@ -117,6 +123,7 @@ describe('petition reducer', () => {
         error: undefined,
         signed: false,
         petitionAttributes: [],
+        enabledAttributes: [],
       };
 
       expect(reducer(initialState, action)).toEqual(expectedState);
@@ -137,6 +144,7 @@ describe('petition reducer', () => {
         error: undefined,
         signed: false,
         petitionAttributes: [walletAttribute],
+        enabledAttributes: [],
       };
 
       expect(reducer(initialState, action)).toEqual(expectedState);
@@ -150,6 +158,7 @@ describe('petition reducer', () => {
         petition: petitionWithoutAddress,
         error: undefined,
         signed: false,
+        enabledAttributes: [],
       };
 
       const walletAttribute = attrResidency;
@@ -166,6 +175,7 @@ describe('petition reducer', () => {
         error: undefined,
         signed: false,
         petitionAttributes: [],
+        enabledAttributes: [],
       };
 
       expect(reducer(initialStateWithAddress, action)).toEqual(expectedState);
@@ -220,6 +230,50 @@ describe('petition reducer', () => {
       };
 
       expect(reducer(initialStateWithAddress, action)).toEqual(expectedState);
+    });
+  });
+
+  describe('Toggle enabled attributes', () => {
+    it('should handle TOGGLE_ENABLE_ATTRIBUTE sets the state with the attribute predicate value', () => {
+      const action = {
+        type: types.TOGGLE_ENABLE_ATTRIBUTE,
+        attributeValue: 'schema:addressLocality',
+      };
+
+      const expectedState = {
+        loaded: false,
+        petition: {},
+        error: undefined,
+        signed: false,
+        petitionAttributes: [],
+        enabledAttributes: ['schema:addressLocality'],
+      };
+
+      expect(reducer(initialState, action)).toEqual(expectedState);
+    });
+
+
+    it('should remove if the attribute already in the enable list', () => {
+      const state = {
+        ...initialState,
+        enabledAttributes: ['schema:addressLocality'],
+      };
+
+      const action = {
+        type: types.TOGGLE_ENABLE_ATTRIBUTE,
+        attributeValue: 'schema:addressLocality',
+      };
+
+      const expectedState = {
+        loaded: false,
+        petition: {},
+        error: undefined,
+        signed: false,
+        petitionAttributes: [],
+        enabledAttributes: [],
+      };
+
+      expect(reducer(state, action)).toEqual(expectedState);
     });
   });
 });

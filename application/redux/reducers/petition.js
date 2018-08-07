@@ -6,12 +6,24 @@ const initialState = {
   error: undefined,
   signed: false,
   petitionAttributes: [],
+  enabledAttributes: [],
 };
 
 const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
   if (!petitionAttrs) return [];
   return petitionAttrs.filter(petitionAttr =>
     walletAttrs.find(walletAttr => walletAttr.predicate === petitionAttr.predicate));
+};
+
+const toggleElementsInList = (element, list) => {
+  const indexOfElement = list.indexOf(element);
+
+  if (indexOfElement === -1) {
+    list.push(element);
+  } else {
+    list.splice(indexOfElement, 1);
+  }
+  return list;
 };
 
 export default function reducer(state = initialState, action) {
@@ -44,7 +56,11 @@ export default function reducer(state = initialState, action) {
         ...state,
         error: action.error,
       };
-
+    case types.TOGGLE_ENABLE_ATTRIBUTE:
+      return {
+        ...state,
+        enabledAttributes: toggleElementsInList(action.attributeValue, state.enabledAttributes),
+      };
     default:
       return state;
   }
