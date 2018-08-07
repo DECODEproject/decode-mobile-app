@@ -51,7 +51,7 @@ export function getPetition(petitionLink) {
     }
     const json = await response.json();
     const { attributes } = getState();
-    const currentAttributes = attributes ? attributes.list : [];
+    const currentAttributes = attributes ? attributes.list : new Map();
     return dispatch(setPetition(json, currentAttributes));
   };
 }

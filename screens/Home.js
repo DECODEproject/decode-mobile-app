@@ -28,7 +28,7 @@ class Home extends React.Component {
   }
 
   goToPetition() {
-    const isAttributeVerified = this.props.attributes.list.length > 0;
+    const isAttributeVerified = this.props.attributes.list.has('schema:addressLocality');
     if (isAttributeVerified) {
       this.props.goToPetitionSummary(this.props.petitionLink);
     } else {
@@ -104,7 +104,7 @@ Home.propTypes = {
   petitionLink: PropTypes.string,
   pinCode: PropTypes.string,
   attributes: PropTypes.shape({
-    list: PropTypes.arrayOf(PropTypes.shape({})),
+    list: PropTypes.instanceOf(Map),
   }).isRequired,
   t: PropTypes.func.isRequired,
 };

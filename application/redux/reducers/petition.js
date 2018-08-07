@@ -12,7 +12,7 @@ const initialState = {
 const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
   if (!petitionAttrs) return [];
   return petitionAttrs.filter(petitionAttr =>
-    walletAttrs.find(walletAttr => walletAttr.predicate === petitionAttr.predicate));
+    walletAttrs.get(petitionAttr.predicate));
 };
 
 const toggleElementsInList = (element, list) => {

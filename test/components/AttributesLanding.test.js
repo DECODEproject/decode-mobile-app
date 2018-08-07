@@ -19,7 +19,7 @@ describe('AttributesLanding', () => {
         currentNavigatorUID: 2,
       },
       attributes: {
-        list: [],
+        list: new Map(),
       },
     };
     const store = mockStore(initialState);
@@ -39,7 +39,7 @@ describe('AttributesLanding', () => {
     it('it should show a [PLACEHOLDER]', () => {
       const initialState = {
         attributes: {
-          list: [],
+          list: new Map(),
         },
       };
       const store = mockStore(initialState);
@@ -58,8 +58,8 @@ describe('AttributesLanding', () => {
     it('should show a list containing that attribute', () => {
       const initialState = {
         attributes: {
-          list: [
-            {
+          list: new Map([
+            ['schema:birthDate', {
               predicate: 'schema:birthDate',
               object: '04/09/1985',
               scope: 'can-access',
@@ -69,8 +69,8 @@ describe('AttributesLanding', () => {
                 verified: false,
               },
               subject: 'Jordi',
-            },
-          ],
+            }],
+          ]),
         },
       };
       const store = mockStore(initialState);
@@ -82,7 +82,7 @@ describe('AttributesLanding', () => {
 
       const FlatListWrapper = wrapper.dive().dive().find(FlatList);
       expect(FlatListWrapper).toHaveLength(1);
-      expect(FlatListWrapper.props().data).toEqual(initialState.attributes.list);
+      expect(FlatListWrapper.props().data).toEqual([...initialState.attributes.list.values()]);
     });
   });
 });

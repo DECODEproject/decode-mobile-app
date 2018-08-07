@@ -31,14 +31,14 @@ describe('attribute reducer', () => {
         age: false,
         gender: false,
       },
-      list: [],
+      list: new Map(),
     });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      list: [],
+      list: new Map(),
     };
 
     const action = {
@@ -57,14 +57,14 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      list: [barcelonaResidencyAttribute],
+      list: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
     });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL when wallet already has another attribute', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      list: [amsterdamResidencyAttribute],
+      list: new Map([[amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute]]),
     };
 
     const action = {
@@ -82,17 +82,17 @@ describe('attribute reducer', () => {
     };
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      list: [
-        amsterdamResidencyAttribute,
-        barcelonaResidencyAttribute,
-      ],
+      list: new Map([
+        [amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute],
+        [barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute],
+      ]),
     });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL from a attribute that already is in the state', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      list: [barcelonaResidencyAttribute],
+      list: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
     };
 
     const action = {
@@ -111,33 +111,36 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      list: [barcelonaResidencyAttribute],
+      list: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
     });
   });
 
   it('should handle LOAD_ATTRIBUTES sets the state with the credentials of the action', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      list: [amsterdamResidencyAttribute],
+      list: new Map([[amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute]]),
     };
     const action = {
       type: types.LOAD_ATTRIBUTES,
-      attributes: [amsterdamResidencyAttribute, barcelonaResidencyAttribute],
+      attributes: new Map([
+        [amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute],
+        [barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute],
+      ]),
     };
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: true,
-      list: [
-        amsterdamResidencyAttribute,
-        barcelonaResidencyAttribute,
-      ],
+      list: new Map([
+        [amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute],
+        [barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute],
+      ]),
     });
   });
 
   it('should handle TOGGLE_REQUIRED_ATTRIBUTE sets the state with the updated isRequiredAttributeEnabled value', () => {
     const initialState = {
       isRequiredAttributeEnabled: true,
-      list: [],
+      list: new Map(),
     };
     const action = {
       type: types.TOGGLE_REQUIRED_ATTRIBUTE,
@@ -146,7 +149,7 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       isRequiredAttributeEnabled: false,
-      list: [],
+      list: new Map(),
     });
   });
 
@@ -173,7 +176,7 @@ describe('attribute reducer', () => {
 
   it('should handle ADD_OPTIONAL_ATTRIBUTE adds the new attribute to the state', () => {
     const initialState = {
-      list: [],
+      list: new Map(),
     };
 
     const action = {
@@ -190,15 +193,17 @@ describe('attribute reducer', () => {
     };
 
     expect(reducer(initialState, action)).toEqual({
-      list: [{
-        predicate: 'schema:dateOfBirth',
-        object: '01/01/2000',
-        scope: 'can-access',
-        provenance: {
-          source: 'wallet',
-        },
-        subject: 42,
-      }],
+      list: new Map([
+        ['schema:dateOfBirth', {
+          predicate: 'schema:dateOfBirth',
+          object: '01/01/2000',
+          scope: 'can-access',
+          provenance: {
+            source: 'wallet',
+          },
+          subject: 42,
+        }],
+      ]),
     });
   });
 });

@@ -18,7 +18,7 @@ export function storeCredentials(setItemAsync) {
   return (dispatch, getState) => {
     const state = getState();
 
-    return setItemAsync('attributes', JSON.stringify(state.attributes.list)).then(() => (
+    return setItemAsync('attributes', JSON.stringify([...state.attributes.list.values()])).then(() => (
       dispatch({
         type: types.STORE_ATTRIBUTES,
         attributes: state.attributes.list,
@@ -37,9 +37,12 @@ export function addCredential(attribute, walletId, url, setItemAsync) {
 export function loadCredentials(getItemAsync) {
   return (dispatch) => {
     getItemAsync('attributes').then((attributes) => {
+      let parsedAttributes = attributes ? JSON.parse(attributes) : [];
+      parsedAttributes = new Map(parsedAttributes.map(att => [att.predicate, att]));
+
       dispatch({
         type: types.LOAD_ATTRIBUTES,
-        attributes: attributes ? JSON.parse(attributes) : [],
+        attributes: parsedAttributes,
       });
     });
   };

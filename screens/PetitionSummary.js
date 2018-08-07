@@ -156,7 +156,7 @@ PetitionSummary.propTypes = {
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   attributes: PropTypes.shape({
-    list: PropTypes.arrayOf(PropTypes.shape({})),
+    list: PropTypes.instanceOf(Map),
     isRequiredAttributeEnabled: PropTypes.bool,
   }).isRequired,
   signPetition: PropTypes.func.isRequired,

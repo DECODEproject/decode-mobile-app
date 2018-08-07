@@ -29,7 +29,7 @@ describe('getPetition', () => {
     const expectedActions = [{
       type: types.SET_PETITION,
       petition: newPetition,
-      walletAttributes: [],
+      walletAttributes: new Map(),
     }];
 
     fetchMock.getOnce(petitionLink, newPetition);

@@ -32,7 +32,7 @@ const initialState = {
       age: false,
       gender: false,
     },
-    list: [],
+    list: new Map(),
   },
 };
 
@@ -50,16 +50,18 @@ it('renders PetitionSummary component when all attributes are verified', () => {
     ...initialState,
     attributes: {
       ...initialState.attributes,
-      list: [{
-        predicate: 'schema:addressLocality',
-        object: 'Barcelona',
-        scope: 'can-access',
-        provenance: {
-          source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-          credentials: '0123456789',
-        },
-        subject: '(Alpaca)',
-      }],
+      list: new Map([
+        ['schema:addressLocality', {
+          predicate: 'schema:addressLocality',
+          object: 'Barcelona',
+          scope: 'can-access',
+          provenance: {
+            source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+            credentials: '0123456789',
+          },
+          subject: '(Alpaca)',
+        }],
+      ]),
     },
   };
   const wrapper = shallow(<PetitionSummary />)

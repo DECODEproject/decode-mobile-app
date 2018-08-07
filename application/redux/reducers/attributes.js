@@ -6,7 +6,7 @@ const initialState = {
     age: false,
     gender: false,
   },
-  list: [],
+  list: new Map(),
 };
 
 export default function reducer(state = initialState, action) {
@@ -23,15 +23,9 @@ export default function reducer(state = initialState, action) {
         subject: action.walletId,
       };
 
-      const alreadyExists = state.list.filter(attr =>
-        attr.predicate === newAttribute.predicate && attr.object === newAttribute.object);
-
-      if (alreadyExists.length > 0) {
-        return state;
-      }
       return {
         ...state,
-        list: [...state.list, newAttribute],
+        list: state.list.set(newAttribute.predicate, newAttribute),
       };
     }
     case types.LOAD_ATTRIBUTES:
@@ -52,7 +46,7 @@ export default function reducer(state = initialState, action) {
     case types.ADD_OPTIONAL_ATTRIBUTE:
       return {
         ...state,
-        list: [...state.list, action.attribute],
+        list: state.list.set(action.attribute.predicate, action.attribute),
       };
     default:
       return state;

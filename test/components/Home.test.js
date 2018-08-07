@@ -32,7 +32,7 @@ describe('validatePinCode', () => {
         },
         authorization: {},
         attributes: {
-          list: [],
+          list: new Map(),
         },
       };
       const doAuthorizeMock = jest.fn().mockReturnValue(Promise.resolve({ pinCorrect: false }));
@@ -67,7 +67,7 @@ describe('validatePinCode', () => {
         },
         authorization: {},
         attributes: {
-          list: [],
+          list: new Map(),
         },
       };
       const wrapper = shallow(<Home />)
@@ -94,7 +94,7 @@ describe('validatePinCode', () => {
         },
         authorization: {},
         attributes: {
-          list: [],
+          list: new Map(),
         },
       };
 
@@ -122,7 +122,7 @@ describe('validatePinCode', () => {
         },
         authorization: {},
         attributes: {
-          list: [{}],
+          list: new Map([['schema:addressLocality', {}]]),
         },
       };
 

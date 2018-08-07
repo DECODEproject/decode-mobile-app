@@ -12,13 +12,13 @@ import i18n from '../i18n';
 
 class AttributesLanding extends React.Component {
   attributeExists() {
-    return this.props.attributes.length > 0;
+    return this.props.attributes.size > 0;
   }
 
   renderListAttributes() {
     return (
       <FlatList
-        data={this.props.attributes}
+        data={[...this.props.attributes.values()]}
         renderItem={attribute => <AttributeListItem attribute={attribute} />}
         keyExtractor={item => item.predicate}
       />
@@ -49,7 +49,7 @@ class AttributesLanding extends React.Component {
 }
 
 AttributesLanding.propTypes = {
-  attributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  attributes: PropTypes.instanceOf(Map).isRequired,
   goToNewAttributes: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };

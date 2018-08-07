@@ -8,8 +8,8 @@ ShallowWrapper {
     attributes={
       Object {
         "isRequiredAttributeEnabled": true,
-        "list": Array [
-          Object {
+        "list": Map {
+          "schema:addressLocality" => Object {
             "object": "Barcelona",
             "predicate": "schema:addressLocality",
             "provenance": Object {
@@ -19,7 +19,7 @@ ShallowWrapper {
             "scope": "can-access",
             "subject": "(Alpaca)",
           },
-        ],
+        },
         "optionalAttributesToggleStatus": Object {
           "age": false,
           "gender": false,
@@ -11908,7 +11908,7 @@ ShallowWrapper {
     attributes={
       Object {
         "isRequiredAttributeEnabled": true,
-        "list": Array [],
+        "list": Map {},
         "optionalAttributesToggleStatus": Object {
           "age": false,
           "gender": false,

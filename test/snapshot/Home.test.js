@@ -15,7 +15,7 @@ const initialState = {
   },
   authorization: {},
   attributes: {
-    list: [],
+    list: new Map(),
   },
 };
 

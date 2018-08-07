@@ -114,7 +114,7 @@ describe('petition reducer', () => {
       const action = {
         type: types.SET_PETITION,
         petition,
-        walletAttributes: [],
+        walletAttributes: new Map(),
       };
 
       const expectedState = {
@@ -135,7 +135,7 @@ describe('petition reducer', () => {
       const action = {
         type: types.SET_PETITION,
         petition,
-        walletAttributes: [walletAttribute],
+        walletAttributes: new Map([[walletAttribute.predicate, walletAttribute]]),
       };
 
       const expectedState = {
@@ -166,7 +166,7 @@ describe('petition reducer', () => {
       const action = {
         type: types.SET_PETITION,
         petition: petitionWithoutAddress,
-        walletAttributes: [walletAttribute],
+        walletAttributes: new Map([[walletAttribute.predicate, walletAttribute]]),
       };
 
       const expectedState = {
@@ -193,7 +193,10 @@ describe('petition reducer', () => {
       const action = {
         type: types.SET_PETITION,
         petition: petitionWithDateOfBirth,
-        walletAttributes: [attrAge, attrResidency],
+        walletAttributes: new Map([
+          [attrAge.predicate, attrAge],
+          [attrResidency.predicate, attrResidency],
+        ]),
       };
 
       const expectedState = {
@@ -218,7 +221,7 @@ describe('petition reducer', () => {
       const action = {
         type: types.SET_PETITION,
         petition,
-        walletAttributes: [],
+        walletAttributes: new Map(),
       };
 
       const expectedState = {

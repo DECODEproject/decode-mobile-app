@@ -68,7 +68,7 @@ describe('signing a petition', () => {
           gender: false,
         },
         // AND I do not have a required attribute
-        list: [],
+        list: new Map(),
       },
     };
 
@@ -107,14 +107,7 @@ describe('signing a petition', () => {
           gender: false,
         },
         // AND I do not have a required attribute
-        list: [
-          {
-            scope: '',
-            provenance: '',
-            subject: '',
-            object: '',
-          },
-        ],
+        list: new Map(),
       },
     };
 
@@ -154,7 +147,7 @@ describe('signing a petition', () => {
           gender: false,
         },
         // AND I do not have a required attribute
-        list: [],
+        list: new Map(),
       },
     };
 

@@ -23,8 +23,8 @@ describe('The AttributesSummary page', () => {
       petitionLink: 'http://something.com',
     },
     petition: {
-      petition: {
-      },
+      petitionAttributes: [],
+      petition: {},
     },
     attributes: {
       isRequiredAttributeEnabled: false,
@@ -32,7 +32,7 @@ describe('The AttributesSummary page', () => {
         age: false,
         gender: false,
       },
-      list: [],
+      list: new Map(),
     },
     wallet: {
       id: 'something',
@@ -72,6 +72,7 @@ describe('The AttributesSummary page', () => {
           closingDate: 'today',
           id: '1234',
         },
+        petitionAttributes: [],
       },
     };
     const store = mockStore(state);

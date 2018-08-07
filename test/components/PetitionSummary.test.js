@@ -23,7 +23,7 @@ describe('The PetitionSummary page', () => {
     },
     petitionLink: { petitionLink: 'aLink.com' },
     attributes: {
-      list: [],
+      list: new Map(),
     },
     wallet: { id: '' },
   };
@@ -67,7 +67,7 @@ describe('The PetitionSummary page', () => {
       },
       petitionLink: { petitionLink: 'aLink.com' },
       attributes: {
-        list: [],
+        list: new Map(),
       },
       wallet: { id: '' },
     };
@@ -97,7 +97,7 @@ describe('The PetitionSummary page', () => {
       },
       petitionLink: { petitionLink: 'aLink.com' },
       attributes: {
-        list: [],
+        list: new Map(),
       },
       wallet: { id: '' },
     };
@@ -127,7 +127,7 @@ describe('The PetitionSummary page', () => {
       },
       petitionLink: { petitionLink: 'aLink.com' },
       attributes: {
-        list: [],
+        list: new Map(),
       },
       wallet: { id: '' },
     };
@@ -159,7 +159,7 @@ describe('The PetitionSummary page', () => {
       },
       petitionLink: { petitionLink: 'aLink.com' },
       attributes: {
-        list: [],
+        list: new Map(),
       },
       wallet: { id: '' },
     };

@@ -24,7 +24,7 @@ describe('attribute action', () => {
         currentNavigatorUID: 2,
       },
       attributes: {
-        list: [],
+        list: new Map(),
       },
     });
   });
@@ -56,7 +56,7 @@ describe('attribute action', () => {
   it('SAVE current credentials action when no credentials in the state', async () => {
     store = mockStore({
       attributes: {
-        list: [],
+        list: new Map(),
       },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
@@ -68,14 +68,14 @@ describe('attribute action', () => {
 
     expect(store.getActions()).toEqual([{
       type: types.STORE_ATTRIBUTES,
-      attributes: [],
+      attributes: new Map(),
     }]);
   });
 
   it('SAVE current credentials action when only one credential', async () => {
     store = mockStore({
       attributes: {
-        list: [barcelonaResidencyAttribute],
+        list: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
       },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
@@ -87,14 +87,14 @@ describe('attribute action', () => {
 
     expect(store.getActions()).toEqual([{
       type: types.STORE_ATTRIBUTES,
-      attributes: [barcelonaResidencyAttribute],
+      attributes: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
     }]);
   });
 
   it('addCredential when there is no credentials yet', async () => {
     store = mockStore({
       attributes: {
-        list: [],
+        list: new Map(),
       },
     });
     const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
@@ -121,7 +121,7 @@ describe('attribute action', () => {
         credential: '0123456789',
       }, {
         type: types.STORE_ATTRIBUTES,
-        attributes: [],
+        attributes: new Map(),
       }]);
   });
 
@@ -135,7 +135,7 @@ describe('attribute action', () => {
     expect(getItemAsync).toBeCalledWith('attributes');
     expect(store.getActions()).toEqual([{
       type: types.LOAD_ATTRIBUTES,
-      attributes: [],
+      attributes: new Map(),
     }]);
   });
 
@@ -149,7 +149,9 @@ describe('attribute action', () => {
     expect(getItemAsync).toBeCalledWith('attributes');
     expect(store.getActions()).toEqual([{
       type: types.LOAD_ATTRIBUTES,
-      attributes: [barcelonaResidencyAttribute],
+      attributes: new Map([
+        [barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute],
+      ]),
     }]);
   });
 
@@ -178,15 +180,17 @@ describe('attribute action', () => {
     });
 
     it('should call save date of birth attribute to local storage action', async () => {
-      const attributesList = [{
-        predicate: 'schema:dateOfBirth',
-        object: someDateOfBirth,
-        scope: 'can-access',
-        provenance: {
-          source: 'wallet',
-        },
-        subject: walletId,
-      }];
+      const attributesList = new Map([
+        ['schema:dateOfBirth', {
+          predicate: 'schema:dateOfBirth',
+          object: someDateOfBirth,
+          scope: 'can-access',
+          provenance: {
+            source: 'wallet',
+          },
+          subject: walletId,
+        }],
+      ]);
       store = mockStore({
         attributes: {
           list: attributesList,
@@ -204,7 +208,7 @@ describe('attribute action', () => {
       await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
 
       expect(setItemAsync).toBeCalled();
-      expect(setItemAsync).toBeCalledWith('attributes', JSON.stringify(attributesList));
+      expect(setItemAsync).toBeCalledWith('attributes', JSON.stringify([...attributesList.values()]));
 
       expect(store.getActions()[1]).toEqual(expectedStoreAttributesAction);
     });

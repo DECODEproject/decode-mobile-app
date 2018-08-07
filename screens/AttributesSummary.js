@@ -31,9 +31,9 @@ class AttributesSummary extends React.Component {
 
   handleRedirect = (event) => {
     const { url } = event;
-    const { petition, walletId } = this.props;
+    const { petitionAttributes, walletId } = this.props;
 
-    this.props.addCredential(petition.attributes[0], walletId, url);
+    this.props.addCredential(petitionAttributes[0], walletId, url);
 
     this.props.goToPetitionSummary(this.props.petitionLink);
     WebBrowser.dismissBrowser();
@@ -136,6 +136,7 @@ AttributesSummary.propTypes = {
     description: PropTypes.string,
     closingDate: PropTypes.string,
   }),
+  petitionAttributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   goToPetitionSummary: PropTypes.func.isRequired,
   addCredential: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
@@ -149,8 +150,8 @@ AttributesSummary.defaultProps = {
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   petition: state.petition.petition,
+  petitionAttributes: state.petition.petitionAttributes,
   walletId: state.wallet.id,
-  attributes: state.attributes,
 });
 
 const mapDispatchToProps = dispatch => ({

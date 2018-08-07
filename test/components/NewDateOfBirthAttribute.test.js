@@ -27,7 +27,7 @@ describe('NewDateOfBirthAttribute', () => {
           id: '123',
         },
         attributes: {
-          list: [],
+          list: new Map(),
         },
       };
       const store = mockStore(initialState);
