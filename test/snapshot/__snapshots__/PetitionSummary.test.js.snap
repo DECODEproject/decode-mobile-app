@@ -10810,6 +10810,7 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>,
+                Array [],
               ],
               "style": Object {
                 "alignSelf": "stretch",
@@ -11314,6 +11315,7 @@ ShallowWrapper {
                   >
                     Datos opcionales para compartir: 
                   </Text>,
+                  Array [],
                 ],
                 "style": Object {
                   "alignSelf": "stretch",
@@ -22309,6 +22311,7 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>,
+                Array [],
               ],
               "style": Object {
                 "alignSelf": "stretch",
@@ -22813,6 +22816,7 @@ ShallowWrapper {
                   >
                     Datos opcionales para compartir: 
                   </Text>,
+                  Array [],
                 ],
                 "style": Object {
                   "alignSelf": "stretch",

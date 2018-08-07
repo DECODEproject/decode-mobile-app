@@ -18,6 +18,9 @@ import i18n from '../i18n';
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 
+const isOptionalAttribute = attr => !attr.provenance;
+const isMandatoryAttribute = attr => !isOptionalAttribute(attr);
+
 class PetitionSummary extends React.Component {
   static route = {
     navigationBar: {
@@ -67,12 +70,11 @@ class PetitionSummary extends React.Component {
 
   renderAttribute = attr => (<AttributeComponent
     key={attr.predicate}
-    isMandatory
+    isMandatory={isMandatoryAttribute(attr)}
     toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
     isEnabled
     name={this.props.t(attr.predicate)}
   />);
-
 
   render() {
     const petitionAttributes = (
@@ -84,10 +86,11 @@ class PetitionSummary extends React.Component {
         <Text>
           {this.props.t('description')}
         </Text>
-        { this.props.petitionAttributes && this.props.petitionAttributes.map(this.renderAttribute) }
+        { this.props.petitionAttributes.filter(isMandatoryAttribute).map(this.renderAttribute) }
         <Text>
           {this.props.t('optional')}
         </Text>
+        { this.props.petitionAttributes.filter(isOptionalAttribute).map(this.renderAttribute) }
       </View>
     );
     const petitionError = (
@@ -155,12 +158,13 @@ PetitionSummary.propTypes = {
   toggleEnableAttribute: PropTypes.func.isRequired,
   petitionAttributes: PropTypes.arrayOf(PropTypes.shape({
     predicate: PropTypes.string.isRequired,
-  })).isRequired,
+  })),
 };
 
 PetitionSummary.defaultProps = {
   petition: undefined,
   petitionError: undefined,
+  petitionAttributes: [],
 };
 
 const mapStateToProps = state => ({

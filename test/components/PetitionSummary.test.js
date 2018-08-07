@@ -82,4 +82,34 @@ describe('The PetitionSummary page', () => {
     expect(attributeWrapper).toHaveLength(1);
     expect(attributeWrapper.first().prop('isMandatory')).toEqual(true);
   });
+
+  it('should show one optional attribute, if the petition has one optional attribute loaded', () => {
+    const initialStateWithAttribute = {
+      petition: {
+        loaded: false,
+        petition: {},
+        error: undefined,
+        signed: false,
+        petitionAttributes: [{
+          predicate: 'schema:DateOfBirth',
+        }],
+        enabledAttributes: [],
+      },
+      petitionLink: { petitionLink: 'aLink.com' },
+      attributes: {
+        list: [],
+      },
+      wallet: { id: '' },
+    };
+    const store = mockStore(initialStateWithAttribute);
+    const wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
+
+    const attributeWrapper = wrapper.dive().find(AttributeComponent);
+
+    expect(attributeWrapper).toHaveLength(1);
+    expect(attributeWrapper.first().prop('isMandatory')).toEqual(false);
+  });
 });
