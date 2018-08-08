@@ -1,6 +1,7 @@
 import urlParse from 'url-parse';
 import types from '../actionTypes';
 import { goToAttributesLanding } from './navigation';
+import { refreshPetitionAttributes } from './petition';
 
 
 export function addCredentialFromUrl(attribute, walletId, url) {
@@ -28,9 +29,13 @@ export function storeCredentials(setItemAsync) {
 }
 
 export function addCredential(attribute, walletId, url, setItemAsync) {
-  return async (dispatch) => {
+  return async (dispatch, getState) => {
+    const state = getState();
     await dispatch(addCredentialFromUrl(attribute, walletId, url));
-    return dispatch(storeCredentials(setItemAsync));
+    const action = await dispatch(storeCredentials(setItemAsync));
+    await dispatch(refreshPetitionAttributes(state.attributes.list));
+
+    return action;
   };
 }
 

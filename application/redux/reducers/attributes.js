@@ -17,7 +17,7 @@ export default function reducer(state = initialState, action) {
         object: action.attribute.object,
         scope: action.attribute.scope,
         provenance: {
-          source: action.attribute.credentialIssuer.url,
+          source: action.attribute.provenance.url,
           credentials: action.credential,
         },
         subject: action.walletId,

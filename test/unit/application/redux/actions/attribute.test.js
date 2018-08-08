@@ -102,7 +102,7 @@ describe('attribute action', () => {
       predicate: 'schema:addressLocality',
       object: 'Barcelona',
       scope: 'can-access',
-      credentialIssuer: {
+      provenance: {
         url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
       },
     };
@@ -122,7 +122,11 @@ describe('attribute action', () => {
       }, {
         type: types.STORE_ATTRIBUTES,
         attributes: new Map(),
-      }]);
+      }, {
+        type: types.REFRESH_PETITION_ATTRIBUTES,
+        walletAttributes: new Map(),
+      },
+    ]);
   });
 
   it('load credentials when nothing is stored', async () => {

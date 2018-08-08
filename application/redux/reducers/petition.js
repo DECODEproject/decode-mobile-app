@@ -61,6 +61,14 @@ export default function reducer(state = initialState, action) {
         ...state,
         enabledAttributes: toggleElementsInList(action.attributeValue, state.enabledAttributes),
       };
+    case types.REFRESH_PETITION_ATTRIBUTES: {
+      const petitionAttributes = state.petition.attributes;
+      return {
+        ...state,
+        petitionAttributes:
+          matchPetitionAttrWithWallet(petitionAttributes, action.walletAttributes),
+      };
+    }
     default:
       return state;
   }

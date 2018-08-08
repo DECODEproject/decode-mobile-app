@@ -15,6 +15,13 @@ export function setPetitionError(error) {
   };
 }
 
+export function refreshPetitionAttributes(walletAttributes) {
+  return {
+    type: types.REFRESH_PETITION_ATTRIBUTES,
+    walletAttributes,
+  };
+}
+
 export function signPetitionAction() {
   return {
     type: types.SIGN_PETITION,

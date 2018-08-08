@@ -10827,7 +10827,6 @@ ShallowWrapper {
       }
     }
     petition={Object {}}
-    petitionAttributes={Array []}
     petitionLink="http://something.com"
     t={[Function]}
     tReady={false}

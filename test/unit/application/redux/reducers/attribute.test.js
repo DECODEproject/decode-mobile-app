@@ -47,7 +47,7 @@ describe('attribute reducer', () => {
         predicate: barcelonaResidencyAttribute.predicate,
         object: barcelonaResidencyAttribute.object,
         scope: barcelonaResidencyAttribute.scope,
-        credentialIssuer: {
+        provenance: {
           url: barcelonaResidencyAttribute.provenance.source,
         },
       },
@@ -73,7 +73,7 @@ describe('attribute reducer', () => {
         predicate: barcelonaResidencyAttribute.predicate,
         object: barcelonaResidencyAttribute.object,
         scope: barcelonaResidencyAttribute.scope,
-        credentialIssuer: {
+        provenance: {
           url: barcelonaResidencyAttribute.provenance.source,
         },
       },
@@ -101,7 +101,7 @@ describe('attribute reducer', () => {
         predicate: barcelonaResidencyAttribute.predicate,
         object: barcelonaResidencyAttribute.object,
         scope: barcelonaResidencyAttribute.scope,
-        credentialIssuer: {
+        provenance: {
           url: barcelonaResidencyAttribute.provenance.source,
         },
       },
