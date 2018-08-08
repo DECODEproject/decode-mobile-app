@@ -6,7 +6,7 @@ const initialState = {
   error: undefined,
   signed: false,
   petitionAttributes: [],
-  enabledAttributes: [],
+  enabledAttributes: ['schema:addressLocality'],
 };
 
 const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
@@ -23,7 +23,7 @@ const toggleElementsInList = (element, list) => {
   } else {
     list.splice(indexOfElement, 1);
   }
-  return list;
+  return list.slice(0);
 };
 
 export default function reducer(state = initialState, action) {

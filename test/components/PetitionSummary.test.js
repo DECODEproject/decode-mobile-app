@@ -141,6 +141,35 @@ describe('The PetitionSummary page', () => {
 
     expect(attributeWrapper.first().prop('isEnabled')).toEqual(false);
   });
+  it('should have the attribute enables if it is inside the enableAttributes', () => {
+    const initialStateWithAttribute = {
+      petition: {
+        loaded: false,
+        petition: {},
+        error: undefined,
+        signed: false,
+        petitionAttributes: [{
+          predicate: 'schema:DateOfBirth',
+        }],
+        enabledAttributes: ['schema:DateOfBirth'],
+      },
+      petitionLink: { petitionLink: 'aLink.com' },
+      attributes: {
+        list: new Map(),
+      },
+      wallet: { id: '' },
+    };
+    const store = mockStore(initialStateWithAttribute);
+    const wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
+
+    const attributeWrapper = wrapper.dive().find(AttributeComponent);
+
+    expect(attributeWrapper.first().prop('isEnabled')).toEqual(true);
+  });
+
 
   it('should have a translated name', () => {
     const initialStateWithAttribute = {

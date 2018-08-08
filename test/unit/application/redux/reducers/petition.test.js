@@ -8,7 +8,7 @@ describe('petition reducer', () => {
     error: undefined,
     signed: false,
     petitionAttributes: [],
-    enabledAttributes: [],
+    enabledAttributes: ['schema:addressLocality'],
   };
 
   const initialStateWithPetition = {
@@ -123,7 +123,7 @@ describe('petition reducer', () => {
         error: undefined,
         signed: false,
         petitionAttributes: [],
-        enabledAttributes: [],
+        enabledAttributes: ['schema:addressLocality'],
       };
 
       expect(reducer(initialState, action)).toEqual(expectedState);
@@ -144,7 +144,7 @@ describe('petition reducer', () => {
         error: undefined,
         signed: false,
         petitionAttributes: [walletAttribute],
-        enabledAttributes: [],
+        enabledAttributes: ['schema:addressLocality'],
       };
 
       expect(reducer(initialState, action)).toEqual(expectedState);
@@ -249,7 +249,7 @@ describe('petition reducer', () => {
         error: undefined,
         signed: false,
         petitionAttributes: [],
-        enabledAttributes: ['schema:addressLocality'],
+        enabledAttributes: [],
       };
 
       expect(reducer(initialState, action)).toEqual(expectedState);
