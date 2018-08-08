@@ -180,6 +180,7 @@ describe('The PetitionSummary page', () => {
         signed: false,
         petitionAttributes: [{
           predicate: 'schema:addressLocality',
+          object: 'Barcelona',
           provenance: {
             source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
           },
@@ -200,6 +201,6 @@ describe('The PetitionSummary page', () => {
 
     const attributeWrapper = wrapper.dive().find(AttributeComponent);
 
-    expect(attributeWrapper.first().prop('name')).toEqual('Estado de Residencia (requerido)');
+    expect(attributeWrapper.first().prop('name')).toEqual('Estado de Residencia (requerido) - Barcelona');
   });
 });

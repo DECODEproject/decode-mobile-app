@@ -78,7 +78,7 @@ class PetitionSummary extends React.Component {
       isMandatory={isMandatory}
       toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
       isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
-      name={`${this.props.t(attr.predicate)} ${mandatoryText}`}
+      name={`${this.props.t(attr.predicate)} ${mandatoryText} - ${this.props.t(attr.object)}`}
     />);
   };
 
