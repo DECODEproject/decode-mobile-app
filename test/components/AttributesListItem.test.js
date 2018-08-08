@@ -33,7 +33,7 @@ describe('AttributesListItem', () => {
   describe('if there is a birthDate attribute', () => {
     it('should display Date of Birth - some date', () => {
       const attribute = {
-        predicate: 'schema:birthDate',
+        predicate: 'schema:dateOfBirth',
         object: 'some date',
         scope: 'can-access',
         provenance: {

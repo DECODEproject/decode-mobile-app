@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default function AttributesListItem(props) {
   const attributeNames = {
-    'schema:birthDate': 'Date of Birth',
+    'schema:dateOfBirth': 'Date of Birth',
     'schema:addressLocality': 'Residency',
   };
 
