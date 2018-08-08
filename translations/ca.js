@@ -18,6 +18,13 @@ export default {
     ageAttribute: 'Data de naixement',
     add: 'Afegir',
   },
+  newDateOfBirthAttribute: {
+    datepickerPlaceholder: 'Selecciona una data',
+    confirm: 'Confirmar',
+    cancel: 'Cancel·lar',
+    errorEmptyDateOfBirth: 'Has de seleccionar una data',
+    save: 'Desar',
+  },
   petitionSummary: {
     title: 'Per firmar aquesta petició, tens que compartir la següent informació',
     description: 'Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.',

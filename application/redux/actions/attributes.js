@@ -73,9 +73,19 @@ export function saveDateOfBirth(dateOfBirth, walletId, setItemAsync) {
   };
 
   return async (dispatch) => {
+    dispatch({
+      type: types.RESET_DATE_OF_BIRTH_ERRORS,
+    });
+
+    if (!dateOfBirth) {
+      return dispatch({
+        type: types.EMPTY_DATE_OF_BIRTH_ERROR,
+      });
+    }
+
     dispatch(addOptionalAttributeAction);
     await dispatch(storeCredentials(setItemAsync));
     dispatch(goToAttributesLanding());
-    dispatch(saveDateOfBirthAction);
+    return dispatch(saveDateOfBirthAction);
   };
 }

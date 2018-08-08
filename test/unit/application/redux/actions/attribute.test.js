@@ -180,7 +180,7 @@ describe('attribute action', () => {
 
       await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
 
-      expect(store.getActions()[0]).toEqual(expectedAddAttributeAction);
+      expect(store.getActions()[1]).toEqual(expectedAddAttributeAction);
     });
 
     it('should call save date of birth attribute to local storage action', async () => {
@@ -214,14 +214,14 @@ describe('attribute action', () => {
       expect(setItemAsync).toBeCalled();
       expect(setItemAsync).toBeCalledWith('attributes', JSON.stringify([...attributesList.values()]));
 
-      expect(store.getActions()[1]).toEqual(expectedStoreAttributesAction);
+      expect(store.getActions()[2]).toEqual(expectedStoreAttributesAction);
     });
 
     it('should navigate to the attribute landing page', async () => {
       const setItemAsync = async () => {};
       await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
 
-      expect(store.getActions()[2].child.routeName).toEqual('attributesLanding');
+      expect(store.getActions()[3].child.routeName).toEqual('attributesLanding');
     });
 
     it('should return a SAVE_DATE_OF_BIRTH action', async () => {
@@ -233,7 +233,29 @@ describe('attribute action', () => {
 
       await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
 
-      expect(store.getActions()[3]).toEqual(expectedSaveDateOfBirthAction);
+      expect(store.getActions()[4]).toEqual(expectedSaveDateOfBirthAction);
+    });
+
+    it('should return a EMPTY_DATE_OF_BIRTH_ERROR action', async () => {
+      const setItemAsync = async () => {};
+      const expectedAction = {
+        type: types.EMPTY_DATE_OF_BIRTH_ERROR,
+      };
+
+      await store.dispatch(saveDateOfBirth('', walletId, setItemAsync));
+
+      expect(store.getActions()[1]).toEqual(expectedAction);
+    });
+
+    it('should return a RESET_DATE_OF_BIRTH_ERRORS action', async () => {
+      const setItemAsync = async () => {};
+      const expectedAction = {
+        type: types.RESET_DATE_OF_BIRTH_ERRORS,
+      };
+
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
+
+      expect(store.getActions()[0]).toEqual(expectedAction);
     });
   });
 });

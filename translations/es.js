@@ -18,6 +18,13 @@ export default {
     ageAttribute: 'Fecha de nacimiento',
     add: 'Agregar',
   },
+  newDateOfBirthAttribute: {
+    datepickerPlaceholder: 'Selecciona una fecha',
+    confirm: 'Confirmar',
+    cancel: 'Cancelar',
+    errorEmptyDateOfBirth: 'Debes seleccionar una fecha',
+    save: 'Guardar',
+  },
   petitionSummary: {
     title: 'Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.',
     description: 'Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.',

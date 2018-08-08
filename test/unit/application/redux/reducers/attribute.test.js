@@ -32,6 +32,7 @@ describe('attribute reducer', () => {
         gender: false,
       },
       list: new Map(),
+      errorEmptyDateOfBirth: false,
     });
   });
 
@@ -204,6 +205,34 @@ describe('attribute reducer', () => {
           subject: 42,
         }],
       ]),
+    });
+  });
+
+  it('should handle EMPTY_DATE_OF_BIRTH_ERROR triggers empty date of birth error', () => {
+    const initialState = {
+      errorEmptyDateOfBirth: false,
+    };
+
+    const action = {
+      type: types.EMPTY_DATE_OF_BIRTH_ERROR,
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      errorEmptyDateOfBirth: true,
+    });
+  });
+
+  it('should handle RESET_DATE_OF_BIRTH_ERRORS resets error flags', () => {
+    const initialState = {
+      errorEmptyDateOfBirth: true,
+    };
+
+    const action = {
+      type: types.RESET_DATE_OF_BIRTH_ERRORS,
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      errorEmptyDateOfBirth: false,
     });
   });
 });

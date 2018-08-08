@@ -55,6 +55,14 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline',
     marginVertical: 20,
   },
+  dateOfBirthError: {
+    width: 190,
+    fontSize: 12,
+    fontWeight: '500',
+    textAlign: 'left',
+    color: '#ff0000',
+    marginBottom: 30,
+  },
   homeContainer: {
     alignItems: 'center',
     backgroundColor: '#fff',

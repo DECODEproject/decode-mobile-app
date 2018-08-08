@@ -18,6 +18,13 @@ export default {
     ageAttribute: 'Date of birth',
     add: 'Add',
   },
+  newDateOfBirthAttribute: {
+    datepickerPlaceholder: 'Select a date',
+    confirm: 'Confirm',
+    cancel: 'Cancel',
+    errorEmptyDateOfBirth: 'You must select a date',
+    save: 'Save',
+  },
   petitionSummary: {
     title: 'To sign this petition you must consent to sharing the following with Decidim.',
     description: 'This information is anonymised - Decidim will not receive any personally identifying data.',

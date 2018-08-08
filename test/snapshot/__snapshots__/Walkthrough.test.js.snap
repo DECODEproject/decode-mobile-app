@@ -85,6 +85,13 @@ ShallowWrapper {
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel·lar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una data",
+                  "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "save": "Desar",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -160,6 +167,13 @@ ShallowWrapper {
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel",
+                  "confirm": "Confirm",
+                  "datepickerPlaceholder": "Select a date",
+                  "errorEmptyDateOfBirth": "You must select a date",
+                  "save": "Save",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -234,6 +248,13 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una fecha",
+                  "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "save": "Guardar",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -386,6 +407,13 @@ ShallowWrapper {
                 "ageAttribute": "Data de naixement",
                 "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
               },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancel·lar",
+                "confirm": "Confirmar",
+                "datepickerPlaceholder": "Selecciona una data",
+                "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                "save": "Desar",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -461,6 +489,13 @@ ShallowWrapper {
                 "ageAttribute": "Date of birth",
                 "description": "Select an attribute to add to your wallet from the list below.",
               },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancel",
+                "confirm": "Confirm",
+                "datepickerPlaceholder": "Select a date",
+                "errorEmptyDateOfBirth": "You must select a date",
+                "save": "Save",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
@@ -535,6 +570,13 @@ ShallowWrapper {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de nacimiento",
                 "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+              },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancelar",
+                "confirm": "Confirmar",
+                "datepickerPlaceholder": "Selecciona una fecha",
+                "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                "save": "Guardar",
               },
               "petitionSummary": Object {
                 "ageAttribute": "Edad (20-29)",
@@ -679,6 +721,13 @@ ShallowWrapper {
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel·lar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una data",
+                        "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "save": "Desar",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -754,6 +803,13 @@ ShallowWrapper {
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel",
+                        "confirm": "Confirm",
+                        "datepickerPlaceholder": "Select a date",
+                        "errorEmptyDateOfBirth": "You must select a date",
+                        "save": "Save",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -828,6 +884,13 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancelar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una fecha",
+                        "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "save": "Guardar",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -959,6 +1022,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1034,6 +1104,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -1108,6 +1185,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -1249,6 +1333,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1324,6 +1415,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -1398,6 +1496,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -1534,6 +1639,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1609,6 +1721,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -1683,6 +1802,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -1774,6 +1900,13 @@ ShallowWrapper {
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel·lar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una data",
+                  "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "save": "Desar",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -1849,6 +1982,13 @@ ShallowWrapper {
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel",
+                  "confirm": "Confirm",
+                  "datepickerPlaceholder": "Select a date",
+                  "errorEmptyDateOfBirth": "You must select a date",
+                  "save": "Save",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -1923,6 +2063,13 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una fecha",
+                  "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "save": "Guardar",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -2057,6 +2204,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -2132,6 +2286,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -2206,6 +2367,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -2341,6 +2509,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -2416,6 +2591,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -2490,6 +2672,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -2645,6 +2834,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -2720,6 +2916,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -2794,6 +2997,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -2925,6 +3135,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -3000,6 +3217,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -3074,6 +3298,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -3214,6 +3445,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -3289,6 +3527,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -3363,6 +3608,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -3506,6 +3758,13 @@ ShallowWrapper {
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel·lar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una data",
+                        "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "save": "Desar",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -3581,6 +3840,13 @@ ShallowWrapper {
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel",
+                        "confirm": "Confirm",
+                        "datepickerPlaceholder": "Select a date",
+                        "errorEmptyDateOfBirth": "You must select a date",
+                        "save": "Save",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -3655,6 +3921,13 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancelar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una fecha",
+                        "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "save": "Guardar",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -3786,6 +4059,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -3861,6 +4141,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -3935,6 +4222,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -4076,6 +4370,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -4151,6 +4452,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -4225,6 +4533,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -5251,6 +5566,13 @@ ShallowWrapper {
                 "ageAttribute": "Data de naixement",
                 "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
               },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancel·lar",
+                "confirm": "Confirmar",
+                "datepickerPlaceholder": "Selecciona una data",
+                "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                "save": "Desar",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -5326,6 +5648,13 @@ ShallowWrapper {
                 "ageAttribute": "Date of birth",
                 "description": "Select an attribute to add to your wallet from the list below.",
               },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancel",
+                "confirm": "Confirm",
+                "datepickerPlaceholder": "Select a date",
+                "errorEmptyDateOfBirth": "You must select a date",
+                "save": "Save",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
@@ -5400,6 +5729,13 @@ ShallowWrapper {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de nacimiento",
                 "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+              },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancelar",
+                "confirm": "Confirmar",
+                "datepickerPlaceholder": "Selecciona una fecha",
+                "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                "save": "Guardar",
               },
               "petitionSummary": Object {
                 "ageAttribute": "Edad (20-29)",
@@ -5479,6 +5815,13 @@ ShallowWrapper {
               "ageAttribute": "Data de naixement",
               "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
             },
+            "newDateOfBirthAttribute": Object {
+              "cancel": "Cancel·lar",
+              "confirm": "Confirmar",
+              "datepickerPlaceholder": "Selecciona una data",
+              "errorEmptyDateOfBirth": "Has de seleccionar una data",
+              "save": "Desar",
+            },
             "petitionSummary": Object {
               "ageAttribute": "Edat (20-29)",
               "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -5554,6 +5897,13 @@ ShallowWrapper {
               "ageAttribute": "Date of birth",
               "description": "Select an attribute to add to your wallet from the list below.",
             },
+            "newDateOfBirthAttribute": Object {
+              "cancel": "Cancel",
+              "confirm": "Confirm",
+              "datepickerPlaceholder": "Select a date",
+              "errorEmptyDateOfBirth": "You must select a date",
+              "save": "Save",
+            },
             "petitionSummary": Object {
               "ageAttribute": "Age (20-29)",
               "cancel": "Or, cancel signing this petition",
@@ -5628,6 +5978,13 @@ ShallowWrapper {
               "add": "Agregar",
               "ageAttribute": "Fecha de nacimiento",
               "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+            },
+            "newDateOfBirthAttribute": Object {
+              "cancel": "Cancelar",
+              "confirm": "Confirmar",
+              "datepickerPlaceholder": "Selecciona una fecha",
+              "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+              "save": "Guardar",
             },
             "petitionSummary": Object {
               "ageAttribute": "Edad (20-29)",
@@ -5760,6 +6117,13 @@ ShallowWrapper {
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel·lar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una data",
+                        "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "save": "Desar",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -5835,6 +6199,13 @@ ShallowWrapper {
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel",
+                        "confirm": "Confirm",
+                        "datepickerPlaceholder": "Select a date",
+                        "errorEmptyDateOfBirth": "You must select a date",
+                        "save": "Save",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -5909,6 +6280,13 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancelar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una fecha",
+                        "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "save": "Guardar",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -6040,6 +6418,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6115,6 +6500,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -6189,6 +6581,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -6330,6 +6729,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6405,6 +6811,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -6479,6 +6892,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -6615,6 +7035,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6690,6 +7117,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -6764,6 +7198,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -6855,6 +7296,13 @@ ShallowWrapper {
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel·lar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una data",
+                  "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "save": "Desar",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -6930,6 +7378,13 @@ ShallowWrapper {
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel",
+                  "confirm": "Confirm",
+                  "datepickerPlaceholder": "Select a date",
+                  "errorEmptyDateOfBirth": "You must select a date",
+                  "save": "Save",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -7004,6 +7459,13 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una fecha",
+                  "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "save": "Guardar",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -7138,6 +7600,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -7213,6 +7682,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -7287,6 +7763,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -7422,6 +7905,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -7497,6 +7987,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -7571,6 +8068,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -7719,6 +8223,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -7794,6 +8305,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -7868,6 +8386,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -7999,6 +8524,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -8074,6 +8606,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -8148,6 +8687,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -8289,6 +8835,13 @@ ShallowWrapper {
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel·lar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una data",
+                    "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "save": "Desar",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -8364,6 +8917,13 @@ ShallowWrapper {
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
                   },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancel",
+                    "confirm": "Confirm",
+                    "datepickerPlaceholder": "Select a date",
+                    "errorEmptyDateOfBirth": "You must select a date",
+                    "save": "Save",
+                  },
                   "petitionSummary": Object {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
@@ -8438,6 +8998,13 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  },
+                  "newDateOfBirthAttribute": Object {
+                    "cancel": "Cancelar",
+                    "confirm": "Confirmar",
+                    "datepickerPlaceholder": "Selecciona una fecha",
+                    "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "save": "Guardar",
                   },
                   "petitionSummary": Object {
                     "ageAttribute": "Edad (20-29)",
@@ -8574,6 +9141,13 @@ ShallowWrapper {
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel·lar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una data",
+                  "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "save": "Desar",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -8649,6 +9223,13 @@ ShallowWrapper {
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
                 },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancel",
+                  "confirm": "Confirm",
+                  "datepickerPlaceholder": "Select a date",
+                  "errorEmptyDateOfBirth": "You must select a date",
+                  "save": "Save",
+                },
                 "petitionSummary": Object {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
@@ -8723,6 +9304,13 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                },
+                "newDateOfBirthAttribute": Object {
+                  "cancel": "Cancelar",
+                  "confirm": "Confirmar",
+                  "datepickerPlaceholder": "Selecciona una fecha",
+                  "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "save": "Guardar",
                 },
                 "petitionSummary": Object {
                   "ageAttribute": "Edad (20-29)",
@@ -8864,6 +9452,13 @@ ShallowWrapper {
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel·lar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una data",
+                        "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "save": "Desar",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -8939,6 +9534,13 @@ ShallowWrapper {
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
                       },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancel",
+                        "confirm": "Confirm",
+                        "datepickerPlaceholder": "Select a date",
+                        "errorEmptyDateOfBirth": "You must select a date",
+                        "save": "Save",
+                      },
                       "petitionSummary": Object {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
@@ -9013,6 +9615,13 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      },
+                      "newDateOfBirthAttribute": Object {
+                        "cancel": "Cancelar",
+                        "confirm": "Confirmar",
+                        "datepickerPlaceholder": "Selecciona una fecha",
+                        "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "save": "Guardar",
                       },
                       "petitionSummary": Object {
                         "ageAttribute": "Edad (20-29)",
@@ -9144,6 +9753,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -9219,6 +9835,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -9293,6 +9916,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -9434,6 +10064,13 @@ ShallowWrapper {
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel·lar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una data",
+                      "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "save": "Desar",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -9509,6 +10146,13 @@ ShallowWrapper {
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
                     },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancel",
+                      "confirm": "Confirm",
+                      "datepickerPlaceholder": "Select a date",
+                      "errorEmptyDateOfBirth": "You must select a date",
+                      "save": "Save",
+                    },
                     "petitionSummary": Object {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
@@ -9583,6 +10227,13 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    },
+                    "newDateOfBirthAttribute": Object {
+                      "cancel": "Cancelar",
+                      "confirm": "Confirmar",
+                      "datepickerPlaceholder": "Selecciona una fecha",
+                      "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "save": "Guardar",
                     },
                     "petitionSummary": Object {
                       "ageAttribute": "Edad (20-29)",
@@ -10609,6 +11260,13 @@ ShallowWrapper {
                 "ageAttribute": "Data de naixement",
                 "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
               },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancel·lar",
+                "confirm": "Confirmar",
+                "datepickerPlaceholder": "Selecciona una data",
+                "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                "save": "Desar",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
@@ -10684,6 +11342,13 @@ ShallowWrapper {
                 "ageAttribute": "Date of birth",
                 "description": "Select an attribute to add to your wallet from the list below.",
               },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancel",
+                "confirm": "Confirm",
+                "datepickerPlaceholder": "Select a date",
+                "errorEmptyDateOfBirth": "You must select a date",
+                "save": "Save",
+              },
               "petitionSummary": Object {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
@@ -10758,6 +11423,13 @@ ShallowWrapper {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de nacimiento",
                 "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+              },
+              "newDateOfBirthAttribute": Object {
+                "cancel": "Cancelar",
+                "confirm": "Confirmar",
+                "datepickerPlaceholder": "Selecciona una fecha",
+                "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                "save": "Guardar",
               },
               "petitionSummary": Object {
                 "ageAttribute": "Edad (20-29)",

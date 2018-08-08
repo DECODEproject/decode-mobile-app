@@ -7,6 +7,7 @@ const initialState = {
     gender: false,
   },
   list: new Map(),
+  errorEmptyDateOfBirth: false,
 };
 
 export default function reducer(state = initialState, action) {
@@ -47,6 +48,16 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         list: state.list.set(action.attribute.predicate, action.attribute),
+      };
+    case types.EMPTY_DATE_OF_BIRTH_ERROR:
+      return {
+        ...state,
+        errorEmptyDateOfBirth: true,
+      };
+    case types.RESET_DATE_OF_BIRTH_ERRORS:
+      return {
+        ...state,
+        errorEmptyDateOfBirth: false,
       };
     default:
       return state;
