@@ -21,7 +21,10 @@ const initialState = {
       id: '1234',
     },
     enabledAttributes: [],
-    petitionAttributes: [],
+    petitionAttributes: {
+      mandatory: [],
+      optional: [],
+    },
   },
   wallet: {
     id: 'something',

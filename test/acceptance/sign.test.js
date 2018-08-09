@@ -59,7 +59,10 @@ describe('signing a petition', () => {
           id: '1234',
         },
         enabledAttributes: [],
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
       },
       attributes: {
         isRequiredAttributeEnabled: false,
@@ -98,7 +101,10 @@ describe('signing a petition', () => {
           id: '1234',
         },
         enabledAttributes: [],
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
       },
       attributes: {
         isRequiredAttributeEnabled: true,
@@ -138,7 +144,10 @@ describe('signing a petition', () => {
         petition: {
         },
         enabledAttributes: [],
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
       },
       attributes: {
         isRequiredAttributeEnabled: true,

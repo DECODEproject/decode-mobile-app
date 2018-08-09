@@ -18,7 +18,10 @@ describe('The PetitionSummary page', () => {
       petition: {},
       error: undefined,
       signed: false,
-      petitionAttributes: [],
+      petitionAttributes: {
+        mandatory: [],
+        optional: [],
+      },
       enabledAttributes: [],
     },
     petitionLink: { petitionLink: 'aLink.com' },
@@ -57,12 +60,15 @@ describe('The PetitionSummary page', () => {
         petition: {},
         error: undefined,
         signed: false,
-        petitionAttributes: [{
-          predicate: 'schema:addressLocality',
-          provenance: {
-            source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-          },
-        }],
+        petitionAttributes: {
+          mandatory: [{
+            predicate: 'schema:addressLocality',
+            provenance: {
+              source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+            },
+          }],
+          optional: [],
+        },
         enabledAttributes: [],
       },
       petitionLink: { petitionLink: 'aLink.com' },
@@ -80,7 +86,6 @@ describe('The PetitionSummary page', () => {
     const attributeWrapper = wrapper.dive().find(AttributeComponent);
 
     expect(attributeWrapper).toHaveLength(1);
-    expect(attributeWrapper.first().prop('isMandatory')).toEqual(true);
   });
 
   it('should show one optional attribute, if the petition has one optional attribute loaded', () => {
@@ -90,9 +95,12 @@ describe('The PetitionSummary page', () => {
         petition: {},
         error: undefined,
         signed: false,
-        petitionAttributes: [{
-          predicate: 'schema:DateOfBirth',
-        }],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [{
+            predicate: 'schema:DateOfBirth',
+          }],
+        },
         enabledAttributes: [],
       },
       petitionLink: { petitionLink: 'aLink.com' },
@@ -110,7 +118,6 @@ describe('The PetitionSummary page', () => {
     const attributeWrapper = wrapper.dive().find(AttributeComponent);
 
     expect(attributeWrapper).toHaveLength(1);
-    expect(attributeWrapper.first().prop('isMandatory')).toEqual(false);
   });
 
   it('should have the attribute disable if it is not inside the enableAttributes', () => {
@@ -120,9 +127,12 @@ describe('The PetitionSummary page', () => {
         petition: {},
         error: undefined,
         signed: false,
-        petitionAttributes: [{
-          predicate: 'schema:DateOfBirth',
-        }],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [{
+            predicate: 'schema:DateOfBirth',
+          }],
+        },
         enabledAttributes: [],
       },
       petitionLink: { petitionLink: 'aLink.com' },
@@ -148,9 +158,12 @@ describe('The PetitionSummary page', () => {
         petition: {},
         error: undefined,
         signed: false,
-        petitionAttributes: [{
-          predicate: 'schema:DateOfBirth',
-        }],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [{
+            predicate: 'schema:DateOfBirth',
+          }],
+        },
         enabledAttributes: ['schema:DateOfBirth'],
       },
       petitionLink: { petitionLink: 'aLink.com' },
@@ -178,13 +191,16 @@ describe('The PetitionSummary page', () => {
         petition: {},
         error: undefined,
         signed: false,
-        petitionAttributes: [{
-          predicate: 'schema:addressLocality',
-          object: 'Barcelona',
-          provenance: {
-            source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-          },
-        }],
+        petitionAttributes: {
+          mandatory: [{
+            predicate: 'schema:addressLocality',
+            object: 'Barcelona',
+            provenance: {
+              source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+            },
+          }],
+          optional: [],
+        },
         enabledAttributes: [],
       },
       petitionLink: { petitionLink: 'aLink.com' },
@@ -201,6 +217,6 @@ describe('The PetitionSummary page', () => {
 
     const attributeWrapper = wrapper.dive().find(AttributeComponent);
 
-    expect(attributeWrapper.first().prop('name')).toEqual('Estado de Residencia (requerido) - Barcelona');
+    expect(attributeWrapper.first().prop('name')).toEqual('Estado de Residencia - Barcelona');
   });
 });

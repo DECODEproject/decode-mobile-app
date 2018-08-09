@@ -11524,7 +11524,12 @@ ShallowWrapper {
         "title": "hello",
       }
     }
-    petitionAttributes={Array []}
+    petitionAttributes={
+      Object {
+        "mandatory": Array [],
+        "optional": Array [],
+      }
+    }
     petitionError={undefined}
     petitionLink="http://something.com"
     setSignOutcome={[Function]}
@@ -24082,7 +24087,12 @@ ShallowWrapper {
         "title": "hello",
       }
     }
-    petitionAttributes={Array []}
+    petitionAttributes={
+      Object {
+        "mandatory": Array [],
+        "optional": Array [],
+      }
+    }
     petitionError={undefined}
     petitionLink="http://something.com"
     setSignOutcome={[Function]}

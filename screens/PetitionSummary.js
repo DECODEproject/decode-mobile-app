@@ -18,8 +18,6 @@ import i18n from '../i18n';
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 
-const isOptionalAttribute = attr => !attr.provenance;
-const isMandatoryAttribute = attr => !isOptionalAttribute(attr);
 const isAttributeEnable = (attr, enabledAttr) => enabledAttr.indexOf(attr.predicate) >= 0;
 
 class PetitionSummary extends React.Component {
@@ -69,18 +67,12 @@ class PetitionSummary extends React.Component {
     });
   }
 
-  renderAttribute = (attr) => {
-    const isMandatory = isMandatoryAttribute(attr);
-    const mandatoryText = isMandatory ? this.props.t('mandatory') : '';
-
-    return (<AttributeComponent
-      key={attr.predicate}
-      isMandatory={isMandatory}
-      toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
-      isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
-      name={`${this.props.t(attr.predicate)} ${mandatoryText} - ${this.props.t(attr.object)}`}
-    />);
-  };
+  renderAttribute = attr => (<AttributeComponent
+    key={attr.predicate}
+    toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
+    isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
+    name={`${this.props.t(attr.predicate)} - ${this.props.t(attr.object)}`}
+  />);
 
   render() {
     const petitionAttributes = (
@@ -92,11 +84,11 @@ class PetitionSummary extends React.Component {
         <Text>
           {this.props.t('description')}
         </Text>
-        { this.props.petitionAttributes.filter(isMandatoryAttribute).map(this.renderAttribute) }
+        { this.props.petitionAttributes.mandatory.map(this.renderAttribute) }
         <Text>
           {this.props.t('optional')}
         </Text>
-        { this.props.petitionAttributes.filter(isOptionalAttribute).map(this.renderAttribute) }
+        { this.props.petitionAttributes.optional.map(this.renderAttribute) }
       </View>
     );
     const petitionError = (
@@ -162,15 +154,19 @@ PetitionSummary.propTypes = {
   signPetition: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
   toggleEnableAttribute: PropTypes.func.isRequired,
-  petitionAttributes: PropTypes.arrayOf(PropTypes.shape({
-    predicate: PropTypes.string.isRequired,
-  })),
+  petitionAttributes: PropTypes.shape({
+    mandatory: PropTypes.arrayOf(PropTypes.shape({})),
+    optional: PropTypes.arrayOf(PropTypes.shape({})),
+  }),
 };
 
 PetitionSummary.defaultProps = {
   petition: undefined,
   petitionError: undefined,
-  petitionAttributes: [],
+  petitionAttributes: {
+    mandatory: [],
+    optional: [],
+  },
 };
 
 const mapStateToProps = state => ({
