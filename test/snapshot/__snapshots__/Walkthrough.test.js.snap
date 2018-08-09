@@ -90,6 +90,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una data",
                   "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
@@ -172,6 +173,7 @@ ShallowWrapper {
                   "confirm": "Confirm",
                   "datepickerPlaceholder": "Select a date",
                   "errorEmptyDateOfBirth": "You must select a date",
+                  "errorSaveDateOfBirth": "Could not save the attribute",
                   "save": "Save",
                 },
                 "petitionSummary": Object {
@@ -254,6 +256,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una fecha",
                   "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
@@ -412,6 +415,7 @@ ShallowWrapper {
                 "confirm": "Confirmar",
                 "datepickerPlaceholder": "Selecciona una data",
                 "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                 "save": "Desar",
               },
               "petitionSummary": Object {
@@ -494,6 +498,7 @@ ShallowWrapper {
                 "confirm": "Confirm",
                 "datepickerPlaceholder": "Select a date",
                 "errorEmptyDateOfBirth": "You must select a date",
+                "errorSaveDateOfBirth": "Could not save the attribute",
                 "save": "Save",
               },
               "petitionSummary": Object {
@@ -576,6 +581,7 @@ ShallowWrapper {
                 "confirm": "Confirmar",
                 "datepickerPlaceholder": "Selecciona una fecha",
                 "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                 "save": "Guardar",
               },
               "petitionSummary": Object {
@@ -726,6 +732,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una data",
                         "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
@@ -808,6 +815,7 @@ ShallowWrapper {
                         "confirm": "Confirm",
                         "datepickerPlaceholder": "Select a date",
                         "errorEmptyDateOfBirth": "You must select a date",
+                        "errorSaveDateOfBirth": "Could not save the attribute",
                         "save": "Save",
                       },
                       "petitionSummary": Object {
@@ -890,6 +898,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una fecha",
                         "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
@@ -1027,6 +1036,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -1109,6 +1119,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -1191,6 +1202,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -1338,6 +1350,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -1420,6 +1433,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -1502,6 +1516,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -1644,6 +1659,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -1726,6 +1742,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -1808,6 +1825,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -1905,6 +1923,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una data",
                   "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
@@ -1987,6 +2006,7 @@ ShallowWrapper {
                   "confirm": "Confirm",
                   "datepickerPlaceholder": "Select a date",
                   "errorEmptyDateOfBirth": "You must select a date",
+                  "errorSaveDateOfBirth": "Could not save the attribute",
                   "save": "Save",
                 },
                 "petitionSummary": Object {
@@ -2069,6 +2089,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una fecha",
                   "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
@@ -2209,6 +2230,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -2291,6 +2313,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -2373,6 +2396,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -2514,6 +2538,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -2596,6 +2621,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -2678,6 +2704,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -2839,6 +2866,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -2921,6 +2949,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -3003,6 +3032,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -3140,6 +3170,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -3222,6 +3253,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -3304,6 +3336,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -3450,6 +3483,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -3532,6 +3566,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -3614,6 +3649,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -3763,6 +3799,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una data",
                         "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
@@ -3845,6 +3882,7 @@ ShallowWrapper {
                         "confirm": "Confirm",
                         "datepickerPlaceholder": "Select a date",
                         "errorEmptyDateOfBirth": "You must select a date",
+                        "errorSaveDateOfBirth": "Could not save the attribute",
                         "save": "Save",
                       },
                       "petitionSummary": Object {
@@ -3927,6 +3965,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una fecha",
                         "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
@@ -4064,6 +4103,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -4146,6 +4186,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -4228,6 +4269,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -4375,6 +4417,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -4457,6 +4500,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -4539,6 +4583,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -5571,6 +5616,7 @@ ShallowWrapper {
                 "confirm": "Confirmar",
                 "datepickerPlaceholder": "Selecciona una data",
                 "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                 "save": "Desar",
               },
               "petitionSummary": Object {
@@ -5653,6 +5699,7 @@ ShallowWrapper {
                 "confirm": "Confirm",
                 "datepickerPlaceholder": "Select a date",
                 "errorEmptyDateOfBirth": "You must select a date",
+                "errorSaveDateOfBirth": "Could not save the attribute",
                 "save": "Save",
               },
               "petitionSummary": Object {
@@ -5735,6 +5782,7 @@ ShallowWrapper {
                 "confirm": "Confirmar",
                 "datepickerPlaceholder": "Selecciona una fecha",
                 "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                 "save": "Guardar",
               },
               "petitionSummary": Object {
@@ -5820,6 +5868,7 @@ ShallowWrapper {
               "confirm": "Confirmar",
               "datepickerPlaceholder": "Selecciona una data",
               "errorEmptyDateOfBirth": "Has de seleccionar una data",
+              "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
               "save": "Desar",
             },
             "petitionSummary": Object {
@@ -5902,6 +5951,7 @@ ShallowWrapper {
               "confirm": "Confirm",
               "datepickerPlaceholder": "Select a date",
               "errorEmptyDateOfBirth": "You must select a date",
+              "errorSaveDateOfBirth": "Could not save the attribute",
               "save": "Save",
             },
             "petitionSummary": Object {
@@ -5984,6 +6034,7 @@ ShallowWrapper {
               "confirm": "Confirmar",
               "datepickerPlaceholder": "Selecciona una fecha",
               "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+              "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
               "save": "Guardar",
             },
             "petitionSummary": Object {
@@ -6122,6 +6173,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una data",
                         "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
@@ -6204,6 +6256,7 @@ ShallowWrapper {
                         "confirm": "Confirm",
                         "datepickerPlaceholder": "Select a date",
                         "errorEmptyDateOfBirth": "You must select a date",
+                        "errorSaveDateOfBirth": "Could not save the attribute",
                         "save": "Save",
                       },
                       "petitionSummary": Object {
@@ -6286,6 +6339,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una fecha",
                         "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
@@ -6423,6 +6477,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -6505,6 +6560,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -6587,6 +6643,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -6734,6 +6791,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -6816,6 +6874,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -6898,6 +6957,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -7040,6 +7100,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -7122,6 +7183,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -7204,6 +7266,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -7301,6 +7364,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una data",
                   "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
@@ -7383,6 +7447,7 @@ ShallowWrapper {
                   "confirm": "Confirm",
                   "datepickerPlaceholder": "Select a date",
                   "errorEmptyDateOfBirth": "You must select a date",
+                  "errorSaveDateOfBirth": "Could not save the attribute",
                   "save": "Save",
                 },
                 "petitionSummary": Object {
@@ -7465,6 +7530,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una fecha",
                   "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
@@ -7605,6 +7671,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -7687,6 +7754,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -7769,6 +7837,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -7910,6 +7979,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -7992,6 +8062,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -8074,6 +8145,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -8228,6 +8300,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -8310,6 +8383,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -8392,6 +8466,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -8529,6 +8604,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -8611,6 +8687,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -8693,6 +8770,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -8840,6 +8918,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una data",
                     "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                    "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
@@ -8922,6 +9001,7 @@ ShallowWrapper {
                     "confirm": "Confirm",
                     "datepickerPlaceholder": "Select a date",
                     "errorEmptyDateOfBirth": "You must select a date",
+                    "errorSaveDateOfBirth": "Could not save the attribute",
                     "save": "Save",
                   },
                   "petitionSummary": Object {
@@ -9004,6 +9084,7 @@ ShallowWrapper {
                     "confirm": "Confirmar",
                     "datepickerPlaceholder": "Selecciona una fecha",
                     "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                    "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
@@ -9146,6 +9227,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una data",
                   "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                  "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
@@ -9228,6 +9310,7 @@ ShallowWrapper {
                   "confirm": "Confirm",
                   "datepickerPlaceholder": "Select a date",
                   "errorEmptyDateOfBirth": "You must select a date",
+                  "errorSaveDateOfBirth": "Could not save the attribute",
                   "save": "Save",
                 },
                 "petitionSummary": Object {
@@ -9310,6 +9393,7 @@ ShallowWrapper {
                   "confirm": "Confirmar",
                   "datepickerPlaceholder": "Selecciona una fecha",
                   "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                  "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
@@ -9457,6 +9541,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una data",
                         "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                        "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
@@ -9539,6 +9624,7 @@ ShallowWrapper {
                         "confirm": "Confirm",
                         "datepickerPlaceholder": "Select a date",
                         "errorEmptyDateOfBirth": "You must select a date",
+                        "errorSaveDateOfBirth": "Could not save the attribute",
                         "save": "Save",
                       },
                       "petitionSummary": Object {
@@ -9621,6 +9707,7 @@ ShallowWrapper {
                         "confirm": "Confirmar",
                         "datepickerPlaceholder": "Selecciona una fecha",
                         "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                        "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
@@ -9758,6 +9845,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -9840,6 +9928,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -9922,6 +10011,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -10069,6 +10159,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una data",
                       "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                      "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
@@ -10151,6 +10242,7 @@ ShallowWrapper {
                       "confirm": "Confirm",
                       "datepickerPlaceholder": "Select a date",
                       "errorEmptyDateOfBirth": "You must select a date",
+                      "errorSaveDateOfBirth": "Could not save the attribute",
                       "save": "Save",
                     },
                     "petitionSummary": Object {
@@ -10233,6 +10325,7 @@ ShallowWrapper {
                       "confirm": "Confirmar",
                       "datepickerPlaceholder": "Selecciona una fecha",
                       "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                      "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
@@ -11265,6 +11358,7 @@ ShallowWrapper {
                 "confirm": "Confirmar",
                 "datepickerPlaceholder": "Selecciona una data",
                 "errorEmptyDateOfBirth": "Has de seleccionar una data",
+                "errorSaveDateOfBirth": "No s'ha pogut desar l'atribut",
                 "save": "Desar",
               },
               "petitionSummary": Object {
@@ -11347,6 +11441,7 @@ ShallowWrapper {
                 "confirm": "Confirm",
                 "datepickerPlaceholder": "Select a date",
                 "errorEmptyDateOfBirth": "You must select a date",
+                "errorSaveDateOfBirth": "Could not save the attribute",
                 "save": "Save",
               },
               "petitionSummary": Object {
@@ -11429,6 +11524,7 @@ ShallowWrapper {
                 "confirm": "Confirmar",
                 "datepickerPlaceholder": "Selecciona una fecha",
                 "errorEmptyDateOfBirth": "Debes seleccionar una fecha",
+                "errorSaveDateOfBirth": "No se ha podido guardar el atributo",
                 "save": "Guardar",
               },
               "petitionSummary": Object {

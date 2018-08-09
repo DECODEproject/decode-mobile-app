@@ -49,6 +49,10 @@ class NewDateOfBirthAttribute extends React.Component {
         <Text style={styles.dateOfBirthError}>
           {this.props.t('errorEmptyDateOfBirth')}
         </Text>}
+        {this.props.errorSaveDateOfBirth &&
+        <Text style={styles.dateOfBirthError}>
+          {this.props.t('errorSaveDateOfBirth')}
+        </Text>}
         <Button
           name={this.props.t('save')}
           onPress={() => this.props.saveDateOfBirth(this.state.dateOfBirth, this.props.walletId)}
@@ -65,6 +69,7 @@ NewDateOfBirthAttribute.propTypes = {
   minDate: PropTypes.instanceOf(Date),
   maxDate: PropTypes.instanceOf(Date),
   errorEmptyDateOfBirth: PropTypes.bool.isRequired,
+  errorSaveDateOfBirth: PropTypes.bool.isRequired,
   t: PropTypes.func.isRequired,
 };
 
@@ -76,6 +81,7 @@ NewDateOfBirthAttribute.defaultProps = {
 const mapStateToProps = state => ({
   walletId: state.wallet.id,
   errorEmptyDateOfBirth: state.attributes.errorEmptyDateOfBirth,
+  errorSaveDateOfBirth: state.attributes.errorSaveDateOfBirth,
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -23,6 +23,7 @@ export default {
     confirm: 'Confirmar',
     cancel: 'Cancelar',
     errorEmptyDateOfBirth: 'Debes seleccionar una fecha',
+    errorSaveDateOfBirth: 'No se ha podido guardar el atributo',
     save: 'Guardar',
   },
   petitionSummary: {

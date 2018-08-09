@@ -23,6 +23,7 @@ export default {
     confirm: 'Confirm',
     cancel: 'Cancel',
     errorEmptyDateOfBirth: 'You must select a date',
+    errorSaveDateOfBirth: 'Could not save the attribute',
     save: 'Save',
   },
   petitionSummary: {

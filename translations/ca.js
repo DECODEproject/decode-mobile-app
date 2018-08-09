@@ -23,6 +23,7 @@ export default {
     confirm: 'Confirmar',
     cancel: 'Cancel·lar',
     errorEmptyDateOfBirth: 'Has de seleccionar una data',
+    errorSaveDateOfBirth: 'No s\'ha pogut desar l\'atribut',
     save: 'Desar',
   },
   petitionSummary: {
