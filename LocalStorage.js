@@ -40,7 +40,7 @@ export const initialiseWalletID = async () => {
 };
 
 
-export const storePinOnAppInitalization = async (setItem, pin) => {
+export const storePinInPhone = async (setItem, pin) => {
   setItem('pincode', pin);
 };
 

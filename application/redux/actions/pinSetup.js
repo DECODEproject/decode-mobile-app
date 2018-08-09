@@ -1,5 +1,5 @@
 import types from '../actionTypes';
-import { storePinOnAppInitalization } from '../../../LocalStorage';
+import { storePinInPhone } from '../../../LocalStorage';
 import { goToHome } from './navigation';
 
 export function changeText1(pin) {
@@ -29,7 +29,7 @@ export function storePin(setItem, pin) {
     const { pinSetup: { valid } } = getState();
 
     if (valid) {
-      await storePinOnAppInitalization(setItem, pin);
+      await storePinInPhone(setItem, pin);
       dispatch(goToHome());
     }
   };
