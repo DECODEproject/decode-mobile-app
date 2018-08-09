@@ -83,9 +83,15 @@ export function saveDateOfBirth(dateOfBirth, walletId, setItemAsync) {
       });
     }
 
-    dispatch(addOptionalAttributeAction);
-    await dispatch(storeCredentials(setItemAsync));
-    dispatch(goToAttributesLanding());
-    return dispatch(saveDateOfBirthAction);
+    try {
+      dispatch(addOptionalAttributeAction);
+      await dispatch(storeCredentials(setItemAsync));
+      dispatch(goToAttributesLanding());
+      return dispatch(saveDateOfBirthAction);
+    } catch (error) {
+      return dispatch({
+        type: types.SAVE_DATE_OF_BIRTH_ERROR,
+      });
+    }
   };
 }

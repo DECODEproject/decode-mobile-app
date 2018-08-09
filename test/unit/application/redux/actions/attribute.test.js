@@ -247,6 +247,17 @@ describe('attribute action', () => {
       expect(store.getActions()[1]).toEqual(expectedAction);
     });
 
+    it('should return a SAVE_DATE_OF_BIRTH_ERROR action', async () => {
+      const setItemAsync = async () => { throw new Error('Fake error'); };
+      const expectedAction = {
+        type: types.SAVE_DATE_OF_BIRTH_ERROR,
+      };
+
+      await store.dispatch(saveDateOfBirth(someDateOfBirth, walletId, setItemAsync));
+
+      expect(store.getActions()[2]).toEqual(expectedAction);
+    });
+
     it('should return a RESET_DATE_OF_BIRTH_ERRORS action', async () => {
       const setItemAsync = async () => {};
       const expectedAction = {
