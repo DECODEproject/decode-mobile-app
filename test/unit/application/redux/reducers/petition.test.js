@@ -7,13 +7,22 @@ describe('petition reducer', () => {
     petition: {},
     error: undefined,
     signed: false,
-    petitionAttributes: [],
+    petitionAttributes: {
+      mandatory: [],
+      optional: [],
+    },
     enabledAttributes: ['schema:addressLocality'],
   };
 
   const initialStateWithPetition = {
     loaded: false,
-    petition: { id: 'someInitialPetition' },
+    petition: {
+      id: 'someInitialPetition',
+      attributes: {
+        mandatory: [],
+        optional: [],
+      },
+    },
     error: undefined,
     signed: false,
     enabledAttributes: [],
@@ -24,7 +33,13 @@ describe('petition reducer', () => {
   });
 
   it('should handle SET_PETITION', () => {
-    const newPetition = { id: 'newPetition' };
+    const newPetition = {
+      id: 'newPetition',
+      attributes: {
+        mandatory: [],
+        optional: [],
+      },
+    };
     const action = {
       type: types.SET_PETITION,
       petition: newPetition,
@@ -35,7 +50,10 @@ describe('petition reducer', () => {
       petition: newPetition,
       error: undefined,
       signed: false,
-      petitionAttributes: [],
+      petitionAttributes: {
+        mandatory: [],
+        optional: [],
+      },
       enabledAttributes: [],
     });
   });
@@ -63,7 +81,13 @@ describe('petition reducer', () => {
 
     expect(reducer(initialStateWithPetition, action)).toEqual({
       loaded: false,
-      petition: { id: 'someInitialPetition' },
+      petition: {
+        id: 'someInitialPetition',
+        attributes: {
+          mandatory: [],
+          optional: [],
+        },
+      },
       error: undefined,
       signed: true,
       enabledAttributes: [],
@@ -79,7 +103,13 @@ describe('petition reducer', () => {
 
     expect(reducer(initialStateWithPetition, action)).toEqual({
       loaded: false,
-      petition: { id: 'someInitialPetition' },
+      petition: {
+        id: 'someInitialPetition',
+        attributes: {
+          mandatory: [],
+          optional: [],
+        },
+      },
       error: someError,
       signed: false,
       enabledAttributes: [],
@@ -87,11 +117,6 @@ describe('petition reducer', () => {
   });
 
   describe('Merge wallet attributes with petition', () => {
-    const createPetitionWithAttr = attrs => ({
-      id: 'somePetitionWithAttributes',
-      attributes: attrs,
-    });
-
     const attrResidency = {
       predicate: 'schema:addressLocality',
       object: 'Barcelona',
@@ -107,7 +132,13 @@ describe('petition reducer', () => {
       scope: 'can-access',
     };
 
-    const petition = createPetitionWithAttr([attrResidency, attrAge]);
+    const petition = {
+      id: 'some-id',
+      attributes: {
+        mandatory: [attrResidency],
+        optional: [attrAge],
+      },
+    };
 
 
     it('should be empty if no wallet attributes', () => {
@@ -122,7 +153,10 @@ describe('petition reducer', () => {
         petition,
         error: undefined,
         signed: false,
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
         enabledAttributes: ['schema:addressLocality'],
       };
 
@@ -143,7 +177,10 @@ describe('petition reducer', () => {
         petition,
         error: undefined,
         signed: false,
-        petitionAttributes: [walletAttribute],
+        petitionAttributes: {
+          mandatory: [walletAttribute],
+          optional: [],
+        },
         enabledAttributes: ['schema:addressLocality'],
       };
 
@@ -151,7 +188,13 @@ describe('petition reducer', () => {
     });
 
     it('should not return addressLocality attribute when petition dont ask for it, even if we have it in the wallet', () => {
-      const petitionWithoutAddress = createPetitionWithAttr([]);
+      const petitionWithoutAddress = {
+        id: 'some-id',
+        attributes: {
+          mandatory: [],
+          optional: [],
+        },
+      };
 
       const initialStateWithAddress = {
         loaded: false,
@@ -174,7 +217,10 @@ describe('petition reducer', () => {
         petition: petitionWithoutAddress,
         error: undefined,
         signed: false,
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
         enabledAttributes: [],
       };
 
@@ -182,7 +228,17 @@ describe('petition reducer', () => {
     });
 
     it('should have DateOfBirth if asked, and in the wallet', () => {
-      const petitionWithDateOfBirth = createPetitionWithAttr([attrAge]);
+      const petitionWithDateOfBirth = {
+        id: 'some-id',
+        attributes: {
+          mandatory: [],
+          optional: [{
+            predicate: 'schema:dateOfBirth',
+            object: 'myself',
+            scope: 'can-access',
+          }],
+        },
+      };
       const initialStateWithAddress = {
         loaded: false,
         petition: petitionWithDateOfBirth,
@@ -204,7 +260,10 @@ describe('petition reducer', () => {
         petition: petitionWithDateOfBirth,
         error: undefined,
         signed: false,
-        petitionAttributes: [attrAge],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [attrAge],
+        },
       };
 
       expect(reducer(initialStateWithAddress, action)).toEqual(expectedState);
@@ -229,7 +288,10 @@ describe('petition reducer', () => {
         petition,
         error: undefined,
         signed: false,
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
       };
 
       expect(reducer(initialStateWithAddress, action)).toEqual(expectedState);
@@ -248,7 +310,10 @@ describe('petition reducer', () => {
         petition: {},
         error: undefined,
         signed: false,
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
         enabledAttributes: [],
       };
 
@@ -272,7 +337,10 @@ describe('petition reducer', () => {
         petition: {},
         error: undefined,
         signed: false,
-        petitionAttributes: [],
+        petitionAttributes: {
+          mandatory: [],
+          optional: [],
+        },
         enabledAttributes: [],
       };
 

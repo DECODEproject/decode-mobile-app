@@ -5,7 +5,10 @@ const initialState = {
   petition: {},
   error: undefined,
   signed: false,
-  petitionAttributes: [],
+  petitionAttributes: {
+    mandatory: [],
+    optional: [],
+  },
   enabledAttributes: ['schema:addressLocality'],
 };
 
@@ -35,7 +38,10 @@ export default function reducer(state = initialState, action) {
         loaded: true,
         petition,
         error: undefined,
-        petitionAttributes: matchPetitionAttrWithWallet(petition.attributes, walletAttributes),
+        petitionAttributes: {
+          mandatory: matchPetitionAttrWithWallet(petition.attributes.mandatory, walletAttributes),
+          optional: matchPetitionAttrWithWallet(petition.attributes.optional, walletAttributes),
+        },
       };
     }
     case types.SET_PETITION_ERROR:
@@ -65,8 +71,10 @@ export default function reducer(state = initialState, action) {
       const petitionAttributes = state.petition.attributes;
       return {
         ...state,
-        petitionAttributes:
-          matchPetitionAttrWithWallet(petitionAttributes, action.walletAttributes),
+        petitionAttributes: {
+          mandatory: matchPetitionAttrWithWallet(petitionAttributes, action.walletAttributes),
+          optional: matchPetitionAttrWithWallet(petitionAttributes, action.walletAttributes),
+        },
       };
     }
     default:
