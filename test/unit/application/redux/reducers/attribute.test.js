@@ -28,6 +28,7 @@ describe('attribute reducer', () => {
     expect(reducer(undefined, {})).toEqual({
       list: new Map(),
       errorEmptyDateOfBirth: false,
+      errorSaveDateOfBirth: false,
     });
   });
 
@@ -172,9 +173,24 @@ describe('attribute reducer', () => {
     });
   });
 
+  it('should handle SAVE_DATE_OF_BIRTH_ERROR triggers save date of birth error', () => {
+    const initialState = {
+      errorSaveDateOfBirth: false,
+    };
+
+    const action = {
+      type: types.SAVE_DATE_OF_BIRTH_ERROR,
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      errorSaveDateOfBirth: true,
+    });
+  });
+
   it('should handle RESET_DATE_OF_BIRTH_ERRORS resets error flags', () => {
     const initialState = {
       errorEmptyDateOfBirth: true,
+      errorSaveDateOfBirth: true,
     };
 
     const action = {
@@ -183,6 +199,7 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       errorEmptyDateOfBirth: false,
+      errorSaveDateOfBirth: false,
     });
   });
 });

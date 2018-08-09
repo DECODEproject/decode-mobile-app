@@ -3,6 +3,7 @@ import types from '../actionTypes';
 const initialState = {
   list: new Map(),
   errorEmptyDateOfBirth: false,
+  errorSaveDateOfBirth: false,
 };
 
 export default function reducer(state = initialState, action) {
@@ -39,10 +40,16 @@ export default function reducer(state = initialState, action) {
         ...state,
         errorEmptyDateOfBirth: true,
       };
+    case types.SAVE_DATE_OF_BIRTH_ERROR:
+      return {
+        ...state,
+        errorSaveDateOfBirth: true,
+      };
     case types.RESET_DATE_OF_BIRTH_ERRORS:
       return {
         ...state,
         errorEmptyDateOfBirth: false,
+        errorSaveDateOfBirth: false,
       };
     default:
       return state;
