@@ -18,6 +18,7 @@ describe('petition reducer', () => {
     petitionAttributes: {
       mandatory: [],
       optional: [],
+      missing: [],
     },
     enabledAttributes: ['schema:addressLocality'],
   };
@@ -49,6 +50,7 @@ describe('petition reducer', () => {
       petitionAttributes: {
         mandatory: [],
         optional: [],
+        missing: [],
       },
     });
   });
@@ -93,7 +95,7 @@ describe('petition reducer', () => {
     });
   });
 
-  describe('Merge wallet attributes with petition', () => {
+  describe('Merge wallet and petition attributes', () => {
     const attrResidency = {
       predicate: 'schema:addressLocality',
       object: 'Barcelona',
@@ -105,38 +107,42 @@ describe('petition reducer', () => {
 
     const attrAge = {
       predicate: 'schema:dateOfBirth',
-      object: 'myself',
+      object: '01/01/1900',
       scope: 'can-access',
     };
 
-    const petition = createPetition([attrResidency], [attrAge]);
+    const attrGender = {
+      predicate: 'schema:gender',
+      object: 'female',
+      scope: 'can-access',
+    };
 
-    it('should be empty if no wallet attributes', () => {
+    it('should return attributes as missing if asking for attributes that do not exist in the wallet', () => {
       const action = {
         type: types.SET_PETITION,
-        petition,
+        petition: createPetition([], [attrGender]),
         walletAttributes: new Map(),
       };
 
-      expect(reducer(initialState, action)).toEqual({
-        ...initialState,
+      expect(reducer(initialStateWithPetition, action)).toEqual({
+        ...initialStateWithPetition,
         loaded: true,
-        petition,
+        petition: createPetition([], [attrGender]),
         error: undefined,
         petitionAttributes: {
           mandatory: [],
           optional: [],
+          missing: [attrGender],
         },
       });
     });
 
     it('should return addressLocality attribute when petition ask for it', () => {
-      const walletAttribute = attrResidency;
-
+      const petition = createPetition([attrResidency]);
       const action = {
         type: types.SET_PETITION,
         petition,
-        walletAttributes: new Map([[walletAttribute.predicate, walletAttribute]]),
+        walletAttributes: new Map([[attrResidency.predicate, attrResidency]]),
       };
 
       expect(reducer(initialState, action)).toEqual({
@@ -145,13 +151,14 @@ describe('petition reducer', () => {
         petition,
         error: undefined,
         petitionAttributes: {
-          mandatory: [walletAttribute],
+          mandatory: [attrResidency],
           optional: [],
+          missing: [],
         },
       });
     });
 
-    it('should not return addressLocality attribute when petition dont ask for it, even if we have it in the wallet', () => {
+    it('should not return addressLocality attribute when petition does not ask for it, even if we have it in the wallet', () => {
       const petitionWithoutAddress = createPetition();
 
       const initialStateWithoutAddress = {
@@ -176,13 +183,14 @@ describe('petition reducer', () => {
         petitionAttributes: {
           mandatory: [],
           optional: [],
+          missing: [],
         },
       });
     });
 
     it('should have DateOfBirth if asked, and in the wallet', () => {
       const petitionWithDateOfBirth = createPetition([], [attrAge]);
-      const initialStateWithAddress = {
+      const initialStateWithDateOfBirth = {
         loaded: false,
         petition: petitionWithDateOfBirth,
         error: undefined,
@@ -198,50 +206,33 @@ describe('petition reducer', () => {
         ]),
       };
 
-      expect(reducer(initialStateWithAddress, action)).toEqual({
-        ...initialStateWithAddress,
+      expect(reducer(initialStateWithDateOfBirth, action)).toEqual({
+        ...initialStateWithDateOfBirth,
         loaded: true,
         petition: petitionWithDateOfBirth,
         error: undefined,
         petitionAttributes: {
           mandatory: [],
           optional: [attrAge],
+          missing: [],
         },
       });
-    });
-
-    it('should return empty if asking for attributes that do not exist in the wallet', () => {
-      const action = {
-        type: types.SET_PETITION,
-        petition,
-        walletAttributes: new Map(),
-      };
-
-      const expectedState = {
-        ...initialStateWithPetition,
-        loaded: true,
-        petition,
-        error: undefined,
-        petitionAttributes: {
-          mandatory: [],
-          optional: [],
-        },
-      };
-
-      expect(reducer(initialStateWithPetition, action)).toEqual(expectedState);
     });
   });
 
   describe('Toggle enabled attributes', () => {
     it('should handle TOGGLE_ENABLE_ATTRIBUTE sets the state with the attribute predicate value', () => {
+      const state = {
+        enabledAttributes: [],
+      };
+
       const action = {
         type: types.TOGGLE_ENABLE_ATTRIBUTE,
         attributeValue: 'schema:addressLocality',
       };
 
-      expect(reducer(initialState, action)).toEqual({
-        ...initialState,
-        enabledAttributes: [],
+      expect(reducer(state, action)).toEqual({
+        enabledAttributes: ['schema:addressLocality'],
       });
     });
 

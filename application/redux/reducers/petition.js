@@ -8,15 +8,33 @@ const initialState = {
   petitionAttributes: {
     mandatory: [],
     optional: [],
+    missing: [],
   },
   enabledAttributes: ['schema:addressLocality'],
 };
 
 const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
   if (!petitionAttrs) return [];
-  return petitionAttrs.filter(petitionAttr =>
-    walletAttrs.get(petitionAttr.predicate));
+  return petitionAttrs.filter(petitionAttr => walletAttrs.get(petitionAttr.predicate));
 };
+
+const findMissingAttr = (allPetitionAttrs, allMatchedAttrs) => {
+  if (!allPetitionAttrs) return [];
+  return allPetitionAttrs.filter(petitionAttr => !allMatchedAttrs.includes(petitionAttr));
+};
+
+const buildPetitionAttributes = (walletAttrs, petitionAttrs) => {
+  const mandatory = matchPetitionAttrWithWallet(petitionAttrs.mandatory, walletAttrs);
+  const optional = matchPetitionAttrWithWallet(petitionAttrs.optional, walletAttrs);
+
+  const allPetitionAttrs = petitionAttrs.mandatory.concat(petitionAttrs.optional);
+  const allMatchedAttrs = mandatory.concat(optional);
+
+  const missing = findMissingAttr(allPetitionAttrs, allMatchedAttrs);
+
+  return { mandatory, optional, missing };
+};
+
 
 const toggleElementsInList = (element, list) => {
   const indexOfElement = list.indexOf(element);
@@ -38,10 +56,7 @@ export default function reducer(state = initialState, action) {
         loaded: true,
         petition,
         error: undefined,
-        petitionAttributes: {
-          mandatory: matchPetitionAttrWithWallet(petition.attributes.mandatory, walletAttributes),
-          optional: matchPetitionAttrWithWallet(petition.attributes.optional, walletAttributes),
-        },
+        petitionAttributes: buildPetitionAttributes(walletAttributes, petition.attributes),
       };
     }
     case types.SET_PETITION_ERROR:
