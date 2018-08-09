@@ -30,11 +30,6 @@ const initialState = {
     id: 'something',
   },
   attributes: {
-    isRequiredAttributeEnabled: true,
-    optionalAttributesToggleStatus: {
-      age: false,
-      gender: false,
-    },
     list: new Map(),
   },
 };

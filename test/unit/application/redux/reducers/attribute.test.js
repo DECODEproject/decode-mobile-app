@@ -26,11 +26,6 @@ describe('attribute reducer', () => {
 
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({
-      isRequiredAttributeEnabled: true,
-      optionalAttributesToggleStatus: {
-        age: false,
-        gender: false,
-      },
       list: new Map(),
       errorEmptyDateOfBirth: false,
     });
@@ -38,7 +33,6 @@ describe('attribute reducer', () => {
 
   it('should handle ADD_CREDENTIAL_FROM_URL', () => {
     const initialState = {
-      isRequiredAttributeEnabled: true,
       list: new Map(),
     };
 
@@ -57,14 +51,12 @@ describe('attribute reducer', () => {
     };
 
     expect(reducer(initialState, action)).toEqual({
-      isRequiredAttributeEnabled: true,
       list: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
     });
   });
 
   it('should handle ADD_CREDENTIAL_FROM_URL when wallet already has another attribute', () => {
     const initialState = {
-      isRequiredAttributeEnabled: true,
       list: new Map([[amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute]]),
     };
 
@@ -82,7 +74,6 @@ describe('attribute reducer', () => {
       credential: barcelonaResidencyAttribute.provenance.credentials,
     };
     expect(reducer(initialState, action)).toEqual({
-      isRequiredAttributeEnabled: true,
       list: new Map([
         [amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute],
         [barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute],
@@ -92,7 +83,6 @@ describe('attribute reducer', () => {
 
   it('should handle ADD_CREDENTIAL_FROM_URL from a attribute that already is in the state', () => {
     const initialState = {
-      isRequiredAttributeEnabled: true,
       list: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
     };
 
@@ -111,14 +101,12 @@ describe('attribute reducer', () => {
     };
 
     expect(reducer(initialState, action)).toEqual({
-      isRequiredAttributeEnabled: true,
       list: new Map([[barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute]]),
     });
   });
 
   it('should handle LOAD_ATTRIBUTES sets the state with the credentials of the action', () => {
     const initialState = {
-      isRequiredAttributeEnabled: true,
       list: new Map([[amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute]]),
     };
     const action = {
@@ -130,48 +118,10 @@ describe('attribute reducer', () => {
     };
 
     expect(reducer(initialState, action)).toEqual({
-      isRequiredAttributeEnabled: true,
       list: new Map([
         [amsterdamResidencyAttribute.predicate, amsterdamResidencyAttribute],
         [barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute],
       ]),
-    });
-  });
-
-  it('should handle TOGGLE_REQUIRED_ATTRIBUTE sets the state with the updated isRequiredAttributeEnabled value', () => {
-    const initialState = {
-      isRequiredAttributeEnabled: true,
-      list: new Map(),
-    };
-    const action = {
-      type: types.TOGGLE_REQUIRED_ATTRIBUTE,
-      toggleValue: false,
-    };
-
-    expect(reducer(initialState, action)).toEqual({
-      isRequiredAttributeEnabled: false,
-      list: new Map(),
-    });
-  });
-
-  it('should handle TOGGLE_OPTIONAL_ATTRIBUTE sets the state with the updated optionalAttributesToggleStatus values', () => {
-    const initialState = {
-      optionalAttributesToggleStatus: {
-        age: false,
-        gender: false,
-      },
-    };
-    const action = {
-      type: types.TOGGLE_OPTIONAL_ATTRIBUTE,
-      attributeName: 'age',
-      toggleValue: true,
-    };
-
-    expect(reducer(initialState, action)).toEqual({
-      optionalAttributesToggleStatus: {
-        age: true,
-        gender: false,
-      },
     });
   });
 

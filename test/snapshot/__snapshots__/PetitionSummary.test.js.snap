@@ -5,27 +5,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PetitionSummary
-    attributes={
-      Object {
-        "isRequiredAttributeEnabled": true,
-        "list": Map {
-          "schema:addressLocality" => Object {
-            "object": "Barcelona",
-            "predicate": "schema:addressLocality",
-            "provenance": Object {
-              "credentials": "0123456789",
-              "source": "http://atlantis-decode.s3-website-eu-west-1.amazonaws.com",
-            },
-            "scope": "can-access",
-            "subject": "(Alpaca)",
-          },
-        },
-        "optionalAttributesToggleStatus": Object {
-          "age": false,
-          "gender": false,
-        },
-      }
-    }
     enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
@@ -12582,16 +12561,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PetitionSummary
-    attributes={
-      Object {
-        "isRequiredAttributeEnabled": true,
-        "list": Map {},
-        "optionalAttributesToggleStatus": Object {
-          "age": false,
-          "gender": false,
-        },
-      }
-    }
     enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}

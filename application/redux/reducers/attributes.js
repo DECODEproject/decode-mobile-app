@@ -1,11 +1,6 @@
 import types from '../actionTypes';
 
 const initialState = {
-  isRequiredAttributeEnabled: true,
-  optionalAttributesToggleStatus: {
-    age: false,
-    gender: false,
-  },
   list: new Map(),
   errorEmptyDateOfBirth: false,
 };
@@ -34,16 +29,6 @@ export default function reducer(state = initialState, action) {
         ...state,
         list: action.attributes,
       };
-    case types.TOGGLE_REQUIRED_ATTRIBUTE:
-      return {
-        ...state,
-        isRequiredAttributeEnabled: action.toggleValue,
-      };
-    case types.TOGGLE_OPTIONAL_ATTRIBUTE: {
-      const newState = { ...state };
-      newState.optionalAttributesToggleStatus[action.attributeName] = action.toggleValue;
-      return newState;
-    }
     case types.ADD_OPTIONAL_ATTRIBUTE:
       return {
         ...state,

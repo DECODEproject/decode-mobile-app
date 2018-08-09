@@ -19,6 +19,8 @@ import i18n from '../i18n';
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 
 const isAttributeEnable = (attr, enabledAttr) => enabledAttr.indexOf(attr.predicate) >= 0;
+const areAllMandatoryAttrsEnable = (enabledAttrs, mandatoryAttrs) =>
+  mandatoryAttrs.reduce((memo, attr) => memo && isAttributeEnable(attr, enabledAttrs), true);
 
 class PetitionSummary extends React.Component {
   static route = {
@@ -75,50 +77,58 @@ class PetitionSummary extends React.Component {
   />);
 
   render() {
-    const petitionAttributes = (
+    const {
+      enabledAttributes,
+      petitionAttributes,
+      petition,
+      petitionError,
+      t,
+      walletId,
+    } = this.props;
+    const petitionAttributesTemplate = (
       <View style={styles.petitionSummaryBox}>
-        <Text style={styles.petitionSummaryPetitionTitle}>{this.props.petition.title}</Text>
+        <Text style={styles.petitionSummaryPetitionTitle}>{petition.title}</Text>
         <Text style={styles.petitionDescription}>
-          {this.props.t('title')}
+          {t('title')}
         </Text>
         <Text>
-          {this.props.t('description')}
+          {t('description')}
         </Text>
-        { this.props.petitionAttributes.mandatory.map(this.renderAttribute) }
+        { petitionAttributes.mandatory.map(this.renderAttribute) }
         <Text>
-          {this.props.t('optional')}
+          {t('optional')}
         </Text>
-        { this.props.petitionAttributes.optional.map(this.renderAttribute) }
+        { petitionAttributes.optional.map(this.renderAttribute) }
       </View>
     );
-    const petitionError = (
+    const petitionErrorTemplate = (
       <View style={styles.petitionSummaryErrorBox}>
         <Text style={styles.petitionErrorTitle}>Error</Text>
-        <Text style={styles.petitionErrorDescription}>{this.props.petitionError}</Text>
+        <Text style={styles.petitionErrorDescription}>{petitionError}</Text>
       </View>
     );
     return (
       <View style={styles.petitionSummaryContainer}>
         <ScrollView>
-          { this.props.petitionError && petitionError }
+          { petitionError && petitionErrorTemplate }
           <View style={{ flex: 1 }}>
             <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
           </View>
-          { this.props.petition && petitionAttributes }
+          { petition && petitionAttributesTemplate }
         </ScrollView>
         <View style={{ flexDirection: 'row' }}>
           <Button
-            enabled={this.props.attributes.isRequiredAttributeEnabled}
-            onPress={() => { this.sign(this.props.petition, this.props.walletId, 'Yes'); }}
-            name={this.props.t('yes')}
+            enabled={areAllMandatoryAttrsEnable(enabledAttributes, petitionAttributes.mandatory)}
+            onPress={() => { this.sign(petition, walletId, 'Yes'); }}
+            name={t('yes')}
             style={{
               flex: 1,
             }}
           />
           <Button
-            enabled={this.props.attributes.isRequiredAttributeEnabled}
-            onPress={() => { this.sign(this.props.petition, this.props.walletId, 'No'); }}
-            name={this.props.t('no')}
+            enabled={areAllMandatoryAttrsEnable(enabledAttributes, petitionAttributes.mandatory)}
+            onPress={() => { this.sign(petition, walletId, 'No'); }}
+            name={t('no')}
             style={{
               flex: 1,
             }}
@@ -126,8 +136,8 @@ class PetitionSummary extends React.Component {
         </View>
         <Text
           style={styles.cancelSigningPetition}
-          onPress={() => openPetitionInBrowser(this.props.petition.id)}
-        >{this.props.t('cancel')}
+          onPress={() => openPetitionInBrowser(petition.id)}
+        >{t('cancel')}
         </Text>
       </View>);
   }
@@ -147,10 +157,6 @@ PetitionSummary.propTypes = {
   petitionError: PropTypes.string,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
-  attributes: PropTypes.shape({
-    list: PropTypes.instanceOf(Map),
-    isRequiredAttributeEnabled: PropTypes.bool,
-  }).isRequired,
   signPetition: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
   toggleEnableAttribute: PropTypes.func.isRequired,
@@ -176,7 +182,6 @@ const mapStateToProps = state => ({
   petitionAttributes: state.petition.petitionAttributes,
   enabledAttributes: state.petition.enabledAttributes,
   walletId: state.wallet.id,
-  attributes: state.attributes,
   signSuccess: state.signSuccess,
 });
 

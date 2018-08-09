@@ -60,16 +60,11 @@ describe('signing a petition', () => {
         },
         enabledAttributes: [],
         petitionAttributes: {
-          mandatory: [],
+          mandatory: [{ predicate: 'schema:addressLocality' }],
           optional: [],
         },
       },
       attributes: {
-        isRequiredAttributeEnabled: false,
-        optionalAttributesToggleStatus: {
-          age: false,
-          gender: false,
-        },
         // AND I do not have a required attribute
         list: new Map(),
       },
@@ -107,11 +102,6 @@ describe('signing a petition', () => {
         },
       },
       attributes: {
-        isRequiredAttributeEnabled: true,
-        optionalAttributesToggleStatus: {
-          age: false,
-          gender: false,
-        },
         // AND I do not have a required attribute
         list: new Map(),
       },
@@ -150,11 +140,6 @@ describe('signing a petition', () => {
         },
       },
       attributes: {
-        isRequiredAttributeEnabled: true,
-        optionalAttributesToggleStatus: {
-          age: false,
-          gender: false,
-        },
         // AND I do not have a required attribute
         list: new Map(),
       },

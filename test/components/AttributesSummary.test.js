@@ -27,11 +27,6 @@ describe('The AttributesSummary page', () => {
       petition: {},
     },
     attributes: {
-      isRequiredAttributeEnabled: false,
-      optionalAttributesToggleStatus: {
-        age: false,
-        gender: false,
-      },
       list: new Map(),
     },
     wallet: {
