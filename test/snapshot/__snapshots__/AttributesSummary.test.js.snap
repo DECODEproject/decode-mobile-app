@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The AttributesSummary page when rendered should match this snapshot 1`] = `
+exports[`renders AttributesSummary component 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -343,17 +343,11 @@ ShallowWrapper {
         "observers": Object {
           "initialized": Array [
             [Function],
-            [Function],
-            [Function],
           ],
           "languageChanged": Array [
             [Function],
-            [Function],
-            [Function],
           ],
           "loaded": Array [
-            [Function],
-            [Function],
             [Function],
           ],
         },

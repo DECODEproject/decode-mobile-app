@@ -32,8 +32,7 @@ class AttributesSummary extends React.Component {
   handleRedirect = async (event) => {
     const { url } = event;
     const { petition, walletId } = this.props;
-
-    await this.props.addCredential(petition.attributes[0], walletId, url);
+    await this.props.addCredential(petition.attributes.mandatory[0], walletId, url);
     await this.props.goToPetitionSummary(this.props.petitionLink);
     WebBrowser.dismissBrowser();
   };
