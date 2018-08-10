@@ -20,19 +20,30 @@ describe('getPetition', () => {
   });
 
   it('should dispatch successful action', () => {
-    const newPetition = {
+    const petitionFromDecidim = {
       petition: {
         id: '2',
+        attributes: {
+          mandatory: [{
+            predicate: 'schema:addressLocality',
+            object: 'Barcelona',
+            scope: 'can-access',
+            credentialIssuer: {
+              url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+            },
+          }],
+          optional: [],
+        },
       },
     };
 
     const expectedActions = [{
       type: types.SET_PETITION,
-      petition: newPetition,
+      petition: petitionFromDecidim,
       walletAttributes: new Map(),
     }];
 
-    fetchMock.getOnce(petitionLink, newPetition);
+    fetchMock.getOnce(petitionLink, petitionFromDecidim);
 
     return store.dispatch(getPetition(petitionLink)).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
