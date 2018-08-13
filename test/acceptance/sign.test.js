@@ -12,16 +12,6 @@ Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureMockStore([thunk]);
 
-
-// global.document = jsdom('');
-// global.window = document.defaultView;
-//
-// Object.keys(document.defaultView).forEach((property) => {
-//   if (typeof global[property] === 'undefined') {
-//     global[property] = document.defaultView[property];
-//   }
-// });
-
 describe('signing a petition', () => {
   let initialState;
   let store;
@@ -62,6 +52,7 @@ describe('signing a petition', () => {
         petitionAttributes: {
           mandatory: [{ predicate: 'schema:addressLocality' }],
           optional: [],
+          missing: [],
         },
       },
       attributes: {
@@ -99,6 +90,7 @@ describe('signing a petition', () => {
         petitionAttributes: {
           mandatory: [],
           optional: [],
+          missing: [],
         },
       },
       attributes: {
@@ -137,6 +129,7 @@ describe('signing a petition', () => {
         petitionAttributes: {
           mandatory: [],
           optional: [],
+          missing: [],
         },
       },
       attributes: {

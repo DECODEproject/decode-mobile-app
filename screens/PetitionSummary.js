@@ -69,12 +69,15 @@ class PetitionSummary extends React.Component {
     });
   }
 
-  renderAttribute = attr => (<AttributeComponent
-    key={attr.predicate}
-    toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
-    isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
-    name={`${this.props.t(attr.predicate)} - ${this.props.t(attr.object)}`}
-  />);
+  renderAttribute = (attr, isMandatory) => (
+    <AttributeComponent
+      key={attr.predicate}
+      isMandatory={isMandatory}
+      toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
+      isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
+      name={`${this.props.t(attr.predicate)} - ${this.props.t(attr.object)}`}
+    />
+  )
 
   render() {
     const {
@@ -94,11 +97,12 @@ class PetitionSummary extends React.Component {
         <Text>
           {t('description')}
         </Text>
-        { petitionAttributes.mandatory.map(this.renderAttribute) }
+        { petitionAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
         <Text>
           {t('optional')}
         </Text>
-        { petitionAttributes.optional.map(this.renderAttribute) }
+        { petitionAttributes.optional.map(attr => this.renderAttribute(attr)) }
+        { petitionAttributes.missing.map(attr => this.renderAttribute(attr)) }
       </View>
     );
     const petitionErrorTemplate = (
@@ -172,6 +176,7 @@ PetitionSummary.defaultProps = {
   petitionAttributes: {
     mandatory: [],
     optional: [],
+    missing: [],
   },
 };
 

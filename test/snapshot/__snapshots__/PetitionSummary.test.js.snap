@@ -11602,6 +11602,7 @@ ShallowWrapper {
     petitionAttributes={
       Object {
         "mandatory": Array [],
+        "missing": Array [],
         "optional": Array [],
       }
     }
@@ -11947,6 +11948,7 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>,
+                Array [],
                 Array [],
               ],
               "style": Object {
@@ -12452,6 +12454,7 @@ ShallowWrapper {
                   >
                     Datos opcionales para compartir: 
                   </Text>,
+                  Array [],
                   Array [],
                 ],
                 "style": Object {
@@ -24251,6 +24254,7 @@ ShallowWrapper {
     petitionAttributes={
       Object {
         "mandatory": Array [],
+        "missing": Array [],
         "optional": Array [],
       }
     }
@@ -24596,6 +24600,7 @@ ShallowWrapper {
                 >
                   Datos opcionales para compartir: 
                 </Text>,
+                Array [],
                 Array [],
               ],
               "style": Object {
@@ -25101,6 +25106,7 @@ ShallowWrapper {
                   >
                     Datos opcionales para compartir: 
                   </Text>,
+                  Array [],
                   Array [],
                 ],
                 "style": Object {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from 'react-native';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import Enzyme, { shallow } from 'enzyme';
@@ -21,6 +22,7 @@ describe('The PetitionSummary page', () => {
       petitionAttributes: {
         mandatory: [],
         optional: [],
+        missing: [],
       },
       enabledAttributes: [],
     },
@@ -68,6 +70,7 @@ describe('The PetitionSummary page', () => {
             },
           }],
           optional: [],
+          missing: [],
         },
         enabledAttributes: [],
       },
@@ -100,6 +103,7 @@ describe('The PetitionSummary page', () => {
           optional: [{
             predicate: 'schema:DateOfBirth',
           }],
+          missing: [],
         },
         enabledAttributes: [],
       },
@@ -119,8 +123,7 @@ describe('The PetitionSummary page', () => {
 
     expect(attributeWrapper).toHaveLength(1);
   });
-
-  it('should have the attribute disable if it is not inside the enableAttributes', () => {
+  describe('disabled attribute ', () => {
     const initialStateWithAttribute = {
       petition: {
         loaded: false,
@@ -128,10 +131,11 @@ describe('The PetitionSummary page', () => {
         error: undefined,
         signed: false,
         petitionAttributes: {
-          mandatory: [],
-          optional: [{
+          mandatory: [{
             predicate: 'schema:DateOfBirth',
           }],
+          optional: [],
+          missing: [],
         },
         enabledAttributes: [],
       },
@@ -149,8 +153,17 @@ describe('The PetitionSummary page', () => {
 
     const attributeWrapper = wrapper.dive().find(AttributeComponent);
 
-    expect(attributeWrapper.first().prop('isEnabled')).toEqual(false);
+    it('should not have the attribute listed inside the enableAttributes', () => {
+      expect(attributeWrapper.first().prop('isEnabled')).toEqual(false);
+    });
+
+    it('should show error text if the attribute is mandatory', () => {
+      expect(attributeWrapper.first().prop('isMandatory')).toEqual(true);
+      expect(attributeWrapper.dive().find(Text).findWhere(n => n.text() === `You must consent to sharing your status as a Barcelona resident or
+      you cannot sign this petition. This information is anonymous.`));
+    });
   });
+
   it('should have the attribute enables if it is inside the enableAttributes', () => {
     const initialStateWithAttribute = {
       petition: {
@@ -163,6 +176,7 @@ describe('The PetitionSummary page', () => {
           optional: [{
             predicate: 'schema:DateOfBirth',
           }],
+          missing: [],
         },
         enabledAttributes: ['schema:DateOfBirth'],
       },
@@ -200,6 +214,7 @@ describe('The PetitionSummary page', () => {
             },
           }],
           optional: [],
+          missing: [],
         },
         enabledAttributes: [],
       },

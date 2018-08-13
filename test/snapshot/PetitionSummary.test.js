@@ -24,6 +24,7 @@ const initialState = {
     petitionAttributes: {
       mandatory: [],
       optional: [],
+      missing: [],
     },
   },
   wallet: {
