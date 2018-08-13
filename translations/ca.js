@@ -29,13 +29,10 @@ export default {
   petitionSummary: {
     title: 'Per firmar aquesta petició, tens que compartir la següent informació',
     description: 'Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.',
-    ageAttribute: 'Edat (20-29)',
-    genderAttribute: 'Sexe (Dona)',
     yes: 'Si',
     no: 'No',
     cancel: 'O, cancelar la participació en aquesta peticiió',
     optional: 'Dades opcionals a compartir',
-    mandatory: '(obligat)',
   },
   pinSetup: {
     placeholderPin1: ' Almenys 4 digits',
@@ -79,5 +76,6 @@ export default {
   schema: {
     addressLocality: 'Residencia',
     dateOfBirth: 'Edat',
+    gender: 'Gènere',
   },
 };

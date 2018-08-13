@@ -94,11 +94,8 @@ ShallowWrapper {
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                  "genderAttribute": "Sexe (Dona)",
-                  "mandatory": "(obligat)",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
                   "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -118,6 +115,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Residencia",
                   "dateOfBirth": "Edat",
+                  "gender": "Gènere",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Tornar a Decidim",
@@ -177,7 +175,6 @@ ShallowWrapper {
                   "save": "Save",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
@@ -259,11 +256,8 @@ ShallowWrapper {
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edad (20-29)",
                   "cancel": "O, cancelar participación en esta petición",
                   "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                  "genderAttribute": "Sexo (Mujer)",
-                  "mandatory": "(requerido)",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
                   "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -283,6 +277,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
                   "dateOfBirth": "Edad",
+                  "gender": "Género",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Volver a Decidim",
@@ -418,11 +413,8 @@ ShallowWrapper {
                 "save": "Desar",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
                 "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                "genderAttribute": "Sexe (Dona)",
-                "mandatory": "(obligat)",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
                 "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -442,6 +434,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Residencia",
                 "dateOfBirth": "Edat",
+                "gender": "Gènere",
               },
               "signOutcome": Object {
                 "backDecidim": "Tornar a Decidim",
@@ -501,7 +494,6 @@ ShallowWrapper {
                 "save": "Save",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
@@ -583,11 +575,8 @@ ShallowWrapper {
                 "save": "Guardar",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Edad (20-29)",
                 "cancel": "O, cancelar participación en esta petición",
                 "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                "genderAttribute": "Sexo (Mujer)",
-                "mandatory": "(requerido)",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
                 "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -607,6 +596,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Estado de Residencia",
                 "dateOfBirth": "Edad",
+                "gender": "Género",
               },
               "signOutcome": Object {
                 "backDecidim": "Volver a Decidim",
@@ -734,11 +724,8 @@ ShallowWrapper {
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                        "genderAttribute": "Sexe (Dona)",
-                        "mandatory": "(obligat)",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
                         "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -758,6 +745,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Residencia",
                         "dateOfBirth": "Edat",
+                        "gender": "Gènere",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Tornar a Decidim",
@@ -817,7 +805,6 @@ ShallowWrapper {
                         "save": "Save",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
@@ -899,11 +886,8 @@ ShallowWrapper {
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edad (20-29)",
                         "cancel": "O, cancelar participación en esta petición",
                         "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                        "genderAttribute": "Sexo (Mujer)",
-                        "mandatory": "(requerido)",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
                         "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -923,6 +907,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
                         "dateOfBirth": "Edad",
+                        "gender": "Género",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Volver a Decidim",
@@ -1037,11 +1022,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -1061,6 +1043,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -1120,7 +1103,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -1202,11 +1184,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -1226,6 +1205,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -1350,11 +1330,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -1374,6 +1351,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -1433,7 +1411,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -1515,11 +1492,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -1539,6 +1513,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -1658,11 +1633,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -1682,6 +1654,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -1741,7 +1714,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -1823,11 +1795,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -1847,6 +1816,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -1921,11 +1891,8 @@ ShallowWrapper {
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                  "genderAttribute": "Sexe (Dona)",
-                  "mandatory": "(obligat)",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
                   "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -1945,6 +1912,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Residencia",
                   "dateOfBirth": "Edat",
+                  "gender": "Gènere",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Tornar a Decidim",
@@ -2004,7 +1972,6 @@ ShallowWrapper {
                   "save": "Save",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
@@ -2086,11 +2053,8 @@ ShallowWrapper {
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edad (20-29)",
                   "cancel": "O, cancelar participación en esta petición",
                   "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                  "genderAttribute": "Sexo (Mujer)",
-                  "mandatory": "(requerido)",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
                   "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -2110,6 +2074,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
                   "dateOfBirth": "Edad",
+                  "gender": "Género",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Volver a Decidim",
@@ -2227,11 +2192,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -2251,6 +2213,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -2310,7 +2273,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -2392,11 +2354,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -2416,6 +2375,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -2534,11 +2494,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -2558,6 +2515,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -2617,7 +2575,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -2699,11 +2656,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -2723,6 +2677,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -2861,11 +2816,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -2885,6 +2837,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -2944,7 +2897,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -3026,11 +2978,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -3050,6 +2999,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -3164,11 +3114,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -3188,6 +3135,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -3247,7 +3195,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -3329,11 +3276,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -3353,6 +3297,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -3476,11 +3421,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -3500,6 +3442,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -3559,7 +3502,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -3641,11 +3583,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -3665,6 +3604,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -3791,11 +3731,8 @@ ShallowWrapper {
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                        "genderAttribute": "Sexe (Dona)",
-                        "mandatory": "(obligat)",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
                         "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -3815,6 +3752,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Residencia",
                         "dateOfBirth": "Edat",
+                        "gender": "Gènere",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Tornar a Decidim",
@@ -3874,7 +3812,6 @@ ShallowWrapper {
                         "save": "Save",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
@@ -3956,11 +3893,8 @@ ShallowWrapper {
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edad (20-29)",
                         "cancel": "O, cancelar participación en esta petición",
                         "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                        "genderAttribute": "Sexo (Mujer)",
-                        "mandatory": "(requerido)",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
                         "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -3980,6 +3914,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
                         "dateOfBirth": "Edad",
+                        "gender": "Género",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Volver a Decidim",
@@ -4094,11 +4029,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -4118,6 +4050,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -4177,7 +4110,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -4259,11 +4191,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -4283,6 +4212,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -4407,11 +4337,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -4431,6 +4358,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -4490,7 +4418,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -4572,11 +4499,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -4596,6 +4520,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -5605,11 +5530,8 @@ ShallowWrapper {
                 "save": "Desar",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
                 "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                "genderAttribute": "Sexe (Dona)",
-                "mandatory": "(obligat)",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
                 "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -5629,6 +5551,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Residencia",
                 "dateOfBirth": "Edat",
+                "gender": "Gènere",
               },
               "signOutcome": Object {
                 "backDecidim": "Tornar a Decidim",
@@ -5688,7 +5611,6 @@ ShallowWrapper {
                 "save": "Save",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
@@ -5770,11 +5692,8 @@ ShallowWrapper {
                 "save": "Guardar",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Edad (20-29)",
                 "cancel": "O, cancelar participación en esta petición",
                 "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                "genderAttribute": "Sexo (Mujer)",
-                "mandatory": "(requerido)",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
                 "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -5794,6 +5713,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Estado de Residencia",
                 "dateOfBirth": "Edad",
+                "gender": "Género",
               },
               "signOutcome": Object {
                 "backDecidim": "Volver a Decidim",
@@ -5856,11 +5776,8 @@ ShallowWrapper {
               "save": "Desar",
             },
             "petitionSummary": Object {
-              "ageAttribute": "Edat (20-29)",
               "cancel": "O, cancelar la participació en aquesta peticiió",
               "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-              "genderAttribute": "Sexe (Dona)",
-              "mandatory": "(obligat)",
               "no": "No",
               "optional": "Dades opcionals a compartir",
               "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -5880,6 +5797,7 @@ ShallowWrapper {
             "schema": Object {
               "addressLocality": "Residencia",
               "dateOfBirth": "Edat",
+              "gender": "Gènere",
             },
             "signOutcome": Object {
               "backDecidim": "Tornar a Decidim",
@@ -5939,7 +5857,6 @@ ShallowWrapper {
               "save": "Save",
             },
             "petitionSummary": Object {
-              "ageAttribute": "Age (20-29)",
               "cancel": "Or, cancel signing this petition",
               "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
               "no": "No",
@@ -6021,11 +5938,8 @@ ShallowWrapper {
               "save": "Guardar",
             },
             "petitionSummary": Object {
-              "ageAttribute": "Edad (20-29)",
               "cancel": "O, cancelar participación en esta petición",
               "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-              "genderAttribute": "Sexo (Mujer)",
-              "mandatory": "(requerido)",
               "no": "No",
               "optional": "Datos opcionales para compartir: ",
               "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -6045,6 +5959,7 @@ ShallowWrapper {
             "schema": Object {
               "addressLocality": "Estado de Residencia",
               "dateOfBirth": "Edad",
+              "gender": "Género",
             },
             "signOutcome": Object {
               "backDecidim": "Volver a Decidim",
@@ -6160,11 +6075,8 @@ ShallowWrapper {
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                        "genderAttribute": "Sexe (Dona)",
-                        "mandatory": "(obligat)",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
                         "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -6184,6 +6096,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Residencia",
                         "dateOfBirth": "Edat",
+                        "gender": "Gènere",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Tornar a Decidim",
@@ -6243,7 +6156,6 @@ ShallowWrapper {
                         "save": "Save",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
@@ -6325,11 +6237,8 @@ ShallowWrapper {
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edad (20-29)",
                         "cancel": "O, cancelar participación en esta petición",
                         "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                        "genderAttribute": "Sexo (Mujer)",
-                        "mandatory": "(requerido)",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
                         "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -6349,6 +6258,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
                         "dateOfBirth": "Edad",
+                        "gender": "Género",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Volver a Decidim",
@@ -6463,11 +6373,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -6487,6 +6394,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -6546,7 +6454,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -6628,11 +6535,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -6652,6 +6556,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -6776,11 +6681,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -6800,6 +6702,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -6859,7 +6762,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -6941,11 +6843,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -6965,6 +6864,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -7084,11 +6984,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -7108,6 +7005,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -7167,7 +7065,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -7249,11 +7146,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -7273,6 +7167,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -7347,11 +7242,8 @@ ShallowWrapper {
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                  "genderAttribute": "Sexe (Dona)",
-                  "mandatory": "(obligat)",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
                   "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -7371,6 +7263,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Residencia",
                   "dateOfBirth": "Edat",
+                  "gender": "Gènere",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Tornar a Decidim",
@@ -7430,7 +7323,6 @@ ShallowWrapper {
                   "save": "Save",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
@@ -7512,11 +7404,8 @@ ShallowWrapper {
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edad (20-29)",
                   "cancel": "O, cancelar participación en esta petición",
                   "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                  "genderAttribute": "Sexo (Mujer)",
-                  "mandatory": "(requerido)",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
                   "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -7536,6 +7425,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
                   "dateOfBirth": "Edad",
+                  "gender": "Género",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Volver a Decidim",
@@ -7653,11 +7543,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -7677,6 +7564,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -7736,7 +7624,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -7818,11 +7705,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -7842,6 +7726,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -7960,11 +7845,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -7984,6 +7866,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -8043,7 +7926,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -8125,11 +8007,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -8149,6 +8028,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -8280,11 +8160,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -8304,6 +8181,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -8363,7 +8241,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -8445,11 +8322,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -8469,6 +8343,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -8583,11 +8458,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -8607,6 +8479,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -8666,7 +8539,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -8748,11 +8620,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -8772,6 +8641,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -8896,11 +8766,8 @@ ShallowWrapper {
                     "save": "Desar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edat (20-29)",
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                    "genderAttribute": "Sexe (Dona)",
-                    "mandatory": "(obligat)",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
                     "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -8920,6 +8787,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Residencia",
                     "dateOfBirth": "Edat",
+                    "gender": "Gènere",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Tornar a Decidim",
@@ -8979,7 +8847,6 @@ ShallowWrapper {
                     "save": "Save",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
@@ -9061,11 +8928,8 @@ ShallowWrapper {
                     "save": "Guardar",
                   },
                   "petitionSummary": Object {
-                    "ageAttribute": "Edad (20-29)",
                     "cancel": "O, cancelar participación en esta petición",
                     "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                    "genderAttribute": "Sexo (Mujer)",
-                    "mandatory": "(requerido)",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
                     "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -9085,6 +8949,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
                     "dateOfBirth": "Edad",
+                    "gender": "Género",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Volver a Decidim",
@@ -9204,11 +9069,8 @@ ShallowWrapper {
                   "save": "Desar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edat (20-29)",
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                  "genderAttribute": "Sexe (Dona)",
-                  "mandatory": "(obligat)",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
                   "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -9228,6 +9090,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Residencia",
                   "dateOfBirth": "Edat",
+                  "gender": "Gènere",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Tornar a Decidim",
@@ -9287,7 +9150,6 @@ ShallowWrapper {
                   "save": "Save",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
@@ -9369,11 +9231,8 @@ ShallowWrapper {
                   "save": "Guardar",
                 },
                 "petitionSummary": Object {
-                  "ageAttribute": "Edad (20-29)",
                   "cancel": "O, cancelar participación en esta petición",
                   "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                  "genderAttribute": "Sexo (Mujer)",
-                  "mandatory": "(requerido)",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
                   "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -9393,6 +9252,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
                   "dateOfBirth": "Edad",
+                  "gender": "Género",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Volver a Decidim",
@@ -9517,11 +9377,8 @@ ShallowWrapper {
                         "save": "Desar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edat (20-29)",
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                        "genderAttribute": "Sexe (Dona)",
-                        "mandatory": "(obligat)",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
                         "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -9541,6 +9398,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Residencia",
                         "dateOfBirth": "Edat",
+                        "gender": "Gènere",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Tornar a Decidim",
@@ -9600,7 +9458,6 @@ ShallowWrapper {
                         "save": "Save",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
@@ -9682,11 +9539,8 @@ ShallowWrapper {
                         "save": "Guardar",
                       },
                       "petitionSummary": Object {
-                        "ageAttribute": "Edad (20-29)",
                         "cancel": "O, cancelar participación en esta petición",
                         "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                        "genderAttribute": "Sexo (Mujer)",
-                        "mandatory": "(requerido)",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
                         "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -9706,6 +9560,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
                         "dateOfBirth": "Edad",
+                        "gender": "Género",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Volver a Decidim",
@@ -9820,11 +9675,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -9844,6 +9696,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -9903,7 +9756,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -9985,11 +9837,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -10009,6 +9858,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -10133,11 +9983,8 @@ ShallowWrapper {
                       "save": "Desar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edat (20-29)",
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                      "genderAttribute": "Sexe (Dona)",
-                      "mandatory": "(obligat)",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
                       "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -10157,6 +10004,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Residencia",
                       "dateOfBirth": "Edat",
+                      "gender": "Gènere",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Tornar a Decidim",
@@ -10216,7 +10064,6 @@ ShallowWrapper {
                       "save": "Save",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
@@ -10298,11 +10145,8 @@ ShallowWrapper {
                       "save": "Guardar",
                     },
                     "petitionSummary": Object {
-                      "ageAttribute": "Edad (20-29)",
                       "cancel": "O, cancelar participación en esta petición",
                       "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                      "genderAttribute": "Sexo (Mujer)",
-                      "mandatory": "(requerido)",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
                       "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -10322,6 +10166,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
                       "dateOfBirth": "Edad",
+                      "gender": "Género",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Volver a Decidim",
@@ -11331,11 +11176,8 @@ ShallowWrapper {
                 "save": "Desar",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Edat (20-29)",
                 "cancel": "O, cancelar la participació en aquesta peticiió",
                 "description": "Aquesta informació esta anomitzada, Decidim no rebrà cap dade que et pogui identificar.",
-                "genderAttribute": "Sexe (Dona)",
-                "mandatory": "(obligat)",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
                 "title": "Per firmar aquesta petició, tens que compartir la següent informació",
@@ -11355,6 +11197,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Residencia",
                 "dateOfBirth": "Edat",
+                "gender": "Gènere",
               },
               "signOutcome": Object {
                 "backDecidim": "Tornar a Decidim",
@@ -11414,7 +11257,6 @@ ShallowWrapper {
                 "save": "Save",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
@@ -11496,11 +11338,8 @@ ShallowWrapper {
                 "save": "Guardar",
               },
               "petitionSummary": Object {
-                "ageAttribute": "Edad (20-29)",
                 "cancel": "O, cancelar participación en esta petición",
                 "description": "Esta información esta anonimizada, Decidim no recibirá ningun dato que te pueda identificar personalmente.",
-                "genderAttribute": "Sexo (Mujer)",
-                "mandatory": "(requerido)",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
                 "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
@@ -11520,6 +11359,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Estado de Residencia",
                 "dateOfBirth": "Edad",
+                "gender": "Género",
               },
               "signOutcome": Object {
                 "backDecidim": "Volver a Decidim",
