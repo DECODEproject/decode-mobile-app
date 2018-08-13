@@ -35,10 +35,10 @@ export function signPetitionError(error) {
   };
 }
 
-export function toggleEnableAttribute(attributeValue) {
+export function toggleEnableAttribute(attribute) {
   return dispatch => dispatch({
     type: types.TOGGLE_ENABLE_ATTRIBUTE,
-    attributeValue,
+    attribute,
   });
 }
 

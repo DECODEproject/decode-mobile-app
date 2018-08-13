@@ -40,7 +40,6 @@ describe('signing a petition', () => {
   it('should not allow me to sign if required attributes are not there', () => {
     const state = {
       ...initialState,
-      // GIVEN a petition with X attributes
       petition: {
         petition: {
           title: 'hello',
@@ -56,7 +55,6 @@ describe('signing a petition', () => {
         },
       },
       attributes: {
-        // AND I do not have a required attribute
         list: new Map(),
       },
     };
@@ -64,13 +62,11 @@ describe('signing a petition', () => {
 
     store = mockStore(state);
 
-    // WHEN I review the petition
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
       .shallow({ context: { store } });
 
-    // THEN I am not able to sign
     expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(false);
   });
 

@@ -10,17 +10,22 @@ const initialState = {
     optional: [],
     missing: [],
   },
-  enabledAttributes: ['schema:addressLocality'],
+  enabledAttributes: [{ predicate: 'schema:addressLocality' }],
 };
 
 const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
   if (!petitionAttrs) return [];
-  return petitionAttrs.filter(petitionAttr => walletAttrs.get(petitionAttr.predicate));
+  const matchedAttrs = [];
+  petitionAttrs.forEach((attr) => {
+    if (walletAttrs.get(attr.predicate)) matchedAttrs.push(walletAttrs.get(attr.predicate));
+  });
+  return matchedAttrs;
 };
 
 const findMissingAttr = (allPetitionAttrs, allMatchedAttrs) => {
   if (!allPetitionAttrs) return [];
-  return allPetitionAttrs.filter(petitionAttr => !allMatchedAttrs.includes(petitionAttr));
+  return allPetitionAttrs.filter(attr =>
+    !allMatchedAttrs.find(matchAttr => matchAttr.predicate === attr.predicate));
 };
 
 const buildPetitionAttributes = (walletAttrs, petitionAttrs) => {
@@ -35,14 +40,15 @@ const buildPetitionAttributes = (walletAttrs, petitionAttrs) => {
   return { mandatory, optional, missing };
 };
 
+const getAttributeIndex = (attr, list) => (
+  list.findIndex(listAttr => listAttr.predicate === attr.predicate));
 
 const toggleElementsInList = (element, list) => {
-  const indexOfElement = list.indexOf(element);
-
-  if (indexOfElement === -1) {
-    list.push(element);
-  } else {
+  const indexOfElement = getAttributeIndex(element, list);
+  if (indexOfElement !== -1) {
     list.splice(indexOfElement, 1);
+  } else {
+    list.push(element);
   }
   return list.slice(0);
 };
@@ -80,7 +86,7 @@ export default function reducer(state = initialState, action) {
     case types.TOGGLE_ENABLE_ATTRIBUTE:
       return {
         ...state,
-        enabledAttributes: toggleElementsInList(action.attributeValue, state.enabledAttributes),
+        enabledAttributes: toggleElementsInList(action.attribute, state.enabledAttributes),
       };
     case types.REFRESH_PETITION_ATTRIBUTES: {
       const petitionAttributes = state.petition.attributes;

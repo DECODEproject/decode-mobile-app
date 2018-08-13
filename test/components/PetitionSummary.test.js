@@ -178,7 +178,9 @@ describe('The PetitionSummary page', () => {
           }],
           missing: [],
         },
-        enabledAttributes: ['schema:DateOfBirth'],
+        enabledAttributes: [{
+          predicate: 'schema:DateOfBirth',
+        }],
       },
       petitionLink: { petitionLink: 'aLink.com' },
       attributes: {

@@ -20,7 +20,7 @@ describe('petition reducer', () => {
       optional: [],
       missing: [],
     },
-    enabledAttributes: ['schema:addressLocality'],
+    enabledAttributes: [{ predicate: 'schema:addressLocality' }],
   };
 
   const initialStateWithPetition = {
@@ -228,11 +228,11 @@ describe('petition reducer', () => {
 
       const action = {
         type: types.TOGGLE_ENABLE_ATTRIBUTE,
-        attributeValue: 'schema:addressLocality',
+        attribute: { predicate: 'schema:addressLocality' },
       };
 
       expect(reducer(state, action)).toEqual({
-        enabledAttributes: ['schema:addressLocality'],
+        enabledAttributes: [{ predicate: 'schema:addressLocality' }],
       });
     });
 
@@ -240,12 +240,12 @@ describe('petition reducer', () => {
     it('should remove if the attribute already in the enable list', () => {
       const state = {
         ...initialState,
-        enabledAttributes: ['schema:addressLocality'],
+        enabledAttributes: [{ predicate: 'schema:addressLocality' }],
       };
 
       const action = {
         type: types.TOGGLE_ENABLE_ATTRIBUTE,
-        attributeValue: 'schema:addressLocality',
+        attribute: { predicate: 'schema:addressLocality' },
       };
 
       expect(reducer(state, action)).toEqual({
@@ -257,16 +257,16 @@ describe('petition reducer', () => {
     it('should add a second enabledAttribute if does not exist', () => {
       const state = {
         ...initialState,
-        enabledAttributes: ['schema:addressLocality'],
+        enabledAttributes: [{ predicate: 'schema:addressLocality' }],
       };
 
       const action = {
         type: types.TOGGLE_ENABLE_ATTRIBUTE,
-        attributeValue: 'schema:dateOfBirth',
+        attribute: { predicate: 'schema:dateOfBirth' },
       };
 
       const actualEnabledAttributes = reducer(state, action).enabledAttributes;
-      const expectedEnabledAttributes = ['schema:dateOfBirth', 'schema:addressLocality'];
+      const expectedEnabledAttributes = [{ predicate: 'schema:dateOfBirth' }, { predicate: 'schema:addressLocality' }];
 
       expect(actualEnabledAttributes).toEqual(expect.arrayContaining(expectedEnabledAttributes));
     });

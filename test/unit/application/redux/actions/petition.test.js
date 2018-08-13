@@ -150,14 +150,14 @@ describe('signPetition', () => {
 
   describe('Toggle enable attributes', () => {
     it('toggle attribute action', async () => {
-      const attributeValue = 'schema:addressLocality';
+      const attribute = 'schema:addressLocality';
 
       const expectedActions = [{
         type: types.TOGGLE_ENABLE_ATTRIBUTE,
-        attributeValue,
+        attribute,
       }];
 
-      store.dispatch(toggleEnableAttribute(attributeValue));
+      store.dispatch(toggleEnableAttribute(attribute));
       expect(store.getActions()).toEqual(expectedActions);
     });
   });

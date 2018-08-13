@@ -18,7 +18,8 @@ import i18n from '../i18n';
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 
-const isAttributeEnable = (attr, enabledAttr) => enabledAttr.indexOf(attr.predicate) >= 0;
+const isAttributeEnable = (attr, enabledAttrs) => (
+  !!enabledAttrs.find(enabledAttr => enabledAttr.predicate === attr.predicate));
 const areAllMandatoryAttrsEnable = (enabledAttrs, mandatoryAttrs) =>
   mandatoryAttrs.reduce((memo, attr) => memo && isAttributeEnable(attr, enabledAttrs), true);
 
@@ -44,16 +45,21 @@ class PetitionSummary extends React.Component {
     this.props.getPetition(this.props.petitionLink);
   }
 
+  getAttributeValue(attr) {
+    if (isAttributeEnable(attr, this.props.enabledAttributes)) {
+      return attr.object;
+    }
+
+    return 'any';
+  }
+
   async sign(petition, walletId, vote) {
     this.setState({
       loading: true,
     });
 
-    /* const age = (this.props.attributes.optionalAttributesToggleStatus.age) ? '20-29' : 'any';
-    const gender = (this.props.attributes.optionalAttributesToggleStatus.gender) ? 'female' : 'any';
-*/
     const age = '20-29';
-    const gender = 'female';
+    const gender = this.getAttributeValue({ predicate: 'schema:gender' });
 
     let signSuccess;
     try {
@@ -73,7 +79,7 @@ class PetitionSummary extends React.Component {
     <AttributeComponent
       key={attr.predicate}
       isMandatory={isMandatory}
-      toggleCallback={() => this.props.toggleEnableAttribute(attr.predicate)}
+      toggleCallback={() => this.props.toggleEnableAttribute(attr)}
       isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
       name={`${this.props.t(attr.predicate)} - ${this.props.t(attr.object)}`}
     />
@@ -161,7 +167,7 @@ PetitionSummary.propTypes = {
     description: PropTypes.string,
     closingDate: PropTypes.string,
   }),
-  enabledAttributes: PropTypes.arrayOf(PropTypes.string).isRequired,
+  enabledAttributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   petitionError: PropTypes.string,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
@@ -200,7 +206,7 @@ const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
     dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender)),
-  toggleEnableAttribute: (attrPredicate) => { dispatch(toggleEnableAttribute(attrPredicate)); },
+  toggleEnableAttribute: (attr) => { dispatch(toggleEnableAttribute(attr)); },
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));
