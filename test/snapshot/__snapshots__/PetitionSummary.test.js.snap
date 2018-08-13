@@ -182,8 +182,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -203,6 +201,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -510,8 +509,6 @@ ShallowWrapper {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                "genderAttribute": "Gender (Female)",
-                "mandatory": "(mandatory)",
                 "no": "No",
                 "optional": "Optional data to share:",
                 "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -531,6 +528,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Your residency status",
                 "dateOfBirth": "Age",
+                "gender": "Gender",
               },
               "signOutcome": Object {
                 "backDecidim": "Back to Decidim",
@@ -827,8 +825,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -848,6 +844,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -1131,8 +1128,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -1152,6 +1147,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -1445,8 +1441,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -1466,6 +1460,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -1754,8 +1749,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -1775,6 +1768,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -2018,8 +2012,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -2039,6 +2031,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -2325,8 +2318,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -2346,6 +2337,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -2633,8 +2625,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -2654,6 +2644,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -2961,8 +2952,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -2982,6 +2971,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -3265,8 +3255,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -3286,6 +3274,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -3578,8 +3567,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -3599,6 +3586,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -3894,8 +3882,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -3915,6 +3901,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -4198,8 +4185,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -4219,6 +4204,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -4512,8 +4498,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -4533,6 +4517,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -5711,8 +5696,6 @@ ShallowWrapper {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                "genderAttribute": "Gender (Female)",
-                "mandatory": "(mandatory)",
                 "no": "No",
                 "optional": "Optional data to share:",
                 "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -5732,6 +5715,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Your residency status",
                 "dateOfBirth": "Age",
+                "gender": "Gender",
               },
               "signOutcome": Object {
                 "backDecidim": "Back to Decidim",
@@ -5963,8 +5947,6 @@ ShallowWrapper {
               "ageAttribute": "Age (20-29)",
               "cancel": "Or, cancel signing this petition",
               "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-              "genderAttribute": "Gender (Female)",
-              "mandatory": "(mandatory)",
               "no": "No",
               "optional": "Optional data to share:",
               "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -5984,6 +5966,7 @@ ShallowWrapper {
             "schema": Object {
               "addressLocality": "Your residency status",
               "dateOfBirth": "Age",
+              "gender": "Gender",
             },
             "signOutcome": Object {
               "backDecidim": "Back to Decidim",
@@ -6268,8 +6251,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -6289,6 +6270,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -6572,8 +6554,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -6593,6 +6573,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -6886,8 +6867,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -6907,6 +6886,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -7195,8 +7175,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -7216,6 +7194,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -7459,8 +7438,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -7480,6 +7457,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -7766,8 +7744,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -7787,6 +7763,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -8074,8 +8051,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -8095,6 +8070,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -8395,8 +8371,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -8416,6 +8390,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -8699,8 +8674,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -8720,6 +8693,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -9013,8 +8987,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -9034,6 +9006,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -9322,8 +9295,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -9343,6 +9314,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -9636,8 +9608,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -9657,6 +9627,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -9940,8 +9911,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -9961,6 +9930,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -10254,8 +10224,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -10275,6 +10243,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -11453,8 +11422,6 @@ ShallowWrapper {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                "genderAttribute": "Gender (Female)",
-                "mandatory": "(mandatory)",
                 "no": "No",
                 "optional": "Optional data to share:",
                 "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -11474,6 +11441,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Your residency status",
                 "dateOfBirth": "Age",
+                "gender": "Gender",
               },
               "signOutcome": Object {
                 "backDecidim": "Back to Decidim",
@@ -12837,8 +12805,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -12858,6 +12824,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -13162,8 +13129,6 @@ ShallowWrapper {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                "genderAttribute": "Gender (Female)",
-                "mandatory": "(mandatory)",
                 "no": "No",
                 "optional": "Optional data to share:",
                 "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -13183,6 +13148,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Your residency status",
                 "dateOfBirth": "Age",
+                "gender": "Gender",
               },
               "signOutcome": Object {
                 "backDecidim": "Back to Decidim",
@@ -13479,8 +13445,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -13500,6 +13464,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -13783,8 +13748,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -13804,6 +13767,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -14097,8 +14061,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -14118,6 +14080,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -14406,8 +14369,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -14427,6 +14388,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -14670,8 +14632,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -14691,6 +14651,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -14977,8 +14938,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -14998,6 +14957,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -15285,8 +15245,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -15306,6 +15264,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -15613,8 +15572,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -15634,6 +15591,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -15917,8 +15875,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -15938,6 +15894,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -16230,8 +16187,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -16251,6 +16206,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -16546,8 +16502,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -16567,6 +16521,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -16850,8 +16805,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -16871,6 +16824,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -17164,8 +17118,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -17185,6 +17137,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -18363,8 +18316,6 @@ ShallowWrapper {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                "genderAttribute": "Gender (Female)",
-                "mandatory": "(mandatory)",
                 "no": "No",
                 "optional": "Optional data to share:",
                 "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -18384,6 +18335,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Your residency status",
                 "dateOfBirth": "Age",
+                "gender": "Gender",
               },
               "signOutcome": Object {
                 "backDecidim": "Back to Decidim",
@@ -18615,8 +18567,6 @@ ShallowWrapper {
               "ageAttribute": "Age (20-29)",
               "cancel": "Or, cancel signing this petition",
               "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-              "genderAttribute": "Gender (Female)",
-              "mandatory": "(mandatory)",
               "no": "No",
               "optional": "Optional data to share:",
               "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -18636,6 +18586,7 @@ ShallowWrapper {
             "schema": Object {
               "addressLocality": "Your residency status",
               "dateOfBirth": "Age",
+              "gender": "Gender",
             },
             "signOutcome": Object {
               "backDecidim": "Back to Decidim",
@@ -18920,8 +18871,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -18941,6 +18890,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -19224,8 +19174,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -19245,6 +19193,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -19538,8 +19487,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -19559,6 +19506,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -19847,8 +19795,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -19868,6 +19814,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -20111,8 +20058,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -20132,6 +20077,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -20418,8 +20364,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -20439,6 +20383,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -20726,8 +20671,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -20747,6 +20690,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -21047,8 +20991,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -21068,6 +21010,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -21351,8 +21294,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -21372,6 +21313,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -21665,8 +21607,6 @@ ShallowWrapper {
                     "ageAttribute": "Age (20-29)",
                     "cancel": "Or, cancel signing this petition",
                     "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                    "genderAttribute": "Gender (Female)",
-                    "mandatory": "(mandatory)",
                     "no": "No",
                     "optional": "Optional data to share:",
                     "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -21686,6 +21626,7 @@ ShallowWrapper {
                   "schema": Object {
                     "addressLocality": "Your residency status",
                     "dateOfBirth": "Age",
+                    "gender": "Gender",
                   },
                   "signOutcome": Object {
                     "backDecidim": "Back to Decidim",
@@ -21974,8 +21915,6 @@ ShallowWrapper {
                   "ageAttribute": "Age (20-29)",
                   "cancel": "Or, cancel signing this petition",
                   "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                  "genderAttribute": "Gender (Female)",
-                  "mandatory": "(mandatory)",
                   "no": "No",
                   "optional": "Optional data to share:",
                   "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -21995,6 +21934,7 @@ ShallowWrapper {
                 "schema": Object {
                   "addressLocality": "Your residency status",
                   "dateOfBirth": "Age",
+                  "gender": "Gender",
                 },
                 "signOutcome": Object {
                   "backDecidim": "Back to Decidim",
@@ -22288,8 +22228,6 @@ ShallowWrapper {
                         "ageAttribute": "Age (20-29)",
                         "cancel": "Or, cancel signing this petition",
                         "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                        "genderAttribute": "Gender (Female)",
-                        "mandatory": "(mandatory)",
                         "no": "No",
                         "optional": "Optional data to share:",
                         "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -22309,6 +22247,7 @@ ShallowWrapper {
                       "schema": Object {
                         "addressLocality": "Your residency status",
                         "dateOfBirth": "Age",
+                        "gender": "Gender",
                       },
                       "signOutcome": Object {
                         "backDecidim": "Back to Decidim",
@@ -22592,8 +22531,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -22613,6 +22550,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -22906,8 +22844,6 @@ ShallowWrapper {
                       "ageAttribute": "Age (20-29)",
                       "cancel": "Or, cancel signing this petition",
                       "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                      "genderAttribute": "Gender (Female)",
-                      "mandatory": "(mandatory)",
                       "no": "No",
                       "optional": "Optional data to share:",
                       "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -22927,6 +22863,7 @@ ShallowWrapper {
                     "schema": Object {
                       "addressLocality": "Your residency status",
                       "dateOfBirth": "Age",
+                      "gender": "Gender",
                     },
                     "signOutcome": Object {
                       "backDecidim": "Back to Decidim",
@@ -24105,8 +24042,6 @@ ShallowWrapper {
                 "ageAttribute": "Age (20-29)",
                 "cancel": "Or, cancel signing this petition",
                 "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
-                "genderAttribute": "Gender (Female)",
-                "mandatory": "(mandatory)",
                 "no": "No",
                 "optional": "Optional data to share:",
                 "title": "To sign this petition you must consent to sharing the following with Decidim.",
@@ -24126,6 +24061,7 @@ ShallowWrapper {
               "schema": Object {
                 "addressLocality": "Your residency status",
                 "dateOfBirth": "Age",
+                "gender": "Gender",
               },
               "signOutcome": Object {
                 "backDecidim": "Back to Decidim",
