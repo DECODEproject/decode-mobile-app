@@ -89,6 +89,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 30,
   },
+  missingAttribute: {
+    color: '#A9A9A9',
+    fontSize: 16,
+    fontWeight: '500',
+    flex: 1,
+  },
   newAttributesAttribute: {
     flexDirection: 'row',
     display: 'flex',

@@ -30,12 +30,10 @@ export default {
     title: 'To sign this petition you must consent to sharing the following with Decidim.',
     description: 'This information is anonymised - Decidim will not receive any personally identifying data.',
     ageAttribute: 'Age (20-29)',
-    genderAttribute: 'Gender (Female)',
     yes: 'Yes',
     no: 'No',
     cancel: 'Or, cancel signing this petition',
     optional: 'Optional data to share:',
-    mandatory: '(mandatory)',
   },
   pinSetup: {
     placeholderPin1: ' At least 4 digits',
@@ -79,5 +77,6 @@ export default {
   schema: {
     addressLocality: 'Your residency status',
     dateOfBirth: 'Age',
+    gender: 'Gender',
   },
 };

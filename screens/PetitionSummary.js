@@ -79,6 +79,10 @@ class PetitionSummary extends React.Component {
     />
   )
 
+  renderMissingAttribute = attr => (
+    <Text style={styles.missingAttribute} key={attr.predicate}> {`${this.props.t(attr.predicate)} - ${this.props.t(attr.object)}`} </Text>
+  )
+
   render() {
     const {
       enabledAttributes,
@@ -102,7 +106,7 @@ class PetitionSummary extends React.Component {
           {t('optional')}
         </Text>
         { petitionAttributes.optional.map(attr => this.renderAttribute(attr)) }
-        { petitionAttributes.missing.map(attr => this.renderAttribute(attr)) }
+        { petitionAttributes.missing.map(attr => this.renderMissingAttribute(attr)) }
       </View>
     );
     const petitionErrorTemplate = (
