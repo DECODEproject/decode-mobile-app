@@ -16,7 +16,7 @@ import styles from './styles';
 import i18n from '../i18n';
 import {
   isAttributeEnabled, areAllMandatoryAttrsEnabled, formAge,
-  formAgeRange, getEnabledAttributeValue,
+  formAgeRange, getEnabledAttributeValue, findAttribute,
 } from '../application/utils/attributeManagement';
 
 
@@ -40,6 +40,7 @@ class PetitionSummary extends React.Component {
     };
   }
 
+
   componentDidMount() {
     this.props.getPetition(this.props.petitionLink);
   }
@@ -49,8 +50,15 @@ class PetitionSummary extends React.Component {
       loading: true,
     });
 
-    const age = formAge(this.props.enabledAttributes);
-    const gender = getEnabledAttributeValue({ predicate: 'schema:gender' }, this.props.enabledAttributes);
+    const attributes = [...this.props.petitionAttributes.optional,
+      ...this.props.petitionAttributes.missing,
+      ...this.props.petitionAttributes.mandatory];
+
+    const ageAttribute = findAttribute('schema:dateOfBirth', attributes);
+    const genderAttribute = findAttribute('schema:gender', attributes);
+
+    const age = formAge(ageAttribute, this.props.enabledAttributes);
+    const gender = getEnabledAttributeValue(genderAttribute, this.props.enabledAttributes);
 
     let signSuccess;
     try {
@@ -175,6 +183,7 @@ PetitionSummary.propTypes = {
   petitionAttributes: PropTypes.shape({
     mandatory: PropTypes.arrayOf(PropTypes.shape({})),
     optional: PropTypes.arrayOf(PropTypes.shape({})),
+    missing: PropTypes.arrayOf(PropTypes.shape({})),
   }),
 };
 

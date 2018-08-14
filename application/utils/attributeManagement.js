@@ -1,12 +1,11 @@
+import moment from 'moment';
+
 const getAge = (dateString) => {
-  const today = new Date();
-  const birthDate = new Date(dateString);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    age -= 1;
-  }
-  return age;
+  const start = moment(dateString, 'DD/MM/YYYY');
+  const end = moment();
+
+  const duration = moment.duration(end.diff(start));
+  return Math.floor(duration.asYears());
 };
 
 export const isAttributeEnabled = (attr, enabledAttrs) => (
@@ -17,14 +16,6 @@ export const getEnabledAttributeValue = (attr, enabledAttrs) => {
     return attr.object;
   }
   return 'any';
-};
-
-export const formAge = (enabledAttrs) => {
-  let age = getEnabledAttributeValue({ predicate: 'schema:dateOfBirth' }, enabledAttrs);
-  if (age !== 'any') {
-    age = this.formAgeRange({ predicate: 'schema:dateOfBirth' });
-  }
-  return age;
 };
 
 export const areAllMandatoryAttrsEnabled = (enabledAttrs, mandatoryAttrs) =>
@@ -43,3 +34,14 @@ export const formAgeRange = (attr) => {
   }
   return '40+';
 };
+
+export const formAge = (attr, enabledAttrs) => {
+  let age = getEnabledAttributeValue(attr, enabledAttrs);
+  if (age !== 'any') {
+    age = formAgeRange(attr);
+  }
+  return age;
+};
+
+export const findAttribute = (predicate, attributes) =>
+  attributes.find(attribute => attribute.predicate === predicate);
