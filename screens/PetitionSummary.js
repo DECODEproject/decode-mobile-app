@@ -14,14 +14,13 @@ import getWalletProxyUrl from '../config';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
+import {
+  isAttributeEnabled, areAllMandatoryAttrsEnabled, formAge,
+  formAgeRange, getEnabledAttributeValue,
+} from '../application/utils/attributeManagement';
 
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
-
-const isAttributeEnable = (attr, enabledAttrs) => (
-  !!enabledAttrs.find(enabledAttr => enabledAttr.predicate === attr.predicate));
-const areAllMandatoryAttrsEnable = (enabledAttrs, mandatoryAttrs) =>
-  mandatoryAttrs.reduce((memo, attr) => memo && isAttributeEnable(attr, enabledAttrs), true);
 
 class PetitionSummary extends React.Component {
   static route = {
@@ -45,21 +44,13 @@ class PetitionSummary extends React.Component {
     this.props.getPetition(this.props.petitionLink);
   }
 
-  getAttributeValue(attr) {
-    if (isAttributeEnable(attr, this.props.enabledAttributes)) {
-      return attr.object;
-    }
-
-    return 'any';
-  }
-
   async sign(petition, walletId, vote) {
     this.setState({
       loading: true,
     });
 
-    const age = '20-29';
-    const gender = this.getAttributeValue({ predicate: 'schema:gender' });
+    const age = formAge(this.props.enabledAttributes);
+    const gender = getEnabledAttributeValue({ predicate: 'schema:gender' }, this.props.enabledAttributes);
 
     let signSuccess;
     try {
@@ -75,19 +66,26 @@ class PetitionSummary extends React.Component {
     });
   }
 
-  renderAttribute = (attr, isMandatory) => (
-    <AttributeComponent
+  renderAttribute = (attr, isMandatory) => {
+    let valueToShow = this.props.t(attr.object);
+
+    if (attr.predicate === 'schema:dateOfBirth') {
+      valueToShow = formAgeRange(attr);
+    }
+
+    return (<AttributeComponent
       key={attr.predicate}
       isMandatory={isMandatory}
       toggleCallback={() => this.props.toggleEnableAttribute(attr)}
-      isEnabled={isAttributeEnable(attr, this.props.enabledAttributes)}
-      name={`${this.props.t(attr.predicate)} - ${this.props.t(attr.object)}`}
+      isEnabled={isAttributeEnabled(attr, this.props.enabledAttributes)}
+      name={`${this.props.t(attr.predicate)} - ${valueToShow}`}
     />
-  )
+    );
+  };
 
   renderMissingAttribute = attr => (
-    <Text style={styles.missingAttribute} key={attr.predicate}> {`${this.props.t(attr.predicate)} - ${this.props.t(attr.object)}`} </Text>
-  )
+    <Text style={styles.missingAttribute} key={attr.predicate}> {`${this.props.t(attr.predicate)}`} </Text>
+  );
 
   render() {
     const {
@@ -132,7 +130,7 @@ class PetitionSummary extends React.Component {
         </ScrollView>
         <View style={{ flexDirection: 'row' }}>
           <Button
-            enabled={areAllMandatoryAttrsEnable(enabledAttributes, petitionAttributes.mandatory)}
+            enabled={areAllMandatoryAttrsEnabled(enabledAttributes, petitionAttributes.mandatory)}
             onPress={() => { this.sign(petition, walletId, 'Yes'); }}
             name={t('yes')}
             style={{
@@ -140,7 +138,7 @@ class PetitionSummary extends React.Component {
             }}
           />
           <Button
-            enabled={areAllMandatoryAttrsEnable(enabledAttributes, petitionAttributes.mandatory)}
+            enabled={areAllMandatoryAttrsEnabled(enabledAttributes, petitionAttributes.mandatory)}
             onPress={() => { this.sign(petition, walletId, 'No'); }}
             name={t('no')}
             style={{
