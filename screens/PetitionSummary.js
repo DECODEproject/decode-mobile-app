@@ -17,6 +17,7 @@ import i18n from '../i18n';
 import {
   isAttributeEnabled, areAllMandatoryAttrsEnabled, formAge,
   formAgeRange, getEnabledAttributeValue, findAttribute,
+  buildAttributes,
 } from '../application/utils/attributeManagement';
 
 
@@ -37,12 +38,16 @@ class PetitionSummary extends React.Component {
     super(props);
     this.state = {
       loading: false,
+      matchedAttributes: buildAttributes(props.walletAttributes, props.attributes),
     };
   }
 
-
   componentDidMount() {
-    this.props.getPetition(this.props.petitionLink);
+    this.props.getPetition(this.props.petitionLink)
+      .then(() => {
+        const matched = buildAttributes(this.props.walletAttributes, this.props.attributes);
+        this.setState({ matchedAttributes: matched });
+      });
   }
 
   async sign(petition, walletId, vote) {
@@ -50,9 +55,9 @@ class PetitionSummary extends React.Component {
       loading: true,
     });
 
-    const attributes = [...this.props.petitionAttributes.optional,
-      ...this.props.petitionAttributes.missing,
-      ...this.props.petitionAttributes.mandatory];
+    const attributes = [...this.state.matchedAttributes.optional,
+      ...this.state.matchedAttributes.missing,
+      ...this.state.matchedAttributes.mandatory];
 
     const ageAttribute = findAttribute('schema:dateOfBirth', attributes);
     const genderAttribute = findAttribute('schema:gender', attributes);
@@ -98,12 +103,19 @@ class PetitionSummary extends React.Component {
   render() {
     const {
       enabledAttributes,
-      petitionAttributes,
       petition,
       petitionError,
       t,
       walletId,
+      attributes,
     } = this.props;
+
+    const allMandatoryEnabled = areAllMandatoryAttrsEnabled(
+      enabledAttributes,
+      attributes.mandatory,
+    );
+
+    const { matchedAttributes } = this.state;
     const petitionAttributesTemplate = (
       <View style={styles.petitionSummaryBox}>
         <Text style={styles.petitionSummaryPetitionTitle}>{petition.title}</Text>
@@ -113,12 +125,12 @@ class PetitionSummary extends React.Component {
         <Text>
           {t('description')}
         </Text>
-        { petitionAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
+        { matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
         <Text>
           {t('optional')}
         </Text>
-        { petitionAttributes.optional.map(attr => this.renderAttribute(attr)) }
-        { petitionAttributes.missing.map(attr => this.renderMissingAttribute(attr)) }
+        { matchedAttributes.optional.map(attr => this.renderAttribute(attr)) }
+        { matchedAttributes.missing.map(attr => this.renderMissingAttribute(attr)) }
       </View>
     );
     const petitionErrorTemplate = (
@@ -138,7 +150,7 @@ class PetitionSummary extends React.Component {
         </ScrollView>
         <View style={{ flexDirection: 'row' }}>
           <Button
-            enabled={areAllMandatoryAttrsEnabled(enabledAttributes, petitionAttributes.mandatory)}
+            enabled={allMandatoryEnabled}
             onPress={() => { this.sign(petition, walletId, 'Yes'); }}
             name={t('yes')}
             style={{
@@ -146,7 +158,7 @@ class PetitionSummary extends React.Component {
             }}
           />
           <Button
-            enabled={areAllMandatoryAttrsEnabled(enabledAttributes, petitionAttributes.mandatory)}
+            enabled={allMandatoryEnabled}
             onPress={() => { this.sign(petition, walletId, 'No'); }}
             name={t('no')}
             style={{
@@ -173,6 +185,10 @@ PetitionSummary.propTypes = {
     description: PropTypes.string,
     closingDate: PropTypes.string,
   }),
+  attributes: PropTypes.shape({
+    mandatory: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+    optional: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  }),
   enabledAttributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   petitionError: PropTypes.string,
   getPetition: PropTypes.func.isRequired,
@@ -180,20 +196,17 @@ PetitionSummary.propTypes = {
   signPetition: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
   toggleEnableAttribute: PropTypes.func.isRequired,
-  petitionAttributes: PropTypes.shape({
-    mandatory: PropTypes.arrayOf(PropTypes.shape({})),
-    optional: PropTypes.arrayOf(PropTypes.shape({})),
-    missing: PropTypes.arrayOf(PropTypes.shape({})),
-  }),
+  walletAttributes: PropTypes.shape({
+    list: PropTypes.instanceOf(Map),
+  }).isRequired,
 };
 
 PetitionSummary.defaultProps = {
   petition: undefined,
   petitionError: undefined,
-  petitionAttributes: {
+  attributes: {
     mandatory: [],
     optional: [],
-    missing: [],
   },
 };
 
@@ -201,14 +214,15 @@ const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   petition: state.petition.petition,
   petitionError: state.petition.error,
-  petitionAttributes: state.petition.petitionAttributes,
+  attributes: state.petition.petition.attributes,
   enabledAttributes: state.petition.enabledAttributes,
   walletId: state.wallet.id,
   signSuccess: state.signSuccess,
+  walletAttributes: state.attributes.list,
 });
 
 const mapDispatchToProps = dispatch => ({
-  getPetition: (petitionLink) => { dispatch(getPetition(petitionLink)); },
+  getPetition: petitionLink => dispatch(getPetition(petitionLink)),
   setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
@@ -217,3 +231,4 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));
+

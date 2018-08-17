@@ -19,13 +19,12 @@ const initialState = {
       description: 'world',
       closingDate: 'today',
       id: '1234',
+      attributes: {
+        mandatory: [],
+        optional: [],
+      },
     },
     enabledAttributes: [],
-    petitionAttributes: {
-      mandatory: [],
-      optional: [],
-      missing: [],
-    },
   },
   wallet: {
     id: 'something',

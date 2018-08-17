@@ -5,6 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PetitionSummary
+    attributes={
+      Object {
+        "mandatory": Array [],
+        "optional": Array [],
+      }
+    }
     enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
@@ -11401,17 +11407,14 @@ ShallowWrapper {
     }
     petition={
       Object {
+        "attributes": Object {
+          "mandatory": Array [],
+          "optional": Array [],
+        },
         "closingDate": "today",
         "description": "world",
         "id": "1234",
         "title": "hello",
-      }
-    }
-    petitionAttributes={
-      Object {
-        "mandatory": Array [],
-        "missing": Array [],
-        "optional": Array [],
       }
     }
     petitionError={undefined}
@@ -11422,6 +11425,20 @@ ShallowWrapper {
     t={[Function]}
     tReady={false}
     toggleEnableAttribute={[Function]}
+    walletAttributes={
+      Map {
+        "schema:addressLocality" => Object {
+          "object": "Barcelona",
+          "predicate": "schema:addressLocality",
+          "provenance": Object {
+            "credentials": "0123456789",
+            "source": "http://atlantis-decode.s3-website-eu-west-1.amazonaws.com",
+          },
+          "scope": "can-access",
+          "subject": "(Alpaca)",
+        },
+      }
+    }
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -12468,6 +12485,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PetitionSummary
+    attributes={
+      Object {
+        "mandatory": Array [],
+        "optional": Array [],
+      }
+    }
     enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
@@ -23861,17 +23884,14 @@ ShallowWrapper {
     }
     petition={
       Object {
+        "attributes": Object {
+          "mandatory": Array [],
+          "optional": Array [],
+        },
         "closingDate": "today",
         "description": "world",
         "id": "1234",
         "title": "hello",
-      }
-    }
-    petitionAttributes={
-      Object {
-        "mandatory": Array [],
-        "missing": Array [],
-        "optional": Array [],
       }
     }
     petitionError={undefined}
@@ -23882,6 +23902,7 @@ ShallowWrapper {
     t={[Function]}
     tReady={false}
     toggleEnableAttribute={[Function]}
+    walletAttributes={Map {}}
     walletId="something"
   />,
   Symbol(enzyme.__renderer__): Object {

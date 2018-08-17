@@ -15,11 +15,6 @@ describe('petition reducer', () => {
     petition: {},
     error: undefined,
     signed: false,
-    petitionAttributes: {
-      mandatory: [],
-      optional: [],
-      missing: [],
-    },
     enabledAttributes: [{ predicate: 'schema:addressLocality' }],
   };
 
@@ -47,11 +42,6 @@ describe('petition reducer', () => {
       loaded: true,
       petition: newPetition,
       error: undefined,
-      petitionAttributes: {
-        mandatory: [],
-        optional: [],
-        missing: [],
-      },
     });
   });
 
@@ -129,11 +119,6 @@ describe('petition reducer', () => {
         loaded: true,
         petition: createPetition([], [attrGender]),
         error: undefined,
-        petitionAttributes: {
-          mandatory: [],
-          optional: [],
-          missing: [attrGender],
-        },
       });
     });
 
@@ -150,11 +135,6 @@ describe('petition reducer', () => {
         loaded: true,
         petition,
         error: undefined,
-        petitionAttributes: {
-          mandatory: [attrResidency],
-          optional: [],
-          missing: [],
-        },
       });
     });
 
@@ -180,11 +160,6 @@ describe('petition reducer', () => {
         loaded: true,
         petition: petitionWithoutAddress,
         error: undefined,
-        petitionAttributes: {
-          mandatory: [],
-          optional: [],
-          missing: [],
-        },
       });
     });
 
@@ -211,11 +186,6 @@ describe('petition reducer', () => {
         loaded: true,
         petition: petitionWithDateOfBirth,
         error: undefined,
-        petitionAttributes: {
-          mandatory: [],
-          optional: [attrAge],
-          missing: [],
-        },
       });
     });
   });

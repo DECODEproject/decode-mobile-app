@@ -46,13 +46,12 @@ describe('signing a petition', () => {
           description: 'world',
           closingDate: 'today',
           id: '1234',
+          attributes: {
+            mandatory: [{ predicate: 'schema:addressLocality' }],
+            optional: [],
+          },
         },
         enabledAttributes: [],
-        petitionAttributes: {
-          mandatory: [{ predicate: 'schema:addressLocality' }],
-          optional: [],
-          missing: [],
-        },
       },
       attributes: {
         list: new Map(),
@@ -81,29 +80,30 @@ describe('signing a petition', () => {
           description: 'world',
           closingDate: 'today',
           id: '1234',
+          attributes: {
+            mandatory: [{ predicate: 'schema:addressLocality' }],
+            optional: [],
+          },
         },
-        enabledAttributes: [],
-        petitionAttributes: {
-          mandatory: [],
-          optional: [],
-          missing: [],
-        },
+        enabledAttributes: [{ predicate: 'schema:addressLocality' }],
       },
       attributes: {
-        // AND I do not have a required attribute
-        list: new Map(),
+        list: new Map([['schema:addressLocality', {
+          predicate: 'schema:addressLocality',
+          object: 'Barcelona',
+          provenance: {
+            source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+          },
+        }]]),
       },
     };
 
     store = mockStore(state);
-
-    // WHEN I review the petition
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
       .shallow({ context: { store } });
 
-    // THEN I am able to sign
     expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(true);
   });
 
@@ -117,19 +117,17 @@ describe('signing a petition', () => {
     };
     const state = {
       ...initialState,
-      // GIVEN a petition with X attributes
       petition: {
         petition: {
+          attributes: {
+            mandatory: [],
+            optional: [],
+            missing: [],
+          },
         },
         enabledAttributes: [],
-        petitionAttributes: {
-          mandatory: [],
-          optional: [],
-          missing: [],
-        },
       },
       attributes: {
-        // AND I do not have a required attribute
         list: new Map(),
       },
     };

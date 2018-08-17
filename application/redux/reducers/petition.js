@@ -5,40 +5,9 @@ const initialState = {
   petition: {},
   error: undefined,
   signed: false,
-  petitionAttributes: {
-    mandatory: [],
-    optional: [],
-    missing: [],
-  },
   enabledAttributes: [{ predicate: 'schema:addressLocality' }],
 };
 
-const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
-  if (!petitionAttrs) return [];
-  const matchedAttrs = [];
-  petitionAttrs.forEach((attr) => {
-    if (walletAttrs.get(attr.predicate)) matchedAttrs.push(walletAttrs.get(attr.predicate));
-  });
-  return matchedAttrs;
-};
-
-const findMissingAttr = (allPetitionAttrs, allMatchedAttrs) => {
-  if (!allPetitionAttrs) return [];
-  return allPetitionAttrs.filter(attr =>
-    !allMatchedAttrs.find(matchAttr => matchAttr.predicate === attr.predicate));
-};
-
-const buildPetitionAttributes = (walletAttrs, petitionAttrs) => {
-  const mandatory = matchPetitionAttrWithWallet(petitionAttrs.mandatory, walletAttrs);
-  const optional = matchPetitionAttrWithWallet(petitionAttrs.optional, walletAttrs);
-
-  const allPetitionAttrs = petitionAttrs.mandatory.concat(petitionAttrs.optional);
-  const allMatchedAttrs = mandatory.concat(optional);
-
-  const missing = findMissingAttr(allPetitionAttrs, allMatchedAttrs);
-
-  return { mandatory, optional, missing };
-};
 
 const getAttributeIndex = (attr, list) => (
   list.findIndex(listAttr => listAttr.predicate === attr.predicate));
@@ -56,13 +25,12 @@ const toggleElementsInList = (element, list) => {
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case types.SET_PETITION: {
-      const { walletAttributes, petition } = action;
+      const { petition } = action;
       return {
         ...state,
         loaded: true,
         petition,
         error: undefined,
-        petitionAttributes: buildPetitionAttributes(walletAttributes, petition.attributes),
       };
     }
     case types.SET_PETITION_ERROR:
@@ -88,16 +56,6 @@ export default function reducer(state = initialState, action) {
         ...state,
         enabledAttributes: toggleElementsInList(action.attribute, state.enabledAttributes),
       };
-    case types.REFRESH_PETITION_ATTRIBUTES: {
-      const petitionAttributes = state.petition.attributes;
-      return {
-        ...state,
-        petitionAttributes: {
-          mandatory: matchPetitionAttrWithWallet(petitionAttributes, action.walletAttributes),
-          optional: matchPetitionAttrWithWallet(petitionAttributes, action.walletAttributes),
-        },
-      };
-    }
     default:
       return state;
   }

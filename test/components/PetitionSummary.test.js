@@ -16,13 +16,87 @@ describe('The PetitionSummary page', () => {
   const initialState = {
     petition: {
       loaded: false,
-      petition: {},
+      petition: {
+        attributes: {
+          mandatory: [],
+          optional: [],
+        },
+      },
       error: undefined,
       signed: false,
-      petitionAttributes: {
-        mandatory: [],
-        optional: [],
-        missing: [],
+      enabledAttributes: [],
+    },
+    petitionLink: { petitionLink: 'aLink.com' },
+    attributes: {
+      list: new Map(),
+    },
+    wallet: { id: '' },
+  };
+
+  const initialStateWithMandatoryAttribute = {
+    ...initialState,
+    petition: {
+      ...initialState.petition,
+      petition: {
+        ...initialState.petition.petition,
+        attributes: {
+          mandatory: [{
+            predicate: 'schema:addressLocality',
+            provenance: {
+              source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+            },
+          }],
+          optional: [],
+        },
+      },
+    },
+    attributes: {
+      list: new Map([['schema:addressLocality', {
+        predicate: 'schema:addressLocality',
+        object: 'Barcelona',
+        provenance: {
+          source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+        },
+      }]]),
+    },
+  };
+
+  const initialStateWithOptionalAttribute = {
+    ...initialState,
+    petition: {
+      ...initialState.petition,
+      petition: {
+        ...initialState.petition.petition,
+        attributes: {
+          mandatory: [],
+          optional: [{
+            predicate: 'schema:dateOfBirth',
+            object: 'voter',
+            scope: 'can-access',
+          }],
+        },
+      },
+      enabledAttributes: [],
+    },
+    attributes: {
+      list: new Map([['schema:dateOfBirth', {}]]),
+    },
+  };
+
+  const initialStateWithMissingAttribute = {
+    ...initialState,
+    petition: {
+      ...initialState.petition,
+      petition: {
+        ...initialState.petition.petition,
+        attributes: {
+          mandatory: [],
+          optional: [{
+            predicate: 'schema:dateOfBirth',
+            object: 'voter',
+            scope: 'can-access',
+          }],
+        },
       },
       enabledAttributes: [],
     },
@@ -31,6 +105,25 @@ describe('The PetitionSummary page', () => {
       list: new Map(),
     },
     wallet: { id: '' },
+  };
+
+  const initialStateWithEnabledAttribute = {
+    ...initialStateWithOptionalAttribute,
+    petition: {
+      ...initialStateWithOptionalAttribute.petition,
+      enabledAttributes: [{
+        predicate: 'schema:dateOfBirth',
+      }],
+    },
+    attributes: {
+      list: new Map([['schema:dateOfBirth', {
+        predicate: 'schema:dateOfBirth',
+        object: '01/01/1900',
+        scope: 'can-access',
+        provenance: {},
+        subject: '(Alpaca)',
+      }]]),
+    },
   };
 
   it('should show the voting buttons', () => {
@@ -55,32 +148,26 @@ describe('The PetitionSummary page', () => {
     expect(wrapper.dive().find(AttributeComponent)).toHaveLength(0);
   });
 
-  it('should show one required attribute, if the petition has one required attribute loaded', () => {
-    const initialStateWithAttribute = {
-      petition: {
-        loaded: false,
-        petition: {},
-        error: undefined,
-        signed: false,
-        petitionAttributes: {
-          mandatory: [{
-            predicate: 'schema:addressLocality',
-            provenance: {
-              source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-            },
-          }],
-          optional: [],
-          missing: [],
-        },
-        enabledAttributes: [],
-      },
-      petitionLink: { petitionLink: 'aLink.com' },
-      attributes: {
-        list: new Map(),
-      },
-      wallet: { id: '' },
-    };
-    const store = mockStore(initialStateWithAttribute);
+  it('should show one mandatory attribute, if the petition has one mandatory attribute loaded, and the wallet has that attribute', () => {
+    const store = mockStore(initialStateWithMandatoryAttribute);
+    console.log('INITIAL STATE!!');
+    console.log(JSON.stringify(initialStateWithMandatoryAttribute, null, 4));
+
+
+    let wrapper = shallow(<PetitionSummary />)
+      .first().shallow()
+      .first()
+      .shallow({ context: { store } });
+
+    wrapper = wrapper.update();
+
+    const attributeWrapper = wrapper.dive().find(AttributeComponent);
+
+    expect(attributeWrapper).toHaveLength(1);
+  });
+
+  it('should show one optional attribute, if the petition has one optional attribute loaded and the wallet has that attribute', () => {
+    const store = mockStore(initialStateWithOptionalAttribute);
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
@@ -91,61 +178,20 @@ describe('The PetitionSummary page', () => {
     expect(attributeWrapper).toHaveLength(1);
   });
 
-  it('should show one optional attribute, if the petition has one optional attribute loaded', () => {
-    const initialStateWithAttribute = {
-      petition: {
-        loaded: false,
-        petition: {},
-        error: undefined,
-        signed: false,
-        petitionAttributes: {
-          mandatory: [],
-          optional: [{
-            predicate: 'schema:DateOfBirth',
-          }],
-          missing: [],
-        },
-        enabledAttributes: [],
-      },
-      petitionLink: { petitionLink: 'aLink.com' },
-      attributes: {
-        list: new Map(),
-      },
-      wallet: { id: '' },
-    };
-    const store = mockStore(initialStateWithAttribute);
+  it('should show one missing attribute, if the petition has an attribute loaded that the wallet does not have', () => {
+    const store = mockStore(initialStateWithMissingAttribute);
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
       .shallow({ context: { store } });
 
-    const attributeWrapper = wrapper.dive().find(AttributeComponent);
+    const attributeWrapper = wrapper.dive().dive().find(Text).findWhere(n => n.text() === 'Edad');
 
     expect(attributeWrapper).toHaveLength(1);
   });
+
   describe('disabled attribute ', () => {
-    const initialStateWithAttribute = {
-      petition: {
-        loaded: false,
-        petition: {},
-        error: undefined,
-        signed: false,
-        petitionAttributes: {
-          mandatory: [{
-            predicate: 'schema:DateOfBirth',
-          }],
-          optional: [],
-          missing: [],
-        },
-        enabledAttributes: [],
-      },
-      petitionLink: { petitionLink: 'aLink.com' },
-      attributes: {
-        list: new Map(),
-      },
-      wallet: { id: '' },
-    };
-    const store = mockStore(initialStateWithAttribute);
+    const store = mockStore(initialStateWithMandatoryAttribute);
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
@@ -158,37 +204,15 @@ describe('The PetitionSummary page', () => {
     });
 
     it('should show error text if the attribute is mandatory', () => {
+      expect(attributeWrapper.first().prop('isEnabled')).toEqual(false);
       expect(attributeWrapper.first().prop('isMandatory')).toEqual(true);
-      expect(attributeWrapper.dive().find(Text).findWhere(n => n.text() === `You must consent to sharing your status as a Barcelona resident or
+      expect(attributeWrapper.first().dive().find(Text).findWhere(n => n.text() === `You must consent to sharing your status as a Barcelona resident or
       you cannot sign this petition. This information is anonymous.`));
     });
   });
 
-  it('should have the attribute enables if it is inside the enableAttributes', () => {
-    const initialStateWithAttribute = {
-      petition: {
-        loaded: false,
-        petition: {},
-        error: undefined,
-        signed: false,
-        petitionAttributes: {
-          mandatory: [],
-          optional: [{
-            predicate: 'schema:DateOfBirth',
-          }],
-          missing: [],
-        },
-        enabledAttributes: [{
-          predicate: 'schema:DateOfBirth',
-        }],
-      },
-      petitionLink: { petitionLink: 'aLink.com' },
-      attributes: {
-        list: new Map(),
-      },
-      wallet: { id: '' },
-    };
-    const store = mockStore(initialStateWithAttribute);
+  it('should have the attribute enabled if it is inside the enabledAttributes', () => {
+    const store = mockStore(initialStateWithEnabledAttribute);
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
@@ -201,32 +225,7 @@ describe('The PetitionSummary page', () => {
 
 
   it('should have a translated name', () => {
-    const initialStateWithAttribute = {
-      petition: {
-        loaded: false,
-        petition: {},
-        error: undefined,
-        signed: false,
-        petitionAttributes: {
-          mandatory: [{
-            predicate: 'schema:addressLocality',
-            object: 'Barcelona',
-            provenance: {
-              source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-            },
-          }],
-          optional: [],
-          missing: [],
-        },
-        enabledAttributes: [],
-      },
-      petitionLink: { petitionLink: 'aLink.com' },
-      attributes: {
-        list: new Map(),
-      },
-      wallet: { id: '' },
-    };
-    const store = mockStore(initialStateWithAttribute);
+    const store = mockStore(initialStateWithMandatoryAttribute);
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()

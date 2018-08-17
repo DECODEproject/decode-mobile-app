@@ -45,3 +45,30 @@ export const formAge = (attr, enabledAttrs) => {
 
 export const findAttribute = (predicate, attributes) =>
   attributes.find(attribute => attribute.predicate === predicate);
+
+const matchPetitionAttrWithWallet = (petitionAttrs, walletAttrs) => {
+  if (!petitionAttrs) return [];
+  const matchedAttrs = [];
+  petitionAttrs.forEach((attr) => {
+    if (walletAttrs.get(attr.predicate)) matchedAttrs.push(walletAttrs.get(attr.predicate));
+  });
+  return matchedAttrs;
+};
+
+const findMissingAttr = (allPetitionAttrs, allMatchedAttrs) => {
+  if (!allPetitionAttrs) return [];
+  return allPetitionAttrs.filter(attr =>
+    !allMatchedAttrs.find(matchAttr => matchAttr.predicate === attr.predicate));
+};
+
+export const buildAttributes = (walletAttrs, petitionAttrs) => {
+  const mandatory = matchPetitionAttrWithWallet(petitionAttrs.mandatory, walletAttrs);
+  const optional = matchPetitionAttrWithWallet(petitionAttrs.optional, walletAttrs);
+
+  const allPetitionAttrs = petitionAttrs.mandatory.concat(petitionAttrs.optional);
+  const allMatchedAttrs = mandatory.concat(optional);
+
+  const missing = findMissingAttr(allPetitionAttrs, allMatchedAttrs);
+
+  return { mandatory, optional, missing };
+};
