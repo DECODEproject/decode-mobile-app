@@ -24,7 +24,6 @@ describe('The PetitionSummary page', () => {
       },
       error: undefined,
       signed: false,
-      enabledAttributes: [],
     },
     petitionLink: { petitionLink: 'aLink.com' },
     attributes: {
@@ -76,7 +75,6 @@ describe('The PetitionSummary page', () => {
           }],
         },
       },
-      enabledAttributes: [],
     },
     attributes: {
       list: new Map([['schema:dateOfBirth', {}]]),
@@ -98,32 +96,12 @@ describe('The PetitionSummary page', () => {
           }],
         },
       },
-      enabledAttributes: [],
     },
     petitionLink: { petitionLink: 'aLink.com' },
     attributes: {
       list: new Map(),
     },
     wallet: { id: '' },
-  };
-
-  const initialStateWithEnabledAttribute = {
-    ...initialStateWithOptionalAttribute,
-    petition: {
-      ...initialStateWithOptionalAttribute.petition,
-      enabledAttributes: [{
-        predicate: 'schema:dateOfBirth',
-      }],
-    },
-    attributes: {
-      list: new Map([['schema:dateOfBirth', {
-        predicate: 'schema:dateOfBirth',
-        object: '01/01/1900',
-        scope: 'can-access',
-        provenance: {},
-        subject: '(Alpaca)',
-      }]]),
-    },
   };
 
   it('should show the voting buttons', () => {
@@ -150,10 +128,6 @@ describe('The PetitionSummary page', () => {
 
   it('should show one mandatory attribute, if the petition has one mandatory attribute loaded, and the wallet has that attribute', () => {
     const store = mockStore(initialStateWithMandatoryAttribute);
-    console.log('INITIAL STATE!!');
-    console.log(JSON.stringify(initialStateWithMandatoryAttribute, null, 4));
-
-
     let wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
@@ -195,34 +169,37 @@ describe('The PetitionSummary page', () => {
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
-      .shallow({ context: { store } });
+      .shallow({ context: { store } })
+      .dive();
 
-    const attributeWrapper = wrapper.dive().find(AttributeComponent);
 
-    it('should not have the attribute listed inside the enableAttributes', () => {
-      expect(attributeWrapper.first().prop('isEnabled')).toEqual(false);
+    it('should have a default state', () => {
+      expect(wrapper.state('enabledAttributes')).toEqual([{ predicate: 'schema:addressLocality' }]);
+    });
+
+    it('on change state to disable the attribute, the attribute should be disabled', () => {
+      wrapper.setState({ enabledAttributes: [] });
+      const attributeWrapper = wrapper.find(AttributeComponent);
+      expect(attributeWrapper.prop('isEnabled')).toEqual(false);
+    });
+
+    it('on toggle an enabled attribute, this should be disabled', () => {
+      let attributeWrapper = wrapper.find(AttributeComponent);
+      attributeWrapper.simulate('valueChanged');
+      attributeWrapper = wrapper.find(AttributeComponent);
+
+      expect(attributeWrapper.prop('isEnabled')).toEqual(false);
+      expect(wrapper.state('enabledAttributes')).toEqual([]);
     });
 
     it('should show error text if the attribute is mandatory', () => {
+      const attributeWrapper = wrapper.find(AttributeComponent);
       expect(attributeWrapper.first().prop('isEnabled')).toEqual(false);
       expect(attributeWrapper.first().prop('isMandatory')).toEqual(true);
       expect(attributeWrapper.first().dive().find(Text).findWhere(n => n.text() === `You must consent to sharing your status as a Barcelona resident or
       you cannot sign this petition. This information is anonymous.`));
     });
   });
-
-  it('should have the attribute enabled if it is inside the enabledAttributes', () => {
-    const store = mockStore(initialStateWithEnabledAttribute);
-    const wrapper = shallow(<PetitionSummary />)
-      .first().shallow()
-      .first()
-      .shallow({ context: { store } });
-
-    const attributeWrapper = wrapper.dive().find(AttributeComponent);
-
-    expect(attributeWrapper.first().prop('isEnabled')).toEqual(true);
-  });
-
 
   it('should have a translated name', () => {
     const store = mockStore(initialStateWithMandatoryAttribute);

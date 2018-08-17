@@ -8,6 +8,19 @@ const getAge = (dateString) => {
   return Math.floor(duration.asYears());
 };
 
+const getAttributeIndex = (attr, list) => (
+  list.findIndex(listAttr => listAttr.predicate === attr.predicate));
+
+export const toggleElementsInList = (element, list) => {
+  const indexOfElement = getAttributeIndex(element, list);
+  if (indexOfElement !== -1) {
+    list.splice(indexOfElement, 1);
+  } else {
+    list.push(element);
+  }
+  return list.slice(0);
+};
+
 export const isAttributeEnabled = (attr, enabledAttrs) => (
   !!enabledAttrs.find(enabledAttr => enabledAttr.predicate === attr.predicate));
 

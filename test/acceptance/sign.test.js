@@ -51,7 +51,6 @@ describe('signing a petition', () => {
             optional: [],
           },
         },
-        enabledAttributes: [],
       },
       attributes: {
         list: new Map(),
@@ -64,9 +63,11 @@ describe('signing a petition', () => {
     const wrapper = shallow(<PetitionSummary />)
       .first().shallow()
       .first()
-      .shallow({ context: { store } });
+      .shallow({ context: { store } })
+      .dive();
 
-    expect(wrapper.dive().find(Button).first().prop('enabled')).toEqual(false);
+    wrapper.setState({ enabledAttributes: [] });
+    expect(wrapper.find(Button).first().prop('enabled')).toEqual(false);
   });
 
 
@@ -85,7 +86,6 @@ describe('signing a petition', () => {
             optional: [],
           },
         },
-        enabledAttributes: [{ predicate: 'schema:addressLocality' }],
       },
       attributes: {
         list: new Map([['schema:addressLocality', {
@@ -125,7 +125,6 @@ describe('signing a petition', () => {
             missing: [],
           },
         },
-        enabledAttributes: [],
       },
       attributes: {
         list: new Map(),

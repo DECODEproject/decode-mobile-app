@@ -5,7 +5,7 @@ import { Text, View, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
-import { getPetition, signPetition, toggleEnableAttribute } from '../application/redux/actions/petition';
+import { getPetition, signPetition } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
@@ -17,7 +17,7 @@ import i18n from '../i18n';
 import {
   isAttributeEnabled, areAllMandatoryAttrsEnabled, formAge,
   formAgeRange, getEnabledAttributeValue, findAttribute,
-  buildAttributes,
+  buildAttributes, toggleElementsInList,
 } from '../application/utils/attributeManagement';
 
 
@@ -39,6 +39,7 @@ class PetitionSummary extends React.Component {
     this.state = {
       loading: false,
       matchedAttributes: buildAttributes(props.walletAttributes, props.attributes),
+      enabledAttributes: [{ predicate: 'schema:addressLocality' }],
     };
   }
 
@@ -48,6 +49,10 @@ class PetitionSummary extends React.Component {
         const matched = buildAttributes(this.props.walletAttributes, this.props.attributes);
         this.setState({ matchedAttributes: matched });
       });
+  }
+
+  toggleEnabledAttribute(attr) {
+    this.setState({ enabledAttributes: toggleElementsInList(attr, this.state.enabledAttributes) });
   }
 
   async sign(petition, walletId, vote) {
@@ -62,8 +67,8 @@ class PetitionSummary extends React.Component {
     const ageAttribute = findAttribute('schema:dateOfBirth', attributes);
     const genderAttribute = findAttribute('schema:gender', attributes);
 
-    const age = formAge(ageAttribute, this.props.enabledAttributes);
-    const gender = getEnabledAttributeValue(genderAttribute, this.props.enabledAttributes);
+    const age = formAge(ageAttribute, this.state.enabledAttributes);
+    const gender = getEnabledAttributeValue(genderAttribute, this.state.enabledAttributes);
 
     let signSuccess;
     try {
@@ -89,8 +94,8 @@ class PetitionSummary extends React.Component {
     return (<AttributeComponent
       key={attr.predicate}
       isMandatory={isMandatory}
-      toggleCallback={() => this.props.toggleEnableAttribute(attr)}
-      isEnabled={isAttributeEnabled(attr, this.props.enabledAttributes)}
+      toggleCallback={() => this.toggleEnabledAttribute(attr)}
+      isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
       name={`${this.props.t(attr.predicate)} - ${valueToShow}`}
     />
     );
@@ -102,7 +107,6 @@ class PetitionSummary extends React.Component {
 
   render() {
     const {
-      enabledAttributes,
       petition,
       petitionError,
       t,
@@ -111,7 +115,7 @@ class PetitionSummary extends React.Component {
     } = this.props;
 
     const allMandatoryEnabled = areAllMandatoryAttrsEnabled(
-      enabledAttributes,
+      this.state.enabledAttributes,
       attributes.mandatory,
     );
 
@@ -189,13 +193,11 @@ PetitionSummary.propTypes = {
     mandatory: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     optional: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   }),
-  enabledAttributes: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   petitionError: PropTypes.string,
   getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   signPetition: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
-  toggleEnableAttribute: PropTypes.func.isRequired,
   walletAttributes: PropTypes.shape({
     list: PropTypes.instanceOf(Map),
   }).isRequired,
@@ -215,7 +217,6 @@ const mapStateToProps = state => ({
   petition: state.petition.petition,
   petitionError: state.petition.error,
   attributes: state.petition.petition.attributes,
-  enabledAttributes: state.petition.enabledAttributes,
   walletId: state.wallet.id,
   signSuccess: state.signSuccess,
   walletAttributes: state.attributes.list,
@@ -227,7 +228,6 @@ const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
     dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender)),
-  toggleEnableAttribute: (attr) => { dispatch(toggleEnableAttribute(attr)); },
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));

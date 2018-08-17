@@ -11,7 +11,6 @@ ShallowWrapper {
         "optional": Array [],
       }
     }
-    enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
@@ -11424,7 +11423,6 @@ ShallowWrapper {
     signSuccess={undefined}
     t={[Function]}
     tReady={false}
-    toggleEnableAttribute={[Function]}
     walletAttributes={
       Map {
         "schema:addressLocality" => Object {
@@ -12491,7 +12489,6 @@ ShallowWrapper {
         "optional": Array [],
       }
     }
-    enabledAttributes={Array []}
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
@@ -23901,7 +23898,6 @@ ShallowWrapper {
     signSuccess={undefined}
     t={[Function]}
     tReady={false}
-    toggleEnableAttribute={[Function]}
     walletAttributes={Map {}}
     walletId="something"
   />,
