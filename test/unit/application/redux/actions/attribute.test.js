@@ -122,9 +122,6 @@ describe('attribute action', () => {
       }, {
         type: types.STORE_ATTRIBUTES,
         attributes: new Map(),
-      }, {
-        type: types.REFRESH_PETITION_ATTRIBUTES,
-        walletAttributes: new Map(),
       },
     ]);
   });

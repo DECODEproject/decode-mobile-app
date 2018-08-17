@@ -64,9 +64,9 @@ class AttributesLanding extends React.Component {
         </View>
         <View style={{ flex: 2 }}>
           <Button
-          name={this.props.t('add')}
-          onPress={() => this.props.goToNewAttributes()}
-        />
+            name={this.props.t('add')}
+            onPress={() => this.props.goToNewAttributes()}
+          />
         </View>
       </View>
     );
