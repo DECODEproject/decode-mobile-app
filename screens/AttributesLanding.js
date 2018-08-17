@@ -57,15 +57,17 @@ class AttributesLanding extends React.Component {
       : this.renderEmpty();
 
     return (
-      <View style={{ flex: 1, paddingHorizontal: 20, marginBottom: 20 }}>
+      <View style={{ flex: 1, paddingHorizontal: 20 }}>
         {AttributesLanding.renderLogo()}
         <View style={styles.attributesManagementContainer}>
           {centerComponent}
         </View>
-        <Button
+        <View style={{ flex: 2 }}>
+          <Button
           name={this.props.t('add')}
           onPress={() => this.props.goToNewAttributes()}
         />
+        </View>
       </View>
     );
   }

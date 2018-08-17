@@ -3,7 +3,7 @@ import { Platform, StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
 
   attributesManagementContainer: {
-    flex: 1,
+    flex: 10,
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   attributesLandingLogo: {
+    flex: 1,
     width: 80,
     height: 30,
     marginTop: 20,
