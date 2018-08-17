@@ -1,6 +1,6 @@
 export default {
   attributesLanding: {
-    nodata: 'No tienes ningún dato :(',
+    nodata: 'Empezemos por añadir atributos, Haz click en boton inferior para empezar',
     add: 'Añadir attributo',
   },
   attributesSummary: {

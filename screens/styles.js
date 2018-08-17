@@ -3,12 +3,29 @@ import { Platform, StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
 
   attributesManagementContainer: {
+    flex: 1,
+    justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
-    margin: 16,
-    marginTop: 30,
-    paddingHorizontal: 20,
-    paddingVertical: 40,
+  },
+  attributesLandingImage: {
+    width: 200,
+    height: 150,
+    alignSelf: 'center',
+  },
+  attributesLandingText: {
+    alignSelf: 'center',
+    color: '#888',
+    fontSize: 18,
+    fontWeight: '400',
+    marginVertical: 10,
+    textAlign: 'center',
+  },
+  attributesLandingLogo: {
+    width: 80,
+    height: 30,
+    marginTop: 20,
+    alignSelf: 'center',
   },
   authorisationBox: {
     alignSelf: 'stretch',

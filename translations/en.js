@@ -1,7 +1,7 @@
 export default {
   attributesLanding: {
-    nodata: 'You have no data :(',
-    add: 'Add attribute',
+    nodata: 'Get started by adding attributes. Tap the button below to begin.',
+    add: 'Add Attribute',
   },
   attributesSummary: {
     title: 'DECIDIM needs to verify your Barcelona residency.',

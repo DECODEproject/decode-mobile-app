@@ -69,8 +69,8 @@ ShallowWrapper {
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir atribut",
-                  "nodata": "No tens ninguna dada :(",
+                  "add": "Afegir Atribut",
+                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -150,8 +150,8 @@ ShallowWrapper {
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add attribute",
-                  "nodata": "You have no data :(",
+                  "add": "Add Attribute",
+                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -232,7 +232,7 @@ ShallowWrapper {
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir attributo",
-                  "nodata": "No tienes ningún dato :(",
+                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -388,8 +388,8 @@ ShallowWrapper {
           "resources": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir atribut",
-                "nodata": "No tens ninguna dada :(",
+                "add": "Afegir Atribut",
+                "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -469,8 +469,8 @@ ShallowWrapper {
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add attribute",
-                "nodata": "You have no data :(",
+                "add": "Add Attribute",
+                "nodata": "Get started by adding attributes. Tap the button below to begin.",
               },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
@@ -551,7 +551,7 @@ ShallowWrapper {
             "es": Object {
               "attributesLanding": Object {
                 "add": "Añadir attributo",
-                "nodata": "No tienes ningún dato :(",
+                "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -699,8 +699,8 @@ ShallowWrapper {
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir atribut",
-                        "nodata": "No tens ninguna dada :(",
+                        "add": "Afegir Atribut",
+                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -780,8 +780,8 @@ ShallowWrapper {
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add attribute",
-                        "nodata": "You have no data :(",
+                        "add": "Add Attribute",
+                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -862,7 +862,7 @@ ShallowWrapper {
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir attributo",
-                        "nodata": "No tienes ningún dato :(",
+                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -997,8 +997,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1078,8 +1078,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -1160,7 +1160,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1305,8 +1305,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1386,8 +1386,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -1468,7 +1468,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1608,8 +1608,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -1689,8 +1689,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -1771,7 +1771,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -1866,8 +1866,8 @@ ShallowWrapper {
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir atribut",
-                  "nodata": "No tens ninguna dada :(",
+                  "add": "Afegir Atribut",
+                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -1947,8 +1947,8 @@ ShallowWrapper {
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add attribute",
-                  "nodata": "You have no data :(",
+                  "add": "Add Attribute",
+                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -2029,7 +2029,7 @@ ShallowWrapper {
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir attributo",
-                  "nodata": "No tienes ningún dato :(",
+                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -2167,8 +2167,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -2248,8 +2248,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -2330,7 +2330,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -2469,8 +2469,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -2550,8 +2550,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -2632,7 +2632,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -2791,8 +2791,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -2872,8 +2872,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -2954,7 +2954,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -3089,8 +3089,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3170,8 +3170,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -3252,7 +3252,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3396,8 +3396,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3477,8 +3477,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -3559,7 +3559,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3706,8 +3706,8 @@ ShallowWrapper {
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir atribut",
-                        "nodata": "No tens ninguna dada :(",
+                        "add": "Afegir Atribut",
+                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -3787,8 +3787,8 @@ ShallowWrapper {
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add attribute",
-                        "nodata": "You have no data :(",
+                        "add": "Add Attribute",
+                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -3869,7 +3869,7 @@ ShallowWrapper {
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir attributo",
-                        "nodata": "No tienes ningún dato :(",
+                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -4004,8 +4004,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -4085,8 +4085,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -4167,7 +4167,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -4312,8 +4312,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -4393,8 +4393,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -4475,7 +4475,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -5505,8 +5505,8 @@ ShallowWrapper {
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir atribut",
-                "nodata": "No tens ninguna dada :(",
+                "add": "Afegir Atribut",
+                "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -5586,8 +5586,8 @@ ShallowWrapper {
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add attribute",
-                "nodata": "You have no data :(",
+                "add": "Add Attribute",
+                "nodata": "Get started by adding attributes. Tap the button below to begin.",
               },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
@@ -5668,7 +5668,7 @@ ShallowWrapper {
             "es": Object {
               "attributesLanding": Object {
                 "add": "Añadir attributo",
-                "nodata": "No tienes ningún dato :(",
+                "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -5751,8 +5751,8 @@ ShallowWrapper {
         "store": Object {
           "ca": Object {
             "attributesLanding": Object {
-              "add": "Afegir atribut",
-              "nodata": "No tens ninguna dada :(",
+              "add": "Afegir Atribut",
+              "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
             },
             "attributesSummary": Object {
               "button": "Verificar",
@@ -5832,8 +5832,8 @@ ShallowWrapper {
           },
           "en": Object {
             "attributesLanding": Object {
-              "add": "Add attribute",
-              "nodata": "You have no data :(",
+              "add": "Add Attribute",
+              "nodata": "Get started by adding attributes. Tap the button below to begin.",
             },
             "attributesSummary": Object {
               "button": "Verify with Barcelona Council",
@@ -5914,7 +5914,7 @@ ShallowWrapper {
           "es": Object {
             "attributesLanding": Object {
               "add": "Añadir attributo",
-              "nodata": "No tienes ningún dato :(",
+              "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
             },
             "attributesSummary": Object {
               "button": "Verificar",
@@ -6050,8 +6050,8 @@ ShallowWrapper {
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir atribut",
-                        "nodata": "No tens ninguna dada :(",
+                        "add": "Afegir Atribut",
+                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -6131,8 +6131,8 @@ ShallowWrapper {
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add attribute",
-                        "nodata": "You have no data :(",
+                        "add": "Add Attribute",
+                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -6213,7 +6213,7 @@ ShallowWrapper {
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir attributo",
-                        "nodata": "No tienes ningún dato :(",
+                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -6348,8 +6348,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6429,8 +6429,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -6511,7 +6511,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6656,8 +6656,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6737,8 +6737,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -6819,7 +6819,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6959,8 +6959,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -7040,8 +7040,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -7122,7 +7122,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -7217,8 +7217,8 @@ ShallowWrapper {
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir atribut",
-                  "nodata": "No tens ninguna dada :(",
+                  "add": "Afegir Atribut",
+                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -7298,8 +7298,8 @@ ShallowWrapper {
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add attribute",
-                  "nodata": "You have no data :(",
+                  "add": "Add Attribute",
+                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -7380,7 +7380,7 @@ ShallowWrapper {
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir attributo",
-                  "nodata": "No tienes ningún dato :(",
+                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -7518,8 +7518,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -7599,8 +7599,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -7681,7 +7681,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -7820,8 +7820,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -7901,8 +7901,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -7983,7 +7983,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8135,8 +8135,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -8216,8 +8216,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -8298,7 +8298,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -8433,8 +8433,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8514,8 +8514,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -8596,7 +8596,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8741,8 +8741,8 @@ ShallowWrapper {
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir atribut",
-                    "nodata": "No tens ninguna dada :(",
+                    "add": "Afegir Atribut",
+                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8822,8 +8822,8 @@ ShallowWrapper {
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add attribute",
-                    "nodata": "You have no data :(",
+                    "add": "Add Attribute",
+                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -8904,7 +8904,7 @@ ShallowWrapper {
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir attributo",
-                    "nodata": "No tienes ningún dato :(",
+                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -9044,8 +9044,8 @@ ShallowWrapper {
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir atribut",
-                  "nodata": "No tens ninguna dada :(",
+                  "add": "Afegir Atribut",
+                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -9125,8 +9125,8 @@ ShallowWrapper {
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add attribute",
-                  "nodata": "You have no data :(",
+                  "add": "Add Attribute",
+                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -9207,7 +9207,7 @@ ShallowWrapper {
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir attributo",
-                  "nodata": "No tienes ningún dato :(",
+                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -9352,8 +9352,8 @@ ShallowWrapper {
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir atribut",
-                        "nodata": "No tens ninguna dada :(",
+                        "add": "Afegir Atribut",
+                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -9433,8 +9433,8 @@ ShallowWrapper {
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add attribute",
-                        "nodata": "You have no data :(",
+                        "add": "Add Attribute",
+                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -9515,7 +9515,7 @@ ShallowWrapper {
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir attributo",
-                        "nodata": "No tienes ningún dato :(",
+                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -9650,8 +9650,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -9731,8 +9731,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -9813,7 +9813,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -9958,8 +9958,8 @@ ShallowWrapper {
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir atribut",
-                      "nodata": "No tens ninguna dada :(",
+                      "add": "Afegir Atribut",
+                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -10039,8 +10039,8 @@ ShallowWrapper {
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add attribute",
-                      "nodata": "You have no data :(",
+                      "add": "Add Attribute",
+                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -10121,7 +10121,7 @@ ShallowWrapper {
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir attributo",
-                      "nodata": "No tienes ningún dato :(",
+                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -11151,8 +11151,8 @@ ShallowWrapper {
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir atribut",
-                "nodata": "No tens ninguna dada :(",
+                "add": "Afegir Atribut",
+                "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -11232,8 +11232,8 @@ ShallowWrapper {
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add attribute",
-                "nodata": "You have no data :(",
+                "add": "Add Attribute",
+                "nodata": "Get started by adding attributes. Tap the button below to begin.",
               },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
@@ -11314,7 +11314,7 @@ ShallowWrapper {
             "es": Object {
               "attributesLanding": Object {
                 "add": "Añadir attributo",
-                "nodata": "No tienes ningún dato :(",
+                "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
               },
               "attributesSummary": Object {
                 "button": "Verificar",

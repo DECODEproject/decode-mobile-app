@@ -1,7 +1,7 @@
 export default {
   attributesLanding: {
-    nodata: 'No tens ninguna dada :(',
-    add: 'Afegir atribut',
+    nodata: 'Comencem per afegir atributs, Fes click al butó per començar.',
+    add: 'Afegir Atribut',
   },
   attributesSummary: {
     title: 'DECIDIM requereix verificar la teva residencia a Barcelona ',

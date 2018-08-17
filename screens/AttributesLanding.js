@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, FlatList, View } from 'react-native';
+import { Image, Text, FlatList, View } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
@@ -9,8 +9,19 @@ import { goToNewAttributes } from '../application/redux/actions/navigation';
 import styles from './styles';
 import i18n from '../i18n';
 
+const decodeLogo = require('../assets/images/decode-logo-pin.png');
 
 class AttributesLanding extends React.Component {
+  static renderLogo() {
+    return (
+      <Image
+        source={decodeLogo}
+        resizeMode="contain"
+        style={styles.attributesLandingLogo}
+      />);
+  }
+
+
   attributeExists() {
     return this.props.attributes.size > 0;
   }
@@ -27,18 +38,30 @@ class AttributesLanding extends React.Component {
 
   renderEmpty() {
     return (
-      <Text>{this.props.t('nodata')}</Text>
+      <View>
+        <Image
+          source={decodeLogo}
+          resizeMode="contain"
+          style={styles.attributesLandingImage}
+        />
+        <Text style={styles.attributesLandingText}>
+          {this.props.t('nodata')}
+        </Text>
+      </View>
     );
   }
 
   render() {
-    const listComponent = this.attributeExists()
+    const centerComponent = this.attributeExists()
       ? this.renderListAttributes()
       : this.renderEmpty();
 
     return (
-      <View style={styles.attributesManagementContainer}>
-        {listComponent}
+      <View style={{ flex: 1, paddingHorizontal: 20, marginBottom: 20 }}>
+        {AttributesLanding.renderLogo()}
+        <View style={styles.attributesManagementContainer}>
+          {centerComponent}
+        </View>
         <Button
           name={this.props.t('add')}
           onPress={() => this.props.goToNewAttributes()}
@@ -53,6 +76,7 @@ AttributesLanding.propTypes = {
   goToNewAttributes: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };
+
 
 const mapStateToProps = state => ({
   attributes: state.attributes.list,
