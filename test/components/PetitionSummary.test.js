@@ -77,7 +77,11 @@ describe('The PetitionSummary page', () => {
       },
     },
     attributes: {
-      list: new Map([['schema:dateOfBirth', {}]]),
+      list: new Map([['schema:dateOfBirth', {
+        predicate: 'schema:dateOfBirth',
+        object: 'voter',
+        scope: 'can-access',
+      }]]),
     },
   };
 
