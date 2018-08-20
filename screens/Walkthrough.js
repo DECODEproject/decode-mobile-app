@@ -38,6 +38,9 @@ const Walkthrough = props => (
       <LinkButton
         onPress={() => props.goToPinSetup()}
         style={{
+          linkButtonStyle: {
+            marginRight: 10,
+          },
           textStyle: {
             color: '#FFF',
           },
@@ -93,4 +96,3 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default translate('walkthrough', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Walkthrough));
-

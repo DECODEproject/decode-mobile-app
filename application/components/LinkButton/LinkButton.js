@@ -6,7 +6,6 @@ const defaultLinkButtonStyles = {
   linkButtonStyle: {
     flex: 0,
     paddingHorizontal: 10,
-    marginRight: 10,
   },
   textStyle: {
     color: '#4A90E2',

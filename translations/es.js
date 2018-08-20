@@ -15,7 +15,7 @@ export default {
   },
   newAttributes: {
     description: 'Escoge un dato de la lista de abajo para añadirlo a la wallet.',
-    ageAttribute: 'Fecha de nacimiento',
+    ageAttribute: 'Fecha de Nacimiento',
     add: 'Agregar',
     edit: 'Editar',
     save: 'Guardar',

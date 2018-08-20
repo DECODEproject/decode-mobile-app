@@ -36,19 +36,24 @@ class NewAttributes extends Component {
           <View style={{ flex: 1, maxHeight: 50 }}>
             <Text>{this.props.t('description')}</Text>
           </View>
-          <View style={styles.newAttributesAttribute}>
-            <Text style={styles.newAttributesAttributeName}>{this.props.t('ageAttribute')}</Text>
-            <Text
-              id="age-info"
-              style={{ display: this.state.currentDate ? 'flex' : 'none' }}
-            >
-              { this.state.currentDate }
-            </Text>
-            <LinkButton
-              id="age-action-button"
-              name={this.state.currentDate ? this.props.t('edit') : this.props.t('add')}
-              onPress={() => this.setState({ isDatePickerVisible: true })}
-            />
+          <View style={{ flex: 1 }}>
+            <View style={styles.newAttributesAttribute}>
+              <Text style={styles.newAttributesAttributeName}>{this.props.t('ageAttribute')}</Text>
+              <LinkButton
+                id="age-action-button"
+                name={this.state.currentDate ? this.props.t('edit') : this.props.t('add')}
+                onPress={() => this.setState({ isDatePickerVisible: true })}
+                style={{ textStyle: { fontSize: 18 } }}
+              />
+            </View>
+            <View>
+              <Text
+                id="age-info"
+                style={{ fontSize: 18, color: '#4A4A4A', display: this.state.currentDate ? 'flex' : 'none' }}
+              >
+                { this.state.currentDate }
+              </Text>
+            </View>
           </View>
           <DateTimePicker
             isVisible={this.state.isDatePickerVisible}

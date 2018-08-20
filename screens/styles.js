@@ -14,7 +14,9 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
-    padding: 30,
+    paddingVertical: 30,
+    paddingHorizontal: 10,
+    marginTop: 20
   },
   attributesLandingImage: {
     width: 150,
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 80,
     height: 30,
-    marginTop: 20,
+    marginTop: 40,
     alignSelf: 'center',
   },
   authorisationBox: {
@@ -130,8 +132,8 @@ const styles = StyleSheet.create({
   },
   newAttributesAttributeName: {
     color: 'rgba(0, 0, 0, 0.87)',
-    fontWeight: '500',
-    fontSize: 16,
+    fontWeight: 'bold',
+    fontSize: 18,
   },
   petitionDescription: {
     color: 'rgba(0, 0, 0, 0.87)',
