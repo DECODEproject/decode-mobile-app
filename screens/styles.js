@@ -2,15 +2,22 @@ import { Platform, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
 
-  attributesManagementContainer: {
+  attributesLandingContainer: {
     flex: 10,
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
+    padding: 30,
+  },
+  attributesManagementContainer: {
+    flex: 10,
+    justifyContent: 'flex-start',
+    alignSelf: 'stretch',
+    backgroundColor: '#FFF',
+    padding: 30,
   },
   attributesLandingImage: {
-    width: 200,
-    height: 150,
+    width: 150,
     alignSelf: 'center',
   },
   attributesLandingText: {
@@ -18,7 +25,7 @@ const styles = StyleSheet.create({
     color: '#888',
     fontSize: 18,
     fontWeight: '400',
-    marginVertical: 10,
+    marginTop: 25,
     textAlign: 'center',
   },
   attributesLandingLogo: {
@@ -115,14 +122,16 @@ const styles = StyleSheet.create({
   },
   newAttributesAttribute: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     display: 'flex',
     alignItems: 'center',
+    flex: 1,
+    maxHeight: 50,
   },
   newAttributesAttributeName: {
     color: 'rgba(0, 0, 0, 0.87)',
     fontWeight: '500',
     fontSize: 16,
-    flex: 1,
   },
   petitionDescription: {
     color: 'rgba(0, 0, 0, 0.87)',

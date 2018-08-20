@@ -17,6 +17,8 @@ export default {
     description: 'Select an attribute to add to your wallet from the list below.',
     ageAttribute: 'Date of birth',
     add: 'Add',
+    edit: 'Edit',
+    save: 'Save',
   },
   newDateOfBirthAttribute: {
     datepickerPlaceholder: 'Select a date',

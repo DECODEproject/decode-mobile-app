@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 import PropTypes from 'prop-types';
-import DatePicker from 'react-native-datepicker';
 
 const defaultLinkButtonStyles = {
   linkButtonStyle: {
@@ -15,7 +14,7 @@ const defaultLinkButtonStyles = {
   },
 };
 
-class LinkButton extends Component {
+class LinkButton extends Component { // eslint-disable-line
   render() {
     const { onPress, name, style } = this.props;
     const { linkButtonStyle, textStyle } = {
@@ -26,27 +25,24 @@ class LinkButton extends Component {
       textStyle: {
         ...defaultLinkButtonStyles.textStyle,
         ...style.textStyle,
-      }
+      },
     };
     return (
       <TouchableOpacity onPress={onPress} style={linkButtonStyle} >
         <Text style={textStyle}>{name}</Text>
       </TouchableOpacity>
-    )
+    );
   }
-
-};
+}
 
 LinkButton.propTypes = {
-  onPress: PropTypes.func.isRequired,
+  onPress: PropTypes.func,
   name: PropTypes.string,
-  customStyle: PropTypes.shape({}),
+  style: PropTypes.shape({}),
 };
 
 LinkButton.defaultProps = {
-  onPress: () => {
-    DatePicker.onPressDate()
-  },
+  onPress: () => { },
   style: {},
   name: 'ADD',
 };

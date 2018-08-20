@@ -68,7 +68,8 @@ ShallowWrapper {
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
-                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                  "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -84,6 +85,8 @@ ShallowWrapper {
                   "add": "Afegir",
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  "edit": "Editar",
+                  "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel·lar",
@@ -126,6 +129,7 @@ ShallowWrapper {
                   "voteRecorded": "El teu vot ha sigut registrat anonimament",
                 },
                 "walkthrough": Object {
+                  "done": "Fet",
                   "next": "Següent",
                   "pages": Object {
                     "four": Object {
@@ -149,7 +153,8 @@ ShallowWrapper {
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
-                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                  "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -165,6 +170,8 @@ ShallowWrapper {
                   "add": "Add",
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
+                  "edit": "Edit",
+                  "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel",
@@ -207,6 +214,7 @@ ShallowWrapper {
                   "voteRecorded": "Your vote has been recorded anonymously",
                 },
                 "walkthrough": Object {
+                  "done": "Done",
                   "next": "Next",
                   "pages": Object {
                     "four": Object {
@@ -229,8 +237,9 @@ ShallowWrapper {
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir attributo",
-                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                  "add": "Añadir Atributo",
+                  "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -246,6 +255,8 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  "edit": "Editar",
+                  "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancelar",
@@ -288,6 +299,7 @@ ShallowWrapper {
                   "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
+                  "done": "Hecho",
                   "next": "Siguiente",
                   "pages": Object {
                     "four": Object {
@@ -387,7 +399,8 @@ ShallowWrapper {
             "ca": Object {
               "attributesLanding": Object {
                 "add": "Afegir Atribut",
-                "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -403,6 +416,8 @@ ShallowWrapper {
                 "add": "Afegir",
                 "ageAttribute": "Data de naixement",
                 "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                "edit": "Editar",
+                "save": "Desar",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancel·lar",
@@ -445,6 +460,7 @@ ShallowWrapper {
                 "voteRecorded": "El teu vot ha sigut registrat anonimament",
               },
               "walkthrough": Object {
+                "done": "Fet",
                 "next": "Següent",
                 "pages": Object {
                   "four": Object {
@@ -468,7 +484,8 @@ ShallowWrapper {
             "en": Object {
               "attributesLanding": Object {
                 "add": "Add Attribute",
-                "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
               },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
@@ -484,6 +501,8 @@ ShallowWrapper {
                 "add": "Add",
                 "ageAttribute": "Date of birth",
                 "description": "Select an attribute to add to your wallet from the list below.",
+                "edit": "Edit",
+                "save": "Save",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancel",
@@ -526,6 +545,7 @@ ShallowWrapper {
                 "voteRecorded": "Your vote has been recorded anonymously",
               },
               "walkthrough": Object {
+                "done": "Done",
                 "next": "Next",
                 "pages": Object {
                   "four": Object {
@@ -548,8 +568,9 @@ ShallowWrapper {
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir attributo",
-                "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                "add": "Añadir Atributo",
+                "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -565,6 +586,8 @@ ShallowWrapper {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de nacimiento",
                 "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                "edit": "Editar",
+                "save": "Guardar",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancelar",
@@ -607,6 +630,7 @@ ShallowWrapper {
                 "voteRecorded": "Tu voto ha sido registrado anonimamente",
               },
               "walkthrough": Object {
+                "done": "Hecho",
                 "next": "Siguiente",
                 "pages": Object {
                   "four": Object {
@@ -698,7 +722,8 @@ ShallowWrapper {
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
-                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                        "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -714,6 +739,8 @@ ShallowWrapper {
                         "add": "Afegir",
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                        "edit": "Editar",
+                        "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel·lar",
@@ -756,6 +783,7 @@ ShallowWrapper {
                         "voteRecorded": "El teu vot ha sigut registrat anonimament",
                       },
                       "walkthrough": Object {
+                        "done": "Fet",
                         "next": "Següent",
                         "pages": Object {
                           "four": Object {
@@ -779,7 +807,8 @@ ShallowWrapper {
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
-                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                        "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -795,6 +824,8 @@ ShallowWrapper {
                         "add": "Add",
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
+                        "edit": "Edit",
+                        "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel",
@@ -837,6 +868,7 @@ ShallowWrapper {
                         "voteRecorded": "Your vote has been recorded anonymously",
                       },
                       "walkthrough": Object {
+                        "done": "Done",
                         "next": "Next",
                         "pages": Object {
                           "four": Object {
@@ -859,8 +891,9 @@ ShallowWrapper {
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir attributo",
-                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                        "add": "Añadir Atributo",
+                        "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -876,6 +909,8 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                        "edit": "Editar",
+                        "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancelar",
@@ -918,6 +953,7 @@ ShallowWrapper {
                         "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
+                        "done": "Hecho",
                         "next": "Siguiente",
                         "pages": Object {
                           "four": Object {
@@ -996,7 +1032,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1012,6 +1049,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -1054,6 +1093,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -1077,7 +1117,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -1093,6 +1134,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -1135,6 +1178,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -1157,8 +1201,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1174,6 +1219,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -1216,6 +1263,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -1304,7 +1352,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1320,6 +1369,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -1362,6 +1413,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -1385,7 +1437,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -1401,6 +1454,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -1443,6 +1498,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -1465,8 +1521,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -1482,6 +1539,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -1524,6 +1583,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -1607,7 +1667,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -1623,6 +1684,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -1665,6 +1728,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -1688,7 +1752,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -1704,6 +1769,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -1746,6 +1813,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -1768,8 +1836,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -1785,6 +1854,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -1827,6 +1898,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -1865,7 +1937,8 @@ ShallowWrapper {
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
-                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                  "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -1881,6 +1954,8 @@ ShallowWrapper {
                   "add": "Afegir",
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  "edit": "Editar",
+                  "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel·lar",
@@ -1923,6 +1998,7 @@ ShallowWrapper {
                   "voteRecorded": "El teu vot ha sigut registrat anonimament",
                 },
                 "walkthrough": Object {
+                  "done": "Fet",
                   "next": "Següent",
                   "pages": Object {
                     "four": Object {
@@ -1946,7 +2022,8 @@ ShallowWrapper {
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
-                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                  "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -1962,6 +2039,8 @@ ShallowWrapper {
                   "add": "Add",
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
+                  "edit": "Edit",
+                  "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel",
@@ -2004,6 +2083,7 @@ ShallowWrapper {
                   "voteRecorded": "Your vote has been recorded anonymously",
                 },
                 "walkthrough": Object {
+                  "done": "Done",
                   "next": "Next",
                   "pages": Object {
                     "four": Object {
@@ -2026,8 +2106,9 @@ ShallowWrapper {
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir attributo",
-                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                  "add": "Añadir Atributo",
+                  "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -2043,6 +2124,8 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  "edit": "Editar",
+                  "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancelar",
@@ -2085,6 +2168,7 @@ ShallowWrapper {
                   "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
+                  "done": "Hecho",
                   "next": "Siguiente",
                   "pages": Object {
                     "four": Object {
@@ -2166,7 +2250,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -2182,6 +2267,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -2224,6 +2311,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -2247,7 +2335,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -2263,6 +2352,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -2305,6 +2396,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -2327,8 +2419,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -2344,6 +2437,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -2386,6 +2481,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -2468,7 +2564,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -2484,6 +2581,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -2526,6 +2625,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -2549,7 +2649,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -2565,6 +2666,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -2607,6 +2710,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -2629,8 +2733,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -2646,6 +2751,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -2688,6 +2795,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -2790,7 +2898,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -2806,6 +2915,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -2848,6 +2959,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -2871,7 +2983,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -2887,6 +3000,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -2929,6 +3044,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -2951,8 +3067,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -2968,6 +3085,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -3010,6 +3129,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -3088,7 +3208,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3104,6 +3225,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -3146,6 +3269,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -3169,7 +3293,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -3185,6 +3310,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -3227,6 +3354,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -3249,8 +3377,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3266,6 +3395,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -3308,6 +3439,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -3395,7 +3527,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3411,6 +3544,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -3453,6 +3588,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -3476,7 +3612,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -3492,6 +3629,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -3534,6 +3673,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -3556,8 +3696,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -3573,6 +3714,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -3615,6 +3758,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -3705,7 +3849,8 @@ ShallowWrapper {
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
-                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                        "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -3721,6 +3866,8 @@ ShallowWrapper {
                         "add": "Afegir",
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                        "edit": "Editar",
+                        "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel·lar",
@@ -3763,6 +3910,7 @@ ShallowWrapper {
                         "voteRecorded": "El teu vot ha sigut registrat anonimament",
                       },
                       "walkthrough": Object {
+                        "done": "Fet",
                         "next": "Següent",
                         "pages": Object {
                           "four": Object {
@@ -3786,7 +3934,8 @@ ShallowWrapper {
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
-                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                        "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -3802,6 +3951,8 @@ ShallowWrapper {
                         "add": "Add",
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
+                        "edit": "Edit",
+                        "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel",
@@ -3844,6 +3995,7 @@ ShallowWrapper {
                         "voteRecorded": "Your vote has been recorded anonymously",
                       },
                       "walkthrough": Object {
+                        "done": "Done",
                         "next": "Next",
                         "pages": Object {
                           "four": Object {
@@ -3866,8 +4018,9 @@ ShallowWrapper {
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir attributo",
-                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                        "add": "Añadir Atributo",
+                        "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -3883,6 +4036,8 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                        "edit": "Editar",
+                        "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancelar",
@@ -3925,6 +4080,7 @@ ShallowWrapper {
                         "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
+                        "done": "Hecho",
                         "next": "Siguiente",
                         "pages": Object {
                           "four": Object {
@@ -4003,7 +4159,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -4019,6 +4176,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -4061,6 +4220,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -4084,7 +4244,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -4100,6 +4261,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -4142,6 +4305,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -4164,8 +4328,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -4181,6 +4346,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -4223,6 +4390,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -4311,7 +4479,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -4327,6 +4496,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -4369,6 +4540,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -4392,7 +4564,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -4408,6 +4581,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -4450,6 +4625,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -4472,8 +4648,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -4489,6 +4666,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -4531,6 +4710,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -5504,7 +5684,8 @@ ShallowWrapper {
             "ca": Object {
               "attributesLanding": Object {
                 "add": "Afegir Atribut",
-                "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -5520,6 +5701,8 @@ ShallowWrapper {
                 "add": "Afegir",
                 "ageAttribute": "Data de naixement",
                 "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                "edit": "Editar",
+                "save": "Desar",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancel·lar",
@@ -5562,6 +5745,7 @@ ShallowWrapper {
                 "voteRecorded": "El teu vot ha sigut registrat anonimament",
               },
               "walkthrough": Object {
+                "done": "Fet",
                 "next": "Següent",
                 "pages": Object {
                   "four": Object {
@@ -5585,7 +5769,8 @@ ShallowWrapper {
             "en": Object {
               "attributesLanding": Object {
                 "add": "Add Attribute",
-                "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
               },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
@@ -5601,6 +5786,8 @@ ShallowWrapper {
                 "add": "Add",
                 "ageAttribute": "Date of birth",
                 "description": "Select an attribute to add to your wallet from the list below.",
+                "edit": "Edit",
+                "save": "Save",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancel",
@@ -5643,6 +5830,7 @@ ShallowWrapper {
                 "voteRecorded": "Your vote has been recorded anonymously",
               },
               "walkthrough": Object {
+                "done": "Done",
                 "next": "Next",
                 "pages": Object {
                   "four": Object {
@@ -5665,8 +5853,9 @@ ShallowWrapper {
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir attributo",
-                "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                "add": "Añadir Atributo",
+                "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -5682,6 +5871,8 @@ ShallowWrapper {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de nacimiento",
                 "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                "edit": "Editar",
+                "save": "Guardar",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancelar",
@@ -5724,6 +5915,7 @@ ShallowWrapper {
                 "voteRecorded": "Tu voto ha sido registrado anonimamente",
               },
               "walkthrough": Object {
+                "done": "Hecho",
                 "next": "Siguiente",
                 "pages": Object {
                   "four": Object {
@@ -5750,7 +5942,8 @@ ShallowWrapper {
           "ca": Object {
             "attributesLanding": Object {
               "add": "Afegir Atribut",
-              "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+              "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
             },
             "attributesSummary": Object {
               "button": "Verificar",
@@ -5766,6 +5959,8 @@ ShallowWrapper {
               "add": "Afegir",
               "ageAttribute": "Data de naixement",
               "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+              "edit": "Editar",
+              "save": "Desar",
             },
             "newDateOfBirthAttribute": Object {
               "cancel": "Cancel·lar",
@@ -5808,6 +6003,7 @@ ShallowWrapper {
               "voteRecorded": "El teu vot ha sigut registrat anonimament",
             },
             "walkthrough": Object {
+              "done": "Fet",
               "next": "Següent",
               "pages": Object {
                 "four": Object {
@@ -5831,7 +6027,8 @@ ShallowWrapper {
           "en": Object {
             "attributesLanding": Object {
               "add": "Add Attribute",
-              "nodata": "Get started by adding attributes. Tap the button below to begin.",
+              "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
             },
             "attributesSummary": Object {
               "button": "Verify with Barcelona Council",
@@ -5847,6 +6044,8 @@ ShallowWrapper {
               "add": "Add",
               "ageAttribute": "Date of birth",
               "description": "Select an attribute to add to your wallet from the list below.",
+              "edit": "Edit",
+              "save": "Save",
             },
             "newDateOfBirthAttribute": Object {
               "cancel": "Cancel",
@@ -5889,6 +6088,7 @@ ShallowWrapper {
               "voteRecorded": "Your vote has been recorded anonymously",
             },
             "walkthrough": Object {
+              "done": "Done",
               "next": "Next",
               "pages": Object {
                 "four": Object {
@@ -5911,8 +6111,9 @@ ShallowWrapper {
           },
           "es": Object {
             "attributesLanding": Object {
-              "add": "Añadir attributo",
-              "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+              "add": "Añadir Atributo",
+              "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
             },
             "attributesSummary": Object {
               "button": "Verificar",
@@ -5928,6 +6129,8 @@ ShallowWrapper {
               "add": "Agregar",
               "ageAttribute": "Fecha de nacimiento",
               "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+              "edit": "Editar",
+              "save": "Guardar",
             },
             "newDateOfBirthAttribute": Object {
               "cancel": "Cancelar",
@@ -5970,6 +6173,7 @@ ShallowWrapper {
               "voteRecorded": "Tu voto ha sido registrado anonimamente",
             },
             "walkthrough": Object {
+              "done": "Hecho",
               "next": "Siguiente",
               "pages": Object {
                 "four": Object {
@@ -6049,7 +6253,8 @@ ShallowWrapper {
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
-                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                        "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -6065,6 +6270,8 @@ ShallowWrapper {
                         "add": "Afegir",
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                        "edit": "Editar",
+                        "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel·lar",
@@ -6107,6 +6314,7 @@ ShallowWrapper {
                         "voteRecorded": "El teu vot ha sigut registrat anonimament",
                       },
                       "walkthrough": Object {
+                        "done": "Fet",
                         "next": "Següent",
                         "pages": Object {
                           "four": Object {
@@ -6130,7 +6338,8 @@ ShallowWrapper {
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
-                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                        "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -6146,6 +6355,8 @@ ShallowWrapper {
                         "add": "Add",
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
+                        "edit": "Edit",
+                        "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel",
@@ -6188,6 +6399,7 @@ ShallowWrapper {
                         "voteRecorded": "Your vote has been recorded anonymously",
                       },
                       "walkthrough": Object {
+                        "done": "Done",
                         "next": "Next",
                         "pages": Object {
                           "four": Object {
@@ -6210,8 +6422,9 @@ ShallowWrapper {
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir attributo",
-                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                        "add": "Añadir Atributo",
+                        "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -6227,6 +6440,8 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                        "edit": "Editar",
+                        "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancelar",
@@ -6269,6 +6484,7 @@ ShallowWrapper {
                         "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
+                        "done": "Hecho",
                         "next": "Siguiente",
                         "pages": Object {
                           "four": Object {
@@ -6347,7 +6563,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6363,6 +6580,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -6405,6 +6624,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -6428,7 +6648,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -6444,6 +6665,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -6486,6 +6709,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -6508,8 +6732,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6525,6 +6750,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -6567,6 +6794,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -6655,7 +6883,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6671,6 +6900,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -6713,6 +6944,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -6736,7 +6968,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -6752,6 +6985,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -6794,6 +7029,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -6816,8 +7052,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -6833,6 +7070,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -6875,6 +7114,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -6958,7 +7198,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -6974,6 +7215,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -7016,6 +7259,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -7039,7 +7283,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -7055,6 +7300,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -7097,6 +7344,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -7119,8 +7367,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -7136,6 +7385,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -7178,6 +7429,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -7216,7 +7468,8 @@ ShallowWrapper {
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
-                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                  "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -7232,6 +7485,8 @@ ShallowWrapper {
                   "add": "Afegir",
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  "edit": "Editar",
+                  "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel·lar",
@@ -7274,6 +7529,7 @@ ShallowWrapper {
                   "voteRecorded": "El teu vot ha sigut registrat anonimament",
                 },
                 "walkthrough": Object {
+                  "done": "Fet",
                   "next": "Següent",
                   "pages": Object {
                     "four": Object {
@@ -7297,7 +7553,8 @@ ShallowWrapper {
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
-                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                  "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -7313,6 +7570,8 @@ ShallowWrapper {
                   "add": "Add",
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
+                  "edit": "Edit",
+                  "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel",
@@ -7355,6 +7614,7 @@ ShallowWrapper {
                   "voteRecorded": "Your vote has been recorded anonymously",
                 },
                 "walkthrough": Object {
+                  "done": "Done",
                   "next": "Next",
                   "pages": Object {
                     "four": Object {
@@ -7377,8 +7637,9 @@ ShallowWrapper {
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir attributo",
-                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                  "add": "Añadir Atributo",
+                  "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -7394,6 +7655,8 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  "edit": "Editar",
+                  "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancelar",
@@ -7436,6 +7699,7 @@ ShallowWrapper {
                   "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
+                  "done": "Hecho",
                   "next": "Siguiente",
                   "pages": Object {
                     "four": Object {
@@ -7517,7 +7781,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -7533,6 +7798,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -7575,6 +7842,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -7598,7 +7866,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -7614,6 +7883,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -7656,6 +7927,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -7678,8 +7950,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -7695,6 +7968,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -7737,6 +8012,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -7819,7 +8095,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -7835,6 +8112,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -7877,6 +8156,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -7900,7 +8180,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -7916,6 +8197,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -7958,6 +8241,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -7980,8 +8264,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -7997,6 +8282,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -8039,6 +8326,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -8134,7 +8422,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -8150,6 +8439,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -8192,6 +8483,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -8215,7 +8507,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -8231,6 +8524,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -8273,6 +8568,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -8295,8 +8591,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -8312,6 +8609,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -8354,6 +8653,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -8432,7 +8732,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8448,6 +8749,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -8490,6 +8793,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -8513,7 +8817,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -8529,6 +8834,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -8571,6 +8878,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -8593,8 +8901,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8610,6 +8919,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -8652,6 +8963,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -8740,7 +9052,8 @@ ShallowWrapper {
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
-                    "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                    "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8756,6 +9069,8 @@ ShallowWrapper {
                     "add": "Afegir",
                     "ageAttribute": "Data de naixement",
                     "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                    "edit": "Editar",
+                    "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel·lar",
@@ -8798,6 +9113,7 @@ ShallowWrapper {
                     "voteRecorded": "El teu vot ha sigut registrat anonimament",
                   },
                   "walkthrough": Object {
+                    "done": "Fet",
                     "next": "Següent",
                     "pages": Object {
                       "four": Object {
@@ -8821,7 +9137,8 @@ ShallowWrapper {
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
-                    "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                    "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                   },
                   "attributesSummary": Object {
                     "button": "Verify with Barcelona Council",
@@ -8837,6 +9154,8 @@ ShallowWrapper {
                     "add": "Add",
                     "ageAttribute": "Date of birth",
                     "description": "Select an attribute to add to your wallet from the list below.",
+                    "edit": "Edit",
+                    "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancel",
@@ -8879,6 +9198,7 @@ ShallowWrapper {
                     "voteRecorded": "Your vote has been recorded anonymously",
                   },
                   "walkthrough": Object {
+                    "done": "Done",
                     "next": "Next",
                     "pages": Object {
                       "four": Object {
@@ -8901,8 +9221,9 @@ ShallowWrapper {
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir attributo",
-                    "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                    "add": "Añadir Atributo",
+                    "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                   },
                   "attributesSummary": Object {
                     "button": "Verificar",
@@ -8918,6 +9239,8 @@ ShallowWrapper {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de nacimiento",
                     "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                    "edit": "Editar",
+                    "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
                     "cancel": "Cancelar",
@@ -8960,6 +9283,7 @@ ShallowWrapper {
                     "voteRecorded": "Tu voto ha sido registrado anonimamente",
                   },
                   "walkthrough": Object {
+                    "done": "Hecho",
                     "next": "Siguiente",
                     "pages": Object {
                       "four": Object {
@@ -9043,7 +9367,8 @@ ShallowWrapper {
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
-                  "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                  "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -9059,6 +9384,8 @@ ShallowWrapper {
                   "add": "Afegir",
                   "ageAttribute": "Data de naixement",
                   "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                  "edit": "Editar",
+                  "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel·lar",
@@ -9101,6 +9428,7 @@ ShallowWrapper {
                   "voteRecorded": "El teu vot ha sigut registrat anonimament",
                 },
                 "walkthrough": Object {
+                  "done": "Fet",
                   "next": "Següent",
                   "pages": Object {
                     "four": Object {
@@ -9124,7 +9452,8 @@ ShallowWrapper {
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
-                  "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                  "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                 },
                 "attributesSummary": Object {
                   "button": "Verify with Barcelona Council",
@@ -9140,6 +9469,8 @@ ShallowWrapper {
                   "add": "Add",
                   "ageAttribute": "Date of birth",
                   "description": "Select an attribute to add to your wallet from the list below.",
+                  "edit": "Edit",
+                  "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancel",
@@ -9182,6 +9513,7 @@ ShallowWrapper {
                   "voteRecorded": "Your vote has been recorded anonymously",
                 },
                 "walkthrough": Object {
+                  "done": "Done",
                   "next": "Next",
                   "pages": Object {
                     "four": Object {
@@ -9204,8 +9536,9 @@ ShallowWrapper {
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir attributo",
-                  "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                  "add": "Añadir Atributo",
+                  "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                 },
                 "attributesSummary": Object {
                   "button": "Verificar",
@@ -9221,6 +9554,8 @@ ShallowWrapper {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de nacimiento",
                   "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                  "edit": "Editar",
+                  "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
                   "cancel": "Cancelar",
@@ -9263,6 +9598,7 @@ ShallowWrapper {
                   "voteRecorded": "Tu voto ha sido registrado anonimamente",
                 },
                 "walkthrough": Object {
+                  "done": "Hecho",
                   "next": "Siguiente",
                   "pages": Object {
                     "four": Object {
@@ -9351,7 +9687,8 @@ ShallowWrapper {
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
-                        "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                        "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -9367,6 +9704,8 @@ ShallowWrapper {
                         "add": "Afegir",
                         "ageAttribute": "Data de naixement",
                         "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                        "edit": "Editar",
+                        "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel·lar",
@@ -9409,6 +9748,7 @@ ShallowWrapper {
                         "voteRecorded": "El teu vot ha sigut registrat anonimament",
                       },
                       "walkthrough": Object {
+                        "done": "Fet",
                         "next": "Següent",
                         "pages": Object {
                           "four": Object {
@@ -9432,7 +9772,8 @@ ShallowWrapper {
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
-                        "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                        "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                       },
                       "attributesSummary": Object {
                         "button": "Verify with Barcelona Council",
@@ -9448,6 +9789,8 @@ ShallowWrapper {
                         "add": "Add",
                         "ageAttribute": "Date of birth",
                         "description": "Select an attribute to add to your wallet from the list below.",
+                        "edit": "Edit",
+                        "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancel",
@@ -9490,6 +9833,7 @@ ShallowWrapper {
                         "voteRecorded": "Your vote has been recorded anonymously",
                       },
                       "walkthrough": Object {
+                        "done": "Done",
                         "next": "Next",
                         "pages": Object {
                           "four": Object {
@@ -9512,8 +9856,9 @@ ShallowWrapper {
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir attributo",
-                        "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                        "add": "Añadir Atributo",
+                        "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                       },
                       "attributesSummary": Object {
                         "button": "Verificar",
@@ -9529,6 +9874,8 @@ ShallowWrapper {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de nacimiento",
                         "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                        "edit": "Editar",
+                        "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
                         "cancel": "Cancelar",
@@ -9571,6 +9918,7 @@ ShallowWrapper {
                         "voteRecorded": "Tu voto ha sido registrado anonimamente",
                       },
                       "walkthrough": Object {
+                        "done": "Hecho",
                         "next": "Siguiente",
                         "pages": Object {
                           "four": Object {
@@ -9649,7 +9997,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -9665,6 +10014,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -9707,6 +10058,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -9730,7 +10082,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -9746,6 +10099,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -9788,6 +10143,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -9810,8 +10166,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -9827,6 +10184,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -9869,6 +10228,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -9957,7 +10317,8 @@ ShallowWrapper {
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
-                      "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                      "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -9973,6 +10334,8 @@ ShallowWrapper {
                       "add": "Afegir",
                       "ageAttribute": "Data de naixement",
                       "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                      "edit": "Editar",
+                      "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel·lar",
@@ -10015,6 +10378,7 @@ ShallowWrapper {
                       "voteRecorded": "El teu vot ha sigut registrat anonimament",
                     },
                     "walkthrough": Object {
+                      "done": "Fet",
                       "next": "Següent",
                       "pages": Object {
                         "four": Object {
@@ -10038,7 +10402,8 @@ ShallowWrapper {
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
-                      "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                      "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
                     },
                     "attributesSummary": Object {
                       "button": "Verify with Barcelona Council",
@@ -10054,6 +10419,8 @@ ShallowWrapper {
                       "add": "Add",
                       "ageAttribute": "Date of birth",
                       "description": "Select an attribute to add to your wallet from the list below.",
+                      "edit": "Edit",
+                      "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancel",
@@ -10096,6 +10463,7 @@ ShallowWrapper {
                       "voteRecorded": "Your vote has been recorded anonymously",
                     },
                     "walkthrough": Object {
+                      "done": "Done",
                       "next": "Next",
                       "pages": Object {
                         "four": Object {
@@ -10118,8 +10486,9 @@ ShallowWrapper {
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir attributo",
-                      "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                      "add": "Añadir Atributo",
+                      "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
                     },
                     "attributesSummary": Object {
                       "button": "Verificar",
@@ -10135,6 +10504,8 @@ ShallowWrapper {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de nacimiento",
                       "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                      "edit": "Editar",
+                      "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
                       "cancel": "Cancelar",
@@ -10177,6 +10548,7 @@ ShallowWrapper {
                       "voteRecorded": "Tu voto ha sido registrado anonimamente",
                     },
                     "walkthrough": Object {
+                      "done": "Hecho",
                       "next": "Siguiente",
                       "pages": Object {
                         "four": Object {
@@ -11150,7 +11522,8 @@ ShallowWrapper {
             "ca": Object {
               "attributesLanding": Object {
                 "add": "Afegir Atribut",
-                "nodata": "Comencem per afegir atributs, Fes click al butó per començar.",
+                "nodata": "Comencem per afegir atributs.
+Fes click al botó per començar.",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -11166,6 +11539,8 @@ ShallowWrapper {
                 "add": "Afegir",
                 "ageAttribute": "Data de naixement",
                 "description": "Escull una dada de la llista de baix para afegir-la a la wallet",
+                "edit": "Editar",
+                "save": "Desar",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancel·lar",
@@ -11208,6 +11583,7 @@ ShallowWrapper {
                 "voteRecorded": "El teu vot ha sigut registrat anonimament",
               },
               "walkthrough": Object {
+                "done": "Fet",
                 "next": "Següent",
                 "pages": Object {
                   "four": Object {
@@ -11231,7 +11607,8 @@ ShallowWrapper {
             "en": Object {
               "attributesLanding": Object {
                 "add": "Add Attribute",
-                "nodata": "Get started by adding attributes. Tap the button below to begin.",
+                "nodata": "Get started by adding attributes.
+Tap the button below to begin.",
               },
               "attributesSummary": Object {
                 "button": "Verify with Barcelona Council",
@@ -11247,6 +11624,8 @@ ShallowWrapper {
                 "add": "Add",
                 "ageAttribute": "Date of birth",
                 "description": "Select an attribute to add to your wallet from the list below.",
+                "edit": "Edit",
+                "save": "Save",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancel",
@@ -11289,6 +11668,7 @@ ShallowWrapper {
                 "voteRecorded": "Your vote has been recorded anonymously",
               },
               "walkthrough": Object {
+                "done": "Done",
                 "next": "Next",
                 "pages": Object {
                   "four": Object {
@@ -11311,8 +11691,9 @@ ShallowWrapper {
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir attributo",
-                "nodata": "Empezemos por añadir atributos, Haz click en boton inferior para empezar",
+                "add": "Añadir Atributo",
+                "nodata": "Empecemos por añadir atributos.
+Haz click en botón inferior para empezar",
               },
               "attributesSummary": Object {
                 "button": "Verificar",
@@ -11328,6 +11709,8 @@ ShallowWrapper {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de nacimiento",
                 "description": "Escoge un dato de la lista de abajo para añadirlo a la wallet.",
+                "edit": "Editar",
+                "save": "Guardar",
               },
               "newDateOfBirthAttribute": Object {
                 "cancel": "Cancelar",
@@ -11370,6 +11753,7 @@ ShallowWrapper {
                 "voteRecorded": "Tu voto ha sido registrado anonimamente",
               },
               "walkthrough": Object {
+                "done": "Hecho",
                 "next": "Siguiente",
                 "pages": Object {
                   "four": Object {

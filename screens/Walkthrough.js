@@ -39,8 +39,8 @@ const Walkthrough = props => (
         onPress={() => props.goToPinSetup()}
         style={{
           textStyle: {
-            color: "#FFF",
-          }
+            color: '#FFF',
+          },
         }}
         name={props.t('done')}
       />

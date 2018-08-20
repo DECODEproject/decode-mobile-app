@@ -9,7 +9,6 @@ import AttributesLanding from './screens/AttributesLanding';
 import PinSetup from './screens/PinSetup';
 import Walkthrough from './screens/Walkthrough';
 import NewAttributes from './screens/NewAttributes';
-import NewDateOfBirthAttribute from './screens/NewDateOfBirthAttribute';
 
 const Router = createRouter(() => ({
   home: () => Home,
@@ -22,7 +21,6 @@ const Router = createRouter(() => ({
   signOutcome: () => SignOutcome,
   pinSetup: () => PinSetup,
   newAttributes: () => NewAttributes,
-  newDateOfBirthAttribute: () => NewDateOfBirthAttribute,
 }));
 
 export default Router;
