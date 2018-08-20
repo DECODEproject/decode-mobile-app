@@ -49,7 +49,7 @@ describe('AttributesLanding', () => {
         .first()
         .shallow({ context: { store } });
 
-      const TextWrappers = wrapper.dive().dive().find(Text).findWhere(n => n.text() === 'Empezemos por añadir atributos, Haz click en boton inferior para empezar');
+      const TextWrappers = wrapper.dive().dive().find(Text);
       expect(TextWrappers).toHaveLength(1);
     });
   });

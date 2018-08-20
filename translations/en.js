@@ -1,6 +1,6 @@
 export default {
   attributesLanding: {
-    nodata: 'Get started by adding attributes. Tap the button below to begin.',
+    nodata: 'Get started by adding attributes.\nTap the button below to begin.',
     add: 'Add Attribute',
   },
   attributesSummary: {
@@ -54,6 +54,7 @@ export default {
     errorText: 'You can return to the Decidim site to view other active petitions.',
   },
   walkthrough: {
+    done: 'Done',
     skip: 'Skip',
     next: 'Next',
     pages: {

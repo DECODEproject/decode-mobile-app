@@ -6,7 +6,7 @@ import { translate } from 'react-i18next';
 import Onboarding from 'react-native-onboarding-swiper';
 import { goToPinSetup } from '../application/redux/actions/navigation';
 import TitleElement from '../application/components/TitleElement/TitleElement';
-import DoneButton from '../application/components/DoneButton/DoneButton';
+import LinkButton from '../application/components/LinkButton/LinkButton';
 import i18n from '../i18n';
 
 
@@ -35,7 +35,15 @@ const Walkthrough = props => (
   <Onboarding
     onSkip={() => props.goToPinSetup()}
     DoneButtonComponent={() => (
-      <DoneButton onPress={() => props.goToPinSetup()} />
+      <LinkButton
+        onPress={() => props.goToPinSetup()}
+        style={{
+          textStyle: {
+            color: "#FFF",
+          }
+        }}
+        name={props.t('done')}
+      />
         )}
     bottomBarHighlight={false}
     skipLabel={props.t('skip')}

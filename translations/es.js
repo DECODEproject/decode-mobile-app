@@ -1,7 +1,7 @@
 export default {
   attributesLanding: {
-    nodata: 'Empezemos por añadir atributos, Haz click en boton inferior para empezar',
-    add: 'Añadir attributo',
+    nodata: 'Empecemos por añadir atributos.\nHaz click en botón inferior para empezar',
+    add: 'Añadir Atributo',
   },
   attributesSummary: {
     title: 'DECIDIM requiere verificar su residencia en Barcelona.',
@@ -54,6 +54,7 @@ export default {
     errorText: 'Puedes volver a la página de Decidim para ver más peticiones.',
   },
   walkthrough: {
+    done: 'Hecho',
     skip: 'Saltar',
     next: 'Siguiente',
     pages: {

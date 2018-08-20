@@ -10,6 +10,7 @@ import styles from './styles';
 import i18n from '../i18n';
 
 const decodeLogo = require('../assets/images/decode-logo-pin.png');
+const emptyStateImage = require('../assets/images/ico-empty-state.png');
 
 class AttributesLanding extends React.Component {
   static renderLogo() {
@@ -40,7 +41,7 @@ class AttributesLanding extends React.Component {
     return (
       <View>
         <Image
-          source={decodeLogo}
+          source={emptyStateImage}
           resizeMode="contain"
           style={styles.attributesLandingImage}
         />
@@ -59,7 +60,7 @@ class AttributesLanding extends React.Component {
     return (
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
         {AttributesLanding.renderLogo()}
-        <View style={styles.attributesManagementContainer}>
+        <View style={styles.attributesLandingContainer}>
           {centerComponent}
         </View>
         <View style={{ flex: 2 }}>

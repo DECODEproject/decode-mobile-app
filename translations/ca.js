@@ -1,6 +1,6 @@
 export default {
   attributesLanding: {
-    nodata: 'Comencem per afegir atributs, Fes click al butó per començar.',
+    nodata: 'Comencem per afegir atributs.\nFes click al botó per començar.',
     add: 'Afegir Atribut',
   },
   attributesSummary: {
@@ -54,6 +54,7 @@ export default {
     errorText: 'Pots tornar a la pàgina de Decidim per veure més peticions.',
   },
   walkthrough: {
+    done: 'Fet',
     skip: 'Salta',
     next: 'Següent',
     pages: {
