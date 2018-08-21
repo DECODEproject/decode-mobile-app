@@ -23,7 +23,7 @@ describe('AttributesListItem', () => {
       const wrapper = shallow(<AttributeListItem attribute={{ item: attribute }} />)
         .first().shallow().dive();
 
-      const LabelWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'Estado de Residencia');
+      const LabelWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'Residencia');
       expect(LabelWrappers).toHaveLength(1);
 
       const ValueWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'some city');

@@ -214,6 +214,6 @@ describe('The PetitionSummary page', () => {
 
     const attributeWrapper = wrapper.dive().find(AttributeComponent);
 
-    expect(attributeWrapper.first().prop('name')).toEqual('Estado de Residencia - Barcelona');
+    expect(attributeWrapper.first().prop('name')).toEqual('Residencia - Barcelona');
   });
 });
