@@ -11,7 +11,11 @@ describe('getPetition', () => {
   let store;
 
   beforeEach(() => {
-    store = mockStore();
+    store = mockStore({
+      featureToggles: {
+        decidimApi: false,
+      },
+    });
   });
 
   afterEach(() => {
@@ -19,53 +23,121 @@ describe('getPetition', () => {
     fetchMock.restore();
   });
 
-  it('should dispatch successful action', () => {
-    const petitionFromDecidim = {
-      petition: {
-        id: '2',
-        attributes: {
-          mandatory: [{
-            predicate: 'schema:addressLocality',
-            object: 'Barcelona',
-            scope: 'can-access',
-            credentialIssuer: {
-              url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-            },
-          }],
-          optional: [],
+  describe('feature toggle decidimApi off', () => {
+    it('should dispatch successful action', () => {
+      const petitionFromDecidim = {
+        petition: {
+          id: '2',
+          attributes: {
+            mandatory: [{
+              predicate: 'schema:addressLocality',
+              object: 'Barcelona',
+              scope: 'can-access',
+              credentialIssuer: {
+                url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+              },
+            }],
+            optional: [],
+          },
         },
-      },
-    };
+      };
 
-    const expectedActions = [{
-      type: types.SET_PETITION,
-      petition: petitionFromDecidim,
-      walletAttributes: new Map(),
-    }];
+      const expectedActions = [{
+        type: types.SET_PETITION,
+        petition: petitionFromDecidim,
+        walletAttributes: new Map(),
+      }];
 
-    fetchMock.getOnce(petitionLink, petitionFromDecidim);
+      fetchMock.getOnce(petitionLink, petitionFromDecidim);
 
-    return store.dispatch(getPetition(petitionLink)).then(() => {
-      expect(store.getActions()).toEqual(expectedActions);
+      return store.dispatch(getPetition(petitionLink)).then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
+    });
+
+    it('should dispatch error action', () => {
+      const errorMessage = 'Internal Server Error';
+
+      const expectedActions = [{
+        type: types.SET_PETITION_ERROR,
+        error: errorMessage,
+      }];
+
+      fetchMock.getOnce(petitionLink, {
+        status: 500,
+        sendAsJson: false,
+        body: errorMessage,
+      });
+
+      return store.dispatch(getPetition(petitionLink)).then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
     });
   });
 
-  it('should dispatch error action', () => {
-    const errorMessage = 'Internal Server Error';
+  describe('feature toggle decidimApi on', () => {
+    it('should dispatch successful action', () => {
+      const petitionId = '2';
 
-    const expectedActions = [{
-      type: types.SET_PETITION_ERROR,
-      error: errorMessage,
-    }];
+      const petitionFromDecidim = {
+        data: {
+          participatoryProcess: {
+            id: petitionId,
+            title: {
+              translation: "Pla d'Actuació Municipal",
+            },
+          },
+        },
+      };
 
-    fetchMock.getOnce(petitionLink, {
-      status: 500,
-      sendAsJson: false,
-      body: errorMessage,
-    });
+      store = mockStore({
+        featureToggles: {
+          decidimApi: true,
+        },
+      });
 
-    return store.dispatch(getPetition(petitionLink)).then(() => {
-      expect(store.getActions()).toEqual(expectedActions);
+
+      const expectedPetition = {
+        petition: {
+          id: petitionId,
+          title: petitionFromDecidim.data.participatoryProcess.title.translation,
+          attributes: {
+            mandatory: [{
+              predicate: 'schema:addressLocality',
+              object: 'Barcelona',
+              scope: 'can-access',
+              credentialIssuer: {
+                url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+              },
+            }],
+            optional: [],
+          },
+        },
+      };
+
+      const expectedActions = [{
+        type: types.SET_PETITION,
+        petition: expectedPetition,
+        walletAttributes: new Map(),
+      }];
+
+      // TODO: locale
+      const graphQlQuery = `${petitionLink}
+        query={
+          participatoryProcess(id: ${petitionId}) {
+            id
+            title {
+              translation (locale: "ca")
+            }
+          }
+        }
+      `;
+
+      fetchMock.getOnce(graphQlQuery, petitionFromDecidim);
+
+      return store.dispatch(getPetition(petitionLink, petitionId)).then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
     });
   });
 });
