@@ -13,6 +13,10 @@ import styles from './styles';
 import i18n from '../i18n';
 
 
+const maxDate = new Date();
+const minDate = new Date();
+minDate.setFullYear(minDate.getFullYear() - 130);
+
 class NewAttributes extends Component {
   constructor(props) {
     super(props);
@@ -56,6 +60,8 @@ class NewAttributes extends Component {
             </View>
           </View>
           <DateTimePicker
+            minimumDate={minDate}
+            maximumDate={maxDate}
             isVisible={this.state.isDatePickerVisible}
             onConfirm={this.onSetDateOfBirth}
             onCancel={() => this.setState({ isDatePickerVisible: false })}

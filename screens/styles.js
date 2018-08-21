@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     paddingVertical: 30,
     paddingHorizontal: 10,
-    marginTop: 20
+    marginTop: 20,
   },
   attributesLandingImage: {
     width: 150,
@@ -134,6 +134,11 @@ const styles = StyleSheet.create({
     color: 'rgba(0, 0, 0, 0.87)',
     fontWeight: 'bold',
     fontSize: 18,
+  },
+  newAttributesAttributeValue: {
+    fontSize: 18,
+    color: '#4A4A4A',
+    display: 'flex',
   },
   petitionDescription: {
     color: 'rgba(0, 0, 0, 0.87)',
