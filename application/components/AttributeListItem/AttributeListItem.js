@@ -30,7 +30,7 @@ export function AttributesListItem(props) {
         {props.attribute.item.provenance.credentials && verifiedRender()}
       </View>
       <Text
-        style={[styles.newAttributesAttributeValue, { marginTop: 5 }]}
+        style={[styles.newAttributesAttributeValue, { marginTop: 15 }]}
       >
         {props.attribute.item.object}
       </Text>

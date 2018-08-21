@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
-    padding: 30,
+    paddingVertical: 30,
+    paddingHorizontal: 10,
   },
   attributesManagementContainer: {
     flex: 10,
