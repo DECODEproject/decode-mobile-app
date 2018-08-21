@@ -117,7 +117,7 @@ Fes click al botó per començar.",
                 },
                 "schema": Object {
                   "addressLocality": "Residencia",
-                  "dateOfBirth": "Edat",
+                  "dateOfBirth": "Data de Naixement",
                   "gender": "Gènere",
                 },
                 "signOutcome": Object {
@@ -202,7 +202,7 @@ Tap the button below to begin.",
                 },
                 "schema": Object {
                   "addressLocality": "Your residency status",
-                  "dateOfBirth": "Age",
+                  "dateOfBirth": "Date of Birth",
                   "gender": "Gender",
                 },
                 "signOutcome": Object {
@@ -287,7 +287,7 @@ Haz click en botón inferior para empezar",
                 },
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
-                  "dateOfBirth": "Edad",
+                  "dateOfBirth": "Fecha de Nacimiento",
                   "gender": "Género",
                 },
                 "signOutcome": Object {
@@ -448,7 +448,7 @@ Fes click al botó per començar.",
               },
               "schema": Object {
                 "addressLocality": "Residencia",
-                "dateOfBirth": "Edat",
+                "dateOfBirth": "Data de Naixement",
                 "gender": "Gènere",
               },
               "signOutcome": Object {
@@ -533,7 +533,7 @@ Tap the button below to begin.",
               },
               "schema": Object {
                 "addressLocality": "Your residency status",
-                "dateOfBirth": "Age",
+                "dateOfBirth": "Date of Birth",
                 "gender": "Gender",
               },
               "signOutcome": Object {
@@ -618,7 +618,7 @@ Haz click en botón inferior para empezar",
               },
               "schema": Object {
                 "addressLocality": "Estado de Residencia",
-                "dateOfBirth": "Edad",
+                "dateOfBirth": "Fecha de Nacimiento",
                 "gender": "Género",
               },
               "signOutcome": Object {
@@ -771,7 +771,7 @@ Fes click al botó per començar.",
                       },
                       "schema": Object {
                         "addressLocality": "Residencia",
-                        "dateOfBirth": "Edat",
+                        "dateOfBirth": "Data de Naixement",
                         "gender": "Gènere",
                       },
                       "signOutcome": Object {
@@ -856,7 +856,7 @@ Tap the button below to begin.",
                       },
                       "schema": Object {
                         "addressLocality": "Your residency status",
-                        "dateOfBirth": "Age",
+                        "dateOfBirth": "Date of Birth",
                         "gender": "Gender",
                       },
                       "signOutcome": Object {
@@ -941,7 +941,7 @@ Haz click en botón inferior para empezar",
                       },
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
-                        "dateOfBirth": "Edad",
+                        "dateOfBirth": "Fecha de Nacimiento",
                         "gender": "Género",
                       },
                       "signOutcome": Object {
@@ -1081,7 +1081,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -1166,7 +1166,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -1251,7 +1251,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -1401,7 +1401,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -1486,7 +1486,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -1571,7 +1571,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -1716,7 +1716,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -1801,7 +1801,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -1886,7 +1886,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -1986,7 +1986,7 @@ Fes click al botó per començar.",
                 },
                 "schema": Object {
                   "addressLocality": "Residencia",
-                  "dateOfBirth": "Edat",
+                  "dateOfBirth": "Data de Naixement",
                   "gender": "Gènere",
                 },
                 "signOutcome": Object {
@@ -2071,7 +2071,7 @@ Tap the button below to begin.",
                 },
                 "schema": Object {
                   "addressLocality": "Your residency status",
-                  "dateOfBirth": "Age",
+                  "dateOfBirth": "Date of Birth",
                   "gender": "Gender",
                 },
                 "signOutcome": Object {
@@ -2156,7 +2156,7 @@ Haz click en botón inferior para empezar",
                 },
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
-                  "dateOfBirth": "Edad",
+                  "dateOfBirth": "Fecha de Nacimiento",
                   "gender": "Género",
                 },
                 "signOutcome": Object {
@@ -2299,7 +2299,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -2384,7 +2384,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -2469,7 +2469,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -2613,7 +2613,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -2698,7 +2698,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -2783,7 +2783,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -2947,7 +2947,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -3032,7 +3032,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -3117,7 +3117,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -3257,7 +3257,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -3342,7 +3342,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -3427,7 +3427,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -3576,7 +3576,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -3661,7 +3661,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -3746,7 +3746,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -3898,7 +3898,7 @@ Fes click al botó per començar.",
                       },
                       "schema": Object {
                         "addressLocality": "Residencia",
-                        "dateOfBirth": "Edat",
+                        "dateOfBirth": "Data de Naixement",
                         "gender": "Gènere",
                       },
                       "signOutcome": Object {
@@ -3983,7 +3983,7 @@ Tap the button below to begin.",
                       },
                       "schema": Object {
                         "addressLocality": "Your residency status",
-                        "dateOfBirth": "Age",
+                        "dateOfBirth": "Date of Birth",
                         "gender": "Gender",
                       },
                       "signOutcome": Object {
@@ -4068,7 +4068,7 @@ Haz click en botón inferior para empezar",
                       },
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
-                        "dateOfBirth": "Edad",
+                        "dateOfBirth": "Fecha de Nacimiento",
                         "gender": "Género",
                       },
                       "signOutcome": Object {
@@ -4208,7 +4208,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -4293,7 +4293,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -4378,7 +4378,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -4528,7 +4528,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -4613,7 +4613,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -4698,7 +4698,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -5733,7 +5733,7 @@ Fes click al botó per començar.",
               },
               "schema": Object {
                 "addressLocality": "Residencia",
-                "dateOfBirth": "Edat",
+                "dateOfBirth": "Data de Naixement",
                 "gender": "Gènere",
               },
               "signOutcome": Object {
@@ -5818,7 +5818,7 @@ Tap the button below to begin.",
               },
               "schema": Object {
                 "addressLocality": "Your residency status",
-                "dateOfBirth": "Age",
+                "dateOfBirth": "Date of Birth",
                 "gender": "Gender",
               },
               "signOutcome": Object {
@@ -5903,7 +5903,7 @@ Haz click en botón inferior para empezar",
               },
               "schema": Object {
                 "addressLocality": "Estado de Residencia",
-                "dateOfBirth": "Edad",
+                "dateOfBirth": "Fecha de Nacimiento",
                 "gender": "Género",
               },
               "signOutcome": Object {
@@ -5991,7 +5991,7 @@ Fes click al botó per començar.",
             },
             "schema": Object {
               "addressLocality": "Residencia",
-              "dateOfBirth": "Edat",
+              "dateOfBirth": "Data de Naixement",
               "gender": "Gènere",
             },
             "signOutcome": Object {
@@ -6076,7 +6076,7 @@ Tap the button below to begin.",
             },
             "schema": Object {
               "addressLocality": "Your residency status",
-              "dateOfBirth": "Age",
+              "dateOfBirth": "Date of Birth",
               "gender": "Gender",
             },
             "signOutcome": Object {
@@ -6161,7 +6161,7 @@ Haz click en botón inferior para empezar",
             },
             "schema": Object {
               "addressLocality": "Estado de Residencia",
-              "dateOfBirth": "Edad",
+              "dateOfBirth": "Fecha de Nacimiento",
               "gender": "Género",
             },
             "signOutcome": Object {
@@ -6302,7 +6302,7 @@ Fes click al botó per començar.",
                       },
                       "schema": Object {
                         "addressLocality": "Residencia",
-                        "dateOfBirth": "Edat",
+                        "dateOfBirth": "Data de Naixement",
                         "gender": "Gènere",
                       },
                       "signOutcome": Object {
@@ -6387,7 +6387,7 @@ Tap the button below to begin.",
                       },
                       "schema": Object {
                         "addressLocality": "Your residency status",
-                        "dateOfBirth": "Age",
+                        "dateOfBirth": "Date of Birth",
                         "gender": "Gender",
                       },
                       "signOutcome": Object {
@@ -6472,7 +6472,7 @@ Haz click en botón inferior para empezar",
                       },
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
-                        "dateOfBirth": "Edad",
+                        "dateOfBirth": "Fecha de Nacimiento",
                         "gender": "Género",
                       },
                       "signOutcome": Object {
@@ -6612,7 +6612,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -6697,7 +6697,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -6782,7 +6782,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -6932,7 +6932,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -7017,7 +7017,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -7102,7 +7102,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -7247,7 +7247,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -7332,7 +7332,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -7417,7 +7417,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -7517,7 +7517,7 @@ Fes click al botó per començar.",
                 },
                 "schema": Object {
                   "addressLocality": "Residencia",
-                  "dateOfBirth": "Edat",
+                  "dateOfBirth": "Data de Naixement",
                   "gender": "Gènere",
                 },
                 "signOutcome": Object {
@@ -7602,7 +7602,7 @@ Tap the button below to begin.",
                 },
                 "schema": Object {
                   "addressLocality": "Your residency status",
-                  "dateOfBirth": "Age",
+                  "dateOfBirth": "Date of Birth",
                   "gender": "Gender",
                 },
                 "signOutcome": Object {
@@ -7687,7 +7687,7 @@ Haz click en botón inferior para empezar",
                 },
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
-                  "dateOfBirth": "Edad",
+                  "dateOfBirth": "Fecha de Nacimiento",
                   "gender": "Género",
                 },
                 "signOutcome": Object {
@@ -7830,7 +7830,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -7915,7 +7915,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -8000,7 +8000,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -8144,7 +8144,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -8229,7 +8229,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -8314,7 +8314,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -8471,7 +8471,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -8556,7 +8556,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -8641,7 +8641,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -8781,7 +8781,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -8866,7 +8866,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -8951,7 +8951,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -9101,7 +9101,7 @@ Fes click al botó per començar.",
                   },
                   "schema": Object {
                     "addressLocality": "Residencia",
-                    "dateOfBirth": "Edat",
+                    "dateOfBirth": "Data de Naixement",
                     "gender": "Gènere",
                   },
                   "signOutcome": Object {
@@ -9186,7 +9186,7 @@ Tap the button below to begin.",
                   },
                   "schema": Object {
                     "addressLocality": "Your residency status",
-                    "dateOfBirth": "Age",
+                    "dateOfBirth": "Date of Birth",
                     "gender": "Gender",
                   },
                   "signOutcome": Object {
@@ -9271,7 +9271,7 @@ Haz click en botón inferior para empezar",
                   },
                   "schema": Object {
                     "addressLocality": "Estado de Residencia",
-                    "dateOfBirth": "Edad",
+                    "dateOfBirth": "Fecha de Nacimiento",
                     "gender": "Género",
                   },
                   "signOutcome": Object {
@@ -9416,7 +9416,7 @@ Fes click al botó per començar.",
                 },
                 "schema": Object {
                   "addressLocality": "Residencia",
-                  "dateOfBirth": "Edat",
+                  "dateOfBirth": "Data de Naixement",
                   "gender": "Gènere",
                 },
                 "signOutcome": Object {
@@ -9501,7 +9501,7 @@ Tap the button below to begin.",
                 },
                 "schema": Object {
                   "addressLocality": "Your residency status",
-                  "dateOfBirth": "Age",
+                  "dateOfBirth": "Date of Birth",
                   "gender": "Gender",
                 },
                 "signOutcome": Object {
@@ -9586,7 +9586,7 @@ Haz click en botón inferior para empezar",
                 },
                 "schema": Object {
                   "addressLocality": "Estado de Residencia",
-                  "dateOfBirth": "Edad",
+                  "dateOfBirth": "Fecha de Nacimiento",
                   "gender": "Género",
                 },
                 "signOutcome": Object {
@@ -9736,7 +9736,7 @@ Fes click al botó per començar.",
                       },
                       "schema": Object {
                         "addressLocality": "Residencia",
-                        "dateOfBirth": "Edat",
+                        "dateOfBirth": "Data de Naixement",
                         "gender": "Gènere",
                       },
                       "signOutcome": Object {
@@ -9821,7 +9821,7 @@ Tap the button below to begin.",
                       },
                       "schema": Object {
                         "addressLocality": "Your residency status",
-                        "dateOfBirth": "Age",
+                        "dateOfBirth": "Date of Birth",
                         "gender": "Gender",
                       },
                       "signOutcome": Object {
@@ -9906,7 +9906,7 @@ Haz click en botón inferior para empezar",
                       },
                       "schema": Object {
                         "addressLocality": "Estado de Residencia",
-                        "dateOfBirth": "Edad",
+                        "dateOfBirth": "Fecha de Nacimiento",
                         "gender": "Género",
                       },
                       "signOutcome": Object {
@@ -10046,7 +10046,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -10131,7 +10131,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -10216,7 +10216,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -10366,7 +10366,7 @@ Fes click al botó per començar.",
                     },
                     "schema": Object {
                       "addressLocality": "Residencia",
-                      "dateOfBirth": "Edat",
+                      "dateOfBirth": "Data de Naixement",
                       "gender": "Gènere",
                     },
                     "signOutcome": Object {
@@ -10451,7 +10451,7 @@ Tap the button below to begin.",
                     },
                     "schema": Object {
                       "addressLocality": "Your residency status",
-                      "dateOfBirth": "Age",
+                      "dateOfBirth": "Date of Birth",
                       "gender": "Gender",
                     },
                     "signOutcome": Object {
@@ -10536,7 +10536,7 @@ Haz click en botón inferior para empezar",
                     },
                     "schema": Object {
                       "addressLocality": "Estado de Residencia",
-                      "dateOfBirth": "Edad",
+                      "dateOfBirth": "Fecha de Nacimiento",
                       "gender": "Género",
                     },
                     "signOutcome": Object {
@@ -11571,7 +11571,7 @@ Fes click al botó per començar.",
               },
               "schema": Object {
                 "addressLocality": "Residencia",
-                "dateOfBirth": "Edat",
+                "dateOfBirth": "Data de Naixement",
                 "gender": "Gènere",
               },
               "signOutcome": Object {
@@ -11656,7 +11656,7 @@ Tap the button below to begin.",
               },
               "schema": Object {
                 "addressLocality": "Your residency status",
-                "dateOfBirth": "Age",
+                "dateOfBirth": "Date of Birth",
                 "gender": "Gender",
               },
               "signOutcome": Object {
@@ -11741,7 +11741,7 @@ Haz click en botón inferior para empezar",
               },
               "schema": Object {
                 "addressLocality": "Estado de Residencia",
-                "dateOfBirth": "Edad",
+                "dateOfBirth": "Fecha de Nacimiento",
                 "gender": "Género",
               },
               "signOutcome": Object {

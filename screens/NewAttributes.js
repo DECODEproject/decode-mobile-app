@@ -53,7 +53,7 @@ class NewAttributes extends Component {
             <View>
               <Text
                 id="age-info"
-                style={{ fontSize: 18, color: '#4A4A4A', display: this.state.currentDate ? 'flex' : 'none' }}
+                style={styles.newAttributesAttributeValue}
               >
                 { this.state.currentDate }
               </Text>

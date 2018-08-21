@@ -78,7 +78,7 @@ export default {
   },
   schema: {
     addressLocality: 'Residencia',
-    dateOfBirth: 'Edat',
+    dateOfBirth: 'Data de Naixement',
     gender: 'Gènere',
   },
 };

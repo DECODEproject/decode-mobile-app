@@ -2,7 +2,7 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import { Text } from 'react-native';
-import AttributesListItem from '../../application/components/AttributeListItem/AttributeListItem';
+import AttributeListItem from '../../application/components/AttributeListItem/AttributeListItem';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -20,9 +20,10 @@ describe('AttributesListItem', () => {
         subject: '(Alpaca)',
       };
 
-      const wrapper = shallow(<AttributesListItem attribute={{ item: attribute }} />);
+      const wrapper = shallow(<AttributeListItem attribute={{ item: attribute }} />)
+        .first().shallow().dive();
 
-      const LabelWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'Residency');
+      const LabelWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'Estado de Residencia');
       expect(LabelWrappers).toHaveLength(1);
 
       const ValueWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'some city');
@@ -44,9 +45,10 @@ describe('AttributesListItem', () => {
         subject: 'Jordi',
       };
 
-      const wrapper = shallow(<AttributesListItem attribute={{ item: attribute }} />);
+      const wrapper = shallow(<AttributeListItem attribute={{ item: attribute }} />)
+        .first().shallow().dive();
 
-      const LabelWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'Date of Birth');
+      const LabelWrappers = wrapper.find(Text).findWhere(n => n.text() === 'Fecha de Nacimiento');
       expect(LabelWrappers).toHaveLength(1);
 
       const ValueWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'some date');

@@ -163,7 +163,7 @@ describe('The PetitionSummary page', () => {
       .first()
       .shallow({ context: { store } });
 
-    const attributeWrapper = wrapper.dive().dive().find(Text).findWhere(n => n.text() === 'Edad');
+    const attributeWrapper = wrapper.dive().dive().find(Text).findWhere(n => n.text() === 'Fecha de Nacimiento');
 
     expect(attributeWrapper).toHaveLength(1);
   });
