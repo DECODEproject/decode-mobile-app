@@ -14,7 +14,7 @@ export default {
     button: 'Accedir',
   },
   newAttributes: {
-    description: 'Escull una dada de la llista de baix para afegir-la a la wallet',
+    description: 'Pots afegir atributs a la wallet.',
     ageAttribute: 'Data de Naixement',
     add: 'Afegir',
     edit: 'Editar',

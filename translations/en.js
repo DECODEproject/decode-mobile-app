@@ -14,7 +14,7 @@ export default {
     button: 'Sign In',
   },
   newAttributes: {
-    description: 'Select an attribute to add to your wallet from the list below.',
+    description: 'You can add these attributes to your wallet.',
     ageAttribute: 'Date of Birth',
     add: 'Add',
     edit: 'Edit',
