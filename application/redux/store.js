@@ -10,6 +10,7 @@ import wallet from './reducers/wallet';
 import attributes from './reducers/attributes';
 import authorization from './reducers/authorization';
 import pinSetup from './reducers/pinSetup';
+import featureToggles from './reducers/featureToggles';
 
 const enhancer = compose(
   applyMiddleware(thunk),
@@ -35,6 +36,7 @@ const Store = createStoreWithNavigation(combineReducers({
   attributes,
   authorization,
   pinSetup,
+  featureToggles,
 }));
 
 export default Store;
