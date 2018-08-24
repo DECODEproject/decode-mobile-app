@@ -1,5 +1,5 @@
 import fetchMock from 'fetch-mock';
-import fetchPetition from '../../lib/DecidimAPI';
+import DecidimClient from '../../lib/DecidimClient';
 
 describe('Decidim API class', () => {
   afterEach(() => {
@@ -10,7 +10,6 @@ describe('Decidim API class', () => {
   describe('Decidim API fetch petition data', () => {
     const petitionLink = 'petitions';
     const petitionId = '2';
-
     const petitionFromDecidim = {
       data: {
         participatoryProcess: {
@@ -21,6 +20,7 @@ describe('Decidim API class', () => {
         },
       },
     };
+    const decidimClient = new DecidimClient();
 
     const expectedPetition = {
       petition: {
@@ -52,7 +52,7 @@ describe('Decidim API class', () => {
       `;
     it('should return the petition from Decidim API', async () => {
       fetchMock.getOnce(graphQlQuery, petitionFromDecidim);
-      const actualPetition = await fetchPetition(petitionLink, petitionId);
+      const actualPetition = await decidimClient.fetchPetition(petitionLink, petitionId);
 
       expect(actualPetition).toEqual(expectedPetition);
     });
@@ -64,7 +64,7 @@ describe('Decidim API class', () => {
       };
 
       fetchMock.getOnce(graphQlQuery, Promise.reject(new Error('Failed Fetch')));
-      const petitionResponse = await fetchPetition(petitionLink, petitionId);
+      const petitionResponse = await decidimClient.fetchPetition(petitionLink, petitionId);
 
       expect(petitionResponse).toEqual(error);
     });
@@ -77,7 +77,7 @@ describe('Decidim API class', () => {
         body: '',
       };
       fetchMock.getOnce(graphQlQuery, errorResponse403);
-      const actualPetition = await fetchPetition(petitionLink, petitionId);
+      const actualPetition = await decidimClient.fetchPetition(petitionLink, petitionId);
       expect(actualPetition).toEqual(error);
     });
   });

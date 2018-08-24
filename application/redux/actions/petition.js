@@ -1,5 +1,5 @@
 import types from '../actionTypes';
-import fetchPetition from '../../../lib/DecidimAPI';
+import DecidimClient from '../../../lib/DecidimClient';
 
 export function setPetition(petition, walletAttributes) {
   return {
@@ -56,7 +56,7 @@ async function getPetitionFromDecidimMock(dispatch, getState, petitionLink) {
 }
 
 async function getPetitionFromDecidimAPI(dispatch, getState, petitionLink, petitionId) {
-  const petitionResult = await fetchPetition(petitionLink, petitionId);
+  const petitionResult = await new DecidimClient().fetchPetition(petitionLink, petitionId);
   if (petitionResult.error) dispatch(setPetitionError(`${petitionResult.message}`));
   const { attributes } = getState();
   const currentAttributes = attributes ? attributes.list : new Map();
