@@ -11,6 +11,8 @@ import { getPetition } from '../application/redux/actions/petition';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
+import DecidimClient from '../lib/DecidimClient';
+import LanguageService from '../lib/LanguageService';
 
 const decodeUser = require('../assets/images/decode-user.png');
 
@@ -150,8 +152,9 @@ const mapStateToProps = state => ({
   walletId: state.wallet.id,
 });
 
+const decidimClient = new DecidimClient(new LanguageService());
 const mapDispatchToProps = dispatch => ({
-  getPetition: petitionLink => dispatch(getPetition(petitionLink)),
+  getPetition: petitionLink => dispatch(getPetition(decidimClient, petitionLink)),
   goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
   addCredential: (attribute, walletId, url) => {
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));

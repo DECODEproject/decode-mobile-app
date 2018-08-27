@@ -1,13 +1,20 @@
 import fetchMock from 'fetch-mock';
 import DecidimClient from '../../lib/DecidimClient';
+import LanguageService from '../../lib/LanguageService';
 
-describe('Decidim API class', () => {
+describe('Decidim Client', () => {
   afterEach(() => {
     fetchMock.reset();
     fetchMock.restore();
   });
 
-  describe('Decidim API fetch petition data', () => {
+  const getLanguageServiceMock = (language = 'ca') => {
+    const languageService = new LanguageService();
+    languageService.getLanguage = () => language;
+    return languageService;
+  };
+
+  describe('fetch petition data', () => {
     const petitionLink = 'petitions';
     const petitionId = '2';
     const petitionFromDecidim = {
@@ -20,7 +27,7 @@ describe('Decidim API class', () => {
         },
       },
     };
-    const decidimClient = new DecidimClient();
+    const decidimClient = new DecidimClient(getLanguageServiceMock());
 
     const expectedPetition = {
       petition: {
@@ -79,6 +86,25 @@ describe('Decidim API class', () => {
       fetchMock.getOnce(graphQlQuery, errorResponse403);
       const actualPetition = await decidimClient.fetchPetition(petitionLink, petitionId);
       expect(actualPetition).toEqual(error);
+    });
+
+    it('should request the petition data with the appropriate language', async () => {
+      const graphQlQueryForSpanish = `${petitionLink}
+        query={
+          participatoryProcess(id: ${petitionId}) {
+            id
+            title {
+              translation (locale: "es")
+            }
+          }
+        }
+      `;
+      fetchMock.get(graphQlQueryForSpanish, petitionFromDecidim);
+
+      const languageServiceForSpanish = getLanguageServiceMock('es');
+      await new DecidimClient(languageServiceForSpanish).fetchPetition(petitionLink, petitionId);
+
+      expect(fetchMock.done(fetchMock.MATCHED)).toEqual(true);
     });
   });
 });

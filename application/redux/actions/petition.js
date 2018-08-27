@@ -1,5 +1,4 @@
 import types from '../actionTypes';
-import DecidimClient from '../../../lib/DecidimClient';
 
 export function setPetition(petition, walletAttributes) {
   return {
@@ -55,20 +54,20 @@ async function getPetitionFromDecidimMock(dispatch, getState, petitionLink) {
   return dispatch(setPetition(json, currentAttributes));
 }
 
-async function getPetitionFromDecidimAPI(dispatch, getState, petitionLink, petitionId) {
-  const petitionResult = await new DecidimClient().fetchPetition(petitionLink, petitionId);
+async function getPetitionFromDecidim(dispatch, getState, decidimClient, petitionLink, petitionId) {
+  const petitionResult = await decidimClient.fetchPetition(petitionLink, petitionId);
   if (petitionResult.error) dispatch(setPetitionError(`${petitionResult.message}`));
   const { attributes } = getState();
   const currentAttributes = attributes ? attributes.list : new Map();
   return dispatch(setPetition(petitionResult, currentAttributes));
 }
 
-export function getPetition(petitionLink, petitionId) {
+export function getPetition(decidimClient, petitionLink, petitionId) {
   return async (dispatch, getState) => {
     if (!getState().featureToggles.decidimApi) {
       return getPetitionFromDecidimMock(dispatch, getState, petitionLink);
     }
-    return getPetitionFromDecidimAPI(dispatch, getState, petitionLink, petitionId);
+    return getPetitionFromDecidim(dispatch, getState, decidimClient, petitionLink, petitionId);
   };
 }
 

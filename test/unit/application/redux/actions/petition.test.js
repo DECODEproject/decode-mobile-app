@@ -3,6 +3,10 @@ import fetchMock from 'fetch-mock';
 import thunk from 'redux-thunk';
 import { getPetition, signPetition, toggleEnableAttribute } from '../../../../../application/redux/actions/petition';
 import types from '../../../../../application/redux/actionTypes';
+import DecidimClient from '../../../../../lib/DecidimClient';
+
+jest.mock('../../../../../lib/DecidimClient.js');
+
 
 const mockStore = configureMockStore([thunk]);
 
@@ -50,7 +54,7 @@ describe('getPetition', () => {
 
       fetchMock.getOnce(petitionLink, petitionFromDecidim);
 
-      return store.dispatch(getPetition(petitionLink)).then(() => {
+      return store.dispatch(getPetition(null, petitionLink)).then(() => {
         expect(store.getActions()).toEqual(expectedActions);
       });
     });
@@ -69,7 +73,7 @@ describe('getPetition', () => {
         body: errorMessage,
       });
 
-      return store.dispatch(getPetition(petitionLink)).then(() => {
+      return store.dispatch(getPetition(null, petitionLink)).then(() => {
         expect(store.getActions()).toEqual(expectedActions);
       });
     });
@@ -79,28 +83,16 @@ describe('getPetition', () => {
     it('should dispatch successful action', () => {
       const petitionId = '2';
 
-      const petitionFromDecidim = {
-        data: {
-          participatoryProcess: {
-            id: petitionId,
-            title: {
-              translation: "Pla d'Actuació Municipal",
-            },
-          },
-        },
-      };
-
       store = mockStore({
         featureToggles: {
           decidimApi: true,
         },
       });
 
-
       const expectedPetition = {
         petition: {
           id: petitionId,
-          title: petitionFromDecidim.data.participatoryProcess.title.translation,
+          title: "Pla d'Actuació Municipal",
           attributes: {
             mandatory: [{
               predicate: 'schema:addressLocality',
@@ -121,23 +113,17 @@ describe('getPetition', () => {
         walletAttributes: new Map(),
       }];
 
-      // TODO: locale
-      const graphQlQuery = `${petitionLink}
-        query={
-          participatoryProcess(id: ${petitionId}) {
-            id
-            title {
-              translation (locale: "ca")
-            }
-          }
-        }
-      `;
+      DecidimClient.mockImplementation(() => ({
+        fetchPetition: () => (expectedPetition),
+      }));
 
-      fetchMock.getOnce(graphQlQuery, petitionFromDecidim);
-
-      return store.dispatch(getPetition(petitionLink, petitionId)).then(() => {
+      return store.dispatch(getPetition(new DecidimClient(), petitionLink, petitionId)).then(() => {
         expect(store.getActions()).toEqual(expectedActions);
       });
+    });
+
+    xit('should dispatch error action', () => {
+
     });
   });
 });
