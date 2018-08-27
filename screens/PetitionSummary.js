@@ -223,7 +223,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  getPetition: petitionLink => dispatch(getPetition(petitionLink)),
+  // TODO: Inject DecidimClient
+  getPetition: petitionLink => dispatch(getPetition(null, petitionLink, null)),
   setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
