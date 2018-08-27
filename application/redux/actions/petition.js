@@ -55,11 +55,14 @@ async function getPetitionFromDecidimMock(dispatch, getState, petitionLink) {
 }
 
 async function getPetitionFromDecidim(dispatch, getState, decidimClient, petitionLink, petitionId) {
-  const petitionResult = await decidimClient.fetchPetition(petitionLink, petitionId);
-  if (petitionResult.error) dispatch(setPetitionError(`${petitionResult.message}`));
-  const { attributes } = getState();
-  const currentAttributes = attributes ? attributes.list : new Map();
-  return dispatch(setPetition(petitionResult, currentAttributes));
+  try {
+    const petitionResult = await decidimClient.fetchPetition(petitionLink, petitionId);
+    const { attributes } = getState();
+    const currentAttributes = attributes ? attributes.list : new Map();
+    return dispatch(setPetition(petitionResult, currentAttributes));
+  } catch (error) {
+    return dispatch(setPetitionError(error.message));
+  }
 }
 
 export function getPetition(decidimClient, petitionLink, petitionId) {

@@ -5,5 +5,10 @@
       "plugins": ["transform-react-jsx-source"]
     }
   },
-  "plugins": ["transform-inline-environment-variables"]
+  "plugins": [
+    "transform-inline-environment-variables",
+    ["babel-plugin-transform-builtin-extend", {
+      "globals": ["Error"]
+    }]
+  ]
 }

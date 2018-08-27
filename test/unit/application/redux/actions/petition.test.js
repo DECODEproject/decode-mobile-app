@@ -4,6 +4,7 @@ import thunk from 'redux-thunk';
 import { getPetition, signPetition, toggleEnableAttribute } from '../../../../../application/redux/actions/petition';
 import types from '../../../../../application/redux/actionTypes';
 import DecidimClient from '../../../../../lib/DecidimClient';
+import FetchPetitionError from '../../../../../lib/errors/FetchPetitionError';
 
 jest.mock('../../../../../lib/DecidimClient.js');
 
@@ -122,8 +123,26 @@ describe('getPetition', () => {
       });
     });
 
-    xit('should dispatch error action', () => {
+    it('should dispatch error action', async () => {
+      const petitionId = '2';
 
+      store = mockStore({
+        featureToggles: {
+          decidimApi: true,
+        },
+      });
+
+      DecidimClient.mockImplementation(() => ({
+        fetchPetition: () => { throw new FetchPetitionError(); },
+      }));
+
+      await store.dispatch(getPetition(new DecidimClient(), petitionLink, petitionId));
+
+      const expectedActions = [{
+        type: types.SET_PETITION_ERROR,
+        error: 'Could not retrieve petition details',
+      }];
+      await expect(store.getActions()).toEqual(expectedActions);
     });
   });
 });
