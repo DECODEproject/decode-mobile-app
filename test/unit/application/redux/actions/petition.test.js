@@ -13,15 +13,8 @@ const mockStore = configureMockStore([thunk]);
 
 describe('getPetition', () => {
   const petitionLink = 'petitions';
+  const petitionId = '2';
   let store;
-
-  beforeEach(() => {
-    store = mockStore({
-      featureToggles: {
-        decidimApi: false,
-      },
-    });
-  });
 
   afterEach(() => {
     fetchMock.reset();
@@ -29,6 +22,14 @@ describe('getPetition', () => {
   });
 
   describe('feature toggle decidimApi off', () => {
+    beforeEach(() => {
+      store = mockStore({
+        featureToggles: {
+          decidimApi: false,
+        },
+      });
+    });
+
     it('should dispatch successful action', () => {
       const petitionFromDecidim = {
         petition: {
@@ -81,15 +82,15 @@ describe('getPetition', () => {
   });
 
   describe('feature toggle decidimApi on', () => {
-    it('should dispatch successful action', () => {
-      const petitionId = '2';
-
+    beforeEach(() => {
       store = mockStore({
         featureToggles: {
           decidimApi: true,
         },
       });
+    });
 
+    it('should dispatch successful action', () => {
       const expectedPetition = {
         petition: {
           id: petitionId,
@@ -124,14 +125,6 @@ describe('getPetition', () => {
     });
 
     it('should dispatch error action', async () => {
-      const petitionId = '2';
-
-      store = mockStore({
-        featureToggles: {
-          decidimApi: true,
-        },
-      });
-
       DecidimClient.mockImplementation(() => ({
         fetchPetition: () => { throw new FetchPetitionError(); },
       }));
