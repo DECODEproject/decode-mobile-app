@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import fetchMock from 'fetch-mock';
 import thunk from 'redux-thunk';
-import { getPetition, signPetition, toggleEnableAttribute } from '../../../../../application/redux/actions/petition';
+import { getPetition, signPetition, toggleEnableAttribute, setDecidimData } from '../../../../../application/redux/actions/petition';
 import types from '../../../../../application/redux/actionTypes';
 import DecidimClient from '../../../../../lib/DecidimClient';
 import FetchPetitionError from '../../../../../lib/errors/FetchPetitionError';
@@ -88,6 +88,20 @@ describe('getPetition', () => {
           decidimApi: true,
         },
       });
+    });
+
+    it('should dispatch SET_DECIDIM_DATA action successful', () => {
+      const petitionId = '1';
+      const decidimAPIUrl = 'decidimurl';
+
+      const expectedActions = [{
+        type: types.SET_DECIDIM_DATA,
+        petitionId: '1',
+        decidimAPIUrl: 'decidimurl',
+      }];
+
+      store.dispatch(setDecidimData(petitionId, decidimAPIUrl));
+      expect(store.getActions()).toEqual(expectedActions);
     });
 
     it('should dispatch successful action', () => {

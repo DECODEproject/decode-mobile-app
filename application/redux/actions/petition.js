@@ -1,5 +1,13 @@
 import types from '../actionTypes';
 
+export function setDecidimData(petitionId, decidimAPIUrl) {
+  return {
+    type: types.SET_DECIDIM_DATA,
+    petitionId,
+    decidimAPIUrl,
+  }
+}
+
 export function setPetition(petition, walletAttributes) {
   return {
     type: types.SET_PETITION,
