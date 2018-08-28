@@ -3,6 +3,8 @@ import types from '../actionTypes';
 const initialState = {
   loaded: false,
   petition: {},
+  decidimAPIUrl: undefined,
+  petitionId: undefined,
   error: undefined,
   signed: false,
   enabledAttributes: [{ predicate: 'schema:addressLocality' }],
@@ -24,6 +26,14 @@ const toggleElementsInList = (element, list) => {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
+    case types.SET_DECIDIM_DATA: {
+      const { petitionId, decidimAPIUrl } = action;
+      return {
+        ...state,
+        petitionId,
+        decidimAPIUrl,
+      };
+    }
     case types.SET_PETITION: {
       const { petition } = action;
       return {

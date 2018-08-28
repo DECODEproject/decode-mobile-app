@@ -13,6 +13,8 @@ describe('petition reducer', () => {
   const initialState = {
     loaded: false,
     petition: {},
+    decidimAPIUrl: undefined,
+    petitionId: undefined,
     error: undefined,
     signed: false,
     enabledAttributes: [{ predicate: 'schema:addressLocality' }],
@@ -21,6 +23,8 @@ describe('petition reducer', () => {
   const initialStateWithPetition = {
     loaded: false,
     petition: createPetition(),
+    decidimAPIUrl: undefined,
+    petitionId: undefined,
     error: undefined,
     signed: false,
     enabledAttributes: [],
@@ -28,6 +32,20 @@ describe('petition reducer', () => {
 
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual(initialState);
+  });
+
+  it('should handle SET_DECIDIM_DATA', () => {
+    const action = {
+      type: types.SET_DECIDIM_DATA,
+      decidimAPIUrl: 'decidimurl',
+      petitionId: '1',
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      ...initialState,
+      decidimAPIUrl: 'decidimurl',
+      petitionId: '1',
+    });
   });
 
   it('should handle SET_PETITION', () => {
