@@ -1,14 +1,12 @@
-import fetchMock from 'fetch-mock';
+import axios from 'axios';
 import DecidimClient from '../../lib/DecidimClient';
 import LanguageService from '../../lib/LanguageService';
 import FetchPetitionError from '../../lib/errors/FetchPetitionError';
+import PetitionNotFoundError from '../../lib/errors/PetitionNotFoundError';
+
+jest.mock('axios');
 
 describe('Decidim Client', () => {
-  afterEach(() => {
-    fetchMock.reset();
-    fetchMock.restore();
-  });
-
   const getLanguageServiceMock = (language = 'ca') => {
     const languageService = new LanguageService();
     languageService.getLanguage = () => language;
@@ -16,7 +14,7 @@ describe('Decidim Client', () => {
   };
 
   describe('fetch petition data', () => {
-    const petitionLink = 'petitions';
+    const decidimApiUrl = 'decidim.api.com';
     const petitionId = '2';
     const petitionFromDecidim = {
       data: {
@@ -48,57 +46,62 @@ describe('Decidim Client', () => {
       },
     };
 
-    const graphQlQuery = `${petitionLink}
-        query={
-          participatoryProcess(id: ${petitionId}) {
-            id
-            title {
-              translation (locale: "ca")
-            }
-          }
+    const requestQuery = `{
+      participatoryProcess(id: ${petitionId}) {
+        id
+        title {
+          translation (locale: "ca")
         }
-      `;
+      }
+    }`.replace('\n', '');
+    const requestBody = { query: requestQuery };
+
+    const requestQueryForSpanish = `{
+      participatoryProcess(id: ${petitionId}) {
+        id
+        title {
+          translation (locale: "es")
+        }
+      }
+    }`.replace('\n', '');
+    const requestBodyForSpanish = { query: requestQueryForSpanish };
+
     it('should return the petition from Decidim API', async () => {
-      fetchMock.getOnce(graphQlQuery, petitionFromDecidim);
-      const actualPetition = await decidimClient.fetchPetition(petitionLink, petitionId);
+      axios.post.mockResolvedValue(petitionFromDecidim);
+      const actualPetition = await decidimClient.fetchPetition(decidimApiUrl, petitionId);
 
       expect(actualPetition).toEqual(expectedPetition);
+      expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
     });
 
     it('should return an error if there is a problem fetching from Decidim', async () => {
-      fetchMock.getOnce(graphQlQuery, Promise.reject(new Error('Failed Fetch')));
+      axios.post.mockRejectedValue(new Error('Failed post'));
 
-      await expect(decidimClient.fetchPetition(petitionLink, petitionId))
+      await expect(decidimClient.fetchPetition(decidimApiUrl, petitionId))
         .rejects.toThrow(FetchPetitionError);
+      expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
     });
 
-    it('should return an error if fetch was successful but returns not 200', async () => {
-      const errorResponse403 = {
-        status: 403,
-        body: '',
+    it('should return an error if fetch was successful but petition does not exist', async () => {
+      const errorResponse = {
+        data: {
+          participatoryProcess: null,
+        },
       };
-      fetchMock.getOnce(graphQlQuery, errorResponse403);
-      await expect(decidimClient.fetchPetition(petitionLink, petitionId))
-        .rejects.toThrow(FetchPetitionError);
+      axios.post.mockResolvedValue(errorResponse);
+
+      await expect(decidimClient.fetchPetition(decidimApiUrl, petitionId))
+        .rejects.toThrow(PetitionNotFoundError);
+      expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
     });
 
     it('should request the petition data with the appropriate language', async () => {
-      const graphQlQueryForSpanish = `${petitionLink}
-        query={
-          participatoryProcess(id: ${petitionId}) {
-            id
-            title {
-              translation (locale: "es")
-            }
-          }
-        }
-      `;
-      fetchMock.get(graphQlQueryForSpanish, petitionFromDecidim);
-
       const languageServiceForSpanish = getLanguageServiceMock('es');
-      await new DecidimClient(languageServiceForSpanish).fetchPetition(petitionLink, petitionId);
+      axios.post.mockResolvedValue(petitionFromDecidim);
 
-      expect(fetchMock.done(fetchMock.MATCHED)).toEqual(true);
+      await new DecidimClient(languageServiceForSpanish).fetchPetition(decidimApiUrl, petitionId);
+
+      expect(axios.post).toBeCalledWith(decidimApiUrl, requestBodyForSpanish);
     });
   });
 });

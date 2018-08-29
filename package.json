@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@expo/ex-navigation": "^4.2.0",
+    "axios": "^0.18.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "chai": "^4.1.2",
