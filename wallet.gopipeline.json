@@ -30,28 +30,29 @@
               "type": "exec",
               "run_if": "passed",
               "on_cancel" : null,
-              "command": "npm",
+              "command": "make",
               "arguments": [
-                "install"
+                "build"
               ]
             },
             {
               "type": "exec",
               "run_if": "passed",
               "on_cancel" : null,
-              "command": "npm",
+              "command": "make",
               "arguments": [
-                "run",
-                "lint"
+                "lint",
+                "ci=true"
               ]
             },
             {
               "type": "exec",
               "run_if": "passed",
               "on_cancel" : null,
-              "command": "npm",
+              "command": "make",
               "arguments": [
-                "test"
+                "test",
+                "ci=true"
               ]
             }
           ]
