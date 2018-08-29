@@ -91,12 +91,11 @@ describe('getPetition', () => {
     });
 
     it('should dispatch SET_DECIDIM_DATA action successful', () => {
-      const petitionId = '1';
       const decidimAPIUrl = 'decidimurl';
 
       const expectedActions = [{
         type: types.SET_DECIDIM_DATA,
-        petitionId: '1',
+        petitionId: '2',
         decidimAPIUrl: 'decidimurl',
       }];
 
