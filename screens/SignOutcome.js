@@ -129,7 +129,7 @@ class SignOutcome extends React.Component {
   }
 
   render() {
-    if (this.props.signSuccess) {
+    if (!this.props.signSuccess) {
       return this.error();
     }
     return this.successful();
