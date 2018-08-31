@@ -5,7 +5,7 @@ import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary } from '../application/redux/actions/navigation';
-import { onStartApp } from '../application/redux/actions/petitionLink';
+import { onStartApp, setDecidimAPIUrl } from '../application/redux/actions/petitionLink';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
@@ -128,6 +128,7 @@ const mapDispatchToProps = dispatch => ({
   updatePin: pin => dispatch(updatePin(pin)),
   initializeState: async () => {
     await dispatch(onStartApp());
+    await dispatch(setDecidimAPIUrl());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
   },
 });
