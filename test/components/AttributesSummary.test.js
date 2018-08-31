@@ -18,10 +18,13 @@ describe('AttributesSummary', () => {
   const initialState = {
     petitionLink: {
       petitionLink: 'http://something.com',
+      decidimAPIUrl: 'http://decidim.api.com',
     },
     petition: {
       petitionAttributes: [],
-      petition: {},
+      petition: {
+        id: '2',
+      },
     },
     attributes: {
       list: new Map(),
@@ -126,6 +129,7 @@ describe('AttributesSummary', () => {
       const someWalletId = '123';
       const residencyAttribute = {};
       const somePetition = {
+        id: '2',
         attributes: {
           mandatory: [residencyAttribute],
           optional: [],

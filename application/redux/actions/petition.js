@@ -62,9 +62,9 @@ async function getPetitionFromDecidimMock(dispatch, getState, petitionLink) {
   return dispatch(setPetition(json, currentAttributes));
 }
 
-async function getPetitionFromDecidim(dispatch, getState, decidimClient, petitionLink, petitionId) {
+async function getPetitionFromDecidim(dispatch, getState, decidimClient, decidimAPIUrl, petitionId) {
   try {
-    const petitionResult = await decidimClient.fetchPetition(petitionLink, petitionId);
+    const petitionResult = await decidimClient.fetchPetition(decidimAPIUrl, petitionId);
     const { attributes } = getState();
     const currentAttributes = attributes ? attributes.list : new Map();
     return dispatch(setPetition(petitionResult, currentAttributes));
@@ -73,12 +73,12 @@ async function getPetitionFromDecidim(dispatch, getState, decidimClient, petitio
   }
 }
 
-export function getPetition(decidimClient, petitionLink, petitionId) {
+export function getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId) {
   return async (dispatch, getState) => {
     if (!getState().featureToggles.decidimApi) {
       return getPetitionFromDecidimMock(dispatch, getState, petitionLink);
     }
-    return getPetitionFromDecidim(dispatch, getState, decidimClient, petitionLink, petitionId);
+    return getPetitionFromDecidim(dispatch, getState, decidimClient, decidimAPIUrl, petitionId);
   };
 }
 

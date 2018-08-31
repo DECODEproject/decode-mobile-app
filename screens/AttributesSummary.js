@@ -28,7 +28,11 @@ class AttributesSummary extends React.Component {
   };
 
   componentDidMount() {
-    this.props.getPetition(this.props.petitionLink);
+    this.props.getPetition(
+      this.props.petitionLink,
+      this.props.decidimAPIUrl,
+      this.props.petition.id,
+    );
   }
 
   handleRedirect = async (event) => {
@@ -130,6 +134,7 @@ class AttributesSummary extends React.Component {
 AttributesSummary.propTypes = {
   getPetition: PropTypes.func.isRequired,
   petitionLink: PropTypes.string.isRequired,
+  decidimAPIUrl: PropTypes.string.isRequired,
   petition: PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -148,13 +153,16 @@ AttributesSummary.defaultProps = {
 
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
+  decidimAPIUrl: state.petitionLink.decidimAPIUrl,
   petition: state.petition.petition,
   walletId: state.wallet.id,
 });
 
 const decidimClient = new DecidimClient(new LanguageService());
 const mapDispatchToProps = dispatch => ({
-  getPetition: petitionLink => dispatch(getPetition(decidimClient, petitionLink)),
+  getPetition: (petitionLink, decidimAPIUrl, petitionId) => {
+    dispatch(getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId));
+  },
   goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
   addCredential: (attribute, walletId, url) => {
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
