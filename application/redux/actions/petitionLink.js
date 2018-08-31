@@ -1,5 +1,5 @@
-import { Linking } from 'react-native';
 import urlParse from 'url-parse';
+import getInitialUrl from '../../utils/url';
 
 export function setPetitionLink(petitionLink) {
   return {
@@ -10,7 +10,7 @@ export function setPetitionLink(petitionLink) {
 
 export function onStartApp() {
   return (dispatch) => {
-    Linking.getInitialURL().then((url) => {
+    getInitialUrl().then((url) => {
       const myURL = urlParse(url, true);
       const { query: { petitionLink } } = myURL;
       dispatch(setPetitionLink(petitionLink));
