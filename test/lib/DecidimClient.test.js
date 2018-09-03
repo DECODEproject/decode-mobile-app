@@ -18,10 +18,12 @@ describe('Decidim Client', () => {
     const petitionId = '2';
     const petitionFromDecidim = {
       data: {
-        participatoryProcess: {
-          id: petitionId,
-          title: {
-            translation: "Pla d'Actuació Municipal",
+        data: {
+          participatoryProcess: {
+            id: petitionId,
+            title: {
+              translation: "Pla d'Actuació Municipal",
+            },
           },
         },
       },
@@ -31,7 +33,7 @@ describe('Decidim Client', () => {
     const expectedPetition = {
       petition: {
         id: petitionId,
-        title: petitionFromDecidim.data.participatoryProcess.title.translation,
+        title: petitionFromDecidim.data.data.participatoryProcess.title.translation,
         attributes: {
           mandatory: [{
             predicate: 'schema:addressLocality',
@@ -53,7 +55,7 @@ describe('Decidim Client', () => {
           translation (locale: "ca")
         }
       }
-    }`.replace('\n', '');
+    }`.replace(/\n/g, '');
     const requestBody = { query: requestQuery };
 
     const requestQueryForSpanish = `{
@@ -63,7 +65,7 @@ describe('Decidim Client', () => {
           translation (locale: "es")
         }
       }
-    }`.replace('\n', '');
+    }`.replace(/\n/g, '');
     const requestBodyForSpanish = { query: requestQueryForSpanish };
 
     it('should return the petition from Decidim API', async () => {
@@ -85,7 +87,9 @@ describe('Decidim Client', () => {
     it('should return an error if fetch was successful but petition does not exist', async () => {
       const errorResponse = {
         data: {
-          participatoryProcess: null,
+          data: {
+            participatoryProcess: null,
+          },
         },
       };
       axios.post.mockResolvedValue(errorResponse);
