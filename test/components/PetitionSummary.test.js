@@ -22,6 +22,7 @@ describe('The PetitionSummary page', () => {
           mandatory: [],
           optional: [],
         },
+        title: 'Some title',
       },
       error: undefined,
       signed: false,

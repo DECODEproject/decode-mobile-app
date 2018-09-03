@@ -18,19 +18,19 @@ export function goToQRScanner() {
   };
 }
 
-export function goToPetitionSummary(petitionLink) {
+export function goToPetitionSummary() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
-    const route = Router.getRoute('petitionSummary', { petitionLink });
+    const route = Router.getRoute('petitionSummary');
     const action = NavigationActions.push(navigatorUID, route);
     dispatch(action);
   };
 }
 
-export function goToAttributesSummary(petitionLink) {
+export function goToAttributesSummary() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
-    const route = Router.getRoute('attributesSummary', { petitionLink });
+    const route = Router.getRoute('attributesSummary');
     const action = NavigationActions.push(navigatorUID, route);
     dispatch(action);
   };
@@ -72,7 +72,7 @@ export function goToPilotScreen() {
   return (dispatch, getState) => {
     const link = getState().petitionLink.petitionLink;
     if (link) {
-      dispatch(goToAttributesSummary(link));
+      dispatch(goToAttributesSummary());
     } else {
       dispatch(goToAttributesLanding());
     }

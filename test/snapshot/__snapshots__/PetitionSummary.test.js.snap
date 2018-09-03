@@ -11,8 +11,6 @@ ShallowWrapper {
         "optional": Array [],
       }
     }
-    decidimAPIUrl="http://another.com"
-    getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
       I18n {
@@ -11802,7 +11800,6 @@ Haz click en botón inferior para empezar",
       }
     }
     petitionError={undefined}
-    petitionLink="http://something.com"
     setSignOutcome={[Function]}
     signPetition={[Function]}
     signSuccess={undefined}
@@ -12874,8 +12871,6 @@ ShallowWrapper {
         "optional": Array [],
       }
     }
-    decidimAPIUrl="http://another.com"
-    getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
       I18n {
@@ -24662,7 +24657,6 @@ Haz click en botón inferior para empezar",
       }
     }
     petitionError={undefined}
-    petitionLink="http://something.com"
     setSignOutcome={[Function]}
     signPetition={[Function]}
     signSuccess={undefined}

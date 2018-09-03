@@ -57,7 +57,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
+  goToPetitionSummary: () => { dispatch(goToPetitionSummary()); },
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Authorisation);

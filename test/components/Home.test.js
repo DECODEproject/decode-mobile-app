@@ -15,6 +15,9 @@ describe('validatePinCode', () => {
   const goToAttributesSummaryMock = jest.fn();
   const goToPetitionSummaryMock = jest.fn();
   const goToAttributesLandingMock = jest.fn();
+  const getPetitionMock = jest.fn();
+  const decidimClientMock = jest.fn();
+  const petitionId = '40';
 
   beforeEach(() => {
     global.alert = alertMock;
@@ -91,6 +94,7 @@ describe('validatePinCode', () => {
       const initialState = {
         petitionLink: {
           petitionLink: somePetitionLink,
+          decidimAPIUrl: 'decidim.com',
         },
         authorization: {},
         attributes: {
@@ -106,19 +110,28 @@ describe('validatePinCode', () => {
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
+        decidimClient: decidimClientMock,
+        getPetition: getPetitionMock,
         goToAttributesSummary: goToAttributesSummaryMock,
         doAuthorize: doAuthorizeMock,
       };
 
       await homeComponent.validatePinCode();
 
-      expect(goToAttributesSummaryMock).toBeCalledWith(somePetitionLink);
+      expect(getPetitionMock).toBeCalledWith(
+        decidimClientMock,
+        initialState.petitionLink.petitionLink,
+        initialState.petitionLink.decidimAPIUrl,
+        petitionId,
+      );
+      expect(goToAttributesSummaryMock).toBeCalled();
     });
 
     it('should call goToPetitionSummary if there is a petitionLink and the required attribute is verified', async () => {
       const initialState = {
         petitionLink: {
           petitionLink: somePetitionLink,
+          decidimAPIUrl: 'decidim.com',
         },
         authorization: {},
         attributes: {
@@ -134,14 +147,22 @@ describe('validatePinCode', () => {
       const homeComponent = wrapper.dive().instance();
       homeComponent.props = {
         ...homeComponent.props,
+        decidimClient: decidimClientMock,
         goToAttributesSummary: goToAttributesSummaryMock,
+        getPetition: getPetitionMock,
         goToPetitionSummary: goToPetitionSummaryMock,
         doAuthorize: doAuthorizeMock,
       };
 
       await homeComponent.validatePinCode();
 
-      expect(goToPetitionSummaryMock).toBeCalledWith(somePetitionLink);
+      expect(getPetitionMock).toBeCalledWith(
+        decidimClientMock,
+        initialState.petitionLink.petitionLink,
+        initialState.petitionLink.decidimAPIUrl,
+        petitionId,
+      );
+      expect(goToPetitionSummaryMock).toBeCalled();
     });
   });
 });

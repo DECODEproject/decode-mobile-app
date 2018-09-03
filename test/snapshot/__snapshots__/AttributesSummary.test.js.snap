@@ -6,8 +6,6 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AttributesSummary
     addCredential={[Function]}
-    decidimAPIUrl="http://decidim.api.com"
-    getPetition={[Function]}
     goToPetitionSummary={[Function]}
     i18n={
       I18n {
@@ -11786,7 +11784,6 @@ Haz click en botón inferior para empezar",
         "id": "2",
       }
     }
-    petitionLink="http://something.com"
     t={[Function]}
     tReady={false}
     walletId="something"

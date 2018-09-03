@@ -7,12 +7,9 @@ import { translate } from 'react-i18next';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
 import { addCredential } from '../application/redux/actions/attributes';
-import { getPetition } from '../application/redux/actions/petition';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
-import DecidimClient from '../lib/DecidimClient';
-import LanguageService from '../lib/LanguageService';
 
 const decodeUser = require('../assets/images/decode-user.png');
 
@@ -27,19 +24,11 @@ class AttributesSummary extends React.Component {
     },
   };
 
-  componentDidMount() {
-    this.props.getPetition(
-      this.props.petitionLink,
-      this.props.decidimAPIUrl,
-      this.props.petition.id,
-    );
-  }
-
   handleRedirect = async (event) => {
     const { url } = event;
     const { petition, walletId } = this.props;
     await this.props.addCredential(petition.attributes.mandatory[0], walletId, url);
-    await this.props.goToPetitionSummary(this.props.petitionLink);
+    await this.props.goToPetitionSummary();
     WebBrowser.dismissBrowser();
   };
 
@@ -132,9 +121,6 @@ class AttributesSummary extends React.Component {
 }
 
 AttributesSummary.propTypes = {
-  getPetition: PropTypes.func.isRequired,
-  petitionLink: PropTypes.string.isRequired,
-  decidimAPIUrl: PropTypes.string.isRequired,
   petition: PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -152,18 +138,12 @@ AttributesSummary.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.petitionLink.petitionLink,
-  decidimAPIUrl: state.petitionLink.decidimAPIUrl,
   petition: state.petition.petition,
   walletId: state.wallet.id,
 });
 
-const decidimClient = new DecidimClient(new LanguageService());
 const mapDispatchToProps = dispatch => ({
-  getPetition: (petitionLink, decidimAPIUrl, petitionId) => {
-    dispatch(getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId));
-  },
-  goToPetitionSummary: (petitionLink) => { dispatch(goToPetitionSummary(petitionLink)); },
+  goToPetitionSummary: () => { dispatch(goToPetitionSummary()); },
   addCredential: (attribute, walletId, url) => {
     dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
   },

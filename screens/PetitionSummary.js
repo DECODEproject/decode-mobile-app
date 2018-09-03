@@ -5,7 +5,7 @@ import { Text, View, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
-import { getPetition, signPetition } from '../application/redux/actions/petition';
+import { signPetition } from '../application/redux/actions/petition';
 import { setSignOutcome } from '../application/redux/actions/signOutcome';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
@@ -19,8 +19,6 @@ import {
   formAgeRange, getEnabledAttributeValue, findAttribute,
   buildAttributes, toggleElementsInList,
 } from '../application/utils/attributeManagement';
-import DecidimClient from '../lib/DecidimClient';
-import LanguageService from '../lib/LanguageService';
 
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
@@ -46,14 +44,11 @@ class PetitionSummary extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getPetition(
-      this.props.petitionLink,
-      this.props.decidimAPIUrl,
-      this.props.petition.id,
-    ).then(() => {
-      const matched = buildAttributes(this.props.walletAttributes, this.props.attributes);
-      this.setState({ matchedAttributes: matched });
-    });
+    const matched = buildAttributes(this.props.walletAttributes, this.props.attributes);
+    this.state = {
+      ...this.state,
+      matchedAttributes: matched,
+    };
   }
 
   toggleEnabledAttribute(attr) {
@@ -187,8 +182,6 @@ class PetitionSummary extends React.Component {
 PetitionSummary.propTypes = {
   goToSignOutcome: PropTypes.func.isRequired,
   setSignOutcome: PropTypes.func.isRequired,
-  petitionLink: PropTypes.string.isRequired,
-  decidimAPIUrl: PropTypes.string.isRequired,
   petition: PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -200,7 +193,6 @@ PetitionSummary.propTypes = {
     optional: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   }),
   petitionError: PropTypes.string,
-  getPetition: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   signPetition: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
@@ -219,8 +211,6 @@ PetitionSummary.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.petitionLink.petitionLink,
-  decidimAPIUrl: state.petitionLink.decidimAPIUrl,
   petition: state.petition.petition,
   petitionError: state.petition.error,
   attributes: state.petition.petition.attributes,
@@ -229,9 +219,7 @@ const mapStateToProps = state => ({
   walletAttributes: state.attributes.list,
 });
 
-const decidimClient = new DecidimClient(new LanguageService());
 const mapDispatchToProps = dispatch => ({
-  getPetition: (petitionLink, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId)), // eslint-disable-line
   setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
