@@ -19,6 +19,8 @@ import {
   formAgeRange, getEnabledAttributeValue, findAttribute,
   buildAttributes, toggleElementsInList,
 } from '../application/utils/attributeManagement';
+import DecidimClient from '../lib/DecidimClient';
+import LanguageService from '../lib/LanguageService';
 
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
@@ -44,11 +46,14 @@ class PetitionSummary extends React.Component {
   }
 
   componentDidMount() {
-    this.props.getPetition(this.props.petitionLink)
-      .then(() => {
-        const matched = buildAttributes(this.props.walletAttributes, this.props.attributes);
-        this.setState({ matchedAttributes: matched });
-      });
+    this.props.getPetition(
+      this.props.petitionLink,
+      this.props.decidimAPIUrl,
+      this.props.petition.id,
+    ).then(() => {
+      const matched = buildAttributes(this.props.walletAttributes, this.props.attributes);
+      this.setState({ matchedAttributes: matched });
+    });
   }
 
   toggleEnabledAttribute(attr) {
@@ -183,6 +188,7 @@ PetitionSummary.propTypes = {
   goToSignOutcome: PropTypes.func.isRequired,
   setSignOutcome: PropTypes.func.isRequired,
   petitionLink: PropTypes.string.isRequired,
+  decidimAPIUrl: PropTypes.string.isRequired,
   petition: PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -214,6 +220,7 @@ PetitionSummary.defaultProps = {
 
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
+  decidimAPIUrl: state.petitionLink.decidimAPIUrl,
   petition: state.petition.petition,
   petitionError: state.petition.error,
   attributes: state.petition.petition.attributes,
@@ -222,9 +229,9 @@ const mapStateToProps = state => ({
   walletAttributes: state.attributes.list,
 });
 
+const decidimClient = new DecidimClient(new LanguageService());
 const mapDispatchToProps = dispatch => ({
-  // TODO: Inject DecidimClient
-  getPetition: petitionLink => dispatch(getPetition(null, petitionLink, null)),
+  getPetition: (petitionLink, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId)),
   setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>

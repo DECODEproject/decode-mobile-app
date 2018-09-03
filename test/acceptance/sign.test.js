@@ -20,6 +20,7 @@ describe('signing a petition', () => {
     initialState = {
       petitionLink: {
         petitionLink: 'http://something.com',
+        decidimAPIUrl: 'http://another.com',
       },
       petition: {
       },

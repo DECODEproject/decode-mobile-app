@@ -12,6 +12,7 @@ const mockStore = configureStore([thunk]);
 const initialState = {
   petitionLink: {
     petitionLink: 'http://something.com',
+    decidimAPIUrl: 'http://another.com',
   },
   petition: {
     petition: {

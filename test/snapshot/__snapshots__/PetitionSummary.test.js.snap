@@ -11,6 +11,7 @@ ShallowWrapper {
         "optional": Array [],
       }
     }
+    decidimAPIUrl="http://another.com"
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={
@@ -12873,6 +12874,7 @@ ShallowWrapper {
         "optional": Array [],
       }
     }
+    decidimAPIUrl="http://another.com"
     getPetition={[Function]}
     goToSignOutcome={[Function]}
     i18n={

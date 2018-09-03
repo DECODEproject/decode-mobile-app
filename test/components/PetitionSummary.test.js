@@ -17,6 +17,7 @@ describe('The PetitionSummary page', () => {
     petition: {
       loaded: false,
       petition: {
+        id: '2',
         attributes: {
           mandatory: [],
           optional: [],
@@ -25,7 +26,10 @@ describe('The PetitionSummary page', () => {
       error: undefined,
       signed: false,
     },
-    petitionLink: { petitionLink: 'aLink.com' },
+    petitionLink: {
+      petitionLink: 'aLink.com',
+      decidimAPIUrl: 'bLink.com',
+    },
     attributes: {
       list: new Map(),
     },
@@ -101,7 +105,6 @@ describe('The PetitionSummary page', () => {
         },
       },
     },
-    petitionLink: { petitionLink: 'aLink.com' },
     attributes: {
       list: new Map(),
     },
