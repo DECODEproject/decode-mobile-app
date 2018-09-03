@@ -231,7 +231,7 @@ const mapStateToProps = state => ({
 
 const decidimClient = new DecidimClient(new LanguageService());
 const mapDispatchToProps = dispatch => ({
-  getPetition: (petitionLink, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId)),
+  getPetition: (petitionLink, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId)), // eslint-disable-line
   setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
