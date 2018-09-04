@@ -13,6 +13,7 @@ const mockStore = configureMockStore([thunk]);
 
 describe('getPetition', () => {
   const petitionLink = 'petitions';
+  const decidimAPIUrl = 'decidim.com';
   const petitionId = '2';
   let store;
 
@@ -91,12 +92,10 @@ describe('getPetition', () => {
     });
 
     it('should dispatch SET_DECIDIM_DATA action successful', () => {
-      const decidimAPIUrl = 'decidimurl';
-
       const expectedActions = [{
         type: types.SET_DECIDIM_DATA,
         petitionId: '2',
-        decidimAPIUrl: 'decidimurl',
+        decidimAPIUrl,
       }];
 
       store.dispatch(setDecidimData(petitionId, decidimAPIUrl));
@@ -105,21 +104,23 @@ describe('getPetition', () => {
 
     it('should dispatch successful action', () => {
       const expectedPetition = {
-        petition: {
-          id: petitionId,
-          title: "Pla d'Actuació Municipal",
-          attributes: {
-            mandatory: [{
-              predicate: 'schema:addressLocality',
-              object: 'Barcelona',
-              scope: 'can-access',
-              credentialIssuer: {
-                url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-              },
-            }],
-            optional: [],
-          },
+        id: petitionId,
+        title: "Pla d'Actuació Municipal",
+        attributes: {
+          mandatory: [{
+            predicate: 'schema:addressLocality',
+            object: 'Barcelona',
+            scope: 'can-access',
+            credentialIssuer: {
+              url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+            },
+          }],
+          optional: [],
         },
+      };
+
+      const decidimResult = {
+        petition: expectedPetition,
       };
 
       const expectedActions = [{
@@ -129,12 +130,14 @@ describe('getPetition', () => {
       }];
 
       DecidimClient.mockImplementation(() => ({
-        fetchPetition: () => (expectedPetition),
+        fetchPetition: () => (decidimResult),
       }));
 
-      return store.dispatch(getPetition(new DecidimClient(), petitionLink, petitionId)).then(() => {
-        expect(store.getActions()).toEqual(expectedActions);
-      });
+      const client = new DecidimClient();
+      return store.dispatch(getPetition(client, petitionLink, decidimAPIUrl, petitionId))
+        .then(() => {
+          expect(store.getActions()).toEqual(expectedActions);
+        });
     });
 
     it('should dispatch error action', async () => {

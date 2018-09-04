@@ -101,6 +101,7 @@ describe('validatePinCode', () => {
           list: new Map(),
         },
       };
+      getPetitionMock.mockResolvedValue({});
 
       const wrapper = shallow(<Home />)
         .first().shallow()
@@ -116,15 +117,15 @@ describe('validatePinCode', () => {
         doAuthorize: doAuthorizeMock,
       };
 
-      await homeComponent.validatePinCode();
-
-      expect(getPetitionMock).toBeCalledWith(
-        decidimClientMock,
-        initialState.petitionLink.petitionLink,
-        initialState.petitionLink.decidimAPIUrl,
-        petitionId,
-      );
-      expect(goToAttributesSummaryMock).toBeCalled();
+      homeComponent.validatePinCode().then(() => {
+        expect(getPetitionMock).toBeCalledWith(
+          decidimClientMock,
+          initialState.petitionLink.petitionLink,
+          initialState.petitionLink.decidimAPIUrl,
+          petitionId,
+        );
+        expect(goToAttributesSummaryMock).toBeCalled();
+      });
     });
 
     it('should call goToPetitionSummary if there is a petitionLink and the required attribute is verified', async () => {
@@ -138,6 +139,8 @@ describe('validatePinCode', () => {
           list: new Map([['schema:addressLocality', {}]]),
         },
       };
+      getPetitionMock.mockResolvedValue({});
+
 
       const wrapper = shallow(<Home />)
         .first().shallow()
@@ -154,15 +157,15 @@ describe('validatePinCode', () => {
         doAuthorize: doAuthorizeMock,
       };
 
-      await homeComponent.validatePinCode();
-
-      expect(getPetitionMock).toBeCalledWith(
-        decidimClientMock,
-        initialState.petitionLink.petitionLink,
-        initialState.petitionLink.decidimAPIUrl,
-        petitionId,
-      );
-      expect(goToPetitionSummaryMock).toBeCalled();
+      homeComponent.validatePinCode().then(() => {
+        expect(getPetitionMock).toBeCalledWith(
+          decidimClientMock,
+          initialState.petitionLink.petitionLink,
+          initialState.petitionLink.decidimAPIUrl,
+          petitionId,
+        );
+        expect(goToPetitionSummaryMock).toBeCalled();
+      });
     });
   });
 });

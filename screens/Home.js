@@ -32,15 +32,14 @@ class Home extends React.Component {
   }
 
   goToPetition() {
-    this.props.getPetition(this.props.decidimClient, this.props.petitionLink, this.props.decidimAPIUrl, '40');
-    // .then(() => {
-    const isAttributeVerified = this.props.attributes.list.has('schema:addressLocality');
-    if (isAttributeVerified) {
-      this.props.goToPetitionSummary();
-    } else {
-      this.props.goToAttributesSummary();
-    }
-    // });
+    this.props.getPetition(this.props.decidimClient, this.props.petitionLink, this.props.decidimAPIUrl, '40').then(() => {
+      const isAttributeVerified = this.props.attributes.list.has('schema:addressLocality');
+      if (isAttributeVerified) {
+        this.props.goToPetitionSummary();
+      } else {
+        this.props.goToAttributesSummary();
+      }
+    });
   }
 
   goToNextPage() {

@@ -13,7 +13,6 @@ Enzyme.configure({ adapter: new Adapter() });
 const mockStore = configureStore([thunk]);
 
 describe('AttributesSummary', () => {
-  const somePetitionLink = 'http://some-petition.com';
   const goToPetitionSummaryMock = jest.fn();
   const initialState = {
     petitionLink: {
@@ -114,7 +113,7 @@ describe('AttributesSummary', () => {
 
         wrapper.dive().find(Button).first().simulate('click');
 
-        expect(goToPetitionSummaryMock).toBeCalledWith(somePetitionLink);
+        expect(goToPetitionSummaryMock).toBeCalled();
       });
     });
   });
@@ -145,7 +144,6 @@ describe('AttributesSummary', () => {
         ...attributesSummaryComponent.props,
         petition: somePetition,
         walletId: someWalletId,
-        petitionLink: somePetitionLink,
         goToPetitionSummary: goToPetitionSummaryMock,
         addCredential: addCredentialMock,
       };
@@ -153,7 +151,7 @@ describe('AttributesSummary', () => {
       await attributesSummaryComponent.handleRedirect(someEvent);
 
       expect(addCredentialMock).toBeCalledWith(residencyAttribute, someWalletId, someUrl);
-      expect(goToPetitionSummaryMock).toBeCalledWith(somePetitionLink);
+      expect(goToPetitionSummaryMock).toBeCalled();
     });
   });
 });
