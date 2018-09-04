@@ -12,6 +12,8 @@ export default {
   home: {
     badPin: 'Incorrect pin code',
     button: 'Sign In',
+    errorTitle: 'Failed to fetch petition information from Decidim',
+    errorText: 'You can return to the Decidim site to view other active petitions.',
   },
   newAttributes: {
     description: 'You can add these attributes to your wallet.',

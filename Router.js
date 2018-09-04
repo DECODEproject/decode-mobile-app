@@ -9,6 +9,7 @@ import AttributesLanding from './screens/AttributesLanding';
 import PinSetup from './screens/PinSetup';
 import Walkthrough from './screens/Walkthrough';
 import NewAttributes from './screens/NewAttributes';
+import Error from './screens/Error';
 
 const Router = createRouter(() => ({
   home: () => Home,
@@ -21,6 +22,7 @@ const Router = createRouter(() => ({
   signOutcome: () => SignOutcome,
   pinSetup: () => PinSetup,
   newAttributes: () => NewAttributes,
+  error: () => Error,
 }));
 
 export default Router;

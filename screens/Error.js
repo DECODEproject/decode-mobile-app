@@ -38,12 +38,13 @@ class Error extends React.Component {
 }
 
 Error.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   t: PropTypes.func.isRequired,
   petitionError: PropTypes.string,
 };
 
 Error.defaultProps = {
+  title: undefined,
   petitionError: undefined,
 };
 

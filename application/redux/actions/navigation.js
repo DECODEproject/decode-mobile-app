@@ -87,6 +87,14 @@ export function goToNewAttributes() {
   };
 }
 
+export function goToError() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('error'));
+    dispatch(action);
+  };
+}
+
 export function goToNewDateOfBirthAttribute() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;

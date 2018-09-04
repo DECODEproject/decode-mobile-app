@@ -81,6 +81,8 @@ Fes click al botó per començar.",
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                  "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -166,6 +168,8 @@ Tap the button below to begin.",
                 "home": Object {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Failed to fetch petition information from Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -251,6 +255,8 @@ Haz click en botón inferior para empezar",
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                  "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                  "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -412,6 +418,8 @@ Fes click al botó per començar.",
               "home": Object {
                 "badPin": "Codic pin incorrecte",
                 "button": "Accedir",
+                "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
               },
               "newAttributes": Object {
                 "add": "Afegir",
@@ -497,6 +505,8 @@ Tap the button below to begin.",
               "home": Object {
                 "badPin": "Incorrect pin code",
                 "button": "Sign In",
+                "errorText": "You can return to the Decidim site to view other active petitions.",
+                "errorTitle": "Failed to fetch petition information from Decidim",
               },
               "newAttributes": Object {
                 "add": "Add",
@@ -582,6 +592,8 @@ Haz click en botón inferior para empezar",
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
                 "button": "Acceder",
+                "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -735,6 +747,8 @@ Fes click al botó per començar.",
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                        "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -820,6 +834,8 @@ Tap the button below to begin.",
                       "home": Object {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Failed to fetch petition information from Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -905,6 +921,8 @@ Haz click en botón inferior para empezar",
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                        "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                        "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -1045,6 +1063,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -1130,6 +1150,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -1215,6 +1237,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -1365,6 +1389,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -1450,6 +1476,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -1535,6 +1563,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -1680,6 +1710,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -1765,6 +1797,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -1850,6 +1884,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -1950,6 +1986,8 @@ Fes click al botó per començar.",
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                  "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -2035,6 +2073,8 @@ Tap the button below to begin.",
                 "home": Object {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Failed to fetch petition information from Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -2120,6 +2160,8 @@ Haz click en botón inferior para empezar",
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                  "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                  "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -2263,6 +2305,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -2348,6 +2392,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -2433,6 +2479,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -2577,6 +2625,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -2662,6 +2712,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -2747,6 +2799,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -2911,6 +2965,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -2996,6 +3052,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -3081,6 +3139,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -3221,6 +3281,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -3306,6 +3368,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -3391,6 +3455,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -3540,6 +3606,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -3625,6 +3693,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -3710,6 +3780,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -3862,6 +3934,8 @@ Fes click al botó per començar.",
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                        "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -3947,6 +4021,8 @@ Tap the button below to begin.",
                       "home": Object {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Failed to fetch petition information from Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -4032,6 +4108,8 @@ Haz click en botón inferior para empezar",
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                        "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                        "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -4172,6 +4250,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -4257,6 +4337,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -4342,6 +4424,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -4492,6 +4576,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -4577,6 +4663,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -4662,6 +4750,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -5697,6 +5787,8 @@ Fes click al botó per començar.",
               "home": Object {
                 "badPin": "Codic pin incorrecte",
                 "button": "Accedir",
+                "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
               },
               "newAttributes": Object {
                 "add": "Afegir",
@@ -5782,6 +5874,8 @@ Tap the button below to begin.",
               "home": Object {
                 "badPin": "Incorrect pin code",
                 "button": "Sign In",
+                "errorText": "You can return to the Decidim site to view other active petitions.",
+                "errorTitle": "Failed to fetch petition information from Decidim",
               },
               "newAttributes": Object {
                 "add": "Add",
@@ -5867,6 +5961,8 @@ Haz click en botón inferior para empezar",
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
                 "button": "Acceder",
+                "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -5955,6 +6051,8 @@ Fes click al botó per començar.",
             "home": Object {
               "badPin": "Codic pin incorrecte",
               "button": "Accedir",
+              "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+              "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
             },
             "newAttributes": Object {
               "add": "Afegir",
@@ -6040,6 +6138,8 @@ Tap the button below to begin.",
             "home": Object {
               "badPin": "Incorrect pin code",
               "button": "Sign In",
+              "errorText": "You can return to the Decidim site to view other active petitions.",
+              "errorTitle": "Failed to fetch petition information from Decidim",
             },
             "newAttributes": Object {
               "add": "Add",
@@ -6125,6 +6225,8 @@ Haz click en botón inferior para empezar",
             "home": Object {
               "badPin": "Codigo pin incorrecto",
               "button": "Acceder",
+              "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+              "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
             },
             "newAttributes": Object {
               "add": "Agregar",
@@ -6266,6 +6368,8 @@ Fes click al botó per començar.",
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                        "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -6351,6 +6455,8 @@ Tap the button below to begin.",
                       "home": Object {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Failed to fetch petition information from Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -6436,6 +6542,8 @@ Haz click en botón inferior para empezar",
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                        "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                        "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -6576,6 +6684,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -6661,6 +6771,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -6746,6 +6858,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -6896,6 +7010,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -6981,6 +7097,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -7066,6 +7184,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -7211,6 +7331,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -7296,6 +7418,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -7381,6 +7505,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -7481,6 +7607,8 @@ Fes click al botó per començar.",
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                  "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -7566,6 +7694,8 @@ Tap the button below to begin.",
                 "home": Object {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Failed to fetch petition information from Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -7651,6 +7781,8 @@ Haz click en botón inferior para empezar",
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                  "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                  "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -7794,6 +7926,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -7879,6 +8013,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -7964,6 +8100,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -8108,6 +8246,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -8193,6 +8333,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -8278,6 +8420,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -8435,6 +8579,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -8520,6 +8666,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -8605,6 +8753,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -8745,6 +8895,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -8830,6 +8982,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -8915,6 +9069,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -9065,6 +9221,8 @@ Fes click al botó per començar.",
                   "home": Object {
                     "badPin": "Codic pin incorrecte",
                     "button": "Accedir",
+                    "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                    "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -9150,6 +9308,8 @@ Tap the button below to begin.",
                   "home": Object {
                     "badPin": "Incorrect pin code",
                     "button": "Sign In",
+                    "errorText": "You can return to the Decidim site to view other active petitions.",
+                    "errorTitle": "Failed to fetch petition information from Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -9235,6 +9395,8 @@ Haz click en botón inferior para empezar",
                   "home": Object {
                     "badPin": "Codigo pin incorrecto",
                     "button": "Acceder",
+                    "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                    "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -9380,6 +9542,8 @@ Fes click al botó per començar.",
                 "home": Object {
                   "badPin": "Codic pin incorrecte",
                   "button": "Accedir",
+                  "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                  "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -9465,6 +9629,8 @@ Tap the button below to begin.",
                 "home": Object {
                   "badPin": "Incorrect pin code",
                   "button": "Sign In",
+                  "errorText": "You can return to the Decidim site to view other active petitions.",
+                  "errorTitle": "Failed to fetch petition information from Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -9550,6 +9716,8 @@ Haz click en botón inferior para empezar",
                 "home": Object {
                   "badPin": "Codigo pin incorrecto",
                   "button": "Acceder",
+                  "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                  "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -9700,6 +9868,8 @@ Fes click al botó per començar.",
                       "home": Object {
                         "badPin": "Codic pin incorrecte",
                         "button": "Accedir",
+                        "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                        "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -9785,6 +9955,8 @@ Tap the button below to begin.",
                       "home": Object {
                         "badPin": "Incorrect pin code",
                         "button": "Sign In",
+                        "errorText": "You can return to the Decidim site to view other active petitions.",
+                        "errorTitle": "Failed to fetch petition information from Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -9870,6 +10042,8 @@ Haz click en botón inferior para empezar",
                       "home": Object {
                         "badPin": "Codigo pin incorrecto",
                         "button": "Acceder",
+                        "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                        "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -10010,6 +10184,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -10095,6 +10271,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -10180,6 +10358,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -10330,6 +10510,8 @@ Fes click al botó per començar.",
                     "home": Object {
                       "badPin": "Codic pin incorrecte",
                       "button": "Accedir",
+                      "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                      "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -10415,6 +10597,8 @@ Tap the button below to begin.",
                     "home": Object {
                       "badPin": "Incorrect pin code",
                       "button": "Sign In",
+                      "errorText": "You can return to the Decidim site to view other active petitions.",
+                      "errorTitle": "Failed to fetch petition information from Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -10500,6 +10684,8 @@ Haz click en botón inferior para empezar",
                     "home": Object {
                       "badPin": "Codigo pin incorrecto",
                       "button": "Acceder",
+                      "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                      "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -11535,6 +11721,8 @@ Fes click al botó per començar.",
               "home": Object {
                 "badPin": "Codic pin incorrecte",
                 "button": "Accedir",
+                "errorText": "Pots tornar a la pàgina de Decidim per veure altres peticions actives.",
+                "errorTitle": "No s'ha pogut aconseguir la informació de la petició de Decidim",
               },
               "newAttributes": Object {
                 "add": "Afegir",
@@ -11620,6 +11808,8 @@ Tap the button below to begin.",
               "home": Object {
                 "badPin": "Incorrect pin code",
                 "button": "Sign In",
+                "errorText": "You can return to the Decidim site to view other active petitions.",
+                "errorTitle": "Failed to fetch petition information from Decidim",
               },
               "newAttributes": Object {
                 "add": "Add",
@@ -11705,6 +11895,8 @@ Haz click en botón inferior para empezar",
               "home": Object {
                 "badPin": "Codigo pin incorrecto",
                 "button": "Acceder",
+                "errorText": "Puedes volver a la página de Decidim para ver otras peticiones activas.",
+                "errorTitle": "No se ha podido conseguir la información de la petición de Decidim",
               },
               "newAttributes": Object {
                 "add": "Agregar",

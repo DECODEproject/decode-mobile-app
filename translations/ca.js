@@ -12,6 +12,8 @@ export default {
   home: {
     badPin: 'Codic pin incorrecte',
     button: 'Accedir',
+    errorTitle: 'No s\'ha pogut aconseguir la informació de la petició de Decidim',
+    errorText: 'Pots tornar a la pàgina de Decidim per veure altres peticions actives.',
   },
   newAttributes: {
     description: 'Pots afegir aquests atributs a la wallet.',
