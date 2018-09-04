@@ -35,7 +35,6 @@ class Home extends React.Component {
     return this.props.getPetition(this.props.decidimClient, this.props.petitionLink, this.props.decidimAPIUrl, '40').then(() => {
       const errorGettingPetitionInformation = this.props.petitionError !== undefined;
       if (errorGettingPetitionInformation) {
-        console.log('there was an error in Decidim client');
         this.props.goToError(this.props.t('errorTitle'), this.props.t('errorText'));
       } else {
         const isAttributeVerified = this.props.attributes.list.has('schema:addressLocality');
