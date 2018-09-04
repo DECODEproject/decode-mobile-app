@@ -15,7 +15,7 @@ const mockStore = configureStore([thunk]);
 describe('AttributesSummary', () => {
   const goToPetitionSummaryMock = jest.fn();
   const initialState = {
-    petitionLink: {
+    decidimInfo: {
       petitionLink: 'http://something.com',
       decidimAPIUrl: 'http://decidim.api.com',
     },

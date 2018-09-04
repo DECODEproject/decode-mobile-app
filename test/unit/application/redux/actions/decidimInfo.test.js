@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import * as urlModule from '../../../../../application/utils/url';
-import { onStartApp, setDecidimInfo } from '../../../../../application/redux/actions/petitionLink';
+import { onStartApp, setDecidimInfo } from '../../../../../application/redux/actions/decidimInfo';
 
 describe('onStartApp', () => {
   it('should dispatch SET_PETITION_LINK action', async () => {
@@ -11,7 +11,7 @@ describe('onStartApp', () => {
     urlModule.default = jest.fn().mockReturnValue(Promise.resolve(initialUrl));
 
     const store = mockStore({
-      petitionLink: {
+      decidimInfo: {
         petitionLink: undefined,
       },
     });
@@ -33,7 +33,7 @@ describe('onStartApp', () => {
     urlModule.default = jest.fn().mockReturnValue(Promise.resolve(initialUrl));
 
     const store = mockStore({
-      petitionLink: {
+      decidimInfo: {
         petitionLink: undefined,
       },
     });

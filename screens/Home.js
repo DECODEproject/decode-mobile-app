@@ -5,7 +5,7 @@ import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goToError } from '../application/redux/actions/navigation';
-import { onStartApp, setDecidimInfo } from '../application/redux/actions/petitionLink';
+import { onStartApp, setDecidimInfo } from '../application/redux/actions/decidimInfo';
 import { getPetition } from '../application/redux/actions/petition';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
@@ -143,9 +143,9 @@ Home.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.petitionLink.petitionLink,
-  decidimAPIUrl: state.petitionLink.decidimAPIUrl,
-  petitionId: state.petitionLink.petitionId,
+  petitionLink: state.decidimInfo.petitionLink,
+  decidimAPIUrl: state.decidimInfo.decidimAPIUrl,
+  petitionId: state.decidimInfo.petitionId,
   pinCode: state.authorization.pin,
   attributes: state.attributes,
   petitionError: state.petition.error,

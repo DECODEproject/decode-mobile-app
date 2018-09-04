@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Alert } from 'react-native';
 import { BarCodeScanner, Permissions } from 'expo';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { setPetitionLink } from '../application/redux/actions/petitionLink';
+import { setPetitionLink } from '../application/redux/actions/decidimInfo';
 import { goToAuthorization } from '../application/redux/actions/navigation';
 
 function delay(time) {
@@ -86,7 +86,7 @@ QRScanner.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.petitionLink.petitionLink,
+  petitionLink: state.decidimInfo.petitionLink,
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -1,7 +1,7 @@
-import reducer from '../../../../../application/redux/reducers/petitionLink';
+import reducer from '../../../../../application/redux/reducers/decidimInfo';
 import types from '../../../../../application/redux/actionTypes';
 
-describe('petitionLink reducer', () => {
+describe('decidimInfo reducer', () => {
   const someInitialState = {
     petitionLink: 'someOldPetitionLink',
     decidimAPIUrl: 'someOldDecidimApiUrl',

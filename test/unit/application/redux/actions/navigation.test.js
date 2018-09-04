@@ -8,7 +8,7 @@ describe('navigation actions', () => {
   describe('goToPilot', () => {
     it('should go to decidm pilot if there is a link', () => {
       const store = mockStore({
-        petitionLink: {
+        decidimInfo: {
           petitionLink: 'dicidim-url',
         },
         navigation: {},
@@ -21,7 +21,7 @@ describe('navigation actions', () => {
 
     it('should go to landing page if there is no link', () => {
       const store = mockStore({
-        petitionLink: {
+        decidimInfo: {
           petitionLink: undefined,
         },
         navigation: {},

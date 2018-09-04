@@ -3,6 +3,7 @@ import types from '../actionTypes';
 const initialState = {
   petitionLink: undefined,
   decidimAPIUrl: undefined,
+  petitionId: undefined,
 };
 
 export default function reducer(state = initialState, action) {

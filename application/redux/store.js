@@ -3,7 +3,7 @@ import { createNavigationEnabledStore, NavigationReducer } from '@expo/ex-naviga
 import { compose, combineReducers, createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import devTools from 'remote-redux-devtools';
-import petitionLink from './reducers/petitionLink';
+import decidimInfo from './reducers/decidimInfo';
 import petition from './reducers/petition';
 import signOutcome from './reducers/signOutcome';
 import wallet from './reducers/wallet';
@@ -29,7 +29,7 @@ const createStoreWithNavigation = createNavigationEnabledStore({
 
 const Store = createStoreWithNavigation(combineReducers({
   navigation: NavigationReducer,
-  petitionLink,
+  decidimInfo,
   petition,
   signOutcome,
   wallet,

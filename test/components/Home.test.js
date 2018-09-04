@@ -19,7 +19,7 @@ describe('validatePinCode', () => {
   const decidimClientMock = jest.fn();
   const petitionId = '123';
   const defaultState = {
-    petitionLink: {
+    decidimInfo: {
       petitionLink: 'http://city-council.com',
       decidimAPIUrl: 'decidim.com',
       petitionId,
@@ -72,7 +72,7 @@ describe('validatePinCode', () => {
       it('should call goToAttributesLanding', async () => {
         const initialState = {
           ...defaultState,
-          petitionLink: {
+          decidimInfo: {
             petitionLink: undefined,
           },
         };
@@ -98,7 +98,7 @@ describe('validatePinCode', () => {
       it('should call goToAttributesSummary if the required attribute is not verified', async () => {
         const initialState = {
           ...defaultState,
-          petitionLink: {
+          decidimInfo: {
             petitionLink: undefined,
             decidimAPIUrl: 'decidim.com',
             petitionId,
@@ -126,8 +126,8 @@ describe('validatePinCode', () => {
         return homeComponent.validatePinCode().then(() => {
           expect(getPetitionMock).toBeCalledWith(
             decidimClientMock,
-            initialState.petitionLink.petitionLink,
-            initialState.petitionLink.decidimAPIUrl,
+            initialState.decidimInfo.petitionLink,
+            initialState.decidimInfo.decidimAPIUrl,
             petitionId,
           );
           expect(goToAttributesSummaryMock).toBeCalled();
@@ -137,7 +137,7 @@ describe('validatePinCode', () => {
       it('should call goToPetitionSummary if tthe required attribute is verified', async () => {
         const initialState = {
           ...defaultState,
-          petitionLink: {
+          decidimInfo: {
             petitionLink: 'http://city-council.com',
             decidimAPIUrl: undefined,
             petitionId,
@@ -166,8 +166,8 @@ describe('validatePinCode', () => {
         return homeComponent.validatePinCode().then(() => {
           expect(getPetitionMock).toBeCalledWith(
             decidimClientMock,
-            initialState.petitionLink.petitionLink,
-            initialState.petitionLink.decidimAPIUrl,
+            initialState.decidimInfo.petitionLink,
+            initialState.decidimInfo.decidimAPIUrl,
             petitionId,
           );
           expect(goToPetitionSummaryMock).toBeCalled();
@@ -209,8 +209,8 @@ describe('validatePinCode', () => {
         return homeComponent.validatePinCode().then(() => {
           expect(getPetitionMock).toBeCalledWith(
             decidimClientMock,
-            initialState.petitionLink.petitionLink,
-            initialState.petitionLink.decidimAPIUrl,
+            initialState.decidimInfo.petitionLink,
+            initialState.decidimInfo.decidimAPIUrl,
             petitionId,
           );
           expect(goToErrorMock).toBeCalledWith(errorTitle, errorText);

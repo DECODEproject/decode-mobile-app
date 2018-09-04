@@ -11,7 +11,7 @@ Enzyme.configure({ adapter: new Adapter() });
 const mockStore = configureStore([thunk]);
 
 const initialState = {
-  petitionLink: {
+  decidimInfo: {
     petitionLink: 'http://something.com',
     decidimAPIUrl: 'http://decidim.api.com',
   },

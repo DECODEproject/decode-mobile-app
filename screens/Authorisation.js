@@ -52,7 +52,7 @@ Authorisation.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.petitionLink.petitionLink,
+  petitionLink: state.decidimInfo.petitionLink,
   walletId: state.wallet.id,
 });
 

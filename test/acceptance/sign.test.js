@@ -18,7 +18,7 @@ describe('signing a petition', () => {
 
   beforeEach(() => {
     initialState = {
-      petitionLink: {
+      decidimInfo: {
         petitionLink: 'http://something.com',
         decidimAPIUrl: 'http://another.com',
       },
@@ -132,7 +132,7 @@ describe('signing a petition', () => {
       },
     };
 
-    fetchMock.getOnce(state.petitionLink.petitionLink, newPetition);
+    fetchMock.getOnce(state.decidimInfo.petitionLink, newPetition);
 
     store = mockStore(state);
 
