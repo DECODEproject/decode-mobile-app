@@ -12,10 +12,11 @@ export default function reducer(state = initialState, action) {
         ...state,
         petitionLink: action.petitionLink,
       };
-    case types.SET_DECIDIM_API_URL:
+    case types.SET_DECIDIM_INFO:
       return {
         ...state,
         decidimAPIUrl: action.decidimAPIUrl,
+        petitionId: action.petitionId,
       };
     default:
       return state;

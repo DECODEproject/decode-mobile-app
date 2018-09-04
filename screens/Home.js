@@ -5,7 +5,7 @@ import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goToError } from '../application/redux/actions/navigation';
-import { onStartApp, setDecidimAPIUrl } from '../application/redux/actions/petitionLink';
+import { onStartApp, setDecidimInfo } from '../application/redux/actions/petitionLink';
 import { getPetition } from '../application/redux/actions/petition';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
@@ -32,7 +32,13 @@ class Home extends React.Component {
   }
 
   goToPetition() {
-    return this.props.getPetition(this.props.decidimClient, this.props.petitionLink, this.props.decidimAPIUrl, '40').then(() => {
+    const petition = this.props.getPetition(
+      this.props.decidimClient,
+      this.props.petitionLink,
+      this.props.decidimAPIUrl,
+      this.props.petitionId,
+    );
+    return petition.then(() => {
       const errorGettingPetitionInformation = this.props.petitionError !== undefined;
       if (errorGettingPetitionInformation) {
         this.props.goToError(this.props.t('errorTitle'), this.props.t('errorText'));
@@ -117,6 +123,7 @@ Home.propTypes = {
   updatePin: PropTypes.func.isRequired,
   petitionLink: PropTypes.string,
   petitionError: PropTypes.string,
+  petitionId: PropTypes.string,
   decidimAPIUrl: PropTypes.string,
   decidimClient: PropTypes.instanceOf(DecidimClient),
   pinCode: PropTypes.string,
@@ -130,6 +137,7 @@ Home.defaultProps = {
   petitionLink: undefined,
   petitionError: undefined,
   decidimAPIUrl: undefined,
+  petitionId: undefined,
   pinCode: '',
   decidimClient: new DecidimClient(new LanguageService()),
 };
@@ -137,6 +145,7 @@ Home.defaultProps = {
 const mapStateToProps = state => ({
   petitionLink: state.petitionLink.petitionLink,
   decidimAPIUrl: state.petitionLink.decidimAPIUrl,
+  petitionId: state.petitionLink.petitionId,
   pinCode: state.authorization.pin,
   attributes: state.attributes,
   petitionError: state.petition.error,
@@ -152,7 +161,7 @@ const mapDispatchToProps = dispatch => ({
   updatePin: pin => dispatch(updatePin(pin)),
   initializeState: async () => {
     await dispatch(onStartApp());
-    await dispatch(setDecidimAPIUrl());
+    await dispatch(setDecidimInfo());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
   },
 });

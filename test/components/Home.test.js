@@ -17,11 +17,12 @@ describe('validatePinCode', () => {
   const goToErrorMock = jest.fn();
   const getPetitionMock = jest.fn();
   const decidimClientMock = jest.fn();
-  const petitionId = '40';
+  const petitionId = '123';
   const defaultState = {
     petitionLink: {
       petitionLink: 'http://city-council.com',
       decidimAPIUrl: 'decidim.com',
+      petitionId,
     },
     petition: {
       error: undefined,
@@ -100,6 +101,7 @@ describe('validatePinCode', () => {
           petitionLink: {
             petitionLink: undefined,
             decidimAPIUrl: 'decidim.com',
+            petitionId,
           },
           attributes: {
             list: new Map(),
@@ -138,6 +140,7 @@ describe('validatePinCode', () => {
           petitionLink: {
             petitionLink: 'http://city-council.com',
             decidimAPIUrl: undefined,
+            petitionId,
           },
           attributes: {
             list: new Map([['schema:addressLocality', {}]]),

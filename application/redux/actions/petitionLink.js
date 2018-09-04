@@ -9,14 +9,16 @@ export function setPetitionLink(petitionLink) {
   };
 }
 
-export function setDecidimAPIUrl() {
+export function setDecidimInfo() {
   return (dispatch) => {
     getInitialUrl().then((url) => {
       const myURL = urlParse(url, true);
       const { query: { decidimAPIUrl } } = myURL;
+      const { query: { petitionId } } = myURL;
       dispatch({
-        type: types.SET_DECIDIM_API_URL,
+        type: types.SET_DECIDIM_INFO,
         decidimAPIUrl,
+        petitionId,
       });
     });
   };
