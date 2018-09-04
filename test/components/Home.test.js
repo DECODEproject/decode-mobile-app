@@ -10,7 +10,6 @@ Enzyme.configure({ adapter: new Adapter() });
 const mockStore = configureStore([thunk]);
 
 describe('validatePinCode', () => {
-  const somePetitionLink = 'http://city-counsil.com';
   const alertMock = jest.fn();
   const goToAttributesSummaryMock = jest.fn();
   const goToPetitionSummaryMock = jest.fn();
@@ -21,7 +20,7 @@ describe('validatePinCode', () => {
   const petitionId = '40';
   const defaultState = {
     petitionLink: {
-      petitionLink: somePetitionLink,
+      petitionLink: 'http://city-council.com',
       decidimAPIUrl: 'decidim.com',
     },
     petition: {
@@ -68,147 +67,151 @@ describe('validatePinCode', () => {
   describe('if the user put the correct pin', () => {
     const doAuthorizeMock = jest.fn().mockReturnValue(Promise.resolve({ pinCorrect: true }));
 
-    it('should call goToAttributesLanding if there is no petitionLink', async () => {
-      const initialState = {
-        ...defaultState,
-        petitionLink: {
-          petitionLink: undefined,
-        },
-      };
-      const wrapper = shallow(<Home />)
-        .first().shallow()
-        .first()
-        .shallow({ context: { store: mockStore(initialState) } });
+    describe('if there is no petitionLink or decidimApiUrl', () => {
+      it('should call goToAttributesLanding', async () => {
+        const initialState = {
+          ...defaultState,
+          petitionLink: {
+            petitionLink: undefined,
+          },
+        };
+        const wrapper = shallow(<Home />)
+          .first().shallow()
+          .first()
+          .shallow({ context: { store: mockStore(initialState) } });
 
-      const homeComponent = wrapper.dive().instance();
-      homeComponent.props = {
-        ...homeComponent.props,
-        goToAttributesLanding: goToAttributesLandingMock,
-        doAuthorize: doAuthorizeMock,
-      };
+        const homeComponent = wrapper.dive().instance();
+        homeComponent.props = {
+          ...homeComponent.props,
+          goToAttributesLanding: goToAttributesLandingMock,
+          doAuthorize: doAuthorizeMock,
+        };
 
-      await homeComponent.validatePinCode();
+        await homeComponent.validatePinCode();
 
-      expect(goToAttributesLandingMock).toBeCalled();
-    });
-
-    it('should call goToAttributesSummary if there is a petitionLink and the required attribute is not verified', async () => {
-      const initialState = {
-        ...defaultState,
-        petitionLink: {
-          petitionLink: somePetitionLink,
-          decidimAPIUrl: 'decidim.com',
-        },
-        attributes: {
-          list: new Map(),
-        },
-      };
-      getPetitionMock.mockReturnValue(Promise.resolve(undefined));
-
-      const wrapper = shallow(<Home />)
-        .first().shallow()
-        .first()
-        .shallow({ context: { store: mockStore(initialState) } });
-
-      const homeComponent = wrapper.dive().instance();
-      homeComponent.props = {
-        ...homeComponent.props,
-        decidimClient: decidimClientMock,
-        getPetition: getPetitionMock,
-        goToAttributesSummary: goToAttributesSummaryMock,
-        doAuthorize: doAuthorizeMock,
-      };
-
-      return homeComponent.validatePinCode().then(() => {
-        expect(getPetitionMock).toBeCalledWith(
-          decidimClientMock,
-          initialState.petitionLink.petitionLink,
-          initialState.petitionLink.decidimAPIUrl,
-          petitionId,
-        );
-        expect(goToAttributesSummaryMock).toBeCalled();
+        expect(goToAttributesLandingMock).toBeCalled();
       });
     });
 
-    it('should call goToPetitionSummary if there is a petitionLink and the required attribute is verified', async () => {
-      const initialState = {
-        ...defaultState,
-        petitionLink: {
-          petitionLink: somePetitionLink,
-          decidimAPIUrl: 'decidim.com',
-        },
-        attributes: {
-          list: new Map([['schema:addressLocality', {}]]),
-        },
-      };
-      getPetitionMock.mockReturnValue(Promise.resolve(undefined));
+    describe('if there is petitionLink or decidimApiUrl', () => {
+      it('should call goToAttributesSummary if the required attribute is not verified', async () => {
+        const initialState = {
+          ...defaultState,
+          petitionLink: {
+            petitionLink: undefined,
+            decidimAPIUrl: 'decidim.com',
+          },
+          attributes: {
+            list: new Map(),
+          },
+        };
+        getPetitionMock.mockReturnValue(Promise.resolve(undefined));
 
+        const wrapper = shallow(<Home />)
+          .first().shallow()
+          .first()
+          .shallow({ context: { store: mockStore(initialState) } });
 
-      const wrapper = shallow(<Home />)
-        .first().shallow()
-        .first()
-        .shallow({ context: { store: mockStore(initialState) } });
+        const homeComponent = wrapper.dive().instance();
+        homeComponent.props = {
+          ...homeComponent.props,
+          decidimClient: decidimClientMock,
+          getPetition: getPetitionMock,
+          goToAttributesSummary: goToAttributesSummaryMock,
+          doAuthorize: doAuthorizeMock,
+        };
 
-      const homeComponent = wrapper.dive().instance();
-      homeComponent.props = {
-        ...homeComponent.props,
-        decidimClient: decidimClientMock,
-        getPetition: getPetitionMock,
-        goToPetitionSummary: goToPetitionSummaryMock,
-        doAuthorize: doAuthorizeMock,
-      };
-
-      return homeComponent.validatePinCode().then(() => {
-        expect(getPetitionMock).toBeCalledWith(
-          decidimClientMock,
-          initialState.petitionLink.petitionLink,
-          initialState.petitionLink.decidimAPIUrl,
-          petitionId,
-        );
-        expect(goToPetitionSummaryMock).toBeCalled();
+        return homeComponent.validatePinCode().then(() => {
+          expect(getPetitionMock).toBeCalledWith(
+            decidimClientMock,
+            initialState.petitionLink.petitionLink,
+            initialState.petitionLink.decidimAPIUrl,
+            petitionId,
+          );
+          expect(goToAttributesSummaryMock).toBeCalled();
+        });
       });
-    });
 
-    it('should call goToError if decidimAPi returns fetch petition error', async () => {
-      const initialState = {
-        ...defaultState,
-        petition: {
-          error: 'Could not find petition',
-        },
-      };
-
-      getPetitionMock.mockReturnValue(Promise.resolve(undefined));
-      const errorTitle = 'No se ha podido conseguir la información de la petición de Decidim';
-      const errorText = 'You can return to the Decidim site to view other active petitions.';
-
-
-      const wrapper = shallow(<Home />)
-        .first().shallow()
-        .first()
-        .shallow({ context: { store: mockStore(initialState) } });
+      it('should call goToPetitionSummary if tthe required attribute is verified', async () => {
+        const initialState = {
+          ...defaultState,
+          petitionLink: {
+            petitionLink: 'http://city-council.com',
+            decidimAPIUrl: undefined,
+          },
+          attributes: {
+            list: new Map([['schema:addressLocality', {}]]),
+          },
+        };
+        getPetitionMock.mockReturnValue(Promise.resolve(undefined));
 
 
-      const homeComponent = wrapper.dive().instance();
-      homeComponent.props = {
-        ...homeComponent.props,
-        decidimClient: decidimClientMock,
-        getPetition: getPetitionMock,
-        goToError: goToErrorMock,
-        doAuthorize: doAuthorizeMock,
-        t: key => ({
-          errorTitle,
-          errorText,
-        }[key]),
-      };
+        const wrapper = shallow(<Home />)
+          .first().shallow()
+          .first()
+          .shallow({ context: { store: mockStore(initialState) } });
 
-      return homeComponent.validatePinCode().then(() => {
-        expect(getPetitionMock).toBeCalledWith(
-          decidimClientMock,
-          initialState.petitionLink.petitionLink,
-          initialState.petitionLink.decidimAPIUrl,
-          petitionId,
-        );
-        expect(goToErrorMock).toBeCalledWith(errorTitle, errorText);
+        const homeComponent = wrapper.dive().instance();
+        homeComponent.props = {
+          ...homeComponent.props,
+          decidimClient: decidimClientMock,
+          getPetition: getPetitionMock,
+          goToPetitionSummary: goToPetitionSummaryMock,
+          doAuthorize: doAuthorizeMock,
+        };
+
+        return homeComponent.validatePinCode().then(() => {
+          expect(getPetitionMock).toBeCalledWith(
+            decidimClientMock,
+            initialState.petitionLink.petitionLink,
+            initialState.petitionLink.decidimAPIUrl,
+            petitionId,
+          );
+          expect(goToPetitionSummaryMock).toBeCalled();
+        });
+      });
+
+      it('should call goToError if decidimAPi returns fetch petition error', async () => {
+        const initialState = {
+          ...defaultState,
+          petition: {
+            error: 'Could not find petition',
+          },
+        };
+
+        getPetitionMock.mockReturnValue(Promise.resolve(undefined));
+        const errorTitle = 'No se ha podido conseguir la información de la petición de Decidim';
+        const errorText = 'You can return to the Decidim site to view other active petitions.';
+
+
+        const wrapper = shallow(<Home />)
+          .first().shallow()
+          .first()
+          .shallow({ context: { store: mockStore(initialState) } });
+
+
+        const homeComponent = wrapper.dive().instance();
+        homeComponent.props = {
+          ...homeComponent.props,
+          decidimClient: decidimClientMock,
+          getPetition: getPetitionMock,
+          goToError: goToErrorMock,
+          doAuthorize: doAuthorizeMock,
+          t: key => ({
+            errorTitle,
+            errorText,
+          }[key]),
+        };
+
+        return homeComponent.validatePinCode().then(() => {
+          expect(getPetitionMock).toBeCalledWith(
+            decidimClientMock,
+            initialState.petitionLink.petitionLink,
+            initialState.petitionLink.decidimAPIUrl,
+            petitionId,
+          );
+          expect(goToErrorMock).toBeCalledWith(errorTitle, errorText);
+        });
       });
     });
   });

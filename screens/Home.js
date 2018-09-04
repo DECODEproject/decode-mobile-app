@@ -48,7 +48,8 @@ class Home extends React.Component {
   }
 
   goToNextPage() {
-    if (this.props.petitionLink) {
+    const comingFromDecidim = this.props.petitionLink || this.props.decidimAPIUrl;
+    if (comingFromDecidim) {
       this.goToPetition();
     } else {
       this.props.goToAttributesLanding();
