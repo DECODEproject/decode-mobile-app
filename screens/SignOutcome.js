@@ -1,16 +1,15 @@
 import React from 'react';
-import { Text, View, Image, Linking } from 'react-native';
+import { Text, View, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ImageOverlay from 'react-native-image-overlay';
 import { translate } from 'react-i18next';
-import { goToAuthorization } from '../application/redux/actions/navigation';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import Button from '../application/components/Button/Button';
+import Error from './Error';
 import i18n from '../i18n';
 
-const warningIcon = require('../assets/images/warning.png');
 const successImage = require('../assets/images/city.png');
 
 const linksStyle = {
@@ -44,15 +43,6 @@ class SignOutcome extends React.Component {
       >
         {linkText}
       </Text>);
-  }
-
-  constructor(props) {
-    super(props);
-    this.goToHome = this.goToHome.bind(this);
-  }
-
-  goToHome() {
-    this.props.goToAuthorization(this.props.petitionLink);
   }
 
   successful() {
@@ -106,39 +96,15 @@ class SignOutcome extends React.Component {
     );
   }
 
-  error() {
-    const textSubHeading = this.props.t('errorTitle');
-    const signOutcomeText = `${this.props.petitionError} \n\n ${this.props.t('errorText')}`;
-
-    return (
-      <View style={styles.signOutcomeContainer}>
-        <View style={styles.signOutcomeBox}>
-          <Image
-            style={styles.signOutcomeIcon}
-            source={warningIcon}
-          />
-          <View style={styles.signOutcomeTextBox}>
-            <Text style={styles.signOutcomeTextSubHeading}>{textSubHeading}</Text>
-            <Text style={styles.signOutcomePetitionTitle}>{this.props.petition.title}</Text>
-            <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
-            <Button name={this.props.t('backHome')} onPress={SignOutcome.handlePress} />
-          </View>
-        </View>
-      </View>
-    );
-  }
-
   render() {
     if (!this.props.signSuccess) {
-      return this.error();
+      return <Error title={this.props.petition.title} />;
     }
     return this.successful();
   }
 }
 
 SignOutcome.propTypes = {
-  petitionLink: PropTypes.string.isRequired,
-  goToAuthorization: PropTypes.func.isRequired,
   signSuccess: PropTypes.bool.isRequired,
   petition: PropTypes.shape({
     title: PropTypes.string,
@@ -146,28 +112,22 @@ SignOutcome.propTypes = {
     closingDate: PropTypes.string,
     id: PropTypes.string,
   }),
-  petitionError: PropTypes.string,
   links: PropTypes.arrayOf(PropTypes.string),
   t: PropTypes.func.isRequired,
 };
 
 SignOutcome.defaultProps = {
   petition: undefined,
-  petitionError: undefined,
   links: [
     'Make Poblenou a car-free zone',
     'Reduce noise pollution'],
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.petitionLink.petitionLink,
   signSuccess: state.signOutcome.signSuccess,
   petition: state.petition.petition,
-  petitionError: state.petition.error,
 });
 
-const mapDispatchToProps = dispatch => ({
-  goToAuthorization: () => { dispatch(goToAuthorization()); },
-});
+const mapDispatchToProps = () => ({ });
 
 export default translate('signOutcome', { i18n })(connect(mapStateToProps, mapDispatchToProps)(SignOutcome));
