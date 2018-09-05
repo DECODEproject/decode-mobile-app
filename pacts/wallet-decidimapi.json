@@ -10,8 +10,8 @@
       "description": "a request for information of a participatory process",
       "providerState": "I have a participatory process",
       "request": {
-        "method": "GET",
-        "path": "/participatoryProcess/2"
+        "method": "POST",
+        "path": "/"
       },
       "response": {
         "status": 200,
@@ -43,7 +43,7 @@
   ],
   "metadata": {
     "pactSpecification": {
-      "version": "0.0.0"
+      "version": "2.0.0"
     }
   }
 }

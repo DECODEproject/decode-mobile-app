@@ -1,11 +1,14 @@
-import callWalletProxy from './someApiCall';
+import DecidimClient from '../../lib/DecidimClient';
+import LanguageService from '../../lib/LanguageService';
 
 describe('Decidim API', () => {
   const MOCK_SERVER_URL = '127.0.0.1';
+  const petitionId = '2';
+  const language = 'es';
 
   const VALID_RESPONSE = {
     petition: {
-      id: '2',
+      id: petitionId,
       attributes: {
         mandatory: [{
           predicate: 'schema:addressLocality',
@@ -21,28 +24,46 @@ describe('Decidim API', () => {
   };
 
   describe('Participatory Processes', () => {
+    const graphQlQuery = `{
+      participatoryProcess(id: ${petitionId}) {
+        id
+        title {
+          translation (locale: "${language}")
+        }
+      }
+    }`.replace(/\n/g, '');
+
     beforeAll((done) => {
-      global.provider.addInteraction({
+      const decidimInteraction = {
         state: 'I have a participatory process',
         uponReceiving: 'a request for information of a participatory process',
         withRequest: {
-          method: 'GET',
-          path: '/participatoryProcess/2',
+          method: 'POST',
+          path: '/',
+          data: { query: graphQlQuery },
         },
         willRespondWith: {
           status: 200,
           headers: { 'Content-Type': 'application/json' },
           body: VALID_RESPONSE,
         },
-      })
+      };
+
+      global.provider.addInteraction(decidimInteraction)
         .then(() => done());
     });
 
-    it('should return information of valid participatory process', done => callWalletProxy({ host: MOCK_SERVER_URL, port: global.port })
-      .then((response) => {
-        expect(response.status).toEqual(200);
-        expect(response.data.petition.id).toEqual('2');
+
+    it('should return participatory process/petition information from Decidim', (done) => {
+      const languageService = new LanguageService();
+      languageService.getLanguage = () => language;
+      const decidimAPIUrl = `http://${MOCK_SERVER_URL}:${global.port}`;
+      const decidimClient = new DecidimClient(languageService, decidimAPIUrl);
+
+      return decidimClient.getParticipatoryProcess(graphQlQuery).then((response) => {
+        expect(response.data.petition.id).toEqual(petitionId);
         done();
-      }));
+      });
+    });
   });
 });
