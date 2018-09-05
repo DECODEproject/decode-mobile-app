@@ -22,6 +22,7 @@ export const toggleElementsInList = (element, list) => {
 };
 
 export const isAttributeEnabled = (attr, enabledAttrs) => (
+  attr !== undefined &&
   !!enabledAttrs.find(enabledAttr => enabledAttr.predicate === attr.predicate));
 
 export const getEnabledAttributeValue = (attr, enabledAttrs) => {

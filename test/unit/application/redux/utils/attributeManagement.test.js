@@ -50,7 +50,7 @@ describe('formAgeRange', () => {
 });
 
 describe('isAttributeEnabled', () => {
-  it('should return if the attribute is enable', () => {
+  it('should return true if the attribute is enabled', () => {
     const attr = {
       predicate: 'schema:dateOfBirth',
       object: '01/01/1966',
@@ -69,6 +69,16 @@ describe('isAttributeEnabled', () => {
       object: '01/01/1966',
     };
     const enabledAttributes = [];
+
+    const actual = isAttributeEnabled(attr, enabledAttributes);
+    const expected = false;
+
+    expect(actual).toEqual(expected);
+  });
+
+  it('should return false if the attribute is undefined', () => {
+    const attr = undefined;
+    const enabledAttributes = [{ predicate: 'schema:dateOfBirth' }];
 
     const actual = isAttributeEnabled(attr, enabledAttributes);
     const expected = false;
