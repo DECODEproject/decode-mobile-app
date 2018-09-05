@@ -56,6 +56,7 @@ export default {
     maybeInterested: 'Potser estas interesat en alguna altra petició',
     errorTitle: 'El registre del vot ha fallat: ',
     errorText: 'Pots tornar a la pàgina de Decidim per veure més peticions.',
+    defaultError: 'Hi ha hagut un error signant',
   },
   walkthrough: {
     done: 'Fet',

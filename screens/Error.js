@@ -14,9 +14,15 @@ class Error extends React.Component {
     Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
   }
 
+  buildOutcomeText() {
+    const petitionError = this.props.petitionError === undefined ? this.props.t('defaultError') : this.props.petitionError;
+    const signOutcomeText = `${petitionError} \n\n ${this.props.t('errorText')}`;
+    return signOutcomeText;
+  }
+
   render() {
     const textSubHeading = this.props.t('errorTitle');
-    const signOutcomeText = `${this.props.petitionError} \n\n ${this.props.t('errorText')}`;
+    const signOutcomeText = this.buildOutcomeText();
 
     return (
       <View style={styles.signOutcomeContainer}>
@@ -26,8 +32,8 @@ class Error extends React.Component {
             source={warningIcon}
           />
           <View style={styles.signOutcomeTextBox}>
-            <Text style={styles.signOutcomeTextSubHeading}>{textSubHeading}</Text>
             <Text style={styles.signOutcomePetitionTitle}>{this.props.title}</Text>
+            <Text style={styles.signOutcomeTextSubHeading}>{textSubHeading}</Text>
             <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
             <Button name={this.props.t('backHome')} onPress={Error.handlePress} />
           </View>
@@ -44,7 +50,7 @@ Error.propTypes = {
 };
 
 Error.defaultProps = {
-  title: undefined,
+  title: '',
   petitionError: undefined,
 };
 

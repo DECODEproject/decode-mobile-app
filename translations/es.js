@@ -56,6 +56,7 @@ export default {
     maybeInterested: 'Quizas estas interesado en más peticiones',
     errorTitle: 'El voto fallo por: ',
     errorText: 'Puedes volver a la página de Decidim para ver más peticiones.',
+    defaultError: 'Ha habido un error firmando',
   },
   walkthrough: {
     done: 'Hecho',

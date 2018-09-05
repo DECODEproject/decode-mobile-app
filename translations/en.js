@@ -56,6 +56,7 @@ export default {
     maybeInterested: 'You may be interested in these other petitions',
     errorTitle: 'Sign failed for',
     errorText: 'You can return to the Decidim site to view other active petitions.',
+    defaultError: 'There has been an error signing',
   },
   walkthrough: {
     done: 'Done',
