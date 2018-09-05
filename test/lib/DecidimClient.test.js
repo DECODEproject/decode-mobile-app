@@ -28,29 +28,7 @@ describe('Decidim Client', () => {
         },
       },
     };
-    const decidimClient = new DecidimClient(getLanguageServiceMock());
-
-    const expectedPetition = {
-      petition: {
-        id: petitionId,
-        title: petitionFromDecidim.data.data.participatoryProcess.title.translation,
-        attributes: {
-          mandatory: [{
-            predicate: 'schema:addressLocality',
-            object: 'Barcelona',
-            scope: 'can-access',
-            provenance: {
-              url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-            },
-          }],
-          optional: [{
-            predicate: 'schema:dateOfBirth',
-            object: 'voter',
-            scope: 'can-access',
-          }],
-        },
-      },
-    };
+    const decidimClient = new DecidimClient(getLanguageServiceMock(), decidimApiUrl);
 
     const requestQuery = `{
       participatoryProcess(id: ${petitionId}) {
@@ -60,6 +38,7 @@ describe('Decidim Client', () => {
         }
       }
     }`.replace(/\n/g, '');
+
     const requestBody = { query: requestQuery };
 
     const requestQueryForSpanish = `{
@@ -73,8 +52,30 @@ describe('Decidim Client', () => {
     const requestBodyForSpanish = { query: requestQueryForSpanish };
 
     it('should return the petition from Decidim API', async () => {
+      const expectedPetition = {
+        petition: {
+          id: petitionId,
+          title: petitionFromDecidim.data.data.participatoryProcess.title.translation,
+          attributes: {
+            mandatory: [{
+              predicate: 'schema:addressLocality',
+              object: 'Barcelona',
+              scope: 'can-access',
+              provenance: {
+                url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+              },
+            }],
+            optional: [{
+              predicate: 'schema:dateOfBirth',
+              object: 'voter',
+              scope: 'can-access',
+            }],
+          },
+        },
+      };
+
       axios.post.mockResolvedValue(petitionFromDecidim);
-      const actualPetition = await decidimClient.fetchPetition(decidimApiUrl, petitionId);
+      const actualPetition = await decidimClient.fetchPetition(petitionId);
 
       expect(actualPetition).toEqual(expectedPetition);
       expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
@@ -83,7 +84,7 @@ describe('Decidim Client', () => {
     it('should return an error if there is a problem fetching from Decidim', async () => {
       axios.post.mockRejectedValue(new Error('Failed post'));
 
-      await expect(decidimClient.fetchPetition(decidimApiUrl, petitionId))
+      await expect(decidimClient.fetchPetition(petitionId))
         .rejects.toThrow(FetchPetitionError);
       expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
     });
@@ -98,7 +99,7 @@ describe('Decidim Client', () => {
       };
       axios.post.mockResolvedValue(errorResponse);
 
-      await expect(decidimClient.fetchPetition(decidimApiUrl, petitionId))
+      await expect(decidimClient.fetchPetition(petitionId))
         .rejects.toThrow(PetitionNotFoundError);
       expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
     });
@@ -107,7 +108,7 @@ describe('Decidim Client', () => {
       const languageServiceForSpanish = getLanguageServiceMock('es');
       axios.post.mockResolvedValue(petitionFromDecidim);
 
-      await new DecidimClient(languageServiceForSpanish).fetchPetition(decidimApiUrl, petitionId);
+      await new DecidimClient(languageServiceForSpanish, decidimApiUrl).fetchPetition(petitionId);
 
       expect(axios.post).toBeCalledWith(decidimApiUrl, requestBodyForSpanish);
     });

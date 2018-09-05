@@ -125,7 +125,7 @@ Home.propTypes = {
   petitionError: PropTypes.string,
   petitionId: PropTypes.string,
   decidimAPIUrl: PropTypes.string,
-  decidimClient: PropTypes.instanceOf(DecidimClient),
+  decidimClient: PropTypes.instanceOf(DecidimClient).isRequired,
   pinCode: PropTypes.string,
   attributes: PropTypes.shape({
     list: PropTypes.instanceOf(Map),
@@ -139,7 +139,6 @@ Home.defaultProps = {
   decidimAPIUrl: undefined,
   petitionId: undefined,
   pinCode: '',
-  decidimClient: new DecidimClient(new LanguageService()),
 };
 
 const mapStateToProps = state => ({
@@ -149,6 +148,7 @@ const mapStateToProps = state => ({
   pinCode: state.authorization.pin,
   attributes: state.attributes,
   petitionError: state.petition.error,
+  decidimClient: new DecidimClient(new LanguageService(), state.decidimInfo.decidimAPIUrl),
 });
 
 const mapDispatchToProps = dispatch => ({
