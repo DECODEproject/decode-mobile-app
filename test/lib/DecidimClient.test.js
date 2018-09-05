@@ -43,7 +43,11 @@ describe('Decidim Client', () => {
               url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
             },
           }],
-          optional: [],
+          optional: [{
+            predicate: 'schema:dateOfBirth',
+            object: 'voter',
+            scope: 'can-access',
+          }],
         },
       },
     };
