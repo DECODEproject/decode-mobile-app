@@ -39,7 +39,7 @@ describe('Decidim Client', () => {
             predicate: 'schema:addressLocality',
             object: 'Barcelona',
             scope: 'can-access',
-            credentialIssuer: {
+            provenance: {
               url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
             },
           }],
