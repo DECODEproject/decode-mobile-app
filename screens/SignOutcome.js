@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Linking } from 'react-native';
+import { Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ImageOverlay from 'react-native-image-overlay';
@@ -28,10 +28,6 @@ class SignOutcome extends React.Component {
       tintColor: 'rgb(0,163,158)',
       title: 'Outcome',
     },
-  }
-
-  static handlePress() {
-    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
   }
 
   static createLink(linkText, index) {
