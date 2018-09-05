@@ -9,6 +9,9 @@
 # dependencies
 /node_modules
 
+#logs
+/logs
+
 # misc
 .env.local
 .env.development.local

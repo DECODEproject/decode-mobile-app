@@ -1,0 +1,49 @@
+{
+  "consumer": {
+    "name": "Wallet"
+  },
+  "provider": {
+    "name": "DecidimAPI"
+  },
+  "interactions": [
+    {
+      "description": "a request for information of a participatory process",
+      "providerState": "I have a participatory process",
+      "request": {
+        "method": "GET",
+        "path": "/participatoryProcess/2"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "petition": {
+            "id": "2",
+            "attributes": {
+              "mandatory": [
+                {
+                  "predicate": "schema:addressLocality",
+                  "object": "Barcelona",
+                  "scope": "can-access",
+                  "credentialIssuer": {
+                    "url": "http://atlantis-decode.s3-website-eu-west-1.amazonaws.com"
+                  }
+                }
+              ],
+              "optional": [
+
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "0.0.0"
+    }
+  }
+}
