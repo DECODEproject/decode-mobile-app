@@ -91,17 +91,6 @@ describe('getPetition', () => {
       });
     });
 
-    it('should dispatch SET_DECIDIM_DATA action successful', () => {
-      const expectedActions = [{
-        type: types.SET_DECIDIM_DATA,
-        petitionId: '2',
-        decidimAPIUrl,
-      }];
-
-      store.dispatch(setDecidimData(petitionId, decidimAPIUrl));
-      expect(store.getActions()).toEqual(expectedActions);
-    });
-
     it('should dispatch successful action', () => {
       const expectedPetition = {
         id: petitionId,
