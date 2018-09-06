@@ -54,9 +54,8 @@ export default {
     backHome: 'Back to Home',
     voteRecorded: 'Your vote has been recorded anonymously',
     maybeInterested: 'You may be interested in these other petitions',
-    errorTitle: 'Sign failed for',
     errorText: 'You can return to the Decidim site to view other active petitions.',
-    defaultError: 'There has been an error signing',
+    defaultError: 'There has been an error',
   },
   walkthrough: {
     done: 'Done',

@@ -54,9 +54,8 @@ export default {
     backHome: 'Volver al inicio',
     voteRecorded: 'Tu voto ha sido registrado anonimamente',
     maybeInterested: 'Quizas estas interesado en más peticiones',
-    errorTitle: 'El voto fallo por: ',
     errorText: 'Puedes volver a la página de Decidim para ver más peticiones.',
-    defaultError: 'Ha habido un error firmando',
+    defaultError: 'Ha habido un error',
   },
   walkthrough: {
     done: 'Hecho',

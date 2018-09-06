@@ -21,7 +21,6 @@ class Error extends React.Component {
   }
 
   render() {
-    const textSubHeading = this.props.t('errorTitle');
     const signOutcomeText = this.buildOutcomeText();
 
     return (
@@ -33,7 +32,6 @@ class Error extends React.Component {
           />
           <View style={styles.signOutcomeTextBox}>
             <Text style={styles.signOutcomePetitionTitle}>{this.props.title}</Text>
-            <Text style={styles.signOutcomeTextSubHeading}>{textSubHeading}</Text>
             <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
             <Button name={this.props.t('backHome')} onPress={Error.handlePress} />
           </View>

@@ -54,9 +54,8 @@ export default {
     backHome: 'Tornar al inici',
     voteRecorded: 'El teu vot ha sigut registrat anonimament',
     maybeInterested: 'Potser estas interesat en alguna altra petició',
-    errorTitle: 'El registre del vot ha fallat: ',
     errorText: 'Pots tornar a la pàgina de Decidim per veure més peticions.',
-    defaultError: 'Hi ha hagut un error signant',
+    defaultError: 'Hi ha hagut un error',
   },
   walkthrough: {
     done: 'Fet',
