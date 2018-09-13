@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { signPetition } from '../application/redux/actions/petition';
-import { setSignOutcome } from '../application/redux/actions/signOutcome';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
@@ -77,7 +76,6 @@ class PetitionSummary extends React.Component {
     } catch (e) {
       signSuccess = false;
     }
-    this.props.setSignOutcome(signSuccess);
     this.props.goToSignOutcome();
     this.setState({
       loading: false,
@@ -181,7 +179,6 @@ class PetitionSummary extends React.Component {
 
 PetitionSummary.propTypes = {
   goToSignOutcome: PropTypes.func.isRequired,
-  setSignOutcome: PropTypes.func.isRequired,
   petition: PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -220,7 +217,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  setSignOutcome: (signSuccess) => { dispatch(setSignOutcome(signSuccess)); },
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
   signPetition: (petition, walletId, vote, age, gender) =>
     dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender)),

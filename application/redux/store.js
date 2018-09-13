@@ -5,7 +5,6 @@ import thunk from 'redux-thunk';
 import devTools from 'remote-redux-devtools';
 import decidimInfo from './reducers/decidimInfo';
 import petition from './reducers/petition';
-import signOutcome from './reducers/signOutcome';
 import wallet from './reducers/wallet';
 import attributes from './reducers/attributes';
 import authorization from './reducers/authorization';
@@ -31,7 +30,6 @@ const Store = createStoreWithNavigation(combineReducers({
   navigation: NavigationReducer,
   decidimInfo,
   petition,
-  signOutcome,
   wallet,
   attributes,
   authorization,

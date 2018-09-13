@@ -120,7 +120,7 @@ SignOutcome.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  signSuccess: state.signOutcome.signSuccess,
+  signSuccess: state.petition.signed,
   petition: state.petition.petition,
 });
 

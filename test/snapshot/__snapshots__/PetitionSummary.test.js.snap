@@ -11992,7 +11992,6 @@ Haz click en botón inferior para empezar",
       }
     }
     petitionError={undefined}
-    setSignOutcome={[Function]}
     signPetition={[Function]}
     signSuccess={undefined}
     t={[Function]}
@@ -25041,7 +25040,6 @@ Haz click en botón inferior para empezar",
       }
     }
     petitionError={undefined}
-    setSignOutcome={[Function]}
     signPetition={[Function]}
     signSuccess={undefined}
     t={[Function]}
