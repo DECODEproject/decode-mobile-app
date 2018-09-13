@@ -69,13 +69,7 @@ class PetitionSummary extends React.Component {
     const age = formAge(ageAttribute, this.state.enabledAttributes);
     const gender = getEnabledAttributeValue(genderAttribute, this.state.enabledAttributes);
 
-    let signSuccess;
-    try {
-      const signAction = await this.props.signPetition(petition, walletId, vote, age, gender);
-      signSuccess = (signAction.error === undefined);
-    } catch (e) {
-      signSuccess = false;
-    }
+    await this.props.signPetition(petition, walletId, vote, age, gender);
     this.props.goToSignOutcome();
     this.setState({
       loading: false,
