@@ -157,7 +157,11 @@ describe('signPetition', () => {
   const response = {};
 
   beforeEach(() => {
-    store = mockStore();
+    store = mockStore({
+      featureToggles: {
+        zenroom: false,
+      },
+    });
   });
 
   afterEach(() => {

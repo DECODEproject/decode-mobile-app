@@ -74,7 +74,8 @@ export function getPetition(decidimClient, petitionLink, decidimAPIUrl, petition
   };
 }
 
-export function signPetition(petition, walletId, walletProxyLink, vote, age, gender) {
+
+async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender) {
   const request = {
     method: 'POST',
     headers: {
@@ -89,12 +90,23 @@ export function signPetition(petition, walletId, walletProxyLink, vote, age, gen
     }),
   };
 
-  return async (dispatch) => {
-    const response = await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, request);
-    const responseJson = await response.json();
-    if (!response.ok) {
-      return dispatch(signPetitionError(responseJson.error));
+  const response = await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, request);
+  const responseJson = await response.json();
+  if (!response.ok) {
+    return dispatch(signPetitionError(responseJson.error));
+  }
+  return dispatch(signPetitionAction());
+}
+
+function signPetitionViaZenroom() {
+
+}
+
+export function signPetition(petition, walletId, walletProxyLink, vote, age, gender) {
+  return async (dispatch, getState) => {
+    if (!getState().featureToggles.zenroom) {
+      return signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender);
     }
-    return dispatch(signPetitionAction());
+    return signPetitionViaZenroom();
   };
 }
