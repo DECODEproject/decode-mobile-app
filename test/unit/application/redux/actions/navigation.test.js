@@ -11,6 +11,11 @@ describe('navigation actions', () => {
         decidimInfo: {
           petitionLink: 'dicidim-url',
         },
+        petition: {
+          petition: {
+            id: '40',
+          },
+        },
         navigation: {},
       });
       store.dispatch(goToPilotScreen());

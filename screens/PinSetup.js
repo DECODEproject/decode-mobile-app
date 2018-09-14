@@ -11,71 +11,85 @@ import i18n from '../i18n';
 
 const decodeLogo = require('../assets/images/decode-logo-pin.png');
 
-const PinSetup = props => (
-  <KeyboardAvoidingView
-    behavior="position"
-    keyboardVerticalOffset={50}
-  >
-    <View style={styles.pinContainer}>
-      <Image
-        style={styles.pinLogo}
-        source={decodeLogo}
-      />
+class PinSetup extends React.Component {
+  static route = {
+    navigationBar: {
+      backgroundColor: 'white',
+      fontSize: 20,
+      fontWeight: '500',
+      tintColor: 'rgb(0,163,158)',
+    },
+  };
 
-      <Text style={styles.pinTitle}>
-        {props.t('title')}
-      </Text>
-      <Text style={styles.pinSubtitle}>
-        {props.t('subtitle')}
-      </Text>
+  render() {
+    return (
+      <KeyboardAvoidingView
+        behavior="position"
+        keyboardVerticalOffset={50}
+      >
+        <View style={styles.pinContainer}>
+          <Image
+            style={styles.pinLogo}
+            source={decodeLogo}
+          />
 
-      <View style={{ height: 90 }}>
-        <Text style={styles.pinInputLabel}>
-          {props.t('labelPin1')}
-        </Text>
-        <TextInput
-          style={styles.pinPassword}
-          placeholder={props.t('placeholderPin1')}
-          keyboardType="numeric"
-          secureTextEntry
-          underlineColorAndroid="transparent"
-          value={props.pin1}
-          onChangeText={pin => props.changeText1(pin)}
-        />
+          <Text style={styles.pinTitle}>
+            {this.props.t('title')}
+          </Text>
+          <Text style={styles.pinSubtitle}>
+            {this.props.t('subtitle')}
+          </Text>
 
-        {!props.validPinFormat &&
-        <Text style={styles.pinError}>
-          { props.t('errorPin1') }
-        </Text>}
-      </View>
-      <View style={{ height: 90 }}>
-        <Text style={styles.pinInputLabel}>
-          {props.t('labelPin2')}
-        </Text>
-        <TextInput
-          style={styles.pinPassword}
-          placeholder={props.t('placeholderPin2')}
-          keyboardType="numeric"
-          secureTextEntry
-          underlineColorAndroid="transparent"
-          value={props.pin2}
-          onChangeText={pin => props.changeText2(pin)}
-        />
-        {!props.validPinEqual &&
-        <Text style={styles.pinError}>
-          {props.t('errorPin2')}
-        </Text>}
-      </View>
-      <View style={{ flexDirection: 'row' }}>
-        <Button
-          name={props.t('button')}
-          onPress={() => props.storePin(props.pin1)}
-          style={styles.pinButton}
-        />
-      </View>
-    </View>
-  </KeyboardAvoidingView>
-);
+          <View style={{ height: 90 }}>
+            <Text style={styles.pinInputLabel}>
+              {this.props.t('labelPin1')}
+            </Text>
+            <TextInput
+              style={styles.pinPassword}
+              placeholder={this.props.t('placeholderPin1')}
+              keyboardType="numeric"
+              secureTextEntry
+              underlineColorAndroid="transparent"
+              value={this.props.pin1}
+              onChangeText={pin => this.props.changeText1(pin)}
+            />
+
+            {!this.props.validPinFormat &&
+            <Text style={styles.pinError}>
+              { this.props.t('errorPin1') }
+            </Text>}
+          </View>
+          <View style={{ height: 90 }}>
+            <Text style={styles.pinInputLabel}>
+              {this.props.t('labelPin2')}
+            </Text>
+            <TextInput
+              style={styles.pinPassword}
+              placeholder={this.props.t('placeholderPin2')}
+              keyboardType="numeric"
+              secureTextEntry
+              underlineColorAndroid="transparent"
+              value={this.props.pin2}
+              onChangeText={pin => this.props.changeText2(pin)}
+            />
+            {!this.props.validPinEqual &&
+            <Text style={styles.pinError}>
+              {this.props.t('errorPin2')}
+            </Text>}
+          </View>
+          <View style={{ flexDirection: 'row' }}>
+            <Button
+              name={this.props.t('button')}
+              onPress={() => this.props.storePin(this.props.pin1)}
+              style={styles.pinButton}
+            />
+          </View>
+        </View>
+      </KeyboardAvoidingView>
+    );
+  }
+}
+
 
 PinSetup.propTypes = {
   pin1: PropTypes.string.isRequired,

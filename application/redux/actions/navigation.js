@@ -22,7 +22,7 @@ export function goToPetitionSummary() {
 export function goToAttributesSummary() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
-    const route = Router.getRoute('attributesSummary');
+    const route = Router.getRoute('attributesSummary', { petitionId: getState().petition.petition.id });
     const action = NavigationActions.push(navigatorUID, route);
     dispatch(action);
   };

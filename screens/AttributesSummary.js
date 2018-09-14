@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Constants, SecureStore, WebBrowser } from 'expo';
-import { Linking, View, Text, Image } from 'react-native';
+import { Linking, View, Text, Image, TouchableOpacity } from 'react-native';
 import { translate } from 'react-i18next';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
@@ -13,6 +13,11 @@ import i18n from '../i18n';
 
 const decodeUser = require('../assets/images/decode-user.png');
 
+const backToPetitionInBrowser = (petitionId) => {
+  const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${petitionId}`;
+  Linking.openURL(petitionUrl);
+};
+
 class AttributesSummary extends React.Component {
   static route = {
     navigationBar: {
@@ -21,6 +26,14 @@ class AttributesSummary extends React.Component {
       fontWeight: '500',
       tintColor: 'rgb(0,163,158)',
       title: 'Verify your Information',
+      renderLeft: (router) => {
+        console.log();
+        return (
+          <TouchableOpacity onPress={() => backToPetitionInBrowser(router.params.petitionId)}>
+            <Text>Back to Decidim</Text>
+          </TouchableOpacity>
+        );
+      },
     },
   };
 

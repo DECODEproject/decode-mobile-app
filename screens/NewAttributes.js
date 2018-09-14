@@ -18,6 +18,15 @@ const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
 
 class NewAttributes extends Component {
+  static route = {
+    navigationBar: {
+      backgroundColor: 'white',
+      fontSize: 20,
+      fontWeight: '500',
+      tintColor: 'rgb(0,163,158)',
+    },
+  };
+
   constructor(props) {
     super(props);
     this.state = {
