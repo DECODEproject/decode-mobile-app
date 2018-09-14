@@ -98,8 +98,8 @@ async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote,
   return dispatch(signPetitionAction());
 }
 
-function signPetitionViaZenroom() {
-
+function signPetitionViaZenroom(dispatch) {
+  return dispatch(signPetitionAction());
 }
 
 export function signPetition(petition, walletId, walletProxyLink, vote, age, gender) {
@@ -107,6 +107,6 @@ export function signPetition(petition, walletId, walletProxyLink, vote, age, gen
     if (!getState().featureToggles.zenroom) {
       return signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender);
     }
-    return signPetitionViaZenroom();
+    return signPetitionViaZenroom(dispatch);
   };
 }

@@ -4,9 +4,11 @@ import thunk from 'redux-thunk';
 import { getPetition, signPetition, toggleEnableAttribute } from '../../../../../application/redux/actions/petition';
 import types from '../../../../../application/redux/actionTypes';
 import DecidimClient from '../../../../../lib/DecidimClient';
+import ChainspaceClient from '../../../../../lib/ChainspaceClient';
 import FetchPetitionError from '../../../../../lib/errors/FetchPetitionError';
 
 jest.mock('../../../../../lib/DecidimClient.js');
+jest.mock('../../../../../lib/ChainspaceClient.js');
 
 
 const mockStore = configureMockStore([thunk]);
@@ -146,98 +148,171 @@ describe('getPetition', () => {
 });
 
 describe('signPetition', () => {
-  let store;
+  describe('feature toggle zenroom off', () => {
+    let store;
 
-  const petition = {
-    id: 1,
-  };
-  const walletId = '1234567890';
-  const walletProxyLink = 'wallet-proxy-link.com';
-  const signPetitionLink = `${walletProxyLink}/sign/petitions/${petition.id}`;
-  const response = {};
+    const petition = {
+      id: 1,
+    };
+    const walletId = '1234567890';
+    const walletProxyLink = 'wallet-proxy-link.com';
+    const signPetitionLink = `${walletProxyLink}/sign/petitions/${petition.id}`;
+    const response = {};
 
-  beforeEach(() => {
-    store = mockStore({
-      featureToggles: {
-        zenroom: false,
-      },
+    beforeEach(() => {
+      store = mockStore({
+        featureToggles: {
+          zenroom: false,
+        },
+      });
+    });
+
+    afterEach(() => {
+      fetchMock.reset();
+      fetchMock.restore();
+    });
+
+    it('should make post with correct request', () => {
+      const vote = 'yes';
+      const age = '0-19';
+      const gender = 'undisclosed';
+
+      const expectedRequestBody = JSON.stringify({
+        signatory: walletId.substring(0, 5),
+        vote,
+        age: '0-19',
+        gender: 'undisclosed',
+      });
+
+      let actualRequestBody;
+
+      fetchMock.postOnce((url, opts) => {
+        actualRequestBody = opts.body;
+        return url === signPetitionLink;
+      }, response);
+
+      return store.dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender))
+        .then(() => {
+          expect(actualRequestBody).toEqual(expectedRequestBody);
+        });
+    });
+
+    it('should dispatch successful action', () => {
+      const expectedActions = [{
+        type: types.SIGN_PETITION,
+      }];
+
+      fetchMock.postOnce(signPetitionLink, response);
+
+      return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
+    });
+
+    it('should dispatch error action', () => {
+      const errorMessage = 'Internal Server Error';
+
+      const expectedActions = [{
+        type: types.SIGN_PETITION_ERROR,
+        error: errorMessage,
+      }];
+
+      fetchMock.postOnce(signPetitionLink, {
+        status: 500,
+        sendAsJson: true,
+        body: {
+          error: errorMessage,
+        },
+      });
+
+      return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
+    });
+
+    describe('Toggle enable attributes', () => {
+      it('toggle attribute action', async () => {
+        const attribute = 'schema:addressLocality';
+
+        const expectedActions = [{
+          type: types.TOGGLE_ENABLE_ATTRIBUTE,
+          attribute,
+        }];
+
+        store.dispatch(toggleEnableAttribute(attribute));
+        expect(store.getActions()).toEqual(expectedActions);
+      });
     });
   });
 
-  afterEach(() => {
-    fetchMock.reset();
-    fetchMock.restore();
-  });
+  describe('feature toggle zenroom on', () => {
+    let store;
 
-  it('should make post with correct request', () => {
+    const petition = {
+      id: 1,
+    };
+    const walletId = '1234567890';
+    const walletProxyLink = 'wallet-proxy-link.com';
+    const response = {};
     const vote = 'yes';
     const age = '0-19';
     const gender = 'undisclosed';
 
-    const expectedRequestBody = JSON.stringify({
-      signatory: walletId.substring(0, 5),
-      vote,
-      age: '0-19',
-      gender: 'undisclosed',
-    });
-
-    let actualRequestBody;
-
-    fetchMock.postOnce((url, opts) => {
-      actualRequestBody = opts.body;
-      return url === signPetitionLink;
-    }, response);
-
-    return store.dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender))
-      .then(() => {
-        expect(actualRequestBody).toEqual(expectedRequestBody);
-      });
-  });
-
-  it('should dispatch successful action', () => {
     const expectedActions = [{
       type: types.SIGN_PETITION,
     }];
 
-    fetchMock.postOnce(signPetitionLink, response);
+    beforeEach(() => {
+      store = mockStore({
+        featureToggles: {
+          zenroom: true,
+        },
+      });
+    });
 
-    return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
-      expect(store.getActions()).toEqual(expectedActions);
+    afterEach(() => {
+      fetchMock.reset();
+      fetchMock.restore();
+    });
+
+    it('should dispatch successful action', () => {
+      ChainspaceClient.mockImplementation(() => ({
+        fetchObjectsOfLastTransaction: () => response,
+      }));
+
+      return store.dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender))
+        .then(() => {
+          expect();
+          expect(store.getActions()).toEqual(expectedActions);
+        });
+    });
+
+    xit('should dispatch error action', () => {
+
+    });
+
+    xit('should make post with correct request', () => {
+
     });
   });
+});
 
-  it('should dispatch error action', () => {
-    const errorMessage = 'Internal Server Error';
-
-    const expectedActions = [{
-      type: types.SIGN_PETITION_ERROR,
-      error: errorMessage,
-    }];
-
-    fetchMock.postOnce(signPetitionLink, {
-      status: 500,
-      sendAsJson: true,
-      body: {
-        error: errorMessage,
+describe('toggleEnableAttribute', () => {
+  it('toggle attribute action', async () => {
+    const store = mockStore({
+      featureToggles: {
+        zenroom: false,
       },
     });
 
-    return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
-      expect(store.getActions()).toEqual(expectedActions);
-    });
-  });
+    const attribute = 'schema:addressLocality';
 
-  describe('Toggle enable attributes', () => {
-    it('toggle attribute action', async () => {
-      const attribute = 'schema:addressLocality';
+    const expectedActions = [{
+      type: types.TOGGLE_ENABLE_ATTRIBUTE,
+      attribute,
+    }];
 
-      const expectedActions = [{
-        type: types.TOGGLE_ENABLE_ATTRIBUTE,
-        attribute,
-      }];
-
-      store.dispatch(toggleEnableAttribute(attribute));
-      expect(store.getActions()).toEqual(expectedActions);
-    });
+    store.dispatch(toggleEnableAttribute(attribute));
+    expect(store.getActions()).toEqual(expectedActions);
   });
 });
