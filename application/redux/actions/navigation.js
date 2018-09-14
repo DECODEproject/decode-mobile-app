@@ -10,14 +10,6 @@ export function goToAuthorization(petitionLink) {
   };
 }
 
-export function goToQRScanner() {
-  return (dispatch, getState) => {
-    const navigatorUID = getState().navigation.currentNavigatorUID;
-    const action = NavigationActions.push(navigatorUID, Router.getRoute('QRScanner'));
-    dispatch(action);
-  };
-}
-
 export function goToPetitionSummary() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;

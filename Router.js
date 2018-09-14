@@ -1,6 +1,5 @@
 import { createRouter } from '@expo/ex-navigation';
 import Home from './screens/Home';
-import QRScanner from './screens/QRScanner';
 import Authorisation from './screens/Authorisation';
 import PetitionSummary from './screens/PetitionSummary';
 import SignOutcome from './screens/SignOutcome';
@@ -11,10 +10,10 @@ import Walkthrough from './screens/Walkthrough';
 import NewAttributes from './screens/NewAttributes';
 import Error from './screens/Error';
 
+
 const Router = createRouter(() => ({
   home: () => Home,
   walkthrough: () => Walkthrough,
-  QRScanner: () => QRScanner,
   authorisation: () => Authorisation,
   petitionSummary: () => PetitionSummary,
   attributesSummary: () => AttributesSummary,
