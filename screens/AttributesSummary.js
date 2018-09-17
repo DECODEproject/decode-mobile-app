@@ -12,6 +12,7 @@ import styles from './styles';
 import i18n from '../i18n';
 
 const decodeUser = require('../assets/images/decode-user.png');
+const backArrowIcon = require('../assets/images/ico-back-button.png');
 
 const backToPetitionInBrowser = (petitionId) => {
   const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${petitionId}`;
@@ -25,15 +26,14 @@ class AttributesSummary extends React.Component {
       fontSize: 20,
       fontWeight: '500',
       tintColor: 'rgb(0,163,158)',
-      title: 'Verify your Information',
-      renderLeft: (router) => {
-        console.log();
-        return (
-          <TouchableOpacity onPress={() => backToPetitionInBrowser(router.params.petitionId)}>
-            <Text>Back to Decidim</Text>
-          </TouchableOpacity>
-        );
-      },
+      renderLeft: router => (
+        <TouchableOpacity
+          onPress={() => backToPetitionInBrowser(router.params.petitionId)}
+          style={{ paddingTop: 10, paddingLeft: 10 }}
+        >
+          <Image source={backArrowIcon} />
+        </TouchableOpacity>
+      ),
     },
   };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Constants } from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
-import { Text, View, ScrollView } from 'react-native';
+import { Text, View, ScrollView, TouchableOpacity, Image, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
@@ -19,6 +19,12 @@ import {
   buildAttributes, toggleElementsInList,
 } from '../application/utils/attributeManagement';
 
+const backArrowIcon = require('../assets/images/ico-back-button.png');
+
+const backToPetitionInBrowser = (petitionId) => {
+  const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${petitionId}`;
+  Linking.openURL(petitionUrl);
+};
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 
@@ -29,7 +35,14 @@ class PetitionSummary extends React.Component {
       fontSize: 20,
       fontWeight: '500',
       tintColor: 'rgb(0,163,158)',
-      title: 'Sign Petition',
+      renderLeft: router => (
+        <TouchableOpacity
+          onPress={() => backToPetitionInBrowser(router.params.petitionId)}
+          style={{ paddingTop: 10, paddingLeft: 10 }}
+        >
+          <Image source={backArrowIcon} />
+        </TouchableOpacity>
+      ),
     },
   };
 
@@ -217,4 +230,3 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));
-
