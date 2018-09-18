@@ -1,4 +1,5 @@
 import types from '../actionTypes';
+import Signature from '../../../lib/Signature';
 
 export function setPetition(petition, walletAttributes) {
   return {
@@ -98,11 +99,12 @@ async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote,
   return dispatch(signPetitionAction());
 }
 
-async function signPetitionViaZenroom(dispatch, chainspaceClient, contractId, zenroomContract) {
+async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature) { //eslint-disable-line
   try {
     await chainspaceClient.fetchObjectsOfLastTransaction(contractId);
 
-    const transaction = zenroomContract.addSignature();
+
+    const transaction = zenroomContract.addSignature(signature);
     await chainspaceClient.postTransaction(transaction);
   } catch (error) {
     return dispatch(signPetitionError(error.message));
@@ -117,6 +119,7 @@ export function signPetition(petition, walletId, walletProxyLink, vote, age, gen
       return signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender);
     }
     const contractId = 'zenroom_petition';
-    return signPetitionViaZenroom(dispatch, chainspaceClient, contractId, zenroomContract);
+    const signature = new Signature(vote, gender, age);
+    return signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature);
   };
 }
