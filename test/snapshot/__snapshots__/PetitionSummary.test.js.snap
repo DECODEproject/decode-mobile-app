@@ -11,6 +11,11 @@ ShallowWrapper {
         "optional": Array [],
       }
     }
+    chainspaceClient={
+      ChainspaceClient {
+        "url": "http://exp.host:5000",
+      }
+    }
     goToSignOutcome={[Function]}
     i18n={
       I18n {
@@ -13060,6 +13065,11 @@ ShallowWrapper {
       Object {
         "mandatory": Array [],
         "optional": Array [],
+      }
+    }
+    chainspaceClient={
+      ChainspaceClient {
+        "url": "http://exp.host:5000",
       }
     }
     goToSignOutcome={[Function]}

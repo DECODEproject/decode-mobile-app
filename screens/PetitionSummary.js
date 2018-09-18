@@ -9,7 +9,7 @@ import { signPetition } from '../application/redux/actions/petition';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
-import getWalletProxyUrl from '../config';
+import { getWalletProxyUrl, getChainspaceUrl } from '../config';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
@@ -18,6 +18,7 @@ import {
   formAgeRange, getEnabledAttributeValue, findAttribute,
   buildAttributes, toggleElementsInList,
 } from '../application/utils/attributeManagement';
+import ChainspaceClient from '../lib/ChainspaceClient';
 
 const backArrowIcon = require('../assets/images/ico-back-button.png');
 
@@ -27,6 +28,7 @@ const backToPetitionInBrowser = (petitionId) => {
 };
 
 const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
+const chainspaceUrl = getChainspaceUrl(Constants.manifest.releaseChannel);
 
 class PetitionSummary extends React.Component {
   static route = {
@@ -82,7 +84,14 @@ class PetitionSummary extends React.Component {
     const age = formAge(ageAttribute, this.state.enabledAttributes);
     const gender = getEnabledAttributeValue(genderAttribute, this.state.enabledAttributes);
 
-    await this.props.signPetition(petition, walletId, vote, age, gender);
+    await this.props.signPetition(
+      petition,
+      walletId,
+      vote,
+      age,
+      gender,
+      this.props.chainspaceClient,
+    );
     this.props.goToSignOutcome();
     this.setState({
       loading: false,
@@ -203,6 +212,7 @@ PetitionSummary.propTypes = {
   walletAttributes: PropTypes.shape({
     list: PropTypes.instanceOf(Map),
   }).isRequired,
+  chainspaceClient: PropTypes.instanceOf(ChainspaceClient).isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -221,12 +231,12 @@ const mapStateToProps = state => ({
   walletId: state.wallet.id,
   signSuccess: state.signSuccess,
   walletAttributes: state.attributes.list,
+  chainspaceClient: new ChainspaceClient(chainspaceUrl),
 });
 
 const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
-  signPetition: (petition, walletId, vote, age, gender) =>
-    dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender)),
+  signPetition: (petition, walletId, vote, age, gender, chainspaceClient) => dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender, chainspaceClient, null)), // eslint-disable-line
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));

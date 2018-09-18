@@ -103,7 +103,6 @@ async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenro
   try {
     await chainspaceClient.fetchObjectsOfLastTransaction(contractId);
 
-
     const transaction = zenroomContract.addSignature(signature);
     await chainspaceClient.postTransaction(transaction);
   } catch (error) {

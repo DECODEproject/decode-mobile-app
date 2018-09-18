@@ -1,5 +1,5 @@
 import { Constants } from 'expo';
-import getWalletProxyUrl from '../../config';
+import { getWalletProxyUrl, getChainspaceUrl } from '../../config';
 
 describe('getWalletProxyUrl', () => {
   const originalUri = Constants.linkingUri;
@@ -34,5 +34,42 @@ describe('getWalletProxyUrl', () => {
     const walletProxyUrlDev = 'http://someurl.com:5010';
 
     expect(walletProxyUrl).toEqual(walletProxyUrlDev);
+  });
+});
+
+describe('getChainspaceUrl', () => {
+  const originalUri = Constants.linkingUri;
+  const chainspaceLocalPort = 5000;
+
+  beforeEach(() => {
+    Constants.linkingUri = 'http://someurl.com';
+  });
+
+  afterEach(() => {
+    Constants.linkingUri = originalUri;
+  });
+
+  it('should return url in the current host if passed nothing', () => {
+    const chainspaceUrl = getChainspaceUrl();
+
+    const chainspaceUrlDev = `http://someurl.com:${chainspaceLocalPort}`;
+
+    expect(chainspaceUrl).toEqual(chainspaceUrlDev);
+  });
+
+  it('should return prod url if prod environment', () => {
+    const chainspaceUrl = getChainspaceUrl('production');
+
+    const chainspaceUrlProd = 'www.fixthisprodurllater.com';
+
+    expect(chainspaceUrl).toEqual(chainspaceUrlProd);
+  });
+
+  it('should return dev url if passed garbage', () => {
+    const chainspaceUrl = getChainspaceUrl('garbage');
+
+    const chainspaceUrlDev = `http://someurl.com:${chainspaceLocalPort}`;
+
+    expect(chainspaceUrl).toEqual(chainspaceUrlDev);
   });
 });
