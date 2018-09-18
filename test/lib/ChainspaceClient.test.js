@@ -8,8 +8,8 @@ import PostChainspaceTransactionError from '../../lib/errors/PostChainspaceTrans
 jest.mock('axios');
 
 describe('Chainspace Client', () => {
-  const chainspaceUrl = 'http://chainspace.io/api/1.0';
-  const chainspaceClient = new ChainspaceClient(chainspaceUrl);
+  const chainspaceHost = 'http://chainspace.io';
+  const chainspaceClient = new ChainspaceClient(chainspaceHost);
   const contractId = 'good_contract_id';
 
 
@@ -23,7 +23,7 @@ describe('Chainspace Client', () => {
       axios.get.mockResolvedValue({ status: 200, data: [] });
 
       return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
-        expect(axios.get).toBeCalledWith(`${chainspaceUrl}/transactions`);
+        expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
         expect(response).toEqual(undefined);
       });
     });
@@ -32,7 +32,7 @@ describe('Chainspace Client', () => {
       axios.get.mockResolvedValue({ status: 200, data: [tx1] });
 
       return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
-        expect(axios.get).toBeCalledWith(`${chainspaceUrl}/transactions`);
+        expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
         expect(response).toEqual(tx1.outputs);
       });
     });
@@ -41,7 +41,7 @@ describe('Chainspace Client', () => {
       axios.get.mockResolvedValue({ status: 200, data: [tx1, tx2, tx3] });
 
       return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
-        expect(axios.get).toBeCalledWith(`${chainspaceUrl}/transactions`);
+        expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
         expect(response).toEqual(tx3.outputs);
       });
     });
@@ -50,7 +50,7 @@ describe('Chainspace Client', () => {
       axios.get.mockResolvedValue({ status: 200, data: [tx1, tx2, tx3] });
 
       return chainspaceClient.fetchObjectsOfLastTransaction('NonExistentContractId').then((response) => {
-        expect(axios.get).toBeCalledWith(`${chainspaceUrl}/transactions`);
+        expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
         expect(response).toEqual(undefined);
       });
     });
@@ -60,7 +60,7 @@ describe('Chainspace Client', () => {
 
       await expect(chainspaceClient.fetchObjectsOfLastTransaction(contractId))
         .rejects.toThrow(new FetchChainspaceTransactionsError());
-      expect(axios.get).toBeCalledWith(`${chainspaceUrl}/transactions`);
+      expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
     });
 
     it('should return an error if there is some problem calling the Chainspace API', async () => {
@@ -68,7 +68,7 @@ describe('Chainspace Client', () => {
 
       await expect(chainspaceClient.fetchObjectsOfLastTransaction(contractId))
         .rejects.toThrow(new UnexpectedChainspaceError());
-      expect(axios.get).toBeCalledWith(`${chainspaceUrl}/transactions`);
+      expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
     });
   });
 
@@ -78,7 +78,7 @@ describe('Chainspace Client', () => {
       axios.post.mockResolvedValue({ status: 200 });
 
       return chainspaceClient.postTransaction(expectedTransaction).then(() => {
-        expect(axios.post).toBeCalledWith(`${chainspaceUrl}/api/1.0/transaction/process`, expectedTransaction);
+        expect(axios.post).toBeCalledWith(`${chainspaceHost}/api/1.0/transaction/process`, expectedTransaction);
       });
     });
 
@@ -87,7 +87,7 @@ describe('Chainspace Client', () => {
 
       await expect(chainspaceClient.postTransaction(expectedTransaction))
         .rejects.toThrow(new PostChainspaceTransactionError());
-      expect(axios.post).toBeCalledWith(`${chainspaceUrl}/api/1.0/transaction/process`, expectedTransaction);
+      expect(axios.post).toBeCalledWith(`${chainspaceHost}/api/1.0/transaction/process`, expectedTransaction);
     });
 
     it('should throw error if there is some problem calling the Chainspace API', async () => {
@@ -95,7 +95,7 @@ describe('Chainspace Client', () => {
 
       await expect(chainspaceClient.postTransaction(expectedTransaction))
         .rejects.toThrow(new UnexpectedChainspaceError());
-      expect(axios.post).toBeCalledWith(`${chainspaceUrl}/api/1.0/transaction/process`, expectedTransaction);
+      expect(axios.post).toBeCalledWith(`${chainspaceHost}/api/1.0/transaction/process`, expectedTransaction);
     });
   });
 });

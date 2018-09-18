@@ -13,7 +13,7 @@ ShallowWrapper {
     }
     chainspaceClient={
       ChainspaceClient {
-        "url": "http://exp.host:5000",
+        "url": "http://exp.host:5000/api/1.0",
       }
     }
     goToSignOutcome={[Function]}
@@ -13069,7 +13069,7 @@ ShallowWrapper {
     }
     chainspaceClient={
       ChainspaceClient {
-        "url": "http://exp.host:5000",
+        "url": "http://exp.host:5000/api/1.0",
       }
     }
     goToSignOutcome={[Function]}
