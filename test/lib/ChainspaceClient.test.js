@@ -2,6 +2,8 @@ import axios from 'axios';
 import ChainspaceClient from '../../lib/ChainspaceClient';
 import FetchChainspaceTransactionsError from '../../lib/errors/FetchChainspaceTransactionsError';
 import UnexpectedChainspaceError from '../../lib/errors/UnexpectedChainspaceError';
+import Transaction from '../../lib/Transaction';
+import PostChainspaceTransactionError from '../../lib/errors/PostChainspaceTransactionError';
 
 jest.mock('axios');
 
@@ -67,6 +69,33 @@ describe('Chainspace Client', () => {
       await expect(chainspaceClient.fetchObjectsOfLastTransaction(contractId))
         .rejects.toThrow(new UnexpectedChainspaceError());
       expect(axios.get).toBeCalledWith(`${chainspaceUrl}/transactions`);
+    });
+  });
+
+  describe('postTransaction', () => {
+    const expectedTransaction = new Transaction({});
+    it('should call post to correct url with correct transaction', () => {
+      axios.post.mockResolvedValue({ status: 200 });
+
+      return chainspaceClient.postTransaction(expectedTransaction).then(() => {
+        expect(axios.post).toBeCalledWith(`${chainspaceUrl}/api/1.0/transaction/process`, expectedTransaction);
+      });
+    });
+
+    it('should return an error if there is an error posting transaction to Chainspace', async () => {
+      axios.post.mockResolvedValue({ status: 500 });
+
+      await expect(chainspaceClient.postTransaction(expectedTransaction))
+        .rejects.toThrow(new PostChainspaceTransactionError());
+      expect(axios.post).toBeCalledWith(`${chainspaceUrl}/api/1.0/transaction/process`, expectedTransaction);
+    });
+
+    it('should throw error if there is some problem calling the Chainspace API', async () => {
+      axios.post.mockRejectedValue(new Error('Failed POST'));
+
+      await expect(chainspaceClient.postTransaction(expectedTransaction))
+        .rejects.toThrow(new UnexpectedChainspaceError());
+      expect(axios.post).toBeCalledWith(`${chainspaceUrl}/api/1.0/transaction/process`, expectedTransaction);
     });
   });
 });

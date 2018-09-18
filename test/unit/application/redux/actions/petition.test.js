@@ -6,9 +6,13 @@ import types from '../../../../../application/redux/actionTypes';
 import DecidimClient from '../../../../../lib/DecidimClient';
 import ChainspaceClient from '../../../../../lib/ChainspaceClient';
 import FetchPetitionError from '../../../../../lib/errors/FetchPetitionError';
+import UnexpectedChainspaceError from '../../../../../lib/errors/UnexpectedChainspaceError';
+import Transaction from '../../../../../lib/Transaction';
+import ZenroomContract from '../../../../../lib/ZenroomContract';
 
 jest.mock('../../../../../lib/DecidimClient.js');
 jest.mock('../../../../../lib/ChainspaceClient.js');
+jest.mock('../../../../../lib/ZenroomContract.js');
 
 
 const mockStore = configureMockStore([thunk]);
@@ -180,8 +184,8 @@ describe('signPetition', () => {
       const expectedRequestBody = JSON.stringify({
         signatory: walletId.substring(0, 5),
         vote,
-        age: '0-19',
-        gender: 'undisclosed',
+        age,
+        gender,
       });
 
       let actualRequestBody;
@@ -258,9 +262,13 @@ describe('signPetition', () => {
     const age = '0-19';
     const gender = 'undisclosed';
 
-    const expectedActions = [{
-      type: types.SIGN_PETITION,
-    }];
+    const expectedTransaction = new Transaction({ outputs: [] });
+
+    ZenroomContract.mockImplementation(() => ({
+      addSignature: () => expectedTransaction,
+    }));
+
+    const zenroomContract = new ZenroomContract();
 
     beforeEach(() => {
       store = mockStore({
@@ -278,22 +286,80 @@ describe('signPetition', () => {
     it('should dispatch successful action', () => {
       ChainspaceClient.mockImplementation(() => ({
         fetchObjectsOfLastTransaction: () => response,
+        postTransaction: jest.fn(),
       }));
 
-      return store.dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender))
-        .then(() => {
-          expect();
-          expect(store.getActions()).toEqual(expectedActions);
-        });
+      const expectedActions = [{
+        type: types.SIGN_PETITION,
+      }];
+
+      return store.dispatch(signPetition(
+        petition,
+        walletId,
+        walletProxyLink,
+        vote,
+        age,
+        gender,
+        new ChainspaceClient(),
+        zenroomContract,
+      )).then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
     });
 
-    xit('should dispatch error action', () => {
+    it('should dispatch error action if fetching objects of last transaction fails', () => {
+      const errorMessage = 'some error message';
 
+      ChainspaceClient.mockImplementation(() => ({
+        fetchObjectsOfLastTransaction: () => {
+          throw new UnexpectedChainspaceError(errorMessage);
+        },
+      }));
+
+      const expectedActions = [{ type: types.SIGN_PETITION_ERROR, error: errorMessage }];
+
+      return store.dispatch(signPetition(
+        petition,
+        walletId,
+        walletProxyLink,
+        vote,
+        age,
+        gender,
+        new ChainspaceClient(),
+      )).then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
     });
 
-    xit('should make post with correct request', () => {
+    it('should make post with correct request', () => {
+      ChainspaceClient.mockImplementation(() => ({
+        fetchObjectsOfLastTransaction: () => response,
+        postTransaction: jest.fn(),
+      }));
 
+      const chainspaceClient = new ChainspaceClient();
+
+      const expectedActions = [
+        { type: types.SIGN_PETITION },
+      ];
+
+      return store.dispatch(signPetition(
+        petition,
+        walletId,
+        walletProxyLink,
+        vote,
+        age,
+        gender,
+        chainspaceClient,
+        zenroomContract,
+      )).then(() => {
+        expect(chainspaceClient.postTransaction).toBeCalledWith(expectedTransaction);
+        expect(store.getActions()).toEqual(expectedActions);
+      });
     });
+
+    xit('should return error if chainspace returns not 200 when posting transaction', () => {});
+    xit('should return error if chainspace returns success false when posting transaction', () => {});
   });
 });
 

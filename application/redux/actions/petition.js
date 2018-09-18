@@ -98,15 +98,25 @@ async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote,
   return dispatch(signPetitionAction());
 }
 
-function signPetitionViaZenroom(dispatch) {
+async function signPetitionViaZenroom(dispatch, chainspaceClient, contractId, zenroomContract) {
+  try {
+    await chainspaceClient.fetchObjectsOfLastTransaction(contractId);
+
+    const transaction = zenroomContract.addSignature();
+    await chainspaceClient.postTransaction(transaction);
+  } catch (error) {
+    return dispatch(signPetitionError(error.message));
+  }
+
   return dispatch(signPetitionAction());
 }
 
-export function signPetition(petition, walletId, walletProxyLink, vote, age, gender) {
+export function signPetition(petition, walletId, walletProxyLink, vote, age, gender, chainspaceClient, zenroomContract) { //eslint-disable-line
   return async (dispatch, getState) => {
     if (!getState().featureToggles.zenroom) {
       return signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender);
     }
-    return signPetitionViaZenroom(dispatch);
+    const contractId = 'zenroom_petition';
+    return signPetitionViaZenroom(dispatch, chainspaceClient, contractId, zenroomContract);
   };
 }
