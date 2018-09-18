@@ -13,9 +13,9 @@ describe('Chainspace Client', () => {
   const contractId = 'good_contract_id';
 
 
-  const tx1 = { transactionJson: { contractID: 'good_contract_id' }, timestamp: '2018-01-01 00:00:00.000', outputs: ['1'] };
-  const tx2 = { transactionJson: { contractID: 'last_contract_id' }, timestamp: '2018-01-03 00:00:00.000', outputs: ['2'] };
-  const tx3 = { transactionJson: { contractID: 'good_contract_id' }, timestamp: '2018-01-02 00:00:00.000', outputs: ['3'] };
+  const tx1 = { transactionJson: { contractID: 'good_contract_id', outputs: ['1'] }, timestamp: '2018-01-01 00:00:00.000' };
+  const tx2 = { transactionJson: { contractID: 'last_contract_id', outputs: ['2'] }, timestamp: '2018-01-03 00:00:00.000' };
+  const tx3 = { transactionJson: { contractID: 'good_contract_id', outputs: ['3'] }, timestamp: '2018-01-02 00:00:00.000' };
 
 
   describe('fetchObjectsOfLastTransaction', () => {
@@ -33,7 +33,7 @@ describe('Chainspace Client', () => {
 
       return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
         expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
-        expect(response).toEqual(tx1.outputs);
+        expect(response).toEqual(tx1.transactionJson.outputs);
       });
     });
 
@@ -42,7 +42,7 @@ describe('Chainspace Client', () => {
 
       return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
         expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
-        expect(response).toEqual(tx3.outputs);
+        expect(response).toEqual(tx3.transactionJson.outputs);
       });
     });
 
