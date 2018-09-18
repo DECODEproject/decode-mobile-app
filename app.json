@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Decode App",
-    "icon": "./assets/decode_ic_launcher.png",
+    "icon": "./assets/decode_ic_launcher.jpg",
     "slug": "decode-walletapp",
     "version": "0.1.2",
     "sdkVersion": "28.0.0",
