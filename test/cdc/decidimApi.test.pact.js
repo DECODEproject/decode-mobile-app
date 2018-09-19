@@ -68,7 +68,7 @@ describe('Decidim API', () => {
       });
     });
 
-    it('Provider API Testing. This should be on Decidim\'s side', () => {
+    xit('Provider API Testing. This should be on Decidim\'s side', () => {
       const opts = {
         providerBaseUrl: 'http://staging.decidim.codegram.com/api',
         provider: 'DecidimAPI',
