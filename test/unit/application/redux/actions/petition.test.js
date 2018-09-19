@@ -135,7 +135,7 @@ describe('getPetition', () => {
         });
     });
 
-    it('should dispatch error action', async () => {
+    it('should dispatch error action when there is an error fetching the petition', async () => {
       DecidimClient.mockImplementation(() => ({
         fetchPetition: () => { throw new FetchPetitionError(); },
       }));
@@ -307,7 +307,7 @@ describe('signPetition', () => {
       });
     });
 
-    it('should dispatch error action if fetching objects of last transaction fails', () => {
+    it('should dispatch error action if posting transaction fails', () => {
       const errorMessage = 'some error message';
 
       ChainspaceClient.mockImplementation(() => ({
@@ -357,9 +357,6 @@ describe('signPetition', () => {
         expect(store.getActions()).toEqual(expectedActions);
       });
     });
-
-    xit('should return error if chainspace returns not 200 when posting transaction', () => {});
-    xit('should return error if chainspace returns success false when posting transaction', () => {});
   });
 });
 
