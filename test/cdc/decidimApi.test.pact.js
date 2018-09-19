@@ -1,6 +1,8 @@
 import DecidimClient from '../../lib/DecidimClient';
 import LanguageService from '../../lib/LanguageService';
 
+const { Verifier } = require('@pact-foundation/pact');
+
 describe('Decidim API', () => {
   const MOCK_SERVER_URL = '127.0.0.1';
   const petitionId = '2';
@@ -63,6 +65,19 @@ describe('Decidim API', () => {
       return decidimClient.getParticipatoryProcess(graphQlQuery).then((response) => {
         expect(response.data.petition.id).toEqual(petitionId);
         done();
+      });
+    });
+
+    it('Provider API Testing. This should be on Decidim\'s side', () => {
+      const opts = {
+        providerBaseUrl: 'http://staging.decidim.codegram.com/api',
+        provider: 'DecidimAPI',
+        pactUrls: '../../pacts/wallet-decidimapi.json',
+      };
+
+      new Verifier().verifyProvider(opts).then((output) => {
+        console.log('Pact Verification Complete!');
+        console.log(output);
       });
     });
   });
