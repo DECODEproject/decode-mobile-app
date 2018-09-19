@@ -24,33 +24,33 @@ function table.indexOf(t, object)
 end
 
 function readBig(str)
-	return BIG.new(hex(str))
+  return BIG.new(hex(str))
 end
 
 function readEcp(table)
-	local x = readBig(table['x'])
-	local y = readBig(table['y'])
+  local x = readBig(table['x'])
+  local y = readBig(table['y'])
 
-	return ECP.new(x, y)
+  return ECP.new(x, y)
 end
 
 function writeEcp(ecp)
-	ecp = ecp:affine()
-	local x = ecp:x()
-	local y = ecp:y()
+  ecp = ecp:affine()
+  local x = ecp:x()
+  local y = ecp:y()
 
-	return { x = tostring(x), y = tostring(y) }
+  return { x = tostring(x), y = tostring(y) }
 end
 
 -- Concatenates everything and hashes it
 function to_challenge(list)
-	local c = ""
-	for i = 1, #list do
-		c = c .. tostring(list[i])
-	end
+  local c = ""
+  for i = 1, #list do
+    c = c .. tostring(list[i])
+  end
 
-	local hash = H:process(str(c))
-	return BIG.new(hash)
+  local hash = H:process(str(c))
+  return BIG.new(hash)
 end
 
 -- Load public data
@@ -59,52 +59,52 @@ public = readEcp(DATA_TABLE["public"])
 
 -- Creates a cipher with a message m
 function encrypt(m)
-	m = BIG.new(m)
-	local k = rng:big() % order
-	local a = g * k
-	local b = (public * k) + h * m
+  m = BIG.new(m)
+  local k = rng:big() % order
+  local a = g * k
+  local b = (public * k) + h * m
 
-	local c, rk, rm = provebinary(a, b, k, m)
+  local c, rk, rm = provebinary(a, b, k, m)
 
-	return {
-		k = k,
-		a = a,
-		b = b,
-		c = c,
-		rk = rk,
-		rm = rm
-	}
+  return {
+    k = k,
+    a = a,
+    b = b,
+    c = c,
+    rk = rk,
+    rm = rm
+  }
 end
 
 function provebinary(a, b, k, m)
-	-- prove that m is either 0 or 1
-	local wk = rng:big()
-	local wm = rng:big()
+  -- prove that m is either 0 or 1
+  local wk = rng:big()
+  local wm = rng:big()
 
-	local Aw = g * wk
-	local Bw = public * wk + h * wm
-	local Dw = g * wk + h1 * (m*(BIG.new(1)-m))
+  local Aw = g * wk
+  local Bw = public * wk + h * wm
+  local Dw = g * wk + h1 * (m*(BIG.new(1)-m))
 
-	local c = to_challenge({g, h, h1, a, b, Aw, Bw, Dw})
+  local c = to_challenge({g, h, h1, a, b, Aw, Bw, Dw})
 
-	local rk = (wk - c:modmul(k, order)) % order
-	local rm = (wm - c:modmul(m, order)) % order
+  local rk = (wk - c:modmul(k, order)) % order
+  local rm = (wm - c:modmul(m, order)) % order
 
-	return c, rk, rm
+  return c, rk, rm
 end
 
 function prove_one(a, b, k)
-	local wk = rng:big()
-	local wm = rng:big()
+  local wk = rng:big()
+  local wm = rng:big()
 
-	local Aw = g * wk
-	local Bw = public * wk + h * BIG.new(1)
+  local Aw = g * wk
+  local Bw = public * wk + h * BIG.new(1)
 
-	local c = to_challenge({g, h, public, a, b, Aw, Bw})
+  local c = to_challenge({g, h, public, a, b, Aw, Bw})
 
-	local rk = (wk - c:modmul(k, order)) % order
+  local rk = (wk - c:modmul(k, order)) % order
 
-	return c, rk
+  return c, rk
 end
 
 
@@ -128,27 +128,27 @@ sum_a = increment[1]['a']
 sum_b = increment[1]['b']
 sum_k = increment[1]['k']
 for i =2, #increment do
-	sum_a = sum_a + increment[i]['a']
-	sum_b = sum_b + increment[i]['b']
-	sum_k = sum_k + increment[i]['k']
+  sum_a = sum_a + increment[i]['a']
+  sum_b = sum_b + increment[i]['b']
+  sum_k = sum_k + increment[i]['k']
 end
 c, rk  = prove_one(sum_a, sum_b, sum_k)
 prove_sum_one = { c = tostring(c), rk = tostring(rk) }
 
 -- Load scores in json
 prev_scores = LAMBDA.map(scores, function(k, v)
-								local a = readEcp(v['a'])
-								local b = readEcp(v['b'])
-								return { a = a, b = b}
-							end)
+                local a = readEcp(v['a'])
+                local b = readEcp(v['b'])
+                return { a = a, b = b}
+              end)
 
 new_scores = {}
 
 for i = 1, #options do
-	a = increment[i]['a'] + prev_scores[i]['a']
-	b = increment[i]['b'] + prev_scores[i]['b']
+  a = increment[i]['a'] + prev_scores[i]['a']
+  b = increment[i]['b'] + prev_scores[i]['b']
 
-	new_scores[i] = { a = a, b = b }
+  new_scores[i] = { a = a, b = b }
 end
 
 -- convert the scores in a serializable form
