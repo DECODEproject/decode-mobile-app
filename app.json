@@ -1,12 +1,14 @@
 {
   "expo": {
     "name": "Decode App",
-    "icon": "./assets/decode_ic_launcher.jpg",
+    "icon": "./assets/decode_ic_launcher.png",
     "slug": "decode-walletapp",
     "version": "0.1.2",
     "sdkVersion": "28.0.0",
     "orientation": "portrait",
+    "scheme": "decodewallet",
     "ios": {
+      "buildNumber": "1.0.2",
       "bundleIdentifier": "com.decode.wallet-app"
     },
     "android": {
