@@ -1,3 +1,4 @@
+import { Keyboard } from 'react-native';
 import types from '../actionTypes';
 import { storePinInPhone } from '../../../LocalStorage';
 import { goToHome } from './navigation';
@@ -30,6 +31,7 @@ export function storePin(setItem, pin) {
 
     if (valid) {
       await storePinInPhone(setItem, pin);
+      Keyboard.dismiss();
       dispatch(goToHome());
     }
   };
