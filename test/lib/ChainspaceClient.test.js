@@ -13,9 +13,9 @@ describe('Chainspace Client', () => {
   const contractId = 'good_contract_id';
 
 
-  const tx1 = { transactionJson: { contractID: 'good_contract_id', outputs: ['1'] }, timestamp: '2018-01-01 00:00:00.000' };
+  const tx1 = { transactionJson: { contractID: 'good_contract_id', outputs: ['1'] }, timestamp: '2018-09-21 09:10:03.896' };
   const tx2 = { transactionJson: { contractID: 'last_contract_id', outputs: ['2'] }, timestamp: '2018-01-03 00:00:00.000' };
-  const tx3 = { transactionJson: { contractID: 'good_contract_id', outputs: ['3'] }, timestamp: '2018-01-02 00:00:00.000' };
+  const tx3 = { transactionJson: { contractID: 'good_contract_id', outputs: ['3'] }, timestamp: '2018-09-21 09:10:05.574' };
 
 
   describe('fetchObjectsOfLastTransaction', () => {
