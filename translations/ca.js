@@ -51,7 +51,6 @@ export default {
   },
   signOutcome: {
     backDecidim: 'Tornar a Decidim',
-    backHome: 'Tornar al inici',
     voteRecorded: 'El teu vot ha sigut registrat anonimament',
     maybeInterested: 'Potser estas interesat en alguna altra petició',
     errorText: 'Pots tornar a la pàgina de Decidim per veure més peticions.',

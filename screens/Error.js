@@ -11,7 +11,7 @@ const warningIcon = require('../assets/images/warning.png');
 
 class Error extends React.Component {
   static handlePress() {
-    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/results/59f888c8ce33c76884e8cf16');
+    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com');
   }
 
   buildOutcomeText() {
@@ -33,7 +33,7 @@ class Error extends React.Component {
           <View style={styles.signOutcomeTextBox}>
             <Text style={styles.signOutcomePetitionTitle}>{this.props.title}</Text>
             <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
-            <Button name={this.props.t('backHome')} onPress={Error.handlePress} />
+            <Button name={this.props.t('backDecidim')} onPress={Error.handlePress} />
           </View>
         </View>
       </View>

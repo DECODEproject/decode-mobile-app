@@ -51,7 +51,6 @@ export default {
   },
   signOutcome: {
     backDecidim: 'Volver a Decidim',
-    backHome: 'Volver al inicio',
     voteRecorded: 'Tu voto ha sido registrado anonimamente',
     maybeInterested: 'Quizas estas interesado en más peticiones',
     errorText: 'Puedes volver a la página de Decidim para ver más peticiones.',

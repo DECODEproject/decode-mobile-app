@@ -51,7 +51,6 @@ export default {
   },
   signOutcome: {
     backDecidim: 'Back to Decidim',
-    backHome: 'Back to Home',
     voteRecorded: 'Your vote has been recorded anonymously',
     maybeInterested: 'You may be interested in these other petitions',
     errorText: 'You can return to the Decidim site to view other active petitions.',
