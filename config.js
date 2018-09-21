@@ -15,7 +15,7 @@ export function getWalletProxyUrl(environment) {
 export function getChainspaceUrl(environment) {
   const chainspaceUrl = {
     dev: 'http://localhost:5000',
-    production: 'www.fixthisprodurllater.com',
+    production: 'http://dszj4sila655fk3s.onion:5000',
   };
 
   const hostName = urlParse(Constants.linkingUri, true).hostname;
