@@ -4,6 +4,7 @@ import ZenroomExecutor from '../../lib/ZenroomExecutor';
 import contract from '../../assets/contracts/vote';
 import Signature from '../../lib/Signature';
 import ZenroomExecutorError from '../../lib/errors/ZenroomExecutorError';
+import Transaction from '../../lib/Transaction';
 
 jest.mock('../../lib/ZenroomExecutor.js');
 
@@ -49,5 +50,41 @@ describe('ZenroomContract', () => {
     });
 
     xit('should return a valid transaction', () => {});
+  });
+
+  describe('buildTransaction', () => {
+    const somePublic = 'testPublic';
+    const someOptions = 'testOptions';
+    const someScores = 'testScores';
+    const someIncrement = 'testIncrement';
+    const someProveBin = 'someProveBin';
+    const someProveOne = 'someProveOne';
+
+
+    it('should return a correct transaction', () => {
+      const zenroomContract = new ZenroomContract(jest.fn());
+      const expectedTransaction = new Transaction({
+        outputs: [JSON.stringify({
+          public: somePublic,
+          options: someOptions,
+          scores: someScores,
+          type: 'PetitionEncObject',
+        })],
+        extra_parameters: [someIncrement, someProveBin, someProveOne],
+      });
+
+      const zenroomOutput = JSON.stringify({
+        public: somePublic,
+        options: someOptions,
+        scores: someScores,
+        increment: someIncrement,
+        provebin: someProveBin,
+        prove_sum_one: someProveOne,
+      });
+
+      const actualTransaction = zenroomContract.buildTransaction(zenroomOutput);
+
+      expect(actualTransaction).toEqual(expectedTransaction);
+    });
   });
 });
