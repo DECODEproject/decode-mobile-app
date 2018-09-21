@@ -28,9 +28,12 @@ describe('ZenroomContract', () => {
         option: vote,
       };
 
-      await zenroomContract.addSignature(signature.representation(), currentOutputs);
+      await zenroomContract.addSignature(signature, currentOutputs);
 
       expect(executeMock).toBeCalledWith(contract, data);
     });
+
+    xit('should return an error if there is an issue executing Zenroom', () => {});
+    xit('should return a valid transaction', () => {});
   });
 });

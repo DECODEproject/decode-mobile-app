@@ -11920,6 +11920,13 @@ Haz click en botón inferior para empezar",
       }
     }
     walletId="something"
+    zenroomContract={
+      ZenroomContract {
+        "zenroomExecutor": ZenroomExecutor {
+          "zenroom_output": Array [],
+        },
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -24864,6 +24871,13 @@ Haz click en botón inferior para empezar",
     tReady={false}
     walletAttributes={Map {}}
     walletId="something"
+    zenroomContract={
+      ZenroomContract {
+        "zenroomExecutor": ZenroomExecutor {
+          "zenroom_output": Array [],
+        },
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

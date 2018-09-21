@@ -19,6 +19,9 @@ import {
   buildAttributes, toggleElementsInList,
 } from '../application/utils/attributeManagement';
 import ChainspaceClient from '../lib/ChainspaceClient';
+import ZenroomContract from '../lib/ZenroomContract';
+import ZenroomExecutor from '../lib/ZenroomExecutor';
+
 
 const backArrowIcon = require('../assets/images/ico-back-button.png');
 
@@ -91,6 +94,7 @@ class PetitionSummary extends React.Component {
       age,
       gender,
       this.props.chainspaceClient,
+      this.props.zenroomContract,
     );
     this.props.goToSignOutcome();
     this.setState({
@@ -213,6 +217,7 @@ PetitionSummary.propTypes = {
     list: PropTypes.instanceOf(Map),
   }).isRequired,
   chainspaceClient: PropTypes.instanceOf(ChainspaceClient).isRequired,
+  zenroomContract: PropTypes.instanceOf(ZenroomContract).isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -232,11 +237,12 @@ const mapStateToProps = state => ({
   signSuccess: state.signSuccess,
   walletAttributes: state.attributes.list,
   chainspaceClient: new ChainspaceClient(chainspaceUrl),
+  zenroomContract: new ZenroomContract(new ZenroomExecutor()),
 });
 
 const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
-  signPetition: (petition, walletId, vote, age, gender, chainspaceClient) => dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender, chainspaceClient, null)), // eslint-disable-line
+  signPetition: (petition, walletId, vote, age, gender, chainspaceClient, zenroomContract) => dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender, chainspaceClient, zenroomContract)), // eslint-disable-line
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));
