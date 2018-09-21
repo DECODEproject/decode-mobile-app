@@ -70,7 +70,7 @@
           "name": "publish",
           "environment_variables": [],
           "tabs": [],
-          "resources": ["node"],
+          "resources": ["node", "xlarge"],
           "artifacts": [],
           "properties": [],
           "run_instance_count": null,
