@@ -5,12 +5,12 @@ describe('Signature', () => {
   describe('representation', () => {
     it('should return representation for vote yes with optional data', () => {
       const vote = 'yes';
-      const age = '0-19';
+      const age = 'any';
       const gender = 'm';
 
       const actualRepresentation = new Signature(vote, age, gender).representation();
 
-      expect(actualRepresentation).toEqual('YES-M-0-19');
+      expect(actualRepresentation).toEqual('YES-M-ANY');
     });
 
     it('should throw an error if vote is invalid', () => {
