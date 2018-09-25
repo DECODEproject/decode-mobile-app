@@ -1,5 +1,6 @@
 import types from '../actionTypes';
 import Signature from '../../../lib/Signature';
+import Transaction from '../../../lib/Transaction';
 
 export function setPetition(petition, walletAttributes) {
   return {
@@ -102,8 +103,9 @@ async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote,
 async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature) { //eslint-disable-line
   try {
     const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
+    const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
+    const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
 
-    const transaction = zenroomContract.addSignature(signature, lastTx.outputs);
     await chainspaceClient.postTransaction(transaction);
   } catch (error) {
     return dispatch(signPetitionError(error.message));

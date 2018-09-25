@@ -265,7 +265,8 @@ describe('signPetition', () => {
     const expectedTransaction = new Transaction({ outputs: [] });
 
     ZenroomContract.mockImplementation(() => ({
-      addSignature: () => expectedTransaction,
+      addSignature: () => 'zenroomOutput',
+      buildTransaction: () => expectedTransaction,
     }));
 
     const zenroomContract = new ZenroomContract();

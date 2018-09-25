@@ -63,6 +63,14 @@ describe('ZenroomContract', () => {
 
     it('should return a correct transaction', () => {
       const zenroomContract = new ZenroomContract(jest.fn());
+
+      const lastTx = {
+        outputs: ['something'],
+      };
+      const objectId = 'ae0ec32c63d818fa77494ca6e594576b9df876bc1d0bd5a77d6d2e2b784cef36';
+      const store = {};
+      store[objectId] = lastTx.outputs[0];
+
       const expectedTransaction = new Transaction({
         outputs: [JSON.stringify({
           public: somePublic,
@@ -70,8 +78,14 @@ describe('ZenroomContract', () => {
           scores: someScores,
           type: 'PetitionEncObject',
         })],
-        extra_parameters: [someIncrement, someProveBin, someProveOne],
-      });
+        parameters: [JSON.stringify(someIncrement), JSON.stringify(someProveBin), JSON.stringify(someProveOne)],
+        contractID: 'zenroom_petition',
+        dependencies: [],
+        inputIDs: [objectId],
+        methodID: 'add_signature',
+        returns: [],
+        referenceInputIDs: [],
+      }, store);
 
       const zenroomOutput = JSON.stringify({
         public: somePublic,
@@ -82,9 +96,8 @@ describe('ZenroomContract', () => {
         prove_sum_one: someProveOne,
       });
 
-      const actualTransaction = zenroomContract.buildTransaction(zenroomOutput);
-
-      expect(actualTransaction).toEqual(expectedTransaction);
+      const actualTransaction = zenroomContract.buildTransaction(zenroomOutput, new Transaction(lastTx));
+      expect(actualTransaction.chainspaceJson()).toEqual(expectedTransaction.chainspaceJson());
     });
   });
 });
