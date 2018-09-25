@@ -25,13 +25,13 @@ describe('Transaction', () => {
   });
 
   describe('chainspaceJson', () => {
-
     const somePublic = 'testPublic';
     const someOptions = 'testOptions';
     const someScores = 'testScores';
     const someIncrement = 'testIncrement';
     const someProveBin = 'someProveBin';
     const someProveOne = 'someProveOne';
+    const objectId = 'ae0ec32c63d818fa77494ca6e594576b9df876bc1d0bd5a77d6d2e2b784cef36';
 
     const txJson = {
       outputs: [JSON.stringify({
@@ -51,7 +51,6 @@ describe('Transaction', () => {
     const lastTx = {
       outputs: ['something'],
     };
-    const objectId = 'ae0ec32c63d818fa77494ca6e594576b9df876bc1d0bd5a77d6d2e2b784cef36';
 
 
     it('should wrap the transaction into a "transaction" key', () => {
@@ -64,7 +63,8 @@ describe('Transaction', () => {
 
     it('should add a store, if one sent into the constructor', () => {
       const store = {};
-      store[objectId] = lastTx.outputs[0];
+      const lastOutput = lastTx.outputs[0];
+      store[objectId] = lastOutput;
       const nextTx = new Transaction(txJson, store);
 
       expect(nextTx.chainspaceJson()).toEqual({

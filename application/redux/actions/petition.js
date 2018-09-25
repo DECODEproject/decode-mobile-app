@@ -1,6 +1,5 @@
 import types from '../actionTypes';
 import Signature from '../../../lib/Signature';
-import Transaction from '../../../lib/Transaction';
 
 export function setPetition(petition, walletAttributes) {
   return {
