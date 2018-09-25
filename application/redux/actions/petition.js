@@ -101,9 +101,9 @@ async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote,
 
 async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature) { //eslint-disable-line
   try {
-    const lastOutputs = await chainspaceClient.fetchObjectsOfLastTransaction(contractId);
+    const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
 
-    const transaction = zenroomContract.addSignature(signature, lastOutputs);
+    const transaction = zenroomContract.addSignature(signature, lastTx.outputs);
     await chainspaceClient.postTransaction(transaction);
   } catch (error) {
     return dispatch(signPetitionError(error.message));

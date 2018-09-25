@@ -285,7 +285,7 @@ describe('signPetition', () => {
 
     it('should dispatch successful action', () => {
       ChainspaceClient.mockImplementation(() => ({
-        fetchObjectsOfLastTransaction: () => response,
+        fetchLastTransaction: () => response,
         postTransaction: jest.fn(),
       }));
 
@@ -311,7 +311,7 @@ describe('signPetition', () => {
       const errorMessage = 'some error message';
 
       ChainspaceClient.mockImplementation(() => ({
-        fetchObjectsOfLastTransaction: () => {
+        fetchLastTransaction: () => {
           throw new UnexpectedChainspaceError(errorMessage);
         },
       }));
@@ -333,7 +333,7 @@ describe('signPetition', () => {
 
     it('should make post with correct request', () => {
       ChainspaceClient.mockImplementation(() => ({
-        fetchObjectsOfLastTransaction: () => response,
+        fetchLastTransaction: () => response,
         postTransaction: jest.fn(),
       }));
 

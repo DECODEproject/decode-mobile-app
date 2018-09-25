@@ -22,7 +22,7 @@ describe('Chainspace Client', () => {
     it('should return undefined when there are no transactions', () => {
       axios.get.mockResolvedValue({ status: 200, data: [] });
 
-      return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
+      return chainspaceClient.fetchLastTransaction(contractId).then((response) => {
         expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
         expect(response).toEqual(undefined);
       });
@@ -31,25 +31,25 @@ describe('Chainspace Client', () => {
     it('should return the output of the only transaction, if there is only one transaction', () => {
       axios.get.mockResolvedValue({ status: 200, data: [tx1] });
 
-      return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
+      return chainspaceClient.fetchLastTransaction(contractId).then((response) => {
         expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
-        expect(response).toEqual(tx1.transactionJson.outputs);
+        expect(response.tx).toEqual(tx1.transactionJson);
       });
     });
 
     it('should return the output of the last transaction with correct contractID', () => {
       axios.get.mockResolvedValue({ status: 200, data: [tx1, tx2, tx3] });
 
-      return chainspaceClient.fetchObjectsOfLastTransaction(contractId).then((response) => {
+      return chainspaceClient.fetchLastTransaction(contractId).then((response) => {
         expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
-        expect(response).toEqual(tx3.transactionJson.outputs);
+        expect(response.tx).toEqual(tx3.transactionJson);
       });
     });
 
     it('should return undefined if no transaction has this contractID', () => {
       axios.get.mockResolvedValue({ status: 200, data: [tx1, tx2, tx3] });
 
-      return chainspaceClient.fetchObjectsOfLastTransaction('NonExistentContractId').then((response) => {
+      return chainspaceClient.fetchLastTransaction('NonExistentContractId').then((response) => {
         expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
         expect(response).toEqual(undefined);
       });
@@ -58,7 +58,7 @@ describe('Chainspace Client', () => {
     it('should return an error if there is an error getting the transactions from Chainspace', async () => {
       axios.get.mockResolvedValue({ status: 500 });
 
-      await expect(chainspaceClient.fetchObjectsOfLastTransaction(contractId))
+      await expect(chainspaceClient.fetchLastTransaction(contractId))
         .rejects.toThrow(new FetchChainspaceTransactionsError());
       expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
     });
@@ -66,7 +66,7 @@ describe('Chainspace Client', () => {
     it('should return an error if there is some problem calling the Chainspace API', async () => {
       axios.get.mockRejectedValue(new Error('Failed GET'));
 
-      await expect(chainspaceClient.fetchObjectsOfLastTransaction(contractId))
+      await expect(chainspaceClient.fetchLastTransaction(contractId))
         .rejects.toThrow(new UnexpectedChainspaceError());
       expect(axios.get).toBeCalledWith(`${chainspaceHost}/api/1.0/transactions`);
     });
