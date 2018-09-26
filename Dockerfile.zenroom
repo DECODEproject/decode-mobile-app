@@ -1,0 +1,15 @@
+FROM trzeci/emscripten:sdk-tag-1.38.11-64bit
+
+ARG revision=e4c1ce6c2a1159dbeea37b49793764a0f13be09b
+
+RUN apt-get install git
+
+WORKDIR /code/zenroom
+RUN git clone \
+    https://github.com/DECODEproject/zenroom.git \
+    . \
+ && git checkout ${revision} \
+ && git submodule init \
+ && git submodule update
+
+CMD [ "make", "javascript-rn" ]
