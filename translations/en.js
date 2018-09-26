@@ -10,7 +10,7 @@ export default {
     cancel: 'Or, cancel signing this petition',
   },
   home: {
-    badPin: 'Incorrect pin code',
+    badPin: 'Incorrect PIN code',
     button: 'Sign In',
     errorTitle: 'Failed to fetch petition information from Decidim',
     errorText: 'You can return to the Decidim site to view other active petitions.',
@@ -40,14 +40,14 @@ export default {
   },
   pinSetup: {
     placeholderPin1: ' At least 4 digits',
-    placeholderPin2: 'Confirm Pin',
-    errorPin1: 'Pin must be at least 4 digits long',
-    errorPin2: 'Pin must be same as above',
+    placeholderPin2: 'Confirm PIN',
+    errorPin1: 'PIN must be at least 4 digits long',
+    errorPin2: 'PIN must be same as above',
     labelPin1: 'Enter PIN:',
-    labelPin2: 'Confirm Pin:',
+    labelPin2: 'Confirm PIN:',
     button: 'Save',
     title: 'Protect Your Wallet',
-    subtitle: 'Let\'s setup a pin, so no one else can access your data',
+    subtitle: 'Let\'s setup a PIN , so no one else can access your data',
   },
   signOutcome: {
     backDecidim: 'Back to Decidim',
