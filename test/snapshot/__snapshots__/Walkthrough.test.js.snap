@@ -68,6 +68,7 @@ ShallowWrapper {
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
+                  "errorDelete": "Error esborrant les dades de la wallet.",
                   "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                 },
@@ -154,6 +155,7 @@ Fes click al botó per començar.",
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
+                  "errorDelete": "Error deleting data from wallet",
                   "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                 },
@@ -240,6 +242,7 @@ Tap the button below to begin.",
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir Atributo",
+                  "errorDelete": "Error al borrar los datos de la wallet.",
                   "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                 },
@@ -402,6 +405,7 @@ Haz click en botón inferior para empezar",
             "ca": Object {
               "attributesLanding": Object {
                 "add": "Afegir Atribut",
+                "errorDelete": "Error esborrant les dades de la wallet.",
                 "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
               },
@@ -488,6 +492,7 @@ Fes click al botó per començar.",
             "en": Object {
               "attributesLanding": Object {
                 "add": "Add Attribute",
+                "errorDelete": "Error deleting data from wallet",
                 "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
               },
@@ -574,6 +579,7 @@ Tap the button below to begin.",
             "es": Object {
               "attributesLanding": Object {
                 "add": "Añadir Atributo",
+                "errorDelete": "Error al borrar los datos de la wallet.",
                 "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
               },
@@ -728,6 +734,7 @@ Haz click en botón inferior para empezar",
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
+                        "errorDelete": "Error esborrant les dades de la wallet.",
                         "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                       },
@@ -814,6 +821,7 @@ Fes click al botó per començar.",
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
+                        "errorDelete": "Error deleting data from wallet",
                         "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                       },
@@ -900,6 +908,7 @@ Tap the button below to begin.",
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir Atributo",
+                        "errorDelete": "Error al borrar los datos de la wallet.",
                         "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                       },
@@ -1041,6 +1050,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -1127,6 +1137,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -1213,6 +1224,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -1364,6 +1376,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -1450,6 +1463,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -1536,6 +1550,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -1682,6 +1697,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -1768,6 +1784,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -1854,6 +1871,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -1955,6 +1973,7 @@ Haz click en botón inferior para empezar",
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
+                  "errorDelete": "Error esborrant les dades de la wallet.",
                   "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                 },
@@ -2041,6 +2060,7 @@ Fes click al botó per començar.",
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
+                  "errorDelete": "Error deleting data from wallet",
                   "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                 },
@@ -2127,6 +2147,7 @@ Tap the button below to begin.",
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir Atributo",
+                  "errorDelete": "Error al borrar los datos de la wallet.",
                   "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                 },
@@ -2271,6 +2292,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -2357,6 +2379,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -2443,6 +2466,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -2588,6 +2612,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -2674,6 +2699,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -2760,6 +2786,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -2925,6 +2952,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -3011,6 +3039,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -3097,6 +3126,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -3238,6 +3268,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -3324,6 +3355,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -3410,6 +3442,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -3560,6 +3593,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -3646,6 +3680,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -3732,6 +3767,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -3885,6 +3921,7 @@ Haz click en botón inferior para empezar",
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
+                        "errorDelete": "Error esborrant les dades de la wallet.",
                         "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                       },
@@ -3971,6 +4008,7 @@ Fes click al botó per començar.",
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
+                        "errorDelete": "Error deleting data from wallet",
                         "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                       },
@@ -4057,6 +4095,7 @@ Tap the button below to begin.",
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir Atributo",
+                        "errorDelete": "Error al borrar los datos de la wallet.",
                         "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                       },
@@ -4198,6 +4237,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -4284,6 +4324,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -4370,6 +4411,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -4521,6 +4563,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -4607,6 +4650,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -4693,6 +4737,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -5729,6 +5774,7 @@ Haz click en botón inferior para empezar",
             "ca": Object {
               "attributesLanding": Object {
                 "add": "Afegir Atribut",
+                "errorDelete": "Error esborrant les dades de la wallet.",
                 "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
               },
@@ -5815,6 +5861,7 @@ Fes click al botó per començar.",
             "en": Object {
               "attributesLanding": Object {
                 "add": "Add Attribute",
+                "errorDelete": "Error deleting data from wallet",
                 "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
               },
@@ -5901,6 +5948,7 @@ Tap the button below to begin.",
             "es": Object {
               "attributesLanding": Object {
                 "add": "Añadir Atributo",
+                "errorDelete": "Error al borrar los datos de la wallet.",
                 "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
               },
@@ -5990,6 +6038,7 @@ Haz click en botón inferior para empezar",
           "ca": Object {
             "attributesLanding": Object {
               "add": "Afegir Atribut",
+              "errorDelete": "Error esborrant les dades de la wallet.",
               "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
             },
@@ -6076,6 +6125,7 @@ Fes click al botó per començar.",
           "en": Object {
             "attributesLanding": Object {
               "add": "Add Attribute",
+              "errorDelete": "Error deleting data from wallet",
               "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
             },
@@ -6162,6 +6212,7 @@ Tap the button below to begin.",
           "es": Object {
             "attributesLanding": Object {
               "add": "Añadir Atributo",
+              "errorDelete": "Error al borrar los datos de la wallet.",
               "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
             },
@@ -6304,6 +6355,7 @@ Haz click en botón inferior para empezar",
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
+                        "errorDelete": "Error esborrant les dades de la wallet.",
                         "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                       },
@@ -6390,6 +6442,7 @@ Fes click al botó per començar.",
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
+                        "errorDelete": "Error deleting data from wallet",
                         "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                       },
@@ -6476,6 +6529,7 @@ Tap the button below to begin.",
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir Atributo",
+                        "errorDelete": "Error al borrar los datos de la wallet.",
                         "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                       },
@@ -6617,6 +6671,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -6703,6 +6758,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -6789,6 +6845,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -6940,6 +6997,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -7026,6 +7084,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -7112,6 +7171,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -7258,6 +7318,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -7344,6 +7405,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -7430,6 +7492,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -7531,6 +7594,7 @@ Haz click en botón inferior para empezar",
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
+                  "errorDelete": "Error esborrant les dades de la wallet.",
                   "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                 },
@@ -7617,6 +7681,7 @@ Fes click al botó per començar.",
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
+                  "errorDelete": "Error deleting data from wallet",
                   "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                 },
@@ -7703,6 +7768,7 @@ Tap the button below to begin.",
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir Atributo",
+                  "errorDelete": "Error al borrar los datos de la wallet.",
                   "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                 },
@@ -7847,6 +7913,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -7933,6 +8000,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -8019,6 +8087,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -8164,6 +8233,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -8250,6 +8320,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -8336,6 +8407,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -8494,6 +8566,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -8580,6 +8653,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -8666,6 +8740,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -8807,6 +8882,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -8893,6 +8969,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -8979,6 +9056,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -9130,6 +9208,7 @@ Haz click en botón inferior para empezar",
                 "ca": Object {
                   "attributesLanding": Object {
                     "add": "Afegir Atribut",
+                    "errorDelete": "Error esborrant les dades de la wallet.",
                     "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                   },
@@ -9216,6 +9295,7 @@ Fes click al botó per començar.",
                 "en": Object {
                   "attributesLanding": Object {
                     "add": "Add Attribute",
+                    "errorDelete": "Error deleting data from wallet",
                     "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                   },
@@ -9302,6 +9382,7 @@ Tap the button below to begin.",
                 "es": Object {
                   "attributesLanding": Object {
                     "add": "Añadir Atributo",
+                    "errorDelete": "Error al borrar los datos de la wallet.",
                     "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                   },
@@ -9448,6 +9529,7 @@ Haz click en botón inferior para empezar",
               "ca": Object {
                 "attributesLanding": Object {
                   "add": "Afegir Atribut",
+                  "errorDelete": "Error esborrant les dades de la wallet.",
                   "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                 },
@@ -9534,6 +9616,7 @@ Fes click al botó per començar.",
               "en": Object {
                 "attributesLanding": Object {
                   "add": "Add Attribute",
+                  "errorDelete": "Error deleting data from wallet",
                   "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                 },
@@ -9620,6 +9703,7 @@ Tap the button below to begin.",
               "es": Object {
                 "attributesLanding": Object {
                   "add": "Añadir Atributo",
+                  "errorDelete": "Error al borrar los datos de la wallet.",
                   "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                 },
@@ -9771,6 +9855,7 @@ Haz click en botón inferior para empezar",
                     "ca": Object {
                       "attributesLanding": Object {
                         "add": "Afegir Atribut",
+                        "errorDelete": "Error esborrant les dades de la wallet.",
                         "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                       },
@@ -9857,6 +9942,7 @@ Fes click al botó per començar.",
                     "en": Object {
                       "attributesLanding": Object {
                         "add": "Add Attribute",
+                        "errorDelete": "Error deleting data from wallet",
                         "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                       },
@@ -9943,6 +10029,7 @@ Tap the button below to begin.",
                     "es": Object {
                       "attributesLanding": Object {
                         "add": "Añadir Atributo",
+                        "errorDelete": "Error al borrar los datos de la wallet.",
                         "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                       },
@@ -10084,6 +10171,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -10170,6 +10258,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -10256,6 +10345,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -10407,6 +10497,7 @@ Haz click en botón inferior para empezar",
                   "ca": Object {
                     "attributesLanding": Object {
                       "add": "Afegir Atribut",
+                      "errorDelete": "Error esborrant les dades de la wallet.",
                       "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
                     },
@@ -10493,6 +10584,7 @@ Fes click al botó per començar.",
                   "en": Object {
                     "attributesLanding": Object {
                       "add": "Add Attribute",
+                      "errorDelete": "Error deleting data from wallet",
                       "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
                     },
@@ -10579,6 +10671,7 @@ Tap the button below to begin.",
                   "es": Object {
                     "attributesLanding": Object {
                       "add": "Añadir Atributo",
+                      "errorDelete": "Error al borrar los datos de la wallet.",
                       "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
                     },
@@ -11615,6 +11708,7 @@ Haz click en botón inferior para empezar",
             "ca": Object {
               "attributesLanding": Object {
                 "add": "Afegir Atribut",
+                "errorDelete": "Error esborrant les dades de la wallet.",
                 "nodata": "Comencem per afegir atributs.
 Fes click al botó per començar.",
               },
@@ -11701,6 +11795,7 @@ Fes click al botó per començar.",
             "en": Object {
               "attributesLanding": Object {
                 "add": "Add Attribute",
+                "errorDelete": "Error deleting data from wallet",
                 "nodata": "Get started by adding attributes.
 Tap the button below to begin.",
               },
@@ -11787,6 +11882,7 @@ Tap the button below to begin.",
             "es": Object {
               "attributesLanding": Object {
                 "add": "Añadir Atributo",
+                "errorDelete": "Error al borrar los datos de la wallet.",
                 "nodata": "Empecemos por añadir atributos.
 Haz click en botón inferior para empezar",
               },

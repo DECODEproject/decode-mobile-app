@@ -13,9 +13,16 @@ export function getWalletId() {
   };
 }
 
-export function deleteWalletData(deleteItemAsync) {
-  return () => {
-    deleteItemAsync('pincode');
-    deleteItemAsync('attributes');
+export function deleteWalletData(deleteItemAsync, errorCallback, successCallback) {
+  return async () => {
+    try {
+      await deleteItemAsync('pincode');
+      await deleteItemAsync('attributes');
+      successCallback();
+    } catch (e) { //eslint-disable-line
+      console.log('error deleting from wallet:');
+      console.log(e);
+      errorCallback();
+    }
   };
 }

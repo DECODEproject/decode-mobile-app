@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import AttributeListItem from '../application/components/AttributeListItem/AttributeListItem';
 import Button from '../application/components/Button/Button';
-import { goToNewAttributes } from '../application/redux/actions/navigation';
+import { goToNewAttributes, resetNavigation } from '../application/redux/actions/navigation';
 import { deleteWalletData } from '../application/redux/actions/wallet';
 import styles from './styles';
 import i18n from '../i18n';
@@ -14,14 +14,18 @@ import i18n from '../i18n';
 const decodeLogo = require('../assets/images/decode-logo-pin.png');
 const emptyStateImage = require('../assets/images/ico-empty-state.png');
 
-function DeleteButton() {
+function DeleteButton(props) {
   return (
     <Button
       name="Delete"
-      onPress={() => this.props.deleteWalletData()}
+      onPress={() => props.onPress()}
     />
   );
 }
+
+DeleteButton.propTypes = {
+  onPress: PropTypes.func.isRequired,
+};
 
 class AttributesLanding extends React.Component {
   static renderLogo() {
@@ -74,7 +78,8 @@ class AttributesLanding extends React.Component {
         <View style={styles.attributesLandingContainer}>
           {centerComponent}
         </View>
-        {this.props.enabledDeleteButton && <DeleteButton />}
+        {this.props.enabledDeleteButton &&
+          <DeleteButton onPress={() => this.props.deleteWalletData(this.props.t)} />}
         <View style={{ flex: 2 }}>
           <Button
             name={this.props.t('add')}
@@ -89,6 +94,7 @@ class AttributesLanding extends React.Component {
 AttributesLanding.propTypes = {
   attributes: PropTypes.instanceOf(Map).isRequired,
   goToNewAttributes: PropTypes.func.isRequired,
+  deleteWalletData: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
   enabledDeleteButton: PropTypes.bool.isRequired,
 };
@@ -101,7 +107,15 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   goToNewAttributes: () => dispatch(goToNewAttributes()),
-  deleteWalletData: () => dispatch(deleteWalletData(SecureStore.deleteItemAsync)),
+  deleteWalletData: (t) => {
+    const errorDeletingWalletData = () => alert(t('errorDelete')); //eslint-disable-line
+    const successDeletingWalletData = () => dispatch(resetNavigation());
+    return dispatch(deleteWalletData(
+      SecureStore.deleteItemAsync,
+      errorDeletingWalletData,
+      successDeletingWalletData,
+    ));
+  },
 });
 
 export default translate('attributesLanding', { i18n })(connect(mapStateToProps, mapDispatchToProps)(AttributesLanding));

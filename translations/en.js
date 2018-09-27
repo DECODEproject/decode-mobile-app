@@ -2,6 +2,7 @@ export default {
   attributesLanding: {
     nodata: 'Get started by adding attributes.\nTap the button below to begin.',
     add: 'Add Attribute',
+    errorDelete: 'Error deleting data from wallet',
   },
   attributesSummary: {
     title: 'DECIDIM needs to verify your Barcelona residency.',
