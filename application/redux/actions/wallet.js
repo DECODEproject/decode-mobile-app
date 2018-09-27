@@ -12,3 +12,10 @@ export function getWalletId() {
     getWalletID().then((id) => { dispatch(setWalletId(id)); });
   };
 }
+
+export function deleteWalletData(deleteItemAsync) {
+  return () => {
+    deleteItemAsync('pincode');
+    deleteItemAsync('attributes');
+  };
+}

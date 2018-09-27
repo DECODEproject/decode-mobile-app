@@ -1,8 +1,11 @@
 import { Constants } from 'expo';
 
+const isLocal = Constants.manifest.releaseChannel !== 'production';
+
 const initialState = {
   decidimApi: false,
-  zenroom: Constants.manifest.releaseChannel !== 'production',
+  zenroom: isLocal,
+  enabledDeleteButton: isLocal,
 };
 
 export default function reducer(state = initialState) {
