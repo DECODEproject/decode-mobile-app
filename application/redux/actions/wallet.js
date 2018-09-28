@@ -20,8 +20,6 @@ export function deleteWalletData(deleteItemAsync, errorCallback, successCallback
       await deleteItemAsync('attributes');
       successCallback();
     } catch (e) { //eslint-disable-line
-      console.log('error deleting from wallet:');
-      console.log(e);
       errorCallback();
     }
   };
