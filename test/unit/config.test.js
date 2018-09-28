@@ -60,7 +60,7 @@ describe('getChainspaceUrl', () => {
   it('should return prod url if prod environment', () => {
     const chainspaceUrl = getChainspaceUrl('production');
 
-    const chainspaceUrlProd = 'http://dszj4sila655fk3s.onion:5000';
+    const chainspaceUrlProd = 'http://ec2-34-241-214-92.eu-west-1.compute.amazonaws.com:9090';
 
     expect(chainspaceUrl).toEqual(chainspaceUrlProd);
   });
