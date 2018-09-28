@@ -5,7 +5,7 @@ const isLocal = Constants.manifest.releaseChannel !== 'production';
 const initialState = {
   decidimApi: false,
   zenroom: isLocal,
-  enabledDeleteButton: isLocal,
+  enabledDeleteButton: true,
 };
 
 export default function reducer(state = initialState) {
