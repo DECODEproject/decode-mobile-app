@@ -8,7 +8,7 @@ describe('Signature', () => {
       const age = 'any';
       const gender = 'm';
 
-      const actualRepresentation = new Signature(vote, age, gender).representation();
+      const actualRepresentation = new Signature(vote, gender, age).representation();
 
       expect(actualRepresentation).toEqual('YES-M-ANY');
     });
@@ -18,7 +18,7 @@ describe('Signature', () => {
       const age = 'any';
       const gender = 'any';
 
-      const actualRepresentation = () => new Signature(vote, age, gender).representation();
+      const actualRepresentation = () => new Signature(vote, gender, age).representation();
 
       expect(actualRepresentation).toThrow(BuildSignatureError);
     });
@@ -28,7 +28,7 @@ describe('Signature', () => {
       const age = 'not an age';
       const gender = 'any';
 
-      const actualRepresentation = () => new Signature(vote, age, gender).representation();
+      const actualRepresentation = () => new Signature(vote, gender, age).representation();
 
       expect(actualRepresentation).toThrow(BuildSignatureError);
     });
@@ -38,7 +38,7 @@ describe('Signature', () => {
       const age = 'any';
       const gender = 'not a gender';
 
-      const actualRepresentation = () => new Signature(vote, age, gender).representation();
+      const actualRepresentation = () => new Signature(vote, gender, age).representation();
 
       expect(actualRepresentation).toThrow(BuildSignatureError);
     });
