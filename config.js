@@ -15,7 +15,7 @@ export function getWalletProxyUrl(environment) {
 export function getChainspaceUrl(environment) {
   const chainspaceUrl = {
     dev: 'http://localhost:5000',
-    production: 'http://dszj4sila655fk3s.onion:5000',
+    production: 'http://ec2-34-241-214-92.eu-west-1.compute.amazonaws.com:9090',
   };
 
   const hostName = urlParse(Constants.linkingUri, true).hostname;
