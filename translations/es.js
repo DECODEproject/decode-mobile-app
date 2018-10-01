@@ -2,6 +2,7 @@ export default {
   attributesLanding: {
     nodata: 'Empecemos por añadir atributos.\nHaz click en botón inferior para empezar',
     add: 'Añadir Atributo',
+    errorDelete: 'Error al borrar los datos de la wallet.',
   },
   attributesSummary: {
     title: 'DECIDIM requiere verificar su residencia en Barcelona.',

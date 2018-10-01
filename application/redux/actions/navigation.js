@@ -1,6 +1,14 @@
 import { NavigationActions } from '@expo/ex-navigation';
 import Router from '../../../Router';
 
+export function resetNavigation() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.popToTop(navigatorUID);
+    dispatch(action);
+  };
+}
+
 export function goToAuthorization(petitionLink) {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;

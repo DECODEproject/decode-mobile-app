@@ -21,6 +21,9 @@ describe('AttributesLanding', () => {
       attributes: {
         list: new Map(),
       },
+      featureToggles: {
+        enabledDeleteButton: false,
+      },
     };
     const store = mockStore(initialState);
     const wrapper = shallow(<AttributesLanding />)
@@ -40,6 +43,9 @@ describe('AttributesLanding', () => {
       const initialState = {
         attributes: {
           list: new Map(),
+        },
+        featureToggles: {
+          enabledDeleteButton: false,
         },
       };
       const store = mockStore(initialState);
@@ -71,6 +77,9 @@ describe('AttributesLanding', () => {
               subject: 'Jordi',
             }],
           ]),
+        },
+        featureToggles: {
+          enabledDeleteButton: false,
         },
       };
       const store = mockStore(initialState);

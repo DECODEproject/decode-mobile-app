@@ -1,8 +1,8 @@
-import { Constants } from 'expo';
 
 const initialState = {
   decidimApi: false,
-  zenroom: Constants.manifest.releaseChannel !== 'production',
+  zenroom: true,
+  enabledDeleteButton: true,
 };
 
 export default function reducer(state = initialState) {

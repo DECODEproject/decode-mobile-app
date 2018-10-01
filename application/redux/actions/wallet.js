@@ -12,3 +12,15 @@ export function getWalletId() {
     getWalletID().then((id) => { dispatch(setWalletId(id)); });
   };
 }
+
+export function deleteWalletData(deleteItemAsync, errorCallback, successCallback) {
+  return async () => {
+    try {
+      await deleteItemAsync('pincode');
+      await deleteItemAsync('attributes');
+      successCallback();
+    } catch (e) { //eslint-disable-line
+      errorCallback();
+    }
+  };
+}
