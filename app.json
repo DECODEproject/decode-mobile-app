@@ -8,7 +8,7 @@
     "orientation": "portrait",
     "scheme": "decodewallet",
     "ios": {
-      "buildNumber": "1.0.5",
+      "buildNumber": "1.0.7",
       "bundleIdentifier": "com.decode.wallet-app"
     },
     "android": {
