@@ -5,6 +5,7 @@ import { View, Text } from 'react-native';
 import { translate } from 'react-i18next';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment';
+import Picker from 'react-native-picker-select';
 import { SecureStore } from 'expo';
 import Button from '../application/components/Button/Button';
 import LinkButton from '../application/components/LinkButton/LinkButton';
@@ -49,6 +50,19 @@ class NewAttributes extends Component {
     });
   }
 
+  districtsList = () => [
+    { label: 'Ciutat Vella', value: 'Ciutat Vella' },
+    { label: 'Eixample', value: 'Eixample' },
+    { label: 'Gràcia', value: 'Gràcia' },
+    { label: 'Horta Guinardó', value: 'Horta Guinardó' },
+    { label: 'Les Corts', value: 'Les Corts' },
+    { label: 'Nou Barris', value: 'Nou Barris' },
+    { label: 'Sant Andreu', value: 'Sant Andreu' },
+    { label: 'Sant Martí', value: 'Sant Martí' },
+    { label: 'Sants Montjuïc', value: 'Sants Montjuïc' },
+    { label: 'Sarri Sant Gervasi', value: 'Sarri Sant Gervasi' },
+  ]
+
   render() {
     return (
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
@@ -77,13 +91,21 @@ class NewAttributes extends Component {
           </View>
           <View style={{ flex: 1 }}>
             <View style={styles.newAttributesAttribute}>
-            <Text style={styles.newAttributesAttributeName}>{this.props.t('districtAttribute')}</Text>
-              <LinkButton
-                id="district-action-button"
-                name={this.state.district ? this.props.t('edit') : this.props.t('add')}
-                onPress={() => {}}
-                style={{ textStyle: { fontSize: 18 } }}
-              />
+              <Text style={styles.newAttributesAttributeName}>{this.props.t('districtAttribute')}</Text>
+              <Picker
+                placeholder={{}}
+                hideDoneBar
+                items={this.districtsList()}
+                onValueChange={this.onSetDistrict}
+                value={this.state.district}
+              >
+                <LinkButton
+                  id="district-action-button"
+                  name={this.state.district ? this.props.t('edit') : this.props.t('add')}
+                  onPress={() => {}}
+                  style={{ textStyle: { fontSize: 18 } }}
+                />
+              </Picker>
             </View>
             <View>
               <Text

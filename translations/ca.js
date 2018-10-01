@@ -19,6 +19,7 @@ export default {
   newAttributes: {
     description: 'Pots afegir aquests atributs a la wallet.',
     ageAttribute: 'Data de Naixement',
+    districtAttribute: 'Districte',
     add: 'Afegir',
     edit: 'Editar',
     save: 'Desar',
