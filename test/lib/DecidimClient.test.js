@@ -82,7 +82,7 @@ describe('Decidim Client', () => {
     });
 
     it('should return an error if there is a problem fetching from Decidim', async () => {
-      axios.post.mockRejectedValue(new Error('Failed post'));
+      axios.post.mockImplementation(() => Promise.reject(new Error('Failed post')));
 
       await expect(decidimClient.fetchPetition(petitionId))
         .rejects.toThrow(FetchPetitionError);
