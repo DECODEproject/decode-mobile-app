@@ -8,7 +8,7 @@ import moment from 'moment';
 import { SecureStore } from 'expo';
 import Button from '../application/components/Button/Button';
 import LinkButton from '../application/components/LinkButton/LinkButton';
-import { saveDateOfBirth } from '../application/redux/actions/attributes';
+import { saveDateOfBirth, saveDistrict } from '../application/redux/actions/attributes';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -32,6 +32,7 @@ class NewAttributes extends Component {
     this.state = {
       isDatePickerVisible: false,
       currentDate: props.currentDateAttr.object,
+      district: props.districtAttr.object,
     };
   }
 
@@ -39,6 +40,12 @@ class NewAttributes extends Component {
     this.setState({
       currentDate: moment(date).format('DD/MM/YYYY'),
       isDatePickerVisible: false,
+    });
+  }
+
+  onSetDistrict = (district) => {
+    this.setState({
+      district,
     });
   }
 
@@ -68,6 +75,25 @@ class NewAttributes extends Component {
               </Text>
             </View>
           </View>
+          <View style={{ flex: 1 }}>
+            <View style={styles.newAttributesAttribute}>
+            <Text style={styles.newAttributesAttributeName}>{this.props.t('districtAttribute')}</Text>
+              <LinkButton
+                id="district-action-button"
+                name={this.state.district ? this.props.t('edit') : this.props.t('add')}
+                onPress={() => {}}
+                style={{ textStyle: { fontSize: 18 } }}
+              />
+            </View>
+            <View>
+              <Text
+                id="district-info"
+                style={styles.newAttributesAttributeValue}
+              >
+                { this.state.district }
+              </Text>
+            </View>
+          </View>
           <DateTimePicker
             minimumDate={minDate}
             maximumDate={maxDate}
@@ -79,7 +105,11 @@ class NewAttributes extends Component {
         <View style={{ flex: 2 }}>
           <Button
             name={this.props.t('save')}
-            onPress={() => this.props.saveDateOfBirth(this.state.currentDate, this.props.walletId)}
+            onPress={() => this.props.saveAttributes(
+              this.state.currentDate,
+              this.state.district,
+              this.props.walletId,
+            )}
           />
         </View>
       </View>
@@ -89,9 +119,12 @@ class NewAttributes extends Component {
 
 NewAttributes.propTypes = {
   t: PropTypes.func.isRequired,
-  saveDateOfBirth: PropTypes.func.isRequired,
+  saveAttributes: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   currentDateAttr: PropTypes.shape({
+    object: PropTypes.string,
+  }),
+  districtAttr: PropTypes.shape({
     object: PropTypes.string,
   }),
 };
@@ -100,16 +133,22 @@ NewAttributes.defaultProps = {
   currentDateAttr: {
     object: '',
   },
+  districtAttr: {
+    object: '',
+  },
 };
 
 const mapStateToProps = state => ({
   walletId: state.wallet.id,
   currentDateAttr: state.attributes.list.get('schema:dateOfBirth'),
+  districtAttr: state.attributes.list.get('schema:district'),
 });
 
 const mapDispatchToProps = dispatch => ({
-  saveDateOfBirth: (dateOfBirth, walletId) =>
-    dispatch(saveDateOfBirth(dateOfBirth, walletId, SecureStore.setItemAsync)),
+  saveAttributes: async (dateOfBirth, district, walletId) => {
+    await dispatch(saveDateOfBirth(dateOfBirth, walletId, SecureStore.setItemAsync));
+    await dispatch(saveDistrict(district, walletId, SecureStore.setItemAsync));
+  },
 });
 
 export default translate('newAttributes', { i18n })(connect(mapStateToProps, mapDispatchToProps)(NewAttributes));

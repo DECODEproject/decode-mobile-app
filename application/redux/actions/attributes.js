@@ -50,6 +50,13 @@ export function loadCredentials(getItemAsync) {
   };
 }
 
+export function saveDistrict(district) {
+  return async dispatch => dispatch({
+    type: types.SAVE_DISTRICT,
+    district,
+  });
+}
+
 export function saveDateOfBirth(dateOfBirth, walletId, setItemAsync) {
   const addOptionalAttributeAction = {
     type: types.ADD_OPTIONAL_ATTRIBUTE,

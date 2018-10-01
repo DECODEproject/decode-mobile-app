@@ -83,6 +83,7 @@ describe('NewAttributes', () => {
 
       expect(wrapper.state()).toEqual({
         currentDate: '04/09/1985',
+        district: '',
         isDatePickerVisible: false,
       });
     });
@@ -113,6 +114,116 @@ describe('NewAttributes', () => {
 
       wrapper.instance().setState({
         currentDate: '01/01/1990',
+      });
+
+      const saveButton = wrapper.dive().find(Button);
+
+      await saveButton.props().onPress();
+
+      expect(store.getActions()).toEqual(expect.arrayContaining([expectedAction]));
+    });
+  });
+
+  describe('add district', () => {
+    it('should show add button when no district attribute is stored', () => {
+      const initialState = {
+        attributes: {
+          list: new Map(),
+        },
+        wallet: {
+          id: 'something',
+        },
+      };
+
+      const store = mockStore(initialState);
+      const wrapper = shallow(<NewAttributes />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
+
+      const button = wrapper.dive().find({ id: 'district-action-button' });
+      const info = wrapper.dive().find({ id: 'district-info' });
+
+      expect(button.prop('name')).toEqual('Agregar');
+      expect(info.prop('children')).toEqual('');
+    });
+
+    it('should show edit button when district attribute is stored', () => {
+      const initialState = {
+        attributes: {
+          list: new Map([['schema:district', { object: '3' }]]),
+        },
+        wallet: {
+          id: 'something',
+        },
+      };
+
+      const store = mockStore(initialState);
+      const wrapper = shallow(<NewAttributes />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
+
+      const button = wrapper.dive().find({ id: 'district-action-button' });
+      const info = wrapper.dive().find({ id: 'district-info' });
+
+      expect(button.prop('name')).toEqual('Editar');
+      expect(info.prop('children')).toEqual('3');
+    });
+
+    it('should change state when setting district through modal', () => {
+      const initialState = {
+        attributes: {
+          list: new Map(),
+        },
+        wallet: {
+          id: 'something',
+        },
+      };
+
+      const store = mockStore(initialState);
+      const wrapper = shallow(<NewAttributes />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } })
+        .dive();
+
+      const newAttributes = wrapper.instance();
+      newAttributes.onSetDistrict('3');
+
+      expect(wrapper.state()).toEqual({
+        currentDate: '',
+        district: '3',
+        isDatePickerVisible: false,
+      });
+    });
+
+    it('should trigger action to save district', async () => {
+      const expectedAction = {
+        type: types.SAVE_DISTRICT,
+        district: '3',
+      };
+
+      const initialState = {
+        navigation: {
+          currentNavigatorUID: 2,
+        },
+        wallet: {
+          id: '123',
+        },
+        attributes: {
+          list: new Map(),
+        },
+      };
+      const store = mockStore(initialState);
+      const wrapper = shallow(<NewAttributes />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } })
+        .dive();
+
+      wrapper.instance().setState({
+        district: '3',
       });
 
       const saveButton = wrapper.dive().find(Button);
