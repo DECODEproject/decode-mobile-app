@@ -4,6 +4,7 @@ const initialState = {
   list: new Map(),
   errorEmptyDateOfBirth: false,
   errorSaveDateOfBirth: false,
+  errorSaveAttributes: false,
 };
 
 export default function reducer(state = initialState, action) {
@@ -50,6 +51,16 @@ export default function reducer(state = initialState, action) {
         ...state,
         errorEmptyDateOfBirth: false,
         errorSaveDateOfBirth: false,
+      };
+    case types.SAVE_ATTRIBUTES_ERROR:
+      return {
+        ...state,
+        errorSaveAttributes: true,
+      };
+    case types.RESET_ATTRIBUTES_ERRORS:
+      return {
+        ...state,
+        errorSaveAttributes: false,
       };
     default:
       return state;

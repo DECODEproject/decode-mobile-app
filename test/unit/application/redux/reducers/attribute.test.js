@@ -29,6 +29,7 @@ describe('attribute reducer', () => {
       list: new Map(),
       errorEmptyDateOfBirth: false,
       errorSaveDateOfBirth: false,
+      errorSaveAttributes: false,
     });
   });
 
@@ -187,6 +188,20 @@ describe('attribute reducer', () => {
     });
   });
 
+  it('should handle SAVE_ATTRIBUTES_ERROR', () => {
+    const initialState = {
+      errorSaveAttributes: false,
+    };
+
+    const action = {
+      type: types.SAVE_ATTRIBUTES_ERROR,
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      errorSaveAttributes: true,
+    });
+  });
+
   it('should handle RESET_DATE_OF_BIRTH_ERRORS resets error flags', () => {
     const initialState = {
       errorEmptyDateOfBirth: true,
@@ -200,6 +215,20 @@ describe('attribute reducer', () => {
     expect(reducer(initialState, action)).toEqual({
       errorEmptyDateOfBirth: false,
       errorSaveDateOfBirth: false,
+    });
+  });
+
+  it('should handle RESET_ATTRIBUTES_ERRORS resets error flags', () => {
+    const initialState = {
+      errorSaveAttributes: true,
+    };
+
+    const action = {
+      type: types.RESET_ATTRIBUTES_ERRORS,
+    };
+
+    expect(reducer(initialState, action)).toEqual({
+      errorSaveAttributes: false,
     });
   });
 });
