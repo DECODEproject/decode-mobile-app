@@ -75,7 +75,7 @@ class AttributesSummary extends React.Component {
               color: 'white',
             }}
           >
-            Isabella Dominguez
+            Isabel Dominguez
           </Text>
         </View>
 

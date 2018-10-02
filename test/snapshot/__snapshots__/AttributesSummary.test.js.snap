@@ -12025,7 +12025,7 @@ Haz click en botón inferior para empezar",
               }
             }
           >
-            Isabella Dominguez
+            Isabel Dominguez
           </Text>
         </Component>,
         <Component
@@ -12163,7 +12163,7 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              Isabella Dominguez
+              Isabel Dominguez
             </Text>,
           ],
           "style": Object {
@@ -12197,7 +12197,7 @@ Haz click en botón inferior para empezar",
             "props": Object {
               "accessible": true,
               "allowFontScaling": true,
-              "children": "Isabella Dominguez",
+              "children": "Isabel Dominguez",
               "ellipsizeMode": "tail",
               "style": Object {
                 "alignSelf": "center",
@@ -12207,7 +12207,7 @@ Haz click en botón inferior para empezar",
               },
             },
             "ref": null,
-            "rendered": "Isabella Dominguez",
+            "rendered": "Isabel Dominguez",
             "type": [Function],
           },
         ],
@@ -12471,7 +12471,7 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              Isabella Dominguez
+              Isabel Dominguez
             </Text>
           </Component>,
           <Component
@@ -12609,7 +12609,7 @@ Haz click en botón inferior para empezar",
                   }
                 }
               >
-                Isabella Dominguez
+                Isabel Dominguez
               </Text>,
             ],
             "style": Object {
@@ -12643,7 +12643,7 @@ Haz click en botón inferior para empezar",
               "props": Object {
                 "accessible": true,
                 "allowFontScaling": true,
-                "children": "Isabella Dominguez",
+                "children": "Isabel Dominguez",
                 "ellipsizeMode": "tail",
                 "style": Object {
                   "alignSelf": "center",
@@ -12653,7 +12653,7 @@ Haz click en botón inferior para empezar",
                 },
               },
               "ref": null,
-              "rendered": "Isabella Dominguez",
+              "rendered": "Isabel Dominguez",
               "type": [Function],
             },
           ],
