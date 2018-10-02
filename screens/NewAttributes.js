@@ -51,16 +51,16 @@ class NewAttributes extends Component {
   }
 
   districtsList = () => [
-    { label: 'Ciutat Vella', value: 'Ciutat Vella' },
-    { label: 'Eixample', value: 'Eixample' },
-    { label: 'Gràcia', value: 'Gràcia' },
-    { label: 'Horta Guinardó', value: 'Horta Guinardó' },
-    { label: 'Les Corts', value: 'Les Corts' },
-    { label: 'Nou Barris', value: 'Nou Barris' },
-    { label: 'Sant Andreu', value: 'Sant Andreu' },
-    { label: 'Sant Martí', value: 'Sant Martí' },
-    { label: 'Sants Montjuïc', value: 'Sants Montjuïc' },
-    { label: 'Sarri Sant Gervasi', value: 'Sarri Sant Gervasi' },
+    { label: 'Ciutat Vella', value: '1' },
+    { label: 'Eixample', value: '2' },
+    { label: 'Gràcia', value: '6' },
+    { label: 'Horta-Guinardó', value: '7' },
+    { label: 'Les Corts', value: '4' },
+    { label: 'Nou Barris', value: '8' },
+    { label: 'Sant Andreu', value: '9' },
+    { label: 'Sant Martí', value: '10' },
+    { label: 'Sants-Montjuïc', value: '3' },
+    { label: 'Sarrià-Sant Gervasi', value: '5' },
   ]
 
   render() {
