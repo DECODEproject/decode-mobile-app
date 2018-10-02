@@ -276,8 +276,8 @@ describe('attribute action', () => {
     });
 
     it('should dispatch and return a SAVE_ATTRIBUTES_ERROR action if failed', async () => {
-      const failSetItemAsync = async () => { throw new Error('Fake error'); };
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, failSetItemAsync));
+      const failedSetItem = async () => { throw new Error('Fake error'); };
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, failedSetItem));
 
       const expectedAction = {
         type: types.SAVE_ATTRIBUTES_ERROR,
