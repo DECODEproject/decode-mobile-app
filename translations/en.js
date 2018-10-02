@@ -32,8 +32,6 @@ export default {
     save: 'Save',
   },
   petitionSummary: {
-    title: 'To sign this petition you must consent to sharing the following with Decidim.',
-    description: 'This information is anonymised - Decidim will not receive any personally identifying data.',
     yes: 'Yes',
     no: 'No',
     cancel: 'Or, cancel signing this petition',

@@ -2,7 +2,6 @@ import axios from 'axios';
 import DecidimClient from '../../lib/DecidimClient';
 import LanguageService from '../../lib/LanguageService';
 import FetchPetitionError from '../../lib/errors/FetchPetitionError';
-import PetitionNotFoundError from '../../lib/errors/PetitionNotFoundError';
 
 jest.mock('axios');
 
@@ -16,13 +15,45 @@ describe('Decidim Client', () => {
   describe('fetch petition data', () => {
     const decidimApiUrl = 'decidim.api.com';
     const petitionId = '2';
+    const residencyAttribute = {
+      scope: 'can-access',
+      object: 'Barcelona',
+      predicate: 'schema:addressLocality',
+      provenance: {
+        url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+      },
+    };
+    const dateOfBirthAttribute = {
+      scope: 'can-access',
+      object: 'voter',
+      predicate: 'schema:dateOfBirth',
+    };
+    const genderAttribute = {
+      scope: 'can-access',
+      object: 'voter',
+      predicate: 'schema:gender',
+    };
     const petitionFromDecidim = {
       data: {
         data: {
-          participatoryProcess: {
+          petition: {
             id: petitionId,
             title: {
-              translation: "Pla d'Actuació Municipal",
+              es: 'Plan de Actuacion municipal',
+              ca: "Pla d'Actuació Municipal",
+            },
+            description: {
+              es: 'Descripcion de peticion',
+              ca: 'This is an amazing petition that you want to participate in',
+            },
+            json_schema: {
+              optional: [
+                dateOfBirthAttribute,
+                genderAttribute,
+              ],
+              mandatory: [
+                residencyAttribute,
+              ],
             },
           },
         },
@@ -31,45 +62,30 @@ describe('Decidim Client', () => {
     const decidimClient = new DecidimClient(getLanguageServiceMock(), decidimApiUrl);
 
     const requestQuery = `{
-      participatoryProcess(id: ${petitionId}) {
+      petition(id: "${petitionId}") {
         id
-        title {
-          translation (locale: "ca")
-        }
+        title
+        description
+        json_schema
       }
     }`.replace(/\n/g, '');
 
     const requestBody = { query: requestQuery };
 
-    const requestQueryForSpanish = `{
-      participatoryProcess(id: ${petitionId}) {
-        id
-        title {
-          translation (locale: "es")
-        }
-      }
-    }`.replace(/\n/g, '');
-    const requestBodyForSpanish = { query: requestQueryForSpanish };
-
     it('should return the petition from Decidim API', async () => {
       const expectedPetition = {
         petition: {
           id: petitionId,
-          title: petitionFromDecidim.data.data.participatoryProcess.title.translation,
+          title: petitionFromDecidim.data.data.petition.title.ca,
+          description: petitionFromDecidim.data.data.petition.description.ca,
           attributes: {
-            mandatory: [{
-              predicate: 'schema:addressLocality',
-              object: 'Barcelona',
-              scope: 'can-access',
-              provenance: {
-                url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-              },
-            }],
-            optional: [{
-              predicate: 'schema:dateOfBirth',
-              object: 'voter',
-              scope: 'can-access',
-            }],
+            mandatory: [
+              residencyAttribute,
+            ],
+            optional: [
+              dateOfBirthAttribute,
+              genderAttribute,
+            ],
           },
         },
       };
@@ -91,26 +107,45 @@ describe('Decidim Client', () => {
 
     it('should return an error if fetch was successful but petition does not exist', async () => {
       const errorResponse = {
-        data: {
-          data: {
-            participatoryProcess: null,
+        data: null,
+        errors: [
+          {
+            message: 'Cannot return null for non-nullable field Query.petition',
           },
-        },
+        ],
       };
+
       axios.post.mockResolvedValue(errorResponse);
 
       await expect(decidimClient.fetchPetition(petitionId))
-        .rejects.toThrow(PetitionNotFoundError);
+        .rejects.toThrow();
       expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
     });
 
-    it('should request the petition data with the appropriate language', async () => {
-      const languageServiceForSpanish = getLanguageServiceMock('es');
+    it('should default to Spanish if language translation is not provided by Decidim', async () => {
+      const expectedPetition = {
+        petition: {
+          id: petitionId,
+          title: petitionFromDecidim.data.data.petition.title.es,
+          description: petitionFromDecidim.data.data.petition.description.es,
+          attributes: {
+            mandatory: [
+              residencyAttribute,
+            ],
+            optional: [
+              dateOfBirthAttribute,
+              genderAttribute,
+            ],
+          },
+        },
+      };
+
       axios.post.mockResolvedValue(petitionFromDecidim);
+      const italianDecidimClient = new DecidimClient(getLanguageServiceMock('it'), decidimApiUrl);
+      const actualPetition = await italianDecidimClient.fetchPetition(petitionId);
 
-      await new DecidimClient(languageServiceForSpanish, decidimApiUrl).fetchPetition(petitionId);
-
-      expect(axios.post).toBeCalledWith(decidimApiUrl, requestBodyForSpanish);
+      expect(actualPetition).toEqual(expectedPetition);
+      expect(axios.post).toBeCalledWith(decidimApiUrl, requestBody);
     });
   });
 });

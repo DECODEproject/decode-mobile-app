@@ -142,10 +142,7 @@ class PetitionSummary extends React.Component {
       <View style={styles.petitionSummaryBox}>
         <Text style={styles.petitionSummaryPetitionTitle}>{petition.title}</Text>
         <Text style={styles.petitionDescription}>
-          {t('title')}
-        </Text>
-        <Text>
-          {t('description')}
+          {petition.description}
         </Text>
         { matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
         <Text>

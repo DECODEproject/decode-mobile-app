@@ -112,10 +112,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -199,10 +197,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -286,10 +282,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -452,10 +446,8 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
-                "title": "Per firmar aquesta petició, has de compartir la següent informació",
                 "yes": "Si",
               },
               "pinSetup": Object {
@@ -539,10 +531,8 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
                 "optional": "Optional data to share:",
-                "title": "To sign this petition you must consent to sharing the following with Decidim.",
                 "yes": "Yes",
               },
               "pinSetup": Object {
@@ -626,10 +616,8 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
-                "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                 "yes": "Sí",
               },
               "pinSetup": Object {
@@ -781,10 +769,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -868,10 +854,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -955,10 +939,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -1097,10 +1079,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -1184,10 +1164,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -1271,10 +1249,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -1423,10 +1399,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -1510,10 +1484,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -1597,10 +1569,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -1744,10 +1714,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -1831,10 +1799,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -1918,10 +1884,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -2020,10 +1984,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -2107,10 +2069,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -2194,10 +2154,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -2339,10 +2297,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -2426,10 +2382,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -2513,10 +2467,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -2659,10 +2611,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -2746,10 +2696,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -2833,10 +2781,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -2999,10 +2945,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -3086,10 +3030,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -3173,10 +3115,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -3315,10 +3255,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -3402,10 +3340,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -3489,10 +3425,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -3640,10 +3574,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -3727,10 +3659,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -3814,10 +3744,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -3968,10 +3896,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -4055,10 +3981,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -4142,10 +4066,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -4284,10 +4206,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -4371,10 +4291,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -4458,10 +4376,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -4610,10 +4526,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -4697,10 +4611,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -4784,10 +4696,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -5821,10 +5731,8 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
-                "title": "Per firmar aquesta petició, has de compartir la següent informació",
                 "yes": "Si",
               },
               "pinSetup": Object {
@@ -5908,10 +5816,8 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
                 "optional": "Optional data to share:",
-                "title": "To sign this petition you must consent to sharing the following with Decidim.",
                 "yes": "Yes",
               },
               "pinSetup": Object {
@@ -5995,10 +5901,8 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
-                "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                 "yes": "Sí",
               },
               "pinSetup": Object {
@@ -6085,10 +5989,8 @@ Fes click al botó per començar.",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar la participació en aquesta peticiió",
-              "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
               "no": "No",
               "optional": "Dades opcionals a compartir",
-              "title": "Per firmar aquesta petició, has de compartir la següent informació",
               "yes": "Si",
             },
             "pinSetup": Object {
@@ -6172,10 +6074,8 @@ Tap the button below to begin.",
             },
             "petitionSummary": Object {
               "cancel": "Or, cancel signing this petition",
-              "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
               "no": "No",
               "optional": "Optional data to share:",
-              "title": "To sign this petition you must consent to sharing the following with Decidim.",
               "yes": "Yes",
             },
             "pinSetup": Object {
@@ -6259,10 +6159,8 @@ Haz click en botón inferior para empezar",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar participación en esta petición",
-              "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
               "no": "No",
               "optional": "Datos opcionales para compartir: ",
-              "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
               "yes": "Sí",
             },
             "pinSetup": Object {
@@ -6402,10 +6300,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -6489,10 +6385,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -6576,10 +6470,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -6718,10 +6610,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -6805,10 +6695,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -6892,10 +6780,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -7044,10 +6930,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -7131,10 +7015,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -7218,10 +7100,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -7365,10 +7245,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -7452,10 +7330,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -7539,10 +7415,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -7641,10 +7515,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -7728,10 +7600,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -7815,10 +7685,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -7960,10 +7828,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -8047,10 +7913,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -8134,10 +7998,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -8280,10 +8142,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -8367,10 +8227,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -8454,10 +8312,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -8613,10 +8469,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -8700,10 +8554,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -8787,10 +8639,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -8929,10 +8779,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -9016,10 +8864,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -9103,10 +8949,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -9255,10 +9099,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -9342,10 +9184,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -9429,10 +9269,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -9576,10 +9414,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -9663,10 +9499,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -9750,10 +9584,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -9902,10 +9734,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -9989,10 +9819,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -10076,10 +9904,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -10218,10 +10044,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -10305,10 +10129,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -10392,10 +10214,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -10544,10 +10364,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -10631,10 +10449,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -10718,10 +10534,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -11755,10 +11569,8 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
-                "title": "Per firmar aquesta petició, has de compartir la següent informació",
                 "yes": "Si",
               },
               "pinSetup": Object {
@@ -11842,10 +11654,8 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
                 "optional": "Optional data to share:",
-                "title": "To sign this petition you must consent to sharing the following with Decidim.",
                 "yes": "Yes",
               },
               "pinSetup": Object {
@@ -11929,10 +11739,8 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
-                "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                 "yes": "Sí",
               },
               "pinSetup": Object {
@@ -12098,14 +11906,7 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
-              Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+              world
             </Text>
             <Text
               accessible={true}
@@ -12237,14 +12038,7 @@ Haz click en botón inferior para empezar",
                   }
                 }
               >
-                Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                world
               </Text>
               <Text
                 accessible={true}
@@ -12339,14 +12133,7 @@ Haz click en botón inferior para empezar",
                     }
                   }
                 >
-                  Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-                </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                  world
                 </Text>,
                 Array [],
                 <Text
@@ -12395,7 +12182,7 @@ Haz click en botón inferior para empezar",
                 "props": Object {
                   "accessible": true,
                   "allowFontScaling": true,
-                  "children": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
+                  "children": "world",
                   "ellipsizeMode": "tail",
                   "style": Object {
                     "color": "rgba(0, 0, 0, 0.87)",
@@ -12405,21 +12192,7 @@ Haz click en botón inferior para empezar",
                   },
                 },
                 "ref": null,
-                "rendered": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
-                  "ellipsizeMode": "tail",
-                },
-                "ref": null,
-                "rendered": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
+                "rendered": "world",
                 "type": [Function],
               },
               Object {
@@ -12604,14 +12377,7 @@ Haz click en botón inferior para empezar",
                   }
                 }
               >
-                Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                world
               </Text>
               <Text
                 accessible={true}
@@ -12743,14 +12509,7 @@ Haz click en botón inferior para empezar",
                     }
                   }
                 >
-                  Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                  world
                 </Text>
                 <Text
                   accessible={true}
@@ -12845,14 +12604,7 @@ Haz click en botón inferior para empezar",
                       }
                     }
                   >
-                    Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-                  </Text>,
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                    world
                   </Text>,
                   Array [],
                   <Text
@@ -12901,7 +12653,7 @@ Haz click en botón inferior para empezar",
                   "props": Object {
                     "accessible": true,
                     "allowFontScaling": true,
-                    "children": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
+                    "children": "world",
                     "ellipsizeMode": "tail",
                     "style": Object {
                       "color": "rgba(0, 0, 0, 0.87)",
@@ -12911,21 +12663,7 @@ Haz click en botón inferior para empezar",
                     },
                   },
                   "ref": null,
-                  "rendered": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
-                    "ellipsizeMode": "tail",
-                  },
-                  "ref": null,
-                  "rendered": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
+                  "rendered": "world",
                   "type": [Function],
                 },
                 Object {
@@ -13175,10 +12913,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -13262,10 +12998,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -13349,10 +13083,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -13512,10 +13244,8 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
-                "title": "Per firmar aquesta petició, has de compartir la següent informació",
                 "yes": "Si",
               },
               "pinSetup": Object {
@@ -13599,10 +13329,8 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
                 "optional": "Optional data to share:",
-                "title": "To sign this petition you must consent to sharing the following with Decidim.",
                 "yes": "Yes",
               },
               "pinSetup": Object {
@@ -13686,10 +13414,8 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
-                "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                 "yes": "Sí",
               },
               "pinSetup": Object {
@@ -13841,10 +13567,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -13928,10 +13652,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -14015,10 +13737,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -14157,10 +13877,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -14244,10 +13962,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -14331,10 +14047,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -14483,10 +14197,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -14570,10 +14282,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -14657,10 +14367,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -14804,10 +14512,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -14891,10 +14597,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -14978,10 +14682,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -15080,10 +14782,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -15167,10 +14867,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -15254,10 +14952,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -15399,10 +15095,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -15486,10 +15180,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -15573,10 +15265,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -15719,10 +15409,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -15806,10 +15494,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -15893,10 +15579,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -16059,10 +15743,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -16146,10 +15828,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -16233,10 +15913,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -16375,10 +16053,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -16462,10 +16138,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -16549,10 +16223,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -16700,10 +16372,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -16787,10 +16457,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -16874,10 +16542,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -17028,10 +16694,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -17115,10 +16779,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -17202,10 +16864,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -17344,10 +17004,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -17431,10 +17089,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -17518,10 +17174,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -17670,10 +17324,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -17757,10 +17409,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -17844,10 +17494,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -18881,10 +18529,8 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
-                "title": "Per firmar aquesta petició, has de compartir la següent informació",
                 "yes": "Si",
               },
               "pinSetup": Object {
@@ -18968,10 +18614,8 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
                 "optional": "Optional data to share:",
-                "title": "To sign this petition you must consent to sharing the following with Decidim.",
                 "yes": "Yes",
               },
               "pinSetup": Object {
@@ -19055,10 +18699,8 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
-                "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                 "yes": "Sí",
               },
               "pinSetup": Object {
@@ -19145,10 +18787,8 @@ Fes click al botó per començar.",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar la participació en aquesta peticiió",
-              "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
               "no": "No",
               "optional": "Dades opcionals a compartir",
-              "title": "Per firmar aquesta petició, has de compartir la següent informació",
               "yes": "Si",
             },
             "pinSetup": Object {
@@ -19232,10 +18872,8 @@ Tap the button below to begin.",
             },
             "petitionSummary": Object {
               "cancel": "Or, cancel signing this petition",
-              "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
               "no": "No",
               "optional": "Optional data to share:",
-              "title": "To sign this petition you must consent to sharing the following with Decidim.",
               "yes": "Yes",
             },
             "pinSetup": Object {
@@ -19319,10 +18957,8 @@ Haz click en botón inferior para empezar",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar participación en esta petición",
-              "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
               "no": "No",
               "optional": "Datos opcionales para compartir: ",
-              "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
               "yes": "Sí",
             },
             "pinSetup": Object {
@@ -19462,10 +19098,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -19549,10 +19183,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -19636,10 +19268,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -19778,10 +19408,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -19865,10 +19493,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -19952,10 +19578,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -20104,10 +19728,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -20191,10 +19813,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -20278,10 +19898,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -20425,10 +20043,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -20512,10 +20128,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -20599,10 +20213,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -20701,10 +20313,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -20788,10 +20398,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -20875,10 +20483,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -21020,10 +20626,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -21107,10 +20711,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -21194,10 +20796,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -21340,10 +20940,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -21427,10 +21025,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -21514,10 +21110,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -21673,10 +21267,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -21760,10 +21352,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -21847,10 +21437,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -21989,10 +21577,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -22076,10 +21662,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -22163,10 +21747,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -22315,10 +21897,8 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                     "no": "No",
                     "optional": "Dades opcionals a compartir",
-                    "title": "Per firmar aquesta petició, has de compartir la següent informació",
                     "yes": "Si",
                   },
                   "pinSetup": Object {
@@ -22402,10 +21982,8 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                     "no": "No",
                     "optional": "Optional data to share:",
-                    "title": "To sign this petition you must consent to sharing the following with Decidim.",
                     "yes": "Yes",
                   },
                   "pinSetup": Object {
@@ -22489,10 +22067,8 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                     "no": "No",
                     "optional": "Datos opcionales para compartir: ",
-                    "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                     "yes": "Sí",
                   },
                   "pinSetup": Object {
@@ -22636,10 +22212,8 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                   "no": "No",
                   "optional": "Dades opcionals a compartir",
-                  "title": "Per firmar aquesta petició, has de compartir la següent informació",
                   "yes": "Si",
                 },
                 "pinSetup": Object {
@@ -22723,10 +22297,8 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                   "no": "No",
                   "optional": "Optional data to share:",
-                  "title": "To sign this petition you must consent to sharing the following with Decidim.",
                   "yes": "Yes",
                 },
                 "pinSetup": Object {
@@ -22810,10 +22382,8 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                   "no": "No",
                   "optional": "Datos opcionales para compartir: ",
-                  "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                   "yes": "Sí",
                 },
                 "pinSetup": Object {
@@ -22962,10 +22532,8 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                         "no": "No",
                         "optional": "Dades opcionals a compartir",
-                        "title": "Per firmar aquesta petició, has de compartir la següent informació",
                         "yes": "Si",
                       },
                       "pinSetup": Object {
@@ -23049,10 +22617,8 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                         "no": "No",
                         "optional": "Optional data to share:",
-                        "title": "To sign this petition you must consent to sharing the following with Decidim.",
                         "yes": "Yes",
                       },
                       "pinSetup": Object {
@@ -23136,10 +22702,8 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                         "no": "No",
                         "optional": "Datos opcionales para compartir: ",
-                        "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                         "yes": "Sí",
                       },
                       "pinSetup": Object {
@@ -23278,10 +22842,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -23365,10 +22927,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -23452,10 +23012,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -23604,10 +23162,8 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                       "no": "No",
                       "optional": "Dades opcionals a compartir",
-                      "title": "Per firmar aquesta petició, has de compartir la següent informació",
                       "yes": "Si",
                     },
                     "pinSetup": Object {
@@ -23691,10 +23247,8 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                       "no": "No",
                       "optional": "Optional data to share:",
-                      "title": "To sign this petition you must consent to sharing the following with Decidim.",
                       "yes": "Yes",
                     },
                     "pinSetup": Object {
@@ -23778,10 +23332,8 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                       "no": "No",
                       "optional": "Datos opcionales para compartir: ",
-                      "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                       "yes": "Sí",
                     },
                     "pinSetup": Object {
@@ -24815,10 +24367,8 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "description": "Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.",
                 "no": "No",
                 "optional": "Dades opcionals a compartir",
-                "title": "Per firmar aquesta petició, has de compartir la següent informació",
                 "yes": "Si",
               },
               "pinSetup": Object {
@@ -24902,10 +24452,8 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "description": "This information is anonymised - Decidim will not receive any personally identifying data.",
                 "no": "No",
                 "optional": "Optional data to share:",
-                "title": "To sign this petition you must consent to sharing the following with Decidim.",
                 "yes": "Yes",
               },
               "pinSetup": Object {
@@ -24989,10 +24537,8 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "description": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
                 "no": "No",
                 "optional": "Datos opcionales para compartir: ",
-                "title": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
                 "yes": "Sí",
               },
               "pinSetup": Object {
@@ -25145,14 +24691,7 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-            </Text>
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-            >
-              Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+              world
             </Text>
             <Text
               accessible={true}
@@ -25284,14 +24823,7 @@ Haz click en botón inferior para empezar",
                   }
                 }
               >
-                Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                world
               </Text>
               <Text
                 accessible={true}
@@ -25386,14 +24918,7 @@ Haz click en botón inferior para empezar",
                     }
                   }
                 >
-                  Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-                </Text>,
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                  world
                 </Text>,
                 Array [],
                 <Text
@@ -25442,7 +24967,7 @@ Haz click en botón inferior para empezar",
                 "props": Object {
                   "accessible": true,
                   "allowFontScaling": true,
-                  "children": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
+                  "children": "world",
                   "ellipsizeMode": "tail",
                   "style": Object {
                     "color": "rgba(0, 0, 0, 0.87)",
@@ -25452,21 +24977,7 @@ Haz click en botón inferior para empezar",
                   },
                 },
                 "ref": null,
-                "rendered": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
-                  "ellipsizeMode": "tail",
-                },
-                "ref": null,
-                "rendered": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
+                "rendered": "world",
                 "type": [Function],
               },
               Object {
@@ -25651,14 +25162,7 @@ Haz click en botón inferior para empezar",
                   }
                 }
               >
-                Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-              </Text>
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-              >
-                Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                world
               </Text>
               <Text
                 accessible={true}
@@ -25790,14 +25294,7 @@ Haz click en botón inferior para empezar",
                     }
                   }
                 >
-                  Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-                </Text>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                >
-                  Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                  world
                 </Text>
                 <Text
                   accessible={true}
@@ -25892,14 +25389,7 @@ Haz click en botón inferior para empezar",
                       }
                     }
                   >
-                    Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.
-                  </Text>,
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                  >
-                    Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.
+                    world
                   </Text>,
                   Array [],
                   <Text
@@ -25948,7 +25438,7 @@ Haz click en botón inferior para empezar",
                   "props": Object {
                     "accessible": true,
                     "allowFontScaling": true,
-                    "children": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
+                    "children": "world",
                     "ellipsizeMode": "tail",
                     "style": Object {
                       "color": "rgba(0, 0, 0, 0.87)",
@@ -25958,21 +25448,7 @@ Haz click en botón inferior para empezar",
                     },
                   },
                   "ref": null,
-                  "rendered": "Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
-                    "ellipsizeMode": "tail",
-                  },
-                  "ref": null,
-                  "rendered": "Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.",
+                  "rendered": "world",
                   "type": [Function],
                 },
                 Object {

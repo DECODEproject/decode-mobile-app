@@ -32,8 +32,6 @@ export default {
     save: 'Desar',
   },
   petitionSummary: {
-    title: 'Per firmar aquesta petició, has de compartir la següent informació',
-    description: 'Aquesta informació està anonimitzada, Decidim no rebrà cap informació que et pugui identificar.',
     yes: 'Si',
     no: 'No',
     cancel: 'O, cancelar la participació en aquesta peticiió',

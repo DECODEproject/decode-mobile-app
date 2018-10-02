@@ -32,8 +32,6 @@ export default {
     save: 'Guardar',
   },
   petitionSummary: {
-    title: 'Para firmar esta petición, tienes que consentir a compartir lo siguiente con Decidim.',
-    description: 'Esta información está anonimizada, Decidim no recibirá ningún dato que te pueda identificar personalmente.',
     yes: 'Sí',
     no: 'No',
     cancel: 'O, cancelar participación en esta petición',

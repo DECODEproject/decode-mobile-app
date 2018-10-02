@@ -1,6 +1,6 @@
 
 const initialState = {
-  decidimApi: false,
+  decidimApi: true,
   zenroom: true,
   enabledDeleteButton: true,
 };
