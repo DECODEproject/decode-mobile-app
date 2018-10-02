@@ -157,17 +157,55 @@ describe('attribute action', () => {
   });
 
   describe('save attributes', () => {
-    const someDistrict = '42';
+    const walletId = 42;
+    const someDistrict = '3';
     const someDateOfBirth = '01/01/2000';
 
-    it('should dispatch an action to save date of birth if set');
+    it('should dispatch an action to save date of birth if set', async () => {
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
+
+      const expectedAction = {
+        type: types.ADD_OPTIONAL_ATTRIBUTE,
+        attribute: {
+          predicate: 'schema:dateOfBirth',
+          object: someDateOfBirth,
+          scope: 'can-access',
+          provenance: {
+            source: 'wallet',
+          },
+          subject: walletId,
+        },
+      };
+      const containsExpectedAction = expect.arrayContaining([expectedAction]);
+      expect(store.getActions()).toEqual(containsExpectedAction);
+    });
+
     it('should not dispatch an action to save date of birth if empty');
-    it('should dispatch an action to save district if set');
+
+    it('should dispatch an action to save district if set', async () => {
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
+
+      const expectedAction = {
+        type: types.ADD_OPTIONAL_ATTRIBUTE,
+        attribute: {
+          predicate: 'schema:district',
+          object: someDistrict,
+          scope: 'can-access',
+          provenance: {
+            source: 'wallet',
+          },
+          subject: walletId,
+        },
+      };
+      const containsExpectedAction = expect.arrayContaining([expectedAction]);
+      expect(store.getActions()).toEqual(containsExpectedAction);
+    });
+
     it('should not dispatch an action to save district if empty');
     it('should dispatch an action to store the attributes to local storage');
 
     it('should navigate to the attributes landing page', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict));
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
 
       const navigationAction = store.getActions()
         .find(action => action.type === 'EX_NAVIGATION.PUSH');
@@ -175,14 +213,15 @@ describe('attribute action', () => {
     });
 
     it('should dispatch a SAVE_ATTRIBUTES action', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict));
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
 
       const expectedAction = {
         type: types.SAVE_ATTRIBUTES,
         dateOfBirth: someDateOfBirth,
         district: someDistrict,
       };
-      expect(store.getActions()).toEqual(expect.arrayContaining([expectedAction]));
+      const containsExpectedAction = expect.arrayContaining([expectedAction]);
+      expect(store.getActions()).toEqual(containsExpectedAction);
     });
 
     it('should dispatch and return a SAVE_ATTRIBUTES_ERROR action if failed');
