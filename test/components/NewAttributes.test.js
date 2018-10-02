@@ -87,41 +87,6 @@ describe('NewAttributes', () => {
         isDatePickerVisible: false,
       });
     });
-
-    it('should trigger action to save date of birth', async () => {
-      const expectedAction = {
-        type: types.SAVE_DATE_OF_BIRTH,
-        dateOfBirth: '01/01/1990',
-      };
-
-      const initialState = {
-        navigation: {
-          currentNavigatorUID: 2,
-        },
-        wallet: {
-          id: '123',
-        },
-        attributes: {
-          list: new Map(),
-        },
-      };
-      const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
-        .first().shallow()
-        .first()
-        .shallow({ context: { store } })
-        .dive();
-
-      wrapper.instance().setState({
-        currentDate: '01/01/1990',
-      });
-
-      const saveButton = wrapper.dive().find(Button);
-
-      await saveButton.props().onPress();
-
-      expect(store.getActions()).toEqual(expect.arrayContaining([expectedAction]));
-    });
   });
 
   describe('add district', () => {
@@ -197,13 +162,10 @@ describe('NewAttributes', () => {
         isDatePickerVisible: false,
       });
     });
+  });
 
-    it('should trigger action to save district', async () => {
-      const expectedAction = {
-        type: types.SAVE_DISTRICT,
-        district: '3',
-      };
-
+  describe('save button', () => {
+    it('should trigger action to save attributes', async () => {
       const initialState = {
         navigation: {
           currentNavigatorUID: 2,
@@ -216,6 +178,7 @@ describe('NewAttributes', () => {
         },
       };
       const store = mockStore(initialState);
+
       const wrapper = shallow(<NewAttributes />)
         .first().shallow()
         .first()
@@ -223,15 +186,20 @@ describe('NewAttributes', () => {
         .dive();
 
       wrapper.instance().setState({
+        currentDate: '01/01/2000',
         district: '3',
       });
 
       const saveButton = wrapper.dive().find(Button);
-
       await saveButton.props().onPress();
 
-      const lastAction = store.getActions()[store.getActions().length - 1];
-      expect(lastAction).toEqual(expectedAction);
+      const expectedAction = {
+        type: types.SAVE_ATTRIBUTES,
+        dateOfBirth: '01/01/2000',
+        district: '3',
+      };
+      const containsExpectedAction = expect.arrayContaining([expectedAction]);
+      expect(store.getActions()).toEqual(containsExpectedAction);
     });
   });
 });

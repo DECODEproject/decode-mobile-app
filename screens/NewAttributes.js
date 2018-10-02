@@ -9,7 +9,7 @@ import Picker from 'react-native-picker-select';
 import { SecureStore } from 'expo';
 import Button from '../application/components/Button/Button';
 import LinkButton from '../application/components/LinkButton/LinkButton';
-import { saveDateOfBirth, saveDistrict } from '../application/redux/actions/attributes';
+import { saveAttributes } from '../application/redux/actions/attributes';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -167,10 +167,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  saveAttributes: async (dateOfBirth, district, walletId) => {
-    await dispatch(saveDateOfBirth(dateOfBirth, walletId, SecureStore.setItemAsync));
-    await dispatch(saveDistrict(district, walletId, SecureStore.setItemAsync));
-  },
+  saveAttributes: async (dateOfBirth, district, walletId) =>
+    dispatch(saveAttributes(dateOfBirth, district, walletId, SecureStore.setItemAsync)),
 });
 
 export default translate('newAttributes', { i18n })(connect(mapStateToProps, mapDispatchToProps)(NewAttributes));

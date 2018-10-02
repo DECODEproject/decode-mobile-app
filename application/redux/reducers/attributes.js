@@ -2,8 +2,6 @@ import types from '../actionTypes';
 
 const initialState = {
   list: new Map(),
-  errorEmptyDateOfBirth: false,
-  errorSaveDateOfBirth: false,
   errorSaveAttributes: false,
 };
 
@@ -35,22 +33,6 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         list: state.list.set(action.attribute.predicate, action.attribute),
-      };
-    case types.EMPTY_DATE_OF_BIRTH_ERROR:
-      return {
-        ...state,
-        errorEmptyDateOfBirth: true,
-      };
-    case types.SAVE_DATE_OF_BIRTH_ERROR:
-      return {
-        ...state,
-        errorSaveDateOfBirth: true,
-      };
-    case types.RESET_DATE_OF_BIRTH_ERRORS:
-      return {
-        ...state,
-        errorEmptyDateOfBirth: false,
-        errorSaveDateOfBirth: false,
       };
     case types.SAVE_ATTRIBUTES_ERROR:
       return {

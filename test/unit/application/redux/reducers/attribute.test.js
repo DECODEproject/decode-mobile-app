@@ -27,8 +27,6 @@ describe('attribute reducer', () => {
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({
       list: new Map(),
-      errorEmptyDateOfBirth: false,
-      errorSaveDateOfBirth: false,
       errorSaveAttributes: false,
     });
   });
@@ -160,34 +158,6 @@ describe('attribute reducer', () => {
     });
   });
 
-  it('should handle EMPTY_DATE_OF_BIRTH_ERROR triggers empty date of birth error', () => {
-    const initialState = {
-      errorEmptyDateOfBirth: false,
-    };
-
-    const action = {
-      type: types.EMPTY_DATE_OF_BIRTH_ERROR,
-    };
-
-    expect(reducer(initialState, action)).toEqual({
-      errorEmptyDateOfBirth: true,
-    });
-  });
-
-  it('should handle SAVE_DATE_OF_BIRTH_ERROR triggers save date of birth error', () => {
-    const initialState = {
-      errorSaveDateOfBirth: false,
-    };
-
-    const action = {
-      type: types.SAVE_DATE_OF_BIRTH_ERROR,
-    };
-
-    expect(reducer(initialState, action)).toEqual({
-      errorSaveDateOfBirth: true,
-    });
-  });
-
   it('should handle SAVE_ATTRIBUTES_ERROR', () => {
     const initialState = {
       errorSaveAttributes: false,
@@ -199,22 +169,6 @@ describe('attribute reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       errorSaveAttributes: true,
-    });
-  });
-
-  it('should handle RESET_DATE_OF_BIRTH_ERRORS resets error flags', () => {
-    const initialState = {
-      errorEmptyDateOfBirth: true,
-      errorSaveDateOfBirth: true,
-    };
-
-    const action = {
-      type: types.RESET_DATE_OF_BIRTH_ERRORS,
-    };
-
-    expect(reducer(initialState, action)).toEqual({
-      errorEmptyDateOfBirth: false,
-      errorSaveDateOfBirth: false,
     });
   });
 
