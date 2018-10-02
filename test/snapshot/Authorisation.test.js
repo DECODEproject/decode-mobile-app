@@ -11,7 +11,7 @@ const mockStore = configureStore([thunk]);
 
 const initialState = {
   decidimInfo: {
-    petitionLink: undefined,
+    decidimAPIUrl: undefined,
   },
   wallet: {
     id: 'my-id',

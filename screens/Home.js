@@ -5,7 +5,7 @@ import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goToError } from '../application/redux/actions/navigation';
-import { onStartApp, setDecidimInfo } from '../application/redux/actions/decidimInfo';
+import setDecidimInfo from '../application/redux/actions/decidimInfo';
 import { getPetition } from '../application/redux/actions/petition';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
@@ -34,7 +34,6 @@ class Home extends React.Component {
   goToPetition() {
     const petition = this.props.getPetition(
       this.props.decidimClient,
-      this.props.petitionLink,
       this.props.decidimAPIUrl,
       this.props.petitionId,
     );
@@ -54,7 +53,7 @@ class Home extends React.Component {
   }
 
   goToNextPage() {
-    const comingFromDecidim = this.props.petitionLink || this.props.decidimAPIUrl;
+    const comingFromDecidim = this.props.decidimAPIUrl;
     if (comingFromDecidim) {
       this.goToPetition();
     } else {
@@ -121,7 +120,6 @@ Home.propTypes = {
   initializeState: PropTypes.func.isRequired,
   doAuthorize: PropTypes.func.isRequired,
   updatePin: PropTypes.func.isRequired,
-  petitionLink: PropTypes.string,
   petitionError: PropTypes.string,
   petitionId: PropTypes.string,
   decidimAPIUrl: PropTypes.string,
@@ -134,7 +132,6 @@ Home.propTypes = {
 };
 
 Home.defaultProps = {
-  petitionLink: undefined,
   petitionError: undefined,
   decidimAPIUrl: undefined,
   petitionId: undefined,
@@ -142,7 +139,6 @@ Home.defaultProps = {
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.decidimInfo.petitionLink,
   decidimAPIUrl: state.decidimInfo.decidimAPIUrl,
   petitionId: state.decidimInfo.petitionId,
   pinCode: state.authorization.pin,
@@ -156,11 +152,10 @@ const mapDispatchToProps = dispatch => ({
   goToAttributesSummary: () => { dispatch(goToAttributesSummary()); },
   goToPetitionSummary: () => { dispatch(goToPetitionSummary()); },
   goToError: () => { dispatch(goToError()); },
-  getPetition: (decidimClient, petitionLink, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId)), // eslint-disable-line
+  getPetition: (decidimClient, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionId)), // eslint-disable-line
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: pin => dispatch(updatePin(pin)),
   initializeState: async () => {
-    await dispatch(onStartApp());
     await dispatch(setDecidimInfo());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
   },

@@ -16,7 +16,6 @@ describe('AttributesSummary', () => {
   const goToPetitionSummaryMock = jest.fn();
   const initialState = {
     decidimInfo: {
-      petitionLink: 'http://something.com',
       decidimAPIUrl: 'http://decidim.api.com',
     },
     petition: {

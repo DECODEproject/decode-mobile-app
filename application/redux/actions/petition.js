@@ -35,43 +35,16 @@ export function toggleEnableAttribute(attribute) {
     attribute,
   });
 }
-
-async function getPetitionFromDecidimMock(dispatch, getState, petitionLink) {
-  let response;
-  try {
-    response = await fetch(petitionLink);
-  } catch (error) {
-    return dispatch(setPetitionError('Could not retrieve petition details.'));
-  }
-
-  if (!response.ok) {
-    let text = await response.text();
-    if (!text) text = 'Unknown error';
-    return dispatch(setPetitionError(text));
-  }
-  const json = await response.json();
-  const { attributes } = getState();
-  const currentAttributes = attributes ? attributes.list : new Map();
-  return dispatch(setPetition(json, currentAttributes));
-}
-
-async function getPetitionFromDecidim(dispatch, getState, client, decidimAPIUrl, petitionId) {
-  try {
-    const { petition: petitionResult } = await client.fetchPetition(petitionId);
-    const { attributes } = getState();
-    const currentAttributes = attributes ? attributes.list : new Map();
-    return dispatch(setPetition(petitionResult, currentAttributes));
-  } catch (error) {
-    return dispatch(setPetitionError(error.message));
-  }
-}
-
-export function getPetition(decidimClient, petitionLink, decidimAPIUrl, petitionId) {
+export function getPetition(decidimClient, petitionId) {
   return async (dispatch, getState) => {
-    if (!getState().featureToggles.decidimApi) {
-      return getPetitionFromDecidimMock(dispatch, getState, petitionLink);
+    try {
+      const { petition: petitionResult } = await decidimClient.fetchPetition(petitionId);
+      const { attributes } = getState();
+      const currentAttributes = attributes ? attributes.list : new Map();
+      return dispatch(setPetition(petitionResult, currentAttributes));
+    } catch (error) {
+      return dispatch(setPetitionError(error.message));
     }
-    return getPetitionFromDecidim(dispatch, getState, decidimClient, decidimAPIUrl, petitionId);
   };
 }
 
