@@ -160,9 +160,10 @@ describe('attribute action', () => {
     const walletId = 42;
     const someDistrict = '3';
     const someDateOfBirth = '01/01/2000';
+    const setItemAsync = async () => {};
 
     it('should dispatch an action to save date of birth if set', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
 
       const expectedAction = {
         type: types.ADD_OPTIONAL_ATTRIBUTE,
@@ -181,7 +182,7 @@ describe('attribute action', () => {
     });
 
     it('should not dispatch an action to save date of birth if empty', async () => {
-      await store.dispatch(saveAttributes('', someDistrict, walletId));
+      await store.dispatch(saveAttributes('', someDistrict, walletId, setItemAsync));
 
       const containsAddDateOfBirthAction = store.getActions()
         .some(action =>
@@ -191,7 +192,7 @@ describe('attribute action', () => {
     });
 
     it('should dispatch an action to save district if set', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
 
       const expectedAction = {
         type: types.ADD_OPTIONAL_ATTRIBUTE,
@@ -210,7 +211,7 @@ describe('attribute action', () => {
     });
 
     it('should not dispatch an action to save district if empty', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, '', walletId));
+      await store.dispatch(saveAttributes(someDateOfBirth, '', walletId, setItemAsync));
 
       const containsAddDistrictAction = store.getActions()
         .some(action =>
@@ -219,10 +220,43 @@ describe('attribute action', () => {
       expect(containsAddDistrictAction).toEqual(false);
     });
 
-    it('should dispatch an action to store the attributes to local storage');
+    it('should dispatch an action to store the attributes to local storage', async () => {
+      const attributesList = new Map([
+        ['schema:dateOfBirth', {
+          predicate: 'schema:dateOfBirth',
+          object: someDateOfBirth,
+          scope: 'can-access',
+          provenance: {
+            source: 'wallet',
+          },
+          subject: walletId,
+        }],
+      ]);
+      store = mockStore({
+        attributes: {
+          list: attributesList,
+        },
+        navigation: {
+          currentNavigatorUID: 2,
+        },
+      });
+      const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
+
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
+
+      expect(setItemAsync).toBeCalled();
+      expect(setItemAsync).toBeCalledWith('attributes', JSON.stringify([...attributesList.values()]));
+
+      const expectedAction = {
+        type: types.STORE_ATTRIBUTES,
+        attributes: attributesList,
+      };
+      const containsExpectedAction = expect.arrayContaining([expectedAction]);
+      expect(store.getActions()).toEqual(containsExpectedAction);
+    });
 
     it('should navigate to the attributes landing page', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
 
       const navigationAction = store.getActions()
         .find(action => action.type === 'EX_NAVIGATION.PUSH');
@@ -230,7 +264,7 @@ describe('attribute action', () => {
     });
 
     it('should dispatch a SAVE_ATTRIBUTES action', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
 
       const expectedAction = {
         type: types.SAVE_ATTRIBUTES,
