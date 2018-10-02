@@ -165,7 +165,14 @@ describe('attribute action', () => {
     it('should dispatch an action to save district if set');
     it('should not dispatch an action to save district if empty');
     it('should dispatch an action to store the attributes to local storage');
-    it('should navigate to the attributes landing page');
+
+    it('should navigate to the attributes landing page', async () => {
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict));
+
+      const navigationAction = store.getActions()
+        .find(action => action.type === 'EX_NAVIGATION.PUSH');
+      expect(navigationAction.child.routeName).toEqual('attributesLanding');
+    });
 
     it('should dispatch a SAVE_ATTRIBUTES action', async () => {
       await store.dispatch(saveAttributes(someDateOfBirth, someDistrict));
