@@ -180,7 +180,15 @@ describe('attribute action', () => {
       expect(store.getActions()).toEqual(containsExpectedAction);
     });
 
-    it('should not dispatch an action to save date of birth if empty');
+    it('should not dispatch an action to save date of birth if empty', async () => {
+      await store.dispatch(saveAttributes('', someDistrict, walletId));
+
+      const containsAddDateOfBirthAction = store.getActions()
+        .some(action =>
+          action.type === types.ADD_OPTIONAL_ATTRIBUTE
+          && action.attribute.predicate === 'schema:dateOfBirth');
+      expect(containsAddDateOfBirthAction).toEqual(false);
+    });
 
     it('should dispatch an action to save district if set', async () => {
       await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId));
@@ -201,7 +209,16 @@ describe('attribute action', () => {
       expect(store.getActions()).toEqual(containsExpectedAction);
     });
 
-    it('should not dispatch an action to save district if empty');
+    it('should not dispatch an action to save district if empty', async () => {
+      await store.dispatch(saveAttributes(someDateOfBirth, '', walletId));
+
+      const containsAddDistrictAction = store.getActions()
+        .some(action =>
+          action.type === types.ADD_OPTIONAL_ATTRIBUTE
+          && action.attribute.predicate === 'schema:district');
+      expect(containsAddDistrictAction).toEqual(false);
+    });
+
     it('should dispatch an action to store the attributes to local storage');
 
     it('should navigate to the attributes landing page', async () => {

@@ -67,8 +67,12 @@ export function addOptionalAttribute(predicate, object, walletId) {
 
 export function saveAttributes(dateOfBirth, district, walletId) {
   return async (dispatch) => {
-    dispatch(addOptionalAttribute('schema:dateOfBirth', dateOfBirth, walletId));
-    dispatch(addOptionalAttribute('schema:district', district, walletId));
+    if (dateOfBirth) {
+      dispatch(addOptionalAttribute('schema:dateOfBirth', dateOfBirth, walletId));
+    }
+    if (district) {
+      dispatch(addOptionalAttribute('schema:district', district, walletId));
+    }
     dispatch(goToAttributesLanding());
     return dispatch({
       type: types.SAVE_ATTRIBUTES,
