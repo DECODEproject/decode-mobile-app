@@ -21,7 +21,7 @@ class Authorisation extends React.Component {
   }
 
   goToPetitionSummary() {
-    this.props.goToPetitionSummary(this.props.petitionLink);
+    this.props.goToPetitionSummary();
   }
 
   render() {
@@ -42,17 +42,14 @@ class Authorisation extends React.Component {
 
 Authorisation.propTypes = {
   goToPetitionSummary: PropTypes.func.isRequired,
-  petitionLink: PropTypes.string,
   walletId: PropTypes.string,
 };
 
 Authorisation.defaultProps = {
-  petitionLink: undefined,
   walletId: '',
 };
 
 const mapStateToProps = state => ({
-  petitionLink: state.decidimInfo.petitionLink,
   walletId: state.wallet.id,
 });
 

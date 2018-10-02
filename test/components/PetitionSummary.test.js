@@ -28,7 +28,6 @@ describe('The PetitionSummary page', () => {
       signed: false,
     },
     decidimInfo: {
-      petitionLink: 'aLink.com',
       decidimAPIUrl: 'bLink.com',
     },
     attributes: {

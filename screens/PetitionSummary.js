@@ -1,7 +1,8 @@
 import React from 'react';
 import { Constants } from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
-import { Text, View, ScrollView, TouchableOpacity, Image, Linking } from 'react-native';
+import { Text, View, Dimensions, ScrollView, TouchableOpacity, Image, Linking } from 'react-native';
+import HTML from 'react-native-render-html';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
@@ -141,9 +142,11 @@ class PetitionSummary extends React.Component {
     const petitionAttributesTemplate = (
       <View style={styles.petitionSummaryBox}>
         <Text style={styles.petitionSummaryPetitionTitle}>{petition.title}</Text>
-        <Text style={styles.petitionDescription}>
-          {petition.description}
-        </Text>
+        <HTML
+          style={styles.petitionDescription}
+          html={petition.description}
+          imagesMaxWidth={Dimensions.get('window').width}
+        />
         { matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
         <Text>
           {t('optional')}

@@ -18,74 +18,12 @@ jest.mock('../../../../../lib/ZenroomContract.js');
 const mockStore = configureMockStore([thunk]);
 
 describe('getPetition', () => {
-  const petitionLink = 'petitions';
-  const decidimAPIUrl = 'decidim.com';
   const petitionId = '2';
   let store;
 
   afterEach(() => {
     fetchMock.reset();
     fetchMock.restore();
-  });
-
-  describe('feature toggle decidimApi off', () => {
-    beforeEach(() => {
-      store = mockStore({
-        featureToggles: {
-          decidimApi: false,
-        },
-      });
-    });
-
-    it('should dispatch successful action', () => {
-      const petitionFromDecidim = {
-        petition: {
-          id: '2',
-          attributes: {
-            mandatory: [{
-              predicate: 'schema:addressLocality',
-              object: 'Barcelona',
-              scope: 'can-access',
-              credentialIssuer: {
-                url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-              },
-            }],
-            optional: [],
-          },
-        },
-      };
-
-      const expectedActions = [{
-        type: types.SET_PETITION,
-        petition: petitionFromDecidim,
-        walletAttributes: new Map(),
-      }];
-
-      fetchMock.getOnce(petitionLink, petitionFromDecidim);
-
-      return store.dispatch(getPetition(null, petitionLink)).then(() => {
-        expect(store.getActions()).toEqual(expectedActions);
-      });
-    });
-
-    it('should dispatch error action', () => {
-      const errorMessage = 'Internal Server Error';
-
-      const expectedActions = [{
-        type: types.SET_PETITION_ERROR,
-        error: errorMessage,
-      }];
-
-      fetchMock.getOnce(petitionLink, {
-        status: 500,
-        sendAsJson: false,
-        body: errorMessage,
-      });
-
-      return store.dispatch(getPetition(null, petitionLink)).then(() => {
-        expect(store.getActions()).toEqual(expectedActions);
-      });
-    });
   });
 
   describe('feature toggle decidimApi on', () => {
@@ -129,7 +67,7 @@ describe('getPetition', () => {
       }));
 
       const client = new DecidimClient();
-      return store.dispatch(getPetition(client, petitionLink, decidimAPIUrl, petitionId))
+      return store.dispatch(getPetition(client, petitionId))
         .then(() => {
           expect(store.getActions()).toEqual(expectedActions);
         });
@@ -140,7 +78,7 @@ describe('getPetition', () => {
         fetchPetition: () => { throw new FetchPetitionError(); },
       }));
 
-      await store.dispatch(getPetition(new DecidimClient(), petitionLink, petitionId));
+      await store.dispatch(getPetition(new DecidimClient()));
 
       const expectedActions = [{
         type: types.SET_PETITION_ERROR,

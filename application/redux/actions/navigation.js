@@ -9,15 +9,6 @@ export function resetNavigation() {
   };
 }
 
-export function goToAuthorization(petitionLink) {
-  return (dispatch, getState) => {
-    const navigatorUID = getState().navigation.currentNavigatorUID;
-    const route = Router.getRoute('authorisation', { petitionLink });
-    const action = NavigationActions.push(navigatorUID, route);
-    dispatch(action);
-  };
-}
-
 export function goToPetitionSummary() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
@@ -70,7 +61,7 @@ export function goToHome() {
 
 export function goToPilotScreen() {
   return (dispatch, getState) => {
-    const link = getState().decidimInfo.petitionLink;
+    const link = getState().decidimInfo.decidimAPIUrl;
     if (link) {
       dispatch(goToAttributesSummary());
     } else {

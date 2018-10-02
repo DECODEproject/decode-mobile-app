@@ -3,26 +3,14 @@ import types from '../../../../../application/redux/actionTypes';
 
 describe('decidimInfo reducer', () => {
   const someInitialState = {
-    petitionLink: 'someOldPetitionLink',
     decidimAPIUrl: 'someOldDecidimApiUrl',
     petitionId: '1',
   };
 
   it('should return the initial state', () => {
     expect(reducer(undefined, {})).toEqual({
-      petitionLink: undefined,
       decidimAPIUrl: undefined,
       petitionId: undefined,
-    });
-  });
-
-  it('should handle SET_PETITION_LINK', () => {
-    const somePetitionLink = 'someLink.com';
-    const initialPetition = { type: types.SET_PETITION_LINK, petitionLink: somePetitionLink };
-
-    expect(reducer(someInitialState, initialPetition)).toEqual({
-      ...someInitialState,
-      petitionLink: somePetitionLink,
     });
   });
 
