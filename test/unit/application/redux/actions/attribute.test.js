@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { saveDateOfBirth, addCredentialFromUrl, storeCredentials, addCredential, loadCredentials } from '../../../../../application/redux/actions/attributes';
+import { saveAttributes, saveDateOfBirth, addCredentialFromUrl, storeCredentials, addCredential, loadCredentials } from '../../../../../application/redux/actions/attributes';
 import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
@@ -154,6 +154,39 @@ describe('attribute action', () => {
         [barcelonaResidencyAttribute.predicate, barcelonaResidencyAttribute],
       ]),
     }]);
+  });
+
+  describe('save attributes', () => {
+    const someDistrict = '42';
+    const someDateOfBirth = '01/01/2000';
+
+    it('should dispatch an action to save date of birth if set');
+    it('should not dispatch an action to save date of birth if empty');
+    it('should dispatch an action to save district if set');
+    it('should not dispatch an action to save district if empty');
+    it('should dispatch an action to store the attributes to local storage');
+
+    it('should navigate to the attributes landing page', async () => {
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict));
+
+      const navigationAction = store.getActions()
+        .find(action => action.type === 'EX_NAVIGATION.PUSH');
+      expect(navigationAction.child.routeName).toEqual('attributesLanding');
+    });
+
+    it('should dispatch a SAVE_ATTRIBUTES action', async () => {
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict));
+
+      const expectedAction = {
+        type: types.SAVE_ATTRIBUTES,
+        dateOfBirth: someDateOfBirth,
+        district: someDistrict,
+      };
+      expect(store.getActions()).toEqual(expect.arrayContaining([expectedAction]));
+    });
+
+    it('should dispatch and return a SAVE_ATTRIBUTES_ERROR action if failed');
+    it('should dispatch a RESET_DATE_OF_BIRTH_ERRORS action');
   });
 
   describe('save date of birth', () => {
