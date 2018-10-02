@@ -240,12 +240,12 @@ describe('attribute action', () => {
           currentNavigatorUID: 2,
         },
       });
-      const setItemAsync = jest.fn().mockReturnValue(Promise.resolve(0));
+      const mockedSetItem = jest.fn().mockReturnValue(Promise.resolve(0));
 
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, mockedSetItem));
 
-      expect(setItemAsync).toBeCalled();
-      expect(setItemAsync).toBeCalledWith('attributes', JSON.stringify([...attributesList.values()]));
+      expect(mockedSetItem).toBeCalled();
+      expect(mockedSetItem).toBeCalledWith('attributes', JSON.stringify([...attributesList.values()]));
 
       const expectedAction = {
         type: types.STORE_ATTRIBUTES,
