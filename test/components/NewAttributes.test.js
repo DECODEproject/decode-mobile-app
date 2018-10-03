@@ -17,6 +17,7 @@ describe('NewAttributes', () => {
       const initialState = {
         attributes: {
           list: new Map(),
+          errorSaveAttributes: false,
         },
         wallet: {
           id: 'something',
@@ -42,6 +43,7 @@ describe('NewAttributes', () => {
           list: new Map([['schema:dateOfBirth', {
             object: '20/08/2018',
           }]]),
+          errorSaveAttributes: false,
         },
         wallet: {
           id: 'something',
@@ -65,6 +67,7 @@ describe('NewAttributes', () => {
       const initialState = {
         attributes: {
           list: new Map(),
+          errorSaveAttributes: false,
         },
         wallet: {
           id: 'something',
@@ -94,6 +97,7 @@ describe('NewAttributes', () => {
       const initialState = {
         attributes: {
           list: new Map(),
+          errorSaveAttributes: false,
         },
         wallet: {
           id: 'something',
@@ -117,6 +121,7 @@ describe('NewAttributes', () => {
       const initialState = {
         attributes: {
           list: new Map([['schema:district', { object: '4' }]]),
+          errorSaveAttributes: false,
         },
         wallet: {
           id: 'something',
@@ -140,6 +145,7 @@ describe('NewAttributes', () => {
       const initialState = {
         attributes: {
           list: new Map(),
+          errorSaveAttributes: false,
         },
         wallet: {
           id: 'something',
@@ -175,6 +181,7 @@ describe('NewAttributes', () => {
         },
         attributes: {
           list: new Map(),
+          errorSaveAttributes: false,
         },
       };
       const store = mockStore(initialState);

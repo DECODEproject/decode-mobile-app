@@ -57,6 +57,9 @@ class NewAttributes extends Component {
   )
 
   render() {
+    if (this.props.errorSaveAttributes) {
+      alert('ERROR');
+    }
     return (
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
         <View style={styles.attributesManagementContainer}>
@@ -136,6 +139,7 @@ NewAttributes.propTypes = {
   t: PropTypes.func.isRequired,
   saveAttributes: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
+  errorSaveAttributes: PropTypes.bool.isRequired,
   currentDateAttr: PropTypes.shape({
     object: PropTypes.string,
   }),
@@ -157,6 +161,7 @@ const mapStateToProps = state => ({
   walletId: state.wallet.id,
   currentDateAttr: state.attributes.list.get('schema:dateOfBirth'),
   districtAttr: state.attributes.list.get('schema:district'),
+  errorSaveAttributes: state.attributes.errorSaveAttributes,
 });
 
 const mapDispatchToProps = dispatch => ({
