@@ -10,6 +10,7 @@ import { SecureStore } from 'expo';
 import Button from '../application/components/Button/Button';
 import LinkButton from '../application/components/LinkButton/LinkButton';
 import { saveAttributes } from '../application/redux/actions/attributes';
+import { sortedDistrictsList, districtNameFromId } from '../lib/districts';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -50,18 +51,10 @@ class NewAttributes extends Component {
     });
   }
 
-  districtsList = () => [
-    { label: 'Ciutat Vella', value: '1' },
-    { label: 'Eixample', value: '2' },
-    { label: 'Gràcia', value: '6' },
-    { label: 'Horta-Guinardó', value: '7' },
-    { label: 'Les Corts', value: '4' },
-    { label: 'Nou Barris', value: '8' },
-    { label: 'Sant Andreu', value: '9' },
-    { label: 'Sant Martí', value: '10' },
-    { label: 'Sants-Montjuïc', value: '3' },
-    { label: 'Sarrià-Sant Gervasi', value: '5' },
-  ]
+  districtsList = () => (
+    sortedDistrictsList()
+      .map(district => ({ label: district[1], value: district[0] }))
+  )
 
   render() {
     return (
@@ -112,7 +105,7 @@ class NewAttributes extends Component {
                 id="district-info"
                 style={styles.newAttributesAttributeValue}
               >
-                { this.state.district }
+                { districtNameFromId(this.state.district) }
               </Text>
             </View>
           </View>

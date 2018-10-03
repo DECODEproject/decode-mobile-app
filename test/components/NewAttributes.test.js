@@ -110,13 +110,13 @@ describe('NewAttributes', () => {
       const info = wrapper.dive().find({ id: 'district-info' });
 
       expect(button.prop('name')).toEqual('Agregar');
-      expect(info.prop('children')).toEqual('');
+      expect(info.prop('children')).toEqual(undefined);
     });
 
     it('should show edit button when district attribute is stored', () => {
       const initialState = {
         attributes: {
-          list: new Map([['schema:district', { object: '3' }]]),
+          list: new Map([['schema:district', { object: '4' }]]),
         },
         wallet: {
           id: 'something',
@@ -133,7 +133,7 @@ describe('NewAttributes', () => {
       const info = wrapper.dive().find({ id: 'district-info' });
 
       expect(button.prop('name')).toEqual('Editar');
-      expect(info.prop('children')).toEqual('3');
+      expect(info.prop('children')).toEqual('Les Corts');
     });
 
     it('should change state when setting district through modal', () => {
