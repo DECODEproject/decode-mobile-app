@@ -81,5 +81,6 @@ export default {
     addressLocality: 'Residència',
     dateOfBirth: 'Data de Naixement',
     gender: 'Gènere',
+    district: 'Districte',
   },
 };

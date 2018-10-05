@@ -12,6 +12,7 @@ import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import { getWalletProxyUrl, getChainspaceUrl } from '../config';
 import openPetitionInBrowser from '../application/utils';
+import { districtNameFromId } from '../lib/districts';
 import styles from './styles';
 import i18n from '../i18n';
 import {
@@ -111,6 +112,10 @@ class PetitionSummary extends React.Component {
 
     if (attr.predicate === 'schema:dateOfBirth') {
       valueToShow = formAgeRange(attr);
+    }
+
+    if (attr.predicate === 'schema:district') {
+      valueToShow = districtNameFromId(attr.object);
     }
 
     return (<AttributeComponent
