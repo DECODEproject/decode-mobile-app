@@ -84,8 +84,6 @@ class NewAttributes extends Component {
                 { this.state.currentDate }
               </Text>
             </View>
-          </View>
-          <View style={{ flex: 1 }}>
             <View style={styles.newAttributesAttribute}>
               <Text style={styles.newAttributesAttributeName}>{this.props.t('districtAttribute')}</Text>
               <Picker
@@ -94,6 +92,7 @@ class NewAttributes extends Component {
                 items={this.districtsList()}
                 onValueChange={this.onSetDistrict}
                 value={this.state.district}
+                style={{ viewContainer: { alignSelf: 'center' } }}
               >
                 <LinkButton
                   id="district-action-button"
