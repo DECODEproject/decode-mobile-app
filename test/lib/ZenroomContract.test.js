@@ -11,7 +11,7 @@ jest.mock('../../lib/ZenroomExecutor.js');
 
 describe('ZenroomContract', () => {
   describe('addSignature', () => {
-    const yesAnyAnySignature = new Signature('YES', 'ANY', 'ANY');
+    const yesAnyAnySignature = new Signature('YES', 'ANY', 'ANY', 'ANY');
     const currentOutputs = ['{"type": "PetitionEncToken"}', '{"public": "...."}'];
 
     it('should call Zenroom Executor with the correct parameters', async () => {
@@ -27,7 +27,7 @@ describe('ZenroomContract', () => {
 
       const data = {
         public: '....',
-        option: 'YES-ANY-ANY',
+        option: 'YES-ANY-ANY-ANY',
       };
 
       await zenroomContract.addSignature(yesAnyAnySignature, currentOutputs);

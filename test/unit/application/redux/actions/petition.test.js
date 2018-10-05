@@ -199,6 +199,7 @@ describe('signPetition', () => {
     const vote = 'yes';
     const age = '0-19';
     const gender = 'undisclosed';
+    const district = '1';
 
     const expectedTransaction = new Transaction({ outputs: [] });
 
@@ -239,6 +240,7 @@ describe('signPetition', () => {
         vote,
         age,
         gender,
+        district,
         new ChainspaceClient(),
         zenroomContract,
       )).then(() => {
@@ -264,6 +266,7 @@ describe('signPetition', () => {
         vote,
         age,
         gender,
+        district,
         new ChainspaceClient(),
       )).then(() => {
         expect(store.getActions()).toEqual(expectedActions);
@@ -289,6 +292,7 @@ describe('signPetition', () => {
         vote,
         age,
         gender,
+        district,
         chainspaceClient,
         zenroomContract,
       )).then(() => {
