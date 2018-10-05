@@ -86,13 +86,13 @@ async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenro
   return dispatch(signPetitionAction());
 }
 
-export function signPetition(petition, walletId, walletProxyLink, vote, age, gender, chainspaceClient, zenroomContract) { //eslint-disable-line
+export function signPetition(petition, walletId, walletProxyLink, vote, age, gender, district, chainspaceClient, zenroomContract) { //eslint-disable-line
   return async (dispatch, getState) => {
     if (!getState().featureToggles.zenroom) {
       return signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender);
     }
     const contractId = 'zenroom_petition';
-    const signature = new Signature(vote, gender, age);
+    const signature = new Signature(vote, gender, age, district);
     return signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature);
   };
 }

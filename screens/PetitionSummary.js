@@ -84,9 +84,11 @@ class PetitionSummary extends React.Component {
 
     const ageAttribute = findAttribute('schema:dateOfBirth', attributes);
     const genderAttribute = findAttribute('schema:gender', attributes);
+    const districtAttribute = findAttribute('schema:district', attributes);
 
     const age = formAge(ageAttribute, this.state.enabledAttributes);
     const gender = getEnabledAttributeValue(genderAttribute, this.state.enabledAttributes);
+    const district = getEnabledAttributeValue(districtAttribute, this.state.enabledAttributes);
 
     await this.props.signPetition(
       petition,
@@ -94,6 +96,7 @@ class PetitionSummary extends React.Component {
       vote,
       age,
       gender,
+      district,
       this.props.chainspaceClient,
       this.props.zenroomContract,
     );
@@ -242,7 +245,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
-  signPetition: (petition, walletId, vote, age, gender, chainspaceClient, zenroomContract) => dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender, chainspaceClient, zenroomContract)), // eslint-disable-line
+  signPetition: (petition, walletId, vote, age, gender, district, chainspaceClient, zenroomContract) => dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender, district, chainspaceClient, zenroomContract)), // eslint-disable-line
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));
