@@ -100,7 +100,7 @@ apply from: 'expo.gradle'
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+  implementation fileTree(dir: 'jniLibs', include: ['.so'])
   implementation 'com.android.support:multidex:1.0.1'
 
   // Our dependencies

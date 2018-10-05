@@ -4,18 +4,26 @@
     "icon": "./assets/decode_ic_launcher.png",
     "slug": "decode-walletapp",
     "version": "0.1.2",
-    "sdkVersion": "28.0.0",
+    "sdkVersion": "30.0.0",
     "orientation": "portrait",
     "scheme": "decodewallet",
     "ios": {
       "buildNumber": "1.0.8",
-      "bundleIdentifier": "com.decode.wallet-app"
+      "bundleIdentifier": "com.decode.wallet-app",
+      "publishBundlePath": "ios/decode-app/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/decode-app/Supporting/shell-app-manifest.json"
     },
     "android": {
       "versionCode": 2,
       "permissions": [],
-      "package": "com.decode.walletapp"
+      "package": "com.decode.walletapp",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
+    },
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.8.4-sdk30.0.0-3de13133-1adc-4ba1-8569-a84011e570b4.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.8.1-sdk30.0.0-271c32ab-0715-4dfb-8270-ecead3679bb4.tar.gz"
     }
-  },
-  "privacy": "unlisted"
+  }
 }
