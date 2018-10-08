@@ -15,9 +15,6 @@ const verifiedRender = () => (
       source={verifiedIcon}
       resizeMode="contain"
     />
-    <Text style={{ color: '#7ED321', marginLeft: 3 }}>
-      Verified
-    </Text>
   </View>
 );
 
