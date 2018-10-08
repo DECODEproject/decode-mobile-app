@@ -12159,7 +12159,6 @@ Haz click en botón inferior para empezar",
                 Object {
                   "color": "rgba(0, 0, 0, 0.87)",
                   "fontSize": 14,
-                  "height": 50,
                   "lineHeight": 20,
                   "marginBottom": 15,
                 }
@@ -12358,7 +12357,6 @@ Haz click en botón inferior para empezar",
                   Object {
                     "color": "rgba(0, 0, 0, 0.87)",
                     "fontSize": 14,
-                    "height": 50,
                     "lineHeight": 20,
                     "marginBottom": 15,
                   }
@@ -12520,7 +12518,6 @@ Haz click en botón inferior para empezar",
                     Object {
                       "color": "rgba(0, 0, 0, 0.87)",
                       "fontSize": 14,
-                      "height": 50,
                       "lineHeight": 20,
                       "marginBottom": 15,
                     }
@@ -12639,7 +12636,6 @@ Haz click en botón inferior para empezar",
                   "style": Object {
                     "color": "rgba(0, 0, 0, 0.87)",
                     "fontSize": 14,
-                    "height": 50,
                     "lineHeight": 20,
                     "marginBottom": 15,
                   },
@@ -12893,7 +12889,6 @@ Haz click en botón inferior para empezar",
                   Object {
                     "color": "rgba(0, 0, 0, 0.87)",
                     "fontSize": 14,
-                    "height": 50,
                     "lineHeight": 20,
                     "marginBottom": 15,
                   }
@@ -13092,7 +13087,6 @@ Haz click en botón inferior para empezar",
                     Object {
                       "color": "rgba(0, 0, 0, 0.87)",
                       "fontSize": 14,
-                      "height": 50,
                       "lineHeight": 20,
                       "marginBottom": 15,
                     }
@@ -13254,7 +13248,6 @@ Haz click en botón inferior para empezar",
                       Object {
                         "color": "rgba(0, 0, 0, 0.87)",
                         "fontSize": 14,
-                        "height": 50,
                         "lineHeight": 20,
                         "marginBottom": 15,
                       }
@@ -13373,7 +13366,6 @@ Haz click en botón inferior para empezar",
                     "style": Object {
                       "color": "rgba(0, 0, 0, 0.87)",
                       "fontSize": 14,
-                      "height": 50,
                       "lineHeight": 20,
                       "marginBottom": 15,
                     },
@@ -25662,7 +25654,6 @@ Haz click en botón inferior para empezar",
                 Object {
                   "color": "rgba(0, 0, 0, 0.87)",
                   "fontSize": 14,
-                  "height": 50,
                   "lineHeight": 20,
                   "marginBottom": 15,
                 }
@@ -25861,7 +25852,6 @@ Haz click en botón inferior para empezar",
                   Object {
                     "color": "rgba(0, 0, 0, 0.87)",
                     "fontSize": 14,
-                    "height": 50,
                     "lineHeight": 20,
                     "marginBottom": 15,
                   }
@@ -26023,7 +26013,6 @@ Haz click en botón inferior para empezar",
                     Object {
                       "color": "rgba(0, 0, 0, 0.87)",
                       "fontSize": 14,
-                      "height": 50,
                       "lineHeight": 20,
                       "marginBottom": 15,
                     }
@@ -26142,7 +26131,6 @@ Haz click en botón inferior para empezar",
                   "style": Object {
                     "color": "rgba(0, 0, 0, 0.87)",
                     "fontSize": 14,
-                    "height": 50,
                     "lineHeight": 20,
                     "marginBottom": 15,
                   },
@@ -26396,7 +26384,6 @@ Haz click en botón inferior para empezar",
                   Object {
                     "color": "rgba(0, 0, 0, 0.87)",
                     "fontSize": 14,
-                    "height": 50,
                     "lineHeight": 20,
                     "marginBottom": 15,
                   }
@@ -26595,7 +26582,6 @@ Haz click en botón inferior para empezar",
                     Object {
                       "color": "rgba(0, 0, 0, 0.87)",
                       "fontSize": 14,
-                      "height": 50,
                       "lineHeight": 20,
                       "marginBottom": 15,
                     }
@@ -26757,7 +26743,6 @@ Haz click en botón inferior para empezar",
                       Object {
                         "color": "rgba(0, 0, 0, 0.87)",
                         "fontSize": 14,
-                        "height": 50,
                         "lineHeight": 20,
                         "marginBottom": 15,
                       }
@@ -26876,7 +26861,6 @@ Haz click en botón inferior para empezar",
                     "style": Object {
                       "color": "rgba(0, 0, 0, 0.87)",
                       "fontSize": 14,
-                      "height": 50,
                       "lineHeight": 20,
                       "marginBottom": 15,
                     },

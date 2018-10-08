@@ -7,10 +7,11 @@ import LinkButton from '../../application/components/LinkButton/LinkButton';
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('PetitionDescription', () => {
+  const title = 'title'
   const description = 'a'.repeat(150);
 
   it('should initially show a partial description and a "Read more" button', () => {
-    const wrapper = shallow(<PetitionDescription description={description} />);
+    const wrapper = shallow(<PetitionDescription title={title} description={description} />);
 
     const partialDescription = wrapper.find({ id: 'description-text' }).props().html;
     const descriptionWithoutEllipsis = partialDescription.replace('&hellip;', '');
@@ -21,7 +22,7 @@ describe('PetitionDescription', () => {
   });
 
   it('should show a full description after clicking "Read more"', () => {
-    const wrapper = shallow(<PetitionDescription description={description} />);
+    const wrapper = shallow(<PetitionDescription title={title} description={description} />);
 
     const readMoreButton = wrapper.find(LinkButton).findWhere(b => b.props().name === 'Read more');
     readMoreButton.props().onPress();

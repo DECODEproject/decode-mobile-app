@@ -56,8 +56,9 @@ class AttributesSummary extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, padding: 26 }}>
         <PetitionDescription
+          title={this.props.petition.title}
           description={this.props.petition.description}
         />
 

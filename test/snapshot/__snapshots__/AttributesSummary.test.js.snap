@@ -11994,7 +11994,8 @@ Haz click en botón inferior para empezar",
     "props": Object {
       "children": Array [
         <PetitionDescription
-          description=""
+          description={undefined}
+          title={undefined}
         />,
         <Component
           style={
@@ -12097,6 +12098,7 @@ Haz click en botón inferior para empezar",
       ],
       "style": Object {
         "flex": 1,
+        "padding": 26,
       },
     },
     "ref": null,
@@ -12106,7 +12108,8 @@ Haz click en botón inferior para empezar",
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "description": "",
+          "description": undefined,
+          "title": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -12339,7 +12342,8 @@ Haz click en botón inferior para empezar",
       "props": Object {
         "children": Array [
           <PetitionDescription
-            description=""
+            description={undefined}
+            title={undefined}
           />,
           <Component
             style={
@@ -12442,6 +12446,7 @@ Haz click en botón inferior para empezar",
         ],
         "style": Object {
           "flex": 1,
+          "padding": 26,
         },
       },
       "ref": null,
@@ -12451,7 +12456,8 @@ Haz click en botón inferior para empezar",
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "description": "",
+            "description": undefined,
+            "title": undefined,
           },
           "ref": null,
           "rendered": null,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Image, View } from 'react-native';
+import { Dimensions, Image, View, Text } from 'react-native';
 import PropTypes from 'prop-types';
 import HTML from 'react-native-render-html';
 import styles from '../../../screens/styles';
@@ -16,7 +16,8 @@ class PetitionDescription extends React.Component {
   }
 
   renderPartialDescriptionText = () => (
-    <View>
+    <View style={{ flex: 1, marginLeft: 10 }}>
+      <Text style={{fontWeight: 'bold'}}>{this.props.title}</Text>
       <HTML
         id="description-text"
         style={styles.petitionDescription}
@@ -32,7 +33,8 @@ class PetitionDescription extends React.Component {
 
 
   renderFullDescriptionText = () => (
-    <View>
+    <View style={{ flex: 1, marginLeft: 10 }}>
+      <Text style={{fontWeight: 'bold'}}>{this.props.title}</Text>
       <HTML
         id="description-text"
         style={styles.petitionDescription}
@@ -44,7 +46,7 @@ class PetitionDescription extends React.Component {
 
   render() {
     return (
-      <View>
+      <View style={{ display: 'flex', flexDirection: 'row' }}>
         <Image
           source={fallbackImage}
           style={{ width: 64, height: 64 }}
@@ -58,6 +60,7 @@ class PetitionDescription extends React.Component {
 }
 
 PetitionDescription.propTypes = {
+  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
 
