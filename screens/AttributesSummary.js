@@ -6,12 +6,12 @@ import { Linking, View, Text, Image, TouchableOpacity } from 'react-native';
 import { translate } from 'react-i18next';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
+import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import { addCredential } from '../application/redux/actions/attributes';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
 
-const decodeUser = require('../assets/images/decode-user.png');
 const backArrowIcon = require('../assets/images/ico-back-button.png');
 
 const backToPetitionInBrowser = (petitionId) => {
@@ -57,27 +57,9 @@ class AttributesSummary extends React.Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <View style={{ backgroundColor: '#13A398', flex: 1.5 }}>
-          <Image
-            style={{
-              height: 100,
-              alignSelf: 'center',
-              resizeMode: 'contain',
-              marginVertical: 20,
-            }}
-            source={decodeUser}
-          />
-          <Text
-            style={{
-              alignSelf: 'center',
-              fontSize: 16,
-              fontWeight: '700',
-              color: 'white',
-            }}
-          >
-            Isabel Dominguez
-          </Text>
-        </View>
+        <PetitionDescription
+          description={this.props.petition.description}
+        />
 
         <View style={{ flex: 1 }}>
           <Text style={{

@@ -11993,41 +11993,9 @@ Haz click en botón inferior para empezar",
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Component
-          style={
-            Object {
-              "backgroundColor": "#13A398",
-              "flex": 1.5,
-            }
-          }
-        >
-          <Image
-            source={1}
-            style={
-              Object {
-                "alignSelf": "center",
-                "height": 100,
-                "marginVertical": 20,
-                "resizeMode": "contain",
-              }
-            }
-          />
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "alignSelf": "center",
-                "color": "white",
-                "fontSize": 16,
-                "fontWeight": "700",
-              }
-            }
-          >
-            Isabel Dominguez
-          </Text>
-        </Component>,
+        <PetitionDescription
+          description=""
+        />,
         <Component
           style={
             Object {
@@ -12138,79 +12106,10 @@ Haz click en botón inferior para empezar",
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <Image
-              source={1}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "height": 100,
-                  "marginVertical": 20,
-                  "resizeMode": "contain",
-                }
-              }
-            />,
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "white",
-                  "fontSize": 16,
-                  "fontWeight": "700",
-                }
-              }
-            >
-              Isabel Dominguez
-            </Text>,
-          ],
-          "style": Object {
-            "backgroundColor": "#13A398",
-            "flex": 1.5,
-          },
+          "description": "",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "source": 1,
-              "style": Object {
-                "alignSelf": "center",
-                "height": 100,
-                "marginVertical": 20,
-                "resizeMode": "contain",
-              },
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "Isabel Dominguez",
-              "ellipsizeMode": "tail",
-              "style": Object {
-                "alignSelf": "center",
-                "color": "white",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-            },
-            "ref": null,
-            "rendered": "Isabel Dominguez",
-            "type": [Function],
-          },
-        ],
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -12439,41 +12338,9 @@ Haz click en botón inferior para empezar",
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Component
-            style={
-              Object {
-                "backgroundColor": "#13A398",
-                "flex": 1.5,
-              }
-            }
-          >
-            <Image
-              source={1}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "height": 100,
-                  "marginVertical": 20,
-                  "resizeMode": "contain",
-                }
-              }
-            />
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "white",
-                  "fontSize": 16,
-                  "fontWeight": "700",
-                }
-              }
-            >
-              Isabel Dominguez
-            </Text>
-          </Component>,
+          <PetitionDescription
+            description=""
+          />,
           <Component
             style={
               Object {
@@ -12584,79 +12451,10 @@ Haz click en botón inferior para empezar",
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Image
-                source={1}
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "height": 100,
-                    "marginVertical": 20,
-                    "resizeMode": "contain",
-                  }
-                }
-              />,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "color": "white",
-                    "fontSize": 16,
-                    "fontWeight": "700",
-                  }
-                }
-              >
-                Isabel Dominguez
-              </Text>,
-            ],
-            "style": Object {
-              "backgroundColor": "#13A398",
-              "flex": 1.5,
-            },
+            "description": "",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "source": 1,
-                "style": Object {
-                  "alignSelf": "center",
-                  "height": 100,
-                  "marginVertical": 20,
-                  "resizeMode": "contain",
-                },
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "Isabel Dominguez",
-                "ellipsizeMode": "tail",
-                "style": Object {
-                  "alignSelf": "center",
-                  "color": "white",
-                  "fontSize": 16,
-                  "fontWeight": "700",
-                },
-              },
-              "ref": null,
-              "rendered": "Isabel Dominguez",
-              "type": [Function],
-            },
-          ],
+          "rendered": null,
           "type": [Function],
         },
         Object {
