@@ -7,7 +7,7 @@ import LinkButton from '../../application/components/LinkButton/LinkButton';
 Enzyme.configure({ adapter: new Adapter() });
 
 describe('PetitionDescription', () => {
-  const title = 'title'
+  const title = 'title';
   const description = 'a'.repeat(150);
 
   it('should initially show a partial description and a "Read more" button', () => {

@@ -17,7 +17,7 @@ class PetitionDescription extends React.Component {
 
   renderPartialDescriptionText = () => (
     <View style={{ flex: 1, marginLeft: 10 }}>
-      <Text style={{fontWeight: 'bold'}}>{this.props.title}</Text>
+      <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
       <HTML
         id="description-text"
         style={styles.petitionDescription}
@@ -34,7 +34,7 @@ class PetitionDescription extends React.Component {
 
   renderFullDescriptionText = () => (
     <View style={{ flex: 1, marginLeft: 10 }}>
-      <Text style={{fontWeight: 'bold'}}>{this.props.title}</Text>
+      <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
       <HTML
         id="description-text"
         style={styles.petitionDescription}
