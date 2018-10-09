@@ -53,8 +53,11 @@ The project is separated into 6 main sections
 | */application/redux*      | State management |
 | */screens*                | Page components |
 | */translations*           | Translation files |
-| */tests*                  | Test files |
 | */lib*                    | Application logic |
+| */test/acceptance*        | Attempt at writing a high level test |
+| */test/components*        | Component tests |
+| */test/snapshot*          | Snapshot tests |
+| */test/unit*              | Unit test files for Application logic and Redux actions and reducers |
 
 
 ### Dependencies
