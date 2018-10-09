@@ -126,9 +126,12 @@ In order to simplify the necessary commands to setup the app, we use Make.
 npm install -g exp
 ```
 
-#### Setup with Node 10~
+- [Node](https://nodejs.org)
 
-##### Running
+Version 8
+
+
+##### Install dependencies
 
 In a terminal window run:
 ```
@@ -151,32 +154,19 @@ npm test-watch
 npm run lint
 ```
 
-#### Setup with Node 8~
+##### NOTE: 
 
-##### Running
+All of these commands we also have them so that they can be run inside a Docker container that uses Node 10:
 
-In a terminal window run:
 ```
 make build
-```
 
-##### Testing
-
-```
 make test
-```
-or
-```
+
 make test/watch
-```
 
-##### Linting
-
-```
 make lint
 ```
-
-
 
 #### Launching the Emulator
 
@@ -232,10 +222,12 @@ expo build:android
 
 Once you have the apk, follow the normal process for uploading apps to Google Play.
 
-NOTE: We have had trouble when publishing to Google Play in the past. The links we use in the app do not work the same way as they had in Expo, with no solution to be found. If the issue doesn't get resolved in Expo, the app might have to be ejected.
+##### NOTE: 
+
+We have had trouble when publishing to Google Play in the past. The links we use in the app do not work the same way as they had in Expo, with no solution to be found. If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 ## Future Development 
 
-
+[TO DO]
 
 
