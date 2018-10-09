@@ -208,7 +208,7 @@ Before publishing, you must update the build number in app.json
 In order to generate the files necessary for publishing run the following command
 
 ```
-expo build:ios
+exp build:ios
 ```
 
 Once you have the ipa, follow the normal process for uploading apps to the apple store or test flight. 
@@ -220,7 +220,7 @@ Before publishing, you must update the version code in app.json
 In order to generate the files necessary for publishing run the following command
 
 ```
-expo build:android
+exp build:android
 ```
 
 Once you have the apk, follow the normal process for uploading apps to Google Play.
