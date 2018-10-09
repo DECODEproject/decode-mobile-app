@@ -22,6 +22,8 @@ describe('AttributesSummary', () => {
       petitionAttributes: [],
       petition: {
         id: '2',
+        title: 'title',
+        description: 'a'.repeat(150),
       },
     },
     attributes: {
@@ -56,13 +58,13 @@ describe('AttributesSummary', () => {
     });
 
     it('should show the title of the petition', () => {
-      const title = 'Petition Title';
+      const title = 'title';
       const state = {
         ...initialState,
         petition: {
           petition: {
-            title,
-            description: 'world',
+            title: 'title',
+            description: 'a'.repeat(150),
             closingDate: 'today',
             id: '1234',
           },
@@ -128,6 +130,8 @@ describe('AttributesSummary', () => {
       const residencyAttribute = {};
       const somePetition = {
         id: '2',
+        title: 'title',
+        description: 'a'.repeat(150),
         attributes: {
           mandatory: [residencyAttribute],
           optional: [],

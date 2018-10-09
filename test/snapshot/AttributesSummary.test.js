@@ -18,6 +18,8 @@ const initialState = {
     petitionAttributes: [],
     petition: {
       id: '2',
+      title: 'title',
+      description: 'a'.repeat(150),
     },
   },
   attributes: {

@@ -11973,7 +11973,9 @@ Haz click en botón inferior para empezar",
     }
     petition={
       Object {
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
         "id": "2",
+        "title": "title",
       }
     }
     t={[Function]}
@@ -11994,8 +11996,8 @@ Haz click en botón inferior para empezar",
     "props": Object {
       "children": Array [
         <PetitionDescription
-          description={undefined}
-          title={undefined}
+          description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+          title="title"
         />,
         <Component
           style={
@@ -12016,7 +12018,9 @@ Haz click en botón inferior para empezar",
                 "marginTop": 30,
               }
             }
-          />
+          >
+            title
+          </Text>
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -12108,8 +12112,8 @@ Haz click en botón inferior para empezar",
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "description": undefined,
-          "title": undefined,
+          "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "title": "title",
         },
         "ref": null,
         "rendered": null,
@@ -12133,7 +12137,9 @@ Haz click en botón inferior para empezar",
                   "marginTop": 30,
                 }
               }
-            />,
+            >
+              title
+            </Text>,
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -12179,7 +12185,7 @@ Haz click en botón inferior para empezar",
             "props": Object {
               "accessible": true,
               "allowFontScaling": true,
-              "children": undefined,
+              "children": "title",
               "ellipsizeMode": "tail",
               "style": Object {
                 "color": "#13A398",
@@ -12189,7 +12195,7 @@ Haz click en botón inferior para empezar",
               },
             },
             "ref": null,
-            "rendered": null,
+            "rendered": "title",
             "type": [Function],
           },
           Object {
@@ -12342,8 +12348,8 @@ Haz click en botón inferior para empezar",
       "props": Object {
         "children": Array [
           <PetitionDescription
-            description={undefined}
-            title={undefined}
+            description="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            title="title"
           />,
           <Component
             style={
@@ -12364,7 +12370,9 @@ Haz click en botón inferior para empezar",
                   "marginTop": 30,
                 }
               }
-            />
+            >
+              title
+            </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -12456,8 +12464,8 @@ Haz click en botón inferior para empezar",
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "description": undefined,
-            "title": undefined,
+            "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "title": "title",
           },
           "ref": null,
           "rendered": null,
@@ -12481,7 +12489,9 @@ Haz click en botón inferior para empezar",
                     "marginTop": 30,
                   }
                 }
-              />,
+              >
+                title
+              </Text>,
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -12527,7 +12537,7 @@ Haz click en botón inferior para empezar",
               "props": Object {
                 "accessible": true,
                 "allowFontScaling": true,
-                "children": undefined,
+                "children": "title",
                 "ellipsizeMode": "tail",
                 "style": Object {
                   "color": "#13A398",
@@ -12537,7 +12547,7 @@ Haz click en botón inferior para empezar",
                 },
               },
               "ref": null,
-              "rendered": null,
+              "rendered": "title",
               "type": [Function],
             },
             Object {
