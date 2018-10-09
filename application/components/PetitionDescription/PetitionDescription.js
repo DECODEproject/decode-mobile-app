@@ -58,7 +58,7 @@ class PetitionDescription extends React.Component {
 
   render() {
     return (
-      <View style={{ display: 'flex', flexDirection: 'row' }}>
+      <View style={{ flexDirection: 'row' }}>
         <Image
           source={fallbackImage}
           style={{ width: 64, height: 64 }}

@@ -12322,10 +12322,38 @@ Haz click en botón inferior para empezar",
         <Component
           style={
             Object {
-              "flex": 1,
+              "alignItems": "center",
+              "flex": 0.5,
+              "justifyContent": "flex-end",
+              "paddingBottom": 20,
             }
           }
         >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#9B9B9B",
+                "fontSize": 14,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#D0021B",
+                }
+              }
+            >
+              *
+            </Text>
+             This data is required to sign the petition.
+          </Text>
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -12438,52 +12466,135 @@ Haz click en botón inferior para empezar",
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            onPress={[Function]}
-            style={
+          "children": Array [
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#9B9B9B",
+                  "fontSize": 14,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#D0021B",
+                  }
+                }
+              >
+                *
+              </Text>
+               This data is required to sign the petition.
+            </Text>,
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "#00F",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "marginVertical": 20,
+                  "textDecorationLine": "underline",
+                }
+              }
+            >
+              O, cancelar la participación en esta petición
+            </Text>,
+          ],
+          "style": Object {
+            "alignItems": "center",
+            "flex": 0.5,
+            "justifyContent": "flex-end",
+            "paddingBottom": 20,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": Array [
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#D0021B",
+                    }
+                  }
+                >
+                  *
+                </Text>,
+                " This data is required to sign the petition.",
+              ],
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#9B9B9B",
+                "fontSize": 14,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
               Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "*",
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "color": "#D0021B",
+                  },
+                },
+                "ref": null,
+                "rendered": "*",
+                "type": [Function],
+              },
+              " This data is required to sign the petition.",
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "O, cancelar la participación en esta petición",
+              "ellipsizeMode": "tail",
+              "onPress": [Function],
+              "style": Object {
                 "alignSelf": "center",
                 "color": "#00F",
                 "fontSize": 14,
                 "fontWeight": "500",
                 "marginVertical": 20,
                 "textDecorationLine": "underline",
-              }
-            }
-          >
-            O, cancelar la participación en esta petición
-          </Text>,
-          "style": Object {
-            "flex": 1,
-          },
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
-            "children": "O, cancelar la participación en esta petición",
-            "ellipsizeMode": "tail",
-            "onPress": [Function],
-            "style": Object {
-              "alignSelf": "center",
-              "color": "#00F",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "marginVertical": 20,
-              "textDecorationLine": "underline",
+              },
             },
+            "ref": null,
+            "rendered": "O, cancelar la participación en esta petición",
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": "O, cancelar la participación en esta petición",
-          "type": [Function],
-        },
+        ],
         "type": [Function],
       },
     ],
@@ -12535,10 +12646,38 @@ Haz click en botón inferior para empezar",
           <Component
             style={
               Object {
-                "flex": 1,
+                "alignItems": "center",
+                "flex": 0.5,
+                "justifyContent": "flex-end",
+                "paddingBottom": 20,
               }
             }
           >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#9B9B9B",
+                  "fontSize": 14,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#D0021B",
+                  }
+                }
+              >
+                *
+              </Text>
+               This data is required to sign the petition.
+            </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -12651,52 +12790,135 @@ Haz click en botón inferior para empezar",
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              onPress={[Function]}
-              style={
+            "children": Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#9B9B9B",
+                    "fontSize": 14,
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#D0021B",
+                    }
+                  }
+                >
+                  *
+                </Text>
+                 This data is required to sign the petition.
+              </Text>,
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "color": "#00F",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "marginVertical": 20,
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                O, cancelar la participación en esta petición
+              </Text>,
+            ],
+            "style": Object {
+              "alignItems": "center",
+              "flex": 0.5,
+              "justifyContent": "flex-end",
+              "paddingBottom": 20,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": Array [
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "color": "#D0021B",
+                      }
+                    }
+                  >
+                    *
+                  </Text>,
+                  " This data is required to sign the petition.",
+                ],
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#9B9B9B",
+                  "fontSize": 14,
+                },
+              },
+              "ref": null,
+              "rendered": Array [
                 Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "accessible": true,
+                    "allowFontScaling": true,
+                    "children": "*",
+                    "ellipsizeMode": "tail",
+                    "style": Object {
+                      "color": "#D0021B",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "*",
+                  "type": [Function],
+                },
+                " This data is required to sign the petition.",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "O, cancelar la participación en esta petición",
+                "ellipsizeMode": "tail",
+                "onPress": [Function],
+                "style": Object {
                   "alignSelf": "center",
                   "color": "#00F",
                   "fontSize": 14,
                   "fontWeight": "500",
                   "marginVertical": 20,
                   "textDecorationLine": "underline",
-                }
-              }
-            >
-              O, cancelar la participación en esta petición
-            </Text>,
-            "style": Object {
-              "flex": 1,
-            },
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "O, cancelar la participación en esta petición",
-              "ellipsizeMode": "tail",
-              "onPress": [Function],
-              "style": Object {
-                "alignSelf": "center",
-                "color": "#00F",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "marginVertical": 20,
-                "textDecorationLine": "underline",
+                },
               },
+              "ref": null,
+              "rendered": "O, cancelar la participación en esta petición",
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": "O, cancelar la participación en esta petición",
-            "type": [Function],
-          },
+          ],
           "type": [Function],
         },
       ],

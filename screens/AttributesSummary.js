@@ -84,7 +84,16 @@ class AttributesSummary extends React.Component {
             }}
           />
         </View>
-        <View style={{ flex: 1 }}>
+        <View style={{
+            flex: 0.5,
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            paddingBottom: 20,
+          }}
+        >
+          <Text style={{ color: '#9B9B9B', fontSize: 14 }}>
+            <Text style={{ color: '#D0021B' }}>*</Text> This data is required to sign the petition.
+          </Text>
           <Text
             style={styles.cancelSigningPetition}
             onPress={() => openPetitionInBrowser(this.props.petition.id)}
