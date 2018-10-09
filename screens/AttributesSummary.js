@@ -72,36 +72,6 @@ class AttributesSummary extends React.Component {
         />
 
         <RequesterInfo name="Decidim Barcelona" />
-        <View style={{ flex: 1 }}>
-          <Text style={{
-            color: '#13A398',
-            margin: 16,
-            marginTop: 30,
-            fontSize: 20,
-          }}
-          >
-            {this.props.petition.title}
-          </Text>
-          <Text style={{
-            color: '#3E393C',
-            fontWeight: '900',
-            fontSize: 13,
-            marginLeft: 16,
-          }}
-          >
-            {this.props.t('title')}
-          </Text>
-          <Text style={{
-            color: '#3E393C',
-            fontWeight: '100',
-            fontSize: 13,
-            marginLeft: 16,
-            marginTop: 8,
-          }}
-          >
-            {this.props.t('subtitle')}
-          </Text>
-        </View>
 
         <View style={{ flex: 1 }}>
           <Button

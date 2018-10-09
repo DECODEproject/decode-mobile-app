@@ -6,6 +6,7 @@ import thunk from 'redux-thunk';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import Button from '../../application/components/Button/Button';
+import RequesterInfo from '../../application/components/RequesterInfo/RequesterInfo';
 import AttributesSummary from '../../screens/AttributesSummary';
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -57,8 +58,7 @@ describe('AttributesSummary', () => {
       expect(buttonWrapper.first().prop('enabled')).toEqual(true);
     });
 
-    it('should show the title of the petition', () => {
-      const title = 'title';
+    it('should show the requester information of the petition', () => {
       const state = {
         ...initialState,
         petition: {
@@ -79,8 +79,8 @@ describe('AttributesSummary', () => {
         .first()
         .shallow({ context: { store } });
 
-      const TextWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === title);
-      expect(TextWrappers).toHaveLength(1);
+      const RequesterInfoWrapper = wrapper.dive().find(RequesterInfo);
+      expect(RequesterInfoWrapper).toHaveLength(1);
     });
 
     describe('when the verify button is pressed', () => {
