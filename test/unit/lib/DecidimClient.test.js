@@ -1,7 +1,7 @@
 import axios from 'axios';
-import DecidimClient from '../../lib/DecidimClient';
-import LanguageService from '../../lib/LanguageService';
-import FetchPetitionError from '../../lib/errors/FetchPetitionError';
+import DecidimClient from '../../../lib/DecidimClient';
+import LanguageService from '../../../lib/LanguageService';
+import FetchPetitionError from '../../../lib/errors/FetchPetitionError';
 
 jest.mock('axios');
 

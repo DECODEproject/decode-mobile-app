@@ -1,4 +1,4 @@
-import Attribute from '../../lib/Attribute';
+import Attribute from '../../../lib/Attribute';
 
 describe('Attribute ', () => {
   it('constructor should initiate attribute with empty fields', () => {

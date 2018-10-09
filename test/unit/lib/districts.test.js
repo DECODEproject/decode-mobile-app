@@ -1,4 +1,4 @@
-import { sortedDistrictsList, districtNameFromId } from '../../lib/districts';
+import { sortedDistrictsList, districtNameFromId } from '../../../lib/districts';
 
 describe('districts', () => {
   it('sortedDistrictsList should return a list of districts sorted alphabetically', () => {

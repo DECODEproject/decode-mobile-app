@@ -1,9 +1,9 @@
 import axios from 'axios';
-import ChainspaceClient from '../../lib/ChainspaceClient';
-import FetchChainspaceTransactionsError from '../../lib/errors/FetchChainspaceTransactionsError';
-import UnexpectedChainspaceError from '../../lib/errors/UnexpectedChainspaceError';
-import Transaction from '../../lib/Transaction';
-import PostChainspaceTransactionError from '../../lib/errors/PostChainspaceTransactionError';
+import ChainspaceClient from '../../../lib/ChainspaceClient';
+import FetchChainspaceTransactionsError from '../../../lib/errors/FetchChainspaceTransactionsError';
+import UnexpectedChainspaceError from '../../../lib/errors/UnexpectedChainspaceError';
+import Transaction from '../../../lib/Transaction';
+import PostChainspaceTransactionError from '../../../lib/errors/PostChainspaceTransactionError';
 
 jest.mock('axios');
 

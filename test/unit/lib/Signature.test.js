@@ -1,5 +1,5 @@
-import Signature from '../../lib/Signature';
-import BuildSignatureError from '../../lib/errors/BuildSignatureError';
+import Signature from '../../../lib/Signature';
+import BuildSignatureError from '../../../lib/errors/BuildSignatureError';
 
 describe('Signature', () => {
   describe('representation', () => {

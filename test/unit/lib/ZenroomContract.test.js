@@ -1,12 +1,12 @@
-import ZenroomContract from '../../lib/ZenroomContract';
-import ZenroomExecutor from '../../lib/ZenroomExecutor';
+import ZenroomContract from '../../../lib/ZenroomContract';
+import ZenroomExecutor from '../../../lib/ZenroomExecutor';
 
-import contract from '../../assets/contracts/vote';
-import Signature from '../../lib/Signature';
-import ZenroomExecutorError from '../../lib/errors/ZenroomExecutorError';
-import Transaction from '../../lib/Transaction';
+import contract from '../../../assets/contracts/vote';
+import Signature from '../../../lib/Signature';
+import ZenroomExecutorError from '../../../lib/errors/ZenroomExecutorError';
+import Transaction from '../../../lib/Transaction';
 
-jest.mock('../../lib/ZenroomExecutor.js');
+jest.mock('../../../lib/ZenroomExecutor.js');
 
 
 describe('ZenroomContract', () => {

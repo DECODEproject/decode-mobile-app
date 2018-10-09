@@ -1,4 +1,4 @@
-import Transaction from '../../lib/Transaction';
+import Transaction from '../../../lib/Transaction';
 
 describe('Transaction', () => {
   describe('calculateObjectID', () => {
