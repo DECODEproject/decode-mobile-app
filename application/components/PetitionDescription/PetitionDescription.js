@@ -1,9 +1,12 @@
 import React from 'react';
 import { Dimensions, Image, View, Text } from 'react-native';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import HTML from 'react-native-render-html';
 import styles from '../../../screens/styles';
 import LinkButton from '../LinkButton/LinkButton';
+import i18n from '../../../i18n';
 
 const fallbackImage = require('../../../assets/images/square-city-red.png');
 
@@ -25,7 +28,7 @@ class PetitionDescription extends React.Component {
         imagesMaxWidth={Dimensions.get('window').width}
       />
       <LinkButton
-        name="Read more"
+        name={this.props.t('more')}
         onPress={() => this.setState({ showFullDescription: true })}
       />
     </View>
@@ -44,7 +47,7 @@ class PetitionDescription extends React.Component {
         />
       </View>
       <LinkButton
-        name="Show less"
+        name={this.props.t('less')}
         onPress={() => this.setState({ showFullDescription: false })}
       />
     </View>
@@ -68,9 +71,7 @@ class PetitionDescription extends React.Component {
 PetitionDescription.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
-PetitionDescription.defaultProps = {
-};
-
-export default PetitionDescription;
+export default translate('attributesSummary', { i18n })(connect()(PetitionDescription));
