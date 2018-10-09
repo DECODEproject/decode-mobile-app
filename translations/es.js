@@ -7,6 +7,7 @@ export default {
   attributesSummary: {
     title: 'DECIDIM requiere verificar su residencia en Barcelona.',
     subtitle: 'Lo puedes verificar con el Ayuntamiento de Barcelona',
+    requirement: 'Requiere lo siguiente:',
     button: 'Verificar',
     cancel: 'O, cancelar la participación en esta petición',
   },

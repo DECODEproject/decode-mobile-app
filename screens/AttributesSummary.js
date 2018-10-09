@@ -6,6 +6,7 @@ import { Linking, View, Text, Image, TouchableOpacity } from 'react-native';
 import { translate } from 'react-i18next';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import Button from '../application/components/Button/Button';
+import RequesterInfo from '../application/components/RequesterInfo/RequesterInfo';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import { addCredential } from '../application/redux/actions/attributes';
 import openPetitionInBrowser from '../application/utils';
@@ -62,6 +63,15 @@ class AttributesSummary extends React.Component {
           description={this.props.petition.description}
         />
 
+        <View
+          style={{
+            marginTop: 10,
+            borderBottomColor: '#80979797',
+            borderBottomWidth: 1,
+          }}
+        />
+
+        <RequesterInfo name="Decidim Barcelona" />
         <View style={{ flex: 1 }}>
           <Text style={{
             color: '#13A398',
