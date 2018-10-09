@@ -1,6 +1,6 @@
 # Pilots
 
-##​ Decode Connector 
+## Decode Connector 
 
 The DECODE Connector is an ad-hoc service providing an interface between an external service (eg: one of the pilots) and Chainspace. 
 
@@ -15,7 +15,7 @@ The following methods can be initiated by the service:
 | Close petition | Consumes the last object in the blockchain, so that no new transactions can be added. Returns the decrypted tallied results of the petition |
 | Count | Returns the number of participants / votes in the blockchain at the moment. Does not return tallies of actual votes or attributes, which remain encrypted until the petition is closed. |
 
-##​ Credential Issuer
+## Credential Issuer
 
 In the final vision, DECODE users can request credentials from various authorities, including their peers for certain applications. The output of this process is a verified credential that is stored in the user's Wallet app. The credential can then be used in transactions initiated through the app.
 
@@ -27,7 +27,7 @@ The credential issuer is an API that will return the user's credential if they c
    
 - For the IoT pilot, our current understanding is that a credential should be issued to a user during the SC onboarding process. The credential would certify that the user is the verified owner of a specific device. Later, when deciding entitlements, this credential would be used in the smart contract that encodes the entitlements (e.g. Device #42 authorises hourly averaged data to be visible to residents of Gràcia).
 
-##​ Verifier
+## Verifier
 
 The mechanism for verifying the attribute the user is claiming is up to each pilot partner. 
 
@@ -35,7 +35,7 @@ The credential makes a request to the verifier to verify (or not) an attribute. 
 
 For example, Decidim will simply run a server with a hard-coded list of usernames or emails. This will run as a service deployed in the Decidim instance running the pilot platform.
 
-##​ Decidim Example
+## Decidim Example
 
 ### Detailed description
 
@@ -66,6 +66,6 @@ For example, Decidim will simply run a server with a hard-coded list of username
 
 ![Decidim Tech Vision](Decidim-TechVision.png)
 
-##​ Future Development
+## Future Development
 
 [To Do]
