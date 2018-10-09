@@ -34,12 +34,18 @@ class PetitionDescription extends React.Component {
 
   renderFullDescriptionText = () => (
     <View style={{ flex: 1, marginLeft: 10 }}>
-      <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
-      <HTML
-        id="description-text"
-        style={styles.petitionDescription}
-        html={this.props.description}
-        imagesMaxWidth={Dimensions.get('window').width}
+      <View>
+        <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
+        <HTML
+          id="description-text"
+          style={styles.petitionDescription}
+          html={this.props.description}
+          imagesMaxWidth={Dimensions.get('window').width}
+        />
+      </View>
+      <LinkButton
+        name="Show less"
+        onPress={() => this.setState({ showFullDescription: false })}
       />
     </View>
   );
