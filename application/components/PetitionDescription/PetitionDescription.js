@@ -11,6 +11,10 @@ import i18n from '../../../i18n';
 const fallbackImage = require('../../../assets/images/square-city-red.png');
 
 class PetitionDescription extends React.Component {
+  static htmlToInnerText(html) {
+    return html.replace(/<(?:.|\n)*?>/gm, '');
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -21,16 +25,15 @@ class PetitionDescription extends React.Component {
   renderPartialDescriptionText = () => (
     <View style={{ flex: 1, marginLeft: 10 }}>
       <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
-      <HTML
-        id="description-text"
-        style={styles.petitionDescription}
-        html={`${this.props.description.slice(0, 100)}&hellip;`}
-        imagesMaxWidth={Dimensions.get('window').width}
-      />
-      <LinkButton
-        name={this.props.t('more')}
-        onPress={() => this.setState({ showFullDescription: true })}
-      />
+      <Text numberOfLines={2} ellipsizeMode="tail" >
+        {PetitionDescription.htmlToInnerText(this.props.description)}
+      </Text>
+      <View style={{ alignItems: 'flex-end', paddingTop: 5 }}>
+        <LinkButton
+          name={this.props.t('more')}
+          onPress={() => this.setState({ showFullDescription: true })}
+        />
+      </View>
     </View>
   );
 

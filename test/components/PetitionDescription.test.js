@@ -1,6 +1,7 @@
 import React from 'react';
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
+import { Text } from 'react-native';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import PetitionDescription from '../../application/components/PetitionDescription/PetitionDescription';
@@ -21,9 +22,9 @@ describe('PetitionDescription', () => {
       .shallow({ context: { store } })
       .dive();
 
-    const partialDescription = wrapper.find({ id: 'description-text' }).props().html;
-    const descriptionWithoutEllipsis = partialDescription.replace('&hellip;', '');
-    expect(descriptionWithoutEllipsis).toHaveLength(100);
+    const partialDescription = wrapper.find(Text).last();
+    const { numberOfLines } = partialDescription.props();
+    expect(numberOfLines).toBe(2);
 
     const readMoreButton = wrapper.find(LinkButton).findWhere(b => b.props().name === 'Ver mas');
     expect(readMoreButton).toHaveLength(1);
@@ -41,8 +42,9 @@ describe('PetitionDescription', () => {
 
     wrapper.update();
 
-    const fullDescription = wrapper.find({ id: 'description-text' }).props().html;
-    expect(fullDescription).toHaveLength(150);
+    const partialDescription = wrapper.find(Text).last();
+    const { numberOfLines } = partialDescription.props();
+    expect(numberOfLines).toBe(undefined);
 
     const showLessButton = wrapper.find(LinkButton).findWhere(b => b.props().name === 'Ver menos');
     expect(showLessButton).toHaveLength(1);
@@ -65,8 +67,8 @@ describe('PetitionDescription', () => {
 
     wrapper.update();
 
-    const partialDescription = wrapper.find({ id: 'description-text' }).props().html;
-    const descriptionWithoutEllipsis = partialDescription.replace('&hellip;', '');
-    expect(descriptionWithoutEllipsis).toHaveLength(100);
+    const partialDescription = wrapper.find(Text).last();
+    const { numberOfLines } = partialDescription.props();
+    expect(numberOfLines).toBe(2);
   });
 });
