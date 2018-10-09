@@ -6,7 +6,7 @@ The DECODE Connector is an ad-hoc service providing an interface between an exte
 
 The current implementation primarily serves the needs of the petition use case and it's being used by Decidim. The code can be found in this [repository](https://github.com/DECODEproject/decidim-decode-connector). This can be used for inspiration for future Decode connectors needed in other integrations.
 
-###Methods
+### Methods
 The following methods can be initiated by the service:
 
 | Method                    | Description   |
