@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from 'react-native';
 import configureStore from 'redux-mock-store';
 import fetchMock from 'fetch-mock';
 import thunk from 'redux-thunk';
