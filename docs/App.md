@@ -1,5 +1,7 @@
 ## The App
+This app attempts to provide a platform where people can control their personal data, choosing where and how to share it. It allows users to input their data and keep it saved on their phone for future use. Currently, there is also a signing flow for integration with a community engagement platform called Decidim. It allows the user to share their data and vote on a petition securely.
 
+See [Glossary](Glossary.md) for unknown terms.
 
 ### Features Description
 
@@ -8,7 +10,7 @@
 
 In order to inform the user about the benefits of using this app, we have included a Walkthrough.
 
-This Walkthrough is a swipe-able multi page component with modifiable images and texts with the ability to skip
+This Walkthrough is a swipe-able multi page component with modifiable images and texts with the ability to skip.
 
 #### Pin Management
 
@@ -59,7 +61,7 @@ The project is separated into 6 main sections
 
 To be able to run the app locally, we need to have up and running Chainspace and use the Zenroom contracts.
 
-If you want to know more about it, check the [Dependencies documentation]()
+If you want to know more, check the [Dependencies Documentation](Dependencies.md)
 
 #### Chainspace
 
@@ -191,6 +193,49 @@ npm run android
 ```
 
 ## Publishing 
+
+### Expo
+
+Since we've built the app with Expo, it can easily be published with the following command:
+
+```
+exp publish --release-channel=production
+```
+
+The latest version of the app is available [here](https://expo.io/@decode-barcelona/decode-walletapp?release-channel=production).
+
+If you're using an Android phone you can just use the QR code to open the app.
+
+Unfortunately, Expo QR codes don't work on the latest versions for Iphone.
+
+### IOS 
+
+Before publishing, you must update the build number in app.json
+
+In order to generate the files necessary for publishing run the following command
+
+```
+expo build:ios
+```
+
+Once you have the ipa, follow the normal process for uploading apps to the apple store or test flight. 
+
+### Android
+
+Before publishing, you must update the version code in app.json
+
+In order to generate the files necessary for publishing run the following command
+
+```
+expo build:android
+```
+
+Once you have the apk, follow the normal process for uploading apps to Google Play.
+
+NOTE: We have had trouble when publishing to Google Play in the past. The links we use in the app do not work the same way as they had in Expo, with no solution to be found. If the issue doesn't get resolved in Expo, the app might have to be ejected.
+
+## Future Development 
+
 
 
 
