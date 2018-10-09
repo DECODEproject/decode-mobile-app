@@ -227,7 +227,12 @@ Once you have the apk, follow the normal process for uploading apps to Google Pl
 
 ##### NOTE: 
 
-We have had trouble when publishing to Google Play in the past. The links we use in the app do not work the same way as they had in Expo, with no solution to be found. If the issue doesn't get resolved in Expo, the app might have to be ejected.
+We have had trouble when publishing to Google Play in the past. The links we use in the app do not work the same way as they had in Expo, with no solution to be found:
+
+- When returning to the app from the Credential Issuer site, the 'url' event handler is not triggered and the credential is not stored. 
+- We believe that it's an issue with how the Android Standalone App handles links to the app. The event might stop working after the first time, since the error only happens if the app was started from a link in the beginning too (as is the case for the signing flow)
+
+If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 ## Future Development 
 
