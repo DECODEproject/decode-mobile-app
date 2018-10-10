@@ -4,7 +4,7 @@ import fetchMock from 'fetch-mock';
 import thunk from 'redux-thunk';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16/build/index';
-import Button from '../../application/components/Button/Button';
+import LinkButton from '../../application/components/LinkButton/LinkButton';
 import RequesterInfo from '../../application/components/RequesterInfo/RequesterInfo';
 import AttributesSummary from '../../screens/AttributesSummary';
 
@@ -24,6 +24,18 @@ describe('AttributesSummary', () => {
         id: '2',
         title: 'title',
         description: 'a'.repeat(150),
+        attributes: {
+          mandatory: [
+            {
+              scope: 'can-access',
+              object: 'Barcelona',
+              predicate: 'schema:addressLocality',
+              provenance: {
+                url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+              },
+            },
+          ],
+        },
       },
     },
     attributes: {
@@ -43,18 +55,15 @@ describe('AttributesSummary', () => {
     it('should show the verify button', () => {
       const store = mockStore(initialState);
 
-      // WHEN I VISUALIZE THE Attribute Summary
       const wrapper = shallow(<AttributesSummary />)
         .first().shallow()
         .first()
         .shallow({ context: { store } });
 
-      const buttonWrapper = wrapper.dive().find(Button);
+      const linkWrapper = wrapper.dive().find(LinkButton);
 
-      // Only one button
-      expect(buttonWrapper).toHaveLength(1);
-      expect(buttonWrapper.prop('name')).toEqual('Verificar');
-      expect(buttonWrapper.first().prop('enabled')).toEqual(true);
+      expect(linkWrapper).toHaveLength(1);
+      expect(linkWrapper.prop('name')).toEqual('Verificar');
     });
 
     it('should show the requester information of the petition', () => {
@@ -66,13 +75,24 @@ describe('AttributesSummary', () => {
             description: 'a'.repeat(150),
             closingDate: 'today',
             id: '1234',
+            attributes: {
+              mandatory: [
+                {
+                  scope: 'can-access',
+                  object: 'Barcelona',
+                  predicate: 'schema:addressLocality',
+                  provenance: {
+                    url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+                  },
+                },
+              ],
+            },
           },
           petitionAttributes: [],
         },
       };
       const store = mockStore(state);
 
-      // WHEN I VISUALIZE THE Attribute Summary
       const wrapper = shallow(<AttributesSummary />)
         .first().shallow()
         .first()
@@ -89,11 +109,9 @@ describe('AttributesSummary', () => {
           .first()
           .shallow({ context: { store: mockStore(initialState) } });
 
-        // wrapper.dive().find(Button).first().simulate('click');
-
         const spy = jest.spyOn(wrapper.instance(), 'openWebBrowserAsync');
         wrapper.update();
-        wrapper.find(Button).simulate('click');
+        wrapper.find(LinkButton).simulate('click');
         expect(spy).toHaveBeenCalled();
       });
     });
@@ -111,7 +129,7 @@ describe('AttributesSummary', () => {
           goToPetitionSummary: goToPetitionSummaryMock,
         };
 
-        wrapper.dive().find(Button).first().simulate('click');
+        wrapper.dive().find(LinkButton).first().simulate('click');
 
         expect(goToPetitionSummaryMock).toBeCalled();
       });

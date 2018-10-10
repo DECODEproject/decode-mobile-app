@@ -25,7 +25,7 @@ class PetitionDescription extends React.Component {
   renderPartialDescriptionText = () => (
     <View style={{ flex: 1, marginLeft: 10 }}>
       <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
-      <Text numberOfLines={2} ellipsizeMode="tail" >
+      <Text numberOfLines={2} ellipsizeMode="tail">
         {PetitionDescription.htmlToInnerText(this.props.description)}
       </Text>
       <View style={{ alignItems: 'flex-end', paddingTop: 5 }}>

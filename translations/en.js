@@ -8,9 +8,9 @@ export default {
     title: 'DECIDIM needs to verify your Barcelona residency.',
     subtitle: 'You can do this with the Barcelona City Council',
     requirement: 'Requires the following:',
-    more: 'Read more',
+    more: 'Show more',
     less: 'Show less',
-    button: 'Verify with Barcelona Council',
+    button: 'Verify',
     cancel: 'Or, cancel signing this petition',
   },
   home: {

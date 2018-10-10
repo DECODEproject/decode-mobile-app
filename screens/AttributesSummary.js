@@ -5,7 +5,7 @@ import { Constants, SecureStore, WebBrowser } from 'expo';
 import { Linking, View, Text, Image, TouchableOpacity } from 'react-native';
 import { translate } from 'react-i18next';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
-import Button from '../application/components/Button/Button';
+import LinkButton from '../application/components/LinkButton/LinkButton';
 import RequesterInfo from '../application/components/RequesterInfo/RequesterInfo';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import { addCredential } from '../application/redux/actions/attributes';
@@ -56,11 +56,12 @@ class AttributesSummary extends React.Component {
   };
 
   render() {
+    const { petition, t } = this.props;
     return (
       <View style={{ flex: 1, padding: 26 }}>
         <PetitionDescription
-          title={this.props.petition.title}
-          description={this.props.petition.description}
+          title={petition.title}
+          description={petition.description}
         />
 
         <View
@@ -73,19 +74,21 @@ class AttributesSummary extends React.Component {
 
         <RequesterInfo name="Decidim Barcelona" />
 
-        <View style={{ flex: 1 }}>
-          <Button
-            name={this.props.t('button')}
+        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Text>
+            {t(petition.attributes.mandatory[0].predicate)} <Text style={{ color: '#D0021B' }}>*</Text>
+          </Text>
+          <LinkButton
+            name={t('button')}
             onPress={this.openWebBrowserAsync}
             style={{
               marginTop: 40,
               alignSelf: 'center',
-              width: 250,
             }}
           />
         </View>
+
         <View style={{
-            flex: 0.5,
             alignItems: 'center',
             justifyContent: 'flex-end',
             paddingBottom: 20,
@@ -96,8 +99,8 @@ class AttributesSummary extends React.Component {
           </Text>
           <Text
             style={styles.cancelSigningPetition}
-            onPress={() => openPetitionInBrowser(this.props.petition.id)}
-          >{this.props.t('cancel')}
+            onPress={() => openPetitionInBrowser(petition.id)}
+          >{t('cancel')}
           </Text>
         </View>
       </View>

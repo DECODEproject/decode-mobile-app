@@ -20,6 +20,18 @@ const initialState = {
       id: '2',
       title: 'title',
       description: 'a'.repeat(150),
+      attributes: {
+        mandatory: [
+          {
+            scope: 'can-access',
+            object: 'Barcelona',
+            predicate: 'schema:addressLocality',
+            provenance: {
+              url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+            },
+          },
+        ],
+      },
     },
   },
   attributes: {
