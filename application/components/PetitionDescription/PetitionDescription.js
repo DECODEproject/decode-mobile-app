@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Image, View, Text } from 'react-native';
+import { Dimensions, Image, View, ScrollView, Text } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
@@ -39,7 +39,7 @@ class PetitionDescription extends React.Component {
 
 
   renderFullDescriptionText = () => (
-    <View style={{ flex: 1, marginLeft: 10 }}>
+    <ScrollView style={{ flex: 1, marginLeft: 10 }}>
       <View>
         <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
         <HTML
@@ -53,7 +53,7 @@ class PetitionDescription extends React.Component {
         name={this.props.t('less')}
         onPress={() => this.setState({ showFullDescription: false })}
       />
-    </View>
+    </ScrollView>
   );
 
   render() {
