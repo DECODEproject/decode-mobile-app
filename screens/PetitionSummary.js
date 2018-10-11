@@ -1,8 +1,7 @@
 import React from 'react';
 import { Constants } from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
-import { Text, View, Dimensions, ScrollView, TouchableOpacity, Image, Linking } from 'react-native';
-import HTML from 'react-native-render-html';
+import { Text, View, ScrollView, TouchableOpacity, Image, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
@@ -10,6 +9,7 @@ import { signPetition } from '../application/redux/actions/petition';
 import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
+import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import { getWalletProxyUrl, getChainspaceUrl } from '../config';
 import openPetitionInBrowser from '../application/utils';
 import { districtNameFromId } from '../lib/districts';
@@ -149,12 +149,6 @@ class PetitionSummary extends React.Component {
     const { matchedAttributes } = this.state;
     const petitionAttributesTemplate = (
       <View style={styles.petitionSummaryBox}>
-        <Text style={styles.petitionSummaryPetitionTitle}>{petition.title}</Text>
-        <HTML
-          style={styles.petitionDescription}
-          html={petition.description}
-          imagesMaxWidth={Dimensions.get('window').width}
-        />
         { matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
         <Text>
           {t('optional')}
@@ -171,6 +165,10 @@ class PetitionSummary extends React.Component {
     );
     return (
       <View style={styles.petitionSummaryContainer}>
+        <PetitionDescription
+          title={petition.title}
+          description={petition.description}
+        />
         <ScrollView>
           { petitionError && petitionErrorTemplate }
           <View style={{ flex: 1 }}>

@@ -166,8 +166,8 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   petitionSummaryContainer: {
+    padding: 26,
     flex: 1,
-    backgroundColor: 'rgb(246, 246, 246)',
   },
   petitionSummaryErrorBox: {
     alignSelf: 'stretch',

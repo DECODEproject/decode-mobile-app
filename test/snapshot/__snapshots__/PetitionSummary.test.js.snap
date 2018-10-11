@@ -12325,6 +12325,10 @@ Haz click en botón inferior para empezar",
     "nodeType": "class",
     "props": Object {
       "children": Array [
+        <Translate(Connect(PetitionDescription))
+          description="world"
+          title="hello"
+        />,
         <ScrollView>
           <Component
             style={
@@ -12358,102 +12362,6 @@ Haz click en botón inferior para empezar",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, 0.87)",
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 20,
-                }
-              }
-            >
-              hello
-            </Text>
-            <HTML
-              baseFontStyle={
-                Object {
-                  "fontSize": 14,
-                }
-              }
-              classesStyles={Object {}}
-              debug={false}
-              decodeEntities={true}
-              emSize={14}
-              html="world"
-              ignoredStyles={Array []}
-              ignoredTags={
-                Array [
-                  "head",
-                  "scripts",
-                  "audio",
-                  "video",
-                  "track",
-                  "embed",
-                  "object",
-                  "param",
-                  "source",
-                  "canvas",
-                  "noscript",
-                  "caption",
-                  "col",
-                  "colgroup",
-                  "table",
-                  "tbody",
-                  "td",
-                  "tfoot",
-                  "th",
-                  "thead",
-                  "tr",
-                  "button",
-                  "datalist",
-                  "fieldset",
-                  "form",
-                  "input",
-                  "label",
-                  "legend",
-                  "meter",
-                  "optgroup",
-                  "option",
-                  "output",
-                  "progress",
-                  "select",
-                  "textarea",
-                  "details",
-                  "diaglog",
-                  "menu",
-                  "menuitem",
-                  "summary",
-                ]
-              }
-              imagesMaxWidth={750}
-              ptSize={1.3}
-              renderers={
-                Object {
-                  "a": [Function],
-                  "br": [Function],
-                  "iframe": [Function],
-                  "img": [Function],
-                  "ol": [Function],
-                  "textwrapper": [Function],
-                  "ul": [Function],
-                }
-              }
-              staticContentMaxWidth={750}
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, 0.87)",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 15,
-                }
-              }
-              tagsStyles={Object {}}
-              textSelectable={false}
-            />
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -12511,12 +12419,24 @@ Haz click en botón inferior para empezar",
         </Text>,
       ],
       "style": Object {
-        "backgroundColor": "rgb(246, 246, 246)",
         "flex": 1,
+        "padding": 26,
       },
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "description": "world",
+          "title": "hello",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -12556,102 +12476,6 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 20,
-                  }
-                }
-              >
-                hello
-              </Text>
-              <HTML
-                baseFontStyle={
-                  Object {
-                    "fontSize": 14,
-                  }
-                }
-                classesStyles={Object {}}
-                debug={false}
-                decodeEntities={true}
-                emSize={14}
-                html="world"
-                ignoredStyles={Array []}
-                ignoredTags={
-                  Array [
-                    "head",
-                    "scripts",
-                    "audio",
-                    "video",
-                    "track",
-                    "embed",
-                    "object",
-                    "param",
-                    "source",
-                    "canvas",
-                    "noscript",
-                    "caption",
-                    "col",
-                    "colgroup",
-                    "table",
-                    "tbody",
-                    "td",
-                    "tfoot",
-                    "th",
-                    "thead",
-                    "tr",
-                    "button",
-                    "datalist",
-                    "fieldset",
-                    "form",
-                    "input",
-                    "label",
-                    "legend",
-                    "meter",
-                    "optgroup",
-                    "option",
-                    "output",
-                    "progress",
-                    "select",
-                    "textarea",
-                    "details",
-                    "diaglog",
-                    "menu",
-                    "menuitem",
-                    "summary",
-                  ]
-                }
-                imagesMaxWidth={750}
-                ptSize={1.3}
-                renderers={
-                  Object {
-                    "a": [Function],
-                    "br": [Function],
-                    "iframe": [Function],
-                    "img": [Function],
-                    "ol": [Function],
-                    "textwrapper": [Function],
-                    "ul": [Function],
-                  }
-                }
-                staticContentMaxWidth={750}
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                tagsStyles={Object {}}
-                textSelectable={false}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -12717,102 +12541,6 @@ Haz click en botón inferior para empezar",
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 20,
-                      "fontWeight": "500",
-                      "marginBottom": 20,
-                    }
-                  }
-                >
-                  hello
-                </Text>,
-                <HTML
-                  baseFontStyle={
-                    Object {
-                      "fontSize": 14,
-                    }
-                  }
-                  classesStyles={Object {}}
-                  debug={false}
-                  decodeEntities={true}
-                  emSize={14}
-                  html="world"
-                  ignoredStyles={Array []}
-                  ignoredTags={
-                    Array [
-                      "head",
-                      "scripts",
-                      "audio",
-                      "video",
-                      "track",
-                      "embed",
-                      "object",
-                      "param",
-                      "source",
-                      "canvas",
-                      "noscript",
-                      "caption",
-                      "col",
-                      "colgroup",
-                      "table",
-                      "tbody",
-                      "td",
-                      "tfoot",
-                      "th",
-                      "thead",
-                      "tr",
-                      "button",
-                      "datalist",
-                      "fieldset",
-                      "form",
-                      "input",
-                      "label",
-                      "legend",
-                      "meter",
-                      "optgroup",
-                      "option",
-                      "output",
-                      "progress",
-                      "select",
-                      "textarea",
-                      "details",
-                      "diaglog",
-                      "menu",
-                      "menuitem",
-                      "summary",
-                    ]
-                  }
-                  imagesMaxWidth={750}
-                  ptSize={1.3}
-                  renderers={
-                    Object {
-                      "a": [Function],
-                      "br": [Function],
-                      "iframe": [Function],
-                      "img": [Function],
-                      "ol": [Function],
-                      "textwrapper": [Function],
-                      "ul": [Function],
-                    }
-                  }
-                  staticContentMaxWidth={750}
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 15,
-                    }
-                  }
-                  tagsStyles={Object {}}
-                  textSelectable={false}
-                />,
                 Array [],
                 <Text
                   accessible={true}
@@ -12833,107 +12561,6 @@ Haz click en botón inferior para empezar",
             },
             "ref": null,
             "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "hello",
-                  "ellipsizeMode": "tail",
-                  "style": Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 20,
-                  },
-                },
-                "ref": null,
-                "rendered": "hello",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "baseFontStyle": Object {
-                    "fontSize": 14,
-                  },
-                  "classesStyles": Object {},
-                  "debug": false,
-                  "decodeEntities": true,
-                  "emSize": 14,
-                  "html": "world",
-                  "ignoredStyles": Array [],
-                  "ignoredTags": Array [
-                    "head",
-                    "scripts",
-                    "audio",
-                    "video",
-                    "track",
-                    "embed",
-                    "object",
-                    "param",
-                    "source",
-                    "canvas",
-                    "noscript",
-                    "caption",
-                    "col",
-                    "colgroup",
-                    "table",
-                    "tbody",
-                    "td",
-                    "tfoot",
-                    "th",
-                    "thead",
-                    "tr",
-                    "button",
-                    "datalist",
-                    "fieldset",
-                    "form",
-                    "input",
-                    "label",
-                    "legend",
-                    "meter",
-                    "optgroup",
-                    "option",
-                    "output",
-                    "progress",
-                    "select",
-                    "textarea",
-                    "details",
-                    "diaglog",
-                    "menu",
-                    "menuitem",
-                    "summary",
-                  ],
-                  "imagesMaxWidth": 750,
-                  "ptSize": 1.3,
-                  "renderers": Object {
-                    "a": [Function],
-                    "br": [Function],
-                    "iframe": [Function],
-                    "img": [Function],
-                    "ol": [Function],
-                    "textwrapper": [Function],
-                    "ul": [Function],
-                  },
-                  "staticContentMaxWidth": 750,
-                  "style": Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 15,
-                  },
-                  "tagsStyles": Object {},
-                  "textSelectable": false,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
               Object {
                 "instance": null,
                 "key": undefined,
@@ -13055,6 +12682,10 @@ Haz click en botón inferior para empezar",
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          <Translate(Connect(PetitionDescription))
+            description="world"
+            title="hello"
+          />,
           <ScrollView>
             <Component
               style={
@@ -13088,102 +12719,6 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 20,
-                  }
-                }
-              >
-                hello
-              </Text>
-              <HTML
-                baseFontStyle={
-                  Object {
-                    "fontSize": 14,
-                  }
-                }
-                classesStyles={Object {}}
-                debug={false}
-                decodeEntities={true}
-                emSize={14}
-                html="world"
-                ignoredStyles={Array []}
-                ignoredTags={
-                  Array [
-                    "head",
-                    "scripts",
-                    "audio",
-                    "video",
-                    "track",
-                    "embed",
-                    "object",
-                    "param",
-                    "source",
-                    "canvas",
-                    "noscript",
-                    "caption",
-                    "col",
-                    "colgroup",
-                    "table",
-                    "tbody",
-                    "td",
-                    "tfoot",
-                    "th",
-                    "thead",
-                    "tr",
-                    "button",
-                    "datalist",
-                    "fieldset",
-                    "form",
-                    "input",
-                    "label",
-                    "legend",
-                    "meter",
-                    "optgroup",
-                    "option",
-                    "output",
-                    "progress",
-                    "select",
-                    "textarea",
-                    "details",
-                    "diaglog",
-                    "menu",
-                    "menuitem",
-                    "summary",
-                  ]
-                }
-                imagesMaxWidth={750}
-                ptSize={1.3}
-                renderers={
-                  Object {
-                    "a": [Function],
-                    "br": [Function],
-                    "iframe": [Function],
-                    "img": [Function],
-                    "ol": [Function],
-                    "textwrapper": [Function],
-                    "ul": [Function],
-                  }
-                }
-                staticContentMaxWidth={750}
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                tagsStyles={Object {}}
-                textSelectable={false}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -13241,12 +12776,24 @@ Haz click en botón inferior para empezar",
           </Text>,
         ],
         "style": Object {
-          "backgroundColor": "rgb(246, 246, 246)",
           "flex": 1,
+          "padding": 26,
         },
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "description": "world",
+            "title": "hello",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -13286,102 +12833,6 @@ Haz click en botón inferior para empezar",
                   }
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 20,
-                      "fontWeight": "500",
-                      "marginBottom": 20,
-                    }
-                  }
-                >
-                  hello
-                </Text>
-                <HTML
-                  baseFontStyle={
-                    Object {
-                      "fontSize": 14,
-                    }
-                  }
-                  classesStyles={Object {}}
-                  debug={false}
-                  decodeEntities={true}
-                  emSize={14}
-                  html="world"
-                  ignoredStyles={Array []}
-                  ignoredTags={
-                    Array [
-                      "head",
-                      "scripts",
-                      "audio",
-                      "video",
-                      "track",
-                      "embed",
-                      "object",
-                      "param",
-                      "source",
-                      "canvas",
-                      "noscript",
-                      "caption",
-                      "col",
-                      "colgroup",
-                      "table",
-                      "tbody",
-                      "td",
-                      "tfoot",
-                      "th",
-                      "thead",
-                      "tr",
-                      "button",
-                      "datalist",
-                      "fieldset",
-                      "form",
-                      "input",
-                      "label",
-                      "legend",
-                      "meter",
-                      "optgroup",
-                      "option",
-                      "output",
-                      "progress",
-                      "select",
-                      "textarea",
-                      "details",
-                      "diaglog",
-                      "menu",
-                      "menuitem",
-                      "summary",
-                    ]
-                  }
-                  imagesMaxWidth={750}
-                  ptSize={1.3}
-                  renderers={
-                    Object {
-                      "a": [Function],
-                      "br": [Function],
-                      "iframe": [Function],
-                      "img": [Function],
-                      "ol": [Function],
-                      "textwrapper": [Function],
-                      "ul": [Function],
-                    }
-                  }
-                  staticContentMaxWidth={750}
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 15,
-                    }
-                  }
-                  tagsStyles={Object {}}
-                  textSelectable={false}
-                />
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -13447,102 +12898,6 @@ Haz click en botón inferior para empezar",
               "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "rgba(0, 0, 0, 0.87)",
-                        "fontSize": 20,
-                        "fontWeight": "500",
-                        "marginBottom": 20,
-                      }
-                    }
-                  >
-                    hello
-                  </Text>,
-                  <HTML
-                    baseFontStyle={
-                      Object {
-                        "fontSize": 14,
-                      }
-                    }
-                    classesStyles={Object {}}
-                    debug={false}
-                    decodeEntities={true}
-                    emSize={14}
-                    html="world"
-                    ignoredStyles={Array []}
-                    ignoredTags={
-                      Array [
-                        "head",
-                        "scripts",
-                        "audio",
-                        "video",
-                        "track",
-                        "embed",
-                        "object",
-                        "param",
-                        "source",
-                        "canvas",
-                        "noscript",
-                        "caption",
-                        "col",
-                        "colgroup",
-                        "table",
-                        "tbody",
-                        "td",
-                        "tfoot",
-                        "th",
-                        "thead",
-                        "tr",
-                        "button",
-                        "datalist",
-                        "fieldset",
-                        "form",
-                        "input",
-                        "label",
-                        "legend",
-                        "meter",
-                        "optgroup",
-                        "option",
-                        "output",
-                        "progress",
-                        "select",
-                        "textarea",
-                        "details",
-                        "diaglog",
-                        "menu",
-                        "menuitem",
-                        "summary",
-                      ]
-                    }
-                    imagesMaxWidth={750}
-                    ptSize={1.3}
-                    renderers={
-                      Object {
-                        "a": [Function],
-                        "br": [Function],
-                        "iframe": [Function],
-                        "img": [Function],
-                        "ol": [Function],
-                        "textwrapper": [Function],
-                        "ul": [Function],
-                      }
-                    }
-                    staticContentMaxWidth={750}
-                    style={
-                      Object {
-                        "color": "rgba(0, 0, 0, 0.87)",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 15,
-                      }
-                    }
-                    tagsStyles={Object {}}
-                    textSelectable={false}
-                  />,
                   Array [],
                   <Text
                     accessible={true}
@@ -13563,107 +12918,6 @@ Haz click en botón inferior para empezar",
               },
               "ref": null,
               "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": "hello",
-                    "ellipsizeMode": "tail",
-                    "style": Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 20,
-                      "fontWeight": "500",
-                      "marginBottom": 20,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": "hello",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "baseFontStyle": Object {
-                      "fontSize": 14,
-                    },
-                    "classesStyles": Object {},
-                    "debug": false,
-                    "decodeEntities": true,
-                    "emSize": 14,
-                    "html": "world",
-                    "ignoredStyles": Array [],
-                    "ignoredTags": Array [
-                      "head",
-                      "scripts",
-                      "audio",
-                      "video",
-                      "track",
-                      "embed",
-                      "object",
-                      "param",
-                      "source",
-                      "canvas",
-                      "noscript",
-                      "caption",
-                      "col",
-                      "colgroup",
-                      "table",
-                      "tbody",
-                      "td",
-                      "tfoot",
-                      "th",
-                      "thead",
-                      "tr",
-                      "button",
-                      "datalist",
-                      "fieldset",
-                      "form",
-                      "input",
-                      "label",
-                      "legend",
-                      "meter",
-                      "optgroup",
-                      "option",
-                      "output",
-                      "progress",
-                      "select",
-                      "textarea",
-                      "details",
-                      "diaglog",
-                      "menu",
-                      "menuitem",
-                      "summary",
-                    ],
-                    "imagesMaxWidth": 750,
-                    "ptSize": 1.3,
-                    "renderers": Object {
-                      "a": [Function],
-                      "br": [Function],
-                      "iframe": [Function],
-                      "img": [Function],
-                      "ol": [Function],
-                      "textwrapper": [Function],
-                      "ul": [Function],
-                    },
-                    "staticContentMaxWidth": 750,
-                    "style": Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 15,
-                    },
-                    "tagsStyles": Object {},
-                    "textSelectable": false,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
                 Object {
                   "instance": null,
                   "key": undefined,
@@ -26108,6 +25362,10 @@ Haz click en botón inferior para empezar",
     "nodeType": "class",
     "props": Object {
       "children": Array [
+        <Translate(Connect(PetitionDescription))
+          description="world"
+          title="hello"
+        />,
         <ScrollView>
           <Component
             style={
@@ -26141,102 +25399,6 @@ Haz click en botón inferior para empezar",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, 0.87)",
-                  "fontSize": 20,
-                  "fontWeight": "500",
-                  "marginBottom": 20,
-                }
-              }
-            >
-              hello
-            </Text>
-            <HTML
-              baseFontStyle={
-                Object {
-                  "fontSize": 14,
-                }
-              }
-              classesStyles={Object {}}
-              debug={false}
-              decodeEntities={true}
-              emSize={14}
-              html="world"
-              ignoredStyles={Array []}
-              ignoredTags={
-                Array [
-                  "head",
-                  "scripts",
-                  "audio",
-                  "video",
-                  "track",
-                  "embed",
-                  "object",
-                  "param",
-                  "source",
-                  "canvas",
-                  "noscript",
-                  "caption",
-                  "col",
-                  "colgroup",
-                  "table",
-                  "tbody",
-                  "td",
-                  "tfoot",
-                  "th",
-                  "thead",
-                  "tr",
-                  "button",
-                  "datalist",
-                  "fieldset",
-                  "form",
-                  "input",
-                  "label",
-                  "legend",
-                  "meter",
-                  "optgroup",
-                  "option",
-                  "output",
-                  "progress",
-                  "select",
-                  "textarea",
-                  "details",
-                  "diaglog",
-                  "menu",
-                  "menuitem",
-                  "summary",
-                ]
-              }
-              imagesMaxWidth={750}
-              ptSize={1.3}
-              renderers={
-                Object {
-                  "a": [Function],
-                  "br": [Function],
-                  "iframe": [Function],
-                  "img": [Function],
-                  "ol": [Function],
-                  "textwrapper": [Function],
-                  "ul": [Function],
-                }
-              }
-              staticContentMaxWidth={750}
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, 0.87)",
-                  "fontSize": 14,
-                  "lineHeight": 20,
-                  "marginBottom": 15,
-                }
-              }
-              tagsStyles={Object {}}
-              textSelectable={false}
-            />
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -26294,12 +25456,24 @@ Haz click en botón inferior para empezar",
         </Text>,
       ],
       "style": Object {
-        "backgroundColor": "rgb(246, 246, 246)",
         "flex": 1,
+        "padding": 26,
       },
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "description": "world",
+          "title": "hello",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -26339,102 +25513,6 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 20,
-                  }
-                }
-              >
-                hello
-              </Text>
-              <HTML
-                baseFontStyle={
-                  Object {
-                    "fontSize": 14,
-                  }
-                }
-                classesStyles={Object {}}
-                debug={false}
-                decodeEntities={true}
-                emSize={14}
-                html="world"
-                ignoredStyles={Array []}
-                ignoredTags={
-                  Array [
-                    "head",
-                    "scripts",
-                    "audio",
-                    "video",
-                    "track",
-                    "embed",
-                    "object",
-                    "param",
-                    "source",
-                    "canvas",
-                    "noscript",
-                    "caption",
-                    "col",
-                    "colgroup",
-                    "table",
-                    "tbody",
-                    "td",
-                    "tfoot",
-                    "th",
-                    "thead",
-                    "tr",
-                    "button",
-                    "datalist",
-                    "fieldset",
-                    "form",
-                    "input",
-                    "label",
-                    "legend",
-                    "meter",
-                    "optgroup",
-                    "option",
-                    "output",
-                    "progress",
-                    "select",
-                    "textarea",
-                    "details",
-                    "diaglog",
-                    "menu",
-                    "menuitem",
-                    "summary",
-                  ]
-                }
-                imagesMaxWidth={750}
-                ptSize={1.3}
-                renderers={
-                  Object {
-                    "a": [Function],
-                    "br": [Function],
-                    "iframe": [Function],
-                    "img": [Function],
-                    "ol": [Function],
-                    "textwrapper": [Function],
-                    "ul": [Function],
-                  }
-                }
-                staticContentMaxWidth={750}
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                tagsStyles={Object {}}
-                textSelectable={false}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -26500,102 +25578,6 @@ Haz click en botón inferior para empezar",
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 20,
-                      "fontWeight": "500",
-                      "marginBottom": 20,
-                    }
-                  }
-                >
-                  hello
-                </Text>,
-                <HTML
-                  baseFontStyle={
-                    Object {
-                      "fontSize": 14,
-                    }
-                  }
-                  classesStyles={Object {}}
-                  debug={false}
-                  decodeEntities={true}
-                  emSize={14}
-                  html="world"
-                  ignoredStyles={Array []}
-                  ignoredTags={
-                    Array [
-                      "head",
-                      "scripts",
-                      "audio",
-                      "video",
-                      "track",
-                      "embed",
-                      "object",
-                      "param",
-                      "source",
-                      "canvas",
-                      "noscript",
-                      "caption",
-                      "col",
-                      "colgroup",
-                      "table",
-                      "tbody",
-                      "td",
-                      "tfoot",
-                      "th",
-                      "thead",
-                      "tr",
-                      "button",
-                      "datalist",
-                      "fieldset",
-                      "form",
-                      "input",
-                      "label",
-                      "legend",
-                      "meter",
-                      "optgroup",
-                      "option",
-                      "output",
-                      "progress",
-                      "select",
-                      "textarea",
-                      "details",
-                      "diaglog",
-                      "menu",
-                      "menuitem",
-                      "summary",
-                    ]
-                  }
-                  imagesMaxWidth={750}
-                  ptSize={1.3}
-                  renderers={
-                    Object {
-                      "a": [Function],
-                      "br": [Function],
-                      "iframe": [Function],
-                      "img": [Function],
-                      "ol": [Function],
-                      "textwrapper": [Function],
-                      "ul": [Function],
-                    }
-                  }
-                  staticContentMaxWidth={750}
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 15,
-                    }
-                  }
-                  tagsStyles={Object {}}
-                  textSelectable={false}
-                />,
                 Array [],
                 <Text
                   accessible={true}
@@ -26616,107 +25598,6 @@ Haz click en botón inferior para empezar",
             },
             "ref": null,
             "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "hello",
-                  "ellipsizeMode": "tail",
-                  "style": Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 20,
-                  },
-                },
-                "ref": null,
-                "rendered": "hello",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "baseFontStyle": Object {
-                    "fontSize": 14,
-                  },
-                  "classesStyles": Object {},
-                  "debug": false,
-                  "decodeEntities": true,
-                  "emSize": 14,
-                  "html": "world",
-                  "ignoredStyles": Array [],
-                  "ignoredTags": Array [
-                    "head",
-                    "scripts",
-                    "audio",
-                    "video",
-                    "track",
-                    "embed",
-                    "object",
-                    "param",
-                    "source",
-                    "canvas",
-                    "noscript",
-                    "caption",
-                    "col",
-                    "colgroup",
-                    "table",
-                    "tbody",
-                    "td",
-                    "tfoot",
-                    "th",
-                    "thead",
-                    "tr",
-                    "button",
-                    "datalist",
-                    "fieldset",
-                    "form",
-                    "input",
-                    "label",
-                    "legend",
-                    "meter",
-                    "optgroup",
-                    "option",
-                    "output",
-                    "progress",
-                    "select",
-                    "textarea",
-                    "details",
-                    "diaglog",
-                    "menu",
-                    "menuitem",
-                    "summary",
-                  ],
-                  "imagesMaxWidth": 750,
-                  "ptSize": 1.3,
-                  "renderers": Object {
-                    "a": [Function],
-                    "br": [Function],
-                    "iframe": [Function],
-                    "img": [Function],
-                    "ol": [Function],
-                    "textwrapper": [Function],
-                    "ul": [Function],
-                  },
-                  "staticContentMaxWidth": 750,
-                  "style": Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 15,
-                  },
-                  "tagsStyles": Object {},
-                  "textSelectable": false,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
               Object {
                 "instance": null,
                 "key": undefined,
@@ -26838,6 +25719,10 @@ Haz click en botón inferior para empezar",
       "nodeType": "class",
       "props": Object {
         "children": Array [
+          <Translate(Connect(PetitionDescription))
+            description="world"
+            title="hello"
+          />,
           <ScrollView>
             <Component
               style={
@@ -26871,102 +25756,6 @@ Haz click en botón inferior para empezar",
                 }
               }
             >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 20,
-                    "fontWeight": "500",
-                    "marginBottom": 20,
-                  }
-                }
-              >
-                hello
-              </Text>
-              <HTML
-                baseFontStyle={
-                  Object {
-                    "fontSize": 14,
-                  }
-                }
-                classesStyles={Object {}}
-                debug={false}
-                decodeEntities={true}
-                emSize={14}
-                html="world"
-                ignoredStyles={Array []}
-                ignoredTags={
-                  Array [
-                    "head",
-                    "scripts",
-                    "audio",
-                    "video",
-                    "track",
-                    "embed",
-                    "object",
-                    "param",
-                    "source",
-                    "canvas",
-                    "noscript",
-                    "caption",
-                    "col",
-                    "colgroup",
-                    "table",
-                    "tbody",
-                    "td",
-                    "tfoot",
-                    "th",
-                    "thead",
-                    "tr",
-                    "button",
-                    "datalist",
-                    "fieldset",
-                    "form",
-                    "input",
-                    "label",
-                    "legend",
-                    "meter",
-                    "optgroup",
-                    "option",
-                    "output",
-                    "progress",
-                    "select",
-                    "textarea",
-                    "details",
-                    "diaglog",
-                    "menu",
-                    "menuitem",
-                    "summary",
-                  ]
-                }
-                imagesMaxWidth={750}
-                ptSize={1.3}
-                renderers={
-                  Object {
-                    "a": [Function],
-                    "br": [Function],
-                    "iframe": [Function],
-                    "img": [Function],
-                    "ol": [Function],
-                    "textwrapper": [Function],
-                    "ul": [Function],
-                  }
-                }
-                staticContentMaxWidth={750}
-                style={
-                  Object {
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "fontSize": 14,
-                    "lineHeight": 20,
-                    "marginBottom": 15,
-                  }
-                }
-                tagsStyles={Object {}}
-                textSelectable={false}
-              />
               <Text
                 accessible={true}
                 allowFontScaling={true}
@@ -27024,12 +25813,24 @@ Haz click en botón inferior para empezar",
           </Text>,
         ],
         "style": Object {
-          "backgroundColor": "rgb(246, 246, 246)",
           "flex": 1,
+          "padding": 26,
         },
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "description": "world",
+            "title": "hello",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -27069,102 +25870,6 @@ Haz click en botón inferior para empezar",
                   }
                 }
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 20,
-                      "fontWeight": "500",
-                      "marginBottom": 20,
-                    }
-                  }
-                >
-                  hello
-                </Text>
-                <HTML
-                  baseFontStyle={
-                    Object {
-                      "fontSize": 14,
-                    }
-                  }
-                  classesStyles={Object {}}
-                  debug={false}
-                  decodeEntities={true}
-                  emSize={14}
-                  html="world"
-                  ignoredStyles={Array []}
-                  ignoredTags={
-                    Array [
-                      "head",
-                      "scripts",
-                      "audio",
-                      "video",
-                      "track",
-                      "embed",
-                      "object",
-                      "param",
-                      "source",
-                      "canvas",
-                      "noscript",
-                      "caption",
-                      "col",
-                      "colgroup",
-                      "table",
-                      "tbody",
-                      "td",
-                      "tfoot",
-                      "th",
-                      "thead",
-                      "tr",
-                      "button",
-                      "datalist",
-                      "fieldset",
-                      "form",
-                      "input",
-                      "label",
-                      "legend",
-                      "meter",
-                      "optgroup",
-                      "option",
-                      "output",
-                      "progress",
-                      "select",
-                      "textarea",
-                      "details",
-                      "diaglog",
-                      "menu",
-                      "menuitem",
-                      "summary",
-                    ]
-                  }
-                  imagesMaxWidth={750}
-                  ptSize={1.3}
-                  renderers={
-                    Object {
-                      "a": [Function],
-                      "br": [Function],
-                      "iframe": [Function],
-                      "img": [Function],
-                      "ol": [Function],
-                      "textwrapper": [Function],
-                      "ul": [Function],
-                    }
-                  }
-                  staticContentMaxWidth={750}
-                  style={
-                    Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 15,
-                    }
-                  }
-                  tagsStyles={Object {}}
-                  textSelectable={false}
-                />
                 <Text
                   accessible={true}
                   allowFontScaling={true}
@@ -27230,102 +25935,6 @@ Haz click en botón inferior para empezar",
               "nodeType": "class",
               "props": Object {
                 "children": Array [
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "rgba(0, 0, 0, 0.87)",
-                        "fontSize": 20,
-                        "fontWeight": "500",
-                        "marginBottom": 20,
-                      }
-                    }
-                  >
-                    hello
-                  </Text>,
-                  <HTML
-                    baseFontStyle={
-                      Object {
-                        "fontSize": 14,
-                      }
-                    }
-                    classesStyles={Object {}}
-                    debug={false}
-                    decodeEntities={true}
-                    emSize={14}
-                    html="world"
-                    ignoredStyles={Array []}
-                    ignoredTags={
-                      Array [
-                        "head",
-                        "scripts",
-                        "audio",
-                        "video",
-                        "track",
-                        "embed",
-                        "object",
-                        "param",
-                        "source",
-                        "canvas",
-                        "noscript",
-                        "caption",
-                        "col",
-                        "colgroup",
-                        "table",
-                        "tbody",
-                        "td",
-                        "tfoot",
-                        "th",
-                        "thead",
-                        "tr",
-                        "button",
-                        "datalist",
-                        "fieldset",
-                        "form",
-                        "input",
-                        "label",
-                        "legend",
-                        "meter",
-                        "optgroup",
-                        "option",
-                        "output",
-                        "progress",
-                        "select",
-                        "textarea",
-                        "details",
-                        "diaglog",
-                        "menu",
-                        "menuitem",
-                        "summary",
-                      ]
-                    }
-                    imagesMaxWidth={750}
-                    ptSize={1.3}
-                    renderers={
-                      Object {
-                        "a": [Function],
-                        "br": [Function],
-                        "iframe": [Function],
-                        "img": [Function],
-                        "ol": [Function],
-                        "textwrapper": [Function],
-                        "ul": [Function],
-                      }
-                    }
-                    staticContentMaxWidth={750}
-                    style={
-                      Object {
-                        "color": "rgba(0, 0, 0, 0.87)",
-                        "fontSize": 14,
-                        "lineHeight": 20,
-                        "marginBottom": 15,
-                      }
-                    }
-                    tagsStyles={Object {}}
-                    textSelectable={false}
-                  />,
                   Array [],
                   <Text
                     accessible={true}
@@ -27346,107 +25955,6 @@ Haz click en botón inferior para empezar",
               },
               "ref": null,
               "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": "hello",
-                    "ellipsizeMode": "tail",
-                    "style": Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 20,
-                      "fontWeight": "500",
-                      "marginBottom": 20,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": "hello",
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "baseFontStyle": Object {
-                      "fontSize": 14,
-                    },
-                    "classesStyles": Object {},
-                    "debug": false,
-                    "decodeEntities": true,
-                    "emSize": 14,
-                    "html": "world",
-                    "ignoredStyles": Array [],
-                    "ignoredTags": Array [
-                      "head",
-                      "scripts",
-                      "audio",
-                      "video",
-                      "track",
-                      "embed",
-                      "object",
-                      "param",
-                      "source",
-                      "canvas",
-                      "noscript",
-                      "caption",
-                      "col",
-                      "colgroup",
-                      "table",
-                      "tbody",
-                      "td",
-                      "tfoot",
-                      "th",
-                      "thead",
-                      "tr",
-                      "button",
-                      "datalist",
-                      "fieldset",
-                      "form",
-                      "input",
-                      "label",
-                      "legend",
-                      "meter",
-                      "optgroup",
-                      "option",
-                      "output",
-                      "progress",
-                      "select",
-                      "textarea",
-                      "details",
-                      "diaglog",
-                      "menu",
-                      "menuitem",
-                      "summary",
-                    ],
-                    "imagesMaxWidth": 750,
-                    "ptSize": 1.3,
-                    "renderers": Object {
-                      "a": [Function],
-                      "br": [Function],
-                      "iframe": [Function],
-                      "img": [Function],
-                      "ol": [Function],
-                      "textwrapper": [Function],
-                      "ul": [Function],
-                    },
-                    "staticContentMaxWidth": 750,
-                    "style": Object {
-                      "color": "rgba(0, 0, 0, 0.87)",
-                      "fontSize": 14,
-                      "lineHeight": 20,
-                      "marginBottom": 15,
-                    },
-                    "tagsStyles": Object {},
-                    "textSelectable": false,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
                 Object {
                   "instance": null,
                   "key": undefined,
