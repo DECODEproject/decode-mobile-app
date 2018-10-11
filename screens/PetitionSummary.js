@@ -11,7 +11,6 @@ import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import { getWalletProxyUrl, getChainspaceUrl } from '../config';
-import openPetitionInBrowser from '../application/utils';
 import { districtNameFromId } from '../lib/districts';
 import styles from './styles';
 import i18n from '../i18n';
@@ -169,6 +168,15 @@ class PetitionSummary extends React.Component {
           title={petition.title}
           description={petition.description}
         />
+
+        <View
+          style={{
+            marginTop: 10,
+            borderBottomColor: '#809B9B9B',
+            borderBottomWidth: 1,
+          }}
+        />
+
         <ScrollView>
           { petitionError && petitionErrorTemplate }
           <View style={{ flex: 1 }}>
@@ -176,30 +184,43 @@ class PetitionSummary extends React.Component {
           </View>
           { petition && petitionAttributesTemplate }
         </ScrollView>
+
+        <Text style={{ color: '#9B9B9B', fontSize: 14, alignSelf: 'center' }}>
+          <Text style={{ color: '#D0021B' }}>*</Text> This data is required to sign the petition.
+        </Text>
+
+        <View
+          style={{
+            marginTop: 10,
+            borderBottomColor: '#809B9B9B',
+            borderBottomWidth: 2,
+          }}
+        />
+
         <View style={{ flexDirection: 'row' }}>
-          <Button
-            enabled={allMandatoryEnabled}
-            onPress={() => { this.sign(petition, walletId, 'Yes'); }}
-            name={t('yes')}
-            style={{
-              flex: 1,
-            }}
-          />
           <Button
             enabled={allMandatoryEnabled}
             onPress={() => { this.sign(petition, walletId, 'No'); }}
             name={t('no')}
             style={{
+              paddingVertical: 12,
+              height: 'auto',
+              flex: 1,
+            }}
+          />
+          <Button
+            enabled={allMandatoryEnabled}
+            onPress={() => { this.sign(petition, walletId, 'Yes'); }}
+            name={t('yes')}
+            style={{
+              paddingVertical: 12,
+              height: 'auto',
               flex: 1,
             }}
           />
         </View>
-        <Text
-          style={styles.cancelSigningPetition}
-          onPress={() => openPetitionInBrowser(petition.id)}
-        >{t('cancel')}
-        </Text>
-      </View>);
+      </View>
+    );
   }
 }
 

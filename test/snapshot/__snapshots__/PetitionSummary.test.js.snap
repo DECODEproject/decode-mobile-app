@@ -116,9 +116,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -206,9 +206,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -296,9 +296,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -465,9 +465,9 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "no": "No",
+                "no": "Signar No",
                 "optional": "Dades opcionals a compartir",
-                "yes": "Si",
+                "yes": "Signar Si",
               },
               "pinSetup": Object {
                 "button": "Desa",
@@ -555,9 +555,9 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "no": "No",
+                "no": "Sign No",
                 "optional": "Optional data to share:",
-                "yes": "Yes",
+                "yes": "Sign Yes",
               },
               "pinSetup": Object {
                 "button": "Save",
@@ -645,9 +645,9 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "no": "No",
+                "no": "Firmar No",
                 "optional": "Datos opcionales para compartir: ",
-                "yes": "Sí",
+                "yes": "Firmar Sí",
               },
               "pinSetup": Object {
                 "button": "Guardar",
@@ -803,9 +803,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -893,9 +893,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -983,9 +983,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -1128,9 +1128,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -1218,9 +1218,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -1308,9 +1308,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -1463,9 +1463,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -1553,9 +1553,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -1643,9 +1643,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -1793,9 +1793,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -1883,9 +1883,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -1973,9 +1973,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -2078,9 +2078,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -2168,9 +2168,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -2258,9 +2258,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -2406,9 +2406,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -2496,9 +2496,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -2586,9 +2586,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -2735,9 +2735,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -2825,9 +2825,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -2915,9 +2915,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -3084,9 +3084,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -3174,9 +3174,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -3264,9 +3264,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -3409,9 +3409,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -3499,9 +3499,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -3589,9 +3589,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -3743,9 +3743,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -3833,9 +3833,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -3923,9 +3923,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -4080,9 +4080,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -4170,9 +4170,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -4260,9 +4260,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -4405,9 +4405,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -4495,9 +4495,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -4585,9 +4585,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -4740,9 +4740,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -4830,9 +4830,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -4920,9 +4920,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -5960,9 +5960,9 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "no": "No",
+                "no": "Signar No",
                 "optional": "Dades opcionals a compartir",
-                "yes": "Si",
+                "yes": "Signar Si",
               },
               "pinSetup": Object {
                 "button": "Desa",
@@ -6050,9 +6050,9 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "no": "No",
+                "no": "Sign No",
                 "optional": "Optional data to share:",
-                "yes": "Yes",
+                "yes": "Sign Yes",
               },
               "pinSetup": Object {
                 "button": "Save",
@@ -6140,9 +6140,9 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "no": "No",
+                "no": "Firmar No",
                 "optional": "Datos opcionales para compartir: ",
-                "yes": "Sí",
+                "yes": "Firmar Sí",
               },
               "pinSetup": Object {
                 "button": "Guardar",
@@ -6233,9 +6233,9 @@ Fes click al botó per començar.",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar la participació en aquesta peticiió",
-              "no": "No",
+              "no": "Signar No",
               "optional": "Dades opcionals a compartir",
-              "yes": "Si",
+              "yes": "Signar Si",
             },
             "pinSetup": Object {
               "button": "Desa",
@@ -6323,9 +6323,9 @@ Tap the button below to begin.",
             },
             "petitionSummary": Object {
               "cancel": "Or, cancel signing this petition",
-              "no": "No",
+              "no": "Sign No",
               "optional": "Optional data to share:",
-              "yes": "Yes",
+              "yes": "Sign Yes",
             },
             "pinSetup": Object {
               "button": "Save",
@@ -6413,9 +6413,9 @@ Haz click en botón inferior para empezar",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar participación en esta petición",
-              "no": "No",
+              "no": "Firmar No",
               "optional": "Datos opcionales para compartir: ",
-              "yes": "Sí",
+              "yes": "Firmar Sí",
             },
             "pinSetup": Object {
               "button": "Guardar",
@@ -6559,9 +6559,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -6649,9 +6649,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -6739,9 +6739,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -6884,9 +6884,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -6974,9 +6974,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -7064,9 +7064,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -7219,9 +7219,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -7309,9 +7309,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -7399,9 +7399,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -7549,9 +7549,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -7639,9 +7639,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -7729,9 +7729,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -7834,9 +7834,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -7924,9 +7924,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -8014,9 +8014,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -8162,9 +8162,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -8252,9 +8252,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -8342,9 +8342,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -8491,9 +8491,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -8581,9 +8581,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -8671,9 +8671,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -8833,9 +8833,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -8923,9 +8923,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -9013,9 +9013,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -9158,9 +9158,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -9248,9 +9248,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -9338,9 +9338,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -9493,9 +9493,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -9583,9 +9583,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -9673,9 +9673,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -9823,9 +9823,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -9913,9 +9913,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -10003,9 +10003,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -10158,9 +10158,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -10248,9 +10248,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -10338,9 +10338,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -10483,9 +10483,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -10573,9 +10573,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -10663,9 +10663,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -10818,9 +10818,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -10908,9 +10908,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -10998,9 +10998,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -12038,9 +12038,9 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "no": "No",
+                "no": "Signar No",
                 "optional": "Dades opcionals a compartir",
-                "yes": "Si",
+                "yes": "Signar Si",
               },
               "pinSetup": Object {
                 "button": "Desa",
@@ -12128,9 +12128,9 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "no": "No",
+                "no": "Sign No",
                 "optional": "Optional data to share:",
-                "yes": "Yes",
+                "yes": "Sign Yes",
               },
               "pinSetup": Object {
                 "button": "Save",
@@ -12218,9 +12218,9 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "no": "No",
+                "no": "Firmar No",
                 "optional": "Datos opcionales para compartir: ",
-                "yes": "Sí",
+                "yes": "Firmar Sí",
               },
               "pinSetup": Object {
                 "button": "Guardar",
@@ -12329,6 +12329,15 @@ Haz click en botón inferior para empezar",
           description="world"
           title="hello"
         />,
+        <Component
+          style={
+            Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 1,
+              "marginTop": 10,
+            }
+          }
+        />,
         <ScrollView>
           <Component
             style={
@@ -12371,6 +12380,41 @@ Haz click en botón inferior para empezar",
             </Text>
           </Component>
         </ScrollView>,
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#9B9B9B",
+              "fontSize": 14,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#D0021B",
+              }
+            }
+          >
+            *
+          </Text>
+           This data is required to sign the petition.
+        </Text>,
+        <Component
+          style={
+            Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 2,
+              "marginTop": 10,
+            }
+          }
+        />,
         <Component
           style={
             Object {
@@ -12380,43 +12424,29 @@ Haz click en botón inferior para empezar",
         >
           <Button
             enabled={true}
-            name="Sí"
+            name="Firmar No"
             onPress={[Function]}
             style={
               Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               }
             }
           />
           <Button
             enabled={true}
-            name="No"
+            name="Firmar Sí"
             onPress={[Function]}
             style={
               Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               }
             }
           />
         </Component>,
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          onPress={[Function]}
-          style={
-            Object {
-              "alignSelf": "center",
-              "color": "#00F",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "marginVertical": 20,
-              "textDecorationLine": "underline",
-            }
-          }
-        >
-          O, cancelar participación en esta petición
-        </Text>,
       ],
       "style": Object {
         "flex": 1,
@@ -12432,6 +12462,21 @@ Haz click en botón inferior para empezar",
         "props": Object {
           "description": "world",
           "title": "hello",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "borderBottomColor": "#809B9B9B",
+            "borderBottomWidth": 1,
+            "marginTop": 10,
+          },
         },
         "ref": null,
         "rendered": null,
@@ -12586,24 +12631,95 @@ Haz click en botón inferior para empezar",
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": Array [
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#D0021B",
+                }
+              }
+            >
+              *
+            </Text>,
+            " This data is required to sign the petition.",
+          ],
+          "ellipsizeMode": "tail",
+          "style": Object {
+            "alignSelf": "center",
+            "color": "#9B9B9B",
+            "fontSize": 14,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "*",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#D0021B",
+              },
+            },
+            "ref": null,
+            "rendered": "*",
+            "type": [Function],
+          },
+          " This data is required to sign the petition.",
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "borderBottomColor": "#809B9B9B",
+            "borderBottomWidth": 2,
+            "marginTop": 10,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
           "children": Array [
             <Button
               enabled={true}
-              name="Sí"
+              name="Firmar No"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />,
             <Button
               enabled={true}
-              name="No"
+              name="Firmar Sí"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />,
@@ -12620,10 +12736,12 @@ Haz click en botón inferior para empezar",
             "nodeType": "function",
             "props": Object {
               "enabled": true,
-              "name": "Sí",
+              "name": "Firmar No",
               "onPress": [Function],
               "style": Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               },
             },
             "ref": null,
@@ -12636,10 +12754,12 @@ Haz click en botón inferior para empezar",
             "nodeType": "function",
             "props": Object {
               "enabled": true,
-              "name": "No",
+              "name": "Firmar Sí",
               "onPress": [Function],
               "style": Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               },
             },
             "ref": null,
@@ -12647,29 +12767,6 @@ Haz click en botón inferior para empezar",
             "type": [Function],
           },
         ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
-          "children": "O, cancelar participación en esta petición",
-          "ellipsizeMode": "tail",
-          "onPress": [Function],
-          "style": Object {
-            "alignSelf": "center",
-            "color": "#00F",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "marginVertical": 20,
-            "textDecorationLine": "underline",
-          },
-        },
-        "ref": null,
-        "rendered": "O, cancelar participación en esta petición",
         "type": [Function],
       },
     ],
@@ -12685,6 +12782,15 @@ Haz click en botón inferior para empezar",
           <Translate(Connect(PetitionDescription))
             description="world"
             title="hello"
+          />,
+          <Component
+            style={
+              Object {
+                "borderBottomColor": "#809B9B9B",
+                "borderBottomWidth": 1,
+                "marginTop": 10,
+              }
+            }
           />,
           <ScrollView>
             <Component
@@ -12728,6 +12834,41 @@ Haz click en botón inferior para empezar",
               </Text>
             </Component>
           </ScrollView>,
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#9B9B9B",
+                "fontSize": 14,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#D0021B",
+                }
+              }
+            >
+              *
+            </Text>
+             This data is required to sign the petition.
+          </Text>,
+          <Component
+            style={
+              Object {
+                "borderBottomColor": "#809B9B9B",
+                "borderBottomWidth": 2,
+                "marginTop": 10,
+              }
+            }
+          />,
           <Component
             style={
               Object {
@@ -12737,43 +12878,29 @@ Haz click en botón inferior para empezar",
           >
             <Button
               enabled={true}
-              name="Sí"
+              name="Firmar No"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />
             <Button
               enabled={true}
-              name="No"
+              name="Firmar Sí"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />
           </Component>,
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            onPress={[Function]}
-            style={
-              Object {
-                "alignSelf": "center",
-                "color": "#00F",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "marginVertical": 20,
-                "textDecorationLine": "underline",
-              }
-            }
-          >
-            O, cancelar participación en esta petición
-          </Text>,
         ],
         "style": Object {
           "flex": 1,
@@ -12789,6 +12916,21 @@ Haz click en botón inferior para empezar",
           "props": Object {
             "description": "world",
             "title": "hello",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 1,
+              "marginTop": 10,
+            },
           },
           "ref": null,
           "rendered": null,
@@ -12943,24 +13085,95 @@ Haz click en botón inferior para empezar",
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#D0021B",
+                  }
+                }
+              >
+                *
+              </Text>,
+              " This data is required to sign the petition.",
+            ],
+            "ellipsizeMode": "tail",
+            "style": Object {
+              "alignSelf": "center",
+              "color": "#9B9B9B",
+              "fontSize": 14,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "*",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#D0021B",
+                },
+              },
+              "ref": null,
+              "rendered": "*",
+              "type": [Function],
+            },
+            " This data is required to sign the petition.",
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 2,
+              "marginTop": 10,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "children": Array [
               <Button
                 enabled={true}
-                name="Sí"
+                name="Firmar No"
                 onPress={[Function]}
                 style={
                   Object {
                     "flex": 1,
+                    "height": "auto",
+                    "paddingVertical": 12,
                   }
                 }
               />,
               <Button
                 enabled={true}
-                name="No"
+                name="Firmar Sí"
                 onPress={[Function]}
                 style={
                   Object {
                     "flex": 1,
+                    "height": "auto",
+                    "paddingVertical": 12,
                   }
                 }
               />,
@@ -12977,10 +13190,12 @@ Haz click en botón inferior para empezar",
               "nodeType": "function",
               "props": Object {
                 "enabled": true,
-                "name": "Sí",
+                "name": "Firmar No",
                 "onPress": [Function],
                 "style": Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 },
               },
               "ref": null,
@@ -12993,10 +13208,12 @@ Haz click en botón inferior para empezar",
               "nodeType": "function",
               "props": Object {
                 "enabled": true,
-                "name": "No",
+                "name": "Firmar Sí",
                 "onPress": [Function],
                 "style": Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 },
               },
               "ref": null,
@@ -13004,29 +13221,6 @@ Haz click en botón inferior para empezar",
               "type": [Function],
             },
           ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
-            "children": "O, cancelar participación en esta petición",
-            "ellipsizeMode": "tail",
-            "onPress": [Function],
-            "style": Object {
-              "alignSelf": "center",
-              "color": "#00F",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "marginVertical": 20,
-              "textDecorationLine": "underline",
-            },
-          },
-          "ref": null,
-          "rendered": "O, cancelar participación en esta petición",
           "type": [Function],
         },
       ],
@@ -13169,9 +13363,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -13259,9 +13453,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -13349,9 +13543,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -13515,9 +13709,9 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "no": "No",
+                "no": "Signar No",
                 "optional": "Dades opcionals a compartir",
-                "yes": "Si",
+                "yes": "Signar Si",
               },
               "pinSetup": Object {
                 "button": "Desa",
@@ -13605,9 +13799,9 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "no": "No",
+                "no": "Sign No",
                 "optional": "Optional data to share:",
-                "yes": "Yes",
+                "yes": "Sign Yes",
               },
               "pinSetup": Object {
                 "button": "Save",
@@ -13695,9 +13889,9 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "no": "No",
+                "no": "Firmar No",
                 "optional": "Datos opcionales para compartir: ",
-                "yes": "Sí",
+                "yes": "Firmar Sí",
               },
               "pinSetup": Object {
                 "button": "Guardar",
@@ -13853,9 +14047,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -13943,9 +14137,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -14033,9 +14227,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -14178,9 +14372,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -14268,9 +14462,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -14358,9 +14552,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -14513,9 +14707,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -14603,9 +14797,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -14693,9 +14887,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -14843,9 +15037,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -14933,9 +15127,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -15023,9 +15217,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -15128,9 +15322,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -15218,9 +15412,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -15308,9 +15502,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -15456,9 +15650,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -15546,9 +15740,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -15636,9 +15830,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -15785,9 +15979,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -15875,9 +16069,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -15965,9 +16159,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -16134,9 +16328,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -16224,9 +16418,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -16314,9 +16508,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -16459,9 +16653,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -16549,9 +16743,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -16639,9 +16833,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -16793,9 +16987,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -16883,9 +17077,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -16973,9 +17167,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -17130,9 +17324,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -17220,9 +17414,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -17310,9 +17504,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -17455,9 +17649,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -17545,9 +17739,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -17635,9 +17829,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -17790,9 +17984,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -17880,9 +18074,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -17970,9 +18164,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -19010,9 +19204,9 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "no": "No",
+                "no": "Signar No",
                 "optional": "Dades opcionals a compartir",
-                "yes": "Si",
+                "yes": "Signar Si",
               },
               "pinSetup": Object {
                 "button": "Desa",
@@ -19100,9 +19294,9 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "no": "No",
+                "no": "Sign No",
                 "optional": "Optional data to share:",
-                "yes": "Yes",
+                "yes": "Sign Yes",
               },
               "pinSetup": Object {
                 "button": "Save",
@@ -19190,9 +19384,9 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "no": "No",
+                "no": "Firmar No",
                 "optional": "Datos opcionales para compartir: ",
-                "yes": "Sí",
+                "yes": "Firmar Sí",
               },
               "pinSetup": Object {
                 "button": "Guardar",
@@ -19283,9 +19477,9 @@ Fes click al botó per començar.",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar la participació en aquesta peticiió",
-              "no": "No",
+              "no": "Signar No",
               "optional": "Dades opcionals a compartir",
-              "yes": "Si",
+              "yes": "Signar Si",
             },
             "pinSetup": Object {
               "button": "Desa",
@@ -19373,9 +19567,9 @@ Tap the button below to begin.",
             },
             "petitionSummary": Object {
               "cancel": "Or, cancel signing this petition",
-              "no": "No",
+              "no": "Sign No",
               "optional": "Optional data to share:",
-              "yes": "Yes",
+              "yes": "Sign Yes",
             },
             "pinSetup": Object {
               "button": "Save",
@@ -19463,9 +19657,9 @@ Haz click en botón inferior para empezar",
             },
             "petitionSummary": Object {
               "cancel": "O, cancelar participación en esta petición",
-              "no": "No",
+              "no": "Firmar No",
               "optional": "Datos opcionales para compartir: ",
-              "yes": "Sí",
+              "yes": "Firmar Sí",
             },
             "pinSetup": Object {
               "button": "Guardar",
@@ -19609,9 +19803,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -19699,9 +19893,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -19789,9 +19983,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -19934,9 +20128,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -20024,9 +20218,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -20114,9 +20308,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -20269,9 +20463,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -20359,9 +20553,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -20449,9 +20643,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -20599,9 +20793,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -20689,9 +20883,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -20779,9 +20973,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -20884,9 +21078,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -20974,9 +21168,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -21064,9 +21258,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -21212,9 +21406,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -21302,9 +21496,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -21392,9 +21586,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -21541,9 +21735,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -21631,9 +21825,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -21721,9 +21915,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -21883,9 +22077,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -21973,9 +22167,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -22063,9 +22257,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -22208,9 +22402,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -22298,9 +22492,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -22388,9 +22582,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -22543,9 +22737,9 @@ Fes click al botó per començar.",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
-                    "no": "No",
+                    "no": "Signar No",
                     "optional": "Dades opcionals a compartir",
-                    "yes": "Si",
+                    "yes": "Signar Si",
                   },
                   "pinSetup": Object {
                     "button": "Desa",
@@ -22633,9 +22827,9 @@ Tap the button below to begin.",
                   },
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
-                    "no": "No",
+                    "no": "Sign No",
                     "optional": "Optional data to share:",
-                    "yes": "Yes",
+                    "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
                     "button": "Save",
@@ -22723,9 +22917,9 @@ Haz click en botón inferior para empezar",
                   },
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
-                    "no": "No",
+                    "no": "Firmar No",
                     "optional": "Datos opcionales para compartir: ",
-                    "yes": "Sí",
+                    "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
                     "button": "Guardar",
@@ -22873,9 +23067,9 @@ Fes click al botó per començar.",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
-                  "no": "No",
+                  "no": "Signar No",
                   "optional": "Dades opcionals a compartir",
-                  "yes": "Si",
+                  "yes": "Signar Si",
                 },
                 "pinSetup": Object {
                   "button": "Desa",
@@ -22963,9 +23157,9 @@ Tap the button below to begin.",
                 },
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
-                  "no": "No",
+                  "no": "Sign No",
                   "optional": "Optional data to share:",
-                  "yes": "Yes",
+                  "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
                   "button": "Save",
@@ -23053,9 +23247,9 @@ Haz click en botón inferior para empezar",
                 },
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
-                  "no": "No",
+                  "no": "Firmar No",
                   "optional": "Datos opcionales para compartir: ",
-                  "yes": "Sí",
+                  "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
                   "button": "Guardar",
@@ -23208,9 +23402,9 @@ Fes click al botó per començar.",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
-                        "no": "No",
+                        "no": "Signar No",
                         "optional": "Dades opcionals a compartir",
-                        "yes": "Si",
+                        "yes": "Signar Si",
                       },
                       "pinSetup": Object {
                         "button": "Desa",
@@ -23298,9 +23492,9 @@ Tap the button below to begin.",
                       },
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
-                        "no": "No",
+                        "no": "Sign No",
                         "optional": "Optional data to share:",
-                        "yes": "Yes",
+                        "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
                         "button": "Save",
@@ -23388,9 +23582,9 @@ Haz click en botón inferior para empezar",
                       },
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
-                        "no": "No",
+                        "no": "Firmar No",
                         "optional": "Datos opcionales para compartir: ",
-                        "yes": "Sí",
+                        "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
                         "button": "Guardar",
@@ -23533,9 +23727,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -23623,9 +23817,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -23713,9 +23907,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -23868,9 +24062,9 @@ Fes click al botó per començar.",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
-                      "no": "No",
+                      "no": "Signar No",
                       "optional": "Dades opcionals a compartir",
-                      "yes": "Si",
+                      "yes": "Signar Si",
                     },
                     "pinSetup": Object {
                       "button": "Desa",
@@ -23958,9 +24152,9 @@ Tap the button below to begin.",
                     },
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
-                      "no": "No",
+                      "no": "Sign No",
                       "optional": "Optional data to share:",
-                      "yes": "Yes",
+                      "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
                       "button": "Save",
@@ -24048,9 +24242,9 @@ Haz click en botón inferior para empezar",
                     },
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
-                      "no": "No",
+                      "no": "Firmar No",
                       "optional": "Datos opcionales para compartir: ",
-                      "yes": "Sí",
+                      "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
                       "button": "Guardar",
@@ -25088,9 +25282,9 @@ Fes click al botó per començar.",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
-                "no": "No",
+                "no": "Signar No",
                 "optional": "Dades opcionals a compartir",
-                "yes": "Si",
+                "yes": "Signar Si",
               },
               "pinSetup": Object {
                 "button": "Desa",
@@ -25178,9 +25372,9 @@ Tap the button below to begin.",
               },
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
-                "no": "No",
+                "no": "Sign No",
                 "optional": "Optional data to share:",
-                "yes": "Yes",
+                "yes": "Sign Yes",
               },
               "pinSetup": Object {
                 "button": "Save",
@@ -25268,9 +25462,9 @@ Haz click en botón inferior para empezar",
               },
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
-                "no": "No",
+                "no": "Firmar No",
                 "optional": "Datos opcionales para compartir: ",
-                "yes": "Sí",
+                "yes": "Firmar Sí",
               },
               "pinSetup": Object {
                 "button": "Guardar",
@@ -25366,6 +25560,15 @@ Haz click en botón inferior para empezar",
           description="world"
           title="hello"
         />,
+        <Component
+          style={
+            Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 1,
+              "marginTop": 10,
+            }
+          }
+        />,
         <ScrollView>
           <Component
             style={
@@ -25408,6 +25611,41 @@ Haz click en botón inferior para empezar",
             </Text>
           </Component>
         </ScrollView>,
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "alignSelf": "center",
+              "color": "#9B9B9B",
+              "fontSize": 14,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#D0021B",
+              }
+            }
+          >
+            *
+          </Text>
+           This data is required to sign the petition.
+        </Text>,
+        <Component
+          style={
+            Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 2,
+              "marginTop": 10,
+            }
+          }
+        />,
         <Component
           style={
             Object {
@@ -25417,43 +25655,29 @@ Haz click en botón inferior para empezar",
         >
           <Button
             enabled={true}
-            name="Sí"
+            name="Firmar No"
             onPress={[Function]}
             style={
               Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               }
             }
           />
           <Button
             enabled={true}
-            name="No"
+            name="Firmar Sí"
             onPress={[Function]}
             style={
               Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               }
             }
           />
         </Component>,
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          onPress={[Function]}
-          style={
-            Object {
-              "alignSelf": "center",
-              "color": "#00F",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "marginVertical": 20,
-              "textDecorationLine": "underline",
-            }
-          }
-        >
-          O, cancelar participación en esta petición
-        </Text>,
       ],
       "style": Object {
         "flex": 1,
@@ -25469,6 +25693,21 @@ Haz click en botón inferior para empezar",
         "props": Object {
           "description": "world",
           "title": "hello",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "borderBottomColor": "#809B9B9B",
+            "borderBottomWidth": 1,
+            "marginTop": 10,
+          },
         },
         "ref": null,
         "rendered": null,
@@ -25623,24 +25862,95 @@ Haz click en botón inferior para empezar",
         "key": undefined,
         "nodeType": "class",
         "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
+          "children": Array [
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#D0021B",
+                }
+              }
+            >
+              *
+            </Text>,
+            " This data is required to sign the petition.",
+          ],
+          "ellipsizeMode": "tail",
+          "style": Object {
+            "alignSelf": "center",
+            "color": "#9B9B9B",
+            "fontSize": 14,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "*",
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#D0021B",
+              },
+            },
+            "ref": null,
+            "rendered": "*",
+            "type": [Function],
+          },
+          " This data is required to sign the petition.",
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "style": Object {
+            "borderBottomColor": "#809B9B9B",
+            "borderBottomWidth": 2,
+            "marginTop": 10,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
           "children": Array [
             <Button
               enabled={true}
-              name="Sí"
+              name="Firmar No"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />,
             <Button
               enabled={true}
-              name="No"
+              name="Firmar Sí"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />,
@@ -25657,10 +25967,12 @@ Haz click en botón inferior para empezar",
             "nodeType": "function",
             "props": Object {
               "enabled": true,
-              "name": "Sí",
+              "name": "Firmar No",
               "onPress": [Function],
               "style": Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               },
             },
             "ref": null,
@@ -25673,10 +25985,12 @@ Haz click en botón inferior para empezar",
             "nodeType": "function",
             "props": Object {
               "enabled": true,
-              "name": "No",
+              "name": "Firmar Sí",
               "onPress": [Function],
               "style": Object {
                 "flex": 1,
+                "height": "auto",
+                "paddingVertical": 12,
               },
             },
             "ref": null,
@@ -25684,29 +25998,6 @@ Haz click en botón inferior para empezar",
             "type": [Function],
           },
         ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "accessible": true,
-          "allowFontScaling": true,
-          "children": "O, cancelar participación en esta petición",
-          "ellipsizeMode": "tail",
-          "onPress": [Function],
-          "style": Object {
-            "alignSelf": "center",
-            "color": "#00F",
-            "fontSize": 14,
-            "fontWeight": "500",
-            "marginVertical": 20,
-            "textDecorationLine": "underline",
-          },
-        },
-        "ref": null,
-        "rendered": "O, cancelar participación en esta petición",
         "type": [Function],
       },
     ],
@@ -25722,6 +26013,15 @@ Haz click en botón inferior para empezar",
           <Translate(Connect(PetitionDescription))
             description="world"
             title="hello"
+          />,
+          <Component
+            style={
+              Object {
+                "borderBottomColor": "#809B9B9B",
+                "borderBottomWidth": 1,
+                "marginTop": 10,
+              }
+            }
           />,
           <ScrollView>
             <Component
@@ -25765,6 +26065,41 @@ Haz click en botón inferior para empezar",
               </Text>
             </Component>
           </ScrollView>,
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#9B9B9B",
+                "fontSize": 14,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#D0021B",
+                }
+              }
+            >
+              *
+            </Text>
+             This data is required to sign the petition.
+          </Text>,
+          <Component
+            style={
+              Object {
+                "borderBottomColor": "#809B9B9B",
+                "borderBottomWidth": 2,
+                "marginTop": 10,
+              }
+            }
+          />,
           <Component
             style={
               Object {
@@ -25774,43 +26109,29 @@ Haz click en botón inferior para empezar",
           >
             <Button
               enabled={true}
-              name="Sí"
+              name="Firmar No"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />
             <Button
               enabled={true}
-              name="No"
+              name="Firmar Sí"
               onPress={[Function]}
               style={
                 Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 }
               }
             />
           </Component>,
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            onPress={[Function]}
-            style={
-              Object {
-                "alignSelf": "center",
-                "color": "#00F",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "marginVertical": 20,
-                "textDecorationLine": "underline",
-              }
-            }
-          >
-            O, cancelar participación en esta petición
-          </Text>,
         ],
         "style": Object {
           "flex": 1,
@@ -25826,6 +26147,21 @@ Haz click en botón inferior para empezar",
           "props": Object {
             "description": "world",
             "title": "hello",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 1,
+              "marginTop": 10,
+            },
           },
           "ref": null,
           "rendered": null,
@@ -25980,24 +26316,95 @@ Haz click en botón inferior para empezar",
           "key": undefined,
           "nodeType": "class",
           "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#D0021B",
+                  }
+                }
+              >
+                *
+              </Text>,
+              " This data is required to sign the petition.",
+            ],
+            "ellipsizeMode": "tail",
+            "style": Object {
+              "alignSelf": "center",
+              "color": "#9B9B9B",
+              "fontSize": 14,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "*",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#D0021B",
+                },
+              },
+              "ref": null,
+              "rendered": "*",
+              "type": [Function],
+            },
+            " This data is required to sign the petition.",
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "style": Object {
+              "borderBottomColor": "#809B9B9B",
+              "borderBottomWidth": 2,
+              "marginTop": 10,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
             "children": Array [
               <Button
                 enabled={true}
-                name="Sí"
+                name="Firmar No"
                 onPress={[Function]}
                 style={
                   Object {
                     "flex": 1,
+                    "height": "auto",
+                    "paddingVertical": 12,
                   }
                 }
               />,
               <Button
                 enabled={true}
-                name="No"
+                name="Firmar Sí"
                 onPress={[Function]}
                 style={
                   Object {
                     "flex": 1,
+                    "height": "auto",
+                    "paddingVertical": 12,
                   }
                 }
               />,
@@ -26014,10 +26421,12 @@ Haz click en botón inferior para empezar",
               "nodeType": "function",
               "props": Object {
                 "enabled": true,
-                "name": "Sí",
+                "name": "Firmar No",
                 "onPress": [Function],
                 "style": Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 },
               },
               "ref": null,
@@ -26030,10 +26439,12 @@ Haz click en botón inferior para empezar",
               "nodeType": "function",
               "props": Object {
                 "enabled": true,
-                "name": "No",
+                "name": "Firmar Sí",
                 "onPress": [Function],
                 "style": Object {
                   "flex": 1,
+                  "height": "auto",
+                  "paddingVertical": 12,
                 },
               },
               "ref": null,
@@ -26041,29 +26452,6 @@ Haz click en botón inferior para empezar",
               "type": [Function],
             },
           ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "accessible": true,
-            "allowFontScaling": true,
-            "children": "O, cancelar participación en esta petición",
-            "ellipsizeMode": "tail",
-            "onPress": [Function],
-            "style": Object {
-              "alignSelf": "center",
-              "color": "#00F",
-              "fontSize": 14,
-              "fontWeight": "500",
-              "marginVertical": 20,
-              "textDecorationLine": "underline",
-            },
-          },
-          "ref": null,
-          "rendered": "O, cancelar participación en esta petición",
           "type": [Function],
         },
       ],

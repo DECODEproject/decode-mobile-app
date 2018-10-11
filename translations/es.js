@@ -36,8 +36,8 @@ export default {
     save: 'Guardar',
   },
   petitionSummary: {
-    yes: 'Sí',
-    no: 'No',
+    yes: 'Firmar Sí',
+    no: 'Firmar No',
     cancel: 'O, cancelar participación en esta petición',
     optional: 'Datos opcionales para compartir: ',
   },

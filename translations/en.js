@@ -36,8 +36,8 @@ export default {
     save: 'Save',
   },
   petitionSummary: {
-    yes: 'Yes',
-    no: 'No',
+    yes: 'Sign Yes',
+    no: 'Sign No',
     cancel: 'Or, cancel signing this petition',
     optional: 'Optional data to share:',
   },
