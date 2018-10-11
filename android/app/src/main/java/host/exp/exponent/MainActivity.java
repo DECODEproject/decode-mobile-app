@@ -10,7 +10,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import decode.zenroom.Zenroom;
 import expo.core.interfaces.Package;
 import host.exp.exponent.analytics.Analytics;
 import host.exp.exponent.generated.DetachBuildConstants;
@@ -22,20 +21,6 @@ public class MainActivity extends DetachActivity {
   public String publishedUrl() {
     return "exp://exp.host/@decode-barcelona/decode-walletapp";
   }
-
-  @Override
-  protected void onPause() {
-    super.onPause();
-
-    Log.d("KZK", "1");
-    Zenroom z = new Zenroom();
-    z.run("print(\"KZK KZK KZK xxxx\")", "", "", "");
-    Log.d("KZK", "2" +
-            "" +
-            "" +
-            "");
-  }
-
 
   @Override
   public String developmentUrl() {

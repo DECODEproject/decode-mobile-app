@@ -3,6 +3,8 @@ package host.exp.exponent;
 
 import com.facebook.react.ReactPackage;
 
+import net.decode.zenroom.CustomZenroomPackage;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class MainApplication extends ExpoApplication {
   // Needed for `react-native link`
   public List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
+            new CustomZenroomPackage()
         // Add your own packages here!
         // TODO: add native modules!
 
