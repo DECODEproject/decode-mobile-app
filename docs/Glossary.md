@@ -8,8 +8,27 @@ Attribute is used to describe a piece of information that a user inputs to the a
 
 An attribute has a specific structure as defined in the original Decode architecture document, including the fields *object*, *subject*, *provenance*, *scope*, and *predicate*. Please see the architecture document for a definition of these fields.
 
-From now on in this glossary, attribute will be referred to as data. 
+From now on in this glossary, attribute will be referred to as data.
+
+```js
+ Attribute = {
+    predicate: 'schema:addressLocality',
+    object: 'Barcelona',
+    scope: 'can-access',
+    provenance: {
+      source: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+      credentials: '0123456789',
+    },
+    subject: 'citizen',
+  };
+```
   
+### Coconut
+
+Coconut is an algorithm developed during the DECODE project. It allows the signing and verification of attributes by a specific credential-issuer.
+
+Coconut is still not implemented outside the python academic code, it needs to be ported to zenroom in order to execute in the wallet. 
+
 ### Credential issuer
 
 The credential issuer is an entity which asks the verifier if a piece of information is valid and returns a credential which proves a piece of information has been verified. 

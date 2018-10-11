@@ -68,7 +68,15 @@ If you want to know more, check the [Dependencies Documentation](Dependencies.md
 
 #### Chainspace
 
-Download the Chainspace repo from https://github.com/DECODEproject/chainspace
+Download the Chainspace repo from https://github.com/DECODEproject/chainspace use branch `xplore`
+
+##### Running Locally [TODO]
+
+Run this command 
+```
+make kill-all; rm -rf chainspacecore-*-*; make start-nodes; make start-client-api
+
+```
 
 ##### Building with Docker
 
