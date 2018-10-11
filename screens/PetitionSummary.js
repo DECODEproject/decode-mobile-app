@@ -119,10 +119,11 @@ class PetitionSummary extends React.Component {
 
     return (<AttributeComponent
       key={attr.predicate}
+      value={valueToShow}
       isMandatory={isMandatory}
       toggleCallback={() => this.toggleEnabledAttribute(attr)}
       isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
-      name={`${this.props.t(attr.predicate)} - ${valueToShow}`}
+      name={this.props.t(attr.predicate)}
     />
     );
   };
@@ -149,10 +150,10 @@ class PetitionSummary extends React.Component {
     const petitionAttributesTemplate = (
       <View style={styles.petitionSummaryBox}>
         { matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
+        { matchedAttributes.optional.map(attr => this.renderAttribute(attr)) }
         <Text>
           {t('optional')}
         </Text>
-        { matchedAttributes.optional.map(attr => this.renderAttribute(attr)) }
         { matchedAttributes.missing.map(attr => this.renderMissingAttribute(attr)) }
       </View>
     );
@@ -176,6 +177,11 @@ class PetitionSummary extends React.Component {
             borderBottomWidth: 1,
           }}
         />
+
+        <View style={{ paddingVertical: 20 }}>
+          <Text style={{ fontSize: 14, lineHeight: 20 }}>{this.props.t('sharing')}</Text>
+          <Text style={{ fontWeight: 'bold', fontSize: 14, lineHeight: 20 }}>Decidim Barcelona.</Text>
+        </View>
 
         <ScrollView>
           { petitionError && petitionErrorTemplate }

@@ -14,6 +14,8 @@ export default function Attribute(props) {
     <View style={styles.attributeContainerVerified}>
       <View style={styles.attribute}>
         <Text style={styles.attributeName}>{props.name}</Text>
+        { props.isMandatory && <Text style={{ color: '#D0021B' }}> *</Text> }
+        <Text style={styles.attributeValue}>{props.value}</Text>
         <Switch onValueChange={props.toggleCallback} value={props.isEnabled} />
       </View>
       { !props.isEnabled && props.isMandatory && disabledAttributeText }
@@ -25,6 +27,7 @@ Attribute.propTypes = {
   toggleCallback: PropTypes.func,
   isEnabled: PropTypes.bool,
   name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 Attribute.defaultProps = {

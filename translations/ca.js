@@ -39,7 +39,8 @@ export default {
     yes: 'Signar Si',
     no: 'Signar No',
     cancel: 'O, cancelar la participació en aquesta peticiió',
-    optional: 'Dades opcionals a compartir',
+    optional: 'Dades adicionals a compartir',
+    sharing: 'Estaràs compartint les teves dades amb',
   },
   pinSetup: {
     placeholderPin1: ' Almenys 4 digits',

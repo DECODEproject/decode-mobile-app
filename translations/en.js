@@ -39,7 +39,8 @@ export default {
     yes: 'Sign Yes',
     no: 'Sign No',
     cancel: 'Or, cancel signing this petition',
-    optional: 'Optional data to share:',
+    optional: 'Additional data to share:',
+    sharing: 'You will be sharing your data with',
   },
   pinSetup: {
     placeholderPin1: ' At least 4 digits',

@@ -39,7 +39,8 @@ export default {
     yes: 'Firmar Sí',
     no: 'Firmar No',
     cancel: 'O, cancelar participación en esta petición',
-    optional: 'Datos opcionales para compartir: ',
+    optional: 'Datos adicionales para compartir: ',
+    sharing: 'Estarás compartiendo tus datos con',
   },
   pinSetup: {
     placeholderPin1: 'Por lo menos 4 digitos',

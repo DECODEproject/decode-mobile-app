@@ -106,7 +106,8 @@ Fes click al botó per començar.",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "no": "Signar No",
-                  "optional": "Dades opcionals a compartir",
+                  "optional": "Dades adicionals a compartir",
+                  "sharing": "Estaràs compartint les teves dades amb",
                   "yes": "Signar Si",
                 },
                 "pinSetup": Object {
@@ -196,7 +197,8 @@ Tap the button below to begin.",
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
                   "no": "Sign No",
-                  "optional": "Optional data to share:",
+                  "optional": "Additional data to share:",
+                  "sharing": "You will be sharing your data with",
                   "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
@@ -286,7 +288,8 @@ Haz click en botón inferior para empezar",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
                   "no": "Firmar No",
-                  "optional": "Datos opcionales para compartir: ",
+                  "optional": "Datos adicionales para compartir: ",
+                  "sharing": "Estarás compartiendo tus datos con",
                   "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
@@ -452,7 +455,8 @@ Fes click al botó per començar.",
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
                 "no": "Signar No",
-                "optional": "Dades opcionals a compartir",
+                "optional": "Dades adicionals a compartir",
+                "sharing": "Estaràs compartint les teves dades amb",
                 "yes": "Signar Si",
               },
               "pinSetup": Object {
@@ -542,7 +546,8 @@ Tap the button below to begin.",
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
                 "no": "Sign No",
-                "optional": "Optional data to share:",
+                "optional": "Additional data to share:",
+                "sharing": "You will be sharing your data with",
                 "yes": "Sign Yes",
               },
               "pinSetup": Object {
@@ -632,7 +637,8 @@ Haz click en botón inferior para empezar",
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
                 "no": "Firmar No",
-                "optional": "Datos opcionales para compartir: ",
+                "optional": "Datos adicionales para compartir: ",
+                "sharing": "Estarás compartiendo tus datos con",
                 "yes": "Firmar Sí",
               },
               "pinSetup": Object {
@@ -790,7 +796,8 @@ Fes click al botó per començar.",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "no": "Signar No",
-                        "optional": "Dades opcionals a compartir",
+                        "optional": "Dades adicionals a compartir",
+                        "sharing": "Estaràs compartint les teves dades amb",
                         "yes": "Signar Si",
                       },
                       "pinSetup": Object {
@@ -880,7 +887,8 @@ Tap the button below to begin.",
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
                         "no": "Sign No",
-                        "optional": "Optional data to share:",
+                        "optional": "Additional data to share:",
+                        "sharing": "You will be sharing your data with",
                         "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
@@ -970,7 +978,8 @@ Haz click en botón inferior para empezar",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
                         "no": "Firmar No",
-                        "optional": "Datos opcionales para compartir: ",
+                        "optional": "Datos adicionales para compartir: ",
+                        "sharing": "Estarás compartiendo tus datos con",
                         "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
@@ -1115,7 +1124,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -1205,7 +1215,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -1295,7 +1306,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -1450,7 +1462,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -1540,7 +1553,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -1630,7 +1644,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -1780,7 +1795,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -1870,7 +1886,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -1960,7 +1977,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -2065,7 +2083,8 @@ Fes click al botó per començar.",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "no": "Signar No",
-                  "optional": "Dades opcionals a compartir",
+                  "optional": "Dades adicionals a compartir",
+                  "sharing": "Estaràs compartint les teves dades amb",
                   "yes": "Signar Si",
                 },
                 "pinSetup": Object {
@@ -2155,7 +2174,8 @@ Tap the button below to begin.",
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
                   "no": "Sign No",
-                  "optional": "Optional data to share:",
+                  "optional": "Additional data to share:",
+                  "sharing": "You will be sharing your data with",
                   "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
@@ -2245,7 +2265,8 @@ Haz click en botón inferior para empezar",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
                   "no": "Firmar No",
-                  "optional": "Datos opcionales para compartir: ",
+                  "optional": "Datos adicionales para compartir: ",
+                  "sharing": "Estarás compartiendo tus datos con",
                   "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
@@ -2393,7 +2414,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -2483,7 +2505,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -2573,7 +2596,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -2722,7 +2746,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -2812,7 +2837,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -2902,7 +2928,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -3071,7 +3098,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -3161,7 +3189,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -3251,7 +3280,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -3396,7 +3426,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -3486,7 +3517,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -3576,7 +3608,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -3730,7 +3763,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -3820,7 +3854,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -3910,7 +3945,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -4067,7 +4103,8 @@ Fes click al botó per començar.",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "no": "Signar No",
-                        "optional": "Dades opcionals a compartir",
+                        "optional": "Dades adicionals a compartir",
+                        "sharing": "Estaràs compartint les teves dades amb",
                         "yes": "Signar Si",
                       },
                       "pinSetup": Object {
@@ -4157,7 +4194,8 @@ Tap the button below to begin.",
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
                         "no": "Sign No",
-                        "optional": "Optional data to share:",
+                        "optional": "Additional data to share:",
+                        "sharing": "You will be sharing your data with",
                         "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
@@ -4247,7 +4285,8 @@ Haz click en botón inferior para empezar",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
                         "no": "Firmar No",
-                        "optional": "Datos opcionales para compartir: ",
+                        "optional": "Datos adicionales para compartir: ",
+                        "sharing": "Estarás compartiendo tus datos con",
                         "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
@@ -4392,7 +4431,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -4482,7 +4522,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -4572,7 +4613,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -4727,7 +4769,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -4817,7 +4860,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -4907,7 +4951,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -5947,7 +5992,8 @@ Fes click al botó per començar.",
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
                 "no": "Signar No",
-                "optional": "Dades opcionals a compartir",
+                "optional": "Dades adicionals a compartir",
+                "sharing": "Estaràs compartint les teves dades amb",
                 "yes": "Signar Si",
               },
               "pinSetup": Object {
@@ -6037,7 +6083,8 @@ Tap the button below to begin.",
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
                 "no": "Sign No",
-                "optional": "Optional data to share:",
+                "optional": "Additional data to share:",
+                "sharing": "You will be sharing your data with",
                 "yes": "Sign Yes",
               },
               "pinSetup": Object {
@@ -6127,7 +6174,8 @@ Haz click en botón inferior para empezar",
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
                 "no": "Firmar No",
-                "optional": "Datos opcionales para compartir: ",
+                "optional": "Datos adicionales para compartir: ",
+                "sharing": "Estarás compartiendo tus datos con",
                 "yes": "Firmar Sí",
               },
               "pinSetup": Object {
@@ -6220,7 +6268,8 @@ Fes click al botó per començar.",
             "petitionSummary": Object {
               "cancel": "O, cancelar la participació en aquesta peticiió",
               "no": "Signar No",
-              "optional": "Dades opcionals a compartir",
+              "optional": "Dades adicionals a compartir",
+              "sharing": "Estaràs compartint les teves dades amb",
               "yes": "Signar Si",
             },
             "pinSetup": Object {
@@ -6310,7 +6359,8 @@ Tap the button below to begin.",
             "petitionSummary": Object {
               "cancel": "Or, cancel signing this petition",
               "no": "Sign No",
-              "optional": "Optional data to share:",
+              "optional": "Additional data to share:",
+              "sharing": "You will be sharing your data with",
               "yes": "Sign Yes",
             },
             "pinSetup": Object {
@@ -6400,7 +6450,8 @@ Haz click en botón inferior para empezar",
             "petitionSummary": Object {
               "cancel": "O, cancelar participación en esta petición",
               "no": "Firmar No",
-              "optional": "Datos opcionales para compartir: ",
+              "optional": "Datos adicionales para compartir: ",
+              "sharing": "Estarás compartiendo tus datos con",
               "yes": "Firmar Sí",
             },
             "pinSetup": Object {
@@ -6546,7 +6597,8 @@ Fes click al botó per començar.",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "no": "Signar No",
-                        "optional": "Dades opcionals a compartir",
+                        "optional": "Dades adicionals a compartir",
+                        "sharing": "Estaràs compartint les teves dades amb",
                         "yes": "Signar Si",
                       },
                       "pinSetup": Object {
@@ -6636,7 +6688,8 @@ Tap the button below to begin.",
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
                         "no": "Sign No",
-                        "optional": "Optional data to share:",
+                        "optional": "Additional data to share:",
+                        "sharing": "You will be sharing your data with",
                         "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
@@ -6726,7 +6779,8 @@ Haz click en botón inferior para empezar",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
                         "no": "Firmar No",
-                        "optional": "Datos opcionales para compartir: ",
+                        "optional": "Datos adicionales para compartir: ",
+                        "sharing": "Estarás compartiendo tus datos con",
                         "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
@@ -6871,7 +6925,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -6961,7 +7016,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -7051,7 +7107,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -7206,7 +7263,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -7296,7 +7354,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -7386,7 +7445,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -7536,7 +7596,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -7626,7 +7687,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -7716,7 +7778,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -7821,7 +7884,8 @@ Fes click al botó per començar.",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "no": "Signar No",
-                  "optional": "Dades opcionals a compartir",
+                  "optional": "Dades adicionals a compartir",
+                  "sharing": "Estaràs compartint les teves dades amb",
                   "yes": "Signar Si",
                 },
                 "pinSetup": Object {
@@ -7911,7 +7975,8 @@ Tap the button below to begin.",
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
                   "no": "Sign No",
-                  "optional": "Optional data to share:",
+                  "optional": "Additional data to share:",
+                  "sharing": "You will be sharing your data with",
                   "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
@@ -8001,7 +8066,8 @@ Haz click en botón inferior para empezar",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
                   "no": "Firmar No",
-                  "optional": "Datos opcionales para compartir: ",
+                  "optional": "Datos adicionales para compartir: ",
+                  "sharing": "Estarás compartiendo tus datos con",
                   "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
@@ -8149,7 +8215,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -8239,7 +8306,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -8329,7 +8397,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -8478,7 +8547,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -8568,7 +8638,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -8658,7 +8729,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -8820,7 +8892,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -8910,7 +8983,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -9000,7 +9074,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -9145,7 +9220,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -9235,7 +9311,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -9325,7 +9402,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -9480,7 +9558,8 @@ Fes click al botó per començar.",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar la participació en aquesta peticiió",
                     "no": "Signar No",
-                    "optional": "Dades opcionals a compartir",
+                    "optional": "Dades adicionals a compartir",
+                    "sharing": "Estaràs compartint les teves dades amb",
                     "yes": "Signar Si",
                   },
                   "pinSetup": Object {
@@ -9570,7 +9649,8 @@ Tap the button below to begin.",
                   "petitionSummary": Object {
                     "cancel": "Or, cancel signing this petition",
                     "no": "Sign No",
-                    "optional": "Optional data to share:",
+                    "optional": "Additional data to share:",
+                    "sharing": "You will be sharing your data with",
                     "yes": "Sign Yes",
                   },
                   "pinSetup": Object {
@@ -9660,7 +9740,8 @@ Haz click en botón inferior para empezar",
                   "petitionSummary": Object {
                     "cancel": "O, cancelar participación en esta petición",
                     "no": "Firmar No",
-                    "optional": "Datos opcionales para compartir: ",
+                    "optional": "Datos adicionales para compartir: ",
+                    "sharing": "Estarás compartiendo tus datos con",
                     "yes": "Firmar Sí",
                   },
                   "pinSetup": Object {
@@ -9810,7 +9891,8 @@ Fes click al botó per començar.",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar la participació en aquesta peticiió",
                   "no": "Signar No",
-                  "optional": "Dades opcionals a compartir",
+                  "optional": "Dades adicionals a compartir",
+                  "sharing": "Estaràs compartint les teves dades amb",
                   "yes": "Signar Si",
                 },
                 "pinSetup": Object {
@@ -9900,7 +9982,8 @@ Tap the button below to begin.",
                 "petitionSummary": Object {
                   "cancel": "Or, cancel signing this petition",
                   "no": "Sign No",
-                  "optional": "Optional data to share:",
+                  "optional": "Additional data to share:",
+                  "sharing": "You will be sharing your data with",
                   "yes": "Sign Yes",
                 },
                 "pinSetup": Object {
@@ -9990,7 +10073,8 @@ Haz click en botón inferior para empezar",
                 "petitionSummary": Object {
                   "cancel": "O, cancelar participación en esta petición",
                   "no": "Firmar No",
-                  "optional": "Datos opcionales para compartir: ",
+                  "optional": "Datos adicionales para compartir: ",
+                  "sharing": "Estarás compartiendo tus datos con",
                   "yes": "Firmar Sí",
                 },
                 "pinSetup": Object {
@@ -10145,7 +10229,8 @@ Fes click al botó per començar.",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar la participació en aquesta peticiió",
                         "no": "Signar No",
-                        "optional": "Dades opcionals a compartir",
+                        "optional": "Dades adicionals a compartir",
+                        "sharing": "Estaràs compartint les teves dades amb",
                         "yes": "Signar Si",
                       },
                       "pinSetup": Object {
@@ -10235,7 +10320,8 @@ Tap the button below to begin.",
                       "petitionSummary": Object {
                         "cancel": "Or, cancel signing this petition",
                         "no": "Sign No",
-                        "optional": "Optional data to share:",
+                        "optional": "Additional data to share:",
+                        "sharing": "You will be sharing your data with",
                         "yes": "Sign Yes",
                       },
                       "pinSetup": Object {
@@ -10325,7 +10411,8 @@ Haz click en botón inferior para empezar",
                       "petitionSummary": Object {
                         "cancel": "O, cancelar participación en esta petición",
                         "no": "Firmar No",
-                        "optional": "Datos opcionales para compartir: ",
+                        "optional": "Datos adicionales para compartir: ",
+                        "sharing": "Estarás compartiendo tus datos con",
                         "yes": "Firmar Sí",
                       },
                       "pinSetup": Object {
@@ -10470,7 +10557,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -10560,7 +10648,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -10650,7 +10739,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -10805,7 +10895,8 @@ Fes click al botó per començar.",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar la participació en aquesta peticiió",
                       "no": "Signar No",
-                      "optional": "Dades opcionals a compartir",
+                      "optional": "Dades adicionals a compartir",
+                      "sharing": "Estaràs compartint les teves dades amb",
                       "yes": "Signar Si",
                     },
                     "pinSetup": Object {
@@ -10895,7 +10986,8 @@ Tap the button below to begin.",
                     "petitionSummary": Object {
                       "cancel": "Or, cancel signing this petition",
                       "no": "Sign No",
-                      "optional": "Optional data to share:",
+                      "optional": "Additional data to share:",
+                      "sharing": "You will be sharing your data with",
                       "yes": "Sign Yes",
                     },
                     "pinSetup": Object {
@@ -10985,7 +11077,8 @@ Haz click en botón inferior para empezar",
                     "petitionSummary": Object {
                       "cancel": "O, cancelar participación en esta petición",
                       "no": "Firmar No",
-                      "optional": "Datos opcionales para compartir: ",
+                      "optional": "Datos adicionales para compartir: ",
+                      "sharing": "Estarás compartiendo tus datos con",
                       "yes": "Firmar Sí",
                     },
                     "pinSetup": Object {
@@ -12025,7 +12118,8 @@ Fes click al botó per començar.",
               "petitionSummary": Object {
                 "cancel": "O, cancelar la participació en aquesta peticiió",
                 "no": "Signar No",
-                "optional": "Dades opcionals a compartir",
+                "optional": "Dades adicionals a compartir",
+                "sharing": "Estaràs compartint les teves dades amb",
                 "yes": "Signar Si",
               },
               "pinSetup": Object {
@@ -12115,7 +12209,8 @@ Tap the button below to begin.",
               "petitionSummary": Object {
                 "cancel": "Or, cancel signing this petition",
                 "no": "Sign No",
-                "optional": "Optional data to share:",
+                "optional": "Additional data to share:",
+                "sharing": "You will be sharing your data with",
                 "yes": "Sign Yes",
               },
               "pinSetup": Object {
@@ -12205,7 +12300,8 @@ Haz click en botón inferior para empezar",
               "petitionSummary": Object {
                 "cancel": "O, cancelar participación en esta petición",
                 "no": "Firmar No",
-                "optional": "Datos opcionales para compartir: ",
+                "optional": "Datos adicionales para compartir: ",
+                "sharing": "Estarás compartiendo tus datos con",
                 "yes": "Firmar Sí",
               },
               "pinSetup": Object {

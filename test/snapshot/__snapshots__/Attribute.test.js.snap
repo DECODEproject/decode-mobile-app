@@ -15,6 +15,7 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
   <View
     style={
       Object {
+        "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
       }
@@ -27,13 +28,27 @@ exports[`renders Attribute on non-verfied mode component 1`] = `
       style={
         Object {
           "color": "rgba(0, 0, 0, 0.87)",
-          "flex": 1,
           "fontSize": 16,
           "fontWeight": "500",
         }
       }
     >
       test
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#9B9B9B",
+          "flex": 1,
+          "fontSize": 14,
+          "marginLeft": 5,
+        }
+      }
+    >
+      Barcelona
     </Text>
     <Switch
       onValueChange={[Function]}
@@ -58,6 +73,7 @@ exports[`renders Attribute on verfied mode component 1`] = `
   <View
     style={
       Object {
+        "alignItems": "center",
         "flex": 1,
         "flexDirection": "row",
       }
@@ -70,13 +86,27 @@ exports[`renders Attribute on verfied mode component 1`] = `
       style={
         Object {
           "color": "rgba(0, 0, 0, 0.87)",
-          "flex": 1,
           "fontSize": 16,
           "fontWeight": "500",
         }
       }
     >
       test
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#9B9B9B",
+          "flex": 1,
+          "fontSize": 14,
+          "marginLeft": 5,
+        }
+      }
+    >
+      Barcelona
     </Text>
     <Switch
       onValueChange={[Function]}
