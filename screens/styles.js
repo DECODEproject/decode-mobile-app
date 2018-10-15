@@ -202,12 +202,6 @@ const styles = StyleSheet.create({
     marginBottom: 40,
     width: 75,
   },
-  signOutcomePetitionTitle: {
-    fontSize: 20,
-    fontWeight: '500',
-    marginVertical: 15,
-    textAlign: 'center',
-  },
   signOutcomeText: {
     textAlign: 'center',
     marginBottom: 20,

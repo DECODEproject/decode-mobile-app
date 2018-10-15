@@ -31,7 +31,6 @@ class Error extends React.Component {
             source={warningIcon}
           />
           <View style={styles.signOutcomeTextBox}>
-            <Text style={styles.signOutcomePetitionTitle}>{this.props.title}</Text>
             <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
             <Button name={this.props.t('backDecidim')} onPress={Error.handlePress} />
           </View>
@@ -42,13 +41,11 @@ class Error extends React.Component {
 }
 
 Error.propTypes = {
-  title: PropTypes.string,
   t: PropTypes.func.isRequired,
   petitionError: PropTypes.string,
 };
 
 Error.defaultProps = {
-  title: '',
   petitionError: undefined,
 };
 
