@@ -1,4 +1,4 @@
-import { sortedDistrictsList, districtNameFromId } from '../../../lib/districts';
+import { sortedDistrictsList, districtNameFromId, validDistrict } from '../../../lib/districts';
 
 describe('districts', () => {
   it('sortedDistrictsList should return a list of districts sorted alphabetically', () => {
@@ -23,5 +23,15 @@ describe('districts', () => {
     const districtName = districtNameFromId('4');
 
     expect(districtName).toEqual('Les Corts');
+  });
+
+  describe('validDistrict', () => {
+    it('should return true if the value is one of the Barcelona districts', () => {
+      expect(validDistrict('1')).toEqual(true);
+    });
+
+    it('should return false if the value is not one of the Barcelona districts', () => {
+      expect(validDistrict('0')).toEqual(false);
+    });
   });
 });

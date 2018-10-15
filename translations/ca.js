@@ -23,6 +23,7 @@ export default {
     description: 'Pots afegir aquests atributs a la wallet.',
     ageAttribute: 'Data de Naixement',
     districtAttribute: 'Districte',
+    districtPlaceholder: 'Selecciona un districte',
     add: 'Afegir',
     edit: 'Editar',
     save: 'Desar',

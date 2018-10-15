@@ -168,6 +168,34 @@ describe('NewAttributes', () => {
         isDatePickerVisible: false,
       });
     });
+
+    it('should not change state when the placeholder district is selected', () => {
+      const initialState = {
+        attributes: {
+          list: new Map(),
+          errorSaveAttributes: false,
+        },
+        wallet: {
+          id: 'something',
+        },
+      };
+
+      const store = mockStore(initialState);
+      const wrapper = shallow(<NewAttributes />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } })
+        .dive();
+
+      const newAttributes = wrapper.instance();
+      newAttributes.onSetDistrict('0');
+
+      expect(wrapper.state()).toEqual({
+        currentDate: '',
+        district: '',
+        isDatePickerVisible: false,
+      });
+    });
   });
 
   describe('save button', () => {

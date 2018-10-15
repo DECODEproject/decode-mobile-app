@@ -10,7 +10,7 @@ import { SecureStore } from 'expo';
 import Button from '../application/components/Button/Button';
 import LinkButton from '../application/components/LinkButton/LinkButton';
 import { saveAttributes } from '../application/redux/actions/attributes';
-import { sortedDistrictsList, districtNameFromId } from '../lib/districts';
+import { sortedDistrictsList, districtNameFromId, validDistrict } from '../lib/districts';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -46,9 +46,11 @@ class NewAttributes extends Component {
   }
 
   onSetDistrict = (district) => {
-    this.setState({
-      district,
-    });
+    if (validDistrict(district)) {
+      this.setState({
+        district,
+      });
+    }
   }
 
   districtsList = () => (
@@ -87,8 +89,7 @@ class NewAttributes extends Component {
             <View style={styles.newAttributesAttribute}>
               <Text style={styles.newAttributesAttributeName}>{this.props.t('districtAttribute')}</Text>
               <Picker
-                placeholder={{}}
-                hideDoneBar
+                placeholder={{ label: '--', value: 0 }}
                 items={this.districtsList()}
                 onValueChange={this.onSetDistrict}
                 value={this.state.district}
