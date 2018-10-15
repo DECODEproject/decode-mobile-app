@@ -10,7 +10,7 @@ import Button from '../application/components/Button/Button';
 import { goToSignOutcome } from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
-import { getWalletProxyUrl, getChainspaceUrl } from '../config';
+import getChainspaceUrl from '../config';
 import { districtNameFromId } from '../lib/districts';
 import styles from './styles';
 import i18n from '../i18n';
@@ -31,7 +31,6 @@ const backToPetitionInBrowser = (petitionId) => {
   Linking.openURL(petitionUrl);
 };
 
-const walletProxyLink = getWalletProxyUrl(Constants.manifest.releaseChannel);
 const chainspaceUrl = getChainspaceUrl(Constants.manifest.releaseChannel);
 
 class PetitionSummary extends React.Component {
@@ -91,8 +90,6 @@ class PetitionSummary extends React.Component {
     const district = getEnabledAttributeValue(districtAttribute, this.state.enabledAttributes);
 
     await this.props.signPetition(
-      petition,
-      walletId,
       vote,
       age,
       gender,
@@ -264,7 +261,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => { dispatch(goToSignOutcome()); },
-  signPetition: (petition, walletId, vote, age, gender, district, chainspaceClient, zenroomContract) => dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender, district, chainspaceClient, zenroomContract)), // eslint-disable-line
+  signPetition: (vote, age, gender, district, chainspaceClient, zenroomContract) => dispatch(signPetition(vote, age, gender, district, chainspaceClient, zenroomContract)), // eslint-disable-line
 });
 
 export default translate('petitionSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));

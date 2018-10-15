@@ -26,290 +26,167 @@ describe('getPetition', () => {
     fetchMock.restore();
   });
 
-  describe('feature toggle decidimApi on', () => {
-    beforeEach(() => {
-      store = mockStore({
-        featureToggles: {
-          decidimApi: true,
-        },
+  beforeEach(() => {
+    store = mockStore({
+      featureToggles: {
+        decidimApi: true,
+      },
+    });
+  });
+
+  it('should dispatch successful action', () => {
+    const expectedPetition = {
+      id: petitionId,
+      title: "Pla d'Actuació Municipal",
+      attributes: {
+        mandatory: [{
+          predicate: 'schema:addressLocality',
+          object: 'Barcelona',
+          scope: 'can-access',
+          credentialIssuer: {
+            url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
+          },
+        }],
+        optional: [],
+      },
+    };
+
+    const decidimResult = {
+      petition: expectedPetition,
+    };
+
+    const expectedActions = [{
+      type: types.SET_PETITION,
+      petition: expectedPetition,
+      walletAttributes: new Map(),
+    }];
+
+    DecidimClient.mockImplementation(() => ({
+      fetchPetition: () => (decidimResult),
+    }));
+
+    const client = new DecidimClient();
+    return store.dispatch(getPetition(client, petitionId))
+      .then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
       });
-    });
+  });
 
-    it('should dispatch successful action', () => {
-      const expectedPetition = {
-        id: petitionId,
-        title: "Pla d'Actuació Municipal",
-        attributes: {
-          mandatory: [{
-            predicate: 'schema:addressLocality',
-            object: 'Barcelona',
-            scope: 'can-access',
-            credentialIssuer: {
-              url: 'http://atlantis-decode.s3-website-eu-west-1.amazonaws.com',
-            },
-          }],
-          optional: [],
-        },
-      };
+  it('should dispatch error action when there is an error fetching the petition', async () => {
+    DecidimClient.mockImplementation(() => ({
+      fetchPetition: () => { throw new FetchPetitionError(); },
+    }));
 
-      const decidimResult = {
-        petition: expectedPetition,
-      };
+    await store.dispatch(getPetition(new DecidimClient()));
 
-      const expectedActions = [{
-        type: types.SET_PETITION,
-        petition: expectedPetition,
-        walletAttributes: new Map(),
-      }];
-
-      DecidimClient.mockImplementation(() => ({
-        fetchPetition: () => (decidimResult),
-      }));
-
-      const client = new DecidimClient();
-      return store.dispatch(getPetition(client, petitionId))
-        .then(() => {
-          expect(store.getActions()).toEqual(expectedActions);
-        });
-    });
-
-    it('should dispatch error action when there is an error fetching the petition', async () => {
-      DecidimClient.mockImplementation(() => ({
-        fetchPetition: () => { throw new FetchPetitionError(); },
-      }));
-
-      await store.dispatch(getPetition(new DecidimClient()));
-
-      const expectedActions = [{
-        type: types.SET_PETITION_ERROR,
-        error: 'Could not retrieve petition details',
-      }];
-      await expect(store.getActions()).toEqual(expectedActions);
-    });
+    const expectedActions = [{
+      type: types.SET_PETITION_ERROR,
+      error: 'Could not retrieve petition details',
+    }];
+    await expect(store.getActions()).toEqual(expectedActions);
   });
 });
 
 describe('signPetition', () => {
-  describe('feature toggle zenroom off', () => {
-    let store;
+  let store;
 
-    const petition = {
-      id: 1,
-    };
-    const walletId = '1234567890';
-    const walletProxyLink = 'wallet-proxy-link.com';
-    const signPetitionLink = `${walletProxyLink}/sign/petitions/${petition.id}`;
-    const response = {};
+  const response = {};
+  const vote = 'yes';
+  const age = '0-19';
+  const gender = 'undisclosed';
+  const district = '1';
 
-    beforeEach(() => {
-      store = mockStore({
-        featureToggles: {
-          zenroom: false,
-        },
-      });
-    });
+  const expectedTransaction = new Transaction({ outputs: [] });
 
-    afterEach(() => {
-      fetchMock.reset();
-      fetchMock.restore();
-    });
+  ZenroomContract.mockImplementation(() => ({
+    addSignature: () => 'zenroomOutput',
+    buildTransaction: () => expectedTransaction,
+  }));
 
-    it('should make post with correct request', () => {
-      const vote = 'yes';
-      const age = '0-19';
-      const gender = 'undisclosed';
+  const zenroomContract = new ZenroomContract();
 
-      const expectedRequestBody = JSON.stringify({
-        signatory: walletId.substring(0, 5),
-        vote,
-        age,
-        gender,
-      });
+  beforeEach(() => {
+    store = mockStore();
+  });
 
-      let actualRequestBody;
+  afterEach(() => {
+    fetchMock.reset();
+    fetchMock.restore();
+  });
 
-      fetchMock.postOnce((url, opts) => {
-        actualRequestBody = opts.body;
-        return url === signPetitionLink;
-      }, response);
+  it('should dispatch successful action', () => {
+    ChainspaceClient.mockImplementation(() => ({
+      fetchLastTransaction: () => response,
+      postTransaction: jest.fn(),
+    }));
 
-      return store.dispatch(signPetition(petition, walletId, walletProxyLink, vote, age, gender))
-        .then(() => {
-          expect(actualRequestBody).toEqual(expectedRequestBody);
-        });
-    });
+    const expectedActions = [{
+      type: types.SIGN_PETITION,
+    }];
 
-    it('should dispatch successful action', () => {
-      const expectedActions = [{
-        type: types.SIGN_PETITION,
-      }];
-
-      fetchMock.postOnce(signPetitionLink, response);
-
-      return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
-        expect(store.getActions()).toEqual(expectedActions);
-      });
-    });
-
-    it('should dispatch error action', () => {
-      const errorMessage = 'Internal Server Error';
-
-      const expectedActions = [{
-        type: types.SIGN_PETITION_ERROR,
-        error: errorMessage,
-      }];
-
-      fetchMock.postOnce(signPetitionLink, {
-        status: 500,
-        sendAsJson: true,
-        body: {
-          error: errorMessage,
-        },
-      });
-
-      return store.dispatch(signPetition(petition, walletId, walletProxyLink)).then(() => {
-        expect(store.getActions()).toEqual(expectedActions);
-      });
-    });
-
-    describe('Toggle enable attributes', () => {
-      it('toggle attribute action', async () => {
-        const attribute = 'schema:addressLocality';
-
-        const expectedActions = [{
-          type: types.TOGGLE_ENABLE_ATTRIBUTE,
-          attribute,
-        }];
-
-        store.dispatch(toggleEnableAttribute(attribute));
-        expect(store.getActions()).toEqual(expectedActions);
-      });
+    return store.dispatch(signPetition(
+      vote,
+      age,
+      gender,
+      district,
+      new ChainspaceClient(),
+      zenroomContract,
+    )).then(() => {
+      expect(store.getActions()).toEqual(expectedActions);
     });
   });
 
-  describe('feature toggle zenroom on', () => {
-    let store;
+  it('should dispatch error action if posting transaction fails', () => {
+    const errorMessage = 'some error message';
 
-    const petition = {
-      id: 1,
-    };
-    const walletId = '1234567890';
-    const walletProxyLink = 'wallet-proxy-link.com';
-    const response = {};
-    const vote = 'yes';
-    const age = '0-19';
-    const gender = 'undisclosed';
-    const district = '1';
-
-    const expectedTransaction = new Transaction({ outputs: [] });
-
-    ZenroomContract.mockImplementation(() => ({
-      addSignature: () => 'zenroomOutput',
-      buildTransaction: () => expectedTransaction,
+    ChainspaceClient.mockImplementation(() => ({
+      fetchLastTransaction: () => {
+        throw new UnexpectedChainspaceError(errorMessage);
+      },
     }));
 
-    const zenroomContract = new ZenroomContract();
+    const expectedActions = [{ type: types.SIGN_PETITION_ERROR, error: errorMessage }];
 
-    beforeEach(() => {
-      store = mockStore({
-        featureToggles: {
-          zenroom: true,
-        },
-      });
+    return store.dispatch(signPetition(
+      vote,
+      age,
+      gender,
+      district,
+      new ChainspaceClient(),
+    )).then(() => {
+      expect(store.getActions()).toEqual(expectedActions);
     });
+  });
 
-    afterEach(() => {
-      fetchMock.reset();
-      fetchMock.restore();
-    });
+  it('should make post with correct request', () => {
+    ChainspaceClient.mockImplementation(() => ({
+      fetchLastTransaction: () => response,
+      postTransaction: jest.fn(),
+    }));
 
-    it('should dispatch successful action', () => {
-      ChainspaceClient.mockImplementation(() => ({
-        fetchLastTransaction: () => response,
-        postTransaction: jest.fn(),
-      }));
+    const chainspaceClient = new ChainspaceClient();
 
-      const expectedActions = [{
-        type: types.SIGN_PETITION,
-      }];
+    const expectedActions = [
+      { type: types.SIGN_PETITION },
+    ];
 
-      return store.dispatch(signPetition(
-        petition,
-        walletId,
-        walletProxyLink,
-        vote,
-        age,
-        gender,
-        district,
-        new ChainspaceClient(),
-        zenroomContract,
-      )).then(() => {
-        expect(store.getActions()).toEqual(expectedActions);
-      });
-    });
-
-    it('should dispatch error action if posting transaction fails', () => {
-      const errorMessage = 'some error message';
-
-      ChainspaceClient.mockImplementation(() => ({
-        fetchLastTransaction: () => {
-          throw new UnexpectedChainspaceError(errorMessage);
-        },
-      }));
-
-      const expectedActions = [{ type: types.SIGN_PETITION_ERROR, error: errorMessage }];
-
-      return store.dispatch(signPetition(
-        petition,
-        walletId,
-        walletProxyLink,
-        vote,
-        age,
-        gender,
-        district,
-        new ChainspaceClient(),
-      )).then(() => {
-        expect(store.getActions()).toEqual(expectedActions);
-      });
-    });
-
-    it('should make post with correct request', () => {
-      ChainspaceClient.mockImplementation(() => ({
-        fetchLastTransaction: () => response,
-        postTransaction: jest.fn(),
-      }));
-
-      const chainspaceClient = new ChainspaceClient();
-
-      const expectedActions = [
-        { type: types.SIGN_PETITION },
-      ];
-
-      return store.dispatch(signPetition(
-        petition,
-        walletId,
-        walletProxyLink,
-        vote,
-        age,
-        gender,
-        district,
-        chainspaceClient,
-        zenroomContract,
-      )).then(() => {
-        expect(chainspaceClient.postTransaction).toBeCalledWith(expectedTransaction);
-        expect(store.getActions()).toEqual(expectedActions);
-      });
+    return store.dispatch(signPetition(
+      vote,
+      age,
+      gender,
+      district,
+      chainspaceClient,
+      zenroomContract,
+    )).then(() => {
+      expect(chainspaceClient.postTransaction).toBeCalledWith(expectedTransaction);
+      expect(store.getActions()).toEqual(expectedActions);
     });
   });
 });
 
 describe('toggleEnableAttribute', () => {
   it('toggle attribute action', async () => {
-    const store = mockStore({
-      featureToggles: {
-        zenroom: false,
-      },
-    });
+    const store = mockStore();
 
     const attribute = 'schema:addressLocality';
 
