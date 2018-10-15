@@ -27,11 +27,7 @@ describe('getPetition', () => {
   });
 
   beforeEach(() => {
-    store = mockStore({
-      featureToggles: {
-        decidimApi: true,
-      },
-    });
+    store = mockStore();
   });
 
   it('should dispatch successful action', () => {
