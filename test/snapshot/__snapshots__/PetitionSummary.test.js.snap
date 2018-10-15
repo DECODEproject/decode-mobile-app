@@ -12476,7 +12476,6 @@ Haz click en botón inferior para empezar",
         "title": "hello",
       }
     }
-    petitionError={undefined}
     signPetition={[Function]}
     signSuccess={undefined}
     t={[Function]}
@@ -12798,7 +12797,6 @@ Haz click en botón inferior para empezar",
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            undefined,
             <Component
               style={
                 Object {
@@ -12846,7 +12844,6 @@ Haz click en botón inferior para empezar",
         },
         "ref": null,
         "rendered": Array [
-          undefined,
           Object {
             "instance": null,
             "key": undefined,
@@ -13379,7 +13376,6 @@ Haz click en botón inferior para empezar",
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              undefined,
               <Component
                 style={
                   Object {
@@ -13427,7 +13423,6 @@ Haz click en botón inferior para empezar",
           },
           "ref": null,
           "rendered": Array [
-            undefined,
             Object {
               "instance": null,
               "key": undefined,
@@ -26166,7 +26161,6 @@ Haz click en botón inferior para empezar",
         "title": "hello",
       }
     }
-    petitionError={undefined}
     signPetition={[Function]}
     signSuccess={undefined}
     t={[Function]}
@@ -26475,7 +26469,6 @@ Haz click en botón inferior para empezar",
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            undefined,
             <Component
               style={
                 Object {
@@ -26523,7 +26516,6 @@ Haz click en botón inferior para empezar",
         },
         "ref": null,
         "rendered": Array [
-          undefined,
           Object {
             "instance": null,
             "key": undefined,
@@ -27056,7 +27048,6 @@ Haz click en botón inferior para empezar",
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              undefined,
               <Component
                 style={
                   Object {
@@ -27104,7 +27095,6 @@ Haz click en botón inferior para empezar",
           },
           "ref": null,
           "rendered": Array [
-            undefined,
             Object {
               "instance": null,
               "key": undefined,

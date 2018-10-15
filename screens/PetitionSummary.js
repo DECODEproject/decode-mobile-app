@@ -135,7 +135,6 @@ class PetitionSummary extends React.Component {
   render() {
     const {
       petition,
-      petitionError,
       t,
       walletId,
       attributes,
@@ -155,12 +154,6 @@ class PetitionSummary extends React.Component {
           {t('optional')}
         </Text>
         { matchedAttributes.missing.map(attr => this.renderMissingAttribute(attr)) }
-      </View>
-    );
-    const petitionErrorTemplate = (
-      <View style={styles.petitionSummaryErrorBox}>
-        <Text style={styles.petitionErrorTitle}>Error</Text>
-        <Text style={styles.petitionErrorDescription}>{petitionError}</Text>
       </View>
     );
     return (
@@ -184,7 +177,6 @@ class PetitionSummary extends React.Component {
         </View>
 
         <ScrollView>
-          { petitionError && petitionErrorTemplate }
           <View style={{ flex: 1 }}>
             <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
           </View>
@@ -242,7 +234,6 @@ PetitionSummary.propTypes = {
     mandatory: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
     optional: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   }),
-  petitionError: PropTypes.string,
   walletId: PropTypes.string.isRequired,
   signPetition: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
@@ -255,7 +246,6 @@ PetitionSummary.propTypes = {
 
 PetitionSummary.defaultProps = {
   petition: undefined,
-  petitionError: undefined,
   attributes: {
     mandatory: [],
     optional: [],
@@ -264,7 +254,6 @@ PetitionSummary.defaultProps = {
 
 const mapStateToProps = state => ({
   petition: state.petition.petition,
-  petitionError: state.petition.error,
   attributes: state.petition.petition.attributes,
   walletId: state.wallet.id,
   signSuccess: state.signSuccess,

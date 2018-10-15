@@ -147,18 +147,6 @@ const styles = StyleSheet.create({
     lineHeight: 20,
     marginBottom: 15,
   },
-  petitionErrorDescription: {
-    color: '#FFF',
-    fontSize: 14,
-    lineHeight: 20,
-    marginBottom: 15,
-  },
-  petitionErrorTitle: {
-    color: '#FFF',
-    fontSize: 20,
-    fontWeight: '500',
-    marginBottom: 20,
-  },
   petitionSummaryBox: {
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
@@ -166,12 +154,6 @@ const styles = StyleSheet.create({
   petitionSummaryContainer: {
     padding: 26,
     flex: 1,
-  },
-  petitionSummaryErrorBox: {
-    alignSelf: 'stretch',
-    backgroundColor: '#cc0000',
-    margin: 16,
-    padding: 10,
   },
   petitionSummaryPetitionTitle: {
     color: 'rgba(0, 0, 0, 0.87)',
