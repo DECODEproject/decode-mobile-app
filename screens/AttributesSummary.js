@@ -95,7 +95,7 @@ class AttributesSummary extends React.Component {
           }}
         >
           <Text style={{ color: '#9B9B9B', fontSize: 14 }}>
-            <Text style={{ color: '#D0021B' }}>*</Text> This data is required to sign the petition.
+            <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
           </Text>
           <Text
             style={styles.cancelSigningPetition}

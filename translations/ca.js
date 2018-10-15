@@ -12,6 +12,7 @@ export default {
     less: 'Mostrar menys',
     button: 'Verificar',
     cancel: 'O, cancelar la teva participació en aquesta petició',
+    requiredAttributes: 'Dades requerides per signar la petició',
   },
   home: {
     badPin: 'Codi PIN incorrecte',
@@ -39,9 +40,12 @@ export default {
   petitionSummary: {
     yes: 'Signar Si',
     no: 'Signar No',
-    cancel: 'O, cancelar la participació en aquesta peticiió',
+    cancel: 'O, cancelar la participació en aquesta petició',
     optional: 'Dades adicionals a compartir',
     sharing: 'Estaràs compartint les teves dades amb',
+    age: 'Edat',
+    loading: 'Això podria trigar uns minuts',
+    requiredAttributes: 'Dades requerides per signar la petició',
   },
   pinSetup: {
     placeholderPin1: ' Almenys 4 digits',

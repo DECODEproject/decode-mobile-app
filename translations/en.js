@@ -12,6 +12,7 @@ export default {
     less: 'Show less',
     button: 'Verify',
     cancel: 'Or, cancel signing this petition',
+    requiredAttributes: 'This data is required to sign the petition',
   },
   home: {
     badPin: 'Incorrect PIN code',
@@ -42,6 +43,9 @@ export default {
     cancel: 'Or, cancel signing this petition',
     optional: 'Additional data to share:',
     sharing: 'You will be sharing your data with',
+    age: 'Age',
+    loading: 'This might take a few minutes',
+    requiredAttributes: 'This data is required to sign the petition',
   },
   pinSetup: {
     placeholderPin1: ' At least 4 digits',

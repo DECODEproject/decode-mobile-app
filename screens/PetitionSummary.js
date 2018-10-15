@@ -12,6 +12,7 @@ import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import getChainspaceUrl from '../config';
 import { districtNameFromId } from '../lib/districts';
+import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
 import {
@@ -104,19 +105,19 @@ class PetitionSummary extends React.Component {
   }
 
   renderAttribute = (attr, isMandatory) => {
-    let valueToShow = this.props.t(attr.object);
+    let displayValue = this.props.t(attr.object);
 
     if (attr.predicate === 'schema:dateOfBirth') {
-      valueToShow = formAgeRange(attr);
+      displayValue = `${this.props.t('age')}: ${formAgeRange(attr)}`;
     }
 
     if (attr.predicate === 'schema:district') {
-      valueToShow = districtNameFromId(attr.object);
+      displayValue = districtNameFromId(attr.object);
     }
 
     return (<AttributeComponent
       key={attr.predicate}
-      value={valueToShow}
+      value={displayValue}
       isMandatory={isMandatory}
       toggleCallback={() => this.toggleEnabledAttribute(attr)}
       isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
@@ -169,19 +170,20 @@ class PetitionSummary extends React.Component {
         />
 
         <View style={{ paddingVertical: 20 }}>
-          <Text style={{ fontSize: 14, lineHeight: 20 }}>{this.props.t('sharing')}</Text>
+          <Text style={{ fontSize: 14, lineHeight: 20 }}>{t('sharing')}</Text>
           <Text style={{ fontWeight: 'bold', fontSize: 14, lineHeight: 20 }}>Decidim Barcelona.</Text>
         </View>
 
         <ScrollView>
           <View style={{ flex: 1 }}>
             <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
+            <Text>{t('loading')}</Text>
           </View>
           { petition && petitionAttributesTemplate }
         </ScrollView>
 
         <Text style={{ color: '#9B9B9B', fontSize: 14, alignSelf: 'center' }}>
-          <Text style={{ color: '#D0021B' }}>*</Text> This data is required to sign the petition.
+          <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
         </Text>
 
         <View
@@ -192,15 +194,15 @@ class PetitionSummary extends React.Component {
           }}
         />
 
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
           <Button
             enabled={allMandatoryEnabled}
             onPress={() => { this.sign(petition, walletId, 'No'); }}
             name={t('no')}
             style={{
               paddingVertical: 12,
+              paddingHorizontal: 20,
               height: 'auto',
-              flex: 1,
             }}
           />
           <Button
@@ -209,11 +211,16 @@ class PetitionSummary extends React.Component {
             name={t('yes')}
             style={{
               paddingVertical: 12,
+              paddingHorizontal: 20,
               height: 'auto',
-              flex: 1,
             }}
           />
         </View>
+        <Text
+          style={styles.cancelSigningPetition}
+          onPress={() => openPetitionInBrowser(petition.id)}
+        >{t('cancel')}
+        </Text>
       </View>
     );
   }

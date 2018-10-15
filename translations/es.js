@@ -12,6 +12,7 @@ export default {
     less: 'Mostrar menos',
     button: 'Verificar',
     cancel: 'O, cancelar la participación en esta petición',
+    requiredAttributes: 'Datos requeridos para firmar la petición',
   },
   home: {
     badPin: 'Código PIN incorrecto',
@@ -42,6 +43,9 @@ export default {
     cancel: 'O, cancelar participación en esta petición',
     optional: 'Datos adicionales para compartir: ',
     sharing: 'Estarás compartiendo tus datos con',
+    age: 'Edad',
+    loading: 'Esto podría tardar unos minutos',
+    requiredAttributes: 'Datos requeridos para firmar la petición',
   },
   pinSetup: {
     placeholderPin1: 'Por lo menos 4 digitos',
