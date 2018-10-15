@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     display: 'flex',
     flexDirection: 'column',
-    marginVertical: 20,
+    marginBottom: 10,
   },
   attributeName: {
     color: 'rgba(0, 0, 0, 0.87)',

@@ -12504,6 +12504,11 @@ Haz click en botón inferior para empezar",
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "marginTop": 20,
+                }
+              }
             >
               Datos adicionales para compartir: 
             </Text>
@@ -12732,6 +12737,11 @@ Haz click en botón inferior para empezar",
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "marginTop": 20,
+                  }
+                }
               >
                 Datos adicionales para compartir: 
               </Text>
@@ -12799,6 +12809,11 @@ Haz click en botón inferior para empezar",
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "marginTop": 20,
+                    }
+                  }
                 >
                   Datos adicionales para compartir: 
                 </Text>,
@@ -12820,6 +12835,9 @@ Haz click en botón inferior para empezar",
                   "allowFontScaling": true,
                   "children": "Datos adicionales para compartir: ",
                   "ellipsizeMode": "tail",
+                  "style": Object {
+                    "marginTop": 20,
+                  },
                 },
                 "ref": null,
                 "rendered": "Datos adicionales para compartir: ",
@@ -13067,6 +13085,11 @@ Haz click en botón inferior para empezar",
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "marginTop": 20,
+                  }
+                }
               >
                 Datos adicionales para compartir: 
               </Text>
@@ -13295,6 +13318,11 @@ Haz click en botón inferior para empezar",
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "marginTop": 20,
+                    }
+                  }
                 >
                   Datos adicionales para compartir: 
                 </Text>
@@ -13362,6 +13390,11 @@ Haz click en botón inferior para empezar",
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "marginTop": 20,
+                      }
+                    }
                   >
                     Datos adicionales para compartir: 
                   </Text>,
@@ -13383,6 +13416,9 @@ Haz click en botón inferior para empezar",
                     "allowFontScaling": true,
                     "children": "Datos adicionales para compartir: ",
                     "ellipsizeMode": "tail",
+                    "style": Object {
+                      "marginTop": 20,
+                    },
                   },
                   "ref": null,
                   "rendered": "Datos adicionales para compartir: ",
@@ -26049,6 +26085,11 @@ Haz click en botón inferior para empezar",
               accessible={true}
               allowFontScaling={true}
               ellipsizeMode="tail"
+              style={
+                Object {
+                  "marginTop": 20,
+                }
+              }
             >
               Datos adicionales para compartir: 
             </Text>
@@ -26277,6 +26318,11 @@ Haz click en botón inferior para empezar",
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "marginTop": 20,
+                  }
+                }
               >
                 Datos adicionales para compartir: 
               </Text>
@@ -26344,6 +26390,11 @@ Haz click en botón inferior para empezar",
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "marginTop": 20,
+                    }
+                  }
                 >
                   Datos adicionales para compartir: 
                 </Text>,
@@ -26365,6 +26416,9 @@ Haz click en botón inferior para empezar",
                   "allowFontScaling": true,
                   "children": "Datos adicionales para compartir: ",
                   "ellipsizeMode": "tail",
+                  "style": Object {
+                    "marginTop": 20,
+                  },
                 },
                 "ref": null,
                 "rendered": "Datos adicionales para compartir: ",
@@ -26612,6 +26666,11 @@ Haz click en botón inferior para empezar",
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail"
+                style={
+                  Object {
+                    "marginTop": 20,
+                  }
+                }
               >
                 Datos adicionales para compartir: 
               </Text>
@@ -26840,6 +26899,11 @@ Haz click en botón inferior para empezar",
                   accessible={true}
                   allowFontScaling={true}
                   ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "marginTop": 20,
+                    }
+                  }
                 >
                   Datos adicionales para compartir: 
                 </Text>
@@ -26907,6 +26971,11 @@ Haz click en botón inferior para empezar",
                     accessible={true}
                     allowFontScaling={true}
                     ellipsizeMode="tail"
+                    style={
+                      Object {
+                        "marginTop": 20,
+                      }
+                    }
                   >
                     Datos adicionales para compartir: 
                   </Text>,
@@ -26928,6 +26997,9 @@ Haz click en botón inferior para empezar",
                     "allowFontScaling": true,
                     "children": "Datos adicionales para compartir: ",
                     "ellipsizeMode": "tail",
+                    "style": Object {
+                      "marginTop": 20,
+                    },
                   },
                   "ref": null,
                   "rendered": "Datos adicionales para compartir: ",

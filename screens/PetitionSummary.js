@@ -151,7 +151,7 @@ class PetitionSummary extends React.Component {
       <View style={styles.petitionSummaryBox}>
         { matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true)) }
         { matchedAttributes.optional.map(attr => this.renderAttribute(attr)) }
-        <Text>
+        <Text style={{ marginTop: 20 }}>
           {t('optional')}
         </Text>
         { matchedAttributes.missing.map(attr => this.renderMissingAttribute(attr)) }
