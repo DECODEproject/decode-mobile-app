@@ -89,7 +89,7 @@ class NewAttributes extends Component {
             <View style={styles.newAttributesAttribute}>
               <Text style={styles.newAttributesAttributeName}>{this.props.t('districtAttribute')}</Text>
               <Picker
-                placeholder={{ label: '--', value: 0 }}
+                placeholder={{ label: this.props.t('districtPlaceholder'), value: 0 }}
                 items={this.districtsList()}
                 onValueChange={this.onSetDistrict}
                 value={this.state.district}
