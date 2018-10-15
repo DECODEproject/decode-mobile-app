@@ -39,8 +39,8 @@ class PetitionDescription extends React.Component {
 
 
   renderFullDescriptionText = () => (
-    <ScrollView style={{ flex: 1, marginLeft: 10 }}>
-      <View>
+    <View style={{ flex: 1, marginLeft: 10 }}>
+      <ScrollView>
         <Text style={{ fontWeight: 'bold' }}>{this.props.title}</Text>
         <HTML
           id="description-text"
@@ -48,12 +48,12 @@ class PetitionDescription extends React.Component {
           html={this.props.description}
           imagesMaxWidth={Dimensions.get('window').width}
         />
-      </View>
+      </ScrollView>
       <LinkButton
         name={this.props.t('less')}
         onPress={() => this.setState({ showFullDescription: false })}
       />
-    </ScrollView>
+    </View>
   );
 
   render() {
