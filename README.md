@@ -15,9 +15,10 @@
   - [Decode Connector](#decode-connector)
   - [Crendential Issuer](#credential-issuer)
   - [Verifier](#verifier)
-  - [Decidim example](#decidim-example)
+  - [Decidim](#decidim)
 - [Glossary](#glossary)
 
+---
 
 ## The App
 This app attempts to provide a platform where people can control their personal data, choosing where and how to share it. It allows users to input their data and keep it saved on their phone for future use. Currently, there is also a signing flow for integration with a community engagement platform called Decidim. It allows the user to share their data and vote on a petition securely.
@@ -26,19 +27,23 @@ See [Glossary](#glossary) for unknown terms.
 
 ### Features Description
 
-#### Walkthrough
+#### Decode App Onboarding and setup
+
+![Decode App Onboarding and setup](docs/DecodeAppFlows-Onboarding.png)
+
+##### Walkthrough
 
 In order to inform the user about the benefits of using this app, we have included a Walkthrough.
 
 This Walkthrough is a swipe-able multi page component with modifiable images and texts with the ability to skip.
 
-#### Pin Management
+##### Pin Management
 
 In order to secure the app, the authentication system included is PIN based. When you first visit the app and reach the end of the Walkthrough, you will be required to setup a PIN. Subsequently, in order to access the app you must enter your PIN.
 
 There is no way to retrieve the PIN if you forget it. It is saved in the Local Storage of the phone.
 
-#### Data Management
+##### Data Management
 
 The app includes a Data summary page where you can view all (verified and unverified) data you have in the app. The app distinguishes between verified and unverified data. Currently, from this page you can add more unverified data by clicking the button on the bottom. This redirects you to the data addition page where you can add new data. The data is stored in the local storage of the phone, it is not saved in any external database. You also have to option edit data already saved in the app.
 
@@ -347,7 +352,7 @@ The credential makes a request to the verifier to verify (or not) an attribute. 
 
 For example, Decidim will simply run a server with a hard-coded list of usernames or emails. This will run as a service deployed in the Decidim instance running the pilot platform.
 
-### Decidim Example
+### Decidim
 
 #### Detailed description
 
@@ -373,6 +378,8 @@ For example, Decidim will simply run a server with a hard-coded list of username
 6. After the process is complete, the Decidim administrator closes the petition. The decode-connector decrypts the final totals and returns the results to the Decidim instance. No further voting is possible (the ledger will refuse any further transactions).
 
 7. The dashboard can now load data from the Decidim API as well as aggregated results directly from the ledger. Users can explore the anonymised, aggregated overview of petition signatures and the optional data users have chosen to share (e.g. breakdown of support by age group or district).
+
+![Decidim Flow](docs/DecodeAppFlows-Decidim.png)
 
 #### Tech Vision
 
@@ -404,6 +411,10 @@ In order to run it end-to-end, these are the steps you need to follow:
 4. Run Chainspace locally
 
     Chainspace is the blockchain used in Decode. It can be run in a Docker container locally for testing purposes following the instructions [here](https://github.com/DECODEproject/chainspace/tree/xplore#building-with-docker).
+
+### IoT
+
+[In construction]
 
 ### Future Development
 
