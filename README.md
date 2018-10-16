@@ -628,3 +628,44 @@ It will send back to the credential issuer a boolean response which tells the CI
 #### Wallet
 
 A deprecated term, refers to what is now known as simply 'the app'.
+## Eject usage 
+
+First of all, ensure that you do a `npm install` some new packages (expoview) are used
+for the native apps.
+
+For ios and android you should have the bundler up and running 
+
+```
+npm start
+```
+
+### Android
+
+#### Import the project
+
+1. Install android studio (https://developer.android.com/studio/)
+
+2. Open Android Studio
+
+3. Import the project (`android` folder)
+
+4. While importing the project, Android studio will ask for download missing dependencies, just go ahead and install them
+4.1 android-27
+4.2 build-tools 27.0.3
+
+5. Connect your phone 
+5.1 Make sure you have your device in development mode (https://www.greenbot.com/article/2457986/android/how-to-enable-developer-options-on-your-android-phone-or-tablet.html)
+5.2 Developer Options > USB Debuggin on > Trust the machine
+
+6. Press play button
+If you see "Something went wrong" message in the device, most possibly you don't have the bundle running, `npm start` or your device is not in the same wifi as the computer.
+
+7. Open the decim flow with the url (you can create a QR code and scan it from your device)
+
+you can find adb at: `$HOME/Library/Android/sdk/platform-tools/adb`, we really recommend to modify your .bashrc to add ANDROID_HOME environment and adb to the path.
+
+```
+adb shell am start -a android.intent.action.VIEW -d decodewallet://YOUR_IP:19000/?decidimAPIUrl=https%3A%2F%2Fbetadddc.alabs.org%2Fapi&petitionId=2
+```
+
+OJO! WARNING! change the ip for the one of your computer.
