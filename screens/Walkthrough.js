@@ -70,7 +70,7 @@ const Walkthrough = props => (
         imageContainerStyles: { flex: 7 },
         backgroundColor: '#37bdc2',
         image: <Image style={{ width: '95%', height: 400 }} resizeMode="contain" source={thirdPageImage} />,
-        title: <TitleElement title={props.t('pages.three.title')} style={titleStyle} />,
+        title: '',
         subtitle: <TitleElement title={props.t('pages.three.subtitle')} style={{ ...subtitleStyle, fontSize: 26 }} />,
       },
       {

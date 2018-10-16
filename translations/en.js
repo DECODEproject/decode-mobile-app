@@ -1,17 +1,17 @@
 export default {
   attributesLanding: {
-    nodata: 'Get started by adding attributes.\nTap the button below to begin.',
-    add: 'Add Attribute',
+    nodata: 'Get started by adding some data.\nTap the button below to begin.',
+    add: 'Add Data',
     errorDelete: 'Error deleting data from wallet',
   },
   attributesSummary: {
-    title: 'DECIDIM needs to verify your Barcelona residency.',
-    subtitle: 'You can do this with the Barcelona City Council',
+    title: 'Signing this proposal requires verified residency.',
+    subtitle: 'You can do this with the Barcelona City Council. Your residency will be verified anonymously. You only need to do this once.',
     requirement: 'Requires the following:',
     more: 'Show more',
     less: 'Show less',
-    button: 'Verify',
-    cancel: 'Or, cancel signing this petition',
+    button: 'Verify with Barcelona Council',
+    cancel: 'Or, cancel signing this proposal',
     requiredAttributes: 'This data is required to sign the petition',
   },
   home: {
@@ -21,7 +21,7 @@ export default {
     errorText: 'You can return to the Decidim site to view other active petitions.',
   },
   newAttributes: {
-    description: 'You can add these attributes to your wallet.',
+    description: 'You can add this personal data',
     ageAttribute: 'Date of Birth',
     districtAttribute: 'District',
     districtPlaceholder: 'Select a district',
@@ -34,14 +34,16 @@ export default {
     confirm: 'Confirm',
     cancel: 'Cancel',
     errorEmptyDateOfBirth: 'You must select a date',
-    errorSaveDateOfBirth: 'Could not save the attribute',
+    errorSaveDateOfBirth: 'Could not save the data',
     save: 'Save',
   },
   petitionSummary: {
+    title: 'To sign this proposal you must consent to sharing the following with Decidim',
+    description: 'This information is anonymised - Decidim will not receive any personally identifiable data',
     yes: 'Sign Yes',
     no: 'Sign No',
-    cancel: 'Or, cancel signing this petition',
-    optional: 'Additional data to share:',
+    cancel: 'Or, cancel signing this proposal',
+    optional: 'Optional data to share:',
     sharing: 'You will be sharing your data with',
     age: 'Age',
     loading: 'This might take a few minutes',
@@ -55,14 +57,15 @@ export default {
     labelPin1: 'Enter PIN:',
     labelPin2: 'Confirm PIN:',
     button: 'Save',
-    title: 'Protect Your Wallet',
+    title: 'Protect Your Data',
     subtitle: 'Let\'s setup a PIN , so no one else can access your data',
+    pinWarning: 'Store your PIN safely, there is no way to recover it if you lose it!',
   },
   signOutcome: {
     backDecidim: 'Back to Decidim',
     voteRecorded: 'Your vote has been recorded anonymously',
-    maybeInterested: 'You may be interested in these other petitions',
-    errorText: 'You can return to the Decidim site to view other active petitions.',
+    maybeInterested: 'View Decidim data on Barcelona Now',
+    errorText: 'You can return to the Decidim site to view other active proposals.',
     defaultError: 'There has been an error',
   },
   walkthrough: {
@@ -72,17 +75,16 @@ export default {
     pages: {
       one: {
         title: 'DECODE',
-        subtitle: 'Gives you ownership of your personal data',
+        subtitle: 'is your safe and easy personal data manager',
       },
       two: {
-        subtitle: 'Big companies store and sell your data',
+        subtitle: 'Your data has value. It\'s important you have control over it',
       },
       three: {
-        title: 'DECODE',
-        subtitle: 'Gives you back control of your data. It is kept in your wallet',
+        subtitle: 'With DECODE, you choose which personal data to share and how it is used',
       },
       four: {
-        subtitle: 'Your data is protected',
+        subtitle: 'Store your personal data with the highest security standards',
       },
     },
   },

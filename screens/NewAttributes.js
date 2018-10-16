@@ -66,7 +66,7 @@ class NewAttributes extends Component {
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
         <View style={styles.attributesManagementContainer}>
           <View style={{ flex: 1, maxHeight: 50 }}>
-            <Text>{this.props.t('description')}</Text>
+            <Text style={{ fontSize: 20, alignSelf: 'center' }}>{this.props.t('description')}</Text>
           </View>
           <View style={{ flex: 1 }}>
             <View style={styles.newAttributesAttribute}>
