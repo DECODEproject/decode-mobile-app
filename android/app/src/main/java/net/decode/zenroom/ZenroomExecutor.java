@@ -24,8 +24,6 @@ public class ZenroomExecutor {
 
     public String execute(String contract, String data, String key) throws Exception {
 
-        Log.d("KZK", data.substring(data.length() - 40));
-
         FileOutputStream outputStream = context.openFileOutput("contract.lua", Context.MODE_PRIVATE);
         outputStream.write(contract.getBytes());
         outputStream.close();
@@ -88,7 +86,7 @@ public class ZenroomExecutor {
             return file.getAbsolutePath();
 
         } catch(Exception e) {
-            Log.e("KZK", e.toString());
+            Log.e("ERROR COPY ZENROOM", e.toString());
         }
         return null;
     }

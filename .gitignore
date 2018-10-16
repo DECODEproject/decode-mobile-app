@@ -330,3 +330,5 @@ playground.xcworkspace
 
 # End of https://www.gitignore.io/api/swift,android,objective-c,androidstudio
 
+ios/Pods/
+ios/decode-app.xcworkspace/xcshareddata/

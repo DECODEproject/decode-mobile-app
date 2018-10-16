@@ -77,14 +77,14 @@ async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenro
   try {
     console.log('BEFORE GET LST TX');
     const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
-    console.log(' GET LST TX' , lastTx);
+    console.log(' GET LST TX', lastTx);
     const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
-    console.log('Z output' , zenroomOutput);
+    console.log('Z output', zenroomOutput);
     const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
 
     await chainspaceClient.postTransaction(transaction);
   } catch (error) {
-    console.log('errooooooooooor', error)
+    console.log('errooooooooooor', error);
     return dispatch(signPetitionError(error.message));
   }
 
