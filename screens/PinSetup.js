@@ -77,6 +77,11 @@ class PinSetup extends React.Component {
               {this.props.t('errorPin2')}
             </Text>}
           </View>
+          <View style={{ marginHorizontal: '10%' }}>
+            <Text style={{ color: '#9B9B9B' }}>
+              { this.props.t('pinWarning') }
+            </Text>
+          </View>
           <View style={{ flexDirection: 'row' }}>
             <Button
               name={this.props.t('button')}
