@@ -8,6 +8,8 @@
   - [Commands](#commands)
   - [Publishing](#publishing)
   - [Future development](#future-development)
+- [Integration and Deployment](#integration-and-deployment)
+  - [Pipelines](#pipelines)
 - [Dependencies](#dependencies)
   - [Chainspace](#chainspace)
   - [Zenroom](#zenroom)
@@ -125,7 +127,7 @@ npm test-watch
 npm run lint
 ```
 
-##### NOTE: 
+##### NOTE:
 
 All of these commands we also have them so that they can be run inside a Docker container that uses Node 10:
 
@@ -153,7 +155,7 @@ or Android
 npm run android
 ```
 
-### Publishing 
+### Publishing
 
 #### Expo
 
@@ -169,7 +171,7 @@ If you're using an Android phone you can just use the QR code to open the app.
 
 Unfortunately, Expo QR codes don't work on the latest versions for Iphone.
 
-#### IOS 
+#### IOS
 
 Before publishing, you must update the build number in app.json
 
@@ -179,7 +181,7 @@ In order to generate the files necessary for publishing run the following comman
 exp build:ios
 ```
 
-Once you have the ipa, follow the normal process for uploading apps to the apple store or test flight. 
+Once you have the ipa, follow the normal process for uploading apps to the apple store or test flight.
 
 #### Android
 
@@ -193,21 +195,21 @@ exp build:android
 
 Once you have the apk, follow the normal process for uploading apps to Google Play.
 
-###### NOTE: 
+###### NOTE:
 
 We have had trouble when publishing to Google Play in the past. The links we use in the app do not work the same way as they had in Expo, with no solution to be found:
 
-- When returning to the app from the Credential Issuer site, the 'url' event handler is not triggered and the credential is not stored. 
+- When returning to the app from the Credential Issuer site, the 'url' event handler is not triggered and the credential is not stored.
 - We believe that it's an issue with how the Android Standalone App handles links to the app. The event might stop working after the first time, since the error only happens if the app was started from a link in the beginning too (as is the case for the signing flow)
 
 If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
-### Future Development 
+### Future Development
 
 - Pin recovery
-    
+
     Currently, the user needs to set up a pin the first time they use the app but they don't have to way to change it or recover it if they forget about it (other than clearing all the data from the app using Android's native settings).
-    
+
 - Deleting data
 
     Currently, the user can add and edit their data but they don't have a way to delete it (other than clearing all the data from the app using Android's native settings).
@@ -226,6 +228,59 @@ If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 - UX principles for entitlements
 
+## Integration and Deployment
+
+We have been using [GoCD](https://docs.gocd.org/current/) as our CI/CD system with the [JSON configuration plugin](https://github.com/tomzo/gocd-json-config-plugin) that allows us to define the pipeline structure in json files that are in version control.
+
+In order to know what our pipelines look like, just look for the files with extension _gopipeline.json_ to get all the information (eg: [wallet.gopipeline.json](wallet.gopipeline.json)).
+
+For the wallet, we use trunk based development (we work on a master branch) and we have been doing Continuous deployment with Expo – that is, every commit we push to Github is deployed to production. Therefore, we have been implementing a basic way of doing feature toggles by keeping them in the Redux store.
+
+Every time a push to the remote repository is done, GoCD pulls the repository into the CI environment server. In order to successfully run the application in the CI environment, GoCD will perform a series of operations that we describe as:
+
+- Test: In this stage it will run all the unit tests included in the project
+- Deploy: In this stage, we are deploying the changes we made into the CI server
+
+### Pipelines
+
+#### Wallet
+
+This pipeline performs the Wallet App deploy to CI server after it checks all the unit tests and linter are passing
+
+#### Decidim-Decode-Connector
+
+This pipeline performs the Decidim-Decode-Connector deploy to CI server
+
+#### Tor-Proxy
+
+This pipeline performs the Tor Proxy deploy to CI server
+
+#### Credential-Issuer-Decidim
+
+This pipeline performs the Credential-Issuer-Decidim deploy to CI server
+
+#### Decode-App
+
+This pipeline performs the Decode-App deploy to CI server after it checks all the unit tests and linter are passing
+
+#### Petitions-App
+
+This pipeline performs the Petitions-App deploy to CI server after it checks all the unit tests and linter are passing
+
+#### Initialize
+
+It cleans and populate the decode-app database. Then, it restarts the box where [Chainspace](https://github.com/DECODEproject/chainspace) it's been executed, where there is no nodes created.
+
+#### Decode-Connector-Create-Petition
+
+It creates a new Chainspace node through the [decidim-decode-connector](https://github.com/DECODEproject/decidim-decode-connector). This operation also creates a Zenroom contract for a petition by default.
+
+#### Decode-Connector-Close-Petition
+
+It closes a Chainspace node through the [decidim-decode-connector](https://github.com/DECODEproject/decidim-decode-connector). It will also count and return the number os YES-NO signatures in the petition.
+
+**A closed node cannot be opened again**
+
 
 ## Dependencies
 
@@ -237,7 +292,7 @@ Download the Chainspace repo from [https://github.com/DECODEproject/chainspace](
 
 #### Running Locally [TODO]
 
-Run this command 
+Run this command
 ```
 make kill-all; rm -rf chainspacecore-*-*; make start-nodes; make start-client-api
 
@@ -317,9 +372,9 @@ docker run --rm \
 
 ## Pilots
 
-### Decode Connector 
+### Decode Connector
 
-The DECODE Connector is an ad-hoc service providing an interface between an external service (eg: one of the pilots) and Chainspace. 
+The DECODE Connector is an ad-hoc service providing an interface between an external service (eg: one of the pilots) and Chainspace.
 
 The current implementation primarily serves the needs of the petition use case and it's being used by Decidim. The code can be found in this [repository](https://github.com/DECODEproject/decidim-decode-connector). This can be used for inspiration for future Decode connectors needed in other integrations.
 
@@ -341,12 +396,12 @@ The credential issuer is an API that will return the user's credential if they c
 - In the case of the Decidim pilot, users are directed (from within the wallet)  to a mock of the Barcelona City Council's census API. After entering some identifying data, they are issued a credential which certifies that they are residents of Barcelona. This credential is then required for the petition signing transaction.
 
   - The Decidim credential issuer is in this [repository](https://github.com/DECODEproject/credential-issuer). It currently returns a hard-coded credential pending to integrate Coconut in the Decode platform.
-   
+
 - For the IoT pilot, our current understanding is that a credential should be issued to a user during the SC onboarding process. The credential would certify that the user is the verified owner of a specific device. Later, when deciding entitlements, this credential would be used in the smart contract that encodes the entitlements (e.g. Device #42 authorises hourly averaged data to be visible to residents of Gràcia).
 
 ### Verifier
 
-The mechanism for verifying the attribute the user is claiming is up to each pilot partner. 
+The mechanism for verifying the attribute the user is claiming is up to each pilot partner.
 
 The credential makes a request to the verifier to verify (or not) an attribute. The definition of what the API should look like can be found [here](https://github.com/DECODEproject/verifier-api-definition).
 
@@ -399,15 +454,15 @@ In order to run it end-to-end, these are the steps you need to follow:
 2. Run the mock version of the Decidim frontend
 
     This is a simple Node app that mocks the Decidim interface.
-     
+
     It's called petitions-app in the decode-prototype repository in Gogs. Instructions on how to start it can be found [here](https://gogs.dyne.org/DECODE/decode-prototype/src/master/apps/petitions/petitions-app#run).
 
 3. Run the mock version of the Decidim API
 
     This is a simple Clojure API and MongoDB database that mocks the Decidim API and a sample petition.
-    
+
     It's called decode-app in the decode-prototype repository in Gogs. Instructions on how to start it can be found [here](https://gogs.dyne.org/DECODE/decode-prototype/src/master/apps/petitions/decode-app#run-locally).
-    
+
 4. Run Chainspace locally
 
     Chainspace is the blockchain used in Decode. It can be run in a Docker container locally for testing purposes following the instructions [here](https://github.com/DECODEproject/chainspace/tree/xplore#building-with-docker).
@@ -423,9 +478,9 @@ In order to run it end-to-end, these are the steps you need to follow:
 
 #### Attribute
 
-This term appears several times throughout the code but is now deprecated. This is now being referred to as simply "data" to be more user friendly. 
+This term appears several times throughout the code but is now deprecated. This is now being referred to as simply "data" to be more user friendly.
 
-Attribute is used to describe a piece of information that a user inputs to the app or a piece of information that an external application is asking for. 
+Attribute is used to describe a piece of information that a user inputs to the app or a piece of information that an external application is asking for.
 
 An attribute has a specific structure as defined in the original Decode architecture document, including the fields *object*, *subject*, *provenance*, *scope*, and *predicate*. Please see the architecture document for a definition of these fields.
 
@@ -443,16 +498,16 @@ From now on in this glossary, attribute will be referred to as data.
     subject: 'citizen',
   };
 ```
-  
+
 #### Coconut
 
 Coconut is an algorithm developed during the DECODE project. It allows the signing and verification of attributes by a specific credential-issuer.
 
-Coconut is still not implemented outside the python academic code, it needs to be ported to zenroom in order to execute in the wallet. 
+Coconut is still not implemented outside the python academic code, it needs to be ported to zenroom in order to execute in the wallet.
 
 #### Credential issuer
 
-The credential issuer is an entity which asks the verifier if a piece of information is valid and returns a credential which proves a piece of information has been verified. 
+The credential issuer is an entity which asks the verifier if a piece of information is valid and returns a credential which proves a piece of information has been verified.
 
 See Verifier for more information.
 
@@ -462,31 +517,28 @@ A pilot partner which is a community engagement platform in Barcelona. [More Inf
 
 #### Mandatory data
 
-In the case of Decidim and possibly future integration partners, there is the concept of mandatory and optional data. 
+In the case of Decidim and possibly future integration partners, there is the concept of mandatory and optional data.
 
-Mandatory data is a piece of information that must be provided in order to complete the intended action. 
+Mandatory data is a piece of information that must be provided in order to complete the intended action.
 
 #### Optional data
 
-A piece of information that users have the option of sharing or not when completing some action. 
+A piece of information that users have the option of sharing or not when completing some action.
 
-#### Unverified data 
+#### Unverified data
 
-A piece of information which a user has input into the app but it has not be verified by an external authority. 
+A piece of information which a user has input into the app but it has not be verified by an external authority.
 
 #### Verified data
 
-A piece of information which a user has input into the app that has be verified by an external authority and includes a credential or token that provides proof of verification. 
+A piece of information which a user has input into the app that has be verified by an external authority and includes a credential or token that provides proof of verification.
 
 #### Verifier
 
-The verifier checks if a piece of information is "valid." It is usually provided by an integration partner and they decide what "valid" means for them. 
+The verifier checks if a piece of information is "valid." It is usually provided by an integration partner and they decide what "valid" means for them.
 
-It will send back to the credential issuer a boolean response which tells the CI whether to issue a credential or not. 
+It will send back to the credential issuer a boolean response which tells the CI whether to issue a credential or not.
 
 #### Wallet
 
 A deprecated term, refers to what is now known as simply 'the app'.
-
-
-
