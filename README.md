@@ -641,8 +641,6 @@ npm start
 
 ### Android
 
-#### Import the project
-
 1. Install android studio (https://developer.android.com/studio/)
 
 2. Open Android Studio
@@ -665,7 +663,47 @@ If you see "Something went wrong" message in the device, most possibly you don't
 you can find adb at: `$HOME/Library/Android/sdk/platform-tools/adb`, we really recommend to modify your .bashrc to add ANDROID_HOME environment and adb to the path.
 
 ```
-adb shell am start -a android.intent.action.VIEW -d decodewallet://YOUR_IP:19000/?decidimAPIUrl=https%3A%2F%2Fbetadddc.alabs.org%2Fapi&petitionId=2
+adb shell am start -a android.intent.action.VIEW -d "decodewallet://YOUR_IP:19000/?decidimAPIUrl=https%3A%2F%2Fbetadddc.alabs.org%2Fapi\&petitionId=2"
 ```
 
-OJO! WARNING! change the ip for the one of your computer.
+*WARNING!* change the `YOUR_IP` for the one of your computer.
+
+
+### IOS
+
+1. Open Xcode and open the `ios/decode-app.xcworkspace`
+
+2. Install the pods (is the way of installing dependencies in iOS projects)
+2.1 Install cocoa pods with: `sudo gem install cocoapods`
+2.2 inside `ios/` folder execute `pod install` 
+
+3. Press the play button
+
+
+-- Right now the zenroom in the repo does not work correct so there is error when building the app, so next steps have been done with an old zenroom library that work.
+
+4. An emulator should open
+
+5. Open safari, and open the url decodewallet://YOUR_IP:19000/?decidimAPIUrl=https%3A%2F%2Fbetadddc.alabs.org%2Fapi\&petitionId=2
+
+Remember to replace `YOUR_IP` with your computer ip
+
+## Upgrade zenroom 
+
+### iOS 
+
+to build zenroom for ios, execute `./build/build-ios.sh` inside the zenroom repository 
+
+Copy the `zenroom/build/zenroom-ios.a` over overwrite the `wallet/ios/decode-app/zenroom-ios.a`
+
+### Android
+
+Just overwrite the ``
+
+## Deploy
+
+The apps have to be deploy as normal iOS / Android apps.
+
+But the javascript code has to be published in into expo using `expo publish --release-channel production`. 
+
+You can deploy the js code, without having to re-upload the native apps.
