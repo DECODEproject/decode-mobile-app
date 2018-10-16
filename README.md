@@ -376,7 +376,7 @@ For example, Decidim will simply run a server with a hard-coded list of username
 
 #### Tech Vision
 
-![Decidim Tech Vision](Decidim-TechVision.png)
+![Decidim Tech Vision](docs/Decidim-TechVision.png)
 
 #### Running it locally
 
