@@ -66,6 +66,33 @@ For example, Decidim will simply run a server with a hard-coded list of username
 
 ![Decidim Tech Vision](Decidim-TechVision.png)
 
+### Running it locally
+
+For development purposes, we have mocked versions of all the moving parts in order to be able to test the flows end to end.
+You will need access to the [Gogs repository](https://gogs.dyne.org/DECODE/decode-prototype). If you don't have access, you can request access from Jaromil ([jaromil@dyne.org](mailto:jaromil@dyne.org)).
+
+In order to run it end-to-end, these are the steps you need to follow:
+
+1. The app:
+
+    Start the app in the simulator ([Instructions here](https://github.com/DECODEproject/wallet/blob/master/docs/App.md#launching-the-emulator))
+
+2. Run the mock version of the Decidim frontend
+
+    This is a simple Node app that mocks the Decidim interface.
+     
+    It's called petitions-app in the decode-prototype repository in Gogs. Instructions on how to start it can be found [here](https://gogs.dyne.org/DECODE/decode-prototype/src/master/apps/petitions/petitions-app#run).
+
+3. Run the mock version of the Decidim API
+
+    This is a simple Clojure API and MongoDB database that mocks the Decidim API and a sample petition.
+    
+    It's called decode-app in the decode-prototype repository in Gogs. Instructions on how to start it can be found [here](https://gogs.dyne.org/DECODE/decode-prototype/src/master/apps/petitions/decode-app#run-locally).
+    
+4. Run Chainspace locally
+
+    Chainspace is the blockchain used in Decode. It can be run in a Docker container locally for testing purposes following the instructions [here](https://github.com/DECODEproject/chainspace/tree/xplore#building-with-docker).
+
 ## Future Development
 
 [To Do]
