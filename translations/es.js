@@ -1,18 +1,18 @@
 export default {
   attributesLanding: {
-    nodata: 'Empecemos por añadir atributos.\nHaz click en botón inferior para empezar',
+    nodata: 'Empecemos por añadir tus datos.\nHaz click en botón inferior para empezar',
     add: 'Añadir datos',
     errorDelete: 'Error al borrar los datos',
   },
   attributesSummary: {
     title: 'DECIDIM requiere verificar tu residencia en Barcelona.',
-    subtitle: 'Lo puedes verificar con el Ayuntamiento de Barcelona. Tu residencia se verifica anónimamente. Solo hace falta hacerlo una vez.',
+    subtitle: 'La puedes verificar con el Ayuntamiento de Barcelona. Tu residencia se verifica anónimamente. Solo hace falta hacerlo una vez.',
     requirement: 'Requiere lo siguiente:',
-    more: 'Mostrar mas',
+    more: 'Mostrar más',
     less: 'Mostrar menos',
     button: 'Verificar',
     cancel: 'O, cancela la participación en esta propuesta',
-    requiredAttributes: 'Datos requeridos para firmar la petición',
+    requiredAttributes: 'Datos requeridos para firmar la propuesta',
   },
   home: {
     badPin: 'Código PIN incorrecto',
@@ -34,7 +34,7 @@ export default {
     confirm: 'Confirmar',
     cancel: 'Cancelar',
     errorEmptyDateOfBirth: 'Debes seleccionar una fecha',
-    errorSaveDateOfBirth: 'No se ha podido guardar los datos',
+    errorSaveDateOfBirth: 'No se ha podido guardar la fecha',
     save: 'Guardar',
   },
   petitionSummary: {
@@ -44,8 +44,8 @@ export default {
     optional: 'Datos opcionales para compartir: ',
     sharing: 'Estarás compartiendo tus datos con',
     age: 'Edad',
-    loading: 'Esto podría tardar unos minutos',
-    requiredAttributes: 'Datos requeridos para firmar la petición',
+    loading: 'Esto podría tardar unos momentos',
+    requiredAttributes: 'Datos requeridos para firmar la propuesta',
   },
   pinSetup: {
     placeholderPin1: 'Por lo menos 4 digitos',
@@ -57,12 +57,12 @@ export default {
     button: 'Guardar',
     title: 'Protege tus datos',
     subtitle: 'Introduce un PIN, para que nadie mas pueda acceder a tus datos',
-    pinWarning: 'Recuerda tu PIN, no se puede recuperar si lo pierdes!',
+    pinWarning: 'Recuerda tu PIN, ¡No se puede recuperar si lo pierdes!',
   },
   signOutcome: {
     backDecidim: 'Volver a Decidim',
     voteRecorded: 'Tu voto ha sido registrado anónimamente',
-    maybeInterested: 'Quizás estás interesado en otras propuestas',
+    maybeInterested: 'Ver los datos de Decidim en Barcelona Now',
     errorText: 'Puedes volver a la página de Decidim para ver más propuestas.',
     defaultError: 'Ha habido un error',
   },
@@ -79,7 +79,7 @@ export default {
         subtitle: 'Tus datos tienen un valor. Es importante que los controles',
       },
       three: {
-        subtitle: 'Con DECODE, tú defines los datos que quieres compartir y cómo son utilizados',
+        subtitle: 'Con DECODE, tú decides qué datos quieres compartir y cómo son utilizados',
       },
       four: {
         subtitle: 'Guarda tus datos personales con la mejor seguridad',
