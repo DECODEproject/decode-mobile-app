@@ -49,21 +49,55 @@ export function getPetition(decidimClient, petitionId) {
   };
 }
 
-export function signPetition(vote, age, gender, district, chainspaceClient, zenroomContract) {
-  return async (dispatch) => {
+
+async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender) {
+  const request = {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      signatory: walletId.substring(0, 5),
+      vote,
+      age,
+      gender,
+    }),
+  };
+
+  const response = await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, request);
+  const responseJson = await response.json();
+  if (!response.ok) {
+    return dispatch(signPetitionError(responseJson.error));
+  }
+  return dispatch(signPetitionAction());
+}
+
+async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature) { //eslint-disable-line
+  try {
+    console.log('BEFORE GET LST TX');
+    const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
+    console.log(' GET LST TX' , lastTx);
+    const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
+    console.log('Z output' , zenroomOutput);
+    const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
+
+    await chainspaceClient.postTransaction(transaction);
+  } catch (error) {
+    console.log('errooooooooooor', error)
+    return dispatch(signPetitionError(error.message));
+  }
+
+  return dispatch(signPetitionAction());
+}
+
+export function signPetition(petition, walletId, walletProxyLink, vote, age, gender, district, chainspaceClient, zenroomContract) { //eslint-disable-line
+  return async (dispatch, getState) => {
+    if (!getState().featureToggles.zenroom) {
+      return signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender);
+    }
     const contractId = 'zenroom_petition';
     const signature = new Signature(vote, gender, age, district);
-
-    try {
-      const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
-      const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
-      const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
-
-      await chainspaceClient.postTransaction(transaction);
-    } catch (error) {
-      return dispatch(signPetitionError(error.message));
-    }
-
-    return dispatch(signPetitionAction());
+    return signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature);
   };
 }

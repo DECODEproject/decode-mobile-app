@@ -5,6 +5,7 @@ import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -22,22 +23,27 @@ public class ZenroomExecutor {
     }
 
     public String execute(String contract, String data, String key) throws Exception {
+
+        Log.d("KZK", data.substring(data.length() - 40));
+
         FileOutputStream outputStream = context.openFileOutput("contract.lua", Context.MODE_PRIVATE);
         outputStream.write(contract.getBytes());
         outputStream.close();
 
-        outputStream = context.openFileOutput("data.lua", Context.MODE_PRIVATE);
+        outputStream = context.openFileOutput("data.txt", Context.MODE_PRIVATE);
+
         outputStream.write(data.getBytes());
         outputStream.close();
 
-        outputStream = context.openFileOutput("key.lua", Context.MODE_PRIVATE);
+        outputStream = context.openFileOutput("key.txt", Context.MODE_PRIVATE);
         outputStream.write(key.getBytes());
         outputStream.close();
 
         String zenroomPath = context.getFileStreamPath("zenroom").getAbsolutePath();
         String contractPath = context.getFileStreamPath("contract.lua").getAbsolutePath();
-        String dataPath = context.getFileStreamPath("data.lua").getAbsolutePath();
-        String keysPath = context.getFileStreamPath("key.lua").getAbsolutePath();
+        String dataPath = context.getFileStreamPath("data.txt").getAbsolutePath();
+        String keysPath = context.getFileStreamPath("key.txt").getAbsolutePath();
+
 
         Runtime rt = Runtime.getRuntime();
         String[] commands = {zenroomPath, "-a", dataPath, "-k", keysPath, contractPath };
@@ -64,7 +70,6 @@ public class ZenroomExecutor {
 
         return sb.toString();
     }
-
 
     private String copyZenroom() {
         try {
