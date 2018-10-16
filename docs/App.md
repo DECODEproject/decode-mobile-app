@@ -24,7 +24,7 @@ The app includes a Data summary page where you can view all (verified and unveri
 
 #### Signing Flow
 
-The signing flow was created specifically for the Decidim Pilot. In this flow, you enter the app through an external link from the decidim site **CURRENTLY UNDER CONSTRUCTION**.
+The signing flow was created specifically for the Decidim Pilot. In this flow, you enter the app through an external link from the [Decidim site](https://dddc.decodeproject.eu/).
 
 ### Code Structure
 
@@ -62,7 +62,7 @@ The project is separated into 6 main sections
 
 ### Dependencies
 
-To be able to run the app locally, we need to have up and running Chainspace and use the Zenroom contracts.
+To be able to run the app locally, we need to have up and running Chainspace and use the Zenroom contracts. More information on how to run it locally for the Decidim pilot [here](https://github.com/DECODEproject/wallet/blob/master/docs/Pilots.md#running-it-locally).
 
 If you want to know more, check the [Dependencies Documentation](Dependencies.md)
 
@@ -185,6 +185,26 @@ If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 ## Future Development 
 
-[TO DO]
+- Pin recovery
+    
+    Currently, the user needs to set up a pin the first time they use the app but they don't have to way to change it or recover it if they forget about it (other than clearing all the data from the app using Android's native settings).
+    
+- Deleting data
+
+    Currently, the user can add and edit their data but they don't have a way to delete it (other than clearing all the data from the app using Android's native settings).
+
+- Managing data at signing time
+
+    Currently, users are able to manage non-verified data if they go through the Data summary page. Ideally, they could also add data from the signing flow (eg: set up their district if the petition they're trying to sign allows it as optional data and they haven't added it in their app yet).
+
+- History of shared information
+
+    Currently, users don't have a way of knowing what data they've shared with whom. Ideally, they should have a way of knowing this.
+
+- Data aggregation/Various levels of data sharing
+
+    Data like the data of birth is currently used to share the user's age range in a petition. The same piece of data could be used to share a different value (eg: the age, the year they were born, etc)
+
+- UX principles for entitlements
 
 
