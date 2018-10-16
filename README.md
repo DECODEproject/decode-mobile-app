@@ -13,6 +13,7 @@
 - [Dependencies](#dependencies)
   - [Chainspace](#chainspace)
   - [Zenroom](#zenroom)
+  - [Tor proxy](#tor-proxy)
 - [Pilots](#pilots)
   - [Decode Connector](#decode-connector)
   - [Crendential Issuer](#credential-issuer)
@@ -369,6 +370,12 @@ docker run --rm \
   -v $(pwd)/lib/zenroom.js:/code/zenroom/build/rnjs/zenroom.js \
   wallet-zenroom
 ```
+
+### Tor proxy
+
+This a service that allows us to create a connection to a Tor node. A mobile device cannot directly connect to a Tor node, so it needs to go through this proxy.
+
+More information can be found in the [Github repository](https://github.com/DECODEproject/tor-proxy).
 
 ## Pilots
 
