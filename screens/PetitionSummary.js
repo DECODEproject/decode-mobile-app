@@ -122,6 +122,7 @@ class PetitionSummary extends React.Component {
       toggleCallback={() => this.toggleEnabledAttribute(attr)}
       isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
       name={this.props.t(attr.predicate)}
+      requiredError={this.props.t('requiredAttributeError')}
     />
     );
   };

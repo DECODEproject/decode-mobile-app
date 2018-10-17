@@ -6,8 +6,7 @@ import styles from './styles';
 export default function Attribute(props) {
   const disabledAttributeText = (
     <Text style={styles.disabledAttributeText}>
-        You must consent to sharing your status as a Barcelona resident or
-        you cannot sign this petition. This information is anonymous.
+      {props.requiredError}
     </Text>
   );
   return (
@@ -28,6 +27,7 @@ Attribute.propTypes = {
   isEnabled: PropTypes.bool,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  requiredError: PropTypes.string.isRequired,
 };
 
 Attribute.defaultProps = {

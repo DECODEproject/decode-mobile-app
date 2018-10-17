@@ -46,6 +46,7 @@ export default {
     age: 'Edad',
     loading: 'Esto podría tardar unos momentos',
     requiredAttributes: 'Datos requeridos para firmar la propuesta',
+    requiredAttributeError: 'Debes compartir que eres residente de Barcelona o no podrás firmar esta petición. Esta información es anónima.',
   },
   pinSetup: {
     placeholderPin1: 'Por lo menos 4 digitos',
