@@ -348,6 +348,13 @@ python test_zenroom_petition.py
 
 ### Zenroom
 
+#### Native Zenroom encryption
+
+We are working on fixing some performance issues by ejecting the app from Expo and
+running encryption with native Zenroom libraries.
+
+If you want to try or work on those changes, check the `eject` branch in this repository.
+
 #### How to compile Zenroom
 
 There's a file with the Zenroom module for React Native in `./lib/zenroom.js`.
