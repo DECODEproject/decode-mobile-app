@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Image, View, ScrollView, Text } from 'react-native';
+import { Dimensions, Image, View, ScrollView, Text, Linking } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
@@ -47,6 +47,7 @@ class PetitionDescription extends React.Component {
           style={styles.petitionDescription}
           html={this.props.description}
           imagesMaxWidth={Dimensions.get('window').width}
+          onLinkPress={(event, href) => { Linking.openURL(href); }}
         />
       </ScrollView>
       <LinkButton
