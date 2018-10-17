@@ -481,6 +481,10 @@ In order to run it end-to-end, these are the steps you need to follow:
 
     Chainspace is the blockchain used in Decode. It can be run in a Docker container locally for testing purposes following the instructions [here](https://github.com/DECODEproject/chainspace/tree/xplore#building-with-docker).
 
+5. Chainspace operations
+
+    In order to create and, later, close a petition, we need to start the 'decidim-decode-connector' that you can find [here](https://github.com/DECODEproject/decidim-decode-connector). This server will be in charge of create and close the Chainspace block where the votes are registered.
+
 ### Future Development
 
 (See Issues in Github for more information)
