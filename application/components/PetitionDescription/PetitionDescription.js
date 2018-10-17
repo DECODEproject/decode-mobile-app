@@ -50,10 +50,12 @@ class PetitionDescription extends React.Component {
           onLinkPress={(event, href) => { Linking.openURL(href); }}
         />
       </ScrollView>
-      <LinkButton
-        name={this.props.t('less')}
-        onPress={() => this.setState({ showFullDescription: false })}
-      />
+      <View style={{ alignItems: 'flex-end', paddingTop: 5 }}>
+        <LinkButton
+          name={this.props.t('less')}
+          onPress={() => this.setState({ showFullDescription: false })}
+        />
+      </View>
     </View>
   );
 
