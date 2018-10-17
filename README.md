@@ -628,12 +628,12 @@ It will send back to the credential issuer a boolean response which tells the CI
 #### Wallet
 
 A deprecated term, refers to what is now known as simply 'the app'.
-## Eject usage 
+## Eject usage
 
 First of all, ensure that you do a `npm install` some new packages (expoview) are used
 for the native apps.
 
-For ios and android you should have the bundler up and running 
+For ios and android you should have the bundler up and running
 
 ```
 npm start
@@ -651,7 +651,7 @@ npm start
 4.1 android-27
 4.2 build-tools 27.0.3
 
-5. Connect your phone 
+5. Connect your phone
 5.1 Make sure you have your device in development mode (https://www.greenbot.com/article/2457986/android/how-to-enable-developer-options-on-your-android-phone-or-tablet.html)
 5.2 Developer Options > USB Debuggin on > Trust the machine
 
@@ -675,7 +675,7 @@ adb shell am start -a android.intent.action.VIEW -d "decodewallet://YOUR_IP:1900
 
 2. Install the pods (is the way of installing dependencies in iOS projects)
 2.1 Install cocoa pods with: `sudo gem install cocoapods`
-2.2 inside `ios/` folder execute `pod install` 
+2.2 inside `ios/` folder execute `pod install`
 
 3. Press the play button
 
@@ -688,22 +688,22 @@ adb shell am start -a android.intent.action.VIEW -d "decodewallet://YOUR_IP:1900
 
 Remember to replace `YOUR_IP` with your computer ip
 
-## Upgrade zenroom 
+## Upgrade zenroom
 
-### iOS 
+### iOS
 
-to build zenroom for ios, execute `./build/build-ios.sh` inside the zenroom repository 
+to build zenroom for ios, execute `./build/build-ios.sh` inside the zenroom repository
 
 Copy the `zenroom/build/zenroom-ios.a` over overwrite the `wallet/ios/decode-app/zenroom-ios.a`
 
 ### Android
 
-Just overwrite the ``
+Just overwrite the `wallet/android/app/src/main/res/raw/zenroom` file with the static Zenroom binary.
 
 ## Deploy
 
 The apps have to be deploy as normal iOS / Android apps.
 
-But the javascript code has to be published in into expo using `expo publish --release-channel production`. 
+But the javascript code has to be published in into expo using `expo publish --release-channel production`.
 
 You can deploy the js code, without having to re-upload the native apps.
