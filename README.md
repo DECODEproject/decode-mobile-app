@@ -24,7 +24,7 @@
 ---
 
 ## The App
-This app attempts to provide a platform where people can control their personal data, choosing where and how to share it. It allows users to input their data and keep it saved on their phone for future use. Currently, there is also a signing flow for integration with a community engagement platform called Decidim. It allows the user to share their data and vote on a petition securely.
+This app provides a platform where people can control their personal data, choosing where and how to share it. It allows users to input their data and keep it saved on their phone for future use. Currently, there is also a signing flow for integration with a community engagement platform called Decidim. It allows the user to share anonymised data and vote on a petition securely.
 
 See [Glossary](#glossary) for unknown terms.
 
@@ -38,17 +38,19 @@ See [Glossary](#glossary) for unknown terms.
 
 In order to inform the user about the benefits of using this app, we have included a Walkthrough.
 
-This Walkthrough is a swipe-able multi page component with modifiable images and texts with the ability to skip.
+This Walkthrough is a swipeable multi-page component with modifiable images and texts and the ability to skip.
 
 ##### Pin Management
 
-In order to secure the app, the authentication system included is PIN based. When you first visit the app and reach the end of the Walkthrough, you will be required to setup a PIN. Subsequently, in order to access the app you must enter your PIN.
+In order to secure the app, the authentication system included is PIN based. When you first visit the app and reach the end of the Walkthrough, you will be required to set up a PIN. Subsequently, in order to access the app you must enter your PIN.
 
-There is no way to retrieve the PIN if you forget it. It is saved in the Local Storage of the phone.
+By design and for maximum privacy and security of personal data, there is no way to retrieve the PIN if you forget it. It is only saved in the Local Storage of the phone.
 
 ##### Data Management
 
-The app includes a Data summary page where you can view all (verified and unverified) data you have in the app. The app distinguishes between verified and unverified data. Currently, from this page you can add more unverified data by clicking the button on the bottom. This redirects you to the data addition page where you can add new data. The data is stored in the local storage of the phone, it is not saved in any external database. You also have the option to edit data already saved in the app.
+The app includes a Data summary page where you can view all data you have in the app. The app distinguishes between verified and unverified data. Currently, from this page you can add more unverified data by clicking the button on the bottom. This redirects you to the data addition page where you can add new data. The data is stored in the local storage of the phone, it is not saved in any external database. You also have the option to edit data already saved in the app.
+
+Verified data, in the form of signed credentials, can only be imported from external credential issuers as part of a specific pilot or application.
 
 #### Signing Flow
 
@@ -58,11 +60,11 @@ The signing flow was created specifically for the Decidim Pilot. In this flow, y
 
 #### The Tech Stack
 
-The app is developed using [React Native](https://facebook.github.io/react-native/) as main language and [Redux](https://redux.js.org/) as the state manager.
+The app is developed using [React Native](https://facebook.github.io/react-native/) as the main language and [Redux](https://redux.js.org/) as the state manager.
 
 The app is being developed using [Docker](https://www.docker.com/) to build and manage testing environments.
 
-As part of the development tools, we are using [Expo](https://expo.io/) to simulate an IOS and Android environment. Expo allows us to create the different files in order to publish in the different stores. It also provides tools for managing the app navigation, environment variables and the secure storage.
+As part of the development tools, we are using [Expo](https://expo.io/) to simulate an iOS and Android environment. Expo allows us to create the different files in order to publish in the different app stores. It also provides tools for managing the app navigation, environment variables and the secure storage.
 
 [react-i18next](https://github.com/i18next/react-i18next) library is used to manage localization, currently with English, Spanish and Catalan languages.
 
@@ -130,7 +132,7 @@ npm run lint
 
 ##### NOTE:
 
-All of these commands we also have them so that they can be run inside a Docker container that uses Node 10:
+All of these commands can also be run inside a Docker container that uses Node 10:
 
 ```
 make build
@@ -170,7 +172,7 @@ The latest version of the app is available [here](https://expo.io/@decode-barcel
 
 If you're using an Android phone you can just use the QR code to open the app.
 
-Unfortunately, Expo QR codes don't work on the latest versions for Iphone.
+Unfortunately, Expo QR codes don't work on the latest versions for iPhone.
 
 #### IOS
 
@@ -182,7 +184,7 @@ In order to generate the files necessary for publishing run the following comman
 exp build:ios
 ```
 
-Once you have the ipa, follow the normal process for uploading apps to the apple store or test flight.
+Once you have the IPA, follow the normal process for uploading apps to the apple store or test flight.
 
 #### Android
 
@@ -194,11 +196,11 @@ In order to generate the files necessary for publishing run the following comman
 exp build:android
 ```
 
-Once you have the apk, follow the normal process for uploading apps to Google Play.
+Once you have the APK, follow the normal process for uploading apps to Google Play.
 
 ###### NOTE:
 
-We have had trouble when publishing to Google Play in the past. The links we use in the app do not work the same way as they had in Expo, with no solution to be found:
+We have had trouble when publishing to Google Play in the past. The links we used in the app do not work the same way as they had in Expo, with no solution to be found:
 
 - When returning to the app from the Credential Issuer site, the 'url' event handler is not triggered and the credential is not stored.
 - We believe that it's an issue with how the Android Standalone App handles links to the app. The event might stop working after the first time, since the error only happens if the app was started from a link in the beginning too (as is the case for the signing flow)
@@ -206,6 +208,8 @@ We have had trouble when publishing to Google Play in the past. The links we use
 If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 ### Future Development
+
+We have identified the following improvements and adjustments that could be made to the app:
 
 - Pin recovery
 
@@ -217,11 +221,11 @@ If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 - Managing data at signing time
 
-    Currently, users are able to manage non-verified data if they go through the Data summary page. Ideally, they could also add data from the signing flow (eg: set up their district if the petition they're trying to sign allows it as optional data and they haven't added it in their app yet).
+    Currently, users are able to manage non-verified data if they go through the Data summary page. Ideally, they could also add data from the signing flow (eg: set up their district if the petition they're trying to sign allows it as optional data and they haven't added it in their app yet). Currently, a user would have to stop the signing process, add the data from the summary screen, and then start the signing flow again.
 
 - History of shared information
 
-    Currently, users don't have a way of knowing what data they've shared with whom. Ideally, they should have a way of knowing this.
+    Currently, users don't have a way of knowing what data they've shared with whom. Ideally, they should have a way of knowing this. Currently, all transactions are stored in Chainspace but not in the app.
 
 - Data aggregation/Various levels of data sharing
 
@@ -233,7 +237,7 @@ If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 We have been using [GoCD](https://docs.gocd.org/current/) as our CI/CD system with the [JSON configuration plugin](https://github.com/tomzo/gocd-json-config-plugin) that allows us to define the pipeline structure in json files that are in version control.
 
-In order to know what our pipelines look like, just look for the files with extension _gopipeline.json_ to get all the information (eg: [wallet.gopipeline.json](wallet.gopipeline.json)).
+To see the pipeline configuration, just look for the files with extension _gopipeline.json_ to get all the information (eg: [wallet.gopipeline.json](wallet.gopipeline.json)). If you use other CI/CD tools, you can refer to these files as a guide.
 
 For the wallet, we use trunk based development (we work on a master branch) and we have been doing Continuous deployment with Expo – that is, every commit we push to Github is deployed to production. Therefore, we have been implementing a basic way of doing feature toggles by keeping them in the Redux store.
 
@@ -295,7 +299,7 @@ The DECODE project uses Chainspace as a distributed ledger database.
 
 More info in [the Chainspace repository](https://github.com/DECODEproject/chainspace)
 
-[In construction]
+[Under construction]
 
 #### How to Run
 
@@ -362,13 +366,13 @@ The physical place where the Chainspace nodes are running. More info in [the Cha
 
 #### Common problems and solutions
 
-[In construction]
+[Under construction]
 
 ### Zenroom
 
 #### Background
 
-[In construction]
+[Under construction]
 
 #### How to run
 
@@ -404,11 +408,11 @@ docker run --rm \
 
 #### Contracts
 
-[In construction]
+[Under construction]
 
 #### Common problems and solutions
 
-[In construction]
+[Under construction]
 
 ### Tor proxy
 
@@ -528,7 +532,7 @@ In order to run it end-to-end, these are the steps you need to follow:
 
 #### Attribute
 
-This term appears several times throughout the code but is now deprecated. This is now being referred to as simply "data" to be more user friendly.
+This term appears several times throughout the code but is now deprecated in the front end. This is now being referred to as simply "data" to be more user friendly.
 
 Attribute is used to describe a piece of information that a user inputs to the app or a piece of information that an external application is asking for.
 
