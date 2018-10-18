@@ -17,7 +17,7 @@ const fourthPageImage = require('../assets/images/onboarding04.png');
 
 const subtitleStyle = {
   flex: 4,
-  fontSize: 32,
+  fontSize: 26,
   textAlign: 'center',
   color: 'white',
   paddingLeft: 35,
@@ -71,7 +71,7 @@ const Walkthrough = props => (
         backgroundColor: '#37bdc2',
         image: <Image style={{ width: '95%', height: 400 }} resizeMode="contain" source={thirdPageImage} />,
         title: '',
-        subtitle: <TitleElement title={props.t('pages.three.subtitle')} style={{ ...subtitleStyle, fontSize: 26 }} />,
+        subtitle: <TitleElement title={props.t('pages.three.subtitle')} style={subtitleStyle} />,
       },
       {
         imageContainerStyles: { flex: 7 },
