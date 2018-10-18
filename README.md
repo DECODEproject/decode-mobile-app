@@ -285,13 +285,23 @@ It closes a Chainspace node through the [decidim-decode-connector](https://githu
 
 ## Dependencies
 
-[In construction]
+The DECODE project has two main dependencies: Chainspace and Zenroom.
 
 ### Chainspace
 
-Download the Chainspace repo from [https://github.com/DECODEproject/chainspace](https://github.com/DECODEproject/chainspace) and use branch `xplore`
+#### Background
 
-#### Running Locally [TODO]
+The DECODE project uses Chainspace as a distributed ledger database.
+
+More info in [the Chainspace repository](https://github.com/DECODEproject/chainspace)
+
+[In construction]
+
+#### How to Run
+
+Download the Chainspace repository from [https://github.com/DECODEproject/chainspace](https://github.com/DECODEproject/chainspace) and use branch `xplore`
+
+##### Running Locally [TODO]
 
 Run this command
 ```
@@ -299,7 +309,7 @@ make kill-all; rm -rf chainspacecore-*-*; make build-jar; make start-nodes; make
 
 ```
 
-#### Building with Docker
+##### Building with Docker
 
 First, build the container from the Dockerfile
 ```
@@ -311,7 +321,7 @@ Then run chainspace with the following command
 docker run -ti --rm -p 5000:5000 --name chainspace chainspace
 ```
 
-#### Chainspace with Zenroom
+##### Chainspace with Zenroom
 
 If you are going to use contracts that use zenroom you should install it on your computer, here is a small tutorial to install it.
 
@@ -346,16 +356,30 @@ cd contrib/core-tools/system-test;
 python test_zenroom_petition.py
 ```
 
+#### Boxes
+
+The physical place where the Chainspace nodes are running. More info in [the Chainspace repository](https://github.com/DECODEproject/chainspace)
+
+#### Common problems and solutions
+
+[In construction]
+
 ### Zenroom
 
-#### Native Zenroom encryption
+#### Background
+
+[In construction]
+
+#### How to run
+
+##### Native Zenroom encryption
 
 We are working on fixing some performance issues by ejecting the app from Expo and
 running encryption with native Zenroom libraries.
 
 If you want to try or work on those changes, check the `eject` branch in this repository.
 
-#### How to compile Zenroom
+##### How to compile Zenroom
 
 There's a file with the Zenroom module for React Native in `./lib/zenroom.js`.
 
@@ -377,6 +401,14 @@ docker run --rm \
   -v $(pwd)/lib/zenroom.js:/code/zenroom/build/rnjs/zenroom.js \
   wallet-zenroom
 ```
+
+#### Contracts
+
+[In construction]
+
+#### Common problems and solutions
+
+[In construction]
 
 ### Tor proxy
 
