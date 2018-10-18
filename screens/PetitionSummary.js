@@ -177,8 +177,7 @@ class PetitionSummary extends React.Component {
 
         <ScrollView>
           <View style={{ flex: 1 }}>
-            <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} />
-            <Text>{t('loading')}</Text>
+            <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} textContent={t('loading')} />
           </View>
           { petition && petitionAttributesTemplate }
         </ScrollView>
