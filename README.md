@@ -48,7 +48,7 @@ There is no way to retrieve the PIN if you forget it. It is saved in the Local S
 
 ##### Data Management
 
-The app includes a Data summary page where you can view all (verified and unverified) data you have in the app. The app distinguishes between verified and unverified data. Currently, from this page you can add more unverified data by clicking the button on the bottom. This redirects you to the data addition page where you can add new data. The data is stored in the local storage of the phone, it is not saved in any external database. You also have to option edit data already saved in the app.
+The app includes a Data summary page where you can view all (verified and unverified) data you have in the app. The app distinguishes between verified and unverified data. Currently, from this page you can add more unverified data by clicking the button on the bottom. This redirects you to the data addition page where you can add new data. The data is stored in the local storage of the phone, it is not saved in any external database. You also have the option to edit data already saved in the app.
 
 #### Signing Flow
 
@@ -60,7 +60,7 @@ The signing flow was created specifically for the Decidim Pilot. In this flow, y
 
 The app is developed using [React Native](https://facebook.github.io/react-native/) as main language and [Redux](https://redux.js.org/) as the state manager.
 
-The app is being developed using [Docker](https://www.docker.com/) to build and manage environments.
+The app is being developed using [Docker](https://www.docker.com/) to build and manage testing environments.
 
 As part of the development tools, we are using [Expo](https://expo.io/) to simulate an IOS and Android environment. Expo allows us to create the different files in order to publish in the different stores. It also provides tools for managing the app navigation, environment variables and the secure storage.
 
@@ -72,7 +72,7 @@ Jest is used for testing with [Enzyme](https://github.com/airbnb/enzyme) as the 
 
 #### Project Structure
 
-The project is separated into 6 main sections
+The project is separated into the following main sections
 
 
 | Folder                    | Description   |
@@ -102,7 +102,7 @@ npm install -g exp
 
 - [Node](https://nodejs.org)
 
-Version 8
+Version 8 or higher
 
 
 #### Install dependencies
@@ -225,7 +225,7 @@ If the issue doesn't get resolved in Expo, the app might have to be ejected.
 
 - Data aggregation/Various levels of data sharing
 
-    Data like the data of birth is currently used to share the user's age range in a petition. The same piece of data could be used to share a different value (eg: the age, the year they were born, etc)
+    Data like the date of birth is currently used to share the user's age range in a petition. The same piece of data could be used to share a different value (eg: the age, the year they were born, etc)
 
 - UX principles for entitlements
 
@@ -240,37 +240,37 @@ For the wallet, we use trunk based development (we work on a master branch) and 
 Every time a push to the remote repository is done, GoCD pulls the repository into the CI environment server. In order to successfully run the application in the CI environment, GoCD will perform a series of operations that we describe as:
 
 - Test: In this stage it will run all the unit tests included in the project
-- Deploy: In this stage, we are deploying the changes we made into the CI server
+- Deploy: In this stage, we are deploying the changes we made to the production environments
 
 ### Pipelines
 
 #### Wallet
 
-This pipeline performs the Wallet App deploy to CI server after it checks all the unit tests and linter are passing
+This pipeline performs the Wallet App deploy to the production environment after it checks all the unit tests and linter are passing
 
 #### Decidim-Decode-Connector
 
-This pipeline performs the Decidim-Decode-Connector deploy to CI server
+This pipeline performs the Decidim-Decode-Connector deploy to the production environment
 
 #### Tor-Proxy
 
-This pipeline performs the Tor Proxy deploy to CI server
+This pipeline performs the Tor Proxy deploy to the production environment
 
 #### Credential-Issuer-Decidim
 
-This pipeline performs the Credential-Issuer-Decidim deploy to CI server
+This pipeline performs the Credential-Issuer-Decidim deploy to the production environment
 
 #### Decode-App
 
-This pipeline performs the Decode-App deploy to CI server after it checks all the unit tests and linter are passing
+This pipeline performs the Decode-App deploy to the production environment after it checks all the unit tests and linter are passing
 
 #### Petitions-App
 
-This pipeline performs the Petitions-App deploy to CI server after it checks all the unit tests and linter are passing
+This pipeline performs the Petitions-App deploy to the production environment after it checks all the unit tests and linter are passing
 
 #### Initialize
 
-It cleans and populate the decode-app database. Then, it restarts the box where [Chainspace](https://github.com/DECODEproject/chainspace) it's been executed, where there is no nodes created.
+It cleans and populates the decode-app database. Then, it restarts the box where [Chainspace](https://github.com/DECODEproject/chainspace) has been executed and there are no nodes created.
 
 #### Decode-Connector-Create-Petition
 
@@ -289,13 +289,13 @@ It closes a Chainspace node through the [decidim-decode-connector](https://githu
 
 ### Chainspace
 
-Download the Chainspace repo from [https://github.com/DECODEproject/chainspace](https://github.com/DECODEproject/chainspace) use branch `xplore`
+Download the Chainspace repo from [https://github.com/DECODEproject/chainspace](https://github.com/DECODEproject/chainspace) and use branch `xplore`
 
 #### Running Locally [TODO]
 
 Run this command
 ```
-make kill-all; rm -rf chainspacecore-*-*; make start-nodes; make start-client-api
+make kill-all; rm -rf chainspacecore-*-*; make build-jar; make start-nodes; make start-client-api
 
 ```
 
@@ -308,7 +308,7 @@ docker build -t chainspace .
 
 Then run chainspace with the following command
 ```
-docker run -ti -p 5000:5000 --name chainspace chainspace
+docker run -ti --rm -p 5000:5000 --name chainspace chainspace
 ```
 
 #### Chainspace with Zenroom
@@ -380,7 +380,7 @@ docker run --rm \
 
 ### Tor proxy
 
-This a service that allows us to create a connection to a Tor node. A mobile device cannot directly connect to a Tor node, so it needs to go through this proxy.
+This is a service that allows us to create a connection to a Tor node. A mobile device cannot directly connect to a Tor node, so it needs to go through this proxy.
 
 More information can be found in the [Github repository](https://github.com/DECODEproject/tor-proxy).
 
@@ -440,7 +440,7 @@ For example, Decidim will simply run a server with a hard-coded list of username
 
 5. Once all required attributes are available, the user can sign the petition with a Yes/No vote, mandatory attributes, and any optional attributes they choose to share. This information is combined with the current status of the petition on the ledger, and the app generates a transaction that updates the count on the ledger. The nature of this smart contract ensures that:
 
-    1. No personally identifiable data is transmitted, only aggregations.
+    1. No personally identifiable data is transmitted, only encrypted aggregations.
     2. The transaction and vote cannot be traced back to the user, as the app communicates with the ledger over Tor and the Yes/No vote cannot be decrypted to reveal the user's opinion or preference.
     3. Side-channel attacks are blocked because the petition is tallied using homomorphic encryption, so that the total of each vote is not known until the end of the process (though its integrity can be verified).
 
