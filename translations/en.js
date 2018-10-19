@@ -57,7 +57,7 @@ export default {
     labelPin2: 'Confirm PIN:',
     button: 'Save',
     title: 'Protect Your Data',
-    subtitle: 'Let\'s setup a PIN , so no one else can access your data',
+    subtitle: 'Let\'s setup a PIN, so no one else can access your data',
     pinWarning: 'Store your PIN safely, there is no way to recover it if you lose it!',
   },
   signOutcome: {

@@ -49,9 +49,9 @@ export default {
     requiredAttributeError: 'Debes compartir que eres residente de Barcelona o no podrás firmar esta propuesta. Esta información es anónima.',
   },
   pinSetup: {
-    placeholderPin1: 'Por lo menos 4 digitos',
+    placeholderPin1: 'Por lo menos 4 dígitos',
     placeholderPin2: 'Confirma el PIN',
-    errorPin1: 'El PIN debe ser por lo menos de 4 digitos',
+    errorPin1: 'El PIN debe ser por lo menos de 4 dígitos',
     errorPin2: 'El PIN debe coincidir',
     labelPin1: 'Introducir PIN:',
     labelPin2: 'Confirmar PIN:',
