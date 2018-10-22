@@ -291,11 +291,11 @@ The DECODE project has two main dependencies: Chainspace and Zenroom.
 
 #### Background
 
-The DECODE project uses Chainspace as a distributed ledger database.
+The DECODE project uses Chainspace as a distributed ledger platform for high-integrity and transparent processing of transactions within a decentralized system.
+
+In the Decidim pilot, it keeps track of the proposals signatures while ensuring their consistency.
 
 More info in [the Chainspace repository](https://github.com/DECODEproject/chainspace)
-
-[In construction]
 
 #### How to Run
 
@@ -394,9 +394,11 @@ curl --socks5-hostname 127.0.0.1:9050 http://< box_address >:5000/api/1.0/transa
 
 #### Background
 
-[In construction]
+Zenroom is a multi-platform cryptographic environment that allows the DECODE project to securely run smart contracts.
 
-#### How to compile Zenroom
+More info in [the Zenroom repository](https://github.com/DECODEproject/zenroom/)
+
+#### How to update Zenroom
 
 There's a file with the Zenroom module for React Native in `./lib/zenroom.js`.
 
