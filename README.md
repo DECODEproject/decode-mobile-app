@@ -305,7 +305,7 @@ More info in [the Chainspace repository](https://github.com/DECODEproject/chains
 
 Download the Chainspace repository from [https://github.com/DECODEproject/chainspace](https://github.com/DECODEproject/chainspace) and use branch `xplore`
 
-##### Running Locally [TODO]
+##### Running Locally
 
 Run this command
 ```
@@ -360,13 +360,54 @@ cd contrib/core-tools/system-test;
 python test_zenroom_petition.py
 ```
 
-#### Boxes
+### Boxes
 
 The physical place where the Chainspace nodes are running. More info in [the Chainspace repository](https://github.com/DECODEproject/chainspace)
 
-#### Common problems and solutions
+#### Tor setup
 
-[Under construction]
+Install dependencies:
+```
+brew install tor torsocks
+```
+
+Start tor in the background:
+```
+tor &
+```
+
+Connect to our box using torsocks:
+```
+torsocks ssh decode@dszj4sila655fk3s.onion
+```
+
+If some error appears about ssh, look [here](https://drew3000.net/osx-tor-terminal/)
+```
+brew install openssh
+```
+
+Torsocks is a tool that changes the connect syscalls to use tor, they name it ***torify*** the app. Basically once you put torsocks in front of a command this command will have access to tor!
+
+
+For testing tor from the command line you can use this command:
+```
+curl --socks5-hostname 127.0.0.1:9050 http://dszj4sila655fk3s.onion:5000/api/1.0/transactions
+```
+
+### Deployed boxes
+
+We have two boxes (decode02, decode03)
+
+**decode02**
+- tor addres: dszj4sila655fk3s.onion
+- ip address: 10.94.0.33
+
+
+**decode03**
+- tor addres: w454lnckcbqrfmpx.onion
+- ip address: 10.94.0.35
+
+torsocks ssh decode@< tor_address >
 
 ### Zenroom
 
@@ -410,9 +451,6 @@ docker run --rm \
 
 [Under construction]
 
-#### Common problems and solutions
-
-[Under construction]
 
 ### Tor proxy
 
