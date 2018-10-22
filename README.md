@@ -443,7 +443,7 @@ Another risk is that this might not work for all Android devices (currently we'r
 
 If you want to try or work on these changes, check the `eject` branch in this repository.
 
-The last commit at the time of writing is "d9ac4f663dc15d7f94af80e9f6339fe5179adfc7".
+The last commit at the time of writing is "38cd6e4e8031ba1c419962c1f24ae473fbdede42".
 
 
 ### Tor proxy
