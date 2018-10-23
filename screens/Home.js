@@ -30,7 +30,7 @@ class Home extends React.Component {
 
   componentWillMount() {
     ScreenOrientation.allow(ScreenOrientation.Orientation.PORTRAIT_UP);
-    this.props.initializeState().then(() => {});
+    this.props.initializeState(this.props.loginFT).then(() => {});
   }
 
   goToPetition() {
@@ -131,6 +131,7 @@ Home.propTypes = {
     list: PropTypes.instanceOf(Map),
   }).isRequired,
   t: PropTypes.func.isRequired,
+  loginFT: PropTypes.bool,
 };
 
 Home.defaultProps = {
@@ -138,6 +139,7 @@ Home.defaultProps = {
   decidimAPIUrl: undefined,
   petitionId: undefined,
   pinCode: '',
+  loginFT: false,
 };
 
 const mapStateToProps = state => ({
@@ -147,6 +149,7 @@ const mapStateToProps = state => ({
   attributes: state.attributes,
   petitionError: state.petition.error,
   decidimClient: new DecidimClient(new LanguageService(), state.decidimInfo.decidimAPIUrl),
+  loginFT: state.featureToggles.login,
 });
 
 const mockedMakingSenseCredential = new Attribute({
@@ -161,14 +164,16 @@ const mapDispatchToProps = dispatch => ({
   getPetition: (decidimClient, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionId)), // eslint-disable-line
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: pin => dispatch(updatePin(pin)),
-  initializeState: async () => {
+  initializeState: async (loginFT) => {
     await dispatch(setDecidimInfo());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
-    await dispatch(setCredential(
-      SecureStore.getItemAsync,
-      SecureStore.setItemAsync,
-      mockedMakingSenseCredential,
-    ));
+    if (loginFT) {
+      await dispatch(setCredential(
+        SecureStore.getItemAsync,
+        SecureStore.setItemAsync,
+        mockedMakingSenseCredential,
+      ));
+    }
   },
 });
 

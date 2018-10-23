@@ -30,6 +30,9 @@ describe('validatePinCode', () => {
     attributes: {
       list: new Map([['schema:addressLocality', {}]]),
     },
+    featureToggles: {
+      login: false,
+    },
   };
 
   beforeEach(() => {
