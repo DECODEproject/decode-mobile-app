@@ -11,7 +11,7 @@ export default {
     more: 'Mostrar más',
     less: 'Mostrar menos',
     button: 'Verificar',
-    cancel: 'O, cancela la participación en esta propuesta',
+    cancel: 'O cancela la participación en esta propuesta',
     requiredAttributes: 'Datos requeridos para firmar la propuesta',
   },
   home: {
@@ -40,7 +40,7 @@ export default {
   petitionSummary: {
     yes: 'Firmar - Sí',
     no: 'Firmar - No',
-    cancel: 'O, cancela la participación en esta propuesta',
+    cancel: 'O cancela la participación en esta propuesta',
     optional: 'Datos opcionales para compartir: ',
     sharing: 'Estarás compartiendo tus datos con',
     age: 'Edad',

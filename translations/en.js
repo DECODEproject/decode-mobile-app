@@ -11,7 +11,7 @@ export default {
     more: 'Show more',
     less: 'Show less',
     button: 'Verify',
-    cancel: 'Or, cancel signing this proposal',
+    cancel: 'Or cancel signing this proposal',
     requiredAttributes: 'This data is required to sign the proposal',
   },
   home: {
@@ -40,7 +40,7 @@ export default {
   petitionSummary: {
     yes: 'Sign Yes',
     no: 'Sign No',
-    cancel: 'Or, cancel signing this proposal',
+    cancel: 'Or cancel signing this proposal',
     optional: 'Optional data to share:',
     sharing: 'You will be sharing your data with',
     age: 'Age',

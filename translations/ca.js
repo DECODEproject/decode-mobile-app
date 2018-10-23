@@ -11,7 +11,7 @@ export default {
     more: 'Mostrar més',
     less: 'Mostrar menys',
     button: 'Verificar',
-    cancel: 'O, cancel·lar la teva participació en aquesta proposta',
+    cancel: 'O cancel·lar la teva participació en aquesta proposta',
     requiredAttributes: 'Dades requerides per signar la proposta',
   },
   home: {
@@ -40,7 +40,7 @@ export default {
   petitionSummary: {
     yes: 'Signar - Sí',
     no: 'Signar - No',
-    cancel: 'O, cancel·lar la teva participació en aquesta proposta',
+    cancel: 'O cancel·lar la teva participació en aquesta proposta',
     optional: 'Dades opcionals per compartir',
     sharing: 'Estaràs compartint les teves dades amb',
     age: 'Edat',
