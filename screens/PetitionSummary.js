@@ -175,16 +175,18 @@ class PetitionSummary extends React.Component {
           <Text style={{ fontWeight: 'bold', fontSize: 14, lineHeight: 20 }}>Decidim Barcelona.</Text>
         </View>
 
+        <View style={{ paddingBottom: 20 }}>
+          <Text style={{ color: '#9B9B9B', fontSize: 14 }}>
+            <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
+          </Text>
+        </View>
+
         <ScrollView>
           <View style={{ flex: 1 }}>
             <Spinner visible={this.state.loading} textStyle={{ color: '#FFF' }} textContent={t('loading')} />
           </View>
           { petition && petitionAttributesTemplate }
         </ScrollView>
-
-        <Text style={{ color: '#9B9B9B', fontSize: 14, alignSelf: 'center' }}>
-          <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
-        </Text>
 
         <View
           style={{

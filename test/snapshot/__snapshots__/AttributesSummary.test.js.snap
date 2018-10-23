@@ -12986,6 +12986,40 @@ Haz click en el botón inferior para empezar",
         <Component
           style={
             Object {
+              "paddingBottom": 20,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#9B9B9B",
+                "fontSize": 14,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#D0021B",
+                }
+              }
+            >
+              *
+            </Text>
+             
+            Datos requeridos para firmar la propuesta
+          </Text>
+        </Component>,
+        <Component
+          style={
+            Object {
               "flex": 1,
               "flexDirection": "row",
               "justifyContent": "space-between",
@@ -13032,32 +13066,6 @@ Haz click en el botón inferior para empezar",
             }
           }
         >
-          <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
-            style={
-              Object {
-                "color": "#9B9B9B",
-                "fontSize": 14,
-              }
-            }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#D0021B",
-                }
-              }
-            >
-              *
-            </Text>
-             
-            Datos requeridos para firmar la propuesta
-          </Text>
           <Text
             accessible={true}
             allowFontScaling={true}
@@ -13120,6 +13128,97 @@ Haz click en el botón inferior para empezar",
         },
         "ref": null,
         "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#9B9B9B",
+                "fontSize": 14,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#D0021B",
+                }
+              }
+            >
+              *
+            </Text>
+             
+            Datos requeridos para firmar la propuesta
+          </Text>,
+          "style": Object {
+            "paddingBottom": 20,
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": Array [
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#D0021B",
+                  }
+                }
+              >
+                *
+              </Text>,
+              " ",
+              "Datos requeridos para firmar la propuesta",
+            ],
+            "ellipsizeMode": "tail",
+            "style": Object {
+              "color": "#9B9B9B",
+              "fontSize": 14,
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "accessible": true,
+                "allowFontScaling": true,
+                "children": "*",
+                "ellipsizeMode": "tail",
+                "style": Object {
+                  "color": "#D0021B",
+                },
+              },
+              "ref": null,
+              "rendered": "*",
+              "type": [Function],
+            },
+            " ",
+            "Datos requeridos para firmar la propuesta",
+          ],
+          "type": [Function],
+        },
         "type": [Function],
       },
       Object {
@@ -13240,51 +13339,23 @@ Haz click en el botón inferior para empezar",
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#9B9B9B",
-                  "fontSize": 14,
-                }
+          "children": <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#00F",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "textDecorationLine": "underline",
               }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#D0021B",
-                  }
-                }
-              >
-                *
-              </Text>
-               
-              Datos requeridos para firmar la propuesta
-            </Text>,
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              onPress={[Function]}
-              style={
-                Object {
-                  "alignSelf": "center",
-                  "color": "#00F",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                }
-              }
-            >
-              O cancela la participación en esta propuesta
-            </Text>,
-          ],
+            }
+          >
+            O cancela la participación en esta propuesta
+          </Text>,
           "style": Object {
             "alignItems": "center",
             "justifyContent": "flex-end",
@@ -13292,83 +13363,28 @@ Haz click en el botón inferior para empezar",
           },
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": Array [
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#D0021B",
-                    }
-                  }
-                >
-                  *
-                </Text>,
-                " ",
-                "Datos requeridos para firmar la propuesta",
-              ],
-              "ellipsizeMode": "tail",
-              "style": Object {
-                "color": "#9B9B9B",
-                "fontSize": 14,
-              },
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
+            "children": "O cancela la participación en esta propuesta",
+            "ellipsizeMode": "tail",
+            "onPress": [Function],
+            "style": Object {
+              "alignSelf": "center",
+              "color": "#00F",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textDecorationLine": "underline",
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "*",
-                  "ellipsizeMode": "tail",
-                  "style": Object {
-                    "color": "#D0021B",
-                  },
-                },
-                "ref": null,
-                "rendered": "*",
-                "type": [Function],
-              },
-              " ",
-              "Datos requeridos para firmar la propuesta",
-            ],
-            "type": [Function],
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "accessible": true,
-              "allowFontScaling": true,
-              "children": "O cancela la participación en esta propuesta",
-              "ellipsizeMode": "tail",
-              "onPress": [Function],
-              "style": Object {
-                "alignSelf": "center",
-                "color": "#00F",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textDecorationLine": "underline",
-              },
-            },
-            "ref": null,
-            "rendered": "O cancela la participación en esta propuesta",
-            "type": [Function],
-          },
-        ],
+          "ref": null,
+          "rendered": "O cancela la participación en esta propuesta",
+          "type": [Function],
+        },
         "type": [Function],
       },
     ],
@@ -13397,6 +13413,40 @@ Haz click en el botón inferior para empezar",
           <Translate(Connect(RequesterInfo))
             name="Decidim Barcelona"
           />,
+          <Component
+            style={
+              Object {
+                "paddingBottom": 20,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#9B9B9B",
+                  "fontSize": 14,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#D0021B",
+                  }
+                }
+              >
+                *
+              </Text>
+               
+              Datos requeridos para firmar la propuesta
+            </Text>
+          </Component>,
           <Component
             style={
               Object {
@@ -13446,32 +13496,6 @@ Haz click en el botón inferior para empezar",
               }
             }
           >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "color": "#9B9B9B",
-                  "fontSize": 14,
-                }
-              }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#D0021B",
-                  }
-                }
-              >
-                *
-              </Text>
-               
-              Datos requeridos para firmar la propuesta
-            </Text>
             <Text
               accessible={true}
               allowFontScaling={true}
@@ -13534,6 +13558,97 @@ Haz click en el botón inferior para empezar",
           },
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#9B9B9B",
+                  "fontSize": 14,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "color": "#D0021B",
+                  }
+                }
+              >
+                *
+              </Text>
+               
+              Datos requeridos para firmar la propuesta
+            </Text>,
+            "style": Object {
+              "paddingBottom": 20,
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": Array [
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#D0021B",
+                    }
+                  }
+                >
+                  *
+                </Text>,
+                " ",
+                "Datos requeridos para firmar la propuesta",
+              ],
+              "ellipsizeMode": "tail",
+              "style": Object {
+                "color": "#9B9B9B",
+                "fontSize": 14,
+              },
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "accessible": true,
+                  "allowFontScaling": true,
+                  "children": "*",
+                  "ellipsizeMode": "tail",
+                  "style": Object {
+                    "color": "#D0021B",
+                  },
+                },
+                "ref": null,
+                "rendered": "*",
+                "type": [Function],
+              },
+              " ",
+              "Datos requeridos para firmar la propuesta",
+            ],
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -13654,51 +13769,23 @@ Haz click en el botón inferior para empezar",
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "color": "#9B9B9B",
-                    "fontSize": 14,
-                  }
+            "children": <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              onPress={[Function]}
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "color": "#00F",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "textDecorationLine": "underline",
                 }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#D0021B",
-                    }
-                  }
-                >
-                  *
-                </Text>
-                 
-                Datos requeridos para firmar la propuesta
-              </Text>,
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                onPress={[Function]}
-                style={
-                  Object {
-                    "alignSelf": "center",
-                    "color": "#00F",
-                    "fontSize": 14,
-                    "fontWeight": "500",
-                    "textDecorationLine": "underline",
-                  }
-                }
-              >
-                O cancela la participación en esta propuesta
-              </Text>,
-            ],
+              }
+            >
+              O cancela la participación en esta propuesta
+            </Text>,
             "style": Object {
               "alignItems": "center",
               "justifyContent": "flex-end",
@@ -13706,83 +13793,28 @@ Haz click en el botón inferior para empezar",
             },
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": Array [
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "color": "#D0021B",
-                      }
-                    }
-                  >
-                    *
-                  </Text>,
-                  " ",
-                  "Datos requeridos para firmar la propuesta",
-                ],
-                "ellipsizeMode": "tail",
-                "style": Object {
-                  "color": "#9B9B9B",
-                  "fontSize": 14,
-                },
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "accessible": true,
+              "allowFontScaling": true,
+              "children": "O cancela la participación en esta propuesta",
+              "ellipsizeMode": "tail",
+              "onPress": [Function],
+              "style": Object {
+                "alignSelf": "center",
+                "color": "#00F",
+                "fontSize": 14,
+                "fontWeight": "500",
+                "textDecorationLine": "underline",
               },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": "*",
-                    "ellipsizeMode": "tail",
-                    "style": Object {
-                      "color": "#D0021B",
-                    },
-                  },
-                  "ref": null,
-                  "rendered": "*",
-                  "type": [Function],
-                },
-                " ",
-                "Datos requeridos para firmar la propuesta",
-              ],
-              "type": [Function],
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "accessible": true,
-                "allowFontScaling": true,
-                "children": "O cancela la participación en esta propuesta",
-                "ellipsizeMode": "tail",
-                "onPress": [Function],
-                "style": Object {
-                  "alignSelf": "center",
-                  "color": "#00F",
-                  "fontSize": 14,
-                  "fontWeight": "500",
-                  "textDecorationLine": "underline",
-                },
-              },
-              "ref": null,
-              "rendered": "O cancela la participación en esta propuesta",
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "O cancela la participación en esta propuesta",
+            "type": [Function],
+          },
           "type": [Function],
         },
       ],

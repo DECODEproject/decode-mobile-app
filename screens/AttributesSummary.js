@@ -74,6 +74,12 @@ class AttributesSummary extends React.Component {
 
         <RequesterInfo name="Decidim Barcelona" />
 
+        <View style={{ paddingBottom: 20 }}>
+          <Text style={{ color: '#9B9B9B', fontSize: 14 }}>
+            <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
+          </Text>
+        </View>
+
         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
           <Text>
             {t(petition.attributes.mandatory[0].predicate)} <Text style={{ color: '#D0021B' }}>*</Text>
@@ -94,9 +100,6 @@ class AttributesSummary extends React.Component {
             paddingBottom: 20,
           }}
         >
-          <Text style={{ color: '#9B9B9B', fontSize: 14 }}>
-            <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
-          </Text>
           <Text
             style={styles.cancelSigningPetition}
             onPress={() => openPetitionInBrowser(petition.id)}
