@@ -339,7 +339,7 @@ make osx
 sudo cp src/zenroom.command /usr/local/bin/zenroom
 ```
 
-Also, by convention all zenroom contracts are stored into /opt/contracts, at the moment only the elgamal contract is need, so doing the next steps is enough.
+Also, by convention all zenroom contracts are stored into /opt/contracts, at the moment only the elgamal contract is needed, so doing the next steps is enough.
 
 ```
 sudo mkdir /opt/contracts
@@ -382,7 +382,7 @@ If some error appears about ssh, look [here](https://drew3000.net/osx-tor-termin
 brew install openssh
 ```
 
-Torsocks is a tool that changes the connect syscalls to use tor, they name it ***torify*** the app. Basically once you put torsocks in front of a command this command will have access to tor!
+Torsocks is a tool that changes the connect syscalls to use tor, they call this: ***torify*** the app. Basically once you put torsocks in front of a command this command will have access to tor!
 
 
 For testing tor from the command line you can use this command:
