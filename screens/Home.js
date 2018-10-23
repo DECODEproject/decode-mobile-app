@@ -8,6 +8,7 @@ import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goTo
 import setDecidimInfo from '../application/redux/actions/decidimInfo';
 import { getPetition } from '../application/redux/actions/petition';
 import { loadCredentials } from '../application/redux/actions/attributes';
+import setCredential from '../application/redux/actions/credentials';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
@@ -16,6 +17,7 @@ import i18n from '../i18n';
 import styles from './styles';
 import DecidimClient from '../lib/DecidimClient';
 import LanguageService from '../lib/LanguageService';
+import Attribute from '../lib/Attribute';
 
 const decodeLogo = require('../assets/images/decode-hexagon.png');
 
@@ -147,6 +149,10 @@ const mapStateToProps = state => ({
   decidimClient: new DecidimClient(new LanguageService(), state.decidimInfo.decidimAPIUrl),
 });
 
+const mockedMakingSenseCredential = new Attribute({
+  predicate: 'schema:iotCommunity', object: 'MakingSense', scope: '', provenance: { url: 'https://making-sense.eu/credential-issuer' },
+}, '6c347975ca6aac24b46d9749808ae5392816ac23988e5dc46df4b85c0a', '');
+
 const mapDispatchToProps = dispatch => ({
   goToAttributesLanding: () => { dispatch(goToAttributesLanding()); },
   goToAttributesSummary: () => { dispatch(goToAttributesSummary()); },
@@ -158,6 +164,11 @@ const mapDispatchToProps = dispatch => ({
   initializeState: async () => {
     await dispatch(setDecidimInfo());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
+    await dispatch(setCredential(
+      SecureStore.getItemAsync,
+      SecureStore.setItemAsync,
+      mockedMakingSenseCredential,
+    ));
   },
 });
 

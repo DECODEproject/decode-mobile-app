@@ -10,6 +10,7 @@ import attributes from './reducers/attributes';
 import authorization from './reducers/authorization';
 import pinSetup from './reducers/pinSetup';
 import featureToggles from './reducers/featureToggles';
+import credentials from './reducers/credentials';
 
 const enhancer = compose(
   applyMiddleware(thunk),
@@ -35,6 +36,7 @@ const Store = createStoreWithNavigation(combineReducers({
   authorization,
   pinSetup,
   featureToggles,
+  credentials,
 }));
 
 export default Store;
