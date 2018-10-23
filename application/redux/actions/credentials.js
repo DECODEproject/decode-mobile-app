@@ -2,11 +2,12 @@
 
 export default function setCredential(getItem, setItem, attribute) {
   return async () => {
-    getItem('credentials').then(async (currentCredentials) => {
+    getItem('credentials').then(async (credentials) => {
+      const currentCredentials = (credentials === null) ? [] : credentials;
       const allCredentials = [...currentCredentials, attribute];
       await setItem('credentials', JSON.stringify(allCredentials));
-    }).catch(() => {
-      console.log('error retrieving credential');
+    }).catch((e) => {
+      console.log('error retrieving credential', e);
     });
   };
 }

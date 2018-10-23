@@ -12,13 +12,13 @@ describe('setCredential', () => {
   const getItemMock = jest.fn();
   const mockStore = configureStore([thunk]);
 
-  it('should save a credential on the phone\'s local storage', async () => {
+  it('should save a credential on the phone\'s local storage for the first time', async () => {
     const initialState = {
       credentials: [],
     };
     const store = mockStore(initialState);
 
-    getItemMock.mockResolvedValue([]);
+    getItemMock.mockResolvedValue(null);
     await store.dispatch(setCredential(getItemMock, setItemMock, credential));
 
     expect(setItemMock).toBeCalledWith('credentials', JSON.stringify([credential]));
