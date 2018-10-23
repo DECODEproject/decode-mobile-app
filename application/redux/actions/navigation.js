@@ -85,11 +85,3 @@ export function goToError() {
     dispatch(action);
   };
 }
-
-export function goToNewDateOfBirthAttribute() {
-  return (dispatch, getState) => {
-    const navigatorUID = getState().navigation.currentNavigatorUID;
-    const action = NavigationActions.push(navigatorUID, Router.getRoute('newDateOfBirthAttribute'));
-    dispatch(action);
-  };
-}
