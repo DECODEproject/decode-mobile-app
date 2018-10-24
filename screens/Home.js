@@ -21,6 +21,7 @@ import Attribute from '../lib/Attribute';
 
 const decodeLogo = require('../assets/images/decode-hexagon.png');
 
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -53,9 +54,25 @@ class Home extends React.Component {
   goToNextPage() {
     const comingFromDecidim = this.props.decidimAPIUrl;
     const comingFromLogin = this.props.isComingFromLogin;
+    if (this.props.loginFT) {
+      this.handleRedirectWithLogin(comingFromLogin, comingFromDecidim);
+    } else {
+      this.handleRedirectWithoutLogin(comingFromDecidim);
+    }
+  }
+
+  handleRedirectWithLogin(comingFromLogin, comingFromDecidim) {
     if (comingFromLogin) {
       this.props.goToLogin();
     } else if (comingFromDecidim) {
+      this.goToPetition();
+    } else {
+      this.props.goToAttributesLanding();
+    }
+  }
+
+  handleRedirectWithoutLogin(comingFromDecidim) {
+    if (comingFromDecidim) {
       this.goToPetition();
     } else {
       this.props.goToAttributesLanding();

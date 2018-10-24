@@ -31,7 +31,7 @@ describe('validatePinCode', () => {
       list: new Map([['schema:addressLocality', {}]]),
     },
     featureToggles: {
-      login: false,
+      login: true,
     },
     login: {
       credentials: [],
