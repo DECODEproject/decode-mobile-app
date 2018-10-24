@@ -1,5 +1,6 @@
 
 const initialState = {
+  comingFromLogin: false,
   credentials: [],
 };
 

@@ -85,3 +85,11 @@ export function goToError() {
     dispatch(action);
   };
 }
+
+export function goToLogin() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('login'));
+    dispatch(action);
+  };
+}
