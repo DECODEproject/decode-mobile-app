@@ -1,8 +1,10 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import setCredential from '../../../../../application/redux/actions/login';
+import { setCredential, checkComingFromLogin } from '../../../../../application/redux/actions/login';
 import Attribute from '../../../../../lib/Attribute';
+import types from '../../../../../application/redux/actionTypes';
+import * as entryPoint from '../../../../../lib/entryPoint';
 
 describe('setCredential', () => {
   const credential = new Attribute({
@@ -37,5 +39,47 @@ describe('setCredential', () => {
     await store.dispatch(setCredential(getItemMock, setItemMock, credential));
 
     expect(setItemMock).toBeCalledWith('credentials', JSON.stringify([existingCredential, credential]));
+  });
+});
+
+describe('checkComingFromLogin', () => {
+
+  it('should check if its coming from login and set state to true', async () => {
+    const initialState = {
+      credentials: [],
+      isComingFromLogin: false,
+    };
+    const mockStore = configureStore([thunk]);
+    const store = mockStore(initialState);
+
+    const expectedActions = [{
+      type: types.COMING_FROM_LOGIN,
+    }];
+
+
+    entryPoint.default = jest.fn().mockResolvedValue(true);
+
+    await store.dispatch(checkComingFromLogin());
+
+    expect(store.getActions()).toEqual(expectedActions);
+  });
+
+  it('should check if its coming from login and set state to false', async () => {
+    const initialState = {
+      credentials: [],
+      isComingFromLogin: true,
+    };
+    const mockStore = configureStore([thunk]);
+    const store = mockStore(initialState);
+
+    const expectedActions = [{
+      type: types.NOT_COMING_FROM_LOGIN,
+    }];
+
+    entryPoint.default = jest.fn().mockResolvedValue(false);
+
+    await store.dispatch(checkComingFromLogin());
+
+    expect(store.getActions()).toEqual(expectedActions);
   });
 });
