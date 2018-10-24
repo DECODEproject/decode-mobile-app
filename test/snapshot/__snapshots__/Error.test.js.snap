@@ -89,6 +89,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -186,6 +189,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -282,6 +288,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -456,6 +465,9 @@ Fes click en el botó per començar.",
                 "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                 "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
               },
+              "login": Object {
+                "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              },
               "newAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
@@ -553,6 +565,9 @@ Tap the button below to begin.",
                 "errorText": "You can return to the Decidim site to view other active proposals.",
                 "errorTitle": "Failed to fetch proposal information from Decidim",
               },
+              "login": Object {
+                "emptyMessage": "You don't have any data that can be used to log in.",
+              },
               "newAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
@@ -649,6 +664,9 @@ Haz click en el botón inferior para empezar",
                 "button": "Acceder",
                 "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                 "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+              },
+              "login": Object {
+                "emptyMessage": "No tienes datos que se puedan usar para acceder.",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -815,6 +833,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -912,6 +933,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -1008,6 +1032,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -1161,6 +1188,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -1258,6 +1288,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -1354,6 +1387,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -1517,6 +1553,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -1614,6 +1653,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -1710,6 +1752,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -1868,6 +1913,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -1965,6 +2013,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -2061,6 +2112,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -2174,6 +2228,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -2271,6 +2328,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -2367,6 +2427,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -2523,6 +2586,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -2620,6 +2686,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -2716,6 +2785,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -2873,6 +2945,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -2970,6 +3045,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -3066,6 +3144,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -3243,6 +3324,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -3340,6 +3424,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -3436,6 +3523,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -3589,6 +3679,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -3686,6 +3779,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -3782,6 +3878,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -3944,6 +4043,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -4041,6 +4143,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -4137,6 +4242,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -4302,6 +4410,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -4399,6 +4510,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -4495,6 +4609,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -4648,6 +4765,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -4745,6 +4865,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -4841,6 +4964,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -5004,6 +5130,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -5101,6 +5230,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -5197,6 +5329,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -6245,6 +6380,9 @@ Fes click en el botó per començar.",
                 "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                 "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
               },
+              "login": Object {
+                "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              },
               "newAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
@@ -6342,6 +6480,9 @@ Tap the button below to begin.",
                 "errorText": "You can return to the Decidim site to view other active proposals.",
                 "errorTitle": "Failed to fetch proposal information from Decidim",
               },
+              "login": Object {
+                "emptyMessage": "You don't have any data that can be used to log in.",
+              },
               "newAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
@@ -6438,6 +6579,9 @@ Haz click en el botón inferior para empezar",
                 "button": "Acceder",
                 "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                 "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+              },
+              "login": Object {
+                "emptyMessage": "No tienes datos que se puedan usar para acceder.",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -6539,6 +6683,9 @@ Fes click en el botó per començar.",
               "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
               "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
             },
+            "login": Object {
+              "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+            },
             "newAttributes": Object {
               "add": "Afegir",
               "ageAttribute": "Data de Naixement",
@@ -6636,6 +6783,9 @@ Tap the button below to begin.",
               "errorText": "You can return to the Decidim site to view other active proposals.",
               "errorTitle": "Failed to fetch proposal information from Decidim",
             },
+            "login": Object {
+              "emptyMessage": "You don't have any data that can be used to log in.",
+            },
             "newAttributes": Object {
               "add": "Add",
               "ageAttribute": "Date of Birth",
@@ -6732,6 +6882,9 @@ Haz click en el botón inferior para empezar",
               "button": "Acceder",
               "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
               "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+            },
+            "login": Object {
+              "emptyMessage": "No tienes datos que se puedan usar para acceder.",
             },
             "newAttributes": Object {
               "add": "Agregar",
@@ -6886,6 +7039,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -6983,6 +7139,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -7079,6 +7238,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -7232,6 +7394,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -7329,6 +7494,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -7425,6 +7593,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -7588,6 +7759,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -7685,6 +7859,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -7781,6 +7958,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -7939,6 +8119,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -8036,6 +8219,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -8132,6 +8318,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -8245,6 +8434,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -8342,6 +8534,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -8438,6 +8633,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -8594,6 +8792,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -8691,6 +8892,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -8787,6 +8991,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -8944,6 +9151,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -9041,6 +9251,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -9137,6 +9350,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -9307,6 +9523,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -9404,6 +9623,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -9500,6 +9722,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -9653,6 +9878,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -9750,6 +9978,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -9846,6 +10077,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -10009,6 +10243,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -10106,6 +10343,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -10202,6 +10442,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -10360,6 +10603,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -10457,6 +10703,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -10553,6 +10802,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -10716,6 +10968,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -10813,6 +11068,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -10909,6 +11167,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -11062,6 +11323,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -11159,6 +11423,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -11255,6 +11522,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -11418,6 +11688,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -11515,6 +11788,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -11611,6 +11887,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -12659,6 +12938,9 @@ Fes click en el botó per començar.",
                 "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                 "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
               },
+              "login": Object {
+                "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              },
               "newAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
@@ -12756,6 +13038,9 @@ Tap the button below to begin.",
                 "errorText": "You can return to the Decidim site to view other active proposals.",
                 "errorTitle": "Failed to fetch proposal information from Decidim",
               },
+              "login": Object {
+                "emptyMessage": "You don't have any data that can be used to log in.",
+              },
               "newAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
@@ -12852,6 +13137,9 @@ Haz click en el botón inferior para empezar",
                 "button": "Acceder",
                 "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                 "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+              },
+              "login": Object {
+                "emptyMessage": "No tienes datos que se puedan usar para acceder.",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -13040,6 +13328,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -13137,6 +13428,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -13233,6 +13527,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -13407,6 +13704,9 @@ Fes click en el botó per començar.",
                 "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                 "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
               },
+              "login": Object {
+                "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              },
               "newAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
@@ -13504,6 +13804,9 @@ Tap the button below to begin.",
                 "errorText": "You can return to the Decidim site to view other active proposals.",
                 "errorTitle": "Failed to fetch proposal information from Decidim",
               },
+              "login": Object {
+                "emptyMessage": "You don't have any data that can be used to log in.",
+              },
               "newAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
@@ -13600,6 +13903,9 @@ Haz click en el botón inferior para empezar",
                 "button": "Acceder",
                 "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                 "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+              },
+              "login": Object {
+                "emptyMessage": "No tienes datos que se puedan usar para acceder.",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -13766,6 +14072,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -13863,6 +14172,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -13959,6 +14271,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -14112,6 +14427,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -14209,6 +14527,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -14305,6 +14626,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -14468,6 +14792,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -14565,6 +14892,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -14661,6 +14991,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -14819,6 +15152,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -14916,6 +15252,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -15012,6 +15351,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -15125,6 +15467,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -15222,6 +15567,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -15318,6 +15666,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -15474,6 +15825,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -15571,6 +15925,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -15667,6 +16024,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -15824,6 +16184,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -15921,6 +16284,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -16017,6 +16383,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -16194,6 +16563,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -16291,6 +16663,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -16387,6 +16762,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -16540,6 +16918,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -16637,6 +17018,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -16733,6 +17117,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -16895,6 +17282,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -16992,6 +17382,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -17088,6 +17481,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -17253,6 +17649,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -17350,6 +17749,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -17446,6 +17848,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -17599,6 +18004,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -17696,6 +18104,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -17792,6 +18203,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -17955,6 +18369,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -18052,6 +18469,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -18148,6 +18568,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -19196,6 +19619,9 @@ Fes click en el botó per començar.",
                 "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                 "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
               },
+              "login": Object {
+                "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              },
               "newAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
@@ -19293,6 +19719,9 @@ Tap the button below to begin.",
                 "errorText": "You can return to the Decidim site to view other active proposals.",
                 "errorTitle": "Failed to fetch proposal information from Decidim",
               },
+              "login": Object {
+                "emptyMessage": "You don't have any data that can be used to log in.",
+              },
               "newAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
@@ -19389,6 +19818,9 @@ Haz click en el botón inferior para empezar",
                 "button": "Acceder",
                 "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                 "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+              },
+              "login": Object {
+                "emptyMessage": "No tienes datos que se puedan usar para acceder.",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -19490,6 +19922,9 @@ Fes click en el botó per començar.",
               "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
               "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
             },
+            "login": Object {
+              "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+            },
             "newAttributes": Object {
               "add": "Afegir",
               "ageAttribute": "Data de Naixement",
@@ -19587,6 +20022,9 @@ Tap the button below to begin.",
               "errorText": "You can return to the Decidim site to view other active proposals.",
               "errorTitle": "Failed to fetch proposal information from Decidim",
             },
+            "login": Object {
+              "emptyMessage": "You don't have any data that can be used to log in.",
+            },
             "newAttributes": Object {
               "add": "Add",
               "ageAttribute": "Date of Birth",
@@ -19683,6 +20121,9 @@ Haz click en el botón inferior para empezar",
               "button": "Acceder",
               "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
               "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+            },
+            "login": Object {
+              "emptyMessage": "No tienes datos que se puedan usar para acceder.",
             },
             "newAttributes": Object {
               "add": "Agregar",
@@ -19837,6 +20278,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -19934,6 +20378,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -20030,6 +20477,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -20183,6 +20633,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -20280,6 +20733,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -20376,6 +20832,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -20539,6 +20998,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -20636,6 +21098,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -20732,6 +21197,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -20890,6 +21358,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -20987,6 +21458,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -21083,6 +21557,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -21196,6 +21673,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -21293,6 +21773,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -21389,6 +21872,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -21545,6 +22031,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -21642,6 +22131,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -21738,6 +22230,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -21895,6 +22390,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -21992,6 +22490,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -22088,6 +22589,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -22258,6 +22762,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -22355,6 +22862,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -22451,6 +22961,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -22604,6 +23117,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -22701,6 +23217,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -22797,6 +23316,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -22960,6 +23482,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -23057,6 +23582,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -23153,6 +23681,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -23311,6 +23842,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -23408,6 +23942,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -23504,6 +24041,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -23667,6 +24207,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -23764,6 +24307,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -23860,6 +24406,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -24013,6 +24562,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -24110,6 +24662,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -24206,6 +24761,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -24369,6 +24927,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -24466,6 +25027,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -24562,6 +25126,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -25610,6 +26177,9 @@ Fes click en el botó per començar.",
                 "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                 "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
               },
+              "login": Object {
+                "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              },
               "newAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
@@ -25707,6 +26277,9 @@ Tap the button below to begin.",
                 "errorText": "You can return to the Decidim site to view other active proposals.",
                 "errorTitle": "Failed to fetch proposal information from Decidim",
               },
+              "login": Object {
+                "emptyMessage": "You don't have any data that can be used to log in.",
+              },
               "newAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
@@ -25803,6 +26376,9 @@ Haz click en el botón inferior para empezar",
                 "button": "Acceder",
                 "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                 "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+              },
+              "login": Object {
+                "emptyMessage": "No tienes datos que se puedan usar para acceder.",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -25977,6 +26553,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -26074,6 +26653,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -26170,6 +26752,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -26344,6 +26929,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -26441,6 +27029,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -26537,6 +27128,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -26703,6 +27297,9 @@ Fes click en el botó per començar.",
                           "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                           "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        },
                         "newAttributes": Object {
                           "add": "Afegir",
                           "ageAttribute": "Data de Naixement",
@@ -26800,6 +27397,9 @@ Tap the button below to begin.",
                           "errorText": "You can return to the Decidim site to view other active proposals.",
                           "errorTitle": "Failed to fetch proposal information from Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "You don't have any data that can be used to log in.",
+                        },
                         "newAttributes": Object {
                           "add": "Add",
                           "ageAttribute": "Date of Birth",
@@ -26896,6 +27496,9 @@ Haz click en el botón inferior para empezar",
                           "button": "Acceder",
                           "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                           "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                        },
+                        "login": Object {
+                          "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                         },
                         "newAttributes": Object {
                           "add": "Agregar",
@@ -27049,6 +27652,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -27146,6 +27752,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -27242,6 +27851,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -27405,6 +28017,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -27502,6 +28117,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -27598,6 +28216,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -27756,6 +28377,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -27853,6 +28477,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -27949,6 +28576,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -28062,6 +28692,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -28159,6 +28792,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -28255,6 +28891,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -28411,6 +29050,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -28508,6 +29150,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -28604,6 +29249,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -28761,6 +29409,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -28858,6 +29509,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -28954,6 +29608,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -29131,6 +29788,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -29228,6 +29888,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -29324,6 +29987,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -29477,6 +30143,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -29574,6 +30243,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -29670,6 +30342,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -29832,6 +30507,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -29929,6 +30607,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -30025,6 +30706,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -30190,6 +30874,9 @@ Fes click en el botó per començar.",
                           "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                           "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        },
                         "newAttributes": Object {
                           "add": "Afegir",
                           "ageAttribute": "Data de Naixement",
@@ -30287,6 +30974,9 @@ Tap the button below to begin.",
                           "errorText": "You can return to the Decidim site to view other active proposals.",
                           "errorTitle": "Failed to fetch proposal information from Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "You don't have any data that can be used to log in.",
+                        },
                         "newAttributes": Object {
                           "add": "Add",
                           "ageAttribute": "Date of Birth",
@@ -30383,6 +31073,9 @@ Haz click en el botón inferior para empezar",
                           "button": "Acceder",
                           "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                           "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                        },
+                        "login": Object {
+                          "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                         },
                         "newAttributes": Object {
                           "add": "Agregar",
@@ -30536,6 +31229,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -30633,6 +31329,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -30729,6 +31428,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -30892,6 +31594,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -30989,6 +31694,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -31085,6 +31793,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -32133,6 +32844,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -32230,6 +32944,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -32326,6 +33043,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -32427,6 +33147,9 @@ Fes click en el botó per començar.",
                 "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                 "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
               },
+              "login": Object {
+                "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              },
               "newAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
@@ -32524,6 +33247,9 @@ Tap the button below to begin.",
                 "errorText": "You can return to the Decidim site to view other active proposals.",
                 "errorTitle": "Failed to fetch proposal information from Decidim",
               },
+              "login": Object {
+                "emptyMessage": "You don't have any data that can be used to log in.",
+              },
               "newAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
@@ -32620,6 +33346,9 @@ Haz click en el botón inferior para empezar",
                 "button": "Acceder",
                 "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                 "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+              },
+              "login": Object {
+                "emptyMessage": "No tienes datos que se puedan usar para acceder.",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -32774,6 +33503,9 @@ Fes click en el botó per començar.",
                           "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                           "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        },
                         "newAttributes": Object {
                           "add": "Afegir",
                           "ageAttribute": "Data de Naixement",
@@ -32871,6 +33603,9 @@ Tap the button below to begin.",
                           "errorText": "You can return to the Decidim site to view other active proposals.",
                           "errorTitle": "Failed to fetch proposal information from Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "You don't have any data that can be used to log in.",
+                        },
                         "newAttributes": Object {
                           "add": "Add",
                           "ageAttribute": "Date of Birth",
@@ -32967,6 +33702,9 @@ Haz click en el botón inferior para empezar",
                           "button": "Acceder",
                           "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                           "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                        },
+                        "login": Object {
+                          "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                         },
                         "newAttributes": Object {
                           "add": "Agregar",
@@ -33120,6 +33858,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -33217,6 +33958,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -33313,6 +34057,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -33476,6 +34223,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -33573,6 +34323,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -33669,6 +34422,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -33827,6 +34583,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -33924,6 +34683,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -34020,6 +34782,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -34133,6 +34898,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -34230,6 +34998,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -34326,6 +35097,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -34482,6 +35256,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -34579,6 +35356,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -34675,6 +35455,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -34832,6 +35615,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -34929,6 +35715,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -35025,6 +35814,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -35195,6 +35987,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -35292,6 +36087,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -35388,6 +36186,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -35541,6 +36342,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -35638,6 +36442,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -35734,6 +36541,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -35897,6 +36707,9 @@ Fes click en el botó per començar.",
                       "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                       "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    },
                     "newAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
@@ -35994,6 +36807,9 @@ Tap the button below to begin.",
                       "errorText": "You can return to the Decidim site to view other active proposals.",
                       "errorTitle": "Failed to fetch proposal information from Decidim",
                     },
+                    "login": Object {
+                      "emptyMessage": "You don't have any data that can be used to log in.",
+                    },
                     "newAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
@@ -36090,6 +36906,9 @@ Haz click en el botón inferior para empezar",
                       "button": "Acceder",
                       "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                       "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                    },
+                    "login": Object {
+                      "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -36248,6 +37067,9 @@ Fes click en el botó per començar.",
                     "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                     "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  },
                   "newAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
@@ -36345,6 +37167,9 @@ Tap the button below to begin.",
                     "errorText": "You can return to the Decidim site to view other active proposals.",
                     "errorTitle": "Failed to fetch proposal information from Decidim",
                   },
+                  "login": Object {
+                    "emptyMessage": "You don't have any data that can be used to log in.",
+                  },
                   "newAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
@@ -36441,6 +37266,9 @@ Haz click en el botón inferior para empezar",
                     "button": "Acceder",
                     "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                     "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                  },
+                  "login": Object {
+                    "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -36604,6 +37432,9 @@ Fes click en el botó per començar.",
                           "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                           "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        },
                         "newAttributes": Object {
                           "add": "Afegir",
                           "ageAttribute": "Data de Naixement",
@@ -36701,6 +37532,9 @@ Tap the button below to begin.",
                           "errorText": "You can return to the Decidim site to view other active proposals.",
                           "errorTitle": "Failed to fetch proposal information from Decidim",
                         },
+                        "login": Object {
+                          "emptyMessage": "You don't have any data that can be used to log in.",
+                        },
                         "newAttributes": Object {
                           "add": "Add",
                           "ageAttribute": "Date of Birth",
@@ -36797,6 +37631,9 @@ Haz click en el botón inferior para empezar",
                           "button": "Acceder",
                           "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                           "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                        },
+                        "login": Object {
+                          "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                         },
                         "newAttributes": Object {
                           "add": "Agregar",
@@ -36950,6 +37787,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -37047,6 +37887,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -37143,6 +37986,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -37306,6 +38152,9 @@ Fes click en el botó per començar.",
                         "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                         "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      },
                       "newAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
@@ -37403,6 +38252,9 @@ Tap the button below to begin.",
                         "errorText": "You can return to the Decidim site to view other active proposals.",
                         "errorTitle": "Failed to fetch proposal information from Decidim",
                       },
+                      "login": Object {
+                        "emptyMessage": "You don't have any data that can be used to log in.",
+                      },
                       "newAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
@@ -37499,6 +38351,9 @@ Haz click en el botón inferior para empezar",
                         "button": "Acceder",
                         "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                         "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                      },
+                      "login": Object {
+                        "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -38547,6 +39402,9 @@ Fes click en el botó per començar.",
                   "errorText": "Pots tornar a la pàgina de Decidim per veure altres propostes actives.",
                   "errorTitle": "No s'ha pogut aconseguir la informació de la proposta de Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                },
                 "newAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
@@ -38644,6 +39502,9 @@ Tap the button below to begin.",
                   "errorText": "You can return to the Decidim site to view other active proposals.",
                   "errorTitle": "Failed to fetch proposal information from Decidim",
                 },
+                "login": Object {
+                  "emptyMessage": "You don't have any data that can be used to log in.",
+                },
                 "newAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
@@ -38740,6 +39601,9 @@ Haz click en el botón inferior para empezar",
                   "button": "Acceder",
                   "errorText": "Puedes volver a la página de Decidim para ver otras propuestas activas.",
                   "errorTitle": "No se ha podido conseguir la información de la propuesta de Decidim",
+                },
+                "login": Object {
+                  "emptyMessage": "No tienes datos que se puedan usar para acceder.",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",

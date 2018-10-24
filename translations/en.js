@@ -20,6 +20,9 @@ export default {
     errorTitle: 'Failed to fetch proposal information from Decidim',
     errorText: 'You can return to the Decidim site to view other active proposals.',
   },
+  login: {
+    emptyMessage: 'You don\'t have any data that can be used to log in.',
+  },
   newAttributes: {
     description: 'You can add the following personal data',
     ageAttribute: 'Date of Birth',

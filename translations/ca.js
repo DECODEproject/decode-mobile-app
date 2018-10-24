@@ -20,6 +20,9 @@ export default {
     errorTitle: 'No s\'ha pogut aconseguir la informació de la proposta de Decidim',
     errorText: 'Pots tornar a la pàgina de Decidim per veure altres propostes actives.',
   },
+  login: {
+    emptyMessage: 'No tens dades que es puguin fer servir per accedir-hi.',
+  },
   newAttributes: {
     description: 'Pots afegir les següents dades',
     ageAttribute: 'Data de Naixement',
