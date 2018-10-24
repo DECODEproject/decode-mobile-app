@@ -43,7 +43,6 @@ describe('setCredential', () => {
 });
 
 describe('checkComingFromLogin', () => {
-
   it('should check if its coming from login and set state to true', async () => {
     const initialState = {
       credentials: [],
