@@ -34,11 +34,7 @@ class Home extends React.Component {
   }
 
   goToPetition() {
-    const petition = this.props.getPetition(
-      this.props.decidimClient,
-      this.props.decidimAPIUrl,
-      this.props.petitionId,
-    );
+    const petition = this.props.getPetition(this.props.decidimClient, this.props.petitionId);
     return petition.then(() => {
       const errorGettingPetitionInformation = this.props.petitionError !== undefined;
       if (errorGettingPetitionInformation) {
@@ -161,7 +157,7 @@ const mapDispatchToProps = dispatch => ({
   goToAttributesSummary: () => { dispatch(goToAttributesSummary()); },
   goToPetitionSummary: () => { dispatch(goToPetitionSummary()); },
   goToError: () => { dispatch(goToError()); },
-  getPetition: (decidimClient, decidimAPIUrl, petitionId) => dispatch(getPetition(decidimClient, petitionId)), // eslint-disable-line
+  getPetition: (decidimClient, petitionId) => dispatch(getPetition(decidimClient, petitionId)),
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: pin => dispatch(updatePin(pin)),
   initializeState: async (loginFT) => {

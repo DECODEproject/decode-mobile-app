@@ -127,7 +127,6 @@ describe('validatePinCode', () => {
         return homeComponent.validatePinCode().then(() => {
           expect(getPetitionMock).toBeCalledWith(
             decidimClientMock,
-            initialState.decidimInfo.decidimAPIUrl,
             petitionId,
           );
           expect(goToAttributesSummaryMock).toBeCalled();
@@ -165,7 +164,6 @@ describe('validatePinCode', () => {
         return homeComponent.validatePinCode().then(() => {
           expect(getPetitionMock).toBeCalledWith(
             decidimClientMock,
-            initialState.decidimInfo.decidimAPIUrl,
             petitionId,
           );
           expect(goToPetitionSummaryMock).toBeCalled();
@@ -207,7 +205,6 @@ describe('validatePinCode', () => {
         return homeComponent.validatePinCode().then(() => {
           expect(getPetitionMock).toBeCalledWith(
             decidimClientMock,
-            initialState.decidimInfo.decidimAPIUrl,
             petitionId,
           );
           expect(goToErrorMock).toBeCalledWith(errorTitle, errorText);
