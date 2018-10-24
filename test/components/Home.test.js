@@ -33,6 +33,10 @@ describe('validatePinCode', () => {
     featureToggles: {
       login: false,
     },
+    login: {
+      credentials: [],
+      isComingFromLogin: false,
+    },
   };
 
   beforeEach(() => {
@@ -67,7 +71,7 @@ describe('validatePinCode', () => {
     });
   });
 
-  describe('if the user put the correct pin', () => {
+  describe('if the user puts the correct pin', () => {
     const doAuthorizeMock = jest.fn().mockReturnValue(Promise.resolve({ pinCorrect: true }));
 
     describe('if there is no decidimApiUrl', () => {
@@ -208,6 +212,36 @@ describe('validatePinCode', () => {
             petitionId,
           );
           expect(goToErrorMock).toBeCalledWith(errorTitle, errorText);
+        });
+      });
+    });
+
+    describe('if is coming from login', () => {
+      it('should go to Login screen', () => {
+        const initialState = {
+          ...defaultState,
+          login: {
+            credentials: [],
+            isComingFromLogin: true,
+          },
+        };
+
+        const goToLogin = jest.fn();
+
+        const wrapper = shallow(<Home />)
+          .first().shallow()
+          .first()
+          .shallow({ context: { store: mockStore(initialState) } });
+
+        const homeComponent = wrapper.dive().instance();
+        homeComponent.props = {
+          ...homeComponent.props,
+          doAuthorize: doAuthorizeMock,
+          goToLogin,
+        };
+
+        return homeComponent.validatePinCode().then(() => {
+          expect(goToLogin).toBeCalled();
         });
       });
     });

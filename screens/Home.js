@@ -4,11 +4,11 @@ import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard } from 're
 import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
-import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goToError } from '../application/redux/actions/navigation';
+import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goToError, goToLogin } from '../application/redux/actions/navigation';
 import setDecidimInfo from '../application/redux/actions/decidimInfo';
 import { getPetition } from '../application/redux/actions/petition';
 import { loadCredentials } from '../application/redux/actions/attributes';
-import { setCredential } from '../application/redux/actions/login';
+import { setCredential, checkComingFromLogin } from '../application/redux/actions/login';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
@@ -52,7 +52,10 @@ class Home extends React.Component {
 
   goToNextPage() {
     const comingFromDecidim = this.props.decidimAPIUrl;
-    if (comingFromDecidim) {
+    const comingFromLogin = this.props.isComingFromLogin;
+    if (comingFromLogin) {
+      this.props.goToLogin();
+    } else if (comingFromDecidim) {
       this.goToPetition();
     } else {
       this.props.goToAttributesLanding();
@@ -114,6 +117,7 @@ Home.propTypes = {
   goToAttributesSummary: PropTypes.func.isRequired,
   goToPetitionSummary: PropTypes.func.isRequired,
   goToError: PropTypes.func.isRequired,
+  goToLogin: PropTypes.func.isRequired,
   getPetition: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
   doAuthorize: PropTypes.func.isRequired,
@@ -128,6 +132,7 @@ Home.propTypes = {
   }).isRequired,
   t: PropTypes.func.isRequired,
   loginFT: PropTypes.bool,
+  isComingFromLogin: PropTypes.bool.isRequired,
 };
 
 Home.defaultProps = {
@@ -146,6 +151,7 @@ const mapStateToProps = state => ({
   petitionError: state.petition.error,
   decidimClient: new DecidimClient(new LanguageService(), state.decidimInfo.decidimAPIUrl),
   loginFT: state.featureToggles.login,
+  isComingFromLogin: state.login.isComingFromLogin,
 });
 
 const mockedMakingSenseCredential = new Attribute({
@@ -157,11 +163,13 @@ const mapDispatchToProps = dispatch => ({
   goToAttributesSummary: () => { dispatch(goToAttributesSummary()); },
   goToPetitionSummary: () => { dispatch(goToPetitionSummary()); },
   goToError: () => { dispatch(goToError()); },
+  goToLogin: () => { dispatch(goToLogin()); },
   getPetition: (decidimClient, petitionId) => dispatch(getPetition(decidimClient, petitionId)),
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: pin => dispatch(updatePin(pin)),
   initializeState: async (loginFT) => {
     await dispatch(setDecidimInfo());
+    await dispatch(checkComingFromLogin());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
     if (loginFT) {
       await dispatch(setCredential(
