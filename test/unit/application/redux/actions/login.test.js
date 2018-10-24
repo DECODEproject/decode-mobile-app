@@ -1,7 +1,7 @@
 import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import setCredential from '../../../../../application/redux/actions/credentials';
+import setCredential from '../../../../../application/redux/actions/login';
 import Attribute from '../../../../../lib/Attribute';
 
 describe('setCredential', () => {

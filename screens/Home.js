@@ -8,7 +8,7 @@ import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goTo
 import setDecidimInfo from '../application/redux/actions/decidimInfo';
 import { getPetition } from '../application/redux/actions/petition';
 import { loadCredentials } from '../application/redux/actions/attributes';
-import setCredential from '../application/redux/actions/credentials';
+import setCredential from '../application/redux/actions/login';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
