@@ -7,7 +7,7 @@ import i18n from '../i18n';
 
 export function EmptyLogin(props) {
   return (
-    <Text>{props.message}</Text>
+    <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{props.message}</Text>
   );
 }
 
@@ -18,8 +18,15 @@ EmptyLogin.propTypes = {
 
 function Login(props) {
   return (
-    <View>
-      <EmptyLogin message={props.t('emptyMessage')} />
+    <View style={{ flex: 1, padding: 26 }}>
+      <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+        <Text style={{ fontSize: 14 }}>
+          BCNNow requires a credential to log you in
+        </Text>
+      </View>
+      <View style={{ flex: 6, justifyContent: 'center' }}>
+        <EmptyLogin message={props.t('emptyMessage')} />
+      </View>
     </View>
   );
 }
