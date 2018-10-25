@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import i18n from '../i18n';
+import CredentialList from '../application/components/CredentialList/CredentialList';
 
 export function EmptyLogin(props) {
   return (
@@ -25,7 +26,8 @@ function Login(props) {
         </Text>
       </View>
       <View style={{ flex: 6, justifyContent: 'center' }}>
-        <EmptyLogin message={props.t('emptyMessage')} />
+        {!this.props.hasCredentials} && <EmptyLogin message={props.t('emptyMessage')} />
+        {this.props.hasCredentials} && <CredentialList />
       </View>
     </View>
   );
@@ -36,6 +38,8 @@ Login.propTypes = {
 };
 
 const mapDispatchToProps = () => ({});
-const mapStateToProps = () => ({});
+const mapStateToProps = state => ({
+  hasCredentials: state.login.credentials.length !== 0,
+});
 
 export default translate('login', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Login));
