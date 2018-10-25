@@ -22,6 +22,8 @@ export default {
   },
   login: {
     emptyMessage: 'No tienes datos que se puedan usar para acceder.',
+    header: 'BCNNow necesita un credencial para acceder',
+    subHeader: 'Puedes acceder compartiendo:',
   },
   newAttributes: {
     description: 'Puedes añadir los siguientes datos',

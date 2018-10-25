@@ -90,6 +90,8 @@ Fes click en el botó per començar.",
                 },
                 "login": Object {
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "header": "BCNNow necessita un credencial per accedir",
+                  "subHeader": "Pots accedir compartint:",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -190,6 +192,8 @@ Tap the button below to begin.",
                 },
                 "login": Object {
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "header": "BCNNow requires a credential to log you in",
+                  "subHeader": "You can log in by sharing your:",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -290,6 +294,8 @@ Haz click en el botón inferior para empezar",
                 },
                 "login": Object {
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "header": "BCNNow necesita un credencial para acceder",
+                  "subHeader": "Puedes acceder compartiendo:",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -466,6 +472,8 @@ Fes click en el botó per començar.",
               },
               "login": Object {
                 "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                "header": "BCNNow necessita un credencial per accedir",
+                "subHeader": "Pots accedir compartint:",
               },
               "newAttributes": Object {
                 "add": "Afegir",
@@ -566,6 +574,8 @@ Tap the button below to begin.",
               },
               "login": Object {
                 "emptyMessage": "You don't have any data that can be used to log in.",
+                "header": "BCNNow requires a credential to log you in",
+                "subHeader": "You can log in by sharing your:",
               },
               "newAttributes": Object {
                 "add": "Add",
@@ -666,6 +676,8 @@ Haz click en el botón inferior para empezar",
               },
               "login": Object {
                 "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                "header": "BCNNow necesita un credencial para acceder",
+                "subHeader": "Puedes acceder compartiendo:",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -834,6 +846,8 @@ Fes click en el botó per començar.",
                       },
                       "login": Object {
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "header": "BCNNow necessita un credencial per accedir",
+                        "subHeader": "Pots accedir compartint:",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -934,6 +948,8 @@ Tap the button below to begin.",
                       },
                       "login": Object {
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "header": "BCNNow requires a credential to log you in",
+                        "subHeader": "You can log in by sharing your:",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -1034,6 +1050,8 @@ Haz click en el botón inferior para empezar",
                       },
                       "login": Object {
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "header": "BCNNow necesita un credencial para acceder",
+                        "subHeader": "Puedes acceder compartiendo:",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -1189,6 +1207,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -1289,6 +1309,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -1389,6 +1411,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -1554,6 +1578,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -1654,6 +1680,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -1754,6 +1782,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -1914,6 +1944,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -2014,6 +2046,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -2114,6 +2148,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -2229,6 +2265,8 @@ Fes click en el botó per començar.",
                 },
                 "login": Object {
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "header": "BCNNow necessita un credencial per accedir",
+                  "subHeader": "Pots accedir compartint:",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -2329,6 +2367,8 @@ Tap the button below to begin.",
                 },
                 "login": Object {
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "header": "BCNNow requires a credential to log you in",
+                  "subHeader": "You can log in by sharing your:",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -2429,6 +2469,8 @@ Haz click en el botón inferior para empezar",
                 },
                 "login": Object {
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "header": "BCNNow necesita un credencial para acceder",
+                  "subHeader": "Puedes acceder compartiendo:",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -2587,6 +2629,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -2687,6 +2731,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -2787,6 +2833,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -2946,6 +2994,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -3046,6 +3096,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -3146,6 +3198,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -3325,6 +3379,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -3425,6 +3481,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -3525,6 +3583,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -3680,6 +3740,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -3780,6 +3842,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -3880,6 +3944,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -4044,6 +4110,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -4144,6 +4212,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -4244,6 +4314,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -4411,6 +4483,8 @@ Fes click en el botó per començar.",
                       },
                       "login": Object {
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "header": "BCNNow necessita un credencial per accedir",
+                        "subHeader": "Pots accedir compartint:",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -4511,6 +4585,8 @@ Tap the button below to begin.",
                       },
                       "login": Object {
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "header": "BCNNow requires a credential to log you in",
+                        "subHeader": "You can log in by sharing your:",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -4611,6 +4687,8 @@ Haz click en el botón inferior para empezar",
                       },
                       "login": Object {
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "header": "BCNNow necesita un credencial para acceder",
+                        "subHeader": "Puedes acceder compartiendo:",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -4766,6 +4844,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -4866,6 +4946,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -4966,6 +5048,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -5131,6 +5215,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -5231,6 +5317,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -5331,6 +5419,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -6381,6 +6471,8 @@ Fes click en el botó per començar.",
               },
               "login": Object {
                 "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                "header": "BCNNow necessita un credencial per accedir",
+                "subHeader": "Pots accedir compartint:",
               },
               "newAttributes": Object {
                 "add": "Afegir",
@@ -6481,6 +6573,8 @@ Tap the button below to begin.",
               },
               "login": Object {
                 "emptyMessage": "You don't have any data that can be used to log in.",
+                "header": "BCNNow requires a credential to log you in",
+                "subHeader": "You can log in by sharing your:",
               },
               "newAttributes": Object {
                 "add": "Add",
@@ -6581,6 +6675,8 @@ Haz click en el botón inferior para empezar",
               },
               "login": Object {
                 "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                "header": "BCNNow necesita un credencial para acceder",
+                "subHeader": "Puedes acceder compartiendo:",
               },
               "newAttributes": Object {
                 "add": "Agregar",
@@ -6684,6 +6780,8 @@ Fes click en el botó per començar.",
             },
             "login": Object {
               "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              "header": "BCNNow necessita un credencial per accedir",
+              "subHeader": "Pots accedir compartint:",
             },
             "newAttributes": Object {
               "add": "Afegir",
@@ -6784,6 +6882,8 @@ Tap the button below to begin.",
             },
             "login": Object {
               "emptyMessage": "You don't have any data that can be used to log in.",
+              "header": "BCNNow requires a credential to log you in",
+              "subHeader": "You can log in by sharing your:",
             },
             "newAttributes": Object {
               "add": "Add",
@@ -6884,6 +6984,8 @@ Haz click en el botón inferior para empezar",
             },
             "login": Object {
               "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+              "header": "BCNNow necesita un credencial para acceder",
+              "subHeader": "Puedes acceder compartiendo:",
             },
             "newAttributes": Object {
               "add": "Agregar",
@@ -7040,6 +7142,8 @@ Fes click en el botó per començar.",
                       },
                       "login": Object {
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "header": "BCNNow necessita un credencial per accedir",
+                        "subHeader": "Pots accedir compartint:",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -7140,6 +7244,8 @@ Tap the button below to begin.",
                       },
                       "login": Object {
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "header": "BCNNow requires a credential to log you in",
+                        "subHeader": "You can log in by sharing your:",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -7240,6 +7346,8 @@ Haz click en el botón inferior para empezar",
                       },
                       "login": Object {
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "header": "BCNNow necesita un credencial para acceder",
+                        "subHeader": "Puedes acceder compartiendo:",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -7395,6 +7503,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -7495,6 +7605,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -7595,6 +7707,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -7760,6 +7874,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -7860,6 +7976,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -7960,6 +8078,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -8120,6 +8240,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -8220,6 +8342,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -8320,6 +8444,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -8435,6 +8561,8 @@ Fes click en el botó per començar.",
                 },
                 "login": Object {
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "header": "BCNNow necessita un credencial per accedir",
+                  "subHeader": "Pots accedir compartint:",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -8535,6 +8663,8 @@ Tap the button below to begin.",
                 },
                 "login": Object {
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "header": "BCNNow requires a credential to log you in",
+                  "subHeader": "You can log in by sharing your:",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -8635,6 +8765,8 @@ Haz click en el botón inferior para empezar",
                 },
                 "login": Object {
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "header": "BCNNow necesita un credencial para acceder",
+                  "subHeader": "Puedes acceder compartiendo:",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -8793,6 +8925,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -8893,6 +9027,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -8993,6 +9129,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -9152,6 +9290,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -9252,6 +9392,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -9352,6 +9494,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -9524,6 +9668,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -9624,6 +9770,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -9724,6 +9872,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -9879,6 +10029,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -9979,6 +10131,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -10079,6 +10233,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -10244,6 +10400,8 @@ Fes click en el botó per començar.",
                   },
                   "login": Object {
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "header": "BCNNow necessita un credencial per accedir",
+                    "subHeader": "Pots accedir compartint:",
                   },
                   "newAttributes": Object {
                     "add": "Afegir",
@@ -10344,6 +10502,8 @@ Tap the button below to begin.",
                   },
                   "login": Object {
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "header": "BCNNow requires a credential to log you in",
+                    "subHeader": "You can log in by sharing your:",
                   },
                   "newAttributes": Object {
                     "add": "Add",
@@ -10444,6 +10604,8 @@ Haz click en el botón inferior para empezar",
                   },
                   "login": Object {
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "header": "BCNNow necesita un credencial para acceder",
+                    "subHeader": "Puedes acceder compartiendo:",
                   },
                   "newAttributes": Object {
                     "add": "Agregar",
@@ -10604,6 +10766,8 @@ Fes click en el botó per començar.",
                 },
                 "login": Object {
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "header": "BCNNow necessita un credencial per accedir",
+                  "subHeader": "Pots accedir compartint:",
                 },
                 "newAttributes": Object {
                   "add": "Afegir",
@@ -10704,6 +10868,8 @@ Tap the button below to begin.",
                 },
                 "login": Object {
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "header": "BCNNow requires a credential to log you in",
+                  "subHeader": "You can log in by sharing your:",
                 },
                 "newAttributes": Object {
                   "add": "Add",
@@ -10804,6 +10970,8 @@ Haz click en el botón inferior para empezar",
                 },
                 "login": Object {
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "header": "BCNNow necesita un credencial para acceder",
+                  "subHeader": "Puedes acceder compartiendo:",
                 },
                 "newAttributes": Object {
                   "add": "Agregar",
@@ -10969,6 +11137,8 @@ Fes click en el botó per començar.",
                       },
                       "login": Object {
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "header": "BCNNow necessita un credencial per accedir",
+                        "subHeader": "Pots accedir compartint:",
                       },
                       "newAttributes": Object {
                         "add": "Afegir",
@@ -11069,6 +11239,8 @@ Tap the button below to begin.",
                       },
                       "login": Object {
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "header": "BCNNow requires a credential to log you in",
+                        "subHeader": "You can log in by sharing your:",
                       },
                       "newAttributes": Object {
                         "add": "Add",
@@ -11169,6 +11341,8 @@ Haz click en el botón inferior para empezar",
                       },
                       "login": Object {
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "header": "BCNNow necesita un credencial para acceder",
+                        "subHeader": "Puedes acceder compartiendo:",
                       },
                       "newAttributes": Object {
                         "add": "Agregar",
@@ -11324,6 +11498,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -11424,6 +11600,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -11524,6 +11702,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -11689,6 +11869,8 @@ Fes click en el botó per començar.",
                     },
                     "login": Object {
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "header": "BCNNow necessita un credencial per accedir",
+                      "subHeader": "Pots accedir compartint:",
                     },
                     "newAttributes": Object {
                       "add": "Afegir",
@@ -11789,6 +11971,8 @@ Tap the button below to begin.",
                     },
                     "login": Object {
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "header": "BCNNow requires a credential to log you in",
+                      "subHeader": "You can log in by sharing your:",
                     },
                     "newAttributes": Object {
                       "add": "Add",
@@ -11889,6 +12073,8 @@ Haz click en el botón inferior para empezar",
                     },
                     "login": Object {
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "header": "BCNNow necesita un credencial para acceder",
+                      "subHeader": "Puedes acceder compartiendo:",
                     },
                     "newAttributes": Object {
                       "add": "Agregar",
@@ -12939,6 +13125,8 @@ Fes click en el botó per començar.",
               },
               "login": Object {
                 "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                "header": "BCNNow necessita un credencial per accedir",
+                "subHeader": "Pots accedir compartint:",
               },
               "newAttributes": Object {
                 "add": "Afegir",
@@ -13039,6 +13227,8 @@ Tap the button below to begin.",
               },
               "login": Object {
                 "emptyMessage": "You don't have any data that can be used to log in.",
+                "header": "BCNNow requires a credential to log you in",
+                "subHeader": "You can log in by sharing your:",
               },
               "newAttributes": Object {
                 "add": "Add",
@@ -13139,6 +13329,8 @@ Haz click en el botón inferior para empezar",
               },
               "login": Object {
                 "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                "header": "BCNNow necesita un credencial para acceder",
+                "subHeader": "Puedes acceder compartiendo:",
               },
               "newAttributes": Object {
                 "add": "Agregar",

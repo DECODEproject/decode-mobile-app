@@ -22,12 +22,12 @@ function Login(props) {
     <View style={{ flex: 1, padding: 26 }}>
       <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
         <Text style={{ fontSize: 14 }}>
-          BCNNow requires a credential to log you in
+          {props.t('header')}
         </Text>
       </View>
       <View style={{ flex: 6, justifyContent: 'center' }}>
-        {!this.props.hasCredentials} && <EmptyLogin message={props.t('emptyMessage')} />
-        {this.props.hasCredentials} && <CredentialList />
+        {!props.hasCredentials && <EmptyLogin message={props.t('emptyMessage')} /> }
+        {props.hasCredentials && <CredentialList /> }
       </View>
     </View>
   );
@@ -35,6 +35,7 @@ function Login(props) {
 
 Login.propTypes = {
   t: PropTypes.func.isRequired,
+  hasCredentials: PropTypes.bool.isRequired,
 };
 
 const mapDispatchToProps = () => ({});

@@ -22,6 +22,8 @@ export default {
   },
   login: {
     emptyMessage: 'You don\'t have any data that can be used to log in.',
+    header: 'BCNNow requires a credential to log you in',
+    subHeader: 'You can log in by sharing your:',
   },
   newAttributes: {
     description: 'You can add the following personal data',
