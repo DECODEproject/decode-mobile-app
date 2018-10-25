@@ -1,5 +1,6 @@
 import reducer from '../../../../../application/redux/reducers/login';
 import types from '../../../../../application/redux/actionTypes';
+import Attribute from '../../../../../lib/Attribute';
 
 describe('login reducer', () => {
   const defaultState = {
@@ -33,6 +34,22 @@ describe('login reducer', () => {
 
     expect(reducer(initialState, action)).toEqual({
       credentials: [],
+      isComingFromLogin: false,
+    });
+  });
+
+  it('should set the new credentials', () => {
+    const mockedMakingSenseCredential = new Attribute({
+      predicate: 'schema:iotCommunity', object: 'MakingSense', scope: '', provenance: { url: 'https://making-sense.eu/credential-issuer' },
+    }, '6c347975ca6aac24b46d9749808ae5392816ac23988e5dc46df4b85c0a', '');
+
+    const action = {
+      type: types.SET_CREDENTIALS,
+      credentials: [mockedMakingSenseCredential],
+    };
+
+    expect(reducer(defaultState, action)).toEqual({
+      credentials: [mockedMakingSenseCredential],
       isComingFromLogin: false,
     });
   });

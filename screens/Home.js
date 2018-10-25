@@ -189,11 +189,7 @@ const mapDispatchToProps = dispatch => ({
     await dispatch(checkComingFromLogin());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
     if (loginFT) {
-      await dispatch(setCredential(
-        SecureStore.getItemAsync,
-        SecureStore.setItemAsync,
-        mockedMakingSenseCredential,
-      ));
+      await dispatch(setCredential(SecureStore.setItemAsync, mockedMakingSenseCredential));
     }
   },
 });

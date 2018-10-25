@@ -17,6 +17,11 @@ export default function reducer(state = initialState, action) {
         ...state,
         isComingFromLogin: false,
       };
+    case types.SET_CREDENTIALS:
+      return {
+        ...state,
+        credentials: action.credentials,
+      };
     default:
       return state;
   }
