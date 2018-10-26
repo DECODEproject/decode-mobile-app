@@ -55,6 +55,7 @@
     "react-dom": "^16.2.0",
     "react-i18next": "^7.10.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz",
+    "react-native-flexi-radio-button": "^0.2.2",
     "react-native-image-overlay": "^0.1.2",
     "react-native-loading-spinner-overlay": "^0.5.2",
     "react-native-modal-datetime-picker": "^6.0.0",
