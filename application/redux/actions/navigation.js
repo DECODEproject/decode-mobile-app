@@ -4,7 +4,8 @@ import Router from '../../../Router';
 export function resetNavigation() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
-    const action = NavigationActions.popToTop(navigatorUID);
+    NavigationActions.popToTop(navigatorUID);
+    const action = NavigationActions.replace(navigatorUID, Router.getRoute('walkthrough'));
     dispatch(action);
   };
 }
