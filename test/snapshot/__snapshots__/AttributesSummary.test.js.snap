@@ -97,8 +97,11 @@ Fes click en el botó per començar.",
                 "login": Object {
                   "button": "Accedir",
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
+                  "successMessage": "Connectat correctament.",
                 },
                 "manageAttributes": Object {
                   "add": "Afegir",
@@ -206,8 +209,11 @@ Tap the button below to begin.",
                 "login": Object {
                   "button": "Login",
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
+                  "successMessage": "Successfully logged in.",
                 },
                 "manageAttributes": Object {
                   "add": "Add",
@@ -315,8 +321,10 @@ Haz click en el botón inferior para empezar",
                 "login": Object {
                   "button": "Acceder",
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
+                  "successMessage": "Conectado correctamente.",
                 },
                 "manageAttributes": Object {
                   "add": "Agregar",
@@ -500,8 +508,11 @@ Fes click en el botó per començar.",
               "login": Object {
                 "button": "Accedir",
                 "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
+                "successMessage": "Connectat correctament.",
               },
               "manageAttributes": Object {
                 "add": "Afegir",
@@ -609,8 +620,11 @@ Tap the button below to begin.",
               "login": Object {
                 "button": "Login",
                 "emptyMessage": "You don't have any data that can be used to log in.",
+                "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
+                "successMessage": "Successfully logged in.",
               },
               "manageAttributes": Object {
                 "add": "Add",
@@ -718,8 +732,10 @@ Haz click en el botón inferior para empezar",
               "login": Object {
                 "button": "Acceder",
                 "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
+                "successMessage": "Conectado correctamente.",
               },
               "manageAttributes": Object {
                 "add": "Agregar",
@@ -895,8 +911,11 @@ Fes click en el botó per començar.",
                       "login": Object {
                         "button": "Accedir",
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
+                        "successMessage": "Connectat correctament.",
                       },
                       "manageAttributes": Object {
                         "add": "Afegir",
@@ -1004,8 +1023,11 @@ Tap the button below to begin.",
                       "login": Object {
                         "button": "Login",
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
+                        "successMessage": "Successfully logged in.",
                       },
                       "manageAttributes": Object {
                         "add": "Add",
@@ -1113,8 +1135,10 @@ Haz click en el botón inferior para empezar",
                       "login": Object {
                         "button": "Acceder",
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
+                        "successMessage": "Conectado correctamente.",
                       },
                       "manageAttributes": Object {
                         "add": "Agregar",
@@ -1277,8 +1301,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -1386,8 +1413,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -1495,8 +1525,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -1669,8 +1701,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -1778,8 +1813,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -1887,8 +1925,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -2056,8 +2096,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -2165,8 +2208,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -2274,8 +2320,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -2398,8 +2446,11 @@ Fes click en el botó per començar.",
                 "login": Object {
                   "button": "Accedir",
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
+                  "successMessage": "Connectat correctament.",
                 },
                 "manageAttributes": Object {
                   "add": "Afegir",
@@ -2507,8 +2558,11 @@ Tap the button below to begin.",
                 "login": Object {
                   "button": "Login",
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
+                  "successMessage": "Successfully logged in.",
                 },
                 "manageAttributes": Object {
                   "add": "Add",
@@ -2616,8 +2670,10 @@ Haz click en el botón inferior para empezar",
                 "login": Object {
                   "button": "Acceder",
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
+                  "successMessage": "Conectado correctamente.",
                 },
                 "manageAttributes": Object {
                   "add": "Agregar",
@@ -2783,8 +2839,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -2892,8 +2951,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -3001,8 +3063,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -3169,8 +3233,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -3278,8 +3345,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -3387,8 +3457,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -3575,8 +3647,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -3684,8 +3759,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -3793,8 +3871,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -3957,8 +4037,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -4066,8 +4149,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -4175,8 +4261,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -4348,8 +4436,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -4457,8 +4548,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -4566,8 +4660,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -4742,8 +4838,11 @@ Fes click en el botó per començar.",
                       "login": Object {
                         "button": "Accedir",
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
+                        "successMessage": "Connectat correctament.",
                       },
                       "manageAttributes": Object {
                         "add": "Afegir",
@@ -4851,8 +4950,11 @@ Tap the button below to begin.",
                       "login": Object {
                         "button": "Login",
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
+                        "successMessage": "Successfully logged in.",
                       },
                       "manageAttributes": Object {
                         "add": "Add",
@@ -4960,8 +5062,10 @@ Haz click en el botón inferior para empezar",
                       "login": Object {
                         "button": "Acceder",
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
+                        "successMessage": "Conectado correctamente.",
                       },
                       "manageAttributes": Object {
                         "add": "Agregar",
@@ -5124,8 +5228,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -5233,8 +5340,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -5342,8 +5452,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -5516,8 +5628,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -5625,8 +5740,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -5734,8 +5852,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -6793,8 +6913,11 @@ Fes click en el botó per començar.",
               "login": Object {
                 "button": "Accedir",
                 "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
+                "successMessage": "Connectat correctament.",
               },
               "manageAttributes": Object {
                 "add": "Afegir",
@@ -6902,8 +7025,11 @@ Tap the button below to begin.",
               "login": Object {
                 "button": "Login",
                 "emptyMessage": "You don't have any data that can be used to log in.",
+                "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
+                "successMessage": "Successfully logged in.",
               },
               "manageAttributes": Object {
                 "add": "Add",
@@ -7011,8 +7137,10 @@ Haz click en el botón inferior para empezar",
               "login": Object {
                 "button": "Acceder",
                 "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
+                "successMessage": "Conectado correctamente.",
               },
               "manageAttributes": Object {
                 "add": "Agregar",
@@ -7123,8 +7251,11 @@ Fes click en el botó per començar.",
             "login": Object {
               "button": "Accedir",
               "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+              "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
               "header": "BCNNow necessita un credencial per accedir",
               "subHeader": "Pots accedir compartint:",
+              "successMessage": "Connectat correctament.",
             },
             "manageAttributes": Object {
               "add": "Afegir",
@@ -7232,8 +7363,11 @@ Tap the button below to begin.",
             "login": Object {
               "button": "Login",
               "emptyMessage": "You don't have any data that can be used to log in.",
+              "failedMessage": "Your request couldn't be processed.
+Please try again later.",
               "header": "BCNNow requires a credential to log you in",
               "subHeader": "You can log in by sharing your:",
+              "successMessage": "Successfully logged in.",
             },
             "manageAttributes": Object {
               "add": "Add",
@@ -7341,8 +7475,10 @@ Haz click en el botón inferior para empezar",
             "login": Object {
               "button": "Acceder",
               "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+              "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
               "header": "BCNNow necesita un credencial para acceder",
               "subHeader": "Puedes acceder compartiendo:",
+              "successMessage": "Conectado correctamente.",
             },
             "manageAttributes": Object {
               "add": "Agregar",
@@ -7506,8 +7642,11 @@ Fes click en el botó per començar.",
                       "login": Object {
                         "button": "Accedir",
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
+                        "successMessage": "Connectat correctament.",
                       },
                       "manageAttributes": Object {
                         "add": "Afegir",
@@ -7615,8 +7754,11 @@ Tap the button below to begin.",
                       "login": Object {
                         "button": "Login",
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
+                        "successMessage": "Successfully logged in.",
                       },
                       "manageAttributes": Object {
                         "add": "Add",
@@ -7724,8 +7866,10 @@ Haz click en el botón inferior para empezar",
                       "login": Object {
                         "button": "Acceder",
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
+                        "successMessage": "Conectado correctamente.",
                       },
                       "manageAttributes": Object {
                         "add": "Agregar",
@@ -7888,8 +8032,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -7997,8 +8144,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -8106,8 +8256,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -8280,8 +8432,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -8389,8 +8544,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -8498,8 +8656,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -8667,8 +8827,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -8776,8 +8939,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -8885,8 +9051,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -9009,8 +9177,11 @@ Fes click en el botó per començar.",
                 "login": Object {
                   "button": "Accedir",
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
+                  "successMessage": "Connectat correctament.",
                 },
                 "manageAttributes": Object {
                   "add": "Afegir",
@@ -9118,8 +9289,11 @@ Tap the button below to begin.",
                 "login": Object {
                   "button": "Login",
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
+                  "successMessage": "Successfully logged in.",
                 },
                 "manageAttributes": Object {
                   "add": "Add",
@@ -9227,8 +9401,10 @@ Haz click en el botón inferior para empezar",
                 "login": Object {
                   "button": "Acceder",
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
+                  "successMessage": "Conectado correctamente.",
                 },
                 "manageAttributes": Object {
                   "add": "Agregar",
@@ -9394,8 +9570,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -9503,8 +9682,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -9612,8 +9794,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -9780,8 +9964,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -9889,8 +10076,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -9998,8 +10188,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -10179,8 +10371,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -10288,8 +10483,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -10397,8 +10595,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -10561,8 +10761,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -10670,8 +10873,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -10779,8 +10985,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -10953,8 +11161,11 @@ Fes click en el botó per començar.",
                   "login": Object {
                     "button": "Accedir",
                     "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                    "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
+                    "successMessage": "Connectat correctament.",
                   },
                   "manageAttributes": Object {
                     "add": "Afegir",
@@ -11062,8 +11273,11 @@ Tap the button below to begin.",
                   "login": Object {
                     "button": "Login",
                     "emptyMessage": "You don't have any data that can be used to log in.",
+                    "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
+                    "successMessage": "Successfully logged in.",
                   },
                   "manageAttributes": Object {
                     "add": "Add",
@@ -11171,8 +11385,10 @@ Haz click en el botón inferior para empezar",
                   "login": Object {
                     "button": "Acceder",
                     "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                    "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
+                    "successMessage": "Conectado correctamente.",
                   },
                   "manageAttributes": Object {
                     "add": "Agregar",
@@ -11340,8 +11556,11 @@ Fes click en el botó per començar.",
                 "login": Object {
                   "button": "Accedir",
                   "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                  "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
+                  "successMessage": "Connectat correctament.",
                 },
                 "manageAttributes": Object {
                   "add": "Afegir",
@@ -11449,8 +11668,11 @@ Tap the button below to begin.",
                 "login": Object {
                   "button": "Login",
                   "emptyMessage": "You don't have any data that can be used to log in.",
+                  "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
+                  "successMessage": "Successfully logged in.",
                 },
                 "manageAttributes": Object {
                   "add": "Add",
@@ -11558,8 +11780,10 @@ Haz click en el botón inferior para empezar",
                 "login": Object {
                   "button": "Acceder",
                   "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                  "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
+                  "successMessage": "Conectado correctamente.",
                 },
                 "manageAttributes": Object {
                   "add": "Agregar",
@@ -11732,8 +11956,11 @@ Fes click en el botó per començar.",
                       "login": Object {
                         "button": "Accedir",
                         "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                        "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
+                        "successMessage": "Connectat correctament.",
                       },
                       "manageAttributes": Object {
                         "add": "Afegir",
@@ -11841,8 +12068,11 @@ Tap the button below to begin.",
                       "login": Object {
                         "button": "Login",
                         "emptyMessage": "You don't have any data that can be used to log in.",
+                        "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
+                        "successMessage": "Successfully logged in.",
                       },
                       "manageAttributes": Object {
                         "add": "Add",
@@ -11950,8 +12180,10 @@ Haz click en el botón inferior para empezar",
                       "login": Object {
                         "button": "Acceder",
                         "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                        "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
+                        "successMessage": "Conectado correctamente.",
                       },
                       "manageAttributes": Object {
                         "add": "Agregar",
@@ -12114,8 +12346,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -12223,8 +12458,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -12332,8 +12570,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -12506,8 +12746,11 @@ Fes click en el botó per començar.",
                     "login": Object {
                       "button": "Accedir",
                       "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                      "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
+                      "successMessage": "Connectat correctament.",
                     },
                     "manageAttributes": Object {
                       "add": "Afegir",
@@ -12615,8 +12858,11 @@ Tap the button below to begin.",
                     "login": Object {
                       "button": "Login",
                       "emptyMessage": "You don't have any data that can be used to log in.",
+                      "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
+                      "successMessage": "Successfully logged in.",
                     },
                     "manageAttributes": Object {
                       "add": "Add",
@@ -12724,8 +12970,10 @@ Haz click en el botón inferior para empezar",
                     "login": Object {
                       "button": "Acceder",
                       "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                      "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
+                      "successMessage": "Conectado correctamente.",
                     },
                     "manageAttributes": Object {
                       "add": "Agregar",
@@ -13783,8 +14031,11 @@ Fes click en el botó per començar.",
               "login": Object {
                 "button": "Accedir",
                 "emptyMessage": "No tens dades que es puguin fer servir per accedir-hi.",
+                "failedMessage": "La vostre petició no s'ha pogut processar.
+Si us plau, reintente-ho en uns instants.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
+                "successMessage": "Connectat correctament.",
               },
               "manageAttributes": Object {
                 "add": "Afegir",
@@ -13892,8 +14143,11 @@ Tap the button below to begin.",
               "login": Object {
                 "button": "Login",
                 "emptyMessage": "You don't have any data that can be used to log in.",
+                "failedMessage": "Your request couldn't be processed.
+Please try again later.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
+                "successMessage": "Successfully logged in.",
               },
               "manageAttributes": Object {
                 "add": "Add",
@@ -14001,8 +14255,10 @@ Haz click en el botón inferior para empezar",
               "login": Object {
                 "button": "Acceder",
                 "emptyMessage": "No tienes datos que se puedan usar para acceder.",
+                "failedMessage": "Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
+                "successMessage": "Conectado correctamente.",
               },
               "manageAttributes": Object {
                 "add": "Agregar",

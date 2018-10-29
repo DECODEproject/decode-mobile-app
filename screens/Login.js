@@ -6,18 +6,22 @@ import { translate } from 'react-i18next';
 import i18n from '../i18n';
 import CredentialList from '../application/components/CredentialList/CredentialList';
 
-export function EmptyLogin(props) {
+
+function MessageComponent(msg) {
   return (
-    <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{props.message}</Text>
+    <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{msg}</Text>
   );
 }
-
-export function ErrorLogin() {
-  return (<Text />);
+export function EmptyLogin(props) {
+  return MessageComponent(props.message);
 }
 
-export function SuccessLogin() {
-  return (<Text />);
+export function ErrorLogin(props) {
+  return MessageComponent(props.failedMessage);
+}
+
+export function SuccessLogin(props) {
+  return MessageComponent(props.successMessage);
 }
 
 EmptyLogin.propTypes = {
@@ -29,9 +33,9 @@ function Login(props) {
   if (!props.hasCredentials) {
     mainComponent = (<EmptyLogin message={props.t('emptyMessage')} />);
   } else if (props.loginHasFailed) {
-    mainComponent = (<ErrorLogin />);
+    mainComponent = (<ErrorLogin failedMessage={props.t('failedMessage')} />);
   } else if (props.loginIsSuccessful) {
-    mainComponent = (<SuccessLogin />);
+    mainComponent = (<SuccessLogin successMessage={props.t('successMessage')} />);
   } else {
     mainComponent = (<CredentialList />);
   }

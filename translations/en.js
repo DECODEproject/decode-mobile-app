@@ -30,6 +30,8 @@ export default {
     header: 'BCNNow requires a credential to log you in',
     subHeader: 'You can log in by sharing your:',
     button: 'Login',
+    failedMessage: 'Your request couldn\'t be processed.\nPlease try again later.',
+    successMessage: 'Successfully logged in.',
   },
   manageAttributes: {
     description: 'You can add the following personal data',

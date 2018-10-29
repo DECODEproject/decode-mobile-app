@@ -30,6 +30,8 @@ export default {
     header: 'BCNNow necessita un credencial per accedir',
     subHeader: 'Pots accedir compartint:',
     button: 'Accedir',
+    failedMessage: 'La vostre petició no s\'ha pogut processar.\nSi us plau, reintente-ho en uns instants.',
+    successMessage: 'Connectat correctament.',
   },
   manageAttributes: {
     description: 'Pots afegir les següents dades',
