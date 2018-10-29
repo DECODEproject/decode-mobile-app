@@ -22,7 +22,7 @@ export default {
   login: {
     emptyMessage: 'You don\'t have any data that can be used to log in.',
     header: 'BCNNow requires a credential to log you in',
-    subHeader: 'You can log in by sharing your credential from:',
+    subHeader: 'You can log in by sharing your:',
     button: 'Login',
   },
   manageAttributes: {
@@ -33,7 +33,7 @@ export default {
     add: 'Add',
     edit: 'Edit',
     save: 'Save',
-    delete: 'Delete data',
+    delete: 'Delete all data',
     errorDelete: 'Error deleting data',
   },
   newDateOfBirthAttribute: {

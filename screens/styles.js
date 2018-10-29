@@ -15,9 +15,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
-    paddingVertical: 30,
-    paddingHorizontal: 10,
-    marginTop: 20,
+    paddingVertical: 20,
   },
   attributesLandingImage: {
     width: 150,

@@ -23,8 +23,17 @@ minDate.setFullYear(minDate.getFullYear() - 130);
 
 function DeleteButton(props) {
   return (
-    <Button
+    <LinkButton
       name={props.name}
+      style={{
+        textStyle: {
+          color: '#FF0000',
+        },
+        linkButtonStyle: {
+          alignItems: 'flex-end',
+          paddingTop: 20,
+        },
+      }}
       onPress={() => props.onPress()}
     />
   );
@@ -80,11 +89,11 @@ class ManageAttributes extends Component {
     }
     return (
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
+        {this.props.enabledDeleteButton &&
+          <DeleteButton name={this.props.t('delete')} onPress={() => this.props.deleteWalletData(this.props.t)} />}
         <View style={styles.attributesManagementContainer}>
-          {this.props.enabledDeleteButton &&
-            <DeleteButton name={this.props.t('delete')} onPress={() => this.props.deleteWalletData(this.props.t)} />}
           <View style={{ flex: 1, maxHeight: 50 }}>
-            <Text style={{ fontSize: 20, alignSelf: 'center' }}>{this.props.t('description')}</Text>
+            <Text style={{ fontSize: 20 }}>{this.props.t('description')}</Text>
           </View>
           <View style={{ flex: 1 }}>
             <View style={styles.newAttributesAttribute}>

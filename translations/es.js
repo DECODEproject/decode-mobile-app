@@ -22,7 +22,7 @@ export default {
   login: {
     emptyMessage: 'No tienes datos que se puedan usar para acceder.',
     header: 'BCNNow necesita un credencial para acceder',
-    subHeader: 'Puedes acceder compartiendo el credencial de:',
+    subHeader: 'Puedes acceder compartiendo:',
     button: 'Acceder',
   },
   manageAttributes: {
@@ -33,7 +33,7 @@ export default {
     add: 'Agregar',
     edit: 'Editar',
     save: 'Guardar',
-    delete: 'Borrar datos',
+    delete: 'Borrar todos los datos',
     errorDelete: 'Error al borrar los datos',
   },
   newDateOfBirthAttribute: {

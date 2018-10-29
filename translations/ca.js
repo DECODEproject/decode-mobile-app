@@ -22,7 +22,7 @@ export default {
   login: {
     emptyMessage: 'No tens dades que es puguin fer servir per accedir-hi.',
     header: 'BCNNow necessita un credencial per accedir',
-    subHeader: 'Pots accedir compartint la credencial de:',
+    subHeader: 'Pots accedir compartint:',
     button: 'Accedir',
   },
   manageAttributes: {
@@ -33,7 +33,7 @@ export default {
     add: 'Afegir',
     edit: 'Editar',
     save: 'Desar',
-    delete: 'Esborrar dades',
+    delete: 'Esborrar totes les dades',
     errorDelete: 'Error en esborrar les dades',
   },
   newDateOfBirthAttribute: {
