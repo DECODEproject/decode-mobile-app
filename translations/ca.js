@@ -23,7 +23,7 @@ export default {
   login: {
     emptyMessage: 'No tens dades que es puguin fer servir per accedir-hi.',
     header: 'BCNNow necessita un credencial per accedir',
-    subHeader: 'Pots accedir compartint:',
+    subHeader: 'Pots accedir compartint la credencial de:',
     button: 'Accedir',
   },
   manageAttributes: {
