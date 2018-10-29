@@ -12,11 +12,9 @@ const mockStore = configureStore([thunk]);
 describe('validatePinCode', () => {
   const alertMock = jest.fn();
   const goToAttributesSummaryMock = jest.fn();
-  const goToPetitionSummaryMock = jest.fn();
   const goToAttributesLandingMock = jest.fn();
-  const goToErrorMock = jest.fn();
-  const getPetitionMock = jest.fn();
   const decidimClientMock = jest.fn();
+  const goToPetitionMock = jest.fn();
   const petitionId = '123';
   const defaultState = {
     decidimInfo: {
@@ -101,7 +99,7 @@ describe('validatePinCode', () => {
     });
 
     describe('if there is decidimApiUrl', () => {
-      it('should call goToAttributesSummary if the required attribute is not verified', async () => {
+      it('should call goToPetition', () => {
         const initialState = {
           ...defaultState,
           decidimInfo: {
@@ -112,7 +110,6 @@ describe('validatePinCode', () => {
             list: new Map(),
           },
         };
-        getPetitionMock.mockReturnValue(Promise.resolve(undefined));
 
         const wrapper = shallow(<Home />)
           .first().shallow()
@@ -123,95 +120,12 @@ describe('validatePinCode', () => {
         homeComponent.props = {
           ...homeComponent.props,
           decidimClient: decidimClientMock,
-          getPetition: getPetitionMock,
-          goToAttributesSummary: goToAttributesSummaryMock,
+          goToPetition: goToPetitionMock,
           doAuthorize: doAuthorizeMock,
         };
 
         return homeComponent.validatePinCode().then(() => {
-          expect(getPetitionMock).toBeCalledWith(
-            decidimClientMock,
-            petitionId,
-          );
-          expect(goToAttributesSummaryMock).toBeCalled();
-        });
-      });
-
-      it('should call goToPetitionSummary if the required attribute is verified', async () => {
-        const initialState = {
-          ...defaultState,
-          decidimInfo: {
-            decidimAPIUrl: 'http://city-council.com',
-            petitionId,
-          },
-          attributes: {
-            list: new Map([['schema:addressLocality', {}]]),
-          },
-        };
-        getPetitionMock.mockReturnValue(Promise.resolve(undefined));
-
-
-        const wrapper = shallow(<Home />)
-          .first().shallow()
-          .first()
-          .shallow({ context: { store: mockStore(initialState) } });
-
-        const homeComponent = wrapper.dive().instance();
-        homeComponent.props = {
-          ...homeComponent.props,
-          decidimClient: decidimClientMock,
-          getPetition: getPetitionMock,
-          goToPetitionSummary: goToPetitionSummaryMock,
-          doAuthorize: doAuthorizeMock,
-        };
-
-        return homeComponent.validatePinCode().then(() => {
-          expect(getPetitionMock).toBeCalledWith(
-            decidimClientMock,
-            petitionId,
-          );
-          expect(goToPetitionSummaryMock).toBeCalled();
-        });
-      });
-
-      it('should call goToError if decidimAPi returns fetch petition error', async () => {
-        const initialState = {
-          ...defaultState,
-          petition: {
-            error: 'Could not find petition',
-          },
-        };
-
-        getPetitionMock.mockReturnValue(Promise.resolve(undefined));
-        const errorTitle = 'No se ha podido conseguir la información de la petición de Decidim';
-        const errorText = 'You can return to the Decidim site to view other active petitions.';
-
-
-        const wrapper = shallow(<Home />)
-          .first().shallow()
-          .first()
-          .shallow({ context: { store: mockStore(initialState) } });
-
-
-        const homeComponent = wrapper.dive().instance();
-        homeComponent.props = {
-          ...homeComponent.props,
-          decidimClient: decidimClientMock,
-          getPetition: getPetitionMock,
-          goToError: goToErrorMock,
-          doAuthorize: doAuthorizeMock,
-          t: key => ({
-            errorTitle,
-            errorText,
-          }[key]),
-        };
-
-        return homeComponent.validatePinCode().then(() => {
-          expect(getPetitionMock).toBeCalledWith(
-            decidimClientMock,
-            petitionId,
-          );
-          expect(goToErrorMock).toBeCalledWith(errorTitle, errorText);
+          expect(goToPetitionMock).toBeCalled();
         });
       });
     });

@@ -4,11 +4,11 @@ import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard } from 're
 import { SecureStore, ScreenOrientation } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
-import { goToAttributesLanding, goToAttributesSummary, goToPetitionSummary, goToError, goToLogin } from '../application/redux/actions/navigation';
+import { goToAttributesLanding, goToLogin } from '../application/redux/actions/navigation';
 import setDecidimInfo from '../application/redux/actions/decidimInfo';
-import { getPetition } from '../application/redux/actions/petition';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { setCredential, checkComingFromLogin } from '../application/redux/actions/login';
+import goToPetition from '../application/redux/actions/home';
 import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
@@ -34,23 +34,6 @@ class Home extends React.Component {
     this.props.initializeState(this.props.loginFT).then(() => {});
   }
 
-  goToPetition() {
-    const petition = this.props.getPetition(this.props.decidimClient, this.props.petitionId);
-    return petition.then(() => {
-      const errorGettingPetitionInformation = this.props.petitionError !== undefined;
-      if (errorGettingPetitionInformation) {
-        this.props.goToError(this.props.t('errorTitle'), this.props.t('errorText'));
-      } else {
-        const isAttributeVerified = this.props.attributes.list.has('schema:addressLocality');
-        if (isAttributeVerified) {
-          this.props.goToPetitionSummary();
-        } else {
-          this.props.goToAttributesSummary();
-        }
-      }
-    });
-  }
-
   goToNextPage() {
     const comingFromDecidim = this.props.decidimAPIUrl;
     const comingFromLogin = this.props.isComingFromLogin;
@@ -65,7 +48,7 @@ class Home extends React.Component {
     if (comingFromLogin) {
       this.props.goToLogin();
     } else if (comingFromDecidim) {
-      this.goToPetition();
+      this.props.goToPetition(this.props.decidimClient, this.props.petitionId);
     } else {
       this.props.goToAttributesLanding();
     }
@@ -73,7 +56,7 @@ class Home extends React.Component {
 
   handleRedirectWithoutLogin(comingFromDecidim) {
     if (comingFromDecidim) {
-      this.goToPetition();
+      this.props.goToPetition(this.props.decidimClient, this.props.petitionId);
     } else {
       this.props.goToAttributesLanding();
     }
@@ -131,29 +114,21 @@ class Home extends React.Component {
 
 Home.propTypes = {
   goToAttributesLanding: PropTypes.func.isRequired,
-  goToAttributesSummary: PropTypes.func.isRequired,
-  goToPetitionSummary: PropTypes.func.isRequired,
-  goToError: PropTypes.func.isRequired,
   goToLogin: PropTypes.func.isRequired,
-  getPetition: PropTypes.func.isRequired,
+  goToPetition: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
   doAuthorize: PropTypes.func.isRequired,
   updatePin: PropTypes.func.isRequired,
-  petitionError: PropTypes.string,
   petitionId: PropTypes.string,
   decidimAPIUrl: PropTypes.string,
   decidimClient: PropTypes.instanceOf(DecidimClient).isRequired,
   pinCode: PropTypes.string,
-  attributes: PropTypes.shape({
-    list: PropTypes.instanceOf(Map),
-  }).isRequired,
   t: PropTypes.func.isRequired,
   loginFT: PropTypes.bool,
   isComingFromLogin: PropTypes.bool.isRequired,
 };
 
 Home.defaultProps = {
-  petitionError: undefined,
   decidimAPIUrl: undefined,
   petitionId: undefined,
   pinCode: '',
@@ -164,8 +139,6 @@ const mapStateToProps = state => ({
   decidimAPIUrl: state.decidimInfo.decidimAPIUrl,
   petitionId: state.decidimInfo.petitionId,
   pinCode: state.authorization.pin,
-  attributes: state.attributes,
-  petitionError: state.petition.error,
   decidimClient: new DecidimClient(new LanguageService(), state.decidimInfo.decidimAPIUrl),
   loginFT: state.featureToggles.login,
   isComingFromLogin: state.login.isComingFromLogin,
@@ -177,11 +150,10 @@ const mockedMakingSenseCredential = new Attribute({
 
 const mapDispatchToProps = dispatch => ({
   goToAttributesLanding: () => { dispatch(goToAttributesLanding()); },
-  goToAttributesSummary: () => { dispatch(goToAttributesSummary()); },
-  goToPetitionSummary: () => { dispatch(goToPetitionSummary()); },
-  goToError: () => { dispatch(goToError()); },
   goToLogin: () => { dispatch(goToLogin()); },
-  getPetition: (decidimClient, petitionId) => dispatch(getPetition(decidimClient, petitionId)),
+  goToPetition: (decidimClient, petitionId) => {
+    dispatch(goToPetition(decidimClient, petitionId));
+  },
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: pin => dispatch(updatePin(pin)),
   initializeState: async (loginFT) => {

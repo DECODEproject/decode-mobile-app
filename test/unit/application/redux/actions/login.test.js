@@ -6,6 +6,24 @@ import Attribute from '../../../../../lib/Attribute';
 import types from '../../../../../application/redux/actionTypes';
 import * as entryPoint from '../../../../../lib/entryPoint';
 
+jest.mock('../../../../../application/redux/actions/navigation', () => ({
+  goToError: jest.fn().mockReturnValue({
+    type: 'GO_TO_ERROR',
+  }),
+  goToPetitionSummary: jest.fn().mockReturnValue({
+    type: 'GO_TO_PETITION_SUMMARY',
+  }),
+  goToAttributesSummary: jest.fn().mockReturnValue({
+    type: 'GO_TO_ATTRIBUTES_SUMMARY',
+  }),
+}));
+
+jest.mock('../../../../../application/redux/actions/petition', () => ({
+  getPetition: jest.fn().mockReturnValue({
+    type: 'GET_PETITION',
+  }),
+}));
+
 describe('setCredential', () => {
   const credential = new Attribute({
     predicate: 'schema:iotCommunity', object: 'MakingSense', scope: '', provenance: { url: 'https://making-sense.eu/credential-issuer' },
