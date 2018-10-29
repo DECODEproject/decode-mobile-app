@@ -6,6 +6,8 @@ describe('login reducer', () => {
   const defaultState = {
     credentials: [],
     isComingFromLogin: false,
+    success: false,
+    failed: false,
   };
   it('should have default state', () => {
     expect(reducer(undefined, {})).toEqual(defaultState);
@@ -17,7 +19,7 @@ describe('login reducer', () => {
     };
 
     expect(reducer(defaultState, action)).toEqual({
-      credentials: [],
+      ...defaultState,
       isComingFromLogin: true,
     });
   });
@@ -33,7 +35,7 @@ describe('login reducer', () => {
     };
 
     expect(reducer(initialState, action)).toEqual({
-      credentials: [],
+      ...initialState,
       isComingFromLogin: false,
     });
   });
@@ -49,8 +51,32 @@ describe('login reducer', () => {
     };
 
     expect(reducer(defaultState, action)).toEqual({
+      ...defaultState,
       credentials: [mockedMakingSenseCredential],
-      isComingFromLogin: false,
+    });
+  });
+
+  it('should set success state', () => {
+    const action = {
+      type: types.LOGIN_SUCCEEDED,
+    };
+
+    expect(reducer(defaultState, action)).toEqual({
+      ...defaultState,
+      success: true,
+      failed: false,
+    });
+  });
+
+  it('should set failed state', () => {
+    const action = {
+      type: types.LOGIN_FAILED,
+    };
+
+    expect(reducer(defaultState, action)).toEqual({
+      ...defaultState,
+      success: false,
+      failed: true,
     });
   });
 });

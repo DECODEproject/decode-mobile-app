@@ -3,6 +3,8 @@ import types from '../actionTypes';
 const initialState = {
   isComingFromLogin: false,
   credentials: [],
+  success: false,
+  failed: false,
 };
 
 export default function reducer(state = initialState, action) {
@@ -21,6 +23,18 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         credentials: action.credentials,
+      };
+    case types.LOGIN_SUCCEEDED:
+      return {
+        ...state,
+        success: true,
+        failed: false,
+      };
+    case types.LOGIN_FAILED:
+      return {
+        ...state,
+        success: false,
+        failed: true,
       };
     default:
       return state;

@@ -12,12 +12,30 @@ export function EmptyLogin(props) {
   );
 }
 
+export function ErrorLogin() {
+  return (<Text />);
+}
+
+export function SuccessLogin() {
+  return (<Text />);
+}
+
 EmptyLogin.propTypes = {
   message: PropTypes.string.isRequired,
 };
 
-
 function Login(props) {
+  let mainComponent;
+  if (!props.hasCredentials) {
+    mainComponent = (<EmptyLogin message={props.t('emptyMessage')} />);
+  } else if (props.loginHasFailed) {
+    mainComponent = (<ErrorLogin />);
+  } else if (props.loginIsSuccessful) {
+    mainComponent = (<SuccessLogin />);
+  } else {
+    mainComponent = (<CredentialList />);
+  }
+
   return (
     <View style={{ flex: 1, padding: 26 }}>
       <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
@@ -26,8 +44,7 @@ function Login(props) {
         </Text>
       </View>
       <View style={{ flex: 6, justifyContent: 'center' }}>
-        {!props.hasCredentials && <EmptyLogin message={props.t('emptyMessage')} /> }
-        {props.hasCredentials && <CredentialList /> }
+        {mainComponent}
       </View>
     </View>
   );
@@ -36,11 +53,15 @@ function Login(props) {
 Login.propTypes = {
   t: PropTypes.func.isRequired,
   hasCredentials: PropTypes.bool.isRequired,
+  loginHasFailed: PropTypes.bool.isRequired,
+  loginIsSuccessful: PropTypes.bool.isRequired,
 };
 
 const mapDispatchToProps = () => ({});
 const mapStateToProps = state => ({
   hasCredentials: state.login.credentials.length !== 0,
+  loginHasFailed: state.login.failed,
+  loginIsSuccessful: state.login.success,
 });
 
 export default translate('login', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Login));
