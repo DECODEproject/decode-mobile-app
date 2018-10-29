@@ -2,7 +2,6 @@ export default {
   attributesLanding: {
     nodata: 'Get started by adding some data.\nTap the button below to begin.',
     manage: 'Manage Data',
-    errorDelete: 'Error deleting data',
   },
   attributesSummary: {
     title: 'Signing this proposal requires verified residency.',
@@ -34,6 +33,8 @@ export default {
     add: 'Add',
     edit: 'Edit',
     save: 'Save',
+    delete: 'Delete data',
+    errorDelete: 'Error deleting data',
   },
   newDateOfBirthAttribute: {
     datepickerPlaceholder: 'Select a date',

@@ -68,7 +68,6 @@ ShallowWrapper {
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error en esborrar les dades",
                   "manage": "Gestionar dades",
                   "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -98,10 +97,12 @@ Fes click en el botó per començar.",
                 "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
+                  "delete": "Esborrar dades",
                   "description": "Pots afegir les següents dades",
                   "districtAttribute": "Districte",
                   "districtPlaceholder": "Selecciona un districte",
                   "edit": "Editar",
+                  "errorDelete": "Error en esborrar les dades",
                   "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -171,7 +172,6 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error deleting data",
                   "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -201,10 +201,12 @@ Tap the button below to begin.",
                 "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
+                  "delete": "Delete data",
                   "description": "You can add the following personal data",
                   "districtAttribute": "District",
                   "districtPlaceholder": "Select a district",
                   "edit": "Edit",
+                  "errorDelete": "Error deleting data",
                   "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -274,7 +276,6 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error al borrar los datos",
                   "manage": "Gestionar datos",
                   "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -304,10 +305,12 @@ Haz click en el botón inferior para empezar",
                 "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
+                  "delete": "Borrar datos",
                   "description": "Puedes añadir los siguientes datos",
                   "districtAttribute": "Distrito",
                   "districtPlaceholder": "Selecciona un distrito",
                   "edit": "Editar",
+                  "errorDelete": "Error al borrar los datos",
                   "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -453,7 +456,6 @@ Haz click en el botón inferior para empezar",
           "resources": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error en esborrar les dades",
                 "manage": "Gestionar dades",
                 "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -483,10 +485,12 @@ Fes click en el botó per començar.",
               "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
+                "delete": "Esborrar dades",
                 "description": "Pots afegir les següents dades",
                 "districtAttribute": "Districte",
                 "districtPlaceholder": "Selecciona un districte",
                 "edit": "Editar",
+                "errorDelete": "Error en esborrar les dades",
                 "save": "Desar",
               },
               "newDateOfBirthAttribute": Object {
@@ -556,7 +560,6 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error deleting data",
                 "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -586,10 +589,12 @@ Tap the button below to begin.",
               "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
+                "delete": "Delete data",
                 "description": "You can add the following personal data",
                 "districtAttribute": "District",
                 "districtPlaceholder": "Select a district",
                 "edit": "Edit",
+                "errorDelete": "Error deleting data",
                 "save": "Save",
               },
               "newDateOfBirthAttribute": Object {
@@ -659,7 +664,6 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error al borrar los datos",
                 "manage": "Gestionar datos",
                 "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -689,10 +693,12 @@ Haz click en el botón inferior para empezar",
               "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
+                "delete": "Borrar datos",
                 "description": "Puedes añadir los siguientes datos",
                 "districtAttribute": "Distrito",
                 "districtPlaceholder": "Selecciona un distrito",
                 "edit": "Editar",
+                "errorDelete": "Error al borrar los datos",
                 "save": "Guardar",
               },
               "newDateOfBirthAttribute": Object {
@@ -830,7 +836,6 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error en esborrar les dades",
                         "manage": "Gestionar dades",
                         "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -860,10 +865,12 @@ Fes click en el botó per començar.",
                       "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
+                        "delete": "Esborrar dades",
                         "description": "Pots afegir les següents dades",
                         "districtAttribute": "Districte",
                         "districtPlaceholder": "Selecciona un districte",
                         "edit": "Editar",
+                        "errorDelete": "Error en esborrar les dades",
                         "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -933,7 +940,6 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error deleting data",
                         "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -963,10 +969,12 @@ Tap the button below to begin.",
                       "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
+                        "delete": "Delete data",
                         "description": "You can add the following personal data",
                         "districtAttribute": "District",
                         "districtPlaceholder": "Select a district",
                         "edit": "Edit",
+                        "errorDelete": "Error deleting data",
                         "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -1036,7 +1044,6 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error al borrar los datos",
                         "manage": "Gestionar datos",
                         "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -1066,10 +1073,12 @@ Haz click en el botón inferior para empezar",
                       "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
+                        "delete": "Borrar datos",
                         "description": "Puedes añadir los siguientes datos",
                         "districtAttribute": "Distrito",
                         "districtPlaceholder": "Selecciona un distrito",
                         "edit": "Editar",
+                        "errorDelete": "Error al borrar los datos",
                         "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -1194,7 +1203,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -1224,10 +1232,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -1297,7 +1307,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -1327,10 +1336,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -1400,7 +1411,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -1430,10 +1440,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -1568,7 +1580,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -1598,10 +1609,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -1671,7 +1684,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -1701,10 +1713,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -1774,7 +1788,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -1804,10 +1817,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -1937,7 +1952,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -1967,10 +1981,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -2040,7 +2056,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -2070,10 +2085,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -2143,7 +2160,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -2173,10 +2189,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -2261,7 +2279,6 @@ Haz click en el botón inferior para empezar",
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error en esborrar les dades",
                   "manage": "Gestionar dades",
                   "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -2291,10 +2308,12 @@ Fes click en el botó per començar.",
                 "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
+                  "delete": "Esborrar dades",
                   "description": "Pots afegir les següents dades",
                   "districtAttribute": "Districte",
                   "districtPlaceholder": "Selecciona un districte",
                   "edit": "Editar",
+                  "errorDelete": "Error en esborrar les dades",
                   "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -2364,7 +2383,6 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error deleting data",
                   "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -2394,10 +2412,12 @@ Tap the button below to begin.",
                 "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
+                  "delete": "Delete data",
                   "description": "You can add the following personal data",
                   "districtAttribute": "District",
                   "districtPlaceholder": "Select a district",
                   "edit": "Edit",
+                  "errorDelete": "Error deleting data",
                   "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -2467,7 +2487,6 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error al borrar los datos",
                   "manage": "Gestionar datos",
                   "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -2497,10 +2516,12 @@ Haz click en el botón inferior para empezar",
                 "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
+                  "delete": "Borrar datos",
                   "description": "Puedes añadir los siguientes datos",
                   "districtAttribute": "Distrito",
                   "districtPlaceholder": "Selecciona un distrito",
                   "edit": "Editar",
+                  "errorDelete": "Error al borrar los datos",
                   "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -2628,7 +2649,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -2658,10 +2678,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -2731,7 +2753,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -2761,10 +2782,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -2834,7 +2857,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -2864,10 +2886,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -2996,7 +3020,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -3026,10 +3049,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -3099,7 +3124,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -3129,10 +3153,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -3202,7 +3228,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -3232,10 +3257,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -3384,7 +3411,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -3414,10 +3440,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -3487,7 +3515,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -3517,10 +3544,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -3590,7 +3619,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -3620,10 +3648,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -3748,7 +3778,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -3778,10 +3807,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -3851,7 +3882,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -3881,10 +3911,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -3954,7 +3986,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -3984,10 +4015,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -4121,7 +4154,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -4151,10 +4183,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -4224,7 +4258,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -4254,10 +4287,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -4327,7 +4362,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -4357,10 +4391,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -4497,7 +4533,6 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error en esborrar les dades",
                         "manage": "Gestionar dades",
                         "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -4527,10 +4562,12 @@ Fes click en el botó per començar.",
                       "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
+                        "delete": "Esborrar dades",
                         "description": "Pots afegir les següents dades",
                         "districtAttribute": "Districte",
                         "districtPlaceholder": "Selecciona un districte",
                         "edit": "Editar",
+                        "errorDelete": "Error en esborrar les dades",
                         "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -4600,7 +4637,6 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error deleting data",
                         "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -4630,10 +4666,12 @@ Tap the button below to begin.",
                       "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
+                        "delete": "Delete data",
                         "description": "You can add the following personal data",
                         "districtAttribute": "District",
                         "districtPlaceholder": "Select a district",
                         "edit": "Edit",
+                        "errorDelete": "Error deleting data",
                         "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -4703,7 +4741,6 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error al borrar los datos",
                         "manage": "Gestionar datos",
                         "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -4733,10 +4770,12 @@ Haz click en el botón inferior para empezar",
                       "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
+                        "delete": "Borrar datos",
                         "description": "Puedes añadir los siguientes datos",
                         "districtAttribute": "Distrito",
                         "districtPlaceholder": "Selecciona un distrito",
                         "edit": "Editar",
+                        "errorDelete": "Error al borrar los datos",
                         "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -4861,7 +4900,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -4891,10 +4929,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -4964,7 +5004,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -4994,10 +5033,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -5067,7 +5108,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -5097,10 +5137,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -5235,7 +5277,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -5265,10 +5306,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -5338,7 +5381,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -5368,10 +5410,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -5441,7 +5485,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -5471,10 +5514,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -6494,7 +6539,6 @@ Haz click en el botón inferior para empezar",
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error en esborrar les dades",
                 "manage": "Gestionar dades",
                 "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -6524,10 +6568,12 @@ Fes click en el botó per començar.",
               "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
+                "delete": "Esborrar dades",
                 "description": "Pots afegir les següents dades",
                 "districtAttribute": "Districte",
                 "districtPlaceholder": "Selecciona un districte",
                 "edit": "Editar",
+                "errorDelete": "Error en esborrar les dades",
                 "save": "Desar",
               },
               "newDateOfBirthAttribute": Object {
@@ -6597,7 +6643,6 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error deleting data",
                 "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -6627,10 +6672,12 @@ Tap the button below to begin.",
               "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
+                "delete": "Delete data",
                 "description": "You can add the following personal data",
                 "districtAttribute": "District",
                 "districtPlaceholder": "Select a district",
                 "edit": "Edit",
+                "errorDelete": "Error deleting data",
                 "save": "Save",
               },
               "newDateOfBirthAttribute": Object {
@@ -6700,7 +6747,6 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error al borrar los datos",
                 "manage": "Gestionar datos",
                 "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -6730,10 +6776,12 @@ Haz click en el botón inferior para empezar",
               "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
+                "delete": "Borrar datos",
                 "description": "Puedes añadir los siguientes datos",
                 "districtAttribute": "Distrito",
                 "districtPlaceholder": "Selecciona un distrito",
                 "edit": "Editar",
+                "errorDelete": "Error al borrar los datos",
                 "save": "Guardar",
               },
               "newDateOfBirthAttribute": Object {
@@ -6806,7 +6854,6 @@ Haz click en el botón inferior para empezar",
         "store": Object {
           "ca": Object {
             "attributesLanding": Object {
-              "errorDelete": "Error en esborrar les dades",
               "manage": "Gestionar dades",
               "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -6836,10 +6883,12 @@ Fes click en el botó per començar.",
             "manageAttributes": Object {
               "add": "Afegir",
               "ageAttribute": "Data de Naixement",
+              "delete": "Esborrar dades",
               "description": "Pots afegir les següents dades",
               "districtAttribute": "Districte",
               "districtPlaceholder": "Selecciona un districte",
               "edit": "Editar",
+              "errorDelete": "Error en esborrar les dades",
               "save": "Desar",
             },
             "newDateOfBirthAttribute": Object {
@@ -6909,7 +6958,6 @@ Fes click en el botó per començar.",
           },
           "en": Object {
             "attributesLanding": Object {
-              "errorDelete": "Error deleting data",
               "manage": "Manage Data",
               "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -6939,10 +6987,12 @@ Tap the button below to begin.",
             "manageAttributes": Object {
               "add": "Add",
               "ageAttribute": "Date of Birth",
+              "delete": "Delete data",
               "description": "You can add the following personal data",
               "districtAttribute": "District",
               "districtPlaceholder": "Select a district",
               "edit": "Edit",
+              "errorDelete": "Error deleting data",
               "save": "Save",
             },
             "newDateOfBirthAttribute": Object {
@@ -7012,7 +7062,6 @@ Tap the button below to begin.",
           },
           "es": Object {
             "attributesLanding": Object {
-              "errorDelete": "Error al borrar los datos",
               "manage": "Gestionar datos",
               "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -7042,10 +7091,12 @@ Haz click en el botón inferior para empezar",
             "manageAttributes": Object {
               "add": "Agregar",
               "ageAttribute": "Fecha de Nacimiento",
+              "delete": "Borrar datos",
               "description": "Puedes añadir los siguientes datos",
               "districtAttribute": "Distrito",
               "districtPlaceholder": "Selecciona un distrito",
               "edit": "Editar",
+              "errorDelete": "Error al borrar los datos",
               "save": "Guardar",
             },
             "newDateOfBirthAttribute": Object {
@@ -7171,7 +7222,6 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error en esborrar les dades",
                         "manage": "Gestionar dades",
                         "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -7201,10 +7251,12 @@ Fes click en el botó per començar.",
                       "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
+                        "delete": "Esborrar dades",
                         "description": "Pots afegir les següents dades",
                         "districtAttribute": "Districte",
                         "districtPlaceholder": "Selecciona un districte",
                         "edit": "Editar",
+                        "errorDelete": "Error en esborrar les dades",
                         "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -7274,7 +7326,6 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error deleting data",
                         "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -7304,10 +7355,12 @@ Tap the button below to begin.",
                       "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
+                        "delete": "Delete data",
                         "description": "You can add the following personal data",
                         "districtAttribute": "District",
                         "districtPlaceholder": "Select a district",
                         "edit": "Edit",
+                        "errorDelete": "Error deleting data",
                         "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -7377,7 +7430,6 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error al borrar los datos",
                         "manage": "Gestionar datos",
                         "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -7407,10 +7459,12 @@ Haz click en el botón inferior para empezar",
                       "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
+                        "delete": "Borrar datos",
                         "description": "Puedes añadir los siguientes datos",
                         "districtAttribute": "Distrito",
                         "districtPlaceholder": "Selecciona un distrito",
                         "edit": "Editar",
+                        "errorDelete": "Error al borrar los datos",
                         "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -7535,7 +7589,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -7565,10 +7618,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -7638,7 +7693,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -7668,10 +7722,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -7741,7 +7797,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -7771,10 +7826,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -7909,7 +7966,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -7939,10 +7995,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -8012,7 +8070,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -8042,10 +8099,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -8115,7 +8174,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -8145,10 +8203,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -8278,7 +8338,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -8308,10 +8367,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -8381,7 +8442,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -8411,10 +8471,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -8484,7 +8546,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -8514,10 +8575,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -8602,7 +8665,6 @@ Haz click en el botón inferior para empezar",
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error en esborrar les dades",
                   "manage": "Gestionar dades",
                   "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -8632,10 +8694,12 @@ Fes click en el botó per començar.",
                 "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
+                  "delete": "Esborrar dades",
                   "description": "Pots afegir les següents dades",
                   "districtAttribute": "Districte",
                   "districtPlaceholder": "Selecciona un districte",
                   "edit": "Editar",
+                  "errorDelete": "Error en esborrar les dades",
                   "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -8705,7 +8769,6 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error deleting data",
                   "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -8735,10 +8798,12 @@ Tap the button below to begin.",
                 "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
+                  "delete": "Delete data",
                   "description": "You can add the following personal data",
                   "districtAttribute": "District",
                   "districtPlaceholder": "Select a district",
                   "edit": "Edit",
+                  "errorDelete": "Error deleting data",
                   "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -8808,7 +8873,6 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error al borrar los datos",
                   "manage": "Gestionar datos",
                   "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -8838,10 +8902,12 @@ Haz click en el botón inferior para empezar",
                 "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
+                  "delete": "Borrar datos",
                   "description": "Puedes añadir los siguientes datos",
                   "districtAttribute": "Distrito",
                   "districtPlaceholder": "Selecciona un distrito",
                   "edit": "Editar",
+                  "errorDelete": "Error al borrar los datos",
                   "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -8969,7 +9035,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -8999,10 +9064,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -9072,7 +9139,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -9102,10 +9168,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -9175,7 +9243,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -9205,10 +9272,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -9337,7 +9406,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -9367,10 +9435,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -9440,7 +9510,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -9470,10 +9539,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -9543,7 +9614,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -9573,10 +9643,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -9718,7 +9790,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -9748,10 +9819,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -9821,7 +9894,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -9851,10 +9923,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -9924,7 +9998,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -9954,10 +10027,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -10082,7 +10157,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -10112,10 +10186,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -10185,7 +10261,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -10215,10 +10290,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -10288,7 +10365,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -10318,10 +10394,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -10456,7 +10534,6 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error en esborrar les dades",
                     "manage": "Gestionar dades",
                     "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -10486,10 +10563,12 @@ Fes click en el botó per començar.",
                   "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
+                    "delete": "Esborrar dades",
                     "description": "Pots afegir les següents dades",
                     "districtAttribute": "Districte",
                     "districtPlaceholder": "Selecciona un districte",
                     "edit": "Editar",
+                    "errorDelete": "Error en esborrar les dades",
                     "save": "Desar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -10559,7 +10638,6 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error deleting data",
                     "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -10589,10 +10667,12 @@ Tap the button below to begin.",
                   "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
+                    "delete": "Delete data",
                     "description": "You can add the following personal data",
                     "districtAttribute": "District",
                     "districtPlaceholder": "Select a district",
                     "edit": "Edit",
+                    "errorDelete": "Error deleting data",
                     "save": "Save",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -10662,7 +10742,6 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "errorDelete": "Error al borrar los datos",
                     "manage": "Gestionar datos",
                     "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -10692,10 +10771,12 @@ Haz click en el botón inferior para empezar",
                   "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
+                    "delete": "Borrar datos",
                     "description": "Puedes añadir los siguientes datos",
                     "districtAttribute": "Distrito",
                     "districtPlaceholder": "Selecciona un distrito",
                     "edit": "Editar",
+                    "errorDelete": "Error al borrar los datos",
                     "save": "Guardar",
                   },
                   "newDateOfBirthAttribute": Object {
@@ -10825,7 +10906,6 @@ Haz click en el botón inferior para empezar",
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error en esborrar les dades",
                   "manage": "Gestionar dades",
                   "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -10855,10 +10935,12 @@ Fes click en el botó per començar.",
                 "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
+                  "delete": "Esborrar dades",
                   "description": "Pots afegir les següents dades",
                   "districtAttribute": "Districte",
                   "districtPlaceholder": "Selecciona un districte",
                   "edit": "Editar",
+                  "errorDelete": "Error en esborrar les dades",
                   "save": "Desar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -10928,7 +11010,6 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error deleting data",
                   "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -10958,10 +11039,12 @@ Tap the button below to begin.",
                 "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
+                  "delete": "Delete data",
                   "description": "You can add the following personal data",
                   "districtAttribute": "District",
                   "districtPlaceholder": "Select a district",
                   "edit": "Edit",
+                  "errorDelete": "Error deleting data",
                   "save": "Save",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -11031,7 +11114,6 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "errorDelete": "Error al borrar los datos",
                   "manage": "Gestionar datos",
                   "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -11061,10 +11143,12 @@ Haz click en el botón inferior para empezar",
                 "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
+                  "delete": "Borrar datos",
                   "description": "Puedes añadir los siguientes datos",
                   "districtAttribute": "Distrito",
                   "districtPlaceholder": "Selecciona un distrito",
                   "edit": "Editar",
+                  "errorDelete": "Error al borrar los datos",
                   "save": "Guardar",
                 },
                 "newDateOfBirthAttribute": Object {
@@ -11199,7 +11283,6 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error en esborrar les dades",
                         "manage": "Gestionar dades",
                         "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -11229,10 +11312,12 @@ Fes click en el botó per començar.",
                       "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
+                        "delete": "Esborrar dades",
                         "description": "Pots afegir les següents dades",
                         "districtAttribute": "Districte",
                         "districtPlaceholder": "Selecciona un districte",
                         "edit": "Editar",
+                        "errorDelete": "Error en esborrar les dades",
                         "save": "Desar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -11302,7 +11387,6 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error deleting data",
                         "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -11332,10 +11416,12 @@ Tap the button below to begin.",
                       "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
+                        "delete": "Delete data",
                         "description": "You can add the following personal data",
                         "districtAttribute": "District",
                         "districtPlaceholder": "Select a district",
                         "edit": "Edit",
+                        "errorDelete": "Error deleting data",
                         "save": "Save",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -11405,7 +11491,6 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "errorDelete": "Error al borrar los datos",
                         "manage": "Gestionar datos",
                         "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -11435,10 +11520,12 @@ Haz click en el botón inferior para empezar",
                       "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
+                        "delete": "Borrar datos",
                         "description": "Puedes añadir los siguientes datos",
                         "districtAttribute": "Distrito",
                         "districtPlaceholder": "Selecciona un distrito",
                         "edit": "Editar",
+                        "errorDelete": "Error al borrar los datos",
                         "save": "Guardar",
                       },
                       "newDateOfBirthAttribute": Object {
@@ -11563,7 +11650,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -11593,10 +11679,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -11666,7 +11754,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -11696,10 +11783,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -11769,7 +11858,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -11799,10 +11887,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -11937,7 +12027,6 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error en esborrar les dades",
                       "manage": "Gestionar dades",
                       "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -11967,10 +12056,12 @@ Fes click en el botó per començar.",
                     "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
+                      "delete": "Esborrar dades",
                       "description": "Pots afegir les següents dades",
                       "districtAttribute": "Districte",
                       "districtPlaceholder": "Selecciona un districte",
                       "edit": "Editar",
+                      "errorDelete": "Error en esborrar les dades",
                       "save": "Desar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -12040,7 +12131,6 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error deleting data",
                       "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -12070,10 +12160,12 @@ Tap the button below to begin.",
                     "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
+                      "delete": "Delete data",
                       "description": "You can add the following personal data",
                       "districtAttribute": "District",
                       "districtPlaceholder": "Select a district",
                       "edit": "Edit",
+                      "errorDelete": "Error deleting data",
                       "save": "Save",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -12143,7 +12235,6 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "errorDelete": "Error al borrar los datos",
                       "manage": "Gestionar datos",
                       "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -12173,10 +12264,12 @@ Haz click en el botón inferior para empezar",
                     "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
+                      "delete": "Borrar datos",
                       "description": "Puedes añadir los siguientes datos",
                       "districtAttribute": "Distrito",
                       "districtPlaceholder": "Selecciona un distrito",
                       "edit": "Editar",
+                      "errorDelete": "Error al borrar los datos",
                       "save": "Guardar",
                     },
                     "newDateOfBirthAttribute": Object {
@@ -13196,7 +13289,6 @@ Haz click en el botón inferior para empezar",
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error en esborrar les dades",
                 "manage": "Gestionar dades",
                 "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
@@ -13226,10 +13318,12 @@ Fes click en el botó per començar.",
               "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
+                "delete": "Esborrar dades",
                 "description": "Pots afegir les següents dades",
                 "districtAttribute": "Districte",
                 "districtPlaceholder": "Selecciona un districte",
                 "edit": "Editar",
+                "errorDelete": "Error en esborrar les dades",
                 "save": "Desar",
               },
               "newDateOfBirthAttribute": Object {
@@ -13299,7 +13393,6 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error deleting data",
                 "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
@@ -13329,10 +13422,12 @@ Tap the button below to begin.",
               "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
+                "delete": "Delete data",
                 "description": "You can add the following personal data",
                 "districtAttribute": "District",
                 "districtPlaceholder": "Select a district",
                 "edit": "Edit",
+                "errorDelete": "Error deleting data",
                 "save": "Save",
               },
               "newDateOfBirthAttribute": Object {
@@ -13402,7 +13497,6 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "errorDelete": "Error al borrar los datos",
                 "manage": "Gestionar datos",
                 "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
@@ -13432,10 +13526,12 @@ Haz click en el botón inferior para empezar",
               "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
+                "delete": "Borrar datos",
                 "description": "Puedes añadir los siguientes datos",
                 "districtAttribute": "Distrito",
                 "districtPlaceholder": "Selecciona un distrito",
                 "edit": "Editar",
+                "errorDelete": "Error al borrar los datos",
                 "save": "Guardar",
               },
               "newDateOfBirthAttribute": Object {

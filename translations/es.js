@@ -2,7 +2,6 @@ export default {
   attributesLanding: {
     nodata: 'Empecemos por añadir algunos datos.\nHaz click en el botón inferior para empezar',
     manage: 'Gestionar datos',
-    errorDelete: 'Error al borrar los datos',
   },
   attributesSummary: {
     title: 'DECIDIM requiere verificar tu residencia en Barcelona.',
@@ -34,6 +33,8 @@ export default {
     add: 'Agregar',
     edit: 'Editar',
     save: 'Guardar',
+    delete: 'Borrar datos',
+    errorDelete: 'Error al borrar los datos',
   },
   newDateOfBirthAttribute: {
     datepickerPlaceholder: 'Selecciona una fecha',

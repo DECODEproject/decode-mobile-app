@@ -19,6 +19,9 @@ describe('ManageAttributes', () => {
           list: new Map(),
           errorSaveAttributes: false,
         },
+        featureToggles: {
+          enabledDeleteButton: false,
+        },
         wallet: {
           id: 'something',
         },
@@ -45,6 +48,9 @@ describe('ManageAttributes', () => {
           }]]),
           errorSaveAttributes: false,
         },
+        featureToggles: {
+          enabledDeleteButton: false,
+        },
         wallet: {
           id: 'something',
         },
@@ -68,6 +74,9 @@ describe('ManageAttributes', () => {
         attributes: {
           list: new Map(),
           errorSaveAttributes: false,
+        },
+        featureToggles: {
+          enabledDeleteButton: false,
         },
         wallet: {
           id: 'something',
@@ -99,6 +108,9 @@ describe('ManageAttributes', () => {
           list: new Map(),
           errorSaveAttributes: false,
         },
+        featureToggles: {
+          enabledDeleteButton: false,
+        },
         wallet: {
           id: 'something',
         },
@@ -123,6 +135,9 @@ describe('ManageAttributes', () => {
           list: new Map([['schema:district', { object: '4' }]]),
           errorSaveAttributes: false,
         },
+        featureToggles: {
+          enabledDeleteButton: false,
+        },
         wallet: {
           id: 'something',
         },
@@ -146,6 +161,9 @@ describe('ManageAttributes', () => {
         attributes: {
           list: new Map(),
           errorSaveAttributes: false,
+        },
+        featureToggles: {
+          enabledDeleteButton: false,
         },
         wallet: {
           id: 'something',
@@ -174,6 +192,9 @@ describe('ManageAttributes', () => {
         attributes: {
           list: new Map(),
           errorSaveAttributes: false,
+        },
+        featureToggles: {
+          enabledDeleteButton: false,
         },
         wallet: {
           id: 'something',
@@ -210,6 +231,9 @@ describe('ManageAttributes', () => {
         attributes: {
           list: new Map(),
           errorSaveAttributes: false,
+        },
+        featureToggles: {
+          enabledDeleteButton: false,
         },
       };
       const store = mockStore(initialState);

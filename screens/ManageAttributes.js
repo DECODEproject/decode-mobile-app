@@ -11,6 +11,8 @@ import Button from '../application/components/Button/Button';
 import LinkButton from '../application/components/LinkButton/LinkButton';
 import { saveAttributes } from '../application/redux/actions/attributes';
 import { sortedDistrictsList, districtNameFromId, validDistrict } from '../lib/districts';
+import { resetNavigation } from '../application/redux/actions/navigation';
+import { deleteWalletData } from '../application/redux/actions/wallet';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -18,6 +20,20 @@ import i18n from '../i18n';
 const maxDate = new Date();
 const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
+
+function DeleteButton(props) {
+  return (
+    <Button
+      name={props.name}
+      onPress={() => props.onPress()}
+    />
+  );
+}
+
+DeleteButton.propTypes = {
+  onPress: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 class ManageAttributes extends Component {
   static route = {
@@ -65,6 +81,8 @@ class ManageAttributes extends Component {
     return (
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
         <View style={styles.attributesManagementContainer}>
+          {this.props.enabledDeleteButton &&
+            <DeleteButton name={this.props.t('delete')} onPress={() => this.props.deleteWalletData(this.props.t)} />}
           <View style={{ flex: 1, maxHeight: 50 }}>
             <Text style={{ fontSize: 20, alignSelf: 'center' }}>{this.props.t('description')}</Text>
           </View>
@@ -146,6 +164,8 @@ ManageAttributes.propTypes = {
   districtAttr: PropTypes.shape({
     object: PropTypes.string,
   }),
+  deleteWalletData: PropTypes.func.isRequired,
+  enabledDeleteButton: PropTypes.bool.isRequired,
 };
 
 ManageAttributes.defaultProps = {
@@ -162,11 +182,21 @@ const mapStateToProps = state => ({
   currentDateAttr: state.attributes.list.get('schema:dateOfBirth'),
   districtAttr: state.attributes.list.get('schema:district'),
   errorSaveAttributes: state.attributes.errorSaveAttributes,
+  enabledDeleteButton: state.featureToggles.enabledDeleteButton,
 });
 
 const mapDispatchToProps = dispatch => ({
   saveAttributes: async (dateOfBirth, district, walletId) =>
     dispatch(saveAttributes(dateOfBirth, district, walletId, SecureStore.setItemAsync)),
+  deleteWalletData: (t) => {
+    const errorDeletingWalletData = () => alert(t('errorDelete')); //eslint-disable-line
+    const successDeletingWalletData = () => dispatch(resetNavigation());
+    return dispatch(deleteWalletData(
+      SecureStore.deleteItemAsync,
+      errorDeletingWalletData,
+      successDeletingWalletData,
+    ));
+  },
 });
 
 export default translate('manageAttributes', { i18n })(connect(mapStateToProps, mapDispatchToProps)(ManageAttributes));
