@@ -25,7 +25,7 @@ function Login(props) {
           {props.t('header')}
         </Text>
       </View>
-      <View style={{ flex: 6, justifyContent: 'center' }}>
+      <View style={{ flex: 6 }}>
         {!props.hasCredentials && <EmptyLogin message={props.t('emptyMessage')} /> }
         {props.hasCredentials && <CredentialList /> }
       </View>

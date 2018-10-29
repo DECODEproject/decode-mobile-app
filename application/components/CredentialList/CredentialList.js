@@ -15,17 +15,21 @@ const onSelected = (index, value) => {
 
 function CredentialList(props) {
   return (
-    <View>
-      <Text>{props.t('subHeader')}</Text>
-      <RadioGroup onSelect={onSelected} selectedIndex={0}>
-        {
-          props.credentials.map(c => (
-            <RadioButton value={c.object} key={c.object}>
-              <Text>{c.object}</Text>
-            </RadioButton>))
-        }
-      </RadioGroup>
-      <Button name={props.t('button')} onPress={() => props.login(props.credentials[0])} />
+    <View style={{ flex: 1 }}>
+      <View style={{ flex: 5 }}>
+        <Text style={{ fontWeight: 'bold', marginBottom: 20 }}>{props.t('subHeader')}</Text>
+        <RadioGroup onSelect={onSelected} selectedIndex={0} color="rgb(0,163,158)" >
+          {
+            props.credentials.map(c => (
+              <RadioButton value={c.object} key={c.object}>
+                <Text>{c.object}</Text>
+              </RadioButton>))
+          }
+        </RadioGroup>
+      </View>
+      <View style={{ flex: 1 }} >
+        <Button name={props.t('button')} onPress={() => props.login(props.credentials[0])} />
+      </View>
     </View>
   );
 }
