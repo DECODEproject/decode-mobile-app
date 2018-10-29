@@ -13,6 +13,12 @@ export default {
     cancel: 'O cancel·lar la teva participació en aquesta proposta',
     requiredAttributes: 'Dades requerides per signar la proposta',
   },
+  deleteButton: {
+    title: 'Esborrar totes les dades',
+    description: 'Totes les teves dades i el teu PIN seran esborrats de l\'app',
+    cancel: 'Cancel·lar',
+    accept: 'Acceptar',
+  },
   home: {
     badPin: 'Codi PIN incorrecte',
     button: 'Accedir',
@@ -33,7 +39,6 @@ export default {
     add: 'Afegir',
     edit: 'Editar',
     save: 'Desar',
-    delete: 'Esborrar totes les dades',
     errorDelete: 'Error en esborrar les dades',
   },
   newDateOfBirthAttribute: {

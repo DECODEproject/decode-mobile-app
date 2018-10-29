@@ -13,6 +13,12 @@ export default {
     cancel: 'O cancela la participación en esta propuesta',
     requiredAttributes: 'Datos requeridos para firmar la propuesta',
   },
+  deleteButton: {
+    title: 'Borrar todos los datos',
+    description: 'Todos tus datos y el PIN serán borrados de la app',
+    cancel: 'Cancelar',
+    accept: 'Aceptar',
+  },
   home: {
     badPin: 'Código PIN incorrecto',
     button: 'Acceder',
@@ -33,7 +39,6 @@ export default {
     add: 'Agregar',
     edit: 'Editar',
     save: 'Guardar',
-    delete: 'Borrar todos los datos',
     errorDelete: 'Error al borrar los datos',
   },
   newDateOfBirthAttribute: {

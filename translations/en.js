@@ -13,6 +13,12 @@ export default {
     cancel: 'Or cancel signing this proposal',
     requiredAttributes: 'This data is required to sign the proposal',
   },
+  deleteButton: {
+    title: 'Delete all data',
+    description: 'All your data and PIN will be deleted from the app',
+    cancel: 'Cancel',
+    accept: 'Accept',
+  },
   home: {
     badPin: 'Incorrect PIN code',
     button: 'Sign In',
@@ -33,7 +39,6 @@ export default {
     add: 'Add',
     edit: 'Edit',
     save: 'Save',
-    delete: 'Delete all data',
     errorDelete: 'Error deleting data',
   },
   newDateOfBirthAttribute: {
