@@ -78,9 +78,9 @@ ShallowWrapper {
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -105,7 +105,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -181,8 +181,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -208,7 +208,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -284,9 +284,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -311,7 +311,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -466,9 +466,9 @@ Haz click en el botón inferior para empezar",
           "resources": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir dades",
                 "errorDelete": "Error en esborrar les dades",
-                "nodata": "Comencem per afegir dades.
+                "manage": "Gestionar dades",
+                "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
               },
               "attributesSummary": Object {
@@ -493,7 +493,7 @@ Fes click en el botó per començar.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
                 "description": "Pots afegir les següents dades",
@@ -569,8 +569,8 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add Data",
                 "errorDelete": "Error deleting data",
+                "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
               },
@@ -596,7 +596,7 @@ Tap the button below to begin.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
                 "description": "You can add the following personal data",
@@ -672,9 +672,9 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir datos",
                 "errorDelete": "Error al borrar los datos",
-                "nodata": "Empecemos por añadir tus datos.
+                "manage": "Gestionar datos",
+                "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
               },
               "attributesSummary": Object {
@@ -699,7 +699,7 @@ Haz click en el botón inferior para empezar",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
                 "description": "Puedes añadir los siguientes datos",
@@ -843,9 +843,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -870,7 +870,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -946,8 +946,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -973,7 +973,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -1049,9 +1049,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -1076,7 +1076,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -1207,9 +1207,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -1234,7 +1234,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -1310,8 +1310,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -1337,7 +1337,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -1413,9 +1413,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -1440,7 +1440,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -1581,9 +1581,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -1608,7 +1608,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -1684,8 +1684,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -1711,7 +1711,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -1787,9 +1787,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -1814,7 +1814,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -1950,9 +1950,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -1977,7 +1977,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -2053,8 +2053,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -2080,7 +2080,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -2156,9 +2156,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -2183,7 +2183,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -2274,9 +2274,9 @@ Haz click en el botón inferior para empezar",
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -2301,7 +2301,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -2377,8 +2377,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -2404,7 +2404,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -2480,9 +2480,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -2507,7 +2507,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -2641,9 +2641,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -2668,7 +2668,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -2744,8 +2744,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -2771,7 +2771,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -2847,9 +2847,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -2874,7 +2874,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -3009,9 +3009,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -3036,7 +3036,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -3112,8 +3112,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -3139,7 +3139,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -3215,9 +3215,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -3242,7 +3242,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -3397,9 +3397,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -3424,7 +3424,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -3500,8 +3500,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -3527,7 +3527,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -3603,9 +3603,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -3630,7 +3630,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -3761,9 +3761,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -3788,7 +3788,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -3864,8 +3864,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -3891,7 +3891,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -3967,9 +3967,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -3994,7 +3994,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -4134,9 +4134,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -4161,7 +4161,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -4237,8 +4237,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -4264,7 +4264,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -4340,9 +4340,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -4367,7 +4367,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -4510,9 +4510,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -4537,7 +4537,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -4613,8 +4613,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -4640,7 +4640,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -4716,9 +4716,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -4743,7 +4743,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -4874,9 +4874,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -4901,7 +4901,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -4977,8 +4977,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -5004,7 +5004,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -5080,9 +5080,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -5107,7 +5107,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -5248,9 +5248,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -5275,7 +5275,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -5351,8 +5351,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -5378,7 +5378,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -5454,9 +5454,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -5481,7 +5481,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -6507,9 +6507,9 @@ Haz click en el botón inferior para empezar",
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir dades",
                 "errorDelete": "Error en esborrar les dades",
-                "nodata": "Comencem per afegir dades.
+                "manage": "Gestionar dades",
+                "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
               },
               "attributesSummary": Object {
@@ -6534,7 +6534,7 @@ Fes click en el botó per començar.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
                 "description": "Pots afegir les següents dades",
@@ -6610,8 +6610,8 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add Data",
                 "errorDelete": "Error deleting data",
+                "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
               },
@@ -6637,7 +6637,7 @@ Tap the button below to begin.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
                 "description": "You can add the following personal data",
@@ -6713,9 +6713,9 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir datos",
                 "errorDelete": "Error al borrar los datos",
-                "nodata": "Empecemos por añadir tus datos.
+                "manage": "Gestionar datos",
+                "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
               },
               "attributesSummary": Object {
@@ -6740,7 +6740,7 @@ Haz click en el botón inferior para empezar",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
                 "description": "Puedes añadir los siguientes datos",
@@ -6819,9 +6819,9 @@ Haz click en el botón inferior para empezar",
         "store": Object {
           "ca": Object {
             "attributesLanding": Object {
-              "add": "Afegir dades",
               "errorDelete": "Error en esborrar les dades",
-              "nodata": "Comencem per afegir dades.
+              "manage": "Gestionar dades",
+              "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
             },
             "attributesSummary": Object {
@@ -6846,7 +6846,7 @@ Fes click en el botó per començar.",
               "header": "BCNNow necessita un credencial per accedir",
               "subHeader": "Pots accedir compartint:",
             },
-            "newAttributes": Object {
+            "manageAttributes": Object {
               "add": "Afegir",
               "ageAttribute": "Data de Naixement",
               "description": "Pots afegir les següents dades",
@@ -6922,8 +6922,8 @@ Fes click en el botó per començar.",
           },
           "en": Object {
             "attributesLanding": Object {
-              "add": "Add Data",
               "errorDelete": "Error deleting data",
+              "manage": "Manage Data",
               "nodata": "Get started by adding some data.
 Tap the button below to begin.",
             },
@@ -6949,7 +6949,7 @@ Tap the button below to begin.",
               "header": "BCNNow requires a credential to log you in",
               "subHeader": "You can log in by sharing your:",
             },
-            "newAttributes": Object {
+            "manageAttributes": Object {
               "add": "Add",
               "ageAttribute": "Date of Birth",
               "description": "You can add the following personal data",
@@ -7025,9 +7025,9 @@ Tap the button below to begin.",
           },
           "es": Object {
             "attributesLanding": Object {
-              "add": "Añadir datos",
               "errorDelete": "Error al borrar los datos",
-              "nodata": "Empecemos por añadir tus datos.
+              "manage": "Gestionar datos",
+              "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
             },
             "attributesSummary": Object {
@@ -7052,7 +7052,7 @@ Haz click en el botón inferior para empezar",
               "header": "BCNNow necesita un credencial para acceder",
               "subHeader": "Puedes acceder compartiendo:",
             },
-            "newAttributes": Object {
+            "manageAttributes": Object {
               "add": "Agregar",
               "ageAttribute": "Fecha de Nacimiento",
               "description": "Puedes añadir los siguientes datos",
@@ -7184,9 +7184,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -7211,7 +7211,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -7287,8 +7287,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -7314,7 +7314,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -7390,9 +7390,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -7417,7 +7417,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -7548,9 +7548,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -7575,7 +7575,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -7651,8 +7651,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -7678,7 +7678,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -7754,9 +7754,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -7781,7 +7781,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -7922,9 +7922,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -7949,7 +7949,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -8025,8 +8025,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -8052,7 +8052,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -8128,9 +8128,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -8155,7 +8155,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -8291,9 +8291,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -8318,7 +8318,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -8394,8 +8394,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -8421,7 +8421,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -8497,9 +8497,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -8524,7 +8524,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -8615,9 +8615,9 @@ Haz click en el botón inferior para empezar",
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -8642,7 +8642,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -8718,8 +8718,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -8745,7 +8745,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -8821,9 +8821,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -8848,7 +8848,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -8982,9 +8982,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -9009,7 +9009,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -9085,8 +9085,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -9112,7 +9112,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -9188,9 +9188,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -9215,7 +9215,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -9350,9 +9350,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -9377,7 +9377,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -9453,8 +9453,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -9480,7 +9480,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -9556,9 +9556,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -9583,7 +9583,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -9731,9 +9731,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -9758,7 +9758,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -9834,8 +9834,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -9861,7 +9861,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -9937,9 +9937,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -9964,7 +9964,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -10095,9 +10095,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -10122,7 +10122,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -10198,8 +10198,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -10225,7 +10225,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -10301,9 +10301,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -10328,7 +10328,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -10469,9 +10469,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -10496,7 +10496,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -10572,8 +10572,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -10599,7 +10599,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -10675,9 +10675,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -10702,7 +10702,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -10838,9 +10838,9 @@ Haz click en el botón inferior para empezar",
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -10865,7 +10865,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -10941,8 +10941,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -10968,7 +10968,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -11044,9 +11044,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -11071,7 +11071,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -11212,9 +11212,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -11239,7 +11239,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -11315,8 +11315,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -11342,7 +11342,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -11418,9 +11418,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -11445,7 +11445,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -11576,9 +11576,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -11603,7 +11603,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -11679,8 +11679,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -11706,7 +11706,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -11782,9 +11782,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -11809,7 +11809,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -11950,9 +11950,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -11977,7 +11977,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -12053,8 +12053,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -12080,7 +12080,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -12156,9 +12156,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -12183,7 +12183,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -13209,9 +13209,9 @@ Haz click en el botón inferior para empezar",
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir dades",
                 "errorDelete": "Error en esborrar les dades",
-                "nodata": "Comencem per afegir dades.
+                "manage": "Gestionar dades",
+                "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
               },
               "attributesSummary": Object {
@@ -13236,7 +13236,7 @@ Fes click en el botó per començar.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
                 "description": "Pots afegir les següents dades",
@@ -13312,8 +13312,8 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add Data",
                 "errorDelete": "Error deleting data",
+                "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
               },
@@ -13339,7 +13339,7 @@ Tap the button below to begin.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
                 "description": "You can add the following personal data",
@@ -13415,9 +13415,9 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir datos",
                 "errorDelete": "Error al borrar los datos",
-                "nodata": "Empecemos por añadir tus datos.
+                "manage": "Gestionar datos",
+                "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
               },
               "attributesSummary": Object {
@@ -13442,7 +13442,7 @@ Haz click en el botón inferior para empezar",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
                 "description": "Puedes añadir los siguientes datos",
@@ -14998,9 +14998,9 @@ ShallowWrapper {
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -15025,7 +15025,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -15101,8 +15101,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -15128,7 +15128,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -15204,9 +15204,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -15231,7 +15231,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -15383,9 +15383,9 @@ Haz click en el botón inferior para empezar",
           "resources": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir dades",
                 "errorDelete": "Error en esborrar les dades",
-                "nodata": "Comencem per afegir dades.
+                "manage": "Gestionar dades",
+                "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
               },
               "attributesSummary": Object {
@@ -15410,7 +15410,7 @@ Fes click en el botó per començar.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
                 "description": "Pots afegir les següents dades",
@@ -15486,8 +15486,8 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add Data",
                 "errorDelete": "Error deleting data",
+                "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
               },
@@ -15513,7 +15513,7 @@ Tap the button below to begin.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
                 "description": "You can add the following personal data",
@@ -15589,9 +15589,9 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir datos",
                 "errorDelete": "Error al borrar los datos",
-                "nodata": "Empecemos por añadir tus datos.
+                "manage": "Gestionar datos",
+                "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
               },
               "attributesSummary": Object {
@@ -15616,7 +15616,7 @@ Haz click en el botón inferior para empezar",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
                 "description": "Puedes añadir los siguientes datos",
@@ -15760,9 +15760,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -15787,7 +15787,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -15863,8 +15863,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -15890,7 +15890,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -15966,9 +15966,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -15993,7 +15993,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -16124,9 +16124,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -16151,7 +16151,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -16227,8 +16227,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -16254,7 +16254,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -16330,9 +16330,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -16357,7 +16357,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -16498,9 +16498,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -16525,7 +16525,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -16601,8 +16601,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -16628,7 +16628,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -16704,9 +16704,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -16731,7 +16731,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -16867,9 +16867,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -16894,7 +16894,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -16970,8 +16970,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -16997,7 +16997,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -17073,9 +17073,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -17100,7 +17100,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -17191,9 +17191,9 @@ Haz click en el botón inferior para empezar",
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -17218,7 +17218,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -17294,8 +17294,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -17321,7 +17321,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -17397,9 +17397,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -17424,7 +17424,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -17558,9 +17558,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -17585,7 +17585,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -17661,8 +17661,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -17688,7 +17688,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -17764,9 +17764,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -17791,7 +17791,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -17926,9 +17926,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -17953,7 +17953,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -18029,8 +18029,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -18056,7 +18056,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -18132,9 +18132,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -18159,7 +18159,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -18314,9 +18314,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -18341,7 +18341,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -18417,8 +18417,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -18444,7 +18444,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -18520,9 +18520,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -18547,7 +18547,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -18678,9 +18678,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -18705,7 +18705,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -18781,8 +18781,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -18808,7 +18808,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -18884,9 +18884,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -18911,7 +18911,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -19051,9 +19051,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -19078,7 +19078,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -19154,8 +19154,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -19181,7 +19181,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -19257,9 +19257,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -19284,7 +19284,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -19427,9 +19427,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -19454,7 +19454,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -19530,8 +19530,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -19557,7 +19557,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -19633,9 +19633,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -19660,7 +19660,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -19791,9 +19791,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -19818,7 +19818,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -19894,8 +19894,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -19921,7 +19921,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -19997,9 +19997,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -20024,7 +20024,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -20165,9 +20165,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -20192,7 +20192,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -20268,8 +20268,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -20295,7 +20295,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -20371,9 +20371,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -20398,7 +20398,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -21424,9 +21424,9 @@ Haz click en el botón inferior para empezar",
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir dades",
                 "errorDelete": "Error en esborrar les dades",
-                "nodata": "Comencem per afegir dades.
+                "manage": "Gestionar dades",
+                "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
               },
               "attributesSummary": Object {
@@ -21451,7 +21451,7 @@ Fes click en el botó per començar.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
                 "description": "Pots afegir les següents dades",
@@ -21527,8 +21527,8 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add Data",
                 "errorDelete": "Error deleting data",
+                "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
               },
@@ -21554,7 +21554,7 @@ Tap the button below to begin.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
                 "description": "You can add the following personal data",
@@ -21630,9 +21630,9 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir datos",
                 "errorDelete": "Error al borrar los datos",
-                "nodata": "Empecemos por añadir tus datos.
+                "manage": "Gestionar datos",
+                "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
               },
               "attributesSummary": Object {
@@ -21657,7 +21657,7 @@ Haz click en el botón inferior para empezar",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
                 "description": "Puedes añadir los siguientes datos",
@@ -21736,9 +21736,9 @@ Haz click en el botón inferior para empezar",
         "store": Object {
           "ca": Object {
             "attributesLanding": Object {
-              "add": "Afegir dades",
               "errorDelete": "Error en esborrar les dades",
-              "nodata": "Comencem per afegir dades.
+              "manage": "Gestionar dades",
+              "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
             },
             "attributesSummary": Object {
@@ -21763,7 +21763,7 @@ Fes click en el botó per començar.",
               "header": "BCNNow necessita un credencial per accedir",
               "subHeader": "Pots accedir compartint:",
             },
-            "newAttributes": Object {
+            "manageAttributes": Object {
               "add": "Afegir",
               "ageAttribute": "Data de Naixement",
               "description": "Pots afegir les següents dades",
@@ -21839,8 +21839,8 @@ Fes click en el botó per començar.",
           },
           "en": Object {
             "attributesLanding": Object {
-              "add": "Add Data",
               "errorDelete": "Error deleting data",
+              "manage": "Manage Data",
               "nodata": "Get started by adding some data.
 Tap the button below to begin.",
             },
@@ -21866,7 +21866,7 @@ Tap the button below to begin.",
               "header": "BCNNow requires a credential to log you in",
               "subHeader": "You can log in by sharing your:",
             },
-            "newAttributes": Object {
+            "manageAttributes": Object {
               "add": "Add",
               "ageAttribute": "Date of Birth",
               "description": "You can add the following personal data",
@@ -21942,9 +21942,9 @@ Tap the button below to begin.",
           },
           "es": Object {
             "attributesLanding": Object {
-              "add": "Añadir datos",
               "errorDelete": "Error al borrar los datos",
-              "nodata": "Empecemos por añadir tus datos.
+              "manage": "Gestionar datos",
+              "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
             },
             "attributesSummary": Object {
@@ -21969,7 +21969,7 @@ Haz click en el botón inferior para empezar",
               "header": "BCNNow necesita un credencial para acceder",
               "subHeader": "Puedes acceder compartiendo:",
             },
-            "newAttributes": Object {
+            "manageAttributes": Object {
               "add": "Agregar",
               "ageAttribute": "Fecha de Nacimiento",
               "description": "Puedes añadir los siguientes datos",
@@ -22101,9 +22101,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -22128,7 +22128,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -22204,8 +22204,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -22231,7 +22231,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -22307,9 +22307,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -22334,7 +22334,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -22465,9 +22465,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -22492,7 +22492,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -22568,8 +22568,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -22595,7 +22595,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -22671,9 +22671,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -22698,7 +22698,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -22839,9 +22839,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -22866,7 +22866,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -22942,8 +22942,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -22969,7 +22969,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -23045,9 +23045,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -23072,7 +23072,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -23208,9 +23208,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -23235,7 +23235,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -23311,8 +23311,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -23338,7 +23338,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -23414,9 +23414,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -23441,7 +23441,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -23532,9 +23532,9 @@ Haz click en el botón inferior para empezar",
             "store": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -23559,7 +23559,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -23635,8 +23635,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -23662,7 +23662,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -23738,9 +23738,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -23765,7 +23765,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -23899,9 +23899,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -23926,7 +23926,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -24002,8 +24002,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -24029,7 +24029,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -24105,9 +24105,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -24132,7 +24132,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -24267,9 +24267,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -24294,7 +24294,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -24370,8 +24370,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -24397,7 +24397,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -24473,9 +24473,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -24500,7 +24500,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -24648,9 +24648,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -24675,7 +24675,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -24751,8 +24751,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -24778,7 +24778,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -24854,9 +24854,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -24881,7 +24881,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -25012,9 +25012,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -25039,7 +25039,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -25115,8 +25115,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -25142,7 +25142,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -25218,9 +25218,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -25245,7 +25245,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -25386,9 +25386,9 @@ Haz click en el botón inferior para empezar",
               "resources": Object {
                 "ca": Object {
                   "attributesLanding": Object {
-                    "add": "Afegir dades",
                     "errorDelete": "Error en esborrar les dades",
-                    "nodata": "Comencem per afegir dades.
+                    "manage": "Gestionar dades",
+                    "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                   },
                   "attributesSummary": Object {
@@ -25413,7 +25413,7 @@ Fes click en el botó per començar.",
                     "header": "BCNNow necessita un credencial per accedir",
                     "subHeader": "Pots accedir compartint:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Afegir",
                     "ageAttribute": "Data de Naixement",
                     "description": "Pots afegir les següents dades",
@@ -25489,8 +25489,8 @@ Fes click en el botó per començar.",
                 },
                 "en": Object {
                   "attributesLanding": Object {
-                    "add": "Add Data",
                     "errorDelete": "Error deleting data",
+                    "manage": "Manage Data",
                     "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                   },
@@ -25516,7 +25516,7 @@ Tap the button below to begin.",
                     "header": "BCNNow requires a credential to log you in",
                     "subHeader": "You can log in by sharing your:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Add",
                     "ageAttribute": "Date of Birth",
                     "description": "You can add the following personal data",
@@ -25592,9 +25592,9 @@ Tap the button below to begin.",
                 },
                 "es": Object {
                   "attributesLanding": Object {
-                    "add": "Añadir datos",
                     "errorDelete": "Error al borrar los datos",
-                    "nodata": "Empecemos por añadir tus datos.
+                    "manage": "Gestionar datos",
+                    "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                   },
                   "attributesSummary": Object {
@@ -25619,7 +25619,7 @@ Haz click en el botón inferior para empezar",
                     "header": "BCNNow necesita un credencial para acceder",
                     "subHeader": "Puedes acceder compartiendo:",
                   },
-                  "newAttributes": Object {
+                  "manageAttributes": Object {
                     "add": "Agregar",
                     "ageAttribute": "Fecha de Nacimiento",
                     "description": "Puedes añadir los siguientes datos",
@@ -25755,9 +25755,9 @@ Haz click en el botón inferior para empezar",
             "resources": Object {
               "ca": Object {
                 "attributesLanding": Object {
-                  "add": "Afegir dades",
                   "errorDelete": "Error en esborrar les dades",
-                  "nodata": "Comencem per afegir dades.
+                  "manage": "Gestionar dades",
+                  "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                 },
                 "attributesSummary": Object {
@@ -25782,7 +25782,7 @@ Fes click en el botó per començar.",
                   "header": "BCNNow necessita un credencial per accedir",
                   "subHeader": "Pots accedir compartint:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Afegir",
                   "ageAttribute": "Data de Naixement",
                   "description": "Pots afegir les següents dades",
@@ -25858,8 +25858,8 @@ Fes click en el botó per començar.",
               },
               "en": Object {
                 "attributesLanding": Object {
-                  "add": "Add Data",
                   "errorDelete": "Error deleting data",
+                  "manage": "Manage Data",
                   "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                 },
@@ -25885,7 +25885,7 @@ Tap the button below to begin.",
                   "header": "BCNNow requires a credential to log you in",
                   "subHeader": "You can log in by sharing your:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Add",
                   "ageAttribute": "Date of Birth",
                   "description": "You can add the following personal data",
@@ -25961,9 +25961,9 @@ Tap the button below to begin.",
               },
               "es": Object {
                 "attributesLanding": Object {
-                  "add": "Añadir datos",
                   "errorDelete": "Error al borrar los datos",
-                  "nodata": "Empecemos por añadir tus datos.
+                  "manage": "Gestionar datos",
+                  "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                 },
                 "attributesSummary": Object {
@@ -25988,7 +25988,7 @@ Haz click en el botón inferior para empezar",
                   "header": "BCNNow necesita un credencial para acceder",
                   "subHeader": "Puedes acceder compartiendo:",
                 },
-                "newAttributes": Object {
+                "manageAttributes": Object {
                   "add": "Agregar",
                   "ageAttribute": "Fecha de Nacimiento",
                   "description": "Puedes añadir los siguientes datos",
@@ -26129,9 +26129,9 @@ Haz click en el botón inferior para empezar",
                   "resources": Object {
                     "ca": Object {
                       "attributesLanding": Object {
-                        "add": "Afegir dades",
                         "errorDelete": "Error en esborrar les dades",
-                        "nodata": "Comencem per afegir dades.
+                        "manage": "Gestionar dades",
+                        "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                       },
                       "attributesSummary": Object {
@@ -26156,7 +26156,7 @@ Fes click en el botó per començar.",
                         "header": "BCNNow necessita un credencial per accedir",
                         "subHeader": "Pots accedir compartint:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Afegir",
                         "ageAttribute": "Data de Naixement",
                         "description": "Pots afegir les següents dades",
@@ -26232,8 +26232,8 @@ Fes click en el botó per començar.",
                     },
                     "en": Object {
                       "attributesLanding": Object {
-                        "add": "Add Data",
                         "errorDelete": "Error deleting data",
+                        "manage": "Manage Data",
                         "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                       },
@@ -26259,7 +26259,7 @@ Tap the button below to begin.",
                         "header": "BCNNow requires a credential to log you in",
                         "subHeader": "You can log in by sharing your:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Add",
                         "ageAttribute": "Date of Birth",
                         "description": "You can add the following personal data",
@@ -26335,9 +26335,9 @@ Tap the button below to begin.",
                     },
                     "es": Object {
                       "attributesLanding": Object {
-                        "add": "Añadir datos",
                         "errorDelete": "Error al borrar los datos",
-                        "nodata": "Empecemos por añadir tus datos.
+                        "manage": "Gestionar datos",
+                        "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                       },
                       "attributesSummary": Object {
@@ -26362,7 +26362,7 @@ Haz click en el botón inferior para empezar",
                         "header": "BCNNow necesita un credencial para acceder",
                         "subHeader": "Puedes acceder compartiendo:",
                       },
-                      "newAttributes": Object {
+                      "manageAttributes": Object {
                         "add": "Agregar",
                         "ageAttribute": "Fecha de Nacimiento",
                         "description": "Puedes añadir los siguientes datos",
@@ -26493,9 +26493,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -26520,7 +26520,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -26596,8 +26596,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -26623,7 +26623,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -26699,9 +26699,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -26726,7 +26726,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -26867,9 +26867,9 @@ Haz click en el botón inferior para empezar",
                 "resources": Object {
                   "ca": Object {
                     "attributesLanding": Object {
-                      "add": "Afegir dades",
                       "errorDelete": "Error en esborrar les dades",
-                      "nodata": "Comencem per afegir dades.
+                      "manage": "Gestionar dades",
+                      "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
                     },
                     "attributesSummary": Object {
@@ -26894,7 +26894,7 @@ Fes click en el botó per començar.",
                       "header": "BCNNow necessita un credencial per accedir",
                       "subHeader": "Pots accedir compartint:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Afegir",
                       "ageAttribute": "Data de Naixement",
                       "description": "Pots afegir les següents dades",
@@ -26970,8 +26970,8 @@ Fes click en el botó per començar.",
                   },
                   "en": Object {
                     "attributesLanding": Object {
-                      "add": "Add Data",
                       "errorDelete": "Error deleting data",
+                      "manage": "Manage Data",
                       "nodata": "Get started by adding some data.
 Tap the button below to begin.",
                     },
@@ -26997,7 +26997,7 @@ Tap the button below to begin.",
                       "header": "BCNNow requires a credential to log you in",
                       "subHeader": "You can log in by sharing your:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Add",
                       "ageAttribute": "Date of Birth",
                       "description": "You can add the following personal data",
@@ -27073,9 +27073,9 @@ Tap the button below to begin.",
                   },
                   "es": Object {
                     "attributesLanding": Object {
-                      "add": "Añadir datos",
                       "errorDelete": "Error al borrar los datos",
-                      "nodata": "Empecemos por añadir tus datos.
+                      "manage": "Gestionar datos",
+                      "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
                     },
                     "attributesSummary": Object {
@@ -27100,7 +27100,7 @@ Haz click en el botón inferior para empezar",
                       "header": "BCNNow necesita un credencial para acceder",
                       "subHeader": "Puedes acceder compartiendo:",
                     },
-                    "newAttributes": Object {
+                    "manageAttributes": Object {
                       "add": "Agregar",
                       "ageAttribute": "Fecha de Nacimiento",
                       "description": "Puedes añadir los siguientes datos",
@@ -28126,9 +28126,9 @@ Haz click en el botón inferior para empezar",
           "resourceStore": Object {
             "ca": Object {
               "attributesLanding": Object {
-                "add": "Afegir dades",
                 "errorDelete": "Error en esborrar les dades",
-                "nodata": "Comencem per afegir dades.
+                "manage": "Gestionar dades",
+                "nodata": "Comencem per afegir algunes dades.
 Fes click en el botó per començar.",
               },
               "attributesSummary": Object {
@@ -28153,7 +28153,7 @@ Fes click en el botó per començar.",
                 "header": "BCNNow necessita un credencial per accedir",
                 "subHeader": "Pots accedir compartint:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Afegir",
                 "ageAttribute": "Data de Naixement",
                 "description": "Pots afegir les següents dades",
@@ -28229,8 +28229,8 @@ Fes click en el botó per començar.",
             },
             "en": Object {
               "attributesLanding": Object {
-                "add": "Add Data",
                 "errorDelete": "Error deleting data",
+                "manage": "Manage Data",
                 "nodata": "Get started by adding some data.
 Tap the button below to begin.",
               },
@@ -28256,7 +28256,7 @@ Tap the button below to begin.",
                 "header": "BCNNow requires a credential to log you in",
                 "subHeader": "You can log in by sharing your:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Add",
                 "ageAttribute": "Date of Birth",
                 "description": "You can add the following personal data",
@@ -28332,9 +28332,9 @@ Tap the button below to begin.",
             },
             "es": Object {
               "attributesLanding": Object {
-                "add": "Añadir datos",
                 "errorDelete": "Error al borrar los datos",
-                "nodata": "Empecemos por añadir tus datos.
+                "manage": "Gestionar datos",
+                "nodata": "Empecemos por añadir algunos datos.
 Haz click en el botón inferior para empezar",
               },
               "attributesSummary": Object {
@@ -28359,7 +28359,7 @@ Haz click en el botón inferior para empezar",
                 "header": "BCNNow necesita un credencial para acceder",
                 "subHeader": "Puedes acceder compartiendo:",
               },
-              "newAttributes": Object {
+              "manageAttributes": Object {
                 "add": "Agregar",
                 "ageAttribute": "Fecha de Nacimiento",
                 "description": "Puedes añadir los siguientes datos",

@@ -82,7 +82,7 @@ class AttributesLanding extends React.Component {
           <DeleteButton onPress={() => this.props.deleteWalletData(this.props.t)} />}
         <View style={{ flex: 2 }}>
           <Button
-            name={this.props.t('add')}
+            name={this.props.t('manage')}
             onPress={() => this.props.goToNewAttributes()}
           />
         </View>

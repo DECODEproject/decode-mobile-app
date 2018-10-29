@@ -1,7 +1,7 @@
 export default {
   attributesLanding: {
-    nodata: 'Comencem per afegir dades.\nFes click en el botó per començar.',
-    add: 'Afegir dades',
+    nodata: 'Comencem per afegir algunes dades.\nFes click en el botó per començar.',
+    manage: 'Gestionar dades',
     errorDelete: 'Error en esborrar les dades',
   },
   attributesSummary: {
@@ -26,7 +26,7 @@ export default {
     subHeader: 'Pots accedir compartint:',
     button: 'Accedir',
   },
-  newAttributes: {
+  manageAttributes: {
     description: 'Pots afegir les següents dades',
     ageAttribute: 'Data de Naixement',
     districtAttribute: 'Districte',

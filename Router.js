@@ -7,7 +7,7 @@ import AttributesSummary from './screens/AttributesSummary';
 import AttributesLanding from './screens/AttributesLanding';
 import PinSetup from './screens/PinSetup';
 import Walkthrough from './screens/Walkthrough';
-import NewAttributes from './screens/NewAttributes';
+import ManageAttributes from './screens/ManageAttributes';
 import Error from './screens/Error';
 import Login from './screens/Login';
 
@@ -20,7 +20,7 @@ const Router = createRouter(() => ({
   attributesLanding: () => AttributesLanding,
   signOutcome: () => SignOutcome,
   pinSetup: () => PinSetup,
-  newAttributes: () => NewAttributes,
+  manageAttributes: () => ManageAttributes,
   error: () => Error,
   login: () => Login,
 }));

@@ -1,7 +1,7 @@
 export default {
   attributesLanding: {
-    nodata: 'Empecemos por añadir tus datos.\nHaz click en el botón inferior para empezar',
-    add: 'Añadir datos',
+    nodata: 'Empecemos por añadir algunos datos.\nHaz click en el botón inferior para empezar',
+    manage: 'Gestionar datos',
     errorDelete: 'Error al borrar los datos',
   },
   attributesSummary: {
@@ -26,7 +26,7 @@ export default {
     subHeader: 'Puedes acceder compartiendo:',
     button: 'Acceder',
   },
-  newAttributes: {
+  manageAttributes: {
     description: 'Puedes añadir los siguientes datos',
     ageAttribute: 'Fecha de Nacimiento',
     districtAttribute: 'Distrito',
