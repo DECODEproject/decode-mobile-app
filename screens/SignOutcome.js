@@ -114,9 +114,7 @@ SignOutcome.propTypes = {
 
 SignOutcome.defaultProps = {
   petition: undefined,
-  links: [
-    'Make Poblenou a car-free zone',
-    'Reduce noise pollution'],
+  links: [],
 };
 
 const mapStateToProps = state => ({
