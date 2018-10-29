@@ -9,7 +9,7 @@ import setDecidimInfo from '../application/redux/actions/decidimInfo';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { setCredential, checkComingFromLogin } from '../application/redux/actions/login';
 import goToPetition from '../application/redux/actions/home';
-import authorizationAction, { updatePin } from '../application/redux/actions/authorization';
+import authorizationAction, { updatePin, resetPin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
 
@@ -66,6 +66,7 @@ class Home extends React.Component {
     return this.props.doAuthorize(this.props.pinCode).then((action) => {
       if (action.pinCorrect) {
         Keyboard.dismiss();
+        this.props.resetPin();
         this.goToNextPage();
       } else {
         alert(this.props.t('badPin')); // eslint-disable-line
@@ -126,6 +127,7 @@ Home.propTypes = {
   t: PropTypes.func.isRequired,
   loginFT: PropTypes.bool,
   isComingFromLogin: PropTypes.bool.isRequired,
+  resetPin: PropTypes.func.isRequired,
 };
 
 Home.defaultProps = {
@@ -156,6 +158,7 @@ const mapDispatchToProps = dispatch => ({
   },
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: pin => dispatch(updatePin(pin)),
+  resetPin: () => dispatch(resetPin()),
   initializeState: async (loginFT) => {
     await dispatch(setDecidimInfo());
     await dispatch(checkComingFromLogin());

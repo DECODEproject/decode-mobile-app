@@ -16,3 +16,9 @@ export function updatePin(pin) {
     pin,
   });
 }
+
+export function resetPin() {
+  return dispatch => dispatch({
+    type: types.RESET_PIN_ACTION,
+  });
+}

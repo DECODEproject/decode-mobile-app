@@ -17,6 +17,11 @@ export default (state = initialState, action) => {
         ...state,
         pin: action.pin,
       };
+    case types.RESET_PIN_ACTION:
+      return {
+        ...state,
+        pin: initialState.pin,
+      };
     default:
       return state;
   }

@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import createAuthorizationAction, { updatePin } from '../../../../../application/redux/actions/authorization';
+import createAuthorizationAction, { updatePin, resetPin } from '../../../../../application/redux/actions/authorization';
 import types from '../../../../../application/redux/actionTypes';
 
 const mockStore = configureMockStore([thunk]);
@@ -51,5 +51,16 @@ describe('authorization with pin', () => {
       expect(store.getActions()).toEqual(expectedActions);
     });
   });
-});
 
+  describe('resetPin', () => {
+    it('should dispatch resetPin action', () => {
+      const expectedActions = [{
+        type: types.RESET_PIN_ACTION,
+      }];
+
+      store.dispatch(resetPin());
+
+      expect(store.getActions()).toEqual(expectedActions);
+    });
+  });
+});

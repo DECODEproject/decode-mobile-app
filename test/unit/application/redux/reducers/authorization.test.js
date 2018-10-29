@@ -48,4 +48,16 @@ describe('authorize', () => {
 
     expect(actualState).toEqual(expectedState);
   });
+
+  it('should reset pin in state', () => {
+    const action = {
+      type: types.RESET_PIN_ACTION,
+    };
+    const initialState = { authorized: true, pin: '1234' };
+    const expectedState = { authorized: true, pin: '' };
+
+    const actualState = authorize(initialState, action);
+
+    expect(actualState).toEqual(expectedState);
+  });
 });
