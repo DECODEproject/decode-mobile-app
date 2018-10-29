@@ -5,6 +5,8 @@ import { Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import i18n from '../../../i18n';
+import { doLogin } from '../../redux/actions/login';
+import loginRequest from '../../../lib/LoginClient';
 import Button from '../Button/Button';
 
 const onSelected = (index, value) => {
@@ -23,7 +25,7 @@ function CredentialList(props) {
             </RadioButton>))
         }
       </RadioGroup>
-      <Button name={props.t('button')} />
+      <Button name={props.t('button')} onPress={() => props.login(props.credentials[0])} />
     </View>
   );
 }
@@ -31,9 +33,13 @@ function CredentialList(props) {
 CredentialList.propTypes = {
   t: PropTypes.func.isRequired,
   credentials: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  login: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = () => ({});
+const mapDispatchToProps = dispatch => ({
+  login: credential => dispatch(doLogin(loginRequest, credential)),
+});
+
 const mapStateToProps = state => ({
   credentials: state.login.credentials,
 });
