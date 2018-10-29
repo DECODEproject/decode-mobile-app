@@ -1,7 +1,7 @@
 export default {
   attributesLanding: {
     nodata: 'Get started by adding some data.\nTap the button below to begin.',
-    add: 'Add Data',
+    manage: 'Manage Data',
     errorDelete: 'Error deleting data',
   },
   attributesSummary: {
@@ -26,7 +26,7 @@ export default {
     subHeader: 'You can log in by sharing your:',
     button: 'Login',
   },
-  newAttributes: {
+  manageAttributes: {
     description: 'You can add the following personal data',
     ageAttribute: 'Date of Birth',
     districtAttribute: 'District',

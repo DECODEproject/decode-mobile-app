@@ -19,7 +19,7 @@ const maxDate = new Date();
 const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
 
-class NewAttributes extends Component {
+class ManageAttributes extends Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
@@ -135,7 +135,7 @@ class NewAttributes extends Component {
   }
 }
 
-NewAttributes.propTypes = {
+ManageAttributes.propTypes = {
   t: PropTypes.func.isRequired,
   saveAttributes: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
@@ -148,7 +148,7 @@ NewAttributes.propTypes = {
   }),
 };
 
-NewAttributes.defaultProps = {
+ManageAttributes.defaultProps = {
   currentDateAttr: {
     object: '',
   },
@@ -169,4 +169,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch(saveAttributes(dateOfBirth, district, walletId, SecureStore.setItemAsync)),
 });
 
-export default translate('newAttributes', { i18n })(connect(mapStateToProps, mapDispatchToProps)(NewAttributes));
+export default translate('manageAttributes', { i18n })(connect(mapStateToProps, mapDispatchToProps)(ManageAttributes));

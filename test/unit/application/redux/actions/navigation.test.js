@@ -44,7 +44,7 @@ describe('navigation actions', () => {
       store.dispatch(goToNewAttributes());
 
       const action = store.getActions()[0];
-      expect(action.child.routeName).toEqual('newAttributes');
+      expect(action.child.routeName).toEqual('manageAttributes');
     });
   });
 });

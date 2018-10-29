@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme';
 import thunk from 'redux-thunk';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import configureStore from 'redux-mock-store';
-import NewAttributes from '../../screens/NewAttributes';
+import ManageAttributes from '../../screens/ManageAttributes';
 import Button from '../../application/components/Button/Button';
 import types from '../../application/redux/actionTypes';
 
@@ -11,7 +11,7 @@ Enzyme.configure({ adapter: new Adapter() });
 
 const mockStore = configureStore([thunk]);
 
-describe('NewAttributes', () => {
+describe('ManageAttributes', () => {
   describe('add date of birth', () => {
     it('should show add button when no age attribute is stored', () => {
       const initialState = {
@@ -25,7 +25,7 @@ describe('NewAttributes', () => {
       };
 
       const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } });
@@ -51,7 +51,7 @@ describe('NewAttributes', () => {
       };
 
       const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } });
@@ -75,14 +75,14 @@ describe('NewAttributes', () => {
       };
 
       const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } })
         .dive();
 
-      const newAttributes = wrapper.instance();
-      newAttributes.onSetDateOfBirth(new Date(1985, 8, 4));
+      const manageAttributes = wrapper.instance();
+      manageAttributes.onSetDateOfBirth(new Date(1985, 8, 4));
 
       expect(wrapper.state()).toEqual({
         currentDate: '04/09/1985',
@@ -105,7 +105,7 @@ describe('NewAttributes', () => {
       };
 
       const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } });
@@ -129,7 +129,7 @@ describe('NewAttributes', () => {
       };
 
       const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } });
@@ -153,14 +153,14 @@ describe('NewAttributes', () => {
       };
 
       const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } })
         .dive();
 
-      const newAttributes = wrapper.instance();
-      newAttributes.onSetDistrict('3');
+      const manageAttributes = wrapper.instance();
+      manageAttributes.onSetDistrict('3');
 
       expect(wrapper.state()).toEqual({
         currentDate: '',
@@ -181,14 +181,14 @@ describe('NewAttributes', () => {
       };
 
       const store = mockStore(initialState);
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } })
         .dive();
 
-      const newAttributes = wrapper.instance();
-      newAttributes.onSetDistrict('0');
+      const manageAttributes = wrapper.instance();
+      manageAttributes.onSetDistrict('0');
 
       expect(wrapper.state()).toEqual({
         currentDate: '',
@@ -214,7 +214,7 @@ describe('NewAttributes', () => {
       };
       const store = mockStore(initialState);
 
-      const wrapper = shallow(<NewAttributes />)
+      const wrapper = shallow(<ManageAttributes />)
         .first().shallow()
         .first()
         .shallow({ context: { store } })

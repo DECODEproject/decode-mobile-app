@@ -35,7 +35,7 @@ describe('AttributesLanding', () => {
     const addAttributeButton = wrapper.dive().find(Button);
 
     addAttributeButton.props().onPress();
-    expect(store.getActions()[0].child.routeName).toEqual('newAttributes');
+    expect(store.getActions()[0].child.routeName).toEqual('manageAttributes');
   });
 
   describe('if there are no attributes saved', () => {
