@@ -97,4 +97,17 @@ describe('PinSetup reducer', () => {
 
     expect(actualState.validFormat).toBe(false);
   });
+
+  it('should reset pinSetup state', () => {
+    const stateWithPins = {
+      pin1: '1234',
+      pin2: '1234',
+    };
+
+    const actualState = pinSetupReducer(stateWithPins, {
+      type: types.RESET_PIN_SETUP,
+    });
+
+    expect(actualState).toEqual(initialState);
+  });
 });

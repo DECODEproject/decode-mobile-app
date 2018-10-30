@@ -35,6 +35,8 @@ export default function reducer(state = initialState, action) {
         validEqual: isPinEqual(state.pin1, state.pin2),
         valid: isValidPin(state.pin1) && isPinEqual(state.pin1, state.pin2),
       };
+    case types.RESET_PIN_SETUP:
+      return initialState;
     default:
       return state;
   }
