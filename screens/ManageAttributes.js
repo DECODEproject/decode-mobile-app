@@ -16,7 +16,7 @@ import { resetNavigation } from '../application/redux/actions/navigation';
 import { deleteWalletData } from '../application/redux/actions/wallet';
 import styles from './styles';
 import i18n from '../i18n';
-import { sortedGendersList, genderTranslationKeyFromId, validGender } from '../lib/genders';
+import { sortedGendersList, validGender, mapGenderIdToName } from '../lib/genders';
 
 
 const maxDate = new Date();
@@ -119,12 +119,6 @@ class ManageAttributes extends Component {
       .map(gender => ({ label: this.props.t(`genders:${gender[1]}`), value: gender[0] }))
   )
 
-  translateAndMapGenderIdToName = (id) => {
-    const translationKey = genderTranslationKeyFromId(id);
-    return translationKey ? this.props.t(`genders:${translationKey}`) : translationKey;
-  }
-
-
   render() {
     if (this.props.errorSaveAttributes) {
       alert('ERROR');
@@ -147,7 +141,7 @@ class ManageAttributes extends Component {
       items={this.gendersList()}
       onValueChange={this.onSetGender}
       currentValue={this.state.gender}
-      mapIdToName={this.translateAndMapGenderIdToName}
+      mapIdToName={id => mapGenderIdToName(id, this.props.t)}
       title={this.props.t('genderAttribute')}
       placeholder={this.props.t('genderPlaceholder')}
       t={this.props.t}
@@ -201,6 +195,7 @@ class ManageAttributes extends Component {
             onPress={() => this.props.saveAttributes(
               this.state.currentDate,
               this.state.district,
+              this.state.gender,
               this.props.walletId,
             )}
           />
@@ -252,8 +247,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  saveAttributes: async (dateOfBirth, district, walletId) =>
-    dispatch(saveAttributes(dateOfBirth, district, "F", walletId, SecureStore.setItemAsync)),
+  saveAttributes: async (dateOfBirth, district, gender, walletId) =>
+    dispatch(saveAttributes(dateOfBirth, district, gender, walletId, SecureStore.setItemAsync)),
   deleteWalletData: (t) => {
     const errorDeletingWalletData = () => alert(t('errorDelete')); //eslint-disable-line
     const successDeletingWalletData = () => dispatch(resetNavigation());

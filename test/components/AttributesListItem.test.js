@@ -55,4 +55,29 @@ describe('AttributesListItem', () => {
       expect(ValueWrappers).toHaveLength(1);
     });
   });
+
+  describe('if there is a gender attribute', () => {
+    it('should display Gender - some gender', () => {
+      const attribute = {
+        predicate: 'schema:gender',
+        object: 'F',
+        scope: 'can-access',
+        provenance: {
+          source: '',
+          credentials: '',
+        },
+        subject: '(Alpaca)',
+      };
+      const tMock = id => (id === 'F' ? 'Femenino' : 'Otro');
+
+      const wrapper = shallow(<AttributeListItem attribute={{ item: attribute }} t={tMock} />)
+        .first().shallow().dive();
+
+      const LabelWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'Género');
+      expect(LabelWrappers).toHaveLength(1);
+
+      const ValueWrappers = wrapper.dive().find(Text).findWhere(n => n.text() === 'Femenino');
+      expect(ValueWrappers).toHaveLength(1);
+    });
+  });
 });

@@ -1,4 +1,4 @@
-import { sortedGendersList, genderTranslationKeyFromId, validGender } from '../../../lib/genders';
+import { sortedGendersList, genderTranslationKeyFromId, validGender, mapGenderIdToName } from '../../../lib/genders';
 
 describe('genders', () => {
   it('sortedGendersList should return a list of available genders sorted alphabetically', () => {
@@ -26,6 +26,22 @@ describe('genders', () => {
 
     it('should return false if the value is not one of supported genders', () => {
       expect(validGender('-')).toEqual(false);
+    });
+  });
+
+  describe('mapGenderIdToName', () => {
+    const tMock = jest.fn();
+
+    it('should return undefined if it\'s not a valid gender id', () => {
+      const invalidGenderId = 0;
+      expect(mapGenderIdToName(invalidGenderId, tMock)).toEqual(undefined);
+    });
+
+    it('should return translated gender', () => {
+      tMock.mockReturnValue('Femenino');
+      const validGenderId = 'F';
+
+      expect(mapGenderIdToName(validGenderId, tMock)).toEqual('Femenino');
     });
   });
 });

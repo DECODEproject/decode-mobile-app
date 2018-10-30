@@ -160,10 +160,17 @@ describe('attribute action', () => {
     const walletId = 42;
     const someDistrict = '3';
     const someDateOfBirth = '01/01/2000';
+    const someGender = 'F';
     const setItemAsync = async () => {};
 
     it('should dispatch an action to save date of birth if set', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        setItemAsync,
+      ));
 
       const expectedAction = {
         type: types.ADD_OPTIONAL_ATTRIBUTE,
@@ -182,7 +189,7 @@ describe('attribute action', () => {
     });
 
     it('should not dispatch an action to save date of birth if empty', async () => {
-      await store.dispatch(saveAttributes('', someDistrict, walletId, setItemAsync));
+      await store.dispatch(saveAttributes('', someDistrict, someGender, walletId, setItemAsync));
 
       const containsAddDateOfBirthAction = store.getActions()
         .some(action =>
@@ -192,7 +199,13 @@ describe('attribute action', () => {
     });
 
     it('should dispatch an action to save district if set', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        setItemAsync,
+      ));
 
       const expectedAction = {
         type: types.ADD_OPTIONAL_ATTRIBUTE,
@@ -211,13 +224,48 @@ describe('attribute action', () => {
     });
 
     it('should not dispatch an action to save district if empty', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, '', walletId, setItemAsync));
+      await store.dispatch(saveAttributes(someDateOfBirth, '', someGender, walletId, setItemAsync));
 
       const containsAddDistrictAction = store.getActions()
         .some(action =>
           action.type === types.ADD_OPTIONAL_ATTRIBUTE
           && action.attribute.predicate === 'schema:district');
       expect(containsAddDistrictAction).toEqual(false);
+    });
+
+    it('should dispatch an action to save gender if set', async () => {
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        setItemAsync,
+      ));
+
+      const expectedAction = {
+        type: types.ADD_OPTIONAL_ATTRIBUTE,
+        attribute: {
+          predicate: 'schema:gender',
+          object: someGender,
+          scope: 'can-access',
+          provenance: {
+            source: 'wallet',
+          },
+          subject: walletId,
+        },
+      };
+      const containsExpectedAction = expect.arrayContaining([expectedAction]);
+      expect(store.getActions()).toEqual(containsExpectedAction);
+    });
+
+    it('should not dispatch an action to save gender if empty', async () => {
+      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, '', walletId, setItemAsync));
+
+      const containsAddGenderAction = store.getActions()
+        .some(action =>
+          action.type === types.ADD_OPTIONAL_ATTRIBUTE
+          && action.attribute.predicate === 'schema:gender');
+      expect(containsAddGenderAction).toEqual(false);
     });
 
     it('should dispatch an action to store the attributes to local storage', async () => {
@@ -242,7 +290,13 @@ describe('attribute action', () => {
       });
       const mockedSetItem = jest.fn().mockReturnValue(Promise.resolve(0));
 
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, mockedSetItem));
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        mockedSetItem,
+      ));
 
       expect(mockedSetItem).toBeCalled();
       expect(mockedSetItem).toBeCalledWith('attributes', JSON.stringify([...attributesList.values()]));
@@ -256,7 +310,13 @@ describe('attribute action', () => {
     });
 
     it('should navigate to the attributes landing page', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        setItemAsync,
+      ));
 
       const navigationAction = store.getActions()
         .find(action => action.type === 'EX_NAVIGATION.PUSH');
@@ -264,7 +324,13 @@ describe('attribute action', () => {
     });
 
     it('should dispatch a SAVE_ATTRIBUTES action', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        setItemAsync,
+      ));
 
       const expectedAction = {
         type: types.SAVE_ATTRIBUTES,
@@ -277,8 +343,13 @@ describe('attribute action', () => {
 
     it('should dispatch and return a SAVE_ATTRIBUTES_ERROR action if failed', async () => {
       const failedSetItem = async () => { throw new Error('Fake error'); };
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, failedSetItem));
-
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        failedSetItem,
+      ));
       const expectedAction = {
         type: types.SAVE_ATTRIBUTES_ERROR,
       };
@@ -287,8 +358,13 @@ describe('attribute action', () => {
     });
 
     it('should dispatch a RESET_DATE_OF_BIRTH_ERRORS action', async () => {
-      await store.dispatch(saveAttributes(someDateOfBirth, someDistrict, walletId, setItemAsync));
-
+      await store.dispatch(saveAttributes(
+        someDateOfBirth,
+        someDistrict,
+        someGender,
+        walletId,
+        setItemAsync,
+      ));
       const expectedAction = {
         type: types.RESET_ATTRIBUTES_ERRORS,
       };

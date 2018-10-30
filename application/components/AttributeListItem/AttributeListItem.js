@@ -3,6 +3,7 @@ import { View, Text, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { districtNameFromId } from '../../../lib/districts';
+import { mapGenderIdToName } from '../../../lib/genders';
 import styles from '../../../screens/styles';
 import i18n from '../../../i18n';
 
@@ -18,9 +19,13 @@ const verifiedRender = () => (
   </View>
 );
 
-function renderItemValue(item) {
+function renderItemValue(item, t) {
   if (item.predicate === 'schema:district') {
     return districtNameFromId(item.object);
+  }
+
+  if (item.predicate === 'schema:gender') {
+    return mapGenderIdToName(item.object, t);
   }
 
   return item.object;
@@ -38,7 +43,7 @@ export function AttributesListItem(props) {
       <Text
         style={[styles.newAttributesAttributeValue, { marginTop: 15 }]}
       >
-        {renderItemValue(props.attribute.item)}
+        {renderItemValue(props.attribute.item, props.t)}
       </Text>
     </View>
   );
