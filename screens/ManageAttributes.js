@@ -22,6 +22,48 @@ const maxDate = new Date();
 const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
 
+export const PickerComponent = props => (
+  <View style={{ flex: 1 }}>
+    <View style={styles.newAttributesAttribute}>
+      <Text style={styles.newAttributesAttributeName}>{props.title}</Text>
+      <Picker
+        placeholder={{ label: props.placeholder, value: 0 }}
+        items={props.items}
+        onValueChange={props.onValueChange}
+        value={props.currentValue}
+        style={{ viewContainer: { alignSelf: 'center' } }}
+      >
+        <LinkButton
+          id={props.buttonId}
+          name={props.currentValue ? props.t('edit') : props.t('add')}
+          onPress={() => {}}
+          style={{ textStyle: { fontSize: 18 } }}
+        />
+      </Picker>
+    </View>
+    <View>
+      <Text
+        id={props.valueTextId}
+        style={styles.newAttributesAttributeValue}
+      >
+        { props.mapIdToName(props.currentValue) }
+      </Text>
+    </View>
+  </View>
+);
+
+PickerComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  onValueChange: PropTypes.func.isRequired,
+  currentValue: PropTypes.string.isRequired,
+  mapIdToName: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
+  buttonId: PropTypes.string.isRequired,
+  valueTextId: PropTypes.string.isRequired,
+};
+
 class ManageAttributes extends Component {
   static route = {
     navigationBar: {
@@ -65,6 +107,19 @@ class ManageAttributes extends Component {
     if (this.props.errorSaveAttributes) {
       alert('ERROR');
     }
+
+    const districtComponent = (<PickerComponent
+      items={this.districtsList()}
+      onValueChange={this.onSetDistrict}
+      currentValue={this.state.district}
+      mapIdToName={districtNameFromId}
+      title={this.props.t('districtAttribute')}
+      placeholder={this.props.t('districtPlaceholder')}
+      t={this.props.t}
+      buttonId="district-action-button"
+      valueTextId="district-info"
+    />);
+
     return (
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
         {this.props.enabledDeleteButton &&
@@ -93,31 +148,7 @@ class ManageAttributes extends Component {
                 { this.state.currentDate }
               </Text>
             </View>
-            <View style={styles.newAttributesAttribute}>
-              <Text style={styles.newAttributesAttributeName}>{this.props.t('districtAttribute')}</Text>
-              <Picker
-                placeholder={{ label: this.props.t('districtPlaceholder'), value: 0 }}
-                items={this.districtsList()}
-                onValueChange={this.onSetDistrict}
-                value={this.state.district}
-                style={{ viewContainer: { alignSelf: 'center' } }}
-              >
-                <LinkButton
-                  id="district-action-button"
-                  name={this.state.district ? this.props.t('edit') : this.props.t('add')}
-                  onPress={() => {}}
-                  style={{ textStyle: { fontSize: 18 } }}
-                />
-              </Picker>
-            </View>
-            <View>
-              <Text
-                id="district-info"
-                style={styles.newAttributesAttributeValue}
-              >
-                { districtNameFromId(this.state.district) }
-              </Text>
-            </View>
+            { districtComponent }
           </View>
           <DateTimePicker
             minimumDate={minDate}

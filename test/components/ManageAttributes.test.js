@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme';
 import thunk from 'redux-thunk';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import configureStore from 'redux-mock-store';
-import ManageAttributes from '../../screens/ManageAttributes';
+import ManageAttributes, { PickerComponent } from '../../screens/ManageAttributes';
 import Button from '../../application/components/Button/Button';
 import types from '../../application/redux/actionTypes';
 
@@ -122,8 +122,9 @@ describe('ManageAttributes', () => {
         .first()
         .shallow({ context: { store } });
 
-      const button = wrapper.dive().find({ id: 'district-action-button' });
-      const info = wrapper.dive().find({ id: 'district-info' });
+      const districtComponent = wrapper.dive().find(PickerComponent).dive();
+      const button = districtComponent.find({ id: 'district-action-button' });
+      const info = districtComponent.find({ id: 'district-info' });
 
       expect(button.prop('name')).toEqual('Agregar');
       expect(info.prop('children')).toEqual(undefined);
@@ -149,8 +150,9 @@ describe('ManageAttributes', () => {
         .first()
         .shallow({ context: { store } });
 
-      const button = wrapper.dive().find({ id: 'district-action-button' });
-      const info = wrapper.dive().find({ id: 'district-info' });
+      const districtComponent = wrapper.dive().find(PickerComponent).dive();
+      const button = districtComponent.find({ id: 'district-action-button' });
+      const info = districtComponent.find({ id: 'district-info' });
 
       expect(button.prop('name')).toEqual('Editar');
       expect(info.prop('children')).toEqual('Les Corts');
