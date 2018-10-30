@@ -23,6 +23,12 @@ export function validate() {
   };
 }
 
+export function resetPinSetup() {
+  return {
+    type: types.RESET_PIN_SETUP,
+  };
+}
+
 export function storePin(setItem, pin) {
   return async (dispatch, getState) => {
     await dispatch(validate());
@@ -32,6 +38,7 @@ export function storePin(setItem, pin) {
     if (valid) {
       await storePinInPhone(setItem, pin);
       Keyboard.dismiss();
+      dispatch(resetPinSetup());
       dispatch(goToHome());
     }
   };
