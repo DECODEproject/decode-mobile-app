@@ -25,7 +25,7 @@ class PinSetup extends React.Component {
     return (
       <KeyboardAvoidingView
         behavior="position"
-        keyboardVerticalOffset={70}
+        keyboardVerticalOffset={50}
       >
         <ScrollView keyboardShouldPersistTaps="handled">
           <View style={styles.pinContainer}>
@@ -72,6 +72,7 @@ class PinSetup extends React.Component {
                 underlineColorAndroid="transparent"
                 value={this.props.pin2}
                 onChangeText={pin => this.props.changeText2(pin)}
+                onSubmitEditing={() => this.props.storePin(this.props.pin1)}
               />
               {!this.props.validPinEqual &&
               <Text style={styles.pinError}>
