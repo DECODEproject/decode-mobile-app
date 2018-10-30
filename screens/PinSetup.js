@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { translate } from 'react-i18next';
 import { SecureStore } from 'expo';
 import PropTypes from 'prop-types';
-import { Image, TextInput, View, Text, KeyboardAvoidingView } from 'react-native';
+import { Image, TextInput, View, Text, KeyboardAvoidingView, ScrollView } from 'react-native';
 import Button from '../application/components/Button/Button';
 import { changeText1, changeText2, storePin } from '../application/redux/actions/pinSetup';
 import styles from './styles';
@@ -25,71 +25,73 @@ class PinSetup extends React.Component {
     return (
       <KeyboardAvoidingView
         behavior="position"
-        keyboardVerticalOffset={50}
+        keyboardVerticalOffset={70}
       >
-        <View style={styles.pinContainer}>
-          <Image
-            style={styles.pinLogo}
-            source={decodeLogo}
-          />
-
-          <Text style={styles.pinTitle}>
-            {this.props.t('title')}
-          </Text>
-          <Text style={styles.pinSubtitle}>
-            {this.props.t('subtitle')}
-          </Text>
-
-          <View style={{ height: 90 }}>
-            <Text style={styles.pinInputLabel}>
-              {this.props.t('labelPin1')}
-            </Text>
-            <TextInput
-              style={styles.pinPassword}
-              placeholder={this.props.t('placeholderPin1')}
-              keyboardType="numeric"
-              secureTextEntry
-              underlineColorAndroid="transparent"
-              value={this.props.pin1}
-              onChangeText={pin => this.props.changeText1(pin)}
+        <ScrollView keyboardShouldPersistTaps="handled">
+          <View style={styles.pinContainer}>
+            <Image
+              style={styles.pinLogo}
+              source={decodeLogo}
             />
 
-            {!this.props.validPinFormat &&
-            <Text style={styles.pinError}>
-              { this.props.t('errorPin1') }
-            </Text>}
-          </View>
-          <View style={{ height: 90 }}>
-            <Text style={styles.pinInputLabel}>
-              {this.props.t('labelPin2')}
+            <Text style={styles.pinTitle}>
+              {this.props.t('title')}
             </Text>
-            <TextInput
-              style={styles.pinPassword}
-              placeholder={this.props.t('placeholderPin2')}
-              keyboardType="numeric"
-              secureTextEntry
-              underlineColorAndroid="transparent"
-              value={this.props.pin2}
-              onChangeText={pin => this.props.changeText2(pin)}
-            />
-            {!this.props.validPinEqual &&
-            <Text style={styles.pinError}>
-              {this.props.t('errorPin2')}
-            </Text>}
-          </View>
-          <View style={{ marginHorizontal: '10%' }}>
-            <Text style={{ color: '#9B9B9B' }}>
-              { this.props.t('pinWarning') }
+            <Text style={styles.pinSubtitle}>
+              {this.props.t('subtitle')}
             </Text>
+
+            <View style={{ height: 90 }}>
+              <Text style={styles.pinInputLabel}>
+                {this.props.t('labelPin1')}
+              </Text>
+              <TextInput
+                style={styles.pinPassword}
+                placeholder={this.props.t('placeholderPin1')}
+                keyboardType="numeric"
+                secureTextEntry
+                underlineColorAndroid="transparent"
+                value={this.props.pin1}
+                onChangeText={pin => this.props.changeText1(pin)}
+              />
+
+              {!this.props.validPinFormat &&
+              <Text style={styles.pinError}>
+                { this.props.t('errorPin1') }
+              </Text>}
+            </View>
+            <View style={{ height: 90 }}>
+              <Text style={styles.pinInputLabel}>
+                {this.props.t('labelPin2')}
+              </Text>
+              <TextInput
+                style={styles.pinPassword}
+                placeholder={this.props.t('placeholderPin2')}
+                keyboardType="numeric"
+                secureTextEntry
+                underlineColorAndroid="transparent"
+                value={this.props.pin2}
+                onChangeText={pin => this.props.changeText2(pin)}
+              />
+              {!this.props.validPinEqual &&
+              <Text style={styles.pinError}>
+                {this.props.t('errorPin2')}
+              </Text>}
+            </View>
+            <View style={{ marginHorizontal: '10%' }}>
+              <Text style={{ color: '#9B9B9B' }}>
+                { this.props.t('pinWarning') }
+              </Text>
+            </View>
+            <View style={{ flexDirection: 'row' }}>
+              <Button
+                name={this.props.t('button')}
+                onPress={() => this.props.storePin(this.props.pin1)}
+                style={styles.pinButton}
+              />
+            </View>
           </View>
-          <View style={{ flexDirection: 'row' }}>
-            <Button
-              name={this.props.t('button')}
-              onPress={() => this.props.storePin(this.props.pin1)}
-              style={styles.pinButton}
-            />
-          </View>
-        </View>
+        </ScrollView>
       </KeyboardAvoidingView>
     );
   }
