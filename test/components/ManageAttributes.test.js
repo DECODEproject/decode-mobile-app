@@ -176,7 +176,7 @@ describe('ManageAttributes', () => {
       const info = genderComponent.find({ id: 'gender-info' });
 
       expect(button.prop('name')).toEqual('Agregar');
-      expect(info.prop('children')).toEqual('');
+      expect(info.prop('children')).toEqual(undefined);
     });
 
     it('should show edit button when gender attribute is stored', () => {
@@ -199,7 +199,7 @@ describe('ManageAttributes', () => {
       const info = genderComponent.find({ id: 'gender-info' });
 
       expect(button.prop('name')).toEqual('Editar');
-      expect(info.prop('children')).toEqual('female');
+      expect(info.prop('children')).toEqual('Femenino');
     });
 
     it('should change state when setting gender through modal', () => {

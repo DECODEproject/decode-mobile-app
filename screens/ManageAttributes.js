@@ -119,6 +119,11 @@ class ManageAttributes extends Component {
       .map(gender => ({ label: this.props.t(`genders:${gender[1]}`), value: gender[0] }))
   )
 
+  translateAndMapGenderIdToName = (id) => {
+    const translationKey = genderTranslationKeyFromId(id);
+    return translationKey ? this.props.t(`genders:${translationKey}`) : translationKey;
+  }
+
 
   render() {
     if (this.props.errorSaveAttributes) {
@@ -142,7 +147,7 @@ class ManageAttributes extends Component {
       items={this.gendersList()}
       onValueChange={this.onSetGender}
       currentValue={this.state.gender}
-      mapIdToName={id => this.props.t(genderTranslationKeyFromId(id))}
+      mapIdToName={this.translateAndMapGenderIdToName}
       title={this.props.t('genderAttribute')}
       placeholder={this.props.t('genderPlaceholder')}
       t={this.props.t}
@@ -248,7 +253,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   saveAttributes: async (dateOfBirth, district, walletId) =>
-    dispatch(saveAttributes(dateOfBirth, district, walletId, SecureStore.setItemAsync)),
+    dispatch(saveAttributes(dateOfBirth, district, "F", walletId, SecureStore.setItemAsync)),
   deleteWalletData: (t) => {
     const errorDeletingWalletData = () => alert(t('errorDelete')); //eslint-disable-line
     const successDeletingWalletData = () => dispatch(resetNavigation());
