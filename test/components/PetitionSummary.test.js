@@ -219,4 +219,50 @@ describe('The PetitionSummary page', () => {
 
     expect(attributeWrapper.first().prop('name')).toEqual('Residencia');
   });
+
+  describe('gender attribute', () => {
+    it('should show the translated gender', () => {
+      const initialStateWithGenderAttribute = {
+        ...initialState,
+        petition: {
+          ...initialState.petition,
+          petition: {
+            ...initialState.petition.petition,
+            attributes: {
+              mandatory: [],
+              optional: [{
+                predicate: 'schema:gender',
+                object: 'voter',
+                scope: 'can-access',
+              }],
+            },
+          },
+        },
+        attributes: {
+          list: new Map([
+            ['schema:gender', {
+              predicate: 'schema:gender',
+              object: 'F',
+              scope: 'can-access',
+              provenance: {
+                source: 'wallet',
+              },
+              subject: '12345',
+            }],
+          ]),
+        },
+      };
+
+      const store = mockStore(initialStateWithGenderAttribute);
+      const tMock = id => (id === 'F' ? 'Femenino' : 'Other');
+      const wrapper = shallow(<PetitionSummary t={tMock} />)
+        .first().shallow()
+        .first()
+        .shallow({ context: { store } });
+
+      const attributeWrapper = wrapper.dive().find(AttributeComponent);
+
+      expect(attributeWrapper.first().prop('value')).toEqual('Femenino');
+    });
+  });
 });

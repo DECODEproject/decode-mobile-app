@@ -12,6 +12,7 @@ import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import getChainspaceUrl from '../config';
 import { districtNameFromId } from '../lib/districts';
+import { mapGenderIdToName } from '../lib/genders';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
@@ -113,6 +114,10 @@ class PetitionSummary extends React.Component {
 
     if (attr.predicate === 'schema:district') {
       displayValue = districtNameFromId(attr.object);
+    }
+
+    if (attr.predicate === 'schema:gender') {
+      displayValue = mapGenderIdToName(attr.object, this.props.t);
     }
 
     return (<AttributeComponent
