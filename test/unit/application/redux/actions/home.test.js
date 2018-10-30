@@ -71,7 +71,7 @@ describe('goToPetition', () => {
       }]));
     });
 
-    it('should dispatch go to petition summary action if attribute is not verified', async () => {
+    it('should dispatch go to attributes summary action if attribute is not verified', async () => {
       const attribute = {
         predicate: 'schema:district',
         object: 'Gracia',

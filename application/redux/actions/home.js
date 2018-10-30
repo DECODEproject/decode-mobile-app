@@ -1,7 +1,7 @@
 import { goToAttributesSummary, goToError, goToPetitionSummary } from './navigation';
 import { getPetition } from './petition';
 
-export default function goToPetition(decidimClient, petitionId = 2) {
+export default function goToPetition(decidimClient, petitionId) {
   return async (dispatch, getState) => {
     await dispatch(getPetition(decidimClient, petitionId));
     const state = await getState();
