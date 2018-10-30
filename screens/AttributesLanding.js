@@ -28,9 +28,11 @@ class AttributesLanding extends React.Component {
   }
 
   renderListAttributes() {
+    const alphabeticalComparator = (a, b) => (a.predicate > b.predicate ? 1 : -1);
+
     return (
       <FlatList
-        data={[...this.props.attributes.values()]}
+        data={[...this.props.attributes.values()].sort(alphabeticalComparator)}
         renderItem={attribute => <AttributeListItem attribute={attribute} />}
         keyExtractor={item => item.predicate}
       />
