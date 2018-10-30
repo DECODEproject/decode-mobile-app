@@ -38,6 +38,8 @@ export default {
     ageAttribute: 'Data de Naixement',
     districtAttribute: 'Districte',
     districtPlaceholder: 'Selecciona un districte',
+    genderAttribute: 'Gènere',
+    genderPlaceholder: 'Selecciona un gènere',
     add: 'Afegir',
     edit: 'Editar',
     save: 'Desar',
@@ -106,5 +108,10 @@ export default {
     dateOfBirth: 'Data de Naixement',
     gender: 'Gènere',
     district: 'Districte',
+  },
+  genders: {
+    female: 'Femella',
+    male: 'Mascle',
+    other: 'Un altre',
   },
 };

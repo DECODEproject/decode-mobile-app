@@ -16,6 +16,7 @@ import { resetNavigation } from '../application/redux/actions/navigation';
 import { deleteWalletData } from '../application/redux/actions/wallet';
 import styles from './styles';
 import i18n from '../i18n';
+import { sortedGendersList, genderTranslationKeyFromId, validGender } from '../lib/genders';
 
 
 const maxDate = new Date();
@@ -23,7 +24,7 @@ const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
 
 export const PickerComponent = props => (
-  <View style={{ flex: 1 }}>
+  <View id={props.id} style={{ flex: 1 }}>
     <View style={styles.newAttributesAttribute}>
       <Text style={styles.newAttributesAttributeName}>{props.title}</Text>
       <Picker
@@ -62,6 +63,7 @@ PickerComponent.propTypes = {
   t: PropTypes.func.isRequired,
   buttonId: PropTypes.string.isRequired,
   valueTextId: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 class ManageAttributes extends Component {
@@ -80,6 +82,7 @@ class ManageAttributes extends Component {
       isDatePickerVisible: false,
       currentDate: props.currentDateAttr.object,
       district: props.districtAttr.object,
+      gender: props.genderAttr.object,
     };
   }
 
@@ -98,10 +101,24 @@ class ManageAttributes extends Component {
     }
   }
 
+  onSetGender = (gender) => {
+    if (validGender(gender)) {
+      this.setState({
+        gender,
+      });
+    }
+  };
+
   districtsList = () => (
     sortedDistrictsList()
       .map(district => ({ label: district[1], value: district[0] }))
   )
+
+  gendersList = () => (
+    sortedGendersList()
+      .map(gender => ({ label: this.props.t(`genders:${gender[1]}`), value: gender[0] }))
+  )
+
 
   render() {
     if (this.props.errorSaveAttributes) {
@@ -118,6 +135,20 @@ class ManageAttributes extends Component {
       t={this.props.t}
       buttonId="district-action-button"
       valueTextId="district-info"
+      id="district"
+    />);
+
+    const genderComponent = (<PickerComponent
+      items={this.gendersList()}
+      onValueChange={this.onSetGender}
+      currentValue={this.state.gender}
+      mapIdToName={id => this.props.t(genderTranslationKeyFromId(id))}
+      title={this.props.t('genderAttribute')}
+      placeholder={this.props.t('genderPlaceholder')}
+      t={this.props.t}
+      buttonId="gender-action-button"
+      valueTextId="gender-info"
+      id="gender"
     />);
 
     return (
@@ -149,6 +180,7 @@ class ManageAttributes extends Component {
               </Text>
             </View>
             { districtComponent }
+            { this.props.genderAttributeFT && genderComponent }
           </View>
           <DateTimePicker
             minimumDate={minDate}
@@ -184,8 +216,12 @@ ManageAttributes.propTypes = {
   districtAttr: PropTypes.shape({
     object: PropTypes.string,
   }),
+  genderAttr: PropTypes.shape({
+    object: PropTypes.string,
+  }),
   deleteWalletData: PropTypes.func.isRequired,
   enabledDeleteButton: PropTypes.bool.isRequired,
+  genderAttributeFT: PropTypes.bool.isRequired,
 };
 
 ManageAttributes.defaultProps = {
@@ -195,14 +231,19 @@ ManageAttributes.defaultProps = {
   districtAttr: {
     object: '',
   },
+  genderAttr: {
+    object: '',
+  },
 };
 
 const mapStateToProps = state => ({
   walletId: state.wallet.id,
   currentDateAttr: state.attributes.list.get('schema:dateOfBirth'),
   districtAttr: state.attributes.list.get('schema:district'),
+  genderAttr: state.attributes.list.get('schema:gender'),
   errorSaveAttributes: state.attributes.errorSaveAttributes,
   enabledDeleteButton: state.featureToggles.enabledDeleteButton,
+  genderAttributeFT: state.featureToggles.genderAttribute,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -219,4 +260,4 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default translate('manageAttributes', { i18n })(connect(mapStateToProps, mapDispatchToProps)(ManageAttributes));
+export default translate(['manageAttributes', 'genders'], { i18n })(connect(mapStateToProps, mapDispatchToProps)(ManageAttributes));
