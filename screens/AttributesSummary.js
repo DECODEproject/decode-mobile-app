@@ -15,11 +15,6 @@ import i18n from '../i18n';
 
 const backArrowIcon = require('../assets/images/ico-back-button.png');
 
-const backToPetitionInBrowser = (petitionId) => {
-  const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${petitionId}`;
-  Linking.openURL(petitionUrl);
-};
-
 class AttributesSummary extends React.Component {
   static route = {
     navigationBar: {
@@ -29,7 +24,7 @@ class AttributesSummary extends React.Component {
       tintColor: 'rgb(0,163,158)',
       renderLeft: router => (
         <TouchableOpacity
-          onPress={() => backToPetitionInBrowser(router.params.petitionId)}
+          onPress={() => openPetitionInBrowser(router.params.petitionId)}
           style={{ paddingTop: 10, paddingLeft: 10 }}
         >
           <Image source={backArrowIcon} />

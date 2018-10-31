@@ -1,6 +1,7 @@
 import { Linking } from 'react-native';
+import { getDecidimUrl } from '../../config';
 
 export default (petitionId) => {
-  const petitionUrl = `http://secure-petitions.s3-website-eu-west-1.amazonaws.com/#/${petitionId}`;
+  const petitionUrl = `${getDecidimUrl()}/processes/digital-democracy-data-commons/f/56/petitions/${petitionId}`;
   Linking.openURL(petitionUrl);
 };

@@ -3,6 +3,7 @@ import { Text, View, Image, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import Button from '../application/components/Button/Button';
+import { getDecidimUrl } from '../config';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -11,7 +12,7 @@ const warningIcon = require('../assets/images/warning.png');
 
 class Error extends React.Component {
   static handlePress() {
-    Linking.openURL('http://secure-petitions.s3-website-eu-west-1.amazonaws.com');
+    Linking.openURL(getDecidimUrl());
   }
 
   buildOutcomeText() {

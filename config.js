@@ -11,3 +11,7 @@ export default function getChainspaceUrl(environment) {
   chainspaceUrl.dev = chainspaceUrl.dev.replace('localhost', hostName);
   return environment === 'production' ? chainspaceUrl.production : chainspaceUrl.dev;
 }
+
+export function getDecidimUrl() {
+  return 'https://betadddc.alabs.org';
+}
