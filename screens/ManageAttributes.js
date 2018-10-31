@@ -24,7 +24,7 @@ const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
 
 export const PickerComponent = props => (
-  <View id={props.id} style={props.wrapperStyles}>
+  <View id={props.id} style={{ flex: 1, maxHeight: 80 }}>
     <View style={styles.newAttributesAttribute}>
       <Text style={styles.newAttributesAttributeName}>{props.title}</Text>
       <Picker
@@ -64,7 +64,6 @@ PickerComponent.propTypes = {
   buttonId: PropTypes.string.isRequired,
   valueTextId: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  wrapperStyles: PropTypes.shape({}).isRequired,
 };
 
 class ManageAttributes extends Component {
@@ -136,7 +135,6 @@ class ManageAttributes extends Component {
       buttonId="district-action-button"
       valueTextId="district-info"
       id="district"
-      wrapperStyles={{ flex: 1, maxHeight: '12%' }}
     />);
 
     const genderComponent = (<PickerComponent
@@ -150,7 +148,6 @@ class ManageAttributes extends Component {
       buttonId="gender-action-button"
       valueTextId="gender-info"
       id="gender"
-      wrapperStyles={{ flex: 1 }}
     />);
 
     return (
@@ -163,7 +160,7 @@ class ManageAttributes extends Component {
             <Text style={{ fontSize: 20 }}>{this.props.t('description')}</Text>
           </View>
           <View style={{ flex: 1, paddingTop: 20 }}>
-            <View style={{ flex: 1, maxHeight: '12%' }}>
+            <View style={{ flex: 1, maxHeight: 80 }}>
               <View style={styles.newAttributesAttribute}>
                 <Text style={styles.newAttributesAttributeName}>{this.props.t('ageAttribute')}</Text>
                 <LinkButton
