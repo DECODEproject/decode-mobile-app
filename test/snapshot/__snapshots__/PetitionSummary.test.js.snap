@@ -15188,20 +15188,7 @@ Haz click en el botón inferior para empezar",
                 "backgroundColor": "#FFF",
               }
             }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "marginTop": 20,
-                }
-              }
-            >
-              Datos opcionales para compartir: 
-            </Text>
-          </Component>
+          />
         </ScrollView>,
         <Component
           style={
@@ -15503,20 +15490,7 @@ Haz click en el botón inferior para empezar",
                   "backgroundColor": "#FFF",
                 }
               }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "marginTop": 20,
-                  }
-                }
-              >
-                Datos opcionales para compartir: 
-              </Text>
-            </Component>,
+            />,
           ],
         },
         "ref": null,
@@ -15575,18 +15549,7 @@ Haz click en el botón inferior para empezar",
               "children": Array [
                 Array [],
                 Array [],
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "marginTop": 20,
-                    }
-                  }
-                >
-                  Datos opcionales para compartir: 
-                </Text>,
+                false,
                 Array [],
               ],
               "style": Object {
@@ -15596,23 +15559,7 @@ Haz click en el botón inferior para empezar",
             },
             "ref": null,
             "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "Datos opcionales para compartir: ",
-                  "ellipsizeMode": "tail",
-                  "style": Object {
-                    "marginTop": 20,
-                  },
-                },
-                "ref": null,
-                "rendered": "Datos opcionales para compartir: ",
-                "type": [Function],
-              },
+              false,
             ],
             "type": [Function],
           },
@@ -15855,20 +15802,7 @@ Haz click en el botón inferior para empezar",
                   "backgroundColor": "#FFF",
                 }
               }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "marginTop": 20,
-                  }
-                }
-              >
-                Datos opcionales para compartir: 
-              </Text>
-            </Component>
+            />
           </ScrollView>,
           <Component
             style={
@@ -16170,20 +16104,7 @@ Haz click en el botón inferior para empezar",
                     "backgroundColor": "#FFF",
                   }
                 }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "marginTop": 20,
-                    }
-                  }
-                >
-                  Datos opcionales para compartir: 
-                </Text>
-              </Component>,
+              />,
             ],
           },
           "ref": null,
@@ -16242,18 +16163,7 @@ Haz click en el botón inferior para empezar",
                 "children": Array [
                   Array [],
                   Array [],
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "marginTop": 20,
-                      }
-                    }
-                  >
-                    Datos opcionales para compartir: 
-                  </Text>,
+                  false,
                   Array [],
                 ],
                 "style": Object {
@@ -16263,23 +16173,7 @@ Haz click en el botón inferior para empezar",
               },
               "ref": null,
               "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": "Datos opcionales para compartir: ",
-                    "ellipsizeMode": "tail",
-                    "style": Object {
-                      "marginTop": 20,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": "Datos opcionales para compartir: ",
-                  "type": [Function],
-                },
+                false,
               ],
               "type": [Function],
             },
@@ -31596,20 +31490,7 @@ Haz click en el botón inferior para empezar",
                 "backgroundColor": "#FFF",
               }
             }
-          >
-            <Text
-              accessible={true}
-              allowFontScaling={true}
-              ellipsizeMode="tail"
-              style={
-                Object {
-                  "marginTop": 20,
-                }
-              }
-            >
-              Datos opcionales para compartir: 
-            </Text>
-          </Component>
+          />
         </ScrollView>,
         <Component
           style={
@@ -31911,20 +31792,7 @@ Haz click en el botón inferior para empezar",
                   "backgroundColor": "#FFF",
                 }
               }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "marginTop": 20,
-                  }
-                }
-              >
-                Datos opcionales para compartir: 
-              </Text>
-            </Component>,
+            />,
           ],
         },
         "ref": null,
@@ -31983,18 +31851,7 @@ Haz click en el botón inferior para empezar",
               "children": Array [
                 Array [],
                 Array [],
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "marginTop": 20,
-                    }
-                  }
-                >
-                  Datos opcionales para compartir: 
-                </Text>,
+                false,
                 Array [],
               ],
               "style": Object {
@@ -32004,23 +31861,7 @@ Haz click en el botón inferior para empezar",
             },
             "ref": null,
             "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "accessible": true,
-                  "allowFontScaling": true,
-                  "children": "Datos opcionales para compartir: ",
-                  "ellipsizeMode": "tail",
-                  "style": Object {
-                    "marginTop": 20,
-                  },
-                },
-                "ref": null,
-                "rendered": "Datos opcionales para compartir: ",
-                "type": [Function],
-              },
+              false,
             ],
             "type": [Function],
           },
@@ -32263,20 +32104,7 @@ Haz click en el botón inferior para empezar",
                   "backgroundColor": "#FFF",
                 }
               }
-            >
-              <Text
-                accessible={true}
-                allowFontScaling={true}
-                ellipsizeMode="tail"
-                style={
-                  Object {
-                    "marginTop": 20,
-                  }
-                }
-              >
-                Datos opcionales para compartir: 
-              </Text>
-            </Component>
+            />
           </ScrollView>,
           <Component
             style={
@@ -32578,20 +32406,7 @@ Haz click en el botón inferior para empezar",
                     "backgroundColor": "#FFF",
                   }
                 }
-              >
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "marginTop": 20,
-                    }
-                  }
-                >
-                  Datos opcionales para compartir: 
-                </Text>
-              </Component>,
+              />,
             ],
           },
           "ref": null,
@@ -32650,18 +32465,7 @@ Haz click en el botón inferior para empezar",
                 "children": Array [
                   Array [],
                   Array [],
-                  <Text
-                    accessible={true}
-                    allowFontScaling={true}
-                    ellipsizeMode="tail"
-                    style={
-                      Object {
-                        "marginTop": 20,
-                      }
-                    }
-                  >
-                    Datos opcionales para compartir: 
-                  </Text>,
+                  false,
                   Array [],
                 ],
                 "style": Object {
@@ -32671,23 +32475,7 @@ Haz click en el botón inferior para empezar",
               },
               "ref": null,
               "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "accessible": true,
-                    "allowFontScaling": true,
-                    "children": "Datos opcionales para compartir: ",
-                    "ellipsizeMode": "tail",
-                    "style": Object {
-                      "marginTop": 20,
-                    },
-                  },
-                  "ref": null,
-                  "rendered": "Datos opcionales para compartir: ",
-                  "type": [Function],
-                },
+                false,
               ],
               "type": [Function],
             },
