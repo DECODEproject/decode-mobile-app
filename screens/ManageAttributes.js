@@ -24,7 +24,7 @@ const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
 
 export const PickerComponent = props => (
-  <View id={props.id} style={{ flex: 1 }}>
+  <View id={props.id} style={props.wrapperStyles}>
     <View style={styles.newAttributesAttribute}>
       <Text style={styles.newAttributesAttributeName}>{props.title}</Text>
       <Picker
@@ -64,6 +64,7 @@ PickerComponent.propTypes = {
   buttonId: PropTypes.string.isRequired,
   valueTextId: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  wrapperStyles: PropTypes.shape({}).isRequired,
 };
 
 class ManageAttributes extends Component {
@@ -135,6 +136,7 @@ class ManageAttributes extends Component {
       buttonId="district-action-button"
       valueTextId="district-info"
       id="district"
+      wrapperStyles={{ flex: 1, maxHeight: '12%' }}
     />);
 
     const genderComponent = (<PickerComponent
@@ -148,6 +150,7 @@ class ManageAttributes extends Component {
       buttonId="gender-action-button"
       valueTextId="gender-info"
       id="gender"
+      wrapperStyles={{ flex: 1 }}
     />);
 
     return (
@@ -159,23 +162,25 @@ class ManageAttributes extends Component {
           <View style={{ flex: 1, maxHeight: 50 }}>
             <Text style={{ fontSize: 20 }}>{this.props.t('description')}</Text>
           </View>
-          <View style={{ flex: 1 }}>
-            <View style={styles.newAttributesAttribute}>
-              <Text style={styles.newAttributesAttributeName}>{this.props.t('ageAttribute')}</Text>
-              <LinkButton
-                id="age-action-button"
-                name={this.state.currentDate ? this.props.t('edit') : this.props.t('add')}
-                onPress={() => this.setState({ isDatePickerVisible: true })}
-                style={{ textStyle: { fontSize: 18 } }}
-              />
-            </View>
-            <View>
-              <Text
-                id="age-info"
-                style={styles.newAttributesAttributeValue}
-              >
-                { this.state.currentDate }
-              </Text>
+          <View style={{ flex: 1, paddingTop: 20 }}>
+            <View style={{ flex: 1, maxHeight: '12%' }}>
+              <View style={styles.newAttributesAttribute}>
+                <Text style={styles.newAttributesAttributeName}>{this.props.t('ageAttribute')}</Text>
+                <LinkButton
+                  id="age-action-button"
+                  name={this.state.currentDate ? this.props.t('edit') : this.props.t('add')}
+                  onPress={() => this.setState({ isDatePickerVisible: true })}
+                  style={{ textStyle: { fontSize: 18 } }}
+                />
+              </View>
+              <View>
+                <Text
+                  id="age-info"
+                  style={styles.newAttributesAttributeValue}
+                >
+                  { this.state.currentDate }
+                </Text>
+              </View>
             </View>
             { districtComponent }
             { this.props.genderAttributeFT && genderComponent }
