@@ -47,9 +47,11 @@ class AttributesSummary extends React.Component {
   };
 
   openWebBrowserAsync = async () => {
+    const credentialIssuerUrl = this.props.petition.attributes.mandatory[0].provenance.url;
+    // const credentialIssuerUrl = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
     const queryParam = encodeURIComponent(Constants.linkingUri);
-    const url = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
-
+    const url = `${credentialIssuerUrl}#/?linkingUri=${queryParam}`;
+    console.log(url);
     Linking.addEventListener('url', this.handleRedirect);
     await WebBrowser.openBrowserAsync(url);
     Linking.removeEventListener('url', this.handleRedirect);
@@ -117,6 +119,13 @@ AttributesSummary.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     closingDate: PropTypes.string,
+    attributes: PropTypes.shape({
+      mandatory: PropTypes.arrayOf(PropTypes.shape({
+        provenance: PropTypes.shape({
+          url: PropTypes.string,
+        }),
+      })),
+    }),
   }),
   goToPetitionSummary: PropTypes.func.isRequired,
   addCredential: PropTypes.func.isRequired,
