@@ -18,6 +18,7 @@ export function deleteWalletData(deleteItemAsync, errorCallback, successCallback
     try {
       await deleteItemAsync('pincode');
       await deleteItemAsync('attributes');
+      await deleteItemAsync('credentials');
       successCallback();
     } catch (e) { //eslint-disable-line
       errorCallback();
