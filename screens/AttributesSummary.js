@@ -50,7 +50,7 @@ class AttributesSummary extends React.Component {
     const credentialIssuerUrl = this.props.petition.attributes.mandatory[0].provenance.url;
     // const credentialIssuerUrl = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
     const queryParam = encodeURIComponent(Constants.linkingUri);
-    const url = `${credentialIssuerUrl}#/?linkingUri=${queryParam}`;
+    const url = `${credentialIssuerUrl}?linkingUri=${queryParam}`;
     console.log(url);
     Linking.addEventListener('url', this.handleRedirect);
     await WebBrowser.openBrowserAsync(url);
