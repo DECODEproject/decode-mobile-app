@@ -1,9 +1,9 @@
-import { Constants } from 'expo';
+// import { Constants } from 'expo';
 
-const isLocal = Constants.manifest.releaseChannel !== 'production';
+// const isLocal = Constants.manifest.releaseChannel !== 'production';
 
 const initialState = {
-  login: isLocal,
+  login: true,
   genderAttribute: true,
 };
 
