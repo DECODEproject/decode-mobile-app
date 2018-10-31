@@ -18,7 +18,6 @@ describe('ManageAttributes', () => {
       errorSaveAttributes: false,
     },
     featureToggles: {
-      enabledDeleteButton: false,
       genderAttribute: true,
     },
     wallet: {

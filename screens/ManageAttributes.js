@@ -152,10 +152,9 @@ class ManageAttributes extends Component {
 
     return (
       <View style={{ flex: 1, paddingHorizontal: 20 }}>
-        {this.props.enabledDeleteButton &&
-          <DeleteButton
-            onPress={() => this.props.deleteWalletData(this.props.t)}
-          />}
+        <DeleteButton
+          onPress={() => this.props.deleteWalletData(this.props.t)}
+        />
         <View style={styles.attributesManagementContainer}>
           <View style={{ flex: 1, maxHeight: 50 }}>
             <Text style={{ fontSize: 20 }}>{this.props.t('description')}</Text>
@@ -220,7 +219,6 @@ ManageAttributes.propTypes = {
     object: PropTypes.string,
   }),
   deleteWalletData: PropTypes.func.isRequired,
-  enabledDeleteButton: PropTypes.bool.isRequired,
   genderAttributeFT: PropTypes.bool.isRequired,
 };
 
@@ -242,7 +240,6 @@ const mapStateToProps = state => ({
   districtAttr: state.attributes.list.get('schema:district'),
   genderAttr: state.attributes.list.get('schema:gender'),
   errorSaveAttributes: state.attributes.errorSaveAttributes,
-  enabledDeleteButton: state.featureToggles.enabledDeleteButton,
   genderAttributeFT: state.featureToggles.genderAttribute,
 });
 
