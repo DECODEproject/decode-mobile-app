@@ -1,6 +1,7 @@
 import React from 'react';
 import { Font, ScreenOrientation, SecureStore } from 'expo';
 import { Provider } from 'react-redux';
+import { YellowBox } from 'react-native';
 import {
   NavigationProvider,
   StackNavigation,
@@ -39,7 +40,8 @@ export default class App extends React.Component {
       routeName => Router.getRoute(routeName),
     );
 
-    ScreenOrientation.allow(ScreenOrientation.Orientation.PORTRAIT);
+    ScreenOrientation.allowAsync(ScreenOrientation.Orientation.PORTRAIT);
+    YellowBox.ignoreWarnings(['Class EXHomeModule', 'Class EXTest', 'Class EXDisabledDevMenu', 'Class EXDisabledRedBox']);
 
     this.setState({
       ready: true,

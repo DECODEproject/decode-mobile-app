@@ -9,7 +9,7 @@ export default function getChainspaceUrl(environment) {
 
   let hostName = urlParse(Constants.linkingUri, true).hostname;
   if (!hostName) {
-      hostName = urlParse(Constants.intentUri, true).hostname;
+      hostName = urlParse(Constants.experienceUrl, true).hostname;
   }
   chainspaceUrl.dev = chainspaceUrl.dev.replace('localhost', hostName);
   console.log(`Expo Constants: ${JSON.stringify(Constants)}`);

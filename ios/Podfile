@@ -1,10 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
-
+platform :ios, '10.0'
+ENV["COCOAPODS_DISABLE_STATS"] = "true"
 target 'decode-app' do
   pod 'ExpoKit',
     :git => "http://github.com/expo/expo.git",
-    :tag => "ios/2.8.4",
+    :tag => "ios/2.10.3",
     :subspecs => [
       "Core"
     ],
@@ -98,6 +98,12 @@ target 'decode-app' do
   pod 'glog',
     :podspec => "../node_modules/react-native/third-party-podspecs/glog.podspec",
     :inhibit_warnings => true
+  pod 'EXLocalization',
+    :path => "../node_modules/expo-localization/ios"
+  pod 'EXTaskManagerInterface',
+    :path => "../node_modules/expo-task-manager-interface/ios"
+  pod 'EXAppLoaderProvider',
+    :path => "../node_modules/expo-app-loader-provider/ios"
 
 
   post_install do |installer|

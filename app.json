@@ -4,7 +4,7 @@
     "icon": "./assets/decode_ic_launcher.png",
     "slug": "decode-walletapp",
     "version": "0.1.2",
-    "sdkVersion": "30.0.0",
+    "sdkVersion": "32.0.0",
     "orientation": "portrait",
     "scheme": "decodewallet",
     "ios": {

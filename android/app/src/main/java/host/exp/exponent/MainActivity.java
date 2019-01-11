@@ -28,19 +28,13 @@ public class MainActivity extends DetachActivity {
   }
 
   @Override
-  public List<String> sdkVersions() {
-    return new ArrayList<>(Arrays.asList("30.0.0"));
-  }
-
-  @Override
   public List<ReactPackage> reactPackages() {
     return ((MainApplication) getApplication()).getPackages();
   }
 
   @Override
   public List<Package> expoPackages() {
-    // Here you can add your own packages.
-    return super.expoPackages();
+    return ((MainApplication) getApplication()).getExpoPackages();
   }
 
   @Override

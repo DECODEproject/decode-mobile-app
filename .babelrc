@@ -1,14 +1,4 @@
 {
-  "presets": ["react-native-stage-0/decorator-support"],
-  "env": {
-    "development": {
-      "plugins": ["transform-react-jsx-source"]
-    }
-  },
-  "plugins": [
-    "transform-inline-environment-variables",
-    ["babel-plugin-transform-builtin-extend", {
-      "globals": ["Error"]
-    }]
-  ]
+  "presets": ["babel-preset-expo"],
+  "plugins": ["@babel/plugin-proposal-export-namespace-from"]
 }

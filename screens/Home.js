@@ -13,7 +13,7 @@ import authorizationAction, { updatePin, resetPin } from '../application/redux/a
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
 import ZenroomExecutor from '../lib/ZenroomExecutor';
-import helloContract from '../assets/contracts/hello';
+import helloContract from '../assets/contracts/pair';
 
 
 import styles from './styles';
@@ -33,7 +33,7 @@ class Home extends React.Component {
 
 
   componentWillMount() {
-    ScreenOrientation.allow(ScreenOrientation.Orientation.PORTRAIT_UP);
+    ScreenOrientation.allowAsync(ScreenOrientation.Orientation.PORTRAIT_UP);
     this.props.initializeState(this.props.loginFT).then(() => {});
   }
 

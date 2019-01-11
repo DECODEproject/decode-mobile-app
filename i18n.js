@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import Expo from 'expo';
+import { Localization } from 'expo-localization';
 import es from './translations/es';
 import ca from './translations/ca';
 import en from './translations/en';
@@ -8,10 +8,9 @@ import en from './translations/en';
 // http://i18next.com/docs/ownplugin/#languagedetector
 const languageDetector = {
   type: 'languageDetector',
-  async: true, // flags below detection to be async
-  detect: callback => /* 'en'; */ Expo.DangerZone.Localization.getCurrentLocaleAsync().then((lng) => { callback(lng.replace('_', '-')); }),
-  init: () => {},
-  cacheUserLanguage: () => {},
+  detect: () => Localization.locale,
+  init: Function.prototype,
+  cacheUserLanguage: Function.prototype,
 };
 
 i18n

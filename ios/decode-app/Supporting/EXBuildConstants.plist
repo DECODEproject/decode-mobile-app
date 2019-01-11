@@ -10,11 +10,11 @@
 		<string></string>
 	</dict>
 	<key>EXPO_RUNTIME_VERSION</key>
-	<string>2.8.4</string>
+	<string>32.0.0</string>
 	<key>STANDALONE_CONTEXT_TYPE</key>
 	<string>user</string>
 	<key>TEMPORARY_SDK_VERSION</key>
-	<string>30.0.0</string>
+	<string>32.0.0</string>
 	<key>developmentUrl</key>
 	<string>decodewallet://10.7.13.165:19000</string>
 </dict>
