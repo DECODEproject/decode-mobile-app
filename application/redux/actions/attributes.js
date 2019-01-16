@@ -17,7 +17,7 @@ export function addCredentialFromUrl(attribute, walletId, url) {
 export function storeCredentials(setItemAsync) {
   return (dispatch, getState) => {
     const state = getState();
-
+    console.log(`Saving attributes: ${JSON.stringify([...state.attributes.list.values()])}`);
     return setItemAsync('attributes', JSON.stringify([...state.attributes.list.values()])).then(() => (
       dispatch({
         type: types.STORE_ATTRIBUTES,
@@ -29,6 +29,7 @@ export function storeCredentials(setItemAsync) {
 
 export function addCredential(attribute, walletId, url, setItemAsync) {
   return async (dispatch) => {
+    console.log(`attribute: ${JSON.stringify(attribute)}, wallet id: ${walletId}, url: ${url}`);
     await dispatch(addCredentialFromUrl(attribute, walletId, url));
     const action = await dispatch(storeCredentials(setItemAsync));
 

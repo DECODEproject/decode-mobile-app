@@ -35,6 +35,7 @@ class AttributesSummary extends React.Component {
 
   handleRedirect = async (event) => {
     const { url } = event;
+    console.log(`Received redirect event: ${url}`);
     const { petition, walletId } = this.props;
     await this.props.addCredential(petition.attributes.mandatory[0], walletId, url);
     await this.props.goToPetitionSummary();
@@ -46,7 +47,7 @@ class AttributesSummary extends React.Component {
     // const credentialIssuerUrl = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
     const queryParam = encodeURIComponent(Constants.linkingUri);
     const url = `${credentialIssuerUrl}?linkingUri=${queryParam}`;
-    console.log(url);
+    console.log(`Opening web browser to ${url}`);
     Linking.addEventListener('url', this.handleRedirect);
     await WebBrowser.openBrowserAsync(url);
     Linking.removeEventListener('url', this.handleRedirect);

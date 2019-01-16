@@ -75,9 +75,9 @@ async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote,
 
 async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature) { //eslint-disable-line
   try {
-    console.log('BEFORE GET LST TX');
+    console.log('Going to call chainspace client fetchLastTransaction');
     const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
-    console.log(' GET LST TX', lastTx);
+    console.log(`LastTx: ${JSON.stringify(lastTx)}`);
     const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
     console.log('Z output', zenroomOutput);
     const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
