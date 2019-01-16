@@ -12,6 +12,8 @@ import goToPetition from '../application/redux/actions/home';
 import authorizationAction, { updatePin, resetPin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
+import ZenroomExecutor from '../lib/ZenroomExecutor';
+import helloContract from '../assets/contracts/hello';
 
 
 import styles from './styles';
@@ -26,6 +28,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.validatePinCode = this.validatePinCode.bind(this);
+    this.sayHelloToZenroom = this.sayHelloToZenroom.bind(this);
   }
 
 
@@ -74,6 +77,12 @@ class Home extends React.Component {
     });
   }
 
+  async sayHelloToZenroom() {
+    const executor = new ZenroomExecutor();
+    const helloResponse = await executor.execute(helloContract);
+    alert(`Zenroom says: ${helloResponse}`);
+  }
+
   render() {
     return (
       <KeyboardAvoidingView
@@ -85,6 +94,11 @@ class Home extends React.Component {
             <Image
               style={styles.homeLogo}
               source={decodeLogo}
+            />
+              {}
+            <Button
+                name='Hello Zenroom'
+                onPress={this.sayHelloToZenroom}
             />
             <View style={styles.homeTextInput}>
               <Text style={{ marginVertical: 10 }}>PIN:&nbsp;&nbsp;</Text>
