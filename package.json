@@ -20,8 +20,7 @@
     "react-native-mock-render": "0.0.25",
     "react-native-scripts": "^1.8.1",
     "react-test-renderer": "16.0.0",
-    "redux-mock-store": "^1.5.1",
-    "remotedev-rn-debugger": "^0.8.3"
+    "redux-mock-store": "^1.5.1"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -32,7 +31,6 @@
     "test": "node node_modules/jest/bin/jest.js",
     "test-watch": "jest --watch",
     "lint": "eslint -c .eslintrc.json .",
-    "postinstall": "remotedev-debugger --hostname localhost --port 5678 --injectserver",
     "build:ios": "exp build:ios",
     "build:android": "exp build:android"
   },
