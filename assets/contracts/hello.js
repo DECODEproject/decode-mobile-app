@@ -1,4 +1,4 @@
-export default `--
+export default `-- This contract is used for testing zenroom calls
 hello = str("Hello World!")
 print(hello:string())
 print("in hex: "    .. hello:hex())
