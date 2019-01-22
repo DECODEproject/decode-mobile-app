@@ -78,9 +78,12 @@ class Home extends React.Component {
   }
 
   async sayHelloToZenroom() {
-    const executor = new ZenroomExecutor();
-    const helloResponse = await executor.execute(helloContract);
-    alert(`Zenroom says: ${helloResponse}`);
+    try{
+        const helloResponse = await ZenroomExecutor.execute(helloContract, "", "");
+        alert(`Zenroom says: ${helloResponse}`);
+    } catch(e) {
+        alert(`Zenroom complains: ${e}`);
+    }
   }
 
   render() {

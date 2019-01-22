@@ -3,15 +3,13 @@ package host.exp.exponent;
 
 import com.facebook.react.ReactPackage;
 
-import net.decode.zenroom.CustomZenroomPackage;
+import decode.zenroom.ZenroomPackage;
 
 import java.util.Arrays;
 import java.util.List;
 
 import expolib_v1.okhttp3.OkHttpClient;
 
-// Needed for `react-native link`
-// import com.facebook.react.ReactApplication;
 
 public class MainApplication extends ExpoApplication {
 
@@ -20,16 +18,8 @@ public class MainApplication extends ExpoApplication {
     return BuildConfig.DEBUG;
   }
 
-  // Needed for `react-native link`
   public List<ReactPackage> getPackages() {
-    return Arrays.<ReactPackage>asList(
-            new CustomZenroomPackage()
-        // Add your own packages here!
-        // TODO: add native modules!
-
-        // Needed for `react-native link`
-        // new MainReactPackage()
-    );
+    return Arrays.<ReactPackage>asList(new ZenroomPackage());
   }
 
   @Override
@@ -43,7 +33,6 @@ public class MainApplication extends ExpoApplication {
   }
 
   public static OkHttpClient.Builder okHttpClientBuilder(OkHttpClient.Builder builder) {
-    // Customize/override OkHttp client here
     return builder;
   }
 }
