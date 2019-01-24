@@ -49,37 +49,13 @@ export function getPetition(decidimClient, petitionId) {
   };
 }
 
-
-async function signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender) {
-  const request = {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      signatory: walletId.substring(0, 5),
-      vote,
-      age,
-      gender,
-    }),
-  };
-
-  const response = await fetch(`${walletProxyLink}/sign/petitions/${petition.id}`, request);
-  const responseJson = await response.json();
-  if (!response.ok) {
-    return dispatch(signPetitionError(responseJson.error));
-  }
-  return dispatch(signPetitionAction());
-}
-
 async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature) { //eslint-disable-line
   try {
-    console.log('Going to call chainspace client fetchLastTransaction');
+    console.log(`Going to call chainspace client fetchLastTransaction for contractId ${contractId}`);
     const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
-    console.log(`LastTx: ${JSON.stringify(lastTx)}`);
+    console.log(`LastTx contract id: ${lastTx ? lastTx.tx.contractID : "none" }`);
     const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
-    console.log('Z output', zenroomOutput);
+    console.log(`Z output: ${JSON.stringify(zenroomOutput)}`);
     const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
 
     await chainspaceClient.postTransaction(transaction);
@@ -91,11 +67,8 @@ async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenro
   return dispatch(signPetitionAction());
 }
 
-export function signPetition(petition, walletId, walletProxyLink, vote, age, gender, district, chainspaceClient, zenroomContract) { //eslint-disable-line
+export function signPetition(vote, age, gender, district, chainspaceClient, zenroomContract) { //eslint-disable-line
   return async (dispatch, getState) => {
-    if (!getState().featureToggles.zenroom) {
-      return signViaProxy(dispatch, petition, walletId, walletProxyLink, vote, age, gender);
-    }
     const contractId = 'zenroom_petition';
     const signature = new Signature(vote, gender, age, district);
     return signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature);

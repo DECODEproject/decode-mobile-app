@@ -23,8 +23,6 @@ import {
 } from '../application/utils/attributeManagement';
 import ChainspaceClient from '../lib/ChainspaceClient';
 import ZenroomContract from '../lib/ZenroomContract';
-import ZenroomExecutor from '../lib/ZenroomExecutor';
-
 
 const backArrowIcon = require('../assets/images/ico-back-button.png');
 
@@ -267,7 +265,7 @@ const mapStateToProps = state => ({
   signSuccess: state.signSuccess,
   walletAttributes: state.attributes.list,
   chainspaceClient: new ChainspaceClient(chainspaceUrl),
-  zenroomContract: new ZenroomContract(new ZenroomExecutor()),
+  zenroomContract: new ZenroomContract(),
 });
 
 const mapDispatchToProps = dispatch => ({
