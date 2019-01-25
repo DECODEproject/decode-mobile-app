@@ -54,11 +54,12 @@ async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenro
     console.log(`Going to call chainspace client fetchLastTransaction for contractId ${contractId}`);
     const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
     console.log(`LastTx contract id: ${lastTx ? lastTx.tx.contractID : "none" }`);
-    const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
-    console.log(`Z output: ${JSON.stringify(zenroomOutput)}`);
-    const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
 
-    await chainspaceClient.postTransaction(transaction);
+    // const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
+    // console.log(`Z output: ${JSON.stringify(zenroomOutput)}`);
+    // const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
+    //
+    // await chainspaceClient.postTransaction(transaction);
   } catch (error) {
     console.log('errooooooooooor', error);
     return dispatch(signPetitionError(error.message));
