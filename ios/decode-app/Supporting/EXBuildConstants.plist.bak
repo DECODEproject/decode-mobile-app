@@ -16,6 +16,6 @@
 	<key>TEMPORARY_SDK_VERSION</key>
 	<string>32.0.0</string>
 	<key>developmentUrl</key>
-	<string>decodewallet://10.7.13.165:19000</string>
+	<string>decodewallet://192.168.1.42:19000</string>
 </dict>
 </plist>

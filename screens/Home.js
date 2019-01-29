@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard, ScrollView } from 'react-native';
-import { SecureStore, ScreenOrientation } from 'expo';
+import { SecureStore, ScreenOrientation, Linking } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { goToAttributesLanding, goToLogin } from '../application/redux/actions/navigation';
@@ -14,8 +14,7 @@ import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
 import ZenroomExecutor from '../lib/ZenroomExecutor';
 import helloContract from '../assets/contracts/pair';
-
-
+import linkingHandler from '../lib/linkingHandler';
 import styles from './styles';
 import DecidimClient from '../lib/DecidimClient';
 import LanguageService from '../lib/LanguageService';
@@ -36,6 +35,9 @@ class Home extends React.Component {
     ScreenOrientation.allowAsync(ScreenOrientation.Orientation.PORTRAIT_UP);
     this.props.initializeState(this.props.loginFT).then(() => {});
   }
+  componentDidMount() {
+    Linking.addEventListener('url', linkingHandler(this.props.goToPetition));
+  };
 
   goToNextPage() {
     const comingFromDecidim = this.props.decidimAPIUrl;

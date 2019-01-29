@@ -3,7 +3,7 @@
 // const isLocal = Constants.manifest.releaseChannel !== 'production';
 
 const initialState = {
-  login: true,
+  login: false,
   genderAttribute: true,
 };
 
