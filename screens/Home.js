@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard, ScrollView } from 'react-native';
+import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard, ScrollView, Dimensions } from 'react-native';
 import { SecureStore, ScreenOrientation, Linking } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
@@ -20,8 +20,8 @@ import DecidimClient from '../lib/DecidimClient';
 import LanguageService from '../lib/LanguageService';
 import Attribute from '../lib/Attribute';
 
-const decodeLogo = require('../assets/images/decode-hexagon.png');
-
+const decodeLogo = require('../assets/images/decode-logo-pin.png');
+const {height: windowHeight} = Dimensions.get('window');
 
 class Home extends React.Component {
   constructor(props) {
@@ -92,33 +92,41 @@ class Home extends React.Component {
     return (
       <KeyboardAvoidingView
         behavior="position"
-        keyboardVerticalOffset={50}
       >
-        <ScrollView keyboardShouldPersistTaps="handled">
-          <View style={styles.homeContainer}>
+        <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={{
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: windowHeight,
+        }}>
+          <View style={{
+            flex: 1,
+          }}>
             <Image
-              style={styles.homeLogo}
+              style={styles.pinLogo}
               source={decodeLogo}
             />
-              {}
+          </View>
+          <View style={{flex: 1}}>
             <Button
                 name='Hello Zenroom'
                 onPress={this.sayHelloToZenroom}
             />
+
+            <Text style={{ marginVertical: 10, marginHorizontal: 16 }}>PIN:&nbsp;&nbsp;</Text>
+            <TextInput
+              style={styles.homePassword}
+              placeholder=" Pin"
+              keyboardType="numeric"
+              secureTextEntry
+              underlineColorAndroid="transparent"
+              onChangeText={pin => this.props.updatePin(pin)}
+              value={this.props.pinCode}
+              onSubmitEditing={this.validatePinCode}
+            />
+
             <View style={styles.homeTextInput}>
-              <Text style={{ marginVertical: 10 }}>PIN:&nbsp;&nbsp;</Text>
-              <TextInput
-                style={styles.homePassword}
-                placeholder=" Pin"
-                keyboardType="numeric"
-                secureTextEntry
-                underlineColorAndroid="transparent"
-                onChangeText={pin => this.props.updatePin(pin)}
-                value={this.props.pinCode}
-                onSubmitEditing={this.validatePinCode}
-              />
-            </View>
-            <View style={{ flexDirection: 'row' }}>
               <Button
                 name={this.props.t('button')}
                 onPress={this.validatePinCode}

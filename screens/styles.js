@@ -88,10 +88,6 @@ const styles = StyleSheet.create({
     color: '#ff0000',
     marginBottom: 30,
   },
-  homeContainer: {
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
   homeLogo: {
     height: 275,
     marginTop: 75,
@@ -104,11 +100,12 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     alignItems: 'center',
     paddingHorizontal: 10,
+    marginHorizontal: 16,
   },
   homeTextInput: {
-    marginBottom: 20,
-    marginRight: 32,
+    display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'center',
   },
   homeWelcomeMessage: {
     fontSize: 18,
@@ -218,9 +215,9 @@ const styles = StyleSheet.create({
   },
   pinLogo: {
     height: 80,
-    marginTop: 50,
-    marginBottom: 30,
     width: 200,
+    marginTop: 80,
+    marginBottom: 30,
   },
   pinPassword: {
     height: Platform.OS === 'ios' ? 35 : 40,
