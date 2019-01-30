@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Constants, SecureStore, WebBrowser } from 'expo';
-import { Linking, View, Text, Image, TouchableOpacity } from 'react-native';
+import { Linking, View, Text, Dimensions, ScrollView } from 'react-native';
 import { translate } from 'react-i18next';
 import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import LinkButton from '../application/components/LinkButton/LinkButton';
@@ -13,25 +13,7 @@ import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
 
-const backArrowIcon = require('../assets/images/ico-back-button.png');
-
 class AttributesSummary extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-      renderLeft: router => (
-        <TouchableOpacity
-          onPress={() => openPetitionInBrowser(router.params.petitionId)}
-          style={{ paddingTop: 10, paddingLeft: 10 }}
-        >
-          <Image source={backArrowIcon} />
-        </TouchableOpacity>
-      ),
-    },
-  };
 
   handleRedirect = async (event) => {
     const { url } = event;
@@ -55,56 +37,65 @@ class AttributesSummary extends React.Component {
 
   render() {
     const { petition, t } = this.props;
+    const {height: windowHeight} = Dimensions.get('window');
     return (
-      <View style={{ flex: 1, padding: 26 }}>
-        <PetitionDescription
-          title={petition.title}
-          description={petition.description}
-        />
+      <ScrollView style={styles.petitionSummaryContainer} contentContainerStyle={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        minHeight: windowHeight,
+      }}>
+        <View style={{ flex: 1, padding: 26 }}>
+          <PetitionDescription
+            title={petition.title}
+            description={petition.description}
+          />
 
-        <View
-          style={{
-            marginTop: 10,
-            borderBottomColor: '#80979797',
-            borderBottomWidth: 1,
-          }}
-        />
-
-        <RequesterInfo name="Decidim Barcelona" />
-
-        <View style={{ paddingBottom: 20 }}>
-          <Text style={{ color: '#9B9B9B', fontSize: 14 }}>
-            <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
-          </Text>
-        </View>
-
-        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
-          <Text>
-            {t(petition.attributes.mandatory[0].predicate)} <Text style={{ color: '#D0021B' }}>*</Text>
-          </Text>
-          <LinkButton
-            name={t('button')}
-            onPress={this.openWebBrowserAsync}
+          <View
             style={{
-              marginTop: 40,
-              alignSelf: 'center',
+              marginTop: 10,
+              borderBottomColor: '#80979797',
+              borderBottomWidth: 1,
             }}
           />
-        </View>
 
-        <View style={{
+          <RequesterInfo name="Decidim Barcelona" />
+
+          <View style={{ paddingBottom: 20 }}>
+            <Text style={{ color: '#9B9B9B', fontSize: 14 }}>
+              <Text style={{ color: '#D0021B' }}>*</Text> {t('requiredAttributes')}
+            </Text>
+          </View>
+
+          <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+            <Text>
+              {t(petition.attributes.mandatory[0].predicate)} <Text style={{ color: '#D0021B' }}>*</Text>
+            </Text>
+            <LinkButton
+              name={t('button')}
+              onPress={this.openWebBrowserAsync}
+              style={{
+                marginTop: 40,
+                alignSelf: 'center',
+              }}
+            />
+          </View>
+
+          <View style={{
             alignItems: 'center',
             justifyContent: 'flex-end',
             paddingBottom: 20,
           }}
-        >
-          <Text
-            style={styles.cancelSigningPetition}
-            onPress={() => openPetitionInBrowser(petition.id)}
-          >{t('cancel')}
-          </Text>
+          >
+            <Text
+              style={styles.cancelSigningPetition}
+              onPress={() => openPetitionInBrowser(petition.id)}
+            >{t('cancel')}
+            </Text>
+          </View>
         </View>
-      </View>
+
+      </ScrollView>
     );
   }
 }
