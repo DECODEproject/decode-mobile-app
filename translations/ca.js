@@ -34,7 +34,7 @@ export default {
     successMessage: 'Connectat correctament.',
   },
   manageAttributes: {
-    description: 'Pots afegir les següents dades',
+    description: 'Pots gestionar les següents dades',
     ageAttribute: 'Data de Naixement',
     districtAttribute: 'Districte',
     districtPlaceholder: 'Selecciona un districte',

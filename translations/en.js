@@ -34,7 +34,7 @@ export default {
     successMessage: 'Successfully logged in.',
   },
   manageAttributes: {
-    description: 'You can add the following personal data',
+    description: 'You can manage the following personal data',
     ageAttribute: 'Date of Birth',
     districtAttribute: 'District',
     districtPlaceholder: 'Select a district',

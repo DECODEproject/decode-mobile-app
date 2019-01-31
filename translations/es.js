@@ -34,7 +34,7 @@ export default {
     successMessage: 'Conectado correctamente.',
   },
   manageAttributes: {
-    description: 'Puedes añadir los siguientes datos',
+    description: 'Puedes gestionar los siguientes datos',
     ageAttribute: 'Fecha de Nacimiento',
     districtAttribute: 'Distrito',
     districtPlaceholder: 'Selecciona un distrito',
