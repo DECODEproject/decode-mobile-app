@@ -12,20 +12,11 @@ import i18n from '../i18n';
 const decodeLogo = require('../assets/images/decode-logo-pin.png');
 
 class PinSetup extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-    },
-  };
 
   render() {
     return (
       <KeyboardAvoidingView
         behavior="position"
-        keyboardVerticalOffset={50}
       >
         <ScrollView keyboardShouldPersistTaps="handled">
           <View style={styles.pinContainer}>

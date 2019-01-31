@@ -7,6 +7,7 @@ import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import {signPetition} from '../application/redux/actions/petition';
 import Button from '../application/components/Button/Button';
+import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import {goToSignOutcome} from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
@@ -145,7 +146,7 @@ class PetitionSummary extends React.Component {
         justifyContent: 'space-between',
         minHeight: windowHeight,
       }}>
-
+        <Logo/>
         <View style={{
           paddingTop: 40,
           paddingBottom: 20,

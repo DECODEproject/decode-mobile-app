@@ -7,6 +7,7 @@ import { translate } from 'react-i18next';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import Button from '../application/components/Button/Button';
+import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import Error from './Error';
 import i18n from '../i18n';
 
@@ -22,13 +23,6 @@ const linksStyle = {
 };
 
 class SignOutcome extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      tintColor: 'rgb(0,163,158)',
-      title: 'Outcome',
-    },
-  }
 
   static createLink(linkText, index) {
     return (
@@ -46,6 +40,7 @@ class SignOutcome extends React.Component {
 
     return (
       <View style={styles.signOutcomeContainer}>
+        <Logo/>
         <ImageOverlay
           source={successImage}
           overlayAlpha={0}

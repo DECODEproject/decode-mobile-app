@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { View, Text } from 'react-native';
+import { View, Text, Platform } from 'react-native';
 import { translate } from 'react-i18next';
 import DateTimePicker from 'react-native-modal-datetime-picker';
 import moment from 'moment';
@@ -10,6 +10,7 @@ import { SecureStore } from 'expo';
 import Button from '../application/components/Button/Button';
 import LinkButton from '../application/components/LinkButton/LinkButton';
 import DeleteButton from '../application/components/DeleteButton/DeleteButton';
+import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import { saveAttributes } from '../application/redux/actions/attributes';
 import { sortedDistrictsList, districtNameFromId, validDistrict } from '../lib/districts';
 import { resetNavigation } from '../application/redux/actions/navigation';
@@ -70,9 +71,14 @@ class ManageAttributes extends Component {
   static route = {
     navigationBar: {
       backgroundColor: 'white',
+      borderBottomWidth: 0,
+      borderBottomColor: 'white',
+      elevation: 1,
       fontSize: 20,
       fontWeight: '500',
       tintColor: 'rgb(0,163,158)',
+      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
+      height: 80,
     },
   };
 

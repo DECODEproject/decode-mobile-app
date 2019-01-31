@@ -5,23 +5,14 @@ import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import AttributeListItem from '../application/components/AttributeListItem/AttributeListItem';
 import Button from '../application/components/Button/Button';
+import ScreenLogo from '../application/components/ScreenLogo/ScreenLogo';
 import { goToNewAttributes } from '../application/redux/actions/navigation';
 import styles from './styles';
 import i18n from '../i18n';
 
-const decodeLogo = require('../assets/images/decode-logo-pin.png');
 const emptyStateImage = require('../assets/images/ico-empty-state.png');
 
 class AttributesLanding extends React.Component {
-  static renderLogo() {
-    return (
-      <Image
-        source={decodeLogo}
-        resizeMode="contain"
-        style={styles.attributesLandingLogo}
-      />);
-  }
-
 
   attributeExists() {
     return this.props.attributes.size > 0;
@@ -60,8 +51,8 @@ class AttributesLanding extends React.Component {
       : this.renderEmpty();
 
     return (
-      <View style={{ flex: 1, paddingHorizontal: 20 }}>
-        {AttributesLanding.renderLogo()}
+      <View style={{ flex: 1, padding: 20 }}>
+        <ScreenLogo />
         <View style={styles.attributesLandingContainer}>
           {centerComponent}
         </View>

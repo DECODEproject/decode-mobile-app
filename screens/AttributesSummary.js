@@ -8,6 +8,7 @@ import { goToPetitionSummary } from '../application/redux/actions/navigation';
 import LinkButton from '../application/components/LinkButton/LinkButton';
 import RequesterInfo from '../application/components/RequesterInfo/RequesterInfo';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
+import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import { addCredential } from '../application/redux/actions/attributes';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
@@ -45,7 +46,8 @@ class AttributesSummary extends React.Component {
         justifyContent: 'space-between',
         minHeight: windowHeight,
       }}>
-        <View style={{ flex: 1, padding: 26 }}>
+        <Logo/>
+        <View style={{ flex: 1, paddingTop: 20}}>
           <PetitionDescription
             title={petition.title}
             description={petition.description}

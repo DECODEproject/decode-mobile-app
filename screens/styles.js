@@ -186,8 +186,8 @@ const styles = StyleSheet.create({
     paddingVertical: 40,
   },
   signOutcomeContainer: {
+    paddingVertical: 26,
     alignItems: 'center',
-    backgroundColor: 'rgb(246, 246, 246)',
     flex: 1,
   },
   signOutcomeIcon: {
