@@ -49,8 +49,9 @@ export function getPetition(decidimClient, petitionId) {
   };
 }
 
-async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature) { //eslint-disable-line
+async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature, vote) { //eslint-disable-line
   try {
+    if (vote == 'No') return dispatch(signPetitionError('This is a test error'));
     console.log(`Going to call chainspace client fetchLastTransaction for contractId ${contractId}`);
     const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
     console.log(`LastTx contract id: ${lastTx ? lastTx.tx.contractID : "none" }`);
@@ -72,6 +73,6 @@ export function signPetition(vote, age, gender, district, chainspaceClient, zenr
   return async (dispatch, getState) => {
     const contractId = 'zenroom_petition';
     const signature = new Signature(vote, gender, age, district);
-    return signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature);
+    return signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature, vote);
   };
 }
