@@ -3,6 +3,7 @@ import { Text, View, Image, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import Button from '../application/components/Button/Button';
+import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import { getDecidimUrl } from '../config';
 import styles from './styles';
 import i18n from '../i18n';
@@ -26,6 +27,7 @@ class Error extends React.Component {
 
     return (
       <View style={styles.signOutcomeContainer}>
+        <Logo/>
         <View style={styles.signOutcomeBox}>
           <Image
             style={styles.signOutcomeIcon}
