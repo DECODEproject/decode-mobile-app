@@ -8,7 +8,7 @@ import styles from '../../../screens/styles';
 import LinkButton from '../LinkButton/LinkButton';
 import i18n from '../../../i18n';
 
-const fallbackImage = require('../../../assets/images/square-city-red.png');
+const fallbackImage = require('../../../assets/images/icon-barcelona_.png');
 
 class PetitionDescription extends React.Component {
   static htmlToInnerText(html) {
