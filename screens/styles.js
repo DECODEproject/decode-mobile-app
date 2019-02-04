@@ -123,7 +123,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     flex: 1,
-    maxHeight: 50,
   },
   newAttributesAttributeName: {
     color: 'rgba(0, 0, 0, 0.87)',

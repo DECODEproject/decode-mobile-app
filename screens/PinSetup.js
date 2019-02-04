@@ -71,7 +71,7 @@ class PinSetup extends React.Component {
               </Text>}
             </View>
             <View style={{ marginHorizontal: '10%' }}>
-              <Text style={{ color: '#9B9B9B' }}>
+              <Text style={{ color: '#C74A12' }}>
                 { this.props.t('pinWarning') }
               </Text>
             </View>

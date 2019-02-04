@@ -61,7 +61,7 @@ class AttributesSummary extends React.Component {
             }}
           />
 
-          <RequesterInfo name="Decidim Barcelona" />
+          <RequesterInfo name={petition.requester} />
 
           <View style={{ paddingBottom: 20 }}>
             <Text style={{ color: '#9B9B9B', fontSize: 14 }}>

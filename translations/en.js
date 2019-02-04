@@ -4,7 +4,8 @@ export default {
     manage: 'Manage Data',
   },
   attributesSummary: {
-    title: 'Signing this proposal requires verified residency.',
+    genericName: 'The entity',
+    title: 'requires verified residency.',
     subtitle: 'You can do this with the Barcelona City Council. Your residency will be verified anonymously. You only need to do this once.',
     requirement: 'Requires the following:',
     more: 'Show more',
@@ -34,7 +35,7 @@ export default {
     successMessage: 'Successfully logged in.',
   },
   manageAttributes: {
-    description: 'You can manage the following personal data',
+    description: 'You can manage the following personal data. The data will remain within your phone.',
     ageAttribute: 'Date of Birth',
     districtAttribute: 'District',
     districtPlaceholder: 'Select a district',
@@ -90,7 +91,7 @@ export default {
     pages: {
       one: {
         title: 'DECODE',
-        subtitle: 'is your safe and easy personal data manager',
+        subtitle: 'is your personal data manager',
       },
       two: {
         subtitle: 'Your data has value. It\'s important you have control over it',
@@ -99,7 +100,7 @@ export default {
         subtitle: 'With DECODE, you choose which personal data to share and how it is used',
       },
       four: {
-        subtitle: 'Store your personal data with the highest security standards',
+        subtitle: 'Store your personal data with high security standards',
       },
     },
   },

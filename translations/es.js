@@ -4,7 +4,8 @@ export default {
     manage: 'Gestionar datos',
   },
   attributesSummary: {
-    title: 'DECIDIM requiere verificar tu residencia en Barcelona.',
+    genericName: 'La entidad',
+    title: 'requiere verificar tu residencia en Barcelona.',
     subtitle: 'La puedes verificar con el Ayuntamiento de Barcelona. Tu residencia se verifica anónimamente. Sólo hace falta hacerlo una vez.',
     requirement: 'Requiere lo siguiente:',
     more: 'Mostrar más',
@@ -34,7 +35,7 @@ export default {
     successMessage: 'Conectado correctamente.',
   },
   manageAttributes: {
-    description: 'Puedes gestionar los siguientes datos',
+    description: 'Puedes gestionar los siguientes datos. Los datos permanecerán en tu móvil.',
     ageAttribute: 'Fecha de Nacimiento',
     districtAttribute: 'Distrito',
     districtPlaceholder: 'Selecciona un distrito',
@@ -90,7 +91,7 @@ export default {
     pages: {
       one: {
         title: 'DECODE',
-        subtitle: 'es tu gestor de datos personales fácil y seguro',
+        subtitle: 'es tu gestor de datos personales',
       },
       two: {
         subtitle: 'Tus datos tienen un valor. Es importante que los controles',
@@ -99,7 +100,7 @@ export default {
         subtitle: 'Con DECODE, tú decides qué datos quieres compartir y cómo son utilizados',
       },
       four: {
-        subtitle: 'Guarda tus datos personales con la mejor seguridad',
+        subtitle: 'Guarda tus datos personales con alta seguridad',
       },
     },
   },

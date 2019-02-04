@@ -25,7 +25,7 @@ const minDate = new Date();
 minDate.setFullYear(minDate.getFullYear() - 130);
 
 export const PickerComponent = props => (
-  <View id={props.id} style={{ flex: 1, maxHeight: 80 }}>
+  <View id={props.id} style={{ flex: 1, maxHeight: 60 }}>
     <View style={styles.newAttributesAttribute}>
       <Text style={styles.newAttributesAttributeName}>{props.title}</Text>
       <Picker
@@ -162,11 +162,11 @@ class ManageAttributes extends Component {
           onPress={() => this.props.deleteWalletData(this.props.t)}
         />
         <View style={styles.attributesManagementContainer}>
-          <View style={{ flex: 1, maxHeight: 50 }}>
-            <Text style={{ fontSize: 20 }}>{this.props.t('description')}</Text>
+          <View style={{ flex: 1, maxHeight: 60 }}>
+            <Text style={{ fontSize: 16 }}>{this.props.t('description')}</Text>
           </View>
-          <View style={{ flex: 1, paddingTop: 20 }}>
-            <View style={{ flex: 1, maxHeight: 80 }}>
+          <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, maxHeight: 60 }}>
               <View style={styles.newAttributesAttribute}>
                 <Text style={styles.newAttributesAttributeName}>{this.props.t('ageAttribute')}</Text>
                 <LinkButton
