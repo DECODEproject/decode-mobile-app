@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:decode-app.xcodeproj">
+      location = "group:/Users/jordi/projects/dribia/decode/wallet/ios/DECODE App.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

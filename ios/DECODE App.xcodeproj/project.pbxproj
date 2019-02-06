@@ -25,9 +25,10 @@
 
 /* Begin PBXFileReference section */
 		2C1548D9E4CB1AEFA5CCAE6D /* Pods-decode-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-decode-app/Pods-decode-app.debug.xcconfig"; sourceTree = "<group>"; };
+		8D3C3E64220B3AC800805CEA /* DECODE App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DECODE App.entitlements"; sourceTree = "<group>"; };
 		A47FE4D7F70906B7DC8CE39B /* Pods-decode-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-decode-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-decode-app/Pods-decode-app.release.xcconfig"; sourceTree = "<group>"; };
 		B501732A1DC01252003445D9 /* EXShell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXShell.plist; sourceTree = "<group>"; };
-		B56386411DB9693800A0598C /* decode-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "decode-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56386411DB9693800A0598C /* DECODE App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DECODE App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56386471DB9693800A0598C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B56386481DB9693800A0598C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B56386501DB9693800A0598C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		B56386381DB9693800A0598C = {
 			isa = PBXGroup;
 			children = (
+				8D3C3E64220B3AC800805CEA /* DECODE App.entitlements */,
 				B56386431DB9693800A0598C /* decode-app */,
 				B56386421DB9693800A0598C /* Products */,
 				5B29BC350A332C58878A9F13 /* Pods */,
@@ -91,7 +93,7 @@
 		B56386421DB9693800A0598C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B56386411DB9693800A0598C /* decode-app.app */,
+				B56386411DB9693800A0598C /* DECODE App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B56386401DB9693800A0598C /* decode-app */ = {
+		B56386401DB9693800A0598C /* DECODE App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "decode-app" */;
+			buildConfigurationList = B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "DECODE App" */;
 			buildPhases = (
 				23539343DCC44EF8449429EE /* [CP] Check Pods Manifest.lock */,
 				B5722AD01DFB7E3F0084848F /* Prepare Expo */,
@@ -146,9 +148,9 @@
 			);
 			dependencies = (
 			);
-			name = "decode-app";
+			name = "DECODE App";
 			productName = "decode-app";
-			productReference = B56386411DB9693800A0598C /* decode-app.app */;
+			productReference = B56386411DB9693800A0598C /* DECODE App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,16 +160,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = "650 Industries, Inc.";
+				ORGANIZATIONNAME = "Dribia Data Research S.L.";
 				TargetAttributes = {
 					B56386401DB9693800A0598C = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9Z2J8U354Y;
+						DevelopmentTeam = AQY54R9UJX;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = B563863C1DB9693800A0598C /* Build configuration list for PBXProject "decode-app" */;
+			buildConfigurationList = B563863C1DB9693800A0598C /* Build configuration list for PBXProject "DECODE App" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -180,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B56386401DB9693800A0598C /* decode-app */,
+				B56386401DB9693800A0598C /* DECODE App */,
 			);
 		};
 /* End PBXProject section */
@@ -406,7 +413,10 @@
 			baseConfigurationReference = 2C1548D9E4CB1AEFA5CCAE6D /* Pods-decode-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9Z2J8U354Y;
+				CODE_SIGN_ENTITLEMENTS = "DECODE App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQY54R9UJX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/decode-app/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -415,8 +425,9 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/decode-app",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.decode.wallet-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dribia.DECODE-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -426,7 +437,10 @@
 			baseConfigurationReference = A47FE4D7F70906B7DC8CE39B /* Pods-decode-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9Z2J8U354Y;
+				CODE_SIGN_ENTITLEMENTS = "DECODE App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQY54R9UJX;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/decode-app/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -435,8 +449,9 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/decode-app",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.decode.wallet-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "Dribia.DECODE-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -444,7 +459,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B563863C1DB9693800A0598C /* Build configuration list for PBXProject "decode-app" */ = {
+		B563863C1DB9693800A0598C /* Build configuration list for PBXProject "DECODE App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B56386561DB9693800A0598C /* Debug */,
@@ -453,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "decode-app" */ = {
+		B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "DECODE App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B56386591DB9693800A0598C /* Debug */,

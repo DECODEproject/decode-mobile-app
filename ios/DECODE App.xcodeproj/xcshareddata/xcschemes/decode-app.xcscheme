@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B56386401DB9693800A0598C"
-               BuildableName = "decode-app.app"
-               BlueprintName = "decode-app"
-               ReferencedContainer = "container:decode-app.xcodeproj">
+               BuildableName = "DECODE App.app"
+               BlueprintName = "DECODE App"
+               ReferencedContainer = "container:DECODE App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -34,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B56386401DB9693800A0598C"
-            BuildableName = "decode-app.app"
-            BlueprintName = "decode-app"
-            ReferencedContainer = "container:decode-app.xcodeproj">
+            BuildableName = "DECODE App.app"
+            BlueprintName = "DECODE App"
+            ReferencedContainer = "container:DECODE App.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -46,7 +45,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -58,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B56386401DB9693800A0598C"
-            BuildableName = "decode-app.app"
-            BlueprintName = "decode-app"
-            ReferencedContainer = "container:decode-app.xcodeproj">
+            BuildableName = "DECODE App.app"
+            BlueprintName = "DECODE App"
+            ReferencedContainer = "container:DECODE App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -84,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B56386401DB9693800A0598C"
-            BuildableName = "decode-app.app"
-            BlueprintName = "decode-app"
-            ReferencedContainer = "container:decode-app.xcodeproj">
+            BuildableName = "DECODE App.app"
+            BlueprintName = "DECODE App"
+            ReferencedContainer = "container:DECODE App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
