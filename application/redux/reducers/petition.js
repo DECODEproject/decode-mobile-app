@@ -49,6 +49,7 @@ export default function reducer(state = initialState, action) {
     case types.SIGN_PETITION_ERROR:
       return {
         ...state,
+        signed: false,
         error: action.error,
       };
     case types.TOGGLE_ENABLE_ATTRIBUTE:

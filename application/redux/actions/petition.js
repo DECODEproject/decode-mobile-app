@@ -52,10 +52,9 @@ export function getPetition(decidimClient, petitionId) {
 async function signPetitionZenroom(dispatch, chainspaceClient, contractId, zenroomContract, signature, vote) { //eslint-disable-line
   try {
     if (vote == 'No') return dispatch(signPetitionError('This is a test error'));
-    console.log(`Going to call chainspace client fetchLastTransaction for contractId ${contractId}`);
-    const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
-    console.log(`LastTx contract id: ${lastTx ? lastTx.tx.contractID : "none" }`);
-
+    // console.log(`Going to call chainspace client fetchLastTransaction for contractId ${contractId}`);
+    // const lastTx = await chainspaceClient.fetchLastTransaction(contractId);
+    // console.log(`LastTx contract id: ${lastTx ? lastTx.tx.contractID : "none" }`);
     // const zenroomOutput = await zenroomContract.addSignature(signature, lastTx.outputs);
     // console.log(`Z output: ${JSON.stringify(zenroomOutput)}`);
     // const transaction = zenroomContract.buildTransaction(zenroomOutput, lastTx);
