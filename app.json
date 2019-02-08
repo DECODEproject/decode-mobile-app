@@ -9,14 +9,14 @@
     "scheme": "decodewallet",
     "ios": {
       "buildNumber": "1.0.8",
-      "bundleIdentifier": "com.decode.wallet-app",
+      "bundleIdentifier": "com.dribia.decodeapp",
       "publishBundlePath": "ios/decode-app/Supporting/shell-app.bundle",
       "publishManifestPath": "ios/decode-app/Supporting/shell-app-manifest.json"
     },
     "android": {
       "versionCode": 2,
       "permissions": [],
-      "package": "com.decode.walletapp",
+      "package": "com.dribia.decodeapp",
       "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
       "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
     },

@@ -5,11 +5,11 @@
   xmlns:tools="http://schemas.android.com/tools">
 
   <permission
-    android:name="com.decode.walletapp.permission.C2D_MESSAGE"
+    android:name="com.dribia.decodeapp.permission.C2D_MESSAGE"
     android:protectionLevel="signature"/>
 
   <!-- These are required permissions to make the app run -->
-  <uses-permission android:name="com.decode.walletapp.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.dribia.decodeapp.permission.C2D_MESSAGE" />
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
@@ -159,7 +159,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.decode.walletapp" android:path="oauthredirect"/>
+        <data android:scheme="com.dribia.decodeapp" android:path="oauthredirect"/>
       </intent-filter>
     </activity>
 
@@ -253,7 +253,7 @@
         <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
         <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
 
-        <category android:name="com.decode.walletapp"/>
+        <category android:name="com.dribia.decodeapp"/>
       </intent-filter>
     </receiver>
 
