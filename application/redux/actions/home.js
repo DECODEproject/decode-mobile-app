@@ -1,5 +1,6 @@
 import { goToAttributesSummary, goToError, goToPetitionSummary } from './navigation';
 import { getPetition } from './petition';
+import { addTranslation, getLanguage } from '../../../i18n';
 
 export default function goToPetition(decidimClient, petitionId) {
   return async (dispatch, getState) => {
@@ -25,6 +26,9 @@ export default function goToPetition(decidimClient, petitionId) {
       if (isAttributeVerified) {
         dispatch(goToPetitionSummary());
       } else {
+        state.petition.petition.attributes.mandatory[0].verificationInput.map(
+          field => addTranslation(getLanguage(), 'attributesVerification', field.name.en, field.name[getLanguage()])
+        );
         dispatch(goToAttributesSummary());
       }
     }

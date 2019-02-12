@@ -25,5 +25,7 @@ i18n
     },
   });
 
+export const getLanguage = () => i18n.language.split('-')[0];
+export const addTranslation = (lang, bundle, key, value) => i18n.addResource(lang, bundle, key, value);
 
 export default i18n;

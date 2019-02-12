@@ -115,4 +115,7 @@ export default {
     male: 'Male',
     other: 'Other',
   },
+  attributesVerification: {
+    verify: 'Verify',
+  }
 };

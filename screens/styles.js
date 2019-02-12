@@ -266,6 +266,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 40,
   },
+  verificationInputView: {
+    paddingVertical: 10,
+    marginHorizontal: 16,
+  },
+  verificationInput: {
+    height: Platform.OS === 'ios' ? 35 : 40,
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    marginVertical: 2,
+  },
 });
 
 export default styles;

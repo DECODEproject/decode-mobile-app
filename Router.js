@@ -5,6 +5,7 @@ import PetitionSummary from './screens/PetitionSummary';
 import SignOutcome from './screens/SignOutcome';
 import AttributesSummary from './screens/AttributesSummary';
 import AttributesLanding from './screens/AttributesLanding';
+import AttributesVerification from './screens/AttributesVerification';
 import PinSetup from './screens/PinSetup';
 import Walkthrough from './screens/Walkthrough';
 import ManageAttributes from './screens/ManageAttributes';
@@ -18,6 +19,7 @@ const Router = createRouter(() => ({
   petitionSummary: () => PetitionSummary,
   attributesSummary: () => AttributesSummary,
   attributesLanding: () => AttributesLanding,
+  attributesVerification: () => AttributesVerification,
   signOutcome: () => SignOutcome,
   pinSetup: () => PinSetup,
   manageAttributes: () => ManageAttributes,

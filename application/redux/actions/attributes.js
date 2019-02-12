@@ -1,13 +1,10 @@
-import urlParse from 'url-parse';
 import types from '../actionTypes';
 import { goToAttributesLanding } from './navigation';
 
 
-export function addCredentialFromUrl(attribute, walletId, url) {
-  const { query: { credential } } = urlParse(url, true);
-
+export function addCredentialFromObject(attribute, walletId, credential) {
   return {
-    type: types.ADD_CREDENTIAL_FROM_URL,
+    type: types.ADD_CREDENTIAL,
     attribute,
     walletId,
     credential,
@@ -27,12 +24,11 @@ export function storeCredentials(setItemAsync) {
   };
 }
 
-export function addCredential(attribute, walletId, url, setItemAsync) {
+export function addCredential(attribute, walletId, credential, setItemAsync) {
   return async (dispatch) => {
-    console.log(`attribute: ${JSON.stringify(attribute)}, wallet id: ${walletId}, url: ${url}`);
-    await dispatch(addCredentialFromUrl(attribute, walletId, url));
+    console.log(`attribute: ${JSON.stringify(attribute)}, wallet id: ${walletId}, credential: ${JSON.stringify(credential)}`);
+    await dispatch(addCredentialFromObject(attribute, walletId, credential));
     const action = await dispatch(storeCredentials(setItemAsync));
-
     return action;
   };
 }

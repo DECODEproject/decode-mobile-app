@@ -7,7 +7,7 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
-    case types.ADD_CREDENTIAL_FROM_URL: {
+    case types.ADD_CREDENTIAL: {
       const newAttribute = {
         predicate: action.attribute.predicate,
         object: action.attribute.object,

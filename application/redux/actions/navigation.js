@@ -19,6 +19,15 @@ export function goToPetitionSummary() {
   };
 }
 
+export function goToAttributesVerification() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const route = Router.getRoute('attributesVerification', { petitionId: getState().petition.petition.id });
+    const action = NavigationActions.push(navigatorUID, route);
+    dispatch(action);
+  };
+}
+
 export function goToAttributesSummary() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;

@@ -1,40 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Constants, SecureStore, WebBrowser } from 'expo';
-import { Linking, View, Text, Dimensions, ScrollView } from 'react-native';
+import { View, Text, Dimensions, ScrollView } from 'react-native';
 import { translate } from 'react-i18next';
-import { goToPetitionSummary } from '../application/redux/actions/navigation';
+import { goToAttributesVerification } from '../application/redux/actions/navigation';
 import LinkButton from '../application/components/LinkButton/LinkButton';
 import RequesterInfo from '../application/components/RequesterInfo/RequesterInfo';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
-import { addCredential } from '../application/redux/actions/attributes';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
 
 class AttributesSummary extends React.Component {
-
-  handleRedirect = async (event) => {
-    const { url } = event;
-    console.log(`Received redirect event: ${url}`);
-    const { petition, walletId } = this.props;
-    await this.props.addCredential(petition.attributes.mandatory[0], walletId, url);
-    await this.props.goToPetitionSummary();
-    WebBrowser.dismissBrowser();
-  };
-
-  openWebBrowserAsync = async () => {
-    const credentialIssuerUrl = this.props.petition.attributes.mandatory[0].provenance.url;
-    // const credentialIssuerUrl = `http://atlantis-decode.s3-website-eu-west-1.amazonaws.com/#/?linkingUri=${queryParam}`;
-    const queryParam = encodeURIComponent(Constants.linkingUri);
-    const url = `${credentialIssuerUrl}?linkingUri=${queryParam}`;
-    console.log(`Opening web browser to ${url}`);
-    Linking.addEventListener('url', this.handleRedirect);
-    await WebBrowser.openBrowserAsync(url);
-    Linking.removeEventListener('url', this.handleRedirect);
-  };
 
   render() {
     const { petition, t } = this.props;
@@ -70,17 +48,23 @@ class AttributesSummary extends React.Component {
           </View>
 
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
-            <Text>
-              {t(petition.attributes.mandatory[0].predicate)} <Text style={{ color: '#D0021B' }}>*</Text>
-            </Text>
-            <LinkButton
-              name={t('button')}
-              onPress={this.openWebBrowserAsync}
-              style={{
-                marginTop: 40,
-                alignSelf: 'center',
-              }}
-            />
+            {
+              petition.attributes.mandatory[0].verificationInput ? (
+                <React.Fragment>
+                  <Text>
+                    {t(petition.attributes.mandatory[0].predicate)} <Text style={{ color: '#D0021B' }}>*</Text>
+                  </Text>
+                  <LinkButton
+                    name={t('button')}
+                    onPress={() => this.props.goToAttributesVerification()}
+                    style={{
+                      marginTop: 40,
+                      alignSelf: 'center',
+                    }}
+                  />
+                </React.Fragment>
+              ) : null
+            }
           </View>
 
           <View style={{
@@ -116,8 +100,7 @@ AttributesSummary.propTypes = {
       })),
     }),
   }),
-  goToPetitionSummary: PropTypes.func.isRequired,
-  addCredential: PropTypes.func.isRequired,
+  goToAttributesVerification: PropTypes.func.isRequired,
   walletId: PropTypes.string.isRequired,
   t: PropTypes.func.isRequired,
 };
@@ -132,10 +115,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  goToPetitionSummary: () => { dispatch(goToPetitionSummary()); },
-  addCredential: (attribute, walletId, url) => {
-    dispatch(addCredential(attribute, walletId, url, SecureStore.setItemAsync));
-  },
+  goToAttributesVerification: () => { dispatch(goToAttributesVerification()); },
 });
 
 export default translate('attributesSummary', { i18n })(connect(mapStateToProps, mapDispatchToProps)(AttributesSummary));
