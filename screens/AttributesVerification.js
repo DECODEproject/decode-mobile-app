@@ -12,6 +12,9 @@ import {updateVerificationInput} from '../application/redux/actions/verification
 import { addCredential } from '../application/redux/actions/attributes';
 import {goToPetitionSummary, goToError} from "../application/redux/actions/navigation";
 import CredentialIssuerClient from '../lib/CredentialIssuerClient';
+import ZenroomExecutor from '../lib/ZenroomExecutor';
+import isJson from '../lib/is-json';
+import contract01 from '../assets/contracts/01-CITIZEN-request-keypair.zencode';
 
 
 class AttributesVerification extends React.Component {
@@ -36,13 +39,24 @@ class AttributesVerification extends React.Component {
       let {credential} = credentialIssuer.issueCredential(data);
       if (credential) {
         await this.props.addCredential(mandatoryAttributes[0], walletId, credential);
+        const uniqueId = credential; // TODO: At this moment this is all what we have let's call it uniqueId
+        console.log("Going to execute contract01");
+        const contract01Response = await ZenroomExecutor.execute(contract01(uniqueId), '', '');
+        console.log("Response from contract01", contract01Response);
+        if (! isJson(contract01Response)) {
+          console.log("Invalid response from contract 01", contract01Response);
+          this.props.goToError();
+          return;
+        }
+        const { [uniqueId]: {public: publicKey, private: privateKey}} = JSON.parse(contract01Response);
+        console.log("Public key", publicKey);
+        console.log("Private key", privateKey);
         this.props.goToPetitionSummary();
       } else {
         console.log("No credential returned");
         this.props.goToError();
       }
     } catch(error) {
-      console.log('Error calling credential issuer: ', JSON.stringify(error));
       console.log('Error calling credential issuer: ', JSON.stringify(error));
       this.props.goToError();
     }
