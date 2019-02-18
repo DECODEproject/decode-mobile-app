@@ -13,7 +13,7 @@ import DeleteButton from '../application/components/DeleteButton/DeleteButton';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import { saveAttributes } from '../application/redux/actions/attributes';
 import { sortedDistrictsList, districtNameFromId, validDistrict } from '../lib/districts';
-import { resetNavigation } from '../application/redux/actions/navigation';
+import { resetNavigation, goBack } from '../application/redux/actions/navigation';
 import { deleteWalletData } from '../application/redux/actions/wallet';
 import styles from './styles';
 import i18n from '../i18n';
@@ -252,8 +252,11 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  saveAttributes: async (dateOfBirth, district, gender, walletId) =>
-    dispatch(saveAttributes(dateOfBirth, district, gender, walletId, SecureStore.setItemAsync)),
+  saveAttributes: async (dateOfBirth, district, gender, walletId) => {
+    dispatch(saveAttributes(dateOfBirth, district, gender, walletId, SecureStore.setItemAsync));
+    dispatch(goBack());
+  },
+
   deleteWalletData: (t) => {
     const errorDeletingWalletData = () => alert(t('errorDelete')); //eslint-disable-line
     const successDeletingWalletData = () => dispatch(resetNavigation());

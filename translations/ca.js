@@ -64,6 +64,7 @@ export default {
     loading: 'Això podria trigar uns moments',
     requiredAttributes: 'Dades requerides per signar la proposta',
     requiredAttributeError: 'Has de compartir que ets resident de Barcelona o no podràs signar aquesta proposta. Aquesta informació és anònima.',
+    manageData: 'Gestionar les teves dades',
   },
   pinSetup: {
     placeholderPin1: ' Almenys 4 dígits',

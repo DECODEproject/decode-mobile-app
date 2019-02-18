@@ -103,3 +103,11 @@ export function goToLogin() {
     dispatch(action);
   };
 }
+
+export function goBack() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.pop(navigatorUID);
+    dispatch(action);
+  };
+}

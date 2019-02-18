@@ -79,7 +79,6 @@ export function saveAttributes(dateOfBirth, district, gender, walletId, setItemA
         dispatch(addOptionalAttribute('schema:gender', gender, walletId));
       }
       await dispatch(storeCredentials(setItemAsync));
-      dispatch(goToAttributesLanding());
       return dispatch({
         type: types.SAVE_ATTRIBUTES,
         dateOfBirth,

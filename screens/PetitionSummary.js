@@ -8,7 +8,7 @@ import {translate} from 'react-i18next';
 import {signPetition} from '../application/redux/actions/petition';
 import Button from '../application/components/Button/Button';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
-import {goToSignOutcome} from '../application/redux/actions/navigation';
+import {goToSignOutcome, goToNewAttributes} from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import getChainspaceUrl from '../config';
@@ -33,16 +33,7 @@ class PetitionSummary extends React.Component {
     super(props);
     this.state = {
       loading: false,
-      matchedAttributes: buildAttributes(props.walletAttributes, props.attributes),
       enabledAttributes: [{predicate: 'schema:addressLocality'}],
-    };
-  }
-
-  componentDidMount() {
-    const matched = buildAttributes(this.props.walletAttributes, this.props.attributes);
-    this.state = {
-      ...this.state,
-      matchedAttributes: matched,
     };
   }
 
@@ -55,9 +46,9 @@ class PetitionSummary extends React.Component {
       loading: true,
     });
 
-    const attributes = [...this.state.matchedAttributes.optional,
-      ...this.state.matchedAttributes.missing,
-      ...this.state.matchedAttributes.mandatory];
+    const attributes = [...this.props.matchedAttributes.optional,
+      ...this.props.matchedAttributes.missing,
+      ...this.props.matchedAttributes.mandatory];
 
     const ageAttribute = findAttribute('schema:dateOfBirth', attributes);
     const genderAttribute = findAttribute('schema:gender', attributes);
@@ -125,7 +116,7 @@ class PetitionSummary extends React.Component {
       attributes.mandatory,
     );
 
-    const {matchedAttributes} = this.state;
+    const {matchedAttributes} = this.props;
     const petitionAttributesTemplate = (
       <View style={styles.petitionSummaryBox}>
         {matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true))}
@@ -136,6 +127,11 @@ class PetitionSummary extends React.Component {
         </Text>
         }
         {matchedAttributes.missing.map(attr => this.renderMissingAttribute(attr))}
+        <Text
+          style={{...styles.cancelSigningPetition, alignSelf: 'flex-start'}}
+          onPress={() => this.props.goToManageAttributes()}
+        >{t('manageData')}
+        </Text>
       </View>
     );
     const {height: windowHeight} = Dimensions.get('window');
@@ -217,6 +213,7 @@ class PetitionSummary extends React.Component {
 
 PetitionSummary.propTypes = {
   goToSignOutcome: PropTypes.func.isRequired,
+  goToManageAttributes: PropTypes.func.isRequired,
   petition: PropTypes.shape({
     id: PropTypes.string,
     title: PropTypes.string,
@@ -251,6 +248,7 @@ const mapStateToProps = state => ({
   walletId: state.wallet.id,
   signSuccess: state.signSuccess,
   walletAttributes: state.attributes.list,
+  matchedAttributes: buildAttributes(state.attributes.list, state.petition.petition.attributes),
   chainspaceClient: new ChainspaceClient(chainspaceUrl),
   zenroomContract: new ZenroomContract(),
 });
@@ -259,6 +257,7 @@ const mapDispatchToProps = dispatch => ({
   goToSignOutcome: () => {
     dispatch(goToSignOutcome());
   },
+  goToManageAttributes: () => dispatch(goToNewAttributes()),
   signPetition: (vote, age, gender, district, chainspaceClient, zenroomContract) => dispatch(signPetition(vote, age, gender, district, chainspaceClient, zenroomContract)), // eslint-disable-line
 });
 
