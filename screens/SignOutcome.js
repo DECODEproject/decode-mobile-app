@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Linking } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ImageOverlay from 'react-native-image-overlay';
@@ -13,31 +13,9 @@ import i18n from '../i18n';
 
 const successImage = require('../assets/images/city.png');
 
-const linksStyle = {
-  textAlign: 'left',
-  color: '#00F',
-  fontSize: 16,
-  fontWeight: 'bold',
-  textDecorationLine: 'underline',
-  marginVertical: 10,
-};
-
 class SignOutcome extends React.Component {
 
-  static createLink(linkText, index) {
-    return (
-      <Text
-        key={index}
-        style={linksStyle}
-        onPress={() => { alert('End MVP'); }} // eslint-disable-line
-      >
-        {linkText}
-      </Text>);
-  }
-
   successful() {
-    const links = this.props.links.map(SignOutcome.createLink);
-
     return (
       <View style={styles.signOutcomeContainer}>
         <Logo/>
@@ -60,24 +38,29 @@ class SignOutcome extends React.Component {
             { this.props.t('voteRecorded')}
           </Text>
         </ImageOverlay>
-        <View style={{
-          marginTop: 30,
-          flex: 1,
-        }}
-        >
-          <Text style={{
-            marginBottom: 20,
-            fontSize: 16,
-          }}
-          >
-            {this.props.t('maybeInterested')}
-          </Text>
 
-          {links}
-        </View>
         <Button
           name={this.props.t('backDecidim')}
-          onPress={() => openPetitionInBrowser(this.props.petition.id)}
+          onPress={() => {
+            console.log(JSON.stringify(this.props.petition));
+            openPetitionInBrowser(this.props.petition.id);
+          } }
+          style={{
+            width: 200,
+            alignSelf: 'center',
+          }}
+        />
+        <Button
+          name={this.props.t('goBcnNow')}
+          onPress={() => Linking.openURL('http://bcnnow.decodeproject.eu')}
+          style={{
+            width: 200,
+            alignSelf: 'center',
+          }}
+        />
+        <Button
+          name={this.props.t('goOther')}
+          onPress={() => Linking.openURL('http://bcnnow.decodeproject.eu')}
           style={{
             width: 200,
             alignSelf: 'center',
@@ -103,13 +86,11 @@ SignOutcome.propTypes = {
     closingDate: PropTypes.string,
     id: PropTypes.string,
   }),
-  links: PropTypes.arrayOf(PropTypes.string),
   t: PropTypes.func.isRequired,
 };
 
 SignOutcome.defaultProps = {
   petition: undefined,
-  links: [],
 };
 
 const mapStateToProps = state => ({

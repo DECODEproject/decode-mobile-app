@@ -79,11 +79,13 @@ export default {
     pinWarning: 'Store your PIN safely, there is no way to recover it if you lose it!',
   },
   signOutcome: {
-    backDecidim: 'Back to Decidim',
+    backDecidim: 'Back to the petition',
     voteRecorded: 'Your vote has been recorded anonymously',
     maybeInterested: 'View Decidim data on Barcelona Now',
     errorText: 'You can return to the Decidim site to view other proposals.',
     defaultError: 'There has been an error',
+    goBcnNow: 'Go to BarcelonaNow',
+    goOther: 'Browse other petitions',
   },
   walkthrough: {
     done: 'Done',
