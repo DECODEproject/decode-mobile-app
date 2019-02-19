@@ -2,6 +2,7 @@ export default {
   attributesLanding: {
     nodata: 'Get started by adding some data.\nTap the button below to begin.',
     manage: 'Manage Data',
+    petitions: 'Browse petitions',
   },
   attributesSummary: {
     genericName: 'The entity',
@@ -120,5 +121,9 @@ export default {
   },
   attributesVerification: {
     verify: 'Verify',
+  },
+  petitionList: {
+    description: 'You can sign with the DECODE app the following petitions:',
+    go: 'Go',
   }
 };

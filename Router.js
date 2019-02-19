@@ -9,6 +9,7 @@ import AttributesVerification from './screens/AttributesVerification';
 import PinSetup from './screens/PinSetup';
 import Walkthrough from './screens/Walkthrough';
 import ManageAttributes from './screens/ManageAttributes';
+import PetitionList from './screens/PetitionList';
 import Error from './screens/Error';
 import Login from './screens/Login';
 
@@ -25,6 +26,7 @@ const Router = createRouter(() => ({
   manageAttributes: () => ManageAttributes,
   error: () => Error,
   login: () => Login,
+  petitionList: () => PetitionList,
 }));
 
 export default Router;

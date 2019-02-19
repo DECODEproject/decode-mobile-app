@@ -10,11 +10,12 @@ export function resetNavigation() {
   };
 }
 
-export function goToPetitionSummary() {
+export function goToPetitionSummary(top = true) {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
     const route = Router.getRoute('petitionSummary', { petitionId: getState().petition.petition.id });
-    const action = NavigationActions.push(navigatorUID, route);
+    if (top) NavigationActions.popToTop(navigatorUID);
+    const action = top ? NavigationActions.replace(navigatorUID, route) : NavigationActions.push(navigatorUID, route);
     dispatch(action);
   };
 }
@@ -28,11 +29,12 @@ export function goToAttributesVerification() {
   };
 }
 
-export function goToAttributesSummary() {
+export function goToAttributesSummary(top = true) {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
     const route = Router.getRoute('attributesSummary', { petitionId: getState().petition.petition.id });
-    const action = NavigationActions.push(navigatorUID, route);
+    if (top) NavigationActions.popToTop(navigatorUID);
+    const action = top ? NavigationActions.replace(navigatorUID, route) : NavigationActions.push(navigatorUID, route);
     dispatch(action);
   };
 }
@@ -108,6 +110,14 @@ export function goBack() {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
     const action = NavigationActions.pop(navigatorUID);
+    dispatch(action);
+  };
+}
+
+export function goToPetitionList() {
+  return (dispatch, getState) => {
+    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('petitionList'));
     dispatch(action);
   };
 }

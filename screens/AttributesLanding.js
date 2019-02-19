@@ -6,7 +6,7 @@ import { translate } from 'react-i18next';
 import AttributeListItem from '../application/components/AttributeListItem/AttributeListItem';
 import Button from '../application/components/Button/Button';
 import ScreenLogo from '../application/components/ScreenLogo/ScreenLogo';
-import { goToNewAttributes } from '../application/redux/actions/navigation';
+import { goToNewAttributes, goToPetitionList } from '../application/redux/actions/navigation';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -56,10 +56,14 @@ class AttributesLanding extends React.Component {
         <View style={styles.attributesLandingContainer}>
           {centerComponent}
         </View>
-        <View style={{ flex: 2 }}>
+        <View style={{ flex: 3, paddingVertical: 40}}>
           <Button
             name={this.props.t('manage')}
             onPress={() => this.props.goToNewAttributes()}
+          />
+          <Button
+            name={this.props.t('petitions')}
+            onPress={() => this.props.goToPetitionList()}
           />
         </View>
       </View>
@@ -70,6 +74,7 @@ class AttributesLanding extends React.Component {
 AttributesLanding.propTypes = {
   attributes: PropTypes.instanceOf(Map).isRequired,
   goToNewAttributes: PropTypes.func.isRequired,
+  goToPetitionList: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };
 
@@ -80,6 +85,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   goToNewAttributes: () => dispatch(goToNewAttributes()),
+  goToPetitionList: () => dispatch(goToPetitionList()),
 });
 
 export default translate('attributesLanding', { i18n })(connect(mapStateToProps, mapDispatchToProps)(AttributesLanding));

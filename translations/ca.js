@@ -2,6 +2,7 @@ export default {
   attributesLanding: {
     nodata: 'Comencem per afegir algunes dades.\nFes click en el botó per començar.',
     manage: 'Gestionar dades',
+    petitions: 'Veure peticions',
   },
   attributesSummary: {
     genericName: 'L\'entitat',
@@ -120,5 +121,9 @@ export default {
   },
   attributesVerification: {
     verify: 'Verificar',
+  },
+  petitionList: {
+    description: 'Pots signar amb l\'app de DECODE les següents peticions:',
+    go: 'Anar',
   }
 };

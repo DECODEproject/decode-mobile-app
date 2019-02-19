@@ -1,7 +1,7 @@
 import React from 'react';
 import {Constants} from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
-import {Text, View, ScrollView, Dimensions} from 'react-native';
+import {Text, View, ScrollView, Dimensions, Platform} from 'react-native';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
@@ -28,6 +28,20 @@ import ZenroomContract from '../lib/ZenroomContract';
 const chainspaceUrl = getChainspaceUrl(Constants.manifest.releaseChannel);
 
 class PetitionSummary extends React.Component {
+
+  static route = {
+    navigationBar: {
+      backgroundColor: 'white',
+      borderBottomWidth: 0,
+      borderBottomColor: 'white',
+      elevation: 1,
+      fontSize: 20,
+      fontWeight: '500',
+      tintColor: 'rgb(0,163,158)',
+      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
+      height: 80,
+    },
+  };
 
   constructor(props) {
     super(props);
@@ -140,11 +154,9 @@ class PetitionSummary extends React.Component {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        minHeight: windowHeight,
+        minHeight: windowHeight-80,
       }}>
-        <Logo/>
         <View style={{
-          paddingTop: 40,
           paddingBottom: 20,
           borderBottomColor: '#809B9B9B',
           borderBottomWidth: 1,

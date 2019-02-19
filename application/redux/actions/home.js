@@ -2,7 +2,7 @@ import { goToAttributesSummary, goToError, goToPetitionSummary } from './navigat
 import { getPetition } from './petition';
 import { addTranslation, getLanguage } from '../../../i18n';
 
-export default function goToPetition(decidimClient, petitionId) {
+export default function goToPetition(decidimClient, petitionId, top = true) {
   return async (dispatch, getState) => {
     await dispatch(getPetition(decidimClient, petitionId));
     const state = await getState();
@@ -24,12 +24,12 @@ export default function goToPetition(decidimClient, petitionId) {
     } else {
       const isAttributeVerified = state.attributes.list.has('schema:addressLocality');
       if (isAttributeVerified) {
-        dispatch(goToPetitionSummary());
+        dispatch(goToPetitionSummary(top));
       } else {
         state.petition.petition.attributes.mandatory[0].verificationInput.map(
           field => addTranslation(getLanguage(), 'attributesVerification', field.name.en, field.name[getLanguage()])
         );
-        dispatch(goToAttributesSummary());
+        dispatch(goToAttributesSummary(top));
       }
     }
   };
