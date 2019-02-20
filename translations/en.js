@@ -6,7 +6,7 @@ export default {
     description: 'This is your personal data stored in the DECODE app',
   },
   attributesSummary: {
-    genericName: 'The entity',
+    genericName: 'Decidim',
     title: 'requires verified residency.',
     subtitle: 'You can do this with the Barcelona City Council. Your residency will be verified anonymously. You only need to do this once.',
     requirement: 'Requires the following:',

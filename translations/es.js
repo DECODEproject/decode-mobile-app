@@ -6,7 +6,7 @@ export default {
     description: 'Estos son tus datos personales almacenados en la app DECODE.',
   },
   attributesSummary: {
-    genericName: 'La entidad',
+    genericName: 'Decidim',
     title: 'requiere verificar tu residencia en Barcelona.',
     subtitle: 'La puedes verificar con el Ayuntamiento de Barcelona. Tu residencia se verifica anónimamente. Sólo hace falta hacerlo una vez.',
     requirement: 'Requiere lo siguiente:',

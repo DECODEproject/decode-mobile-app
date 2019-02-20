@@ -6,7 +6,7 @@ export default {
     description: 'Aquestes són les teves dades personals emmagatzemades en l\'app DECODE',
   },
   attributesSummary: {
-    genericName: 'L\'entitat',
+    genericName: 'Decidim',
     title: 'requereix verificar la teva residència a Barcelona ',
     subtitle: 'Ho pots verificar amb l\'Ajuntament de Barcelona. La residència es verifica anònimament. Només cal fer-ho una vegada.',
     requirement: 'Requireix el següent:',
