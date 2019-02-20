@@ -54,6 +54,9 @@ class AttributesLanding extends React.Component {
       <View style={{ flex: 1, padding: 20 }}>
         <ScreenLogo />
         <View style={styles.attributesLandingContainer}>
+          <View style={{ flex: 1, maxHeight: 60 }}>
+            <Text style={{ fontSize: 16 }}>{this.props.t('description')}</Text>
+          </View>
           {centerComponent}
         </View>
         <View style={{ flex: 3, paddingVertical: 40}}>

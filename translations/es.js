@@ -3,6 +3,7 @@ export default {
     nodata: 'Empecemos por añadir algunos datos.\nHaz click en el botón inferior para empezar',
     manage: 'Gestionar datos',
     petitions: 'Ver peticiones',
+    description: 'Estos son tus datos personales almacenados en la app DECODE.',
   },
   attributesSummary: {
     genericName: 'La entidad',
