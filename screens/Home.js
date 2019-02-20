@@ -109,10 +109,10 @@ class Home extends React.Component {
             />
           </View>
           <View style={{flex: 1}}>
-            <Button
-                name='Hello Zenroom'
-                onPress={this.sayHelloToZenroom}
-            />
+            {/*<Button*/}
+                {/*name='Hello Zenroom'*/}
+                {/*onPress={this.sayHelloToZenroom}*/}
+            {/*/>*/}
 
             <Text style={{ marginVertical: 10, marginHorizontal: 16 }}>PIN:&nbsp;&nbsp;</Text>
             <TextInput
