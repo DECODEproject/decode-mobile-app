@@ -7,7 +7,7 @@
 	<key>isShell</key>
 	<true/>
 	<key>manifestUrl</key>
-	<string>exp://exp.host/@decode-barcelona/decode-walletapp</string>
+	<string>exp://exp.host/@dribia/decode-walletapp</string>
 	<key>releaseChannel</key>
 	<string>default</string>
 </dict>
