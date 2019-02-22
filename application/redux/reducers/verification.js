@@ -28,6 +28,12 @@ export default (state = {}, action) => {
         ...state,
         [action.id]: action.value,
       };
+    case types.UPDATE_KEYS:
+      return {
+        ...state,
+        publicKey: action.publicKey,
+        privateKey: action.privateKey,
+      };
     default:
       return state;
   }

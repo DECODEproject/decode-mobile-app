@@ -25,6 +25,7 @@ import PropTypes from 'prop-types';
 import { SecureStore } from 'expo';
 import { Dimensions, ScrollView, View, Platform, Text, TextInput } from 'react-native';
 import { translate } from 'react-i18next';
+import uuid from 'uuid-js';
 import styles from './styles';
 import i18n from '../i18n';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
@@ -36,6 +37,7 @@ import CredentialIssuerClient from '../lib/CredentialIssuerClient';
 import ZenroomExecutor from '../lib/ZenroomExecutor';
 import isJson from '../lib/is-json';
 import contract01 from '../assets/contracts/01-CITIZEN-request-keypair.zencode';
+import contract02 from '../assets/contracts/02-CITIZEN-request-keypair.zencode';
 
 
 class AttributesVerification extends React.Component {
@@ -57,26 +59,21 @@ class AttributesVerification extends React.Component {
     const {mandatoryAttributes, walletId} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
     try {
-      let {credential} = credentialIssuer.issueCredential(data);
-      if (credential) {
-        await this.props.addCredential(mandatoryAttributes[0], walletId, credential);
-        const uniqueId = credential; // TODO: At this moment this is all what we have let's call it uniqueId
-        console.log("Going to execute contract01");
-        const contract01Response = await ZenroomExecutor.execute(contract01(uniqueId), '', '');
-        console.log("Response from contract01", contract01Response);
-        if (! isJson(contract01Response)) {
-          console.log("Invalid response from contract 01", contract01Response);
-          this.props.goToError();
-          return;
-        }
-        const { [uniqueId]: {public: publicKey, private: privateKey}} = JSON.parse(contract01Response);
-        console.log("Public key", publicKey);
-        console.log("Private key", privateKey);
-        this.props.goToPetitionSummary();
-      } else {
-        console.log("No credential returned");
+      const uniqueId = uuid.create().toString();
+      console.log("Going to execute contract01: ", contract01(uniqueId));
+      const contract01Response = await ZenroomExecutor.execute(contract01(uniqueId), '', '');
+      console.log("Response from contract01", contract01Response);
+      if (! isJson(contract01Response)) {
+        console.log("Invalid response from contract 01", contract01Response);
         this.props.goToError();
+        return;
       }
+      const { [uniqueId]: {public: publicKey, private: privateKey}} = JSON.parse(contract01Response);
+      console.log("Going to execute contract02: ", contract02(uniqueId, mandatoryAttributes.map(a => a.object)));
+      const contract02Response = await ZenroomExecutor.execute(contract02(uniqueId, mandatoryAttributes.map(a => a.object)), '', contract01Response);
+      console.log("Response from contract02", contract02Response);
+      this.props.goToPetitionSummary();
+
     } catch(error) {
       console.log('Error calling credential issuer: ', JSON.stringify(error));
       this.props.goToError();

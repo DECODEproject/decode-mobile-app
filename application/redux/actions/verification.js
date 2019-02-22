@@ -28,3 +28,11 @@ export function updateVerificationInput(id, value) {
     value,
   });
 }
+
+export function updateKeys(publicKey, privateKey) {
+  return dispatch => dispatch({
+    type: types.UPDATE_KEYS,
+    publicKey,
+    privateKey,
+  });
+}
