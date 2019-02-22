@@ -22,11 +22,16 @@ class AttributesLanding extends React.Component {
     const alphabeticalComparator = (a, b) => (a.predicate > b.predicate ? 1 : -1);
 
     return (
-      <FlatList
-        data={[...this.props.attributes.values()].sort(alphabeticalComparator)}
-        renderItem={attribute => <AttributeListItem attribute={attribute} />}
-        keyExtractor={item => item.predicate}
-      />
+      <View>
+        <View>
+          <Text style={{ fontSize: 16, marginBottom: 16 }}>{this.props.t('description')}</Text>
+        </View>
+        <FlatList
+          data={[...this.props.attributes.values()].sort(alphabeticalComparator)}
+          renderItem={attribute => <AttributeListItem attribute={attribute} />}
+          keyExtractor={item => item.predicate}
+        />
+      </View>
     );
   }
 
@@ -54,9 +59,6 @@ class AttributesLanding extends React.Component {
       <View style={{ flex: 1, padding: 20 }}>
         <ScreenLogo />
         <View style={styles.attributesLandingContainer}>
-          <View style={{ flex: 1, maxHeight: 60 }}>
-            <Text style={{ fontSize: 16 }}>{this.props.t('description')}</Text>
-          </View>
           {centerComponent}
         </View>
         <View style={{ flex: 3, paddingVertical: 40}}>

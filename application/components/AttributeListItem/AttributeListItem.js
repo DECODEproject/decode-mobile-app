@@ -33,7 +33,7 @@ function renderItemValue(item, t) {
 
 export function AttributesListItem(props) {
   return (
-    <View style={{ marginBottom: 20 }}>
+    <View style={{ marginBottom: 16 }}>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <Text style={styles.newAttributesAttributeName}>
           {props.t(props.attribute.item.predicate)}
@@ -41,7 +41,7 @@ export function AttributesListItem(props) {
         {props.attribute.item.provenance.credentials && verifiedRender()}
       </View>
       <Text
-        style={[styles.newAttributesAttributeValue, { marginTop: 15 }]}
+        style={[styles.newAttributesAttributeValue, { marginTop: 8 }]}
       >
         {renderItemValue(props.attribute.item, props.t)}
       </Text>

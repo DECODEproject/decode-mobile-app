@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
 
   attributesLandingContainer: {
     flex: 10,
-    justifyContent: 'center',
     alignSelf: 'stretch',
     backgroundColor: '#FFF',
     paddingVertical: 30,
