@@ -41,7 +41,7 @@ export default function goToPetition(decidimClient, petitionId, top = true) {
     const errorGettingPetitionInformation = state.petition.petitionError !== undefined;
 
     if (errorGettingPetitionInformation) {
-      dispatch(goToError());
+      dispatch(goToError(errorGettingPetitionInformation));
     } else {
       const isAttributeVerified = state.attributes.list.has('schema:addressLocality');
       if (isAttributeVerified) {

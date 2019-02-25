@@ -64,23 +64,26 @@ class AttributesVerification extends React.Component {
       const contract01Response = await ZenroomExecutor.execute(contract01(uniqueId), '', '');
       console.log("Response from contract01", contract01Response);
       if (! isJson(contract01Response)) {
-        console.log("Invalid response from contract 01", contract01Response);
-        this.props.goToError();
+        this.props.goToError("Invalid response from contract 01");
         return;
       }
       const { [uniqueId]: {public: publicKey, private: privateKey}} = JSON.parse(contract01Response);
       console.log("Going to execute contract02: ", contract02(uniqueId, mandatoryAttributes.map(a => a.object)));
       const contract02Response = await ZenroomExecutor.execute(contract02(uniqueId, mandatoryAttributes.map(a => a.object)), '', contract01Response);
       console.log("Response from contract02", contract02Response);
+      if (! isJson(contract02Response)) {
+        this.props.goToError("Invalid response from contract 02");
+        return;
+      }
+      const blindSignRequest = JSON.parse(contract02Response);
 
-
-      let {credential} = credentialIssuer.issueCredential(data);
+      let {credential} = await credentialIssuer.issueCredential(mandatoryAttributes[0].predicate, blindSignRequest, data);
       await this.props.addCredential(mandatoryAttributes[0], walletId, credential);
       this.props.goToPetitionSummary();
 
     } catch(error) {
       console.log('Error calling credential issuer: ', JSON.stringify(error));
-      this.props.goToError();
+      this.props.goToError(error.message);
     }
   }
 
@@ -147,7 +150,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   updateVerificationInput: (id, value) => dispatch(updateVerificationInput(id, value)),
   goToPetitionSummary: () => dispatch(goToPetitionSummary()),
-  goToError: () => dispatch(goToError()),
+  goToError: message => dispatch(goToError(message)),
   addCredential: (attribute, walletId, credential) => {
     dispatch(addCredential(attribute, walletId, credential, SecureStore.setItemAsync));
   },

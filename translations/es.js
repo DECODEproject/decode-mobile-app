@@ -106,7 +106,7 @@ export default {
     backDecidim: 'Volver a la petición',
     voteRecorded: 'Tu voto ha sido registrado anónimamente',
     maybeInterested: 'Ver los datos de Decidim en Barcelona Now',
-    errorText: 'Puedes volver a la página de Decidim para ver más propuestas.',
+    errorText: 'Puedes volver atrás o ver más propuestas',
     defaultError: 'Ha habido un error',
     goBcnNow: 'Ir a BarcelonaNow',
     goOther: 'Ver otras peticiones',

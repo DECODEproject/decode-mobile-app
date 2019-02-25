@@ -111,10 +111,10 @@ export function goToNewAttributes() {
   };
 }
 
-export function goToError() {
+export function goToError(message) {
   return (dispatch, getState) => {
     const navigatorUID = getState().navigation.currentNavigatorUID;
-    const action = NavigationActions.push(navigatorUID, Router.getRoute('error'));
+    const action = NavigationActions.push(navigatorUID, Router.getRoute('error', { message }));
     dispatch(action);
   };
 }

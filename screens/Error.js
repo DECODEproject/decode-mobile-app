@@ -20,12 +20,13 @@
  */
 
 import React from 'react';
-import { Text, View, Image, Linking } from 'react-native';
+import { Text, View, Image, Platform } from 'react-native';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { translate } from 'react-i18next';
 import Button from '../application/components/Button/Button';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
-import { getDecidimUrl } from '../config';
+import { goToPetitionList } from '../application/redux/actions/navigation';
 import styles from './styles';
 import i18n from '../i18n';
 
@@ -33,30 +34,38 @@ import i18n from '../i18n';
 const warningIcon = require('../assets/images/warning.png');
 
 class Error extends React.Component {
-  static handlePress() {
-    Linking.openURL(getDecidimUrl());
-  }
-
-  buildOutcomeText() {
-    const petitionError = this.props.petitionError === undefined ? this.props.t('defaultError') : this.props.petitionError;
-    const signOutcomeText = `${petitionError} \n\n ${this.props.t('errorText')}`;
-    return signOutcomeText;
-  }
+  static route = {
+    navigationBar: {
+      backgroundColor: 'white',
+      borderBottomWidth: 0,
+      borderBottomColor: 'white',
+      elevation: 1,
+      fontSize: 20,
+      fontWeight: '500',
+      tintColor: 'rgb(0,163,158)',
+      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
+      height: 80,
+    },
+  };
 
   render() {
-    const signOutcomeText = this.buildOutcomeText();
-
     return (
       <View style={styles.signOutcomeContainer}>
-        <Logo/>
         <View style={styles.signOutcomeBox}>
           <Image
             style={styles.signOutcomeIcon}
             source={warningIcon}
           />
           <View style={styles.signOutcomeTextBox}>
-            <Text style={styles.signOutcomeText}>{signOutcomeText}</Text>
-            <Button name={this.props.t('backDecidim')} onPress={Error.handlePress} />
+            <Text style={styles.signOutcomeText}>{this.props.message || this.props.t('defaultError')}</Text>
+            <Button
+              name={this.props.t('goOther')}
+              onPress={() => this.props.goToPetitionList()}
+              style={{
+                width: 200,
+                alignSelf: 'center',
+              }}
+            />
           </View>
         </View>
       </View>
@@ -66,11 +75,11 @@ class Error extends React.Component {
 
 Error.propTypes = {
   t: PropTypes.func.isRequired,
-  petitionError: PropTypes.string,
+  message: PropTypes.string,
 };
 
-Error.defaultProps = {
-  petitionError: undefined,
-};
+const mapDispatchToProps = dispatch => ({
+  goToPetitionList: () => dispatch(goToPetitionList()),
+});
 
-export default translate('signOutcome', { i18n })(Error); // TODO: Change translations to error key instead of SignOutcome
+export default translate('signOutcome', { i18n })(connect(null, mapDispatchToProps)(Error));

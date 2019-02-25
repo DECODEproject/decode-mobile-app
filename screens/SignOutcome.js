@@ -47,7 +47,6 @@ class SignOutcome extends React.Component {
         <Button
           name={this.props.t('backDecidim')}
           onPress={() => {
-            console.log(JSON.stringify(this.props.petition));
             openPetitionInBrowser(this.props.petition.id);
           } }
           style={{
