@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import i18n from '../i18n';
 import CredentialList from '../application/components/CredentialList/CredentialList';
-
+import ScreenLogo from '../application/components/ScreenLogo/ScreenLogo';
+import { pickCredentials } from '../application/utils/attributeManagement';
 
 function MessageComponent(msg) {
   return (
@@ -37,11 +38,12 @@ function Login(props) {
   } else if (props.loginIsSuccessful) {
     mainComponent = (<SuccessLogin successMessage={props.t('successMessage')} />);
   } else {
-    mainComponent = (<CredentialList />);
+    mainComponent = (<CredentialList bcnnowUrl={props.route.params.bcnnowUrl} sessionId={props.route.params.sessionId} />);
   }
 
   return (
-    <View style={{ flex: 1, padding: 26 }}>
+    <View style={{ flex: 1, padding: 20 }}>
+      <ScreenLogo />
       <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
         <Text style={{ fontSize: 14 }}>
           {props.t('header')}
@@ -63,7 +65,7 @@ Login.propTypes = {
 
 const mapDispatchToProps = () => ({});
 const mapStateToProps = state => ({
-  hasCredentials: state.login.credentials.length !== 0,
+  hasCredentials: pickCredentials(state.attributes.list).length !== 0,
   loginHasFailed: state.login.failed,
   loginIsSuccessful: state.login.success,
 });

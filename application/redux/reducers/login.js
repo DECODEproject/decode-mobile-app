@@ -19,10 +19,11 @@ export default function reducer(state = initialState, action) {
         ...state,
         isComingFromLogin: false,
       };
-    case types.SET_CREDENTIALS:
+    case types.LOGIN_RESET:
       return {
         ...state,
-        credentials: action.credentials,
+        success: false,
+        failed: false,
       };
     case types.LOGIN_SUCCEEDED:
       return {

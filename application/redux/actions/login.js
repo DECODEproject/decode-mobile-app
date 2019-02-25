@@ -1,17 +1,6 @@
 import types from '../actionTypes';
 import { isComingFromLogin, getLoginParameters } from '../../../lib/entryPoint';
 
-
-export function setCredential(setItem, attribute) {
-  return async (dispatch) => {
-    const allCredentials = [attribute];
-    return setItem('credentials', JSON.stringify(allCredentials)).then(() => dispatch({
-      type: types.SET_CREDENTIALS,
-      credentials: allCredentials,
-    }));
-  };
-}
-
 export function checkComingFromLogin() {
   return dispatch => isComingFromLogin().then((result) => {
     const comingFromLoginAction = {
@@ -24,14 +13,18 @@ export function checkComingFromLogin() {
   });
 }
 
-export function doLogin(loginRequest, credential) {
+export function doLogin(loginRequest, callback, sessionId, credential, fail=false) {
   return async (dispatch) => {
-    const { callback, sessionId } = await getLoginParameters();
-
-    const success = await loginRequest(callback, sessionId, credential);
-
+    const { callback: initialCallback, sessionId: initialessionId} = await getLoginParameters();
+    const success = await loginRequest(callback || initialCallback, sessionId || initialessionId, credential, fail);
     dispatch({
       type: success ? types.LOGIN_SUCCEEDED : types.LOGIN_FAILED,
     });
+  };
+}
+
+export function initLogin() {
+  return dispatch => {
+    dispatch({type: types.LOGIN_RESET});
   };
 }

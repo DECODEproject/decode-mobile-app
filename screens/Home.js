@@ -7,7 +7,7 @@ import { translate } from 'react-i18next';
 import { goToAttributesLanding, goToLogin } from '../application/redux/actions/navigation';
 import setDecidimInfo from '../application/redux/actions/decidimInfo';
 import { loadCredentials } from '../application/redux/actions/attributes';
-import { setCredential, checkComingFromLogin } from '../application/redux/actions/login';
+import { checkComingFromLogin, initLogin } from '../application/redux/actions/login';
 import goToPetition from '../application/redux/actions/home';
 import authorizationAction, { updatePin, resetPin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
@@ -18,7 +18,6 @@ import linkingHandler from '../lib/linkingHandler';
 import styles from './styles';
 import DecidimClient from '../lib/DecidimClient';
 import LanguageService from '../lib/LanguageService';
-import Attribute from '../lib/Attribute';
 
 const decodeLogo = require('../assets/images/decode-logo-pin.png');
 const {height: windowHeight} = Dimensions.get('window');
@@ -36,8 +35,11 @@ class Home extends React.Component {
     this.props.initializeState(this.props.loginFT).then(() => {});
   }
   componentDidMount() {
-    Linking.addEventListener('url', linkingHandler(this.props.goToPetition));
+    Linking.addEventListener('url', linkingHandler(this.props.goToPetition, this.props.goToLogin));
   };
+  componentWillUnmount() {
+    Linking.removeEventListener('url', linkingHandler(this.props.goToPetition, this.props.goToLogin));
+  }
 
   goToNextPage() {
     const comingFromDecidim = this.props.decidimAPIUrl;
@@ -176,13 +178,12 @@ const mapStateToProps = state => ({
   isComingFromLogin: state.login.isComingFromLogin,
 });
 
-const mockedMakingSenseCredential = new Attribute({
-  predicate: 'schema:iotCommunity', object: 'MakingSense', scope: '', provenance: { url: 'https://making-sense.eu/credential-issuer' },
-}, '6c347975ca6aac24b46d9749808ae5392816ac23988e5dc46df4b85c0a', '');
-
 const mapDispatchToProps = dispatch => ({
   goToAttributesLanding: () => { dispatch(goToAttributesLanding()); },
-  goToLogin: () => { dispatch(goToLogin()); },
+  goToLogin: (bcnnowUrl, sessionId) => {
+    dispatch(initLogin());
+    dispatch(goToLogin(bcnnowUrl, sessionId));
+  },
   goToPetition: (decidimClient, petitionId) => {
     dispatch(goToPetition(decidimClient, petitionId));
   },
@@ -193,9 +194,6 @@ const mapDispatchToProps = dispatch => ({
     await dispatch(setDecidimInfo());
     await dispatch(checkComingFromLogin());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
-    if (loginFT) {
-      await dispatch(setCredential(SecureStore.setItemAsync, mockedMakingSenseCredential));
-    }
   },
 });
 

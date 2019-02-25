@@ -33,6 +33,7 @@ export default {
     header: 'BCNNow requires a credential to log you in',
     subHeader: 'You can log in by sharing your:',
     button: 'Login',
+    failbutton: 'Test error',
     failedMessage: 'Your request couldn\'t be processed.\nPlease try again later.',
     successMessage: 'Successfully logged in.',
   },

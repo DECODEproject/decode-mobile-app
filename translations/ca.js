@@ -33,6 +33,7 @@ export default {
     header: 'BCNNow necessita un credencial per accedir',
     subHeader: 'Pots accedir compartint:',
     button: 'Accedir',
+    failbutton: 'Test error',
     failedMessage: 'La vostre petició no s\'ha pogut processar.\nSi us plau, reintente-ho en uns instants.',
     successMessage: 'Connectat correctament.',
   },
@@ -125,6 +126,6 @@ export default {
   },
   petitionList: {
     description: 'Pots signar amb l\'app de DECODE les següents peticions:',
-    go: 'Anar',
+    go: 'Vés',
   }
 };

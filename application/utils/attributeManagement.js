@@ -86,3 +86,12 @@ export const buildAttributes = (walletAttrs, petitionAttrs) => {
 
   return { mandatory, optional, missing };
 };
+
+export const pickCredentials = (attributeListMap) => {
+  let attributeListValues = attributeListMap.values();
+  let credentials = [];
+  for (let item of attributeListValues ) {
+    if (item.provenance.source !== 'wallet') credentials.push(item);
+  }
+  return credentials;
+};
