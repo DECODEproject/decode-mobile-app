@@ -81,7 +81,7 @@
       android:theme="@style/Theme.Exponent.Splash"
       android:windowSoftInputMode="adjustResize">
       <intent-filter>
-        <data android:scheme="decodewallet"/>
+        <data android:scheme="decodeapp"/>
 
         <action android:name="android.intent.action.VIEW"/>
 

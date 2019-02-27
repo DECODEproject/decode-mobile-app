@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "Decode App",
+    "name": "DECODE App",
     "icon": "./assets/app-logo.png",
-    "slug": "decode-walletapp",
+    "slug": "decode-app",
     "version": "0.1.2",
     "sdkVersion": "32.0.0",
     "orientation": "portrait",
-    "scheme": "decodewallet",
+    "scheme": "decodeapp",
     "ios": {
       "buildNumber": "1.0.8",
       "bundleIdentifier": "com.dribia.decodeapp",
