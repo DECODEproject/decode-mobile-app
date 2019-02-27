@@ -191,6 +191,7 @@ class PetitionSummary extends React.Component {
           paddingVertical: 20,
           borderBottomColor: '#809B9B9B',
           borderBottomWidth: 1,
+          marginBottom: 40,
           flex: 1,
         }}>
 
@@ -201,7 +202,6 @@ class PetitionSummary extends React.Component {
                 this.sign(petition, walletId, 'No');
               }}
               name={t('no')}
-
             />
             <Button
               enabled={allMandatoryEnabled}
@@ -209,7 +209,6 @@ class PetitionSummary extends React.Component {
                 this.sign(petition, walletId, 'Yes');
               }}
               name={t('yes')}
-
             />
           </View>
           <Text
