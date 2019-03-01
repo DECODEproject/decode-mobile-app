@@ -22,21 +22,13 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  attributeContainerNonVerified: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFF',
-    padding: 16,
-  },
-  attributeContainerVerified: {
-    alignSelf: 'stretch',
-    backgroundColor: '#FFF',
-    display: 'flex',
-    flexDirection: 'column',
+  attributeContainer: {
+    flex: 1,
     marginBottom: 10,
   },
   attributeName: {
     color: 'rgba(0, 0, 0, 0.87)',
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: '500',
   },
   attributeDetails: {

@@ -31,7 +31,7 @@ export default function Attribute(props) {
     </Text>
   );
   return (
-    <View style={styles.attributeContainerVerified}>
+    <View style={styles.attributeContainer}>
       <View style={styles.attribute}>
         <Text style={styles.attributeName}>{props.name}</Text>
         { props.isMandatory && <Text style={{ color: '#D0021B' }}> *</Text> }

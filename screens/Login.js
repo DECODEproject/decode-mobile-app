@@ -27,11 +27,13 @@ import { translate } from 'react-i18next';
 import i18n from '../i18n';
 import CredentialList from '../application/components/CredentialList/CredentialList';
 import ScreenLogo from '../application/components/ScreenLogo/ScreenLogo';
-import { pickCredentials } from '../application/utils/attributeManagement';
+import { pickCredentials } from '../lib/attributes';
 
 function MessageComponent(msg) {
   return (
-    <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{msg}</Text>
+    <View style={{flex: 1, justifyContent: 'center'}}>
+      <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{msg}</Text>
+    </View>
   );
 }
 export function EmptyLogin(props) {
@@ -57,20 +59,20 @@ function Login(props) {
   } else if (props.loginHasFailed) {
     mainComponent = (<ErrorLogin failedMessage={props.t('failedMessage')} />);
   } else if (props.loginIsSuccessful) {
-    mainComponent = (<SuccessLogin successMessage={props.t('successMessage')} />);
+    mainComponent = (<SuccessLogin successMessage={props.t('successMessage')}  style={{alignSelf: 'center'}}/>);
   } else {
     mainComponent = (<CredentialList bcnnowUrl={props.route.params.bcnnowUrl} sessionId={props.route.params.sessionId} />);
   }
 
   return (
-    <View style={{ flex: 1, padding: 20 }}>
+    <View style={{ flex: 1, padding: 20}}>
       <ScreenLogo />
-      <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
-        <Text style={{ fontSize: 14 }}>
+      <View>
+        <Text style={{ fontSize: 14, paddingVertical: 20 }}>
           {props.t('header')}
         </Text>
       </View>
-      <View style={{ flex: 6, justifyContent: 'center' }}>
+      <View style={{ flex: 1, justifyContent: 'space-between'  }}>
         {mainComponent}
       </View>
     </View>

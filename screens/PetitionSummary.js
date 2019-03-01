@@ -33,16 +33,14 @@ import {goToSignOutcome, goToNewAttributes} from '../application/redux/actions/n
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
 import getChainspaceUrl from '../config';
-import {districtNameFromId} from '../lib/districts';
-import {mapGenderIdToName} from '../lib/genders';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
 import {
   isAttributeEnabled, areAllMandatoryAttrsEnabled, formAge,
-  formAgeRange, getEnabledAttributeValue, findAttribute,
-  buildAttributes, toggleElementsInList,
-} from '../application/utils/attributeManagement';
+  getEnabledAttributeValue, findAttribute,
+  buildAttributes, toggleElementsInList, getDisplayValue,
+} from '../lib/attributes';
 import ChainspaceClient from '../lib/ChainspaceClient';
 import ZenroomContract from '../lib/ZenroomContract';
 
@@ -108,23 +106,9 @@ class PetitionSummary extends React.Component {
   }
 
   renderAttribute = (attr, isMandatory) => {
-    let displayValue = this.props.t(attr.object);
-
-    if (attr.predicate === 'schema:dateOfBirth') {
-      displayValue = `${this.props.t('age')}: ${formAgeRange(attr)}`;
-    }
-
-    if (attr.predicate === 'schema:district') {
-      displayValue = districtNameFromId(attr.object);
-    }
-
-    if (attr.predicate === 'schema:gender') {
-      displayValue = mapGenderIdToName(attr.object, this.props.t);
-    }
-
     return (<AttributeComponent
         key={attr.predicate}
-        value={displayValue}
+        value={getDisplayValue(attr, this.props.t)}
         isMandatory={isMandatory}
         toggleCallback={() => this.toggleEnabledAttribute(attr)}
         isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}

@@ -34,10 +34,16 @@ export function checkComingFromLogin() {
   });
 }
 
-export function doLogin(loginRequest, callback, sessionId, credential, fail=false) {
+export function doLogin(loginRequest, callback, sessionId, credential, attributes, fail=false) {
   return async (dispatch) => {
     const { callback: initialCallback, sessionId: initialessionId} = await getLoginParameters();
-    const success = await loginRequest(callback || initialCallback, sessionId || initialessionId, credential, fail);
+    const success = await loginRequest(
+      callback || initialCallback,
+      sessionId || initialessionId,
+      credential,
+      attributes,
+      fail,
+      );
     dispatch({
       type: success ? types.LOGIN_SUCCEEDED : types.LOGIN_FAILED,
     });
