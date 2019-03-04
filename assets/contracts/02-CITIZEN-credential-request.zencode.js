@@ -1,7 +1,4 @@
-const declarations = (declaredAttributes) => {
-  return declaredAttributes.map(attr => `and I declare that I am '${attr}'`)
-    .reduce((a,b) => `${a} ${b}`, '');
-};
+import declarations from './declarations';
 
 export default (uniqueId, declaredAttributes) => `-- 0 for silent logging
 ZEN:begin(0)

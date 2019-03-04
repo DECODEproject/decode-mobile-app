@@ -57,11 +57,11 @@ public class ZenroomModule extends ReactContextBaseJavaModule {
         }
 
         try {
-            System.out.println("Before native zenroom execute");
+            System.out.println("Before native zenroom.execute(contract, conf, key, data)");
             System.out.println("Contract: " + contract);
             System.out.println("Conf: ");
             System.out.println("Key: " + key);
-            System.out.println("Data length: " + data.length());
+            System.out.println("Data: " + data);
             String output = (new Zenroom()).execute(contract, "", key, data);
             System.out.println("Zenroom returns: " + output);
             promise.resolve(output);

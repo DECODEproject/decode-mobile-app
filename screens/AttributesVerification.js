@@ -36,10 +36,11 @@ import {goToPetitionSummary, goToError} from "../application/redux/actions/navig
 import CredentialIssuerClient from '../lib/CredentialIssuerClient';
 import ZenroomExecutor from '../lib/ZenroomExecutor';
 import isJson from '../lib/is-json';
-import contract01 from '../assets/contracts/01-CITIZEN-request-keypair.zencode';
-import contract02 from '../assets/contracts/02-CITIZEN-request-keypair.zencode';
+import contract01 from '../assets/contracts/01-CITIZEN-credential-keygen.zencode';
+import contract02 from '../assets/contracts/02-CITIZEN-credential-request.zencode';
+import contract06 from '../assets/contracts/06-CITIZEN-aggregate-credential-signature.zencode';
+import contract07 from '../assets/contracts/07-CITIZEN-prove-credential.zencode';
 import contract50 from '../assets/contracts/50-MISC-hashing.zencode';
-
 
 
 class AttributesVerification extends React.Component {
@@ -65,6 +66,8 @@ class AttributesVerification extends React.Component {
     const {mandatoryAttributes, walletId} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
     try {
+
+      // CONTRACT 01
       const uniqueId = uuid.create().toString();
       console.log("Going to execute contract01: ", contract01(uniqueId));
       const contract01Response = await ZenroomExecutor.execute(contract01(uniqueId), '', '');
@@ -74,6 +77,8 @@ class AttributesVerification extends React.Component {
         return;
       }
       const { [uniqueId]: {public: publicKey, private: privateKey}} = JSON.parse(contract01Response);
+
+      // CONTRACT 02
       console.log("Going to execute contract02: ", contract02(uniqueId, mandatoryAttributes.map(a => a.object)));
       const contract02Response = await ZenroomExecutor.execute(contract02(uniqueId, mandatoryAttributes.map(a => a.object)), '', contract01Response);
       console.log("Response from contract02", contract02Response);
@@ -83,8 +88,32 @@ class AttributesVerification extends React.Component {
       }
       const blindSignRequest = JSON.parse(contract02Response);
 
-      let {credential} = await credentialIssuer.issueCredential(mandatoryAttributes[0].predicate, blindSignRequest, data);
-      await this.props.addCredential(mandatoryAttributes[0], walletId, credential);
+      // CALLS TO CREDENTIAL ISSUER
+      const issuerId = await credentialIssuer.getIssuerId();
+      console.log("Credential Issuer id: ", issuerId);
+
+      const issuerSignedCredential = await credentialIssuer.issueCredential(mandatoryAttributes[0].predicate, blindSignRequest, data);
+      console.log("Issuer signed credential: ", issuerSignedCredential);
+
+      const issuerVerifier = await credentialIssuer.getIssuerVerifier(mandatoryAttributes[0].predicate);
+      console.log("Issuer verifier: ", issuerVerifier);
+
+
+      // CONTRACT 06
+      // const c06 = contract06(uniqueId, issuerId);
+      const c06 = contract06(uniqueId, 'issuer_identifier'); // TODO: This is a workaround
+      console.log("Going to execute contract 06: ", c06);
+      const contract06Response = await ZenroomExecutor.execute(c06, JSON.stringify(issuerSignedCredential), contract01Response);
+      console.log("Response from contract06", contract06Response);
+
+      // CONTRACT 07
+      // const c07 = contract07(uniqueId, issuerId, mandatoryAttributes.map(a => a.object));
+      const c07 = contract07(uniqueId, 'issuer_identifier', mandatoryAttributes.map(a => a.object)); // TODO: the workaround as above
+      console.log("Going to execute contract 07: ", c07);
+      const contract07Response = await ZenroomExecutor.execute(c07, JSON.stringify(issuerVerifier), contract06Response);
+      console.log("Response from contract07", contract07Response);
+
+      await this.props.addCredential(mandatoryAttributes[0], walletId, contract07Response);
       this.props.goToPetitionSummary();
 
     } catch(error) {
