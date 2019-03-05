@@ -72,6 +72,10 @@ class AttributesVerification extends React.Component {
       console.log("Going to execute contract02: ", contract02(uniqueId, mandatoryAttributes.map(a => a.object)));
       const contract02Response = await ZenroomExecutor.execute(contract02(uniqueId, mandatoryAttributes.map(a => a.object)), '', contract01Response);
       console.log("Response from contract02", contract02Response);
+
+
+      let {credential} = credentialIssuer.issueCredential(data);
+      await this.props.addCredential(mandatoryAttributes[0], walletId, credential);
       this.props.goToPetitionSummary();
 
     } catch(error) {

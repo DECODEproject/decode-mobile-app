@@ -42,7 +42,7 @@ class CredentialList extends React.Component {
     super(props);
     this.state = {
       loading: false,
-      enabledAttributes: [{predicate: 'schema:addressLocality'}],
+      enabledAttributes: [],
     };
   }
 
