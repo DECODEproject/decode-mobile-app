@@ -54,9 +54,10 @@ export default {
     header: 'BCNNow necesita un credencial para acceder',
     subHeader: 'Puedes acceder compartiendo:',
     button: 'Acceder',
-    failbutton: 'Test error',
-    failedMessage: 'Su petición no se ha podido procesar. Por favor, reinténtelo en unos instantes.',
-    successMessage: 'Conectado correctamente.',
+    failbutton: 'Test timeout',
+    failedMessage: 'Tu petición no se ha podido procesar\n',
+    successMessage: 'Conectado correctamente',
+    timeout: 'Tiempo de espera excedido. Por favor reintenta'
   },
   manageAttributes: {
     description: 'Puedes gestionar los siguientes datos. Los datos permanecerán en tu móvil.',

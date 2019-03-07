@@ -29,10 +29,11 @@ import CredentialList from '../application/components/CredentialList/CredentialL
 import ScreenLogo from '../application/components/ScreenLogo/ScreenLogo';
 import { pickCredentials } from '../lib/attributes';
 
-function MessageComponent(msg) {
+function MessageComponent(msg, detail) {
   return (
     <View style={{flex: 1, justifyContent: 'center'}}>
       <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{msg}</Text>
+      {detail ? <Text style={{ color: '#a2a2a2', textAlign: 'center' }}>{detail}</Text> : null}
     </View>
   );
 }
@@ -41,7 +42,7 @@ export function EmptyLogin(props) {
 }
 
 export function ErrorLogin(props) {
-  return MessageComponent(props.failedMessage);
+  return MessageComponent(props.failedMessage, props.detailMessage);
 }
 
 export function SuccessLogin(props) {
@@ -57,7 +58,12 @@ function Login(props) {
   if (!props.hasCredentials) {
     mainComponent = (<EmptyLogin message={props.t('emptyMessage')} />);
   } else if (props.loginHasFailed) {
-    mainComponent = (<ErrorLogin failedMessage={props.t('failedMessage')} />);
+    const {loginErrorCode, loginErrorMessage} = props;
+    if (loginErrorCode === 408) {
+      mainComponent = <ErrorLogin failedMessage={props.t('timeout')}/>
+    } else {
+      mainComponent = <ErrorLogin failedMessage={props.t('failedMessage')} detailMessage={loginErrorMessage}/>
+    }
   } else if (props.loginIsSuccessful) {
     mainComponent = (<SuccessLogin successMessage={props.t('successMessage')}  style={{alignSelf: 'center'}}/>);
   } else {
@@ -91,6 +97,8 @@ const mapStateToProps = state => ({
   hasCredentials: pickCredentials(state.attributes.list).length !== 0,
   loginHasFailed: state.login.failed,
   loginIsSuccessful: state.login.success,
+  loginErrorCode: state.login.errorCode,
+  loginErrorMessage: state.login.errorReason,
 });
 
 export default translate('login', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Login));

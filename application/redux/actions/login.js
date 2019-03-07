@@ -37,16 +37,22 @@ export function checkComingFromLogin() {
 export function doLogin(loginRequest, callback, sessionId, credential, attributes, fail=false) {
   return async (dispatch) => {
     const { callback: initialCallback, sessionId: initialessionId} = await getLoginParameters();
-    const success = await loginRequest(
+    const loginResponse = await loginRequest(
       callback || initialCallback,
       sessionId || initialessionId,
       credential,
       attributes,
       fail,
       );
-    dispatch({
-      type: success ? types.LOGIN_SUCCEEDED : types.LOGIN_FAILED,
-    });
+    if (loginResponse.status === 200) {
+      dispatch({type: types.LOGIN_SUCCEEDED});
+    } else {
+      dispatch({
+        type: types.LOGIN_FAILED,
+        code: loginResponse.status,
+        reason: loginResponse.message,
+      });
+    }
   };
 }
 

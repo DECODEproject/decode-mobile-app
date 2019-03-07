@@ -50,13 +50,14 @@ export default {
     errorText: 'Pots tornar a la pàgina de Decidim per veure altres propostes actives.',
   },
   login: {
-    emptyMessage: 'No tens dades que es puguin fer servir per accedir-hi.',
+    emptyMessage: 'No teniu dades que es puguin fer servir per accedir-hi.',
     header: 'BCNNow necessita un credencial per accedir',
-    subHeader: 'Pots accedir compartint:',
+    subHeader: 'Podeu accedir compartint:',
     button: 'Accedir',
-    failbutton: 'Test error',
-    failedMessage: 'La vostre petició no s\'ha pogut processar.\nSi us plau, reintente-ho en uns instants.',
+    failbutton: 'Test timeout',
+    failedMessage: 'La vostra petició no s\'ha pogut processar.\n',
     successMessage: 'Connectat correctament.',
+    timeout: 'Temps d\'espera excedit. Si us plau reintenteu',
   },
   manageAttributes: {
     description: 'Pots gestionar les següents dades. Les dades romandran en el teu mòbil.',

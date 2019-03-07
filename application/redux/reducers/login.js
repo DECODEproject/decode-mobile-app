@@ -53,10 +53,13 @@ export default function reducer(state = initialState, action) {
         failed: false,
       };
     case types.LOGIN_FAILED:
+    const {code, reason} = action;
       return {
         ...state,
         success: false,
         failed: true,
+        errorCode: code,
+        errorReason: reason,
       };
     default:
       return state;
