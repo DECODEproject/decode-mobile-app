@@ -144,6 +144,7 @@ export default {
   },
   attributesVerification: {
     verify: 'Verify',
+    verifyHash: 'Verify (hash test)',
   },
   petitionList: {
     description: 'You can sign with the DECODE app the following petitions:',

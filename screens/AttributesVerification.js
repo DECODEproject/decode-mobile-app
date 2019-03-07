@@ -38,6 +38,8 @@ import ZenroomExecutor from '../lib/ZenroomExecutor';
 import isJson from '../lib/is-json';
 import contract01 from '../assets/contracts/01-CITIZEN-request-keypair.zencode';
 import contract02 from '../assets/contracts/02-CITIZEN-request-keypair.zencode';
+import contract50 from '../assets/contracts/50-MISC-hashing.zencode';
+
 
 
 class AttributesVerification extends React.Component {
@@ -55,7 +57,11 @@ class AttributesVerification extends React.Component {
     },
   };
 
-  callCredentialIssuer = (data, url) => async () => {
+  callCredentialIssuer = (data, url, hash = true) => async () => {
+    for (const k in data) {
+      data[k] = hash ? await ZenroomExecutor.execute(contract50, data[k], '') : data[k];
+    }
+    console.log("data: ", data);
     const {mandatoryAttributes, walletId} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
     try {
@@ -118,10 +124,16 @@ class AttributesVerification extends React.Component {
             )
           }
         </View>
-        <Button
-          name={t('verify')}
-          onPress={this.callCredentialIssuer(verificationInput, credentialIssuerUrl)}
-        />
+        <View>
+          <Button
+            name={t('verify')}
+            onPress={this.callCredentialIssuer(verificationInput, credentialIssuerUrl, false)}
+          />
+          <Button
+            name={t('verifyHash')}
+            onPress={this.callCredentialIssuer(verificationInput, credentialIssuerUrl)}
+          />
+        </View>
       </ScrollView>
     );
   }
