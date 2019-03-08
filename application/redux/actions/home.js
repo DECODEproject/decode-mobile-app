@@ -44,6 +44,7 @@ export default function goToPetition(decidimClient, petitionId, top = true) {
       dispatch(goToError(errorGettingPetitionInformation));
     } else {
       const isAttributeVerified = state.attributes.list.has('schema:addressLocality');
+      addTranslation(getLanguage(), 'error', 'issuerName', state.petition.petition.attributes.mandatory[0].provenance.issuerName[getLanguage()]);
       if (isAttributeVerified) {
         dispatch(goToPetitionSummary(top));
       } else {

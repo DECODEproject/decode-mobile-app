@@ -112,6 +112,14 @@ export default {
     goBcnNow: 'Anar a BarcelonaNow',
     goOther: 'Veure altres peticions',
   },
+  error: {
+    defaultError: 'Hi ha hagut un error',
+    goOther: 'Veure altres peticions',
+    alreadyIssued: 'Credencial ja entregada per aquestes dades.\nLes credencials úniques nomes es poden entregar una vegada',
+    notValid: 'Les dades inserides no son vàlides per obtenir aquesta credencial',
+    missingValue: 'Falten dades, torneu a intentar',
+    issuedBy: 'Necessiteu ajuda? Contacteu amb',
+  },
   walkthrough: {
     done: 'Fet',
     skip: 'Saltar',

@@ -49,6 +49,8 @@ class Error extends React.Component {
   };
 
   render() {
+    const {t, message, goToPetitionList, mandatoryAttributes} = this.props;
+    const {provenance: {url: credentialIssuerUrl}} = mandatoryAttributes[0];
     return (
       <View style={styles.signOutcomeContainer}>
         <View style={styles.signOutcomeBox}>
@@ -57,10 +59,15 @@ class Error extends React.Component {
             source={warningIcon}
           />
           <View style={styles.signOutcomeTextBox}>
-            <Text style={styles.signOutcomeText}>{this.props.message || this.props.t('defaultError')}</Text>
+            <Text style={styles.signOutcomeText}>{t(message) || t('defaultError')}</Text>
+            {
+              credentialIssuerUrl ?
+                <Text style={styles.signOutcomeText}>{`${t('issuedBy')}:\n${t('issuerName')}\n${credentialIssuerUrl}`}</Text>
+                : null
+            }
             <Button
-              name={this.props.t('goOther')}
-              onPress={() => this.props.goToPetitionList()}
+              name={t('goOther')}
+              onPress={() => goToPetitionList()}
               style={{
                 width: 200,
                 alignSelf: 'center',
@@ -76,10 +83,15 @@ class Error extends React.Component {
 Error.propTypes = {
   t: PropTypes.func.isRequired,
   message: PropTypes.string,
+  issuer: PropTypes.object,
 };
+
+const mapStateToProps = state => ({
+  mandatoryAttributes: state.petition.petition.attributes.mandatory,
+});
 
 const mapDispatchToProps = dispatch => ({
   goToPetitionList: () => dispatch(goToPetitionList()),
 });
 
-export default translate('signOutcome', { i18n })(connect(null, mapDispatchToProps)(Error));
+export default translate('error', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Error));

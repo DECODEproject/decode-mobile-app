@@ -112,6 +112,14 @@ export default {
     goBcnNow: 'Go to BarcelonaNow',
     goOther: 'Browse other petitions',
   },
+  error: {
+    defaultError: 'There has been an error',
+    goOther: 'Browse other petitions',
+    alreadyIssued: 'Credential already issued for this data.\nUnique credentials can only be issued once',
+    notValid: 'Data input is not valid to obtain this credential',
+    missingValue: 'Missing data, retry',
+    issuedBy: 'Need help? Contact with',
+  },
   walkthrough: {
     done: 'Done',
     skip: 'Skip',
