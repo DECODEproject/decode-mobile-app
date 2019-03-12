@@ -33,8 +33,6 @@ import goToPetition from '../application/redux/actions/home';
 import authorizationAction, { updatePin, resetPin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
 import i18n from '../i18n';
-import ZenroomExecutor from '../lib/ZenroomExecutor';
-import helloContract from '../assets/contracts/pair';
 import linkingHandler from '../lib/linkingHandler';
 import styles from './styles';
 import DecidimClient from '../lib/DecidimClient';
@@ -47,7 +45,6 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.validatePinCode = this.validatePinCode.bind(this);
-    this.sayHelloToZenroom = this.sayHelloToZenroom.bind(this);
   }
 
 
@@ -102,15 +99,6 @@ class Home extends React.Component {
     });
   }
 
-  async sayHelloToZenroom() {
-    try{
-        const helloResponse = await ZenroomExecutor.execute(helloContract, "", "");
-        alert(`Zenroom says: ${helloResponse}`);
-    } catch(e) {
-        alert(`Zenroom complains: ${e}`);
-    }
-  }
-
   render() {
     return (
       <KeyboardAvoidingView
@@ -132,11 +120,6 @@ class Home extends React.Component {
             />
           </View>
           <View style={{flex: 1}}>
-            {/*<Button*/}
-                {/*name='Hello Zenroom'*/}
-                {/*onPress={this.sayHelloToZenroom}*/}
-            {/*/>*/}
-
             <Text style={{ marginVertical: 10, marginHorizontal: 16 }}>PIN:&nbsp;&nbsp;</Text>
             <TextInput
               style={styles.homePassword}
@@ -148,7 +131,6 @@ class Home extends React.Component {
               value={this.props.pinCode}
               onSubmitEditing={this.validatePinCode}
             />
-
             <View style={styles.homeTextInput}>
               <Button
                 name={this.props.t('button')}

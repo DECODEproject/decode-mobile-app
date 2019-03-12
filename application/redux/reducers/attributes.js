@@ -38,6 +38,7 @@ export default function reducer(state = initialState, action) {
           credentials: action.credential,
         },
         subject: action.walletId,
+        name: action.attribute.name,
       };
 
       return {

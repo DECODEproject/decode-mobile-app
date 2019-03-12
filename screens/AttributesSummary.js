@@ -32,6 +32,7 @@ import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
+import { getDisplayName} from "../lib/attributes";
 
 class AttributesSummary extends React.Component {
   static route = {
@@ -85,7 +86,7 @@ class AttributesSummary extends React.Component {
               petition.attributes.mandatory[0].verificationInput ? (
                 <React.Fragment>
                   <Text>
-                    {t(petition.attributes.mandatory[0].predicate)} <Text style={{ color: '#D0021B' }}>*</Text>
+                    {getDisplayName(petition.attributes.mandatory[0].predicate, t)} <Text style={{ color: '#D0021B' }}>*</Text>
                   </Text>
                   <LinkButton
                     name={t('button')}

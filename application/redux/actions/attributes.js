@@ -20,7 +20,7 @@
  */
 
 import types from '../actionTypes';
-import { goToAttributesLanding } from './navigation';
+import {addTranslations} from "../../../i18n";
 
 
 export function addCredentialFromObject(attribute, walletId, credential) {
@@ -48,6 +48,7 @@ export function storeCredentials(setItemAsync) {
 export function addCredential(attribute, walletId, credential, setItemAsync) {
   return async (dispatch) => {
     console.log(`attribute: ${JSON.stringify(attribute)}, wallet id: ${walletId}, credential: ${JSON.stringify(credential)}`);
+    addTranslations('schema', attribute.predicate, attribute.name);
     await dispatch(addCredentialFromObject(attribute, walletId, credential));
     const action = await dispatch(storeCredentials(setItemAsync));
     return action;
@@ -58,11 +59,16 @@ export function loadCredentials(getItemAsync) {
   return (dispatch) => {
     getItemAsync('attributes').then((attributes) => {
       let parsedAttributes = attributes ? JSON.parse(attributes) : [];
-      parsedAttributes = new Map(parsedAttributes.map(att => [att.predicate, att]));
-
+      let attributeMap = new Map();
+      for (const attr of parsedAttributes) {
+        attributeMap.set(attr.predicate, attr);
+        if (attr.name) {
+          addTranslations('schema', attr.predicate, attr.name);
+        }
+      }
       dispatch({
         type: types.LOAD_ATTRIBUTES,
-        attributes: parsedAttributes,
+        attributes: attributeMap,
       });
     });
   };

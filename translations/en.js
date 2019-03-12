@@ -88,7 +88,7 @@ export default {
     age: 'Age',
     loading: 'This might take a few moments',
     requiredAttributes: 'This data is required to sign the proposal',
-    requiredAttributeError: 'You must consent to sharing your status as a Barcelona resident or you cannot sign this petition. This information is anonymous.',
+    requiredAttributeError: 'You must consent to sharing this data or else you cannot sign this petition. This information is anonymous.',
     manageData: 'Manage your data',
   },
   pinSetup: {

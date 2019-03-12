@@ -21,7 +21,7 @@
 
 import { goToAttributesSummary, goToError, goToPetitionSummary } from './navigation';
 import { getPetition } from './petition';
-import { addTranslation, getLanguage } from '../../../i18n';
+import { addTranslations } from '../../../i18n';
 
 export default function goToPetition(decidimClient, petitionId, top = true) {
   return async (dispatch, getState) => {
@@ -43,13 +43,14 @@ export default function goToPetition(decidimClient, petitionId, top = true) {
     if (errorGettingPetitionInformation) {
       dispatch(goToError(errorGettingPetitionInformation));
     } else {
-      const isAttributeVerified = state.attributes.list.has('schema:addressLocality');
-      addTranslation(getLanguage(), 'error', 'issuerName', state.petition.petition.attributes.mandatory[0].provenance.issuerName[getLanguage()]);
+      const isAttributeVerified = state.attributes.list.has(state.petition.petition.attributes.mandatory[0].predicate);
+      addTranslations('schema', 'issuerName', state.petition.petition.attributes.mandatory[0].provenance.issuerName);
+      addTranslations('schema', state.petition.petition.attributes.mandatory[0].predicate, state.petition.petition.attributes.mandatory[0].name);
       if (isAttributeVerified) {
         dispatch(goToPetitionSummary(top));
       } else {
         state.petition.petition.attributes.mandatory[0].verificationInput.map(
-          field => addTranslation(getLanguage(), 'attributesVerification', field.name.en, field.name[getLanguage()])
+          field => addTranslations('attributesVerification', field.id, field.name)
         );
         dispatch(goToAttributesSummary(top));
       }

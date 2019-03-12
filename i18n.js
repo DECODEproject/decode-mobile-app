@@ -48,5 +48,10 @@ i18n
 
 export const getLanguage = () => i18n.language.split('-')[0];
 export const addTranslation = (lang, bundle, key, value) => i18n.addResource(lang, bundle, key, value);
+export const addTranslations = (bundle, key, values) => {
+  for (const lang in values) {
+    i18n.addResource(lang, bundle, key, values[lang]);
+  }
+};
 
 export default i18n;

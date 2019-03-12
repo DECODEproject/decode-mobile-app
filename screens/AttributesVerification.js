@@ -28,6 +28,7 @@ import { translate } from 'react-i18next';
 import uuid from 'uuid-js';
 import styles from './styles';
 import i18n from '../i18n';
+import {getDisplayName} from "../lib/attributes";
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import Button from '../application/components/Button/Button';
 import {updateVerificationInput} from '../application/redux/actions/verification';
@@ -141,12 +142,12 @@ class AttributesVerification extends React.Component {
           {
             mandatoryAttributes[0].verificationInput.map(
               attr => (
-                <View key={attr.name.en} style={styles.verificationInputView}>
-                  <Text>{t(attr.name.en)}</Text>
+                <View key={attr.id} style={styles.verificationInputView}>
+                  <Text>{getDisplayName(attr.id, t)}</Text>
                   <TextInput
                     style={styles.verificationInput}
-                    value={verificationInput[attr.name.en]}
-                    onChangeText={value => this.props.updateVerificationInput(attr.name.en, value)}
+                    value={verificationInput[attr.id]}
+                    onChangeText={value => this.props.updateVerificationInput(attr.id, value)}
                   />
                 </View>
               )

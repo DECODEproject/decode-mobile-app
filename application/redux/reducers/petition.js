@@ -26,7 +26,7 @@ const initialState = {
   petition: {},
   error: undefined,
   signed: false,
-  enabledAttributes: [{ predicate: 'schema:addressLocality' }],
+  enabledAttributes: [],
 };
 
 

@@ -30,7 +30,7 @@ import { doLogin } from '../../redux/actions/login';
 import loginRequest from '../../../lib/LoginClient';
 import Button from '../Button/Button';
 import { pickCredentials, pickAttributes, getDisplayValue,
-  toggleElementsInList, isAttributeEnabled } from '../../../lib/attributes';
+  toggleElementsInList, isAttributeEnabled, getDisplayName } from '../../../lib/attributes';
 import Attribute from "../Attribute/Attribute";
 
 const onSelected = (index, value) => {
@@ -63,7 +63,7 @@ class CredentialList extends React.Component {
                   {
                     credentials.map(({predicate}) => (
                       <RadioButton value={predicate} key={predicate}>
-                        <Text>{t(predicate)}</Text>
+                        <Text>{getDisplayName(predicate, t)}</Text>
                       </RadioButton>))
                   }
                 </RadioGroup>
@@ -76,7 +76,7 @@ class CredentialList extends React.Component {
               attributes.map(attr => (
                 <Attribute
                   key={attr.predicate}
-                  name={t(attr.predicate)}
+                  name={getDisplayName(attr.predicate, t)}
                   value={getDisplayValue(attr, t)}
                   requiredError={t('requiredAttributeError')}
                   toggleCallback={() => this.toggleEnabledAttribute(attr)}

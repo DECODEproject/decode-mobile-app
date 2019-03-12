@@ -29,6 +29,7 @@ import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import { goToPetitionList } from '../application/redux/actions/navigation';
 import styles from './styles';
 import i18n from '../i18n';
+import {getDisplayName} from "../lib/attributes";
 
 
 const warningIcon = require('../assets/images/warning.png');
@@ -62,7 +63,7 @@ class Error extends React.Component {
             <Text style={styles.signOutcomeText}>{t(message) || t('defaultError')}</Text>
             {
               credentialIssuerUrl ?
-                <Text style={styles.signOutcomeText}>{`${t('issuedBy')}:\n${t('issuerName')}\n${credentialIssuerUrl}`}</Text>
+                <Text style={styles.signOutcomeText}>{`${t('issuedBy')}:\n${getDisplayName('issuerName', t)}\n${credentialIssuerUrl}`}</Text>
                 : null
             }
             <Button

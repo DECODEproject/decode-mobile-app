@@ -88,7 +88,7 @@ export default {
     age: 'Edat',
     loading: 'Això podria trigar uns moments',
     requiredAttributes: 'Dades requerides per signar la proposta',
-    requiredAttributeError: 'Has de compartir que ets resident de Barcelona o no podràs signar aquesta proposta. Aquesta informació és anònima.',
+    requiredAttributeError: 'Has de compartir aquesta dada o no podràs signar aquesta proposta. Aquesta informació és anònima.',
     manageData: 'Gestionar les teves dades',
   },
   pinSetup: {

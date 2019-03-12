@@ -39,7 +39,7 @@ import i18n from '../i18n';
 import {
   isAttributeEnabled, areAllMandatoryAttrsEnabled, formAge,
   getEnabledAttributeValue, findAttribute,
-  buildAttributes, toggleElementsInList, getDisplayValue,
+  buildAttributes, toggleElementsInList, getDisplayValue, getDisplayName
 } from '../lib/attributes';
 import ChainspaceClient from '../lib/ChainspaceClient';
 import ZenroomContract from '../lib/ZenroomContract';
@@ -66,7 +66,7 @@ class PetitionSummary extends React.Component {
     super(props);
     this.state = {
       loading: false,
-      enabledAttributes: [{predicate: 'schema:addressLocality'}],
+      enabledAttributes: [{predicate: props.attributes.mandatory[0].predicate}],
     };
   }
 
@@ -112,7 +112,7 @@ class PetitionSummary extends React.Component {
         isMandatory={isMandatory}
         toggleCallback={() => this.toggleEnabledAttribute(attr)}
         isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
-        name={this.props.t(attr.predicate)}
+        name={getDisplayName(attr.predicate, this.props.t)}
         requiredError={this.props.t('requiredAttributeError')}
       />
     );
