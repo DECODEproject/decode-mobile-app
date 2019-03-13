@@ -19,7 +19,7 @@ public class MainActivity extends DetachActivity {
 
   @Override
   public String publishedUrl() {
-    return "exp://expo.io/@dribia/decode-walletapp";
+    return "exp://expo.io/@dribia/decode-app";
   }
 
   @Override
