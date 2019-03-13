@@ -22,8 +22,8 @@ android {
   defaultConfig {
     applicationId 'com.dribia.decodeapp'
     targetSdkVersion 26
-    versionCode 7
-    versionName '0.2.7'
+    versionCode 8
+    versionName '0.2.8'
     ndk {
       abiFilters 'armeabi-v7a', 'x86'
     }
