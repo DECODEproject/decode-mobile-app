@@ -22,8 +22,8 @@
 import { Platform } from 'react-native';
 import { createNavigationEnabledStore, NavigationReducer } from '@expo/ex-navigation';
 import { compose, combineReducers, createStore, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import devTools from 'remote-redux-devtools';
 import decidimInfo from './reducers/decidimInfo';
 import petition from './reducers/petition';
 import wallet from './reducers/wallet';
@@ -35,12 +35,7 @@ import login from './reducers/login';
 import verification from './reducers/verification';
 
 const enhancer = compose(
-  applyMiddleware(thunk),
-  devTools({
-    name: Platform.OS,
-    hostname: 'localhost',
-    port: 5678,
-  }),
+  applyMiddleware(thunk, logger),
 );
 const createStoreWithMiddleware = enhancer(createStore);
 
