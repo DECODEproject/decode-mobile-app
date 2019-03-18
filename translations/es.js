@@ -127,7 +127,7 @@ export default {
     pages: {
       one: {
         title: 'DECODE',
-        subtitle: 'es tu gestor de datos personales',
+        subtitle: 'tu gestor de datos personales',
       },
       two: {
         subtitle: 'Tus datos tienen un valor. Es importante que los controles',

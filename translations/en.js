@@ -127,7 +127,7 @@ export default {
     pages: {
       one: {
         title: 'DECODE',
-        subtitle: 'is your personal data manager',
+        subtitle: 'your personal data manager',
       },
       two: {
         subtitle: 'Your data has value. It\'s important you have control over it',
