@@ -35,9 +35,12 @@ export default function reducer(state = initialState, action) {
         scope: action.attribute.scope,
         provenance: {
           source: action.attribute.provenance.url,
-          credentials: action.credential,
+          id: action.issuerId,
+          verify: action.issuerVerifier,
+          credential: action.credential,
+          blindProof: action.blindProof,
         },
-        subject: action.walletId,
+        subject: action.uniqueId,
         name: action.attribute.name,
       };
 

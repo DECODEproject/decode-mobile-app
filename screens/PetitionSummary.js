@@ -20,31 +20,29 @@
  */
 
 import React from 'react';
-import {Constants} from 'expo';
 import Spinner from 'react-native-loading-spinner-overlay';
 import {Text, View, ScrollView, Dimensions, Platform} from 'react-native';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
-import {signPetition} from '../application/redux/actions/petition';
+import {signPetitionAction, signPetitionError} from '../application/redux/actions/petition';
 import Button from '../application/components/Button/Button';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import {goToSignOutcome, goToNewAttributes} from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
-import getChainspaceUrl from '../config';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
 import {
-  isAttributeEnabled, areAllMandatoryAttrsEnabled, formAge,
-  getEnabledAttributeValue, findAttribute,
+  isAttributeEnabled, areAllMandatoryAttrsEnabled,
+  pickCredentials,
   buildAttributes, toggleElementsInList, getDisplayValue, getDisplayName
 } from '../lib/attributes';
-import ChainspaceClient from '../lib/ChainspaceClient';
-import ZenroomContract from '../lib/ZenroomContract';
-
-const chainspaceUrl = getChainspaceUrl(Constants.manifest.releaseChannel);
+import contract11 from '../assets/contracts/11-CITIZEN-sign-petition.zencode';
+import ZenroomExecutor from "../lib/ZenroomExecutor";
+import isJson from '../lib/is-json';
+import PetitionsClient from '../lib/PetitionsClient';
 
 class PetitionSummary extends React.Component {
 
@@ -74,31 +72,40 @@ class PetitionSummary extends React.Component {
     this.setState({enabledAttributes: toggleElementsInList(attr, this.state.enabledAttributes)});
   }
 
-  async sign(petition, walletId, vote) {
+  async sign(uniqueId, petitionId, vote) {
+    if (vote === 'No') {
+      await this.props.signPetitionAction();
+      this.props.goToSignOutcome();
+      return;
+    }
     this.setState({
       loading: true,
     });
+    try {
+      // CONTRACT 11
+      const {provenance: {credential, id: issuerId, verify: issuerVerifier}, petitionsUrl} = this.props.credentials[0];
+      const c11 = contract11(uniqueId, issuerId, petitionId);
+      console.log("Going to execute contract11: ", c11);
+      console.log("Keys: ", credential);
+      console.log("Data: ", JSON.stringify(issuerVerifier));
+      const petitionSignature = await ZenroomExecutor.execute(
+        c11,
+        JSON.stringify(issuerVerifier),
+        credential
+      );
+      console.log("Response from contract11 (petitionSignature): ", petitionSignature);
+      if (! isJson(petitionSignature)) {
+        throw new Error("Unexpected response from contract 11");
+      }
 
-    const attributes = [...this.props.matchedAttributes.optional,
-      ...this.props.matchedAttributes.missing,
-      ...this.props.matchedAttributes.mandatory];
+      // CALL TO PETITIONS SERVICE
+      const petitionsClient = new PetitionsClient(petitionsUrl);
+      await petitionsClient.sign(petitionId, JSON.parse(petitionSignature));
 
-    const ageAttribute = findAttribute('schema:dateOfBirth', attributes);
-    const genderAttribute = findAttribute('schema:gender', attributes);
-    const districtAttribute = findAttribute('schema:district', attributes);
-
-    const age = formAge(ageAttribute, this.state.enabledAttributes);
-    const gender = getEnabledAttributeValue(genderAttribute, this.state.enabledAttributes);
-    const district = getEnabledAttributeValue(districtAttribute, this.state.enabledAttributes);
-
-    await this.props.signPetition(
-      vote,
-      age,
-      gender,
-      district,
-      this.props.chainspaceClient,
-      this.props.zenroomContract,
-    );
+      await this.props.signPetitionAction();
+    } catch(error) {
+      await this.props.signPetitionError(error.message);
+    }
     this.props.goToSignOutcome();
     this.setState({
       loading: false,
@@ -126,7 +133,6 @@ class PetitionSummary extends React.Component {
     const {
       petition,
       t,
-      walletId,
       attributes,
     } = this.props;
 
@@ -136,6 +142,7 @@ class PetitionSummary extends React.Component {
     );
 
     const {matchedAttributes} = this.props;
+    const {uniqueId} = matchedAttributes;
     const petitionAttributesTemplate = (
       <View style={styles.petitionSummaryBox}>
         {matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true))}
@@ -204,14 +211,14 @@ class PetitionSummary extends React.Component {
             <Button
               enabled={allMandatoryEnabled}
               onPress={() => {
-                this.sign(petition, walletId, 'No');
+                this.sign(uniqueId, `decidim-${petition.id}`, 'No');
               }}
               name={t('no')}
             />
             <Button
               enabled={allMandatoryEnabled}
               onPress={() => {
-                this.sign(petition, walletId, 'Yes');
+                this.sign(uniqueId, `decidim-${petition.id}`, 'Yes');
               }}
               name={t('yes')}
             />
@@ -241,13 +248,11 @@ PetitionSummary.propTypes = {
     optional: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   }),
   walletId: PropTypes.string.isRequired,
-  signPetition: PropTypes.func.isRequired,
+  signPetitionAction: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
   walletAttributes: PropTypes.shape({
     list: PropTypes.instanceOf(Map),
   }).isRequired,
-  chainspaceClient: PropTypes.instanceOf(ChainspaceClient).isRequired,
-  zenroomContract: PropTypes.instanceOf(ZenroomContract).isRequired,
 };
 
 PetitionSummary.defaultProps = {
@@ -265,8 +270,7 @@ const mapStateToProps = state => ({
   signSuccess: state.signSuccess,
   walletAttributes: state.attributes.list,
   matchedAttributes: buildAttributes(state.attributes.list, state.petition.petition.attributes),
-  chainspaceClient: new ChainspaceClient(chainspaceUrl),
-  zenroomContract: new ZenroomContract(),
+  credentials: pickCredentials(state.attributes.list),
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -274,7 +278,8 @@ const mapDispatchToProps = dispatch => ({
     dispatch(goToSignOutcome());
   },
   goToManageAttributes: () => dispatch(goToNewAttributes()),
-  signPetition: (vote, age, gender, district, chainspaceClient, zenroomContract) => dispatch(signPetition(vote, age, gender, district, chainspaceClient, zenroomContract)), // eslint-disable-line
+  signPetitionAction: () => dispatch(signPetitionAction()),
+  signPetitionError: err => dispatch(signPetitionError(err)),
 });
 
 export default translate('petitionSummary', {i18n})(connect(mapStateToProps, mapDispatchToProps)(PetitionSummary));

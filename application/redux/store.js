@@ -35,7 +35,8 @@ import login from './reducers/login';
 import verification from './reducers/verification';
 
 const enhancer = compose(
-  applyMiddleware(thunk, logger),
+  // applyMiddleware(thunk, logger),
+  applyMiddleware(thunk),
 );
 const createStoreWithMiddleware = enhancer(createStore);
 

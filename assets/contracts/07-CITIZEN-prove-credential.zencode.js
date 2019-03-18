@@ -26,14 +26,13 @@ ZEN:begin(0)
 
 ZEN:parse([[
 Scenario 'coconut': "To run by citizen and send the result blindproof_credential.json to the verifier/checker"
-         Given that I am known as '${uniqueId}'
-         and I have my credential keypair
-         and I use the verification key by '${issuerId}'
-         and I have a signed credential
-         ${declarations(declaredAttributes)}
-         When I aggregate all the verification keys
-         and I generate a credential proof
-         Then print all data
+Given that I am known as '${uniqueId}'
+and I have my credential keypair
+and I use the verification key by '${issuerId}'
+and I have a signed credential
+When I aggregate all the verification keys
+and I generate a credential proof
+Then print all data
 ]])
 
 ZEN:run()`;

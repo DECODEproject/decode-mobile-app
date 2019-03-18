@@ -28,7 +28,6 @@ export default function goToPetition(decidimClient, petitionId, top = true) {
     await dispatch(getPetition(decidimClient, petitionId));
     const state = await getState();
     try {
-        console.log(`State: ${JSON.stringify(state)}`);
         const {navigation: {currentNavigatorUID, navigators}} = state;
         const {index, routes} = navigators[currentNavigatorUID];
         const routeName = routes[index].routeName;
@@ -38,7 +37,7 @@ export default function goToPetition(decidimClient, petitionId, top = true) {
       console.log("Could not establish current route name", e);
     }
 
-    const errorGettingPetitionInformation = state.petition.petitionError !== undefined;
+    const errorGettingPetitionInformation = state.petition.error !== undefined;
 
     if (errorGettingPetitionInformation) {
       dispatch(goToError(errorGettingPetitionInformation));

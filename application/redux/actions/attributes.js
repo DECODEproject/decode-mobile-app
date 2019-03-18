@@ -23,12 +23,15 @@ import types from '../actionTypes';
 import {addTranslations} from "../../../i18n";
 
 
-export function addCredentialFromObject(attribute, walletId, credential) {
+export function addCredentialFromObject(attribute, uniqueId, issuerId, issuerVerifier, credential, blindProof) {
   return {
     type: types.ADD_CREDENTIAL,
     attribute,
-    walletId,
+    uniqueId,
+    issuerId,
+    issuerVerifier,
     credential,
+    blindProof,
   };
 }
 
@@ -45,11 +48,11 @@ export function storeCredentials(setItemAsync) {
   };
 }
 
-export function addCredential(attribute, walletId, credential, setItemAsync) {
+export function addCredential(attribute, uniqueId, issuerId, issuerVerifier, credential, blindProof, setItemAsync) {
   return async (dispatch) => {
-    console.log(`attribute: ${JSON.stringify(attribute)}, wallet id: ${walletId}, credential: ${JSON.stringify(credential)}`);
+    console.log(`attribute: ${JSON.stringify(attribute)}, UniqueId: ${uniqueId}, credential: ${JSON.stringify(credential)}`);
     addTranslations('schema', attribute.predicate, attribute.name);
-    await dispatch(addCredentialFromObject(attribute, walletId, credential));
+    await dispatch(addCredentialFromObject(attribute, uniqueId, issuerId, issuerVerifier, credential, blindProof));
     const action = await dispatch(storeCredentials(setItemAsync));
     return action;
   };

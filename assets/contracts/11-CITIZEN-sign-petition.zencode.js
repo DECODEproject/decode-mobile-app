@@ -19,15 +19,17 @@
  * email: ula@dribia.com
  */
 
-export default (uniqueId, issuerId) => `-- 0 for silent logging
+export default (uniqueId, issuerId, petitionId) => `-- 0 for silent logging
 ZEN:begin(0)
 
 ZEN:parse([[
-Scenario 'coconut': "To run by citizen and store the output as credential.json"
-Given that I am known as '${uniqueId}'
-and I have my credential keypair
-When I receive a credential signature '${issuerId}'
-and I aggregate the credential into my keyring
+Scenario 'coconut': "Sign petition: the Citizen signs the petition, with his own keys, aggregating it with the credential and with the Credential Issuer public key"
+Given that I am known as '${uniqueId}' 
+and I have my keypair
+and I have a signed credential
+and I use the verification key by '${issuerId}'
+When I aggregate all the verification keys
+and I sign the petition '${petitionId}'
 Then print all data
 ]])
 

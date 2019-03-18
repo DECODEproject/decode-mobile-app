@@ -36,7 +36,7 @@ import i18n from '../i18n';
 
 class SignOutcome extends React.Component {
   buildOutcomeText() {
-    const petitionError = this.props.petitionError === undefined ? this.props.t('defaultError') : this.props.petitionError;
+    const petitionError = this.props.signError || this.props.t('defaultError');
     const signOutcomeText = `${petitionError} \n\n ${this.props.t('errorText')}`;
     return signOutcomeText;
   }
@@ -143,6 +143,7 @@ SignOutcome.defaultProps = {
 
 const mapStateToProps = state => ({
   signSuccess: state.petition.signed,
+  signError: state.petition.error,
   petition: state.petition.petition,
 });
 

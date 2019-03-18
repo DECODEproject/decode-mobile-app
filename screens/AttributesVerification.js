@@ -64,57 +64,73 @@ class AttributesVerification extends React.Component {
       data[k] = hash ? await ZenroomExecutor.execute(contract50, data[k], '') : data[k];
     }
     console.log("data: ", data);
-    const {mandatoryAttributes, walletId} = this.props;
+    const {mandatoryAttributes} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
     try {
 
       // CONTRACT 01
       const uniqueId = uuid.create().toString();
       console.log("Going to execute contract01: ", contract01(uniqueId));
-      const contract01Response = await ZenroomExecutor.execute(contract01(uniqueId), '', '');
-      console.log("Response from contract01", contract01Response);
-      if (! isJson(contract01Response)) {
+      const keypair = await ZenroomExecutor.execute(contract01(uniqueId), '', '');
+      console.log("Response from contract01 (keypair): ", keypair);
+      if (! isJson(keypair)) {
         this.props.goToError("Invalid response from contract 01");
         return;
       }
-      const { [uniqueId]: {public: publicKey, private: privateKey}} = JSON.parse(contract01Response);
+      const { [uniqueId]: {public: publicKey, private: privateKey}} = JSON.parse(keypair);
 
       // CONTRACT 02
       console.log("Going to execute contract02: ", contract02(uniqueId, mandatoryAttributes.map(a => a.object)));
-      const contract02Response = await ZenroomExecutor.execute(contract02(uniqueId, mandatoryAttributes.map(a => a.object)), '', contract01Response);
-      console.log("Response from contract02", contract02Response);
-      if (! isJson(contract02Response)) {
+      console.log("Keys: ", keypair);
+      const blindSignatureReq = await ZenroomExecutor.execute(contract02(uniqueId, mandatoryAttributes.map(a => a.object)), '', keypair);
+      console.log("Response from contract02 (blindSignatureReq): ", blindSignatureReq);
+      if (! isJson(blindSignatureReq)) {
         this.props.goToError("Invalid response from contract 02");
         return;
       }
-      const blindSignRequest = JSON.parse(contract02Response);
 
       // CALLS TO CREDENTIAL ISSUER
       const issuerId = await credentialIssuer.getIssuerId();
       console.log("Credential Issuer id: ", issuerId);
 
-      const issuerSignedCredential = await credentialIssuer.issueCredential(mandatoryAttributes[0].predicate, blindSignRequest, data);
-      console.log("Issuer signed credential: ", issuerSignedCredential);
+      const issuerVerifyKeypair = await credentialIssuer.getIssuerVerifier(
+        mandatoryAttributes[0].predicate
+      );
+      console.log("Issuer verify keypair (contract 04): ", issuerVerifyKeypair);
 
-      const issuerVerifier = await credentialIssuer.getIssuerVerifier(mandatoryAttributes[0].predicate);
-      console.log("Issuer verifier: ", issuerVerifier);
+      const issuerSignedCredential = await credentialIssuer.issueCredential(
+        mandatoryAttributes[0].predicate,
+        JSON.parse(blindSignatureReq),
+        data
+      );
+      console.log("Issuer signed credential (contract 05): ", issuerSignedCredential);
 
 
       // CONTRACT 06
-      // const c06 = contract06(uniqueId, issuerId);
-      const c06 = contract06(uniqueId, 'issuer_identifier'); // TODO: This is a workaround
+      const c06 = contract06(uniqueId, issuerId);
       console.log("Going to execute contract 06: ", c06);
-      const contract06Response = await ZenroomExecutor.execute(c06, JSON.stringify(issuerSignedCredential), contract01Response);
-      console.log("Response from contract06", contract06Response);
+      console.log("Keys: ", keypair);
+      console.log("Data: ", JSON.stringify(issuerSignedCredential));
+      const credential = await ZenroomExecutor.execute(
+        c06,
+        JSON.stringify(issuerSignedCredential),
+        keypair
+      );
+      console.log("Response from contract06", credential);
 
       // CONTRACT 07
-      // const c07 = contract07(uniqueId, issuerId, mandatoryAttributes.map(a => a.object));
-      const c07 = contract07(uniqueId, 'issuer_identifier', mandatoryAttributes.map(a => a.object)); // TODO: the workaround as above
+      const c07 = contract07(uniqueId, issuerId, mandatoryAttributes.map(a => a.object));
       console.log("Going to execute contract 07: ", c07);
-      const contract07Response = await ZenroomExecutor.execute(c07, JSON.stringify(issuerVerifier), contract06Response);
-      console.log("Response from contract07", contract07Response);
+      console.log("Keys: ", credential);
+      console.log("Data: ", JSON.stringify(issuerVerifyKeypair));
+      const blindProofCredential = await ZenroomExecutor.execute(
+        c07,
+        JSON.stringify(issuerVerifyKeypair),
+        credential
+      );
+      console.log("Response from contract07 (blindProofCredential):", blindProofCredential);
 
-      await this.props.addCredential(mandatoryAttributes[0], walletId, contract07Response);
+      await this.props.addCredential(mandatoryAttributes[0], uniqueId, issuerId, issuerVerifyKeypair, credential, blindProofCredential);
       this.props.goToPetitionSummary();
 
     } catch(error) {
@@ -193,8 +209,8 @@ const mapDispatchToProps = dispatch => ({
   updateVerificationInput: (id, value) => dispatch(updateVerificationInput(id, value)),
   goToPetitionSummary: () => dispatch(goToPetitionSummary()),
   goToError: message => dispatch(goToError(message)),
-  addCredential: (attribute, walletId, credential) => {
-    dispatch(addCredential(attribute, walletId, credential, SecureStore.setItemAsync));
+  addCredential: (attribute, uniqueId, issuerId, issuerVerifier, credential, blindProof) => {
+    dispatch(addCredential(attribute, uniqueId, issuerId, issuerVerifier, credential, blindProof, SecureStore.setItemAsync));
   },
 });
 

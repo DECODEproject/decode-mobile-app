@@ -34,13 +34,13 @@ export function checkComingFromLogin() {
   });
 }
 
-export function doLogin(loginRequest, callback, sessionId, credential, attributes, fail=false) {
+export function doLogin(loginRequest, callback, sessionId, blindProofCredential, attributes, fail=false) {
   return async (dispatch) => {
-    const { callback: initialCallback, sessionId: initialessionId} = await getLoginParameters();
+    const { callback: initialCallback, sessionId: initialSessionId} = await getLoginParameters();
     const loginResponse = await loginRequest(
       callback || initialCallback,
-      sessionId || initialessionId,
-      credential,
+      sessionId || initialSessionId,
+      blindProofCredential,
       attributes,
       fail,
       );
