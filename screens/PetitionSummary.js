@@ -211,14 +211,14 @@ class PetitionSummary extends React.Component {
             <Button
               enabled={allMandatoryEnabled}
               onPress={() => {
-                this.sign(uniqueId, `decidim-${petition.id}`, 'No');
+                this.sign(uniqueId, `dddc-test-${petition.id}`, 'No');
               }}
               name={t('no')}
             />
             <Button
               enabled={allMandatoryEnabled}
               onPress={() => {
-                this.sign(uniqueId, `decidim-${petition.id}`, 'Yes');
+                this.sign(uniqueId, `dddc-test-${petition.id}`, 'Yes');
               }}
               name={t('yes')}
             />

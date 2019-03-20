@@ -60,10 +60,12 @@ class AttributesVerification extends React.Component {
   };
 
   callCredentialIssuer = (data, url, hash = true) => async () => {
-    for (const k in data) {
-      data[k] = hash ? await ZenroomExecutor.execute(contract50, data[k], '') : data[k];
-    }
     console.log("data: ", data);
+    let hashedData = {...data};
+    for (const k in hashedData) {
+      hashedData[k] = hash ? await ZenroomExecutor.execute(contract50, data[k], '') : data[k];
+    }
+    console.log("hashedData: ", hashedData);
     const {mandatoryAttributes} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
     try {
@@ -101,7 +103,7 @@ class AttributesVerification extends React.Component {
       const issuerSignedCredential = await credentialIssuer.issueCredential(
         mandatoryAttributes[0].predicate,
         JSON.parse(blindSignatureReq),
-        data
+        hashedData
       );
       console.log("Issuer signed credential (contract 05): ", issuerSignedCredential);
 
@@ -173,10 +175,6 @@ class AttributesVerification extends React.Component {
         <View>
           <Button
             name={t('verify')}
-            onPress={this.callCredentialIssuer(verificationInput, credentialIssuerUrl, false)}
-          />
-          <Button
-            name={t('verifyHash')}
             onPress={this.callCredentialIssuer(verificationInput, credentialIssuerUrl)}
           />
         </View>
