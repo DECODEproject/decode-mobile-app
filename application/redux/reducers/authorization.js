@@ -31,7 +31,7 @@ export default (state = initialState, action) => {
     case types.AUTHORIZATION_ACTION:
       return {
         ...state,
-        authorized: action.correctPin,
+        authorized: action.pinCorrect,
       };
     case types.UPDATE_PIN_ACTION:
       return {

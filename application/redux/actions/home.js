@@ -21,6 +21,7 @@
 
 import { goToAttributesSummary, goToError, goToPetitionSummary } from './navigation';
 import { getPetition } from './petition';
+import setDecidimInfo from './decidimInfo';
 import { addTranslations } from '../../../i18n';
 
 export default function goToPetition(decidimClient, petitionId, top = true) {
@@ -28,11 +29,15 @@ export default function goToPetition(decidimClient, petitionId, top = true) {
     await dispatch(getPetition(decidimClient, petitionId));
     const state = await getState();
     try {
-        const {navigation: {currentNavigatorUID, navigators}} = state;
+        const {navigation: {currentNavigatorUID, navigators}, authorization: {authorized}} = state;
         const {index, routes} = navigators[currentNavigatorUID];
         const routeName = routes[index].routeName;
         console.log("Current route: ", routeName);
         if (routeName === 'petitionSummary') return;
+        if (routeName === 'home' && !authorized) {
+          dispatch(setDecidimInfo(decidimClient.decidimAPIUrl, petitionId));
+          return;
+        }
     } catch (e) {
       console.log("Could not establish current route name", e);
     }

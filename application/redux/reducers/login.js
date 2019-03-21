@@ -34,6 +34,8 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         isComingFromLogin: true,
+        bcnnowUrl: action.bcnnowUrl,
+        sessionId: action.sessionId,
       };
     case types.NOT_COMING_FROM_LOGIN:
       return {

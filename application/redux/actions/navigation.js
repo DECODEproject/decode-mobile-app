@@ -21,6 +21,7 @@
 
 import { NavigationActions } from '@expo/ex-navigation';
 import Router from '../../../Router';
+import types from "../actionTypes";
 
 export function resetNavigation() {
   return (dispatch, getState) => {
@@ -121,7 +122,20 @@ export function goToError(message) {
 
 export function goToLogin(bcnnowUrl, sessionId) {
   return (dispatch, getState) => {
-    const navigatorUID = getState().navigation.currentNavigatorUID;
+    const {
+      navigation: {currentNavigatorUID: navigatorUID, navigators},
+      authorization: {authorized}
+    } = getState();
+    const {index, routes} = navigators[navigatorUID];
+    const routeName = routes[index].routeName;
+    if (routeName === 'home' && ! authorized) {
+      dispatch({
+        type: types.COMING_FROM_LOGIN,
+        bcnnowUrl,
+        sessionId,
+      });
+      return;
+    }
     NavigationActions.popToTop(navigatorUID);
     const action = NavigationActions.replace(navigatorUID, Router.getRoute('login', { bcnnowUrl, sessionId }));
     dispatch(action);

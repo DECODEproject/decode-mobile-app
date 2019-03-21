@@ -23,15 +23,15 @@ import urlParse from 'url-parse';
 import getInitialUrl from '../../utils/url';
 import types from '../actionTypes';
 
-export default function setDecidimInfo() {
+export default function setDecidimInfo(url, id) {
   return (dispatch) => {
-    getInitialUrl().then((url) => {
-      const myURL = urlParse(url, true);
+    getInitialUrl().then((initialUrl) => {
+      const myURL = urlParse(initialUrl, true);
       const { query: { decidimAPIUrl, petitionId } } = myURL;
       dispatch({
         type: types.SET_DECIDIM_INFO,
-        decidimAPIUrl,
-        petitionId,
+        decidimAPIUrl: url ||decidimAPIUrl,
+        petitionId: id ||petitionId,
       });
     });
   };
