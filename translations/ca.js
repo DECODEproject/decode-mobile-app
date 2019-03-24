@@ -153,7 +153,8 @@ export default {
   },
   attributesVerification: {
     verify: 'Verificar',
-    verifyHash: 'Verificar (hash test)',
+    manageData: 'Gestionar les teves dades',
+    emptyData: 'No tens cap dada per compartir',
   },
   petitionList: {
     description: 'Pots signar amb l\'app de DECODE les següents peticions:',

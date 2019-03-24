@@ -28,12 +28,13 @@ import { translate } from 'react-i18next';
 import uuid from 'uuid-js';
 import styles from './styles';
 import i18n from '../i18n';
-import {getDisplayName} from "../lib/attributes";
+import {getDisplayName, getDisplayValue, toggleElementsInList,
+  isAttributeEnabled, pickAttributes} from "../lib/attributes";
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import Button from '../application/components/Button/Button';
 import {updateVerificationInput} from '../application/redux/actions/verification';
 import { addCredential } from '../application/redux/actions/attributes';
-import {goToPetitionSummary, goToError} from "../application/redux/actions/navigation";
+import {goToPetitionSummary, goToError, goToNewAttributes} from "../application/redux/actions/navigation";
 import CredentialIssuerClient from '../lib/CredentialIssuerClient';
 import ZenroomExecutor from '../lib/ZenroomExecutor';
 import isJson from '../lib/is-json';
@@ -42,6 +43,7 @@ import contract02 from '../assets/contracts/02-CITIZEN-credential-request.zencod
 import contract06 from '../assets/contracts/06-CITIZEN-aggregate-credential-signature.zencode';
 import contract07 from '../assets/contracts/07-CITIZEN-prove-credential.zencode';
 import contract50 from '../assets/contracts/50-MISC-hashing.zencode';
+import Attribute from "../application/components/Attribute/Attribute";
 
 
 class AttributesVerification extends React.Component {
@@ -58,6 +60,18 @@ class AttributesVerification extends React.Component {
       height: 80,
     },
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false,
+      enabledAttributes: [],
+    };
+  }
+
+  toggleEnabledAttribute(attr) {
+    this.setState({enabledAttributes: toggleElementsInList(attr, this.state.enabledAttributes)});
+  }
 
   callCredentialIssuer = (data, url, hash = true) => async () => {
     console.log("data: ", data);
@@ -142,43 +156,63 @@ class AttributesVerification extends React.Component {
   }
 
   render() {
-    const {height: windowHeight} = Dimensions.get('window');
-    const {t, mandatoryAttributes, verificationInput} = this.props;
+    const {t, mandatoryAttributes, attributes, verificationInput} = this.props;
     const {provenance: {url: credentialIssuerUrl}} = mandatoryAttributes[0];
     return (
-      <ScrollView keyboardShouldPersistTaps="handled"
-                  style={styles.petitionSummaryContainer}
-                  contentContainerStyle={{
-        flex: 1,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        minHeight: windowHeight-80,
-        paddingBottom: 26,
-      }}>
-        <View>
-          {
-            mandatoryAttributes[0].verificationInput.map(
-              attr => (
-                <View key={attr.id} style={styles.verificationInputView}>
-                  <Text>{getDisplayName(attr.id, t)}</Text>
-                  <TextInput
-                    style={styles.verificationInput}
-                    value={verificationInput[attr.id]}
-                    onChangeText={value => this.props.updateVerificationInput(attr.id, value)}
-                  />
-                </View>
+      <View style={{flex: 1}}>
+        <View style={{flex: 1}}>
+          <View style={{flex: 1}}>
+            {
+              mandatoryAttributes[0].verificationInput.map(
+                attr => (
+                  <View key={attr.id} style={styles.verificationInputView}>
+                    <Text>{getDisplayName(attr.id, t)}
+                      <Text style={{ color: '#D0021B' }}> *</Text>
+                    </Text>
+                    <TextInput
+                      style={styles.verificationInput}
+                      value={verificationInput[attr.id]}
+                      onChangeText={value => this.props.updateVerificationInput(attr.id, value)}
+                    />
+                  </View>
+                )
               )
-            )
-          }
+            }
+          </View>
+          <View style={{flex: 1, paddingHorizontal: 20}}>
+            {
+              attributes.length ?
+              attributes.map(
+                attr => (
+                  <Attribute
+                    key={attr.predicate}
+                    isMandatory={false}
+                    isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
+                    toggleCallback={() => this.toggleEnabledAttribute(attr)}
+                    name={getDisplayName(attr.predicate, t)}
+                    value={getDisplayValue(attr, t)}
+                    requiredError="N/A"
+                  />
+                )
+              ) : <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{t('emptyData')}</Text>
+            }
+          </View>
+          <View style={{flex: 1, paddingHorizontal: 20}}>
+            <Text
+              style={styles.cancelSigningPetition}
+              onPress={() => this.props.goToManageAttributes()}>
+              {t('manageData')}
+            </Text>
+          </View>
+
         </View>
-        <View>
+        <View style={{flex: 1, justifyContent: 'flex-end'}}>
           <Button
             name={t('verify')}
             onPress={this.callCredentialIssuer(verificationInput, credentialIssuerUrl)}
           />
         </View>
-      </ScrollView>
+      </View>
     );
   }
 }
@@ -201,12 +235,15 @@ AttributesVerification.propTypes = {
 const mapStateToProps = state => ({
   mandatoryAttributes: state.petition.petition.attributes.mandatory,
   verificationInput: state.verification,
+  optionalAttributes: state.petition.petition.attributes.optional,
+  attributes: pickAttributes(state.attributes.list),
 });
 
 const mapDispatchToProps = dispatch => ({
   updateVerificationInput: (id, value) => dispatch(updateVerificationInput(id, value)),
   goToPetitionSummary: () => dispatch(goToPetitionSummary()),
   goToError: message => dispatch(goToError(message)),
+  goToManageAttributes: () => dispatch(goToNewAttributes()),
   addCredential: (attribute, uniqueId, issuerId, issuerVerifier, credential, blindProof) => {
     dispatch(addCredential(attribute, uniqueId, issuerId, issuerVerifier, credential, blindProof, SecureStore.setItemAsync));
   },

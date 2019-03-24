@@ -153,7 +153,8 @@ export default {
   },
   attributesVerification: {
     verify: 'Verify',
-    verifyHash: 'Verify (hash test)',
+    manageData: 'Manage your data',
+    emptyData: 'You don\'t have any data to share',
   },
   petitionList: {
     description: 'You can sign with the DECODE app the following petitions:',

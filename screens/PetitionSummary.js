@@ -112,23 +112,6 @@ class PetitionSummary extends React.Component {
     });
   }
 
-  renderAttribute = (attr, isMandatory) => {
-    return (<AttributeComponent
-        key={attr.predicate}
-        value={getDisplayValue(attr, this.props.t)}
-        isMandatory={isMandatory}
-        toggleCallback={() => this.toggleEnabledAttribute(attr)}
-        isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
-        name={getDisplayName(attr.predicate, this.props.t)}
-        requiredError={this.props.t('requiredAttributeError')}
-      />
-    );
-  };
-
-  renderMissingAttribute = attr => (
-    <Text style={styles.missingAttribute} key={attr.predicate}> {`${this.props.t(attr.predicate)}`} </Text>
-  );
-
   render() {
     const {
       petition,
@@ -143,23 +126,6 @@ class PetitionSummary extends React.Component {
 
     const {matchedAttributes} = this.props;
     const {uniqueId} = matchedAttributes;
-    const petitionAttributesTemplate = (
-      <View style={styles.petitionSummaryBox}>
-        {matchedAttributes.mandatory.map(attr => this.renderAttribute(attr, true))}
-        {matchedAttributes.optional.map(attr => this.renderAttribute(attr))}
-        {(matchedAttributes.missing.length !== 0) &&
-        <Text style={{marginTop: 20}}>
-          {t('optional')}
-        </Text>
-        }
-        {matchedAttributes.missing.map(attr => this.renderMissingAttribute(attr))}
-        <Text
-          style={{...styles.cancelSigningPetition, alignSelf: 'flex-start'}}
-          onPress={() => this.props.goToManageAttributes()}
-        >{t('manageData')}
-        </Text>
-      </View>
-    );
     const {height: windowHeight} = Dimensions.get('window');
     return (
       <ScrollView style={styles.petitionSummaryContainer} contentContainerStyle={{
@@ -195,7 +161,15 @@ class PetitionSummary extends React.Component {
             <Spinner visible={this.state.loading} textStyle={{color: '#FFF'}} textContent={t('loading')}/>
           </View>
           <View>
-            {petition && petitionAttributesTemplate}
+            {matchedAttributes.mandatory.map(attr => <AttributeComponent
+              key={attr.predicate}
+              value={getDisplayValue(attr, this.props.t)}
+              isMandatory={true}
+              toggleCallback={() => this.toggleEnabledAttribute(attr)}
+              isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
+              name={getDisplayName(attr.predicate, this.props.t)}
+              requiredError={this.props.t('requiredAttributeError')}
+            />)}
           </View>
         </View>
 
