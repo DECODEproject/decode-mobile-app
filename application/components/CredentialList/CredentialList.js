@@ -92,9 +92,6 @@ class CredentialList extends React.Component {
               <Button name={t('button')} onPress={() =>
                 login(bcnnowUrl, sessionId, credentials[0], this.state.enabledAttributes)}
               />
-              <Button name={t('failbutton')} onPress={() =>
-                login(bcnnowUrl, sessionId, credentials[0], this.state.enabledAttributes, true)}
-              />
             </View>
             : null
         }
