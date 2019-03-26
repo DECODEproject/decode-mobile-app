@@ -38,5 +38,5 @@ export default function getChainspaceUrl(environment) {
 }
 
 export function getDecidimUrl() {
-  return 'https://betadddc.alabs.org';
+  return 'https://dddc.alabs.org';
 }

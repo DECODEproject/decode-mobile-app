@@ -80,7 +80,7 @@ PetitionList.defaultProps = {
       "title": "¿Estas de acuerdo en tener más privacidad?",
     },
   ],
-  decidimClient: new DecidimClient(new LanguageService(), "https://betadddc.alabs.org/api/"),
+  decidimClient: new DecidimClient(new LanguageService(), "https://dddc.alabs.org/api/"),
 };
 
 const mapDispatchToProps = dispatch => ({
