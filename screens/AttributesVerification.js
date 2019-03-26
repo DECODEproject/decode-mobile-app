@@ -89,7 +89,7 @@ class AttributesVerification extends React.Component {
       }
     }
     console.log("hashedOptionalData: ", hashedOptionalData);
-    const {mandatoryAttributes} = this.props;
+    const {mandatoryAttributes, attributeId} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
     try {
 
@@ -118,13 +118,11 @@ class AttributesVerification extends React.Component {
       const issuerId = await credentialIssuer.getIssuerId();
       console.log("Credential Issuer id: ", issuerId);
 
-      const issuerVerifyKeypair = await credentialIssuer.getIssuerVerifier(
-        mandatoryAttributes[0].predicate
-      );
+      const issuerVerifyKeypair = await credentialIssuer.getIssuerVerifier(attributeId);
       console.log("Issuer verify keypair (contract 04): ", issuerVerifyKeypair);
 
       const issuerSignedCredential = await credentialIssuer.issueCredential(
-        mandatoryAttributes[0].predicate,
+        attributeId,
         JSON.parse(blindSignatureReq),
         hashedData,
         hashedOptionalData,
@@ -246,6 +244,7 @@ AttributesVerification.propTypes = {
     })),
   })),
   updateVerificationInput: PropTypes.func,
+  attributeId: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -253,6 +252,7 @@ const mapStateToProps = state => ({
   verificationInput: state.verification,
   optionalAttributes: state.petition.petition.attributes.optional,
   attributes: pickAttributes(state.attributes.list),
+  attributeId: state.petition.petition.attributeId,
 });
 
 const mapDispatchToProps = dispatch => ({
