@@ -85,7 +85,7 @@ class AttributesVerification extends React.Component {
     for (const k in optionalData) {
       const {name, value} = optionalData[k];
       if (this.state.enabledAttributes.find(({predicate}) => (predicate === name))) {
-        hashedOptionalData[name] = hash ? await ZenroomExecutor.execute(contract50, value, '') : value;
+        hashedOptionalData[getApiName(name)] = hash ? await ZenroomExecutor.execute(contract50, value, '') : value;
       }
     }
     console.log("hashedOptionalData: ", hashedOptionalData);
@@ -220,7 +220,7 @@ class AttributesVerification extends React.Component {
             onPress={this.callCredentialIssuer(
               verificationInput,
               attributes.map(({predicate, object}) => ({
-                name: getApiName(predicate),
+                name: predicate,
                 value: getApiValue({predicate, object})})),
               credentialIssuerUrl)
             }
