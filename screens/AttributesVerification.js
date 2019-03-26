@@ -23,9 +23,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { SecureStore } from 'expo';
-import { Dimensions, ScrollView, View, Platform, Text, TextInput } from 'react-native';
+import { View, Platform, Text, TextInput } from 'react-native';
 import { translate } from 'react-i18next';
 import uuid from 'uuid-js';
+import Spinner from 'react-native-loading-spinner-overlay';
 import styles from './styles';
 import i18n from '../i18n';
 import {getDisplayName, getDisplayValue, toggleElementsInList,
@@ -91,6 +92,9 @@ class AttributesVerification extends React.Component {
     console.log("hashedOptionalData: ", hashedOptionalData);
     const {mandatoryAttributes, attributeId} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
+    this.setState({
+      loading: true,
+    });
     try {
 
       // CONTRACT 01
@@ -156,10 +160,13 @@ class AttributesVerification extends React.Component {
 
       await this.props.addCredential(mandatoryAttributes[0], uniqueId, issuerId, issuerVerifyKeypair, credential, blindProofCredential);
       this.props.goToPetitionSummary();
-
     } catch(error) {
       console.log('Error calling credential issuer: ', JSON.stringify(error));
       this.props.goToError(error.message);
+    } finally {
+      this.setState({
+        loading: false,
+      });
     }
   }
 
@@ -168,6 +175,9 @@ class AttributesVerification extends React.Component {
     const {provenance: {url: credentialIssuerUrl}} = mandatoryAttributes[0];
     return (
       <View style={{flex: 1}}>
+        <View>
+          <Spinner visible={this.state.loading} textStyle={{color: '#FFF'}} />
+        </View>
         <View style={{flex: 1}}>
           <View style={{flex: 1}}>
             {

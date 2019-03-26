@@ -22,6 +22,7 @@
 import types from '../actionTypes';
 
 const initialState = {
+  loading: false,
   loaded: false,
   petition: {},
   error: undefined,
@@ -45,10 +46,17 @@ const toggleElementsInList = (element, list) => {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
+    case types.PETITION_REQUESTED: {
+      return {
+        ...state,
+        loading: true,
+      }
+    }
     case types.SET_PETITION: {
       const { petition } = action;
       return {
         ...state,
+        loading: false,
         loaded: true,
         petition,
         error: undefined,
@@ -57,6 +65,7 @@ export default function reducer(state = initialState, action) {
     case types.SET_PETITION_ERROR:
       return {
         ...state,
+        loading: false,
         loaded: false,
         petition: {},
         error: action.error,

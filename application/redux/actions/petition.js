@@ -22,6 +22,12 @@
 import types from '../actionTypes';
 import Signature from '../../../lib/Signature';
 
+export function requestPetition() {
+  return {
+    type: types.PETITION_REQUESTED,
+  };
+}
+
 export function setPetition(petition, walletAttributes) {
   return {
     type: types.SET_PETITION,

@@ -23,6 +23,7 @@ import React from 'react';
 import { Text, FlatList, View, Platform } from 'react-native';
 import { connect } from 'react-redux';
 import { translate } from 'react-i18next';
+import Spinner from 'react-native-loading-spinner-overlay';
 import Button from '../application/components/Button/Button';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import goToPetition from '../application/redux/actions/home';
@@ -48,6 +49,9 @@ class PetitionList extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, padding: 20 }}>
+        <View>
+          <Spinner visible={this.props.loading} textStyle={{color: '#FFF'}} />
+        </View>
         <View style={{ paddingVertical: 20 }}>
           <Text style={{ fontSize: 16 }}>{this.props.t('description')}</Text>
         </View>
@@ -57,7 +61,7 @@ class PetitionList extends React.Component {
           renderItem={({item: petition}) =>
             <View style={{flex: 1, flexDirection: 'row', alignItems: 'center'}}>
               <View style={{flex: 2}}>
-                <Text>{petition.title}</Text>
+                <Text>{this.props.t(petition.title)}</Text>
               </View>
               <View style={{flex: 1}}>
                 <Button
@@ -76,12 +80,16 @@ class PetitionList extends React.Component {
 PetitionList.defaultProps = {
   petitions: [
     {
-      "id": "2",
-      "title": "Reclamamos datos abiertos en toda la administración pública",
+      "id": "1",
+      "title": "title",
     },
   ],
   decidimClient: new DecidimClient(new LanguageService(), "https://dddc.alabs.org/api/"),
 };
+
+const mapStateToProps = state => ({
+  loading: state.petition.loading,
+});
 
 const mapDispatchToProps = dispatch => ({
   goToNewAttributes: () => dispatch(goToNewAttributes()),
@@ -90,4 +98,4 @@ const mapDispatchToProps = dispatch => ({
   },
 });
 
-export default translate('petitionList', { i18n })(connect(null, mapDispatchToProps)(PetitionList));
+export default translate('petitionList', { i18n })(connect(mapStateToProps, mapDispatchToProps)(PetitionList));

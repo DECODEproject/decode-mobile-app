@@ -20,12 +20,13 @@
  */
 
 import { goToAttributesSummary, goToError, goToPetitionSummary } from './navigation';
-import { getPetition } from './petition';
+import { getPetition, requestPetition } from './petition';
 import setDecidimInfo from './decidimInfo';
 import { addTranslations } from '../../../i18n';
 
 export default function goToPetition(decidimClient, petitionId, top = true) {
   return async (dispatch, getState) => {
+    await dispatch(requestPetition());
     await dispatch(getPetition(decidimClient, petitionId));
     const state = await getState();
     try {
