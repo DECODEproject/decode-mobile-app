@@ -29,7 +29,7 @@ import uuid from 'uuid-js';
 import styles from './styles';
 import i18n from '../i18n';
 import {getDisplayName, getDisplayValue, toggleElementsInList,
-  isAttributeEnabled, pickAttributes, getApiValue} from "../lib/attributes";
+  isAttributeEnabled, pickAttributes, getApiName, getApiValue} from "../lib/attributes";
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import Button from '../application/components/Button/Button';
 import {updateVerificationInput} from '../application/redux/actions/verification';
@@ -221,7 +221,9 @@ class AttributesVerification extends React.Component {
             name={t('verify')}
             onPress={this.callCredentialIssuer(
               verificationInput,
-              attributes.map(({predicate, object}) => ({name: predicate, value: getApiValue({predicate, object})})),
+              attributes.map(({predicate, object}) => ({
+                name: getApiName(predicate),
+                value: getApiValue({predicate, object})})),
               credentialIssuerUrl)
             }
           />
