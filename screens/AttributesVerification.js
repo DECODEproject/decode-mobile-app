@@ -29,7 +29,7 @@ import uuid from 'uuid-js';
 import styles from './styles';
 import i18n from '../i18n';
 import {getDisplayName, getDisplayValue, toggleElementsInList,
-  isAttributeEnabled, pickAttributes} from "../lib/attributes";
+  isAttributeEnabled, pickAttributes, getApiValue} from "../lib/attributes";
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import Button from '../application/components/Button/Button';
 import {updateVerificationInput} from '../application/redux/actions/verification';
@@ -73,13 +73,22 @@ class AttributesVerification extends React.Component {
     this.setState({enabledAttributes: toggleElementsInList(attr, this.state.enabledAttributes)});
   }
 
-  callCredentialIssuer = (data, url, hash = true) => async () => {
+  callCredentialIssuer = (data, optionalData, url, hash = true) => async () => {
     console.log("data: ", data);
     let hashedData = {...data};
     for (const k in hashedData) {
       hashedData[k] = hash ? await ZenroomExecutor.execute(contract50, data[k], '') : data[k];
     }
     console.log("hashedData: ", hashedData);
+    console.log("optionalData: ", optionalData);
+    let hashedOptionalData =  [];
+    for (const k in optionalData) {
+      const {name, value} = optionalData[k];
+      if (this.state.enabledAttributes.find(({predicate}) => (predicate === name))) {
+        hashedOptionalData[name] = hash ? await ZenroomExecutor.execute(contract50, value, '') : value;
+      }
+    }
+    console.log("hashedOptionalData: ", hashedOptionalData);
     const {mandatoryAttributes} = this.props;
     let credentialIssuer = new CredentialIssuerClient(url);
     try {
@@ -117,7 +126,8 @@ class AttributesVerification extends React.Component {
       const issuerSignedCredential = await credentialIssuer.issueCredential(
         mandatoryAttributes[0].predicate,
         JSON.parse(blindSignatureReq),
-        hashedData
+        hashedData,
+        hashedOptionalData,
       );
       console.log("Issuer signed credential (contract 05): ", issuerSignedCredential);
 
@@ -209,7 +219,11 @@ class AttributesVerification extends React.Component {
         <View style={{flex: 1, justifyContent: 'flex-end'}}>
           <Button
             name={t('verify')}
-            onPress={this.callCredentialIssuer(verificationInput, credentialIssuerUrl)}
+            onPress={this.callCredentialIssuer(
+              verificationInput,
+              attributes.map(({predicate, object}) => ({name: predicate, value: getApiValue({predicate, object})})),
+              credentialIssuerUrl)
+            }
           />
         </View>
       </View>
