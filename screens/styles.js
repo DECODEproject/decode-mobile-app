@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '500',
     textDecorationLine: 'underline',
+    marginBottom: 20,
   },
   dateOfBirthError: {
     width: 190,

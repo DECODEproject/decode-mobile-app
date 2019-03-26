@@ -57,7 +57,7 @@ class AttributesSummary extends React.Component {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        minHeight: windowHeight,
+        minHeight: windowHeight-80,
       }}>
         <View style={{ flex: 1 }}>
           <PetitionDescription
