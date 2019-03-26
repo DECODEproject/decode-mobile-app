@@ -31,11 +31,19 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case types.COMING_FROM_LOGIN:
-      return {
-        ...state,
-        isComingFromLogin: true,
-        bcnnowUrl: action.bcnnowUrl,
-        sessionId: action.sessionId,
+      const {bcnnowUrl, sessionId} = action;
+      if (bcnnowUrl && sessionId) {
+        return {
+          ...state,
+          isComingFromLogin: true,
+          bcnnowUrl: action.bcnnowUrl,
+          sessionId: action.sessionId,
+        };
+      } else {
+        return {
+          ...state,
+          isComingFromLogin: true,
+        }
       };
     case types.NOT_COMING_FROM_LOGIN:
       return {

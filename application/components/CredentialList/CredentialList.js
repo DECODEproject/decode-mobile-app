@@ -113,8 +113,10 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => ({
-    credentials: pickCredentials(state.attributes.list),
-      attributes: pickAttributes(state.attributes.list),
+  credentials: pickCredentials(state.attributes.list),
+  attributes: pickAttributes(state.attributes.list),
+  bcnnowUrl: state.login.bcnnowUrl,
+  sessionId: state.login.sessionId,
 });
 
 export default translate('login', { i18n })(connect(mapStateToProps, mapDispatchToProps)(CredentialList));

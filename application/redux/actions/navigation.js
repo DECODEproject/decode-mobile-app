@@ -128,12 +128,12 @@ export function goToLogin(bcnnowUrl, sessionId) {
     } = getState();
     const {index, routes} = navigators[navigatorUID];
     const routeName = routes[index].routeName;
+    dispatch({
+      type: types.COMING_FROM_LOGIN,
+      bcnnowUrl,
+      sessionId,
+    });
     if (routeName === 'home' && ! authorized) {
-      dispatch({
-        type: types.COMING_FROM_LOGIN,
-        bcnnowUrl,
-        sessionId,
-      });
       return;
     }
     NavigationActions.popToTop(navigatorUID);
