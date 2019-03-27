@@ -159,5 +159,6 @@ export default {
   petitionList: {
     description: 'Pots signar amb l\'app de DECODE les següents peticions:',
     go: 'Vés',
+    title: 'Reclamem dades obertes en totes les administracions públiques',
   }
 };

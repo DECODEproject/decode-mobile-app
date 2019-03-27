@@ -76,8 +76,8 @@ class PetitionList extends React.Component {
 PetitionList.defaultProps = {
   petitions: [
     {
-      "id": "1",
-      "title": "¿Estas de acuerdo en tener más privacidad?",
+      "id": "2",
+      "title": "Reclamamos datos abiertos en toda la administración pública",
     },
   ],
   decidimClient: new DecidimClient(new LanguageService(), "https://dddc.alabs.org/api/"),
