@@ -181,6 +181,7 @@ class AttributesVerification extends React.Component {
                       style={styles.verificationInput}
                       value={verificationInput[attr.id]}
                       onChangeText={value => this.props.updateVerificationInput(attr.id, value)}
+                      autoCapitalize='none'
                     />
                   </View>
                 )
