@@ -19,4 +19,4 @@
  * email: ula@dribia.com
  */
 
-export default `print(ECDH.kdf(HASH.new('sha512'), DATA))`;
+export default `print(ECDH.kdf(HASH.new('sha512'), str(DATA)))`;
