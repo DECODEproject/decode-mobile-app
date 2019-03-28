@@ -47,10 +47,11 @@ export function doLogin(loginRequest, callback, sessionId, blindProofCredential,
     if (loginResponse.status === 200) {
       dispatch({type: types.LOGIN_SUCCEEDED});
     } else {
+      const {response: {status, data: {message}}} = loginResponse;
       dispatch({
         type: types.LOGIN_FAILED,
-        code: loginResponse.status,
-        reason: loginResponse.message,
+        code: status,
+        reason: message,
       });
     }
   };

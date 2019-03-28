@@ -62,7 +62,7 @@ function Login(props) {
     if (loginErrorCode === 408) {
       mainComponent = <ErrorLogin failedMessage={props.t('timeout')}/>
     } else {
-      mainComponent = <ErrorLogin failedMessage={props.t('failedMessage')} detailMessage={loginErrorMessage}/>
+      mainComponent = <ErrorLogin failedMessage={props.t('failedMessage')} detailMessage={`${loginErrorCode}: ${loginErrorMessage}`}/>
     }
   } else if (props.loginIsSuccessful) {
     mainComponent = (<SuccessLogin successMessage={props.t('successMessage')}  style={{alignSelf: 'center'}}/>);
