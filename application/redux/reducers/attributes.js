@@ -43,7 +43,7 @@ export default function reducer(state = initialState, action) {
         subject: action.uniqueId,
         name: action.attribute.name,
       };
-
+      state.list.delete('oogh1seG'); // TODO: remove this in a future version
       return {
         ...state,
         list: state.list.set(newAttribute.predicate, newAttribute),
