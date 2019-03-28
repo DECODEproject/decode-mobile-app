@@ -37,6 +37,7 @@ export function checkComingFromLogin() {
 export function doLogin(loginRequest, callback, sessionId, blindProofCredential, attributes, fail=false) {
   return async (dispatch) => {
     const { callback: initialCallback, sessionId: initialSessionId} = await getLoginParameters();
+    dispatch({type: types.LOGIN_REQUESTED});
     const loginResponse = await loginRequest(
       callback || initialCallback,
       sessionId || initialSessionId,

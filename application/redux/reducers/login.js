@@ -26,6 +26,7 @@ const initialState = {
   credentials: [],
   success: false,
   failed: false,
+  loading: false,
 };
 
 export default function reducer(state = initialState, action) {
@@ -50,15 +51,24 @@ export default function reducer(state = initialState, action) {
         ...state,
         isComingFromLogin: false,
       };
+    case types.LOGIN_REQUESTED:
+      return {
+        ...state,
+        loading: true,
+        success: false,
+        failed: false,
+      };
     case types.LOGIN_RESET:
       return {
         ...state,
+        loading: false,
         success: false,
         failed: false,
       };
     case types.LOGIN_SUCCEEDED:
       return {
         ...state,
+        loading: false,
         success: true,
         failed: false,
       };
@@ -66,6 +76,7 @@ export default function reducer(state = initialState, action) {
     const {code, reason} = action;
       return {
         ...state,
+        loading: false,
         success: false,
         failed: true,
         errorCode: code,

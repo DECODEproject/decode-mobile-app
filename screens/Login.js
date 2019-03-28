@@ -24,6 +24,7 @@ import { Text, View } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
+import Spinner from 'react-native-loading-spinner-overlay';
 import i18n from '../i18n';
 import CredentialList from '../application/components/CredentialList/CredentialList';
 import ScreenLogo from '../application/components/ScreenLogo/ScreenLogo';
@@ -74,6 +75,9 @@ function Login(props) {
     <View style={{ flex: 1, padding: 20}}>
       <ScreenLogo />
       <View>
+        <Spinner visible={props.loading} textStyle={{color: '#FFF'}} />
+      </View>
+      <View>
         <Text style={{ fontSize: 14, paddingVertical: 20 }}>
           {props.t('header')}
         </Text>
@@ -99,6 +103,7 @@ const mapStateToProps = state => ({
   loginIsSuccessful: state.login.success,
   loginErrorCode: state.login.errorCode,
   loginErrorMessage: state.login.errorReason,
+  loading: state.login.loading,
 });
 
 export default translate('login', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Login));
