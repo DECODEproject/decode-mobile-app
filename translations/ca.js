@@ -105,7 +105,7 @@ export default {
   },
   signOutcome: {
     backDecidim: 'Tornar a la petició',
-    voteRecorded: 'El teu vot ha estat registrat anònimament',
+    voteRecorded: 'El teu suport ha estat registrat anònimament',
     maybeInterested: 'Veure les dades de Decidim a Barcelona Now',
     errorText: 'Pots tornar enrere o veure més propostes',
     defaultError: 'Hi ha hagut un error',
@@ -155,6 +155,11 @@ export default {
     verify: 'Verificar',
     manageData: 'Gestionar les teves dades',
     emptyData: 'No tens cap dada per compartir',
+    intro1: 'Es sol·licitará una credencial en un',
+    intro2: 'servei extern',
+    intro3: 'Per a això, necessites proporcionar la información següent:',
+    optionalIntro1: 'Per als objectius d\'aquest pilot, pots compartir les següents dades, que seran agregades anònimament i',
+    optionalIntro2: 'disponibles públicament',
   },
   petitionList: {
     description: 'Pots signar amb l\'app de DECODE les següents peticions:',

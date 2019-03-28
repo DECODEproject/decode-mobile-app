@@ -132,6 +132,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     marginBottom: 30,
   },
+  link: {
+    color: '#00F',
+    textDecorationLine: 'underline',
+  },
   missingAttribute: {
     color: '#A9A9A9',
     fontSize: 16,
@@ -289,7 +293,6 @@ const styles = StyleSheet.create({
   },
   verificationInputView: {
     paddingVertical: 10,
-    marginHorizontal: 16,
   },
   verificationInput: {
     height: Platform.OS === 'ios' ? 35 : 40,

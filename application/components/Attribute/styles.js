@@ -23,7 +23,6 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   attributeContainer: {
-    flex: 1,
     marginBottom: 10,
   },
   attributeName: {
@@ -39,12 +38,11 @@ const styles = StyleSheet.create({
     color: '#9B9B9B',
     fontSize: 14,
     marginLeft: 5,
-    flex: 1,
   },
   attribute: {
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
   },
   disabledAttributeText: {
     color: '#F00',

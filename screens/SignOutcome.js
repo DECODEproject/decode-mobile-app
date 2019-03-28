@@ -27,6 +27,7 @@ import ImageOverlay from 'react-native-image-overlay';
 import { translate } from 'react-i18next';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
+import {getBcnnowUrl} from '../config';
 import Button from '../application/components/Button/Button';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import { goToPetitionList } from '../application/redux/actions/navigation';
@@ -56,7 +57,7 @@ class SignOutcome extends React.Component {
         />
         <Button
           name={this.props.t('goBcnNow')}
-          onPress={() => Linking.openURL('http://bcnnow.decodeproject.eu')}
+          onPress={() => Linking.openURL(getBcnnowUrl())}
           style={{
             width: 200,
             alignSelf: 'center',

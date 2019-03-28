@@ -23,11 +23,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { SecureStore } from 'expo';
-import { View, Platform, Text, TextInput } from 'react-native';
+import { View, Platform, Text, TextInput, Linking } from 'react-native';
 import { translate } from 'react-i18next';
 import uuid from 'uuid-js';
 import Spinner from 'react-native-loading-spinner-overlay';
 import styles from './styles';
+import {getBcnnowUrl} from '../config';
 import i18n from '../i18n';
 import {getDisplayName, getDisplayValue, toggleElementsInList,
   isAttributeEnabled, pickAttributes, getApiName, getApiValue} from "../lib/attributes";
@@ -174,70 +175,87 @@ class AttributesVerification extends React.Component {
     const {t, mandatoryAttributes, attributes, verificationInput} = this.props;
     const {provenance: {url: credentialIssuerUrl}} = mandatoryAttributes[0];
     return (
-      <View style={{flex: 1}}>
+      <React.Fragment>
         <View>
           <Spinner visible={this.state.loading} textStyle={{color: '#FFF'}} />
         </View>
-        <View style={{flex: 1}}>
-          <View style={{flex: 1}}>
-            {
-              mandatoryAttributes[0].verificationInput.map(
-                attr => (
-                  <View key={attr.id} style={styles.verificationInputView}>
-                    <Text>{getDisplayName(attr.id, t)}
-                      <Text style={{ color: '#D0021B' }}> *</Text>
-                    </Text>
-                    <TextInput
-                      style={styles.verificationInput}
-                      value={verificationInput[attr.id]}
-                      onChangeText={value => this.props.updateVerificationInput(attr.id, value)}
-                      autoCapitalize='none'
+        <View style={{flex: 1, justifyContent: 'space-between'}}>
+          <View style={{padding: 20}}>
+            <View>
+              <Text>
+                <Text>{t('intro1')} </Text>
+                <Text
+                  style={styles.link}
+                  onPress={() => Linking.openURL(`${credentialIssuerUrl}/docs`)}
+                >{t('intro2')}</Text>
+                <Text>. {t('intro3')}</Text>
+              </Text>
+              {
+                mandatoryAttributes[0].verificationInput.map(
+                  attr => (
+                    <View key={attr.id} style={styles.verificationInputView}>
+                      <Text>{getDisplayName(attr.id, t)}
+                        <Text style={{ color: '#D0021B' }}> *</Text>
+                      </Text>
+                      <TextInput
+                        style={styles.verificationInput}
+                        value={verificationInput[attr.id]}
+                        onChangeText={value => this.props.updateVerificationInput(attr.id, value)}
+                        autoCapitalize='none'
+                      />
+                    </View>
+                  )
+                )
+              }
+              <Text>
+                <Text>{t('optionalIntro1')} </Text>
+                <Text
+                  style={styles.link}
+                  onPress={() => Linking.openURL(getBcnnowUrl())}
+                >{t('optionalIntro2')}</Text>
+              </Text>
+            </View>
+            <View style={{paddingVertical: 20}}>
+              {
+                attributes.length ?
+                attributes.map(
+                  attr => (
+                    <Attribute
+                      key={attr.predicate}
+                      isMandatory={false}
+                      isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
+                      toggleCallback={() => this.toggleEnabledAttribute(attr)}
+                      name={getDisplayName(attr.predicate, t)}
+                      value={getDisplayValue(attr, t)}
+                      requiredError="N/A"
                     />
-                  </View>
-                )
-              )
-            }
-          </View>
-          <View style={{flex: 1, paddingHorizontal: 20}}>
-            {
-              attributes.length ?
-              attributes.map(
-                attr => (
-                  <Attribute
-                    key={attr.predicate}
-                    isMandatory={false}
-                    isEnabled={isAttributeEnabled(attr, this.state.enabledAttributes)}
-                    toggleCallback={() => this.toggleEnabledAttribute(attr)}
-                    name={getDisplayName(attr.predicate, t)}
-                    value={getDisplayValue(attr, t)}
-                    requiredError="N/A"
-                  />
-                )
-              ) : <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{t('emptyData')}</Text>
-            }
-          </View>
-          <View style={{flex: 1, paddingHorizontal: 20}}>
-            <Text
-              style={styles.cancelSigningPetition}
-              onPress={() => this.props.goToManageAttributes()}>
-              {t('manageData')}
-            </Text>
-          </View>
+                  )
+                ) : <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{t('emptyData')}</Text>
+              }
+            </View>
+            <View>
+              <Text
+                style={styles.cancelSigningPetition}
+                onPress={() => this.props.goToManageAttributes()}>
+                {t('manageData')}
+              </Text>
+            </View>
 
+          </View>
+          <View>
+            <Button
+              name={t('verify')}
+              onPress={this.callCredentialIssuer(
+                verificationInput,
+                attributes.map(({predicate, object}) => ({
+                  name: predicate,
+                  value: getApiValue({predicate, object})})),
+                credentialIssuerUrl)
+              }
+            />
+          </View>
         </View>
-        <View style={{flex: 1, justifyContent: 'flex-end'}}>
-          <Button
-            name={t('verify')}
-            onPress={this.callCredentialIssuer(
-              verificationInput,
-              attributes.map(({predicate, object}) => ({
-                name: predicate,
-                value: getApiValue({predicate, object})})),
-              credentialIssuerUrl)
-            }
-          />
-        </View>
-      </View>
+      </React.Fragment>
     );
   }
 }
