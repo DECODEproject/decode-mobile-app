@@ -212,6 +212,7 @@ class ManageAttributes extends Component {
           <DateTimePicker
             minimumDate={minDate}
             maximumDate={maxDate}
+            datePickerModeAndroid='spinner'
             isVisible={this.state.isDatePickerVisible}
             onConfirm={this.onSetDateOfBirth}
             onCancel={() => this.setState({ isDatePickerVisible: false })}
