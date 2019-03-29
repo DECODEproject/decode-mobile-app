@@ -32,9 +32,9 @@ import { pickCredentials } from '../lib/attributes';
 
 function MessageComponent(msg, detail) {
   return (
-    <View style={{flex: 1, justifyContent: 'center'}}>
-      <Text style={{ fontSize: 20, color: '#a2a2a2', textAlign: 'center' }}>{msg}</Text>
-      {detail ? <Text style={{ color: '#a2a2a2', textAlign: 'center' }}>{detail}</Text> : null}
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text style={{ fontSize: 20, color: '#a2a2a2' }}>{msg}</Text>
+      {detail ? <Text style={{ color: '#a2a2a2', marginTop: 20 }}>{detail}</Text> : null}
     </View>
   );
 }
@@ -47,7 +47,8 @@ export function ErrorLogin(props) {
 }
 
 export function SuccessLogin(props) {
-  return MessageComponent(props.successMessage);
+  const {successMessage, detailMessage} = props;
+  return MessageComponent(successMessage, detailMessage);
 }
 
 EmptyLogin.propTypes = {
@@ -66,7 +67,7 @@ function Login(props) {
       mainComponent = <ErrorLogin failedMessage={props.t('failedMessage')} detailMessage={`${loginErrorCode}: ${loginErrorMessage}`}/>
     }
   } else if (props.loginIsSuccessful) {
-    mainComponent = (<SuccessLogin successMessage={props.t('successMessage')}  style={{alignSelf: 'center'}}/>);
+    mainComponent = (<SuccessLogin successMessage={props.t('successMessage')} detailMessage={props.t('refreshMessage')} style={{alignSelf: 'center'}}/>);
   } else {
     mainComponent = (<CredentialList bcnnowUrl={props.route.params.bcnnowUrl} sessionId={props.route.params.sessionId} />);
   }

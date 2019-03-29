@@ -57,7 +57,8 @@ export default {
     failbutton: 'Test timeout',
     failedMessage: 'Tu petición no se ha podido procesar\n',
     successMessage: 'Conectado correctamente',
-    timeout: 'Tiempo de espera excedido. Por favor reintenta'
+    timeout: 'Tiempo de espera excedido. Por favor reintenta',
+    refreshMessage: 'Vuelve a tu navegador y refresca la página si es necesario',
   },
   manageAttributes: {
     description: 'Puedes gestionar los siguientes datos. Los datos permanecerán en tu móvil.',

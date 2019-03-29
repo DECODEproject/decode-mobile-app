@@ -58,6 +58,7 @@ export default {
     failedMessage: 'La vostra petició no s\'ha pogut processar.\n',
     successMessage: 'Connectat correctament.',
     timeout: 'Temps d\'espera excedit. Si us plau reintenteu',
+    refreshMessage: 'Torneu al vostre navegador i si cal refresqueu la pàgina',
   },
   manageAttributes: {
     description: 'Pots gestionar les següents dades. Les dades romandran en el teu mòbil.',

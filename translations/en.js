@@ -58,6 +58,7 @@ export default {
     failedMessage: 'Your request couldn\'t be processed.\n',
     successMessage: 'Successfully logged in.',
     timeout: 'Timeout exceeded. Please retry',
+    refreshMessage: 'Go back to your browser and refresh the page if needed',
   },
   manageAttributes: {
     description: 'You can manage the following personal data. The data will remain within your phone.',
