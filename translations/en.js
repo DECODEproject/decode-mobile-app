@@ -165,6 +165,6 @@ export default {
   petitionList: {
     description: 'You can sign with the DECODE app the following petitions:',
     go: 'Go',
-    title: 'We reclaim open data in all public administration ',
+    title: 'Data Commons Manifesto',
   }
 };

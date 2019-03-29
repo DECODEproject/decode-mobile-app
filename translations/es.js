@@ -165,6 +165,6 @@ export default {
   petitionList: {
     description: 'Puedes firmar con la app de DECODE las siguientes peticiones:',
     go: 'Ir',
-    title: 'Reclamamos datos abiertos en toda la administración pública',
+    title: 'Manifiesto por los procomunes de datos',
   }
 };

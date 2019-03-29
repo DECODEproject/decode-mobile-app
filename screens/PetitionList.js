@@ -24,6 +24,7 @@ import { Text, FlatList, View, Platform } from 'react-native';
 import { connect } from 'react-redux';
 import { translate } from 'react-i18next';
 import Spinner from 'react-native-loading-spinner-overlay';
+import {getDecidimUrl} from '../config';
 import Button from '../application/components/Button/Button';
 import Logo from '../application/components/ScreenLogo/ScreenLogo';
 import goToPetition from '../application/redux/actions/home';
@@ -84,7 +85,7 @@ PetitionList.defaultProps = {
       "title": "title",
     },
   ],
-  decidimClient: new DecidimClient(new LanguageService(), "https://dddc.alabs.org/api/"),
+  decidimClient: new DecidimClient(new LanguageService(), `${getDecidimUrl()}/api`),
 };
 
 const mapStateToProps = state => ({

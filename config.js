@@ -38,7 +38,7 @@ export default function getChainspaceUrl(environment) {
 }
 
 export function getDecidimUrl() {
-  return 'https://dddc.alabs.org';
+  return 'https://dddc.decodeproject.eu';
 }
 
 export function getBcnnowUrl() {
