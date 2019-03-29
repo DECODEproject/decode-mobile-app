@@ -83,7 +83,7 @@ export default {
   petitionSummary: {
     yes: 'Signar - Sí',
     no: 'Signar - No',
-    cancel: 'O cancel·lar la teva participació en aquesta proposta',
+    cancel: 'Vés al lloc web de la petició',
     optional: 'Dades opcionals per compartir',
     sharing: 'Estaràs compartint les teves dades amb',
     age: 'Edat',

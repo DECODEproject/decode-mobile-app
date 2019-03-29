@@ -83,7 +83,7 @@ export default {
   petitionSummary: {
     yes: 'Firmar - Sí',
     no: 'Firmar - No',
-    cancel: 'O cancela la participación en esta propuesta',
+    cancel: 'Ir al sitio web de la petición',
     optional: 'Datos opcionales para compartir: ',
     sharing: 'Estarás compartiendo tus datos con',
     age: 'Edad',
@@ -106,7 +106,7 @@ export default {
   },
   signOutcome: {
     backDecidim: 'Volver a la petición',
-    voteRecorded: 'Tu soporte ha sido registrado anónimamente',
+    voteRecorded: 'Tu apoyo ha sido registrado anónimamente',
     maybeInterested: 'Ver los datos de Decidim en Barcelona Now',
     errorText: 'Puedes volver atrás o ver más propuestas',
     defaultError: 'Ha habido un error',

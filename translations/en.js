@@ -83,7 +83,7 @@ export default {
   petitionSummary: {
     yes: 'Sign Yes',
     no: 'Sign No',
-    cancel: 'Or cancel signing this proposal',
+    cancel: 'Go to the petition website',
     optional: 'Optional data to share:',
     sharing: 'You will be sharing your data with',
     age: 'Age',
