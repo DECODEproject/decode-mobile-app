@@ -157,3 +157,23 @@ export function goToPetitionList() {
     dispatch(action);
   };
 }
+
+export function goToDevice(device) {
+  return (dispatch, getState) => {
+    const {
+      navigation: {currentNavigatorUID: navigatorUID, navigators},
+      authorization: {authorized}
+    } = getState();
+    const {index, routes} = navigators[navigatorUID];
+    const routeName = routes[index].routeName;
+    dispatch({
+      type: types.COMING_FROM_DEVICE,
+      device,
+    });
+    if (routeName === 'home' && ! authorized) {
+      return;
+    }
+    const action = NavigationActions.immediatelyResetStack(navigatorUID, [Router.getRoute('device')], 0);
+    dispatch(action);
+  };
+}

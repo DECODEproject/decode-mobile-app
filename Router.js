@@ -33,6 +33,7 @@ import ManageAttributes from './screens/ManageAttributes';
 import PetitionList from './screens/PetitionList';
 import Error from './screens/Error';
 import Login from './screens/Login';
+import Device from './screens/Device';
 
 const Router = createRouter(() => ({
   home: () => Home,
@@ -48,6 +49,7 @@ const Router = createRouter(() => ({
   error: () => Error,
   login: () => Login,
   petitionList: () => PetitionList,
+  device: () => Device,
 }));
 
 export default Router;

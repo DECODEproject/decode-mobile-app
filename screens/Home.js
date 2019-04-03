@@ -25,10 +25,11 @@ import { Image, Text, TextInput, View, KeyboardAvoidingView, Keyboard, ScrollVie
 import { SecureStore, ScreenOrientation, Linking } from 'expo';
 import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
-import { goToAttributesLanding, goToLogin } from '../application/redux/actions/navigation';
+import { goToAttributesLanding, goToLogin, goToDevice } from '../application/redux/actions/navigation';
 import setDecidimInfo from '../application/redux/actions/decidimInfo';
 import { loadCredentials } from '../application/redux/actions/attributes';
 import { checkComingFromLogin, initLogin } from '../application/redux/actions/login';
+import { checkComingFromDevice} from '../application/redux/actions/device';
 import goToPetition from '../application/redux/actions/home';
 import authorizationAction, { updatePin, resetPin } from '../application/redux/actions/authorization';
 import Button from '../application/components/Button/Button';
@@ -50,40 +51,28 @@ class Home extends React.Component {
 
   componentWillMount() {
     ScreenOrientation.allowAsync(ScreenOrientation.Orientation.PORTRAIT_UP);
-    this.props.initializeState(this.props.loginFT).then(() => {});
+    this.props.initializeState().then(() => {});
   }
   componentDidMount() {
-    Linking.addEventListener('url', linkingHandler(this.props.goToPetition, this.props.goToLogin));
+    const {goToPetition, goToLogin, goToDevice} = this.props;
+    Linking.addEventListener('url', linkingHandler(goToPetition, goToLogin, goToDevice));
   };
   componentWillUnmount() {
-    Linking.removeEventListener('url', linkingHandler(this.props.goToPetition, this.props.goToLogin));
+    const {goToPetition, goToLogin, goToDevice} = this.props;
+    Linking.removeEventListener('url', linkingHandler(goToPetition, goToLogin, goToDevice));
   }
 
   goToNextPage() {
-    const comingFromDecidim = this.props.decidimAPIUrl;
-    const comingFromLogin = this.props.isComingFromLogin;
-    if (this.props.loginFT) {
-      this.handleRedirectWithLogin(comingFromLogin, comingFromDecidim);
+    const {decidimAPIUrl: isComingFromDecidim, isComingFromLogin, isComingFromDevice,
+    goToLogin, decidimClient, petitionId, goToDevice, device, goToAttributesLanding, goToPetition} = this.props;
+    if (isComingFromLogin) {
+      goToLogin();
+    } else if (isComingFromDecidim) {
+      goToPetition(decidimClient, petitionId);
+    } else if (isComingFromDevice) {
+      goToDevice(device);
     } else {
-      this.handleRedirectWithoutLogin(comingFromDecidim);
-    }
-  }
-
-  handleRedirectWithLogin(comingFromLogin, comingFromDecidim) {
-    if (comingFromLogin) {
-      this.props.goToLogin();
-    } else if (comingFromDecidim) {
-      this.props.goToPetition(this.props.decidimClient, this.props.petitionId);
-    } else {
-      this.props.goToAttributesLanding();
-    }
-  }
-
-  handleRedirectWithoutLogin(comingFromDecidim) {
-    if (comingFromDecidim) {
-      this.props.goToPetition(this.props.decidimClient, this.props.petitionId);
-    } else {
-      this.props.goToAttributesLanding();
+      goToAttributesLanding();
     }
   }
 
@@ -152,6 +141,7 @@ Home.propTypes = {
   goToAttributesLanding: PropTypes.func.isRequired,
   goToLogin: PropTypes.func.isRequired,
   goToPetition: PropTypes.func.isRequired,
+  goToDevice: PropTypes.func.isRequired,
   initializeState: PropTypes.func.isRequired,
   doAuthorize: PropTypes.func.isRequired,
   updatePin: PropTypes.func.isRequired,
@@ -160,8 +150,8 @@ Home.propTypes = {
   decidimClient: PropTypes.instanceOf(DecidimClient).isRequired,
   pinCode: PropTypes.string,
   t: PropTypes.func.isRequired,
-  loginFT: PropTypes.bool,
   isComingFromLogin: PropTypes.bool.isRequired,
+  isComingFromDevice: PropTypes.bool.isRequired,
   resetPin: PropTypes.func.isRequired,
 };
 
@@ -169,7 +159,6 @@ Home.defaultProps = {
   decidimAPIUrl: undefined,
   petitionId: undefined,
   pinCode: '',
-  loginFT: false,
 };
 
 const mapStateToProps = state => ({
@@ -177,8 +166,9 @@ const mapStateToProps = state => ({
   petitionId: state.decidimInfo.petitionId,
   pinCode: state.authorization.pin,
   decidimClient: new DecidimClient(new LanguageService(), state.decidimInfo.decidimAPIUrl),
-  loginFT: state.featureToggles.login,
   isComingFromLogin: state.login.isComingFromLogin,
+  isComingFromDevice: state.device.isComingFromDevice,
+  device: state.device.device,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -190,12 +180,16 @@ const mapDispatchToProps = dispatch => ({
   goToPetition: (decidimClient, petitionId) => {
     dispatch(goToPetition(decidimClient, petitionId));
   },
+  goToDevice: device => {
+    dispatch(goToDevice(device));
+  },
   doAuthorize: pin => dispatch(authorizationAction(pin, SecureStore.getItemAsync)),
   updatePin: pin => dispatch(updatePin(pin)),
   resetPin: () => dispatch(resetPin()),
-  initializeState: async (loginFT) => {
+  initializeState: async () => {
     await dispatch(setDecidimInfo());
     await dispatch(checkComingFromLogin());
+    await dispatch(checkComingFromDevice());
     await dispatch(loadCredentials(SecureStore.getItemAsync));
   },
 });
