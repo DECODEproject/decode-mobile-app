@@ -198,7 +198,7 @@ class AttributesVerification extends React.Component {
                         <Text style={{ color: '#D0021B' }}> *</Text>
                       </Text>
                       <TextInput
-                        style={styles.verificationInput}
+                        style={styles.inputText}
                         value={verificationInput[attr.id]}
                         onChangeText={value => this.props.updateVerificationInput(attr.id, value)}
                         autoCapitalize='none'

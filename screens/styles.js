@@ -294,7 +294,7 @@ const styles = StyleSheet.create({
   verificationInputView: {
     paddingVertical: 10,
   },
-  verificationInput: {
+  inputText: {
     height: Platform.OS === 'ios' ? 35 : 40,
     borderWidth: 1,
     paddingHorizontal: 10,

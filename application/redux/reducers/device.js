@@ -23,6 +23,7 @@ import types from '../actionTypes';
 
 const initialState = {
   isComingFromDevice: false,
+  editingName: true,
 };
 
 export default function reducer (state = initialState, action) {
@@ -38,7 +39,18 @@ export default function reducer (state = initialState, action) {
       return {
         ...state,
         isComingFromDevice: false,
-      }
+      };
+    case types.UPDATE_DEVICE_NAME:
+      const { name } = action;
+      return {
+        ...state,
+        name,
+      };
+    case types.SAVE_DEVICE_NAME:
+      return {
+        ...state,
+        editingName: false,
+      };
     default:
       return state;
   }
