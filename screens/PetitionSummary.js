@@ -21,13 +21,13 @@
 
 import React from 'react';
 import Spinner from 'react-native-loading-spinner-overlay';
-import {Text, View, ScrollView, Dimensions, Platform} from 'react-native';
+import {Text, View, ScrollView, Dimensions } from 'react-native';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {translate} from 'react-i18next';
 import {signPetitionAction, signPetitionError} from '../application/redux/actions/petition';
 import Button from '../application/components/Button/Button';
-import Logo from '../application/components/ScreenLogo/ScreenLogo';
+import NavigationBar from '../application/components/NavigationBar';
 import {goToSignOutcome, goToNewAttributes} from '../application/redux/actions/navigation';
 import AttributeComponent from '../application/components/Attribute/Attribute';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
@@ -46,19 +46,7 @@ import PetitionsClient from '../lib/PetitionsClient';
 
 class PetitionSummary extends React.Component {
 
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      borderBottomWidth: 0,
-      borderBottomColor: 'white',
-      elevation: 1,
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
-      height: 80,
-    },
-  };
+  static route = NavigationBar;
 
   constructor(props) {
     super(props);

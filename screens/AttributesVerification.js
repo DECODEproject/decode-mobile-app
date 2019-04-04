@@ -23,7 +23,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { SecureStore } from 'expo';
-import { View, Platform, Text, TextInput, Linking } from 'react-native';
+import { View, Text, TextInput, Linking } from 'react-native';
 import { translate } from 'react-i18next';
 import uuid from 'uuid-js';
 import Spinner from 'react-native-loading-spinner-overlay';
@@ -32,7 +32,7 @@ import {getBcnnowUrl} from '../config';
 import i18n from '../i18n';
 import {getDisplayName, getDisplayValue, toggleElementsInList,
   isAttributeEnabled, pickAttributes, getApiName, getApiValue} from "../lib/attributes";
-import Logo from '../application/components/ScreenLogo/ScreenLogo';
+import NavigationBar from '../application/components/NavigationBar';
 import Button from '../application/components/Button/Button';
 import {updateVerificationInput} from '../application/redux/actions/verification';
 import { addCredential } from '../application/redux/actions/attributes';
@@ -49,19 +49,7 @@ import Attribute from "../application/components/Attribute/Attribute";
 
 
 class AttributesVerification extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      borderBottomWidth: 0,
-      borderBottomColor: 'white',
-      elevation: 1,
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
-      height: 80,
-    },
-  };
+  static route = NavigationBar;
 
   constructor(props) {
     super(props);

@@ -22,32 +22,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { View, Text, Dimensions, ScrollView, Platform } from 'react-native';
+import { View, Text, Dimensions, ScrollView } from 'react-native';
 import { translate } from 'react-i18next';
 import { goToAttributesVerification } from '../application/redux/actions/navigation';
 import LinkButton from '../application/components/LinkButton/LinkButton';
 import RequesterInfo from '../application/components/RequesterInfo/RequesterInfo';
 import PetitionDescription from '../application/components/PetitionDescription/PetitionDescription';
-import Logo from '../application/components/ScreenLogo/ScreenLogo';
+import NavigationBar from '../application/components/NavigationBar';
 import openPetitionInBrowser from '../application/utils';
 import styles from './styles';
 import i18n from '../i18n';
 import { getDisplayName} from "../lib/attributes";
 
 class AttributesSummary extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      borderBottomWidth: 0,
-      borderBottomColor: 'white',
-      elevation: 1,
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
-      height: 80,
-    },
-  };
+  static route = NavigationBar;
 
   render() {
     const { petition, t } = this.props;

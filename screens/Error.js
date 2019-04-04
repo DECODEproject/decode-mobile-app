@@ -20,12 +20,12 @@
  */
 
 import React from 'react';
-import { Text, View, Image, Platform } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { translate } from 'react-i18next';
 import Button from '../application/components/Button/Button';
-import Logo from '../application/components/ScreenLogo/ScreenLogo';
+import NavigationBar from '../application/components/NavigationBar';
 import { goToPetitionList } from '../application/redux/actions/navigation';
 import styles from './styles';
 import i18n from '../i18n';
@@ -35,19 +35,7 @@ import {getDisplayName} from "../lib/attributes";
 const warningIcon = require('../assets/images/warning.png');
 
 class Error extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      borderBottomWidth: 0,
-      borderBottomColor: 'white',
-      elevation: 1,
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
-      height: 80,
-    },
-  };
+  static route = NavigationBar;
 
   render() {
     const {t, message, goToPetitionList, mandatoryAttributes} = this.props;

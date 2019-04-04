@@ -27,24 +27,12 @@ import Spinner from 'react-native-loading-spinner-overlay';
 import styles from './styles';
 import i18n from '../i18n';
 import Button from '../application/components/Button/Button';
-import Logo from '../application/components/ScreenLogo/ScreenLogo';
+import NavigationBar from '../application/components/NavigationBar';
 import {saveDeviceName, updateDeviceName} from '../application/redux/actions/device';
 
 
 class Device extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      borderBottomWidth: 0,
-      borderBottomColor: 'white',
-      elevation: 1,
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
-      height: 80,
-    },
-  };
+  static route = NavigationBar;
 
   render() {
     const { name, device: {deviceToken}, updateDeviceName, saveDeviceName, editingName } = this.props;

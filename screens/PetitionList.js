@@ -20,32 +20,20 @@
  */
 
 import React from 'react';
-import { Text, FlatList, View, Platform } from 'react-native';
+import { Text, FlatList, View } from 'react-native';
 import { connect } from 'react-redux';
 import { translate } from 'react-i18next';
 import Spinner from 'react-native-loading-spinner-overlay';
 import {getDecidimUrl} from '../config';
 import Button from '../application/components/Button/Button';
-import Logo from '../application/components/ScreenLogo/ScreenLogo';
+import NavigationBar from '../application/components/NavigationBar';
 import goToPetition from '../application/redux/actions/home';
 import i18n from '../i18n';
 import DecidimClient from '../lib/DecidimClient';
 import LanguageService from '../lib/LanguageService';
 
 class PetitionList extends React.Component {
-  static route = {
-    navigationBar: {
-      backgroundColor: 'white',
-      borderBottomWidth: 0,
-      borderBottomColor: 'white',
-      elevation: 1,
-      fontSize: 20,
-      fontWeight: '500',
-      tintColor: 'rgb(0,163,158)',
-      renderTitle: () => <View  style={{marginLeft: Platform.OS === 'ios' ? -20 : -60,}} ><Logo/></View>,
-      height: 80,
-    },
-  };
+  static route = NavigationBar;
 
   render() {
     return (
