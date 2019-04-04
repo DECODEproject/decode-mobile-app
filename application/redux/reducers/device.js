@@ -24,6 +24,7 @@ import types from '../actionTypes';
 const initialState = {
   isComingFromDevice: false,
   editingName: true,
+  configStep: 1,
 };
 
 export default function reducer (state = initialState, action) {
@@ -50,6 +51,12 @@ export default function reducer (state = initialState, action) {
       return {
         ...state,
         editingName: false,
+      };
+    case types.SET_DEVICE_CONFIG_STEP:
+      const { step } = action;
+      return {
+        ...state,
+        configStep: step,
       };
     default:
       return state;

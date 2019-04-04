@@ -35,7 +35,7 @@ class Device extends React.Component {
   static route = NavigationBar;
 
   render() {
-    const { name, device: {deviceToken}, updateDeviceName, saveDeviceName, editingName } = this.props;
+    const { name, device: {deviceToken}, updateDeviceName, saveDeviceName, editingName, step } = this.props;
     return (
       <View style={{ flex: 1, padding: 20 }}>
         <View>
@@ -60,16 +60,24 @@ class Device extends React.Component {
             :
             <Text>{name}</Text>
         }
+        {
+          step === 2 ?
+            <Button
+              name={'Find your community'}
+              onPress={Function.prototype}
+            />
+            : null
+        }
       </View>
     );
   }
 }
 
-
 const mapStateToProps = state => ({
   device: state.device.device,
   name: state.device.name,
   editingName: state.device.editingName,
+  step: state.device.configStep,
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -33,11 +33,19 @@ export function checkComingFromDevice() {
   })
 }
 
-export const updateDeviceName = name => dispatch => dispatch({
+export const updateDeviceName = name => ({
   type: types.UPDATE_DEVICE_NAME,
   name,
 });
 
-export const saveDeviceName = () => dispatch => dispatch({
-  type: types.SAVE_DEVICE_NAME,
+export const saveDeviceName = () => dispatch => {
+  dispatch({
+    type: types.SAVE_DEVICE_NAME,
+  });
+  dispatch(setDeviceConfigStep(2));
+};
+
+export const setDeviceConfigStep = step => ({
+  type: types.SET_DEVICE_CONFIG_STEP,
+  step,
 });
