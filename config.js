@@ -46,3 +46,4 @@ export function getBcnnowUrl() {
 }
 
 export const policyStoreHost = 'https://policystore.decodeproject.eu';
+export const encoderHost = 'https://encoder.decodeproject.eu';

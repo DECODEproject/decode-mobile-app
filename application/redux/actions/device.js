@@ -22,6 +22,7 @@
 import types from '../actionTypes';
 import {isComingFromDevice} from '../../../lib/entryPoint';
 import {listCommunities} from '../../../lib/PolicyStoreClient';
+import {createStream} from '../../../lib/EncoderClient';
 
 export function checkComingFromDevice() {
   return dispatch => isComingFromDevice().then(result =>  {
@@ -58,6 +59,17 @@ export const findCommunities = () => async (dispatch) => {
     dispatch({type: types.LIST_COMMUNITIES_SUCCESS, communities})
   } catch (e) {
     console.log("Error when calling policy store: ", e);
-    dispatch({type: types.LIST_COMMUNITIES_FAILURE, error: e.message})
+    dispatch({type: types.LIST_COMMUNITIES_FAILURE, error: e.message});
+  }
+};
+
+export const testCreateStream = (device, community) => async dispatch => {
+  dispatch({type: types.CREATE_STREAM_REQUEST});
+  try {
+    const stream = await createStream(device, community);
+    dispatch({type: types.CREATE_STREAM_SUCCESS, stream});
+  } catch (e) {
+    console.log("Error when calling encoder: ", e);
+    dispatch({type: types.CREATE_STREAM_FAILURE, error: e.message});
   }
 };

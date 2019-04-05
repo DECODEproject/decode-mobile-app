@@ -30,9 +30,16 @@ const initialState = {
 };
 
 export default function reducer (state = initialState, action) {
+  const {
+    device,
+    name,
+    step,
+    communities,
+    error,
+    stream,
+  } = action;
   switch (action.type) {
     case types.COMING_FROM_DEVICE:
-      const {device} = action;
       return {
         ...state,
         isComingFromDevice: true,
@@ -44,7 +51,6 @@ export default function reducer (state = initialState, action) {
         isComingFromDevice: false,
       };
     case types.UPDATE_DEVICE_NAME:
-      const { name } = action;
       return {
         ...state,
         name,
@@ -55,7 +61,6 @@ export default function reducer (state = initialState, action) {
         editingName: false,
       };
     case types.SET_DEVICE_CONFIG_STEP:
-      const { step } = action;
       return {
         ...state,
         configStep: step,
@@ -68,14 +73,31 @@ export default function reducer (state = initialState, action) {
         communities: [],
       };
     case types.LIST_COMMUNITIES_SUCCESS:
-      const {communities: {policies}} = action;
+      const {policies} = communities;
       return {
         ...state,
         loading: false,
         communities: policies,
       };
     case types.LIST_COMMUNITIES_FAILURE:
-      const { error } = action;
+      return {
+        ...state,
+        loading: false,
+        error,
+      };
+    case types.CREATE_STREAM_REQUEST:
+      return {
+        ...state,
+        loading: true,
+        error: undefined,
+      };
+    case types.CREATE_STREAM_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        stream,
+      };
+    case types.CREATE_STREAM_FAILURE:
       return {
         ...state,
         loading: false,

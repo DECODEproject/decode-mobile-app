@@ -28,7 +28,7 @@ import styles from './styles';
 import i18n from '../i18n';
 import Button from '../application/components/Button/Button';
 import NavigationBar from '../application/components/NavigationBar';
-import {saveDeviceName, updateDeviceName, findCommunities} from '../application/redux/actions/device';
+import {saveDeviceName, updateDeviceName, findCommunities, testCreateStream} from '../application/redux/actions/device';
 
 
 class Device extends React.Component {
@@ -38,12 +38,13 @@ class Device extends React.Component {
     const {
       loading,
       name,
-      device: {token},
+      device,
       updateDeviceName,
       saveDeviceName,
       editingName,
       step,
       findCommunities,
+      createStream,
       communities,
       error,
     } = this.props;
@@ -53,7 +54,7 @@ class Device extends React.Component {
           <Spinner visible={loading} textStyle={{color: '#FFF'}} />
         </View>
         <View style={{ paddingVertical: 20 }}>
-          <Text>{`Configuring device ${token}`}</Text>
+          <Text>{`Configuring device ${device.token}`}</Text>
         </View>
         {
           editingName ?
@@ -102,6 +103,10 @@ class Device extends React.Component {
                       name={'Choose your community'}
                       onPress={() => findCommunities()}
                     />
+                    <Button
+                      name={'Test create stream'}
+                      onPress={() => createStream(device, communities[0])}
+                    />
                   </View>
                   : null
               }
@@ -127,6 +132,7 @@ const mapDispatchToProps = dispatch => ({
   updateDeviceName: name => dispatch(updateDeviceName(name)),
   saveDeviceName: name => dispatch(saveDeviceName(name)),
   findCommunities: () => dispatch(findCommunities()),
+  createStream: (device, community) => dispatch(testCreateStream(device, community)),
 });
 
 export default translate('device', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Device));
