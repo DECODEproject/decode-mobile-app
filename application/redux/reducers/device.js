@@ -22,9 +22,11 @@
 import types from '../actionTypes';
 
 const initialState = {
+  loading: false,
   isComingFromDevice: false,
   editingName: true,
   configStep: 1,
+  communities: [],
 };
 
 export default function reducer (state = initialState, action) {
@@ -57,6 +59,27 @@ export default function reducer (state = initialState, action) {
       return {
         ...state,
         configStep: step,
+      };
+    case types.LIST_COMMUNITIES_REQUEST:
+      return {
+        ...state,
+        loading: true,
+        error: undefined,
+        communities: [],
+      };
+    case types.LIST_COMMUNITIES_SUCCESS:
+      const {communities: {policies}} = action;
+      return {
+        ...state,
+        loading: false,
+        communities: policies,
+      };
+    case types.LIST_COMMUNITIES_FAILURE:
+      const { error } = action;
+      return {
+        ...state,
+        loading: false,
+        error,
       };
     default:
       return state;

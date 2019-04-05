@@ -44,3 +44,5 @@ export function getDecidimUrl() {
 export function getBcnnowUrl() {
   return 'http://bcnnow.decodeproject.eu';
 }
+
+export const policyStoreHost = 'https://policystore.decodeproject.eu';

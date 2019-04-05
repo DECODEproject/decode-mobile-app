@@ -21,6 +21,7 @@
 
 import types from '../actionTypes';
 import {isComingFromDevice} from '../../../lib/entryPoint';
+import {listCommunities} from '../../../lib/PolicyStoreClient';
 
 export function checkComingFromDevice() {
   return dispatch => isComingFromDevice().then(result =>  {
@@ -49,3 +50,14 @@ export const setDeviceConfigStep = step => ({
   type: types.SET_DEVICE_CONFIG_STEP,
   step,
 });
+
+export const findCommunities = () => async (dispatch) => {
+  dispatch({type: types.LIST_COMMUNITIES_REQUEST});
+  try {
+    const communities = await listCommunities();
+    dispatch({type: types.LIST_COMMUNITIES_SUCCESS, communities})
+  } catch (e) {
+    console.log("Error when calling policy store: ", e);
+    dispatch({type: types.LIST_COMMUNITIES_FAILURE, error: e.message})
+  }
+};

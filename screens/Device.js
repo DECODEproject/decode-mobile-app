@@ -28,18 +28,29 @@ import styles from './styles';
 import i18n from '../i18n';
 import Button from '../application/components/Button/Button';
 import NavigationBar from '../application/components/NavigationBar';
-import {saveDeviceName, updateDeviceName} from '../application/redux/actions/device';
+import {saveDeviceName, updateDeviceName, findCommunities} from '../application/redux/actions/device';
 
 
 class Device extends React.Component {
   static route = NavigationBar;
 
   render() {
-    const { name, device: {deviceToken}, updateDeviceName, saveDeviceName, editingName, step } = this.props;
+    const {
+      loading,
+      name,
+      device: {deviceToken},
+      updateDeviceName,
+      saveDeviceName,
+      editingName,
+      step,
+      findCommunities,
+      communities,
+      error,
+    } = this.props;
     return (
       <View style={{ flex: 1, padding: 20 }}>
         <View>
-          <Spinner visible={false} textStyle={{color: '#FFF'}} />
+          <Spinner visible={loading} textStyle={{color: '#FFF'}} />
         </View>
         <View style={{ paddingVertical: 20 }}>
           <Text>{`Configuring device ${deviceToken}`}</Text>
@@ -62,10 +73,39 @@ class Device extends React.Component {
         }
         {
           step === 2 ?
-            <Button
-              name={'Find your community'}
-              onPress={Function.prototype}
-            />
+            <View>
+              {
+                communities.length ?
+                  null
+                  : <Button
+                    name={'Find your community'}
+                    onPress={() => findCommunities()}
+                  />
+              }
+              {
+                error ?
+                  <Text>{error}</Text>
+                  : null
+              }
+              {
+                communities.length ?
+                  <View>
+                    {
+                      communities.map(({community_id, label, descriptions: {en: desc}}) => (
+                        <View key={community_id}>
+                          <Text>- {label}</Text>
+                          <Text>{desc}</Text>
+                        </View>
+                      ))
+                    }
+                    <Button
+                      name={'Choose your community'}
+                      onPress={() => findCommunities()}
+                    />
+                  </View>
+                  : null
+              }
+            </View>
             : null
         }
       </View>
@@ -74,15 +114,19 @@ class Device extends React.Component {
 }
 
 const mapStateToProps = state => ({
+  loading: state.device.loading,
   device: state.device.device,
   name: state.device.name,
   editingName: state.device.editingName,
   step: state.device.configStep,
+  error: state.device.error,
+  communities: state.device.communities,
 });
 
 const mapDispatchToProps = dispatch => ({
   updateDeviceName: name => dispatch(updateDeviceName(name)),
   saveDeviceName: name => dispatch(saveDeviceName(name)),
+  findCommunities: () => dispatch(findCommunities()),
 });
 
 export default translate('device', { i18n })(connect(mapStateToProps, mapDispatchToProps)(Device));
