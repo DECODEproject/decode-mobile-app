@@ -38,7 +38,7 @@ class Device extends React.Component {
     const {
       loading,
       name,
-      device: {deviceToken},
+      device: {token},
       updateDeviceName,
       saveDeviceName,
       editingName,
@@ -53,7 +53,7 @@ class Device extends React.Component {
           <Spinner visible={loading} textStyle={{color: '#FFF'}} />
         </View>
         <View style={{ paddingVertical: 20 }}>
-          <Text>{`Configuring device ${deviceToken}`}</Text>
+          <Text>{`Configuring device ${token}`}</Text>
         </View>
         {
           editingName ?
